@@ -1,0 +1,50 @@
+This is BibTeX, Version 0.99d (TeX Live 2016)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: etd.aux
+The style file: plain.bst
+Database file #1: refs.bib
+Warning--I didn't find a database entry for "Sundholm13"
+Warning--I didn't find a database entry for "Mester17"
+Warning--I didn't find a database entry for "Mester18"
+You've used 45 entries,
+            2118 wiz_defined-function locations,
+            827 strings with 12864 characters,
+and the built_in function-call counts, 16423 in all, are:
+= -- 1572
+> -- 836
+< -- 7
++ -- 331
+- -- 278
+* -- 1297
+:= -- 2785
+add.period$ -- 138
+call.type$ -- 45
+change.case$ -- 267
+chr.to.int$ -- 0
+cite$ -- 45
+duplicate$ -- 534
+empty$ -- 1248
+format.name$ -- 278
+if$ -- 3400
+int.to.chr$ -- 0
+int.to.str$ -- 45
+missing$ -- 46
+newline$ -- 228
+num.names$ -- 96
+pop$ -- 193
+preamble$ -- 1
+purify$ -- 223
+quote$ -- 0
+skip$ -- 362
+stack$ -- 0
+substring$ -- 1217
+swap$ -- 73
+text.length$ -- 7
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 178
+warning$ -- 0
+while$ -- 141
+width$ -- 47
+write$ -- 505
+(There were 3 warnings)

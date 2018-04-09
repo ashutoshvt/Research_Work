@@ -1,0 +1,220 @@
+%
+% PROJECT: <ETD> Electronic Thesis and Dissertation Initiative
+%   TITLE: LaTeX report template for ETDs in LaTeX
+%  AUTHOR: Neill Kipp, nkipp@vt.edu
+%     URL: http://etd.vt.edu/latex/
+% SAVE AS: etd.tex
+% REVISED: September 6, 1997 [GMc 8/30/10]
+% 
+
+% Instructions: Remove the data from this document and replace it with your own,
+% keeping the style and formatting information intact.  More instructions
+% appear on the Web site listed above.
+
+%\documentclass[12pt,dvips]{report}
+\documentclass[12pt]{report}
+\usepackage{bm}
+\usepackage{amsmath}
+\newenvironment{MyFigure}[1][]{\begin{figure}[#1]\vspace{1.0cm}}{\vspace{1.0cm}\end{figure}}
+%\usepackage[dvips]{graphicx}
+\usepackage{graphicx}
+\newcommand{\overbar}[1]{\mkern 2.2mu\overline{\mkern-2.2mu#1\mkern-2.2mu}\mkern 2.2mu}
+
+\setlength{\textwidth}{6.5in}
+\setlength{\textheight}{8.5in}
+\setlength{\evensidemargin}{0in}
+\setlength{\oddsidemargin}{0in}
+\setlength{\topmargin}{0in}
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.1in}
+
+% Uncomment for double-spaced document.
+\renewcommand{\baselinestretch}{2}
+
+\usepackage{epsf}
+
+\begin{document}
+
+\thispagestyle{empty}
+\pagenumbering{roman}
+\begin{center}
+
+% TITLE
+{\Large 
+Towards a Reduced-Scaling Method for Calculating Coupled Cluster Response Properties
+}
+
+\vfill
+
+Ashutosh Kumar
+
+\vfill
+
+Dissertation submitted to the Faculty of the \\
+Virginia Polytechnic Institute and State University \\
+in partial fulfillment of the requirements for the degree of
+
+\vfill
+
+Doctor of Philosophy \\
+in \\
+Literature and Technology
+
+\vfill
+
+T. Daniel Crawford, Chair \\
+Eduard Valeyev \\
+Diego Troya \\
+Alan Esker
+
+\vfill
+
+May 9, 2018 \\
+Blacksburg, Virginia
+
+\vfill
+
+Keywords: Coupled Cluster, Reduced-Scaling, Response Properties
+\\
+Copyright 2018, Ashutosh Kumar
+
+\end{center}
+
+\pagebreak
+
+\thispagestyle{empty}
+\begin{center}
+
+{\Large
+Towards a Reduced-Scaling Method For Calculating Coupled Cluster Response Properties 
+}\\
+%\vfill
+
+\vspace{8em}
+Ashutosh Kumar
+\vspace{8em}
+
+%\vfill
+
+(ABSTRACT)
+
+%\vfill
+
+\end{center}
+One of the central problems limiting the application of accurate {\em ab
+initio} methods to large molecular systems is their high computational costs,
+i.e., their computing and storage requirements exhibit polynomial scaling with
+the size of the system.  For example, the coupled cluster method --- the
+``gold standard'' of quantum chemistry --- scales as ${\cal O}(N^6)$, where
+$N$ is a measure of the system size. Local correlation techniques, however, have 
+the potential to alleviate this scaling problem. While these methods have been
+quite successful in describing correlation energies they perform rather poorly 
+for response properties like dipole polarizabilities and optical rotation. In 
+this work, we identify some of the reasons behind the failure of popular
+local correlation models like Frozen Virtual Natural Orbitals (FVNO) and Pair Natural
+Orbitals (PNO) in capturing the response of the wavefunction. Consequently, we introduce 
+novel modifications to these schemes which we call FVNO++ and PNO++ respectively.
+Initial results indicate that these techniques significantly outperform their 
+conventional counterparts and can be used for calculating response properties 
+of large molecular systems.
+
+\vfill
+% GRANT INFORMATION
+This work was supported by a grant (CHE-1465149) from
+the U.S. National Science Foundation. Advanced Research Computing 
+Center at Virginia Tech provided the necessary computational resources and technical 
+support for all the calculations reported here.
+
+\pagebreak
+
+% Dedication and Acknowledgments are both optional
+% \chapter*{Dedication}
+\chapter*{Acknowledgments}
+
+\tableofcontents
+\pagebreak
+
+\listoffigures
+\pagebreak
+
+\listoftables
+\pagebreak
+
+\pagenumbering{arabic}
+\pagestyle{myheadings}
+
+\chapter{Introduction}
+\markright{Ashutosh Kumar \hfill Chapter 1. Introduction \hfill}
+
+Start talking about optical rotation as a property. Science behind this property!!
+Points to talk:
+1. Some history of optical rotation (MC Tam's thesis)
+	a. chirality - same story as my Internal Seminar.
+	b. Drug thalidomide example
+	c. Chiroptical spectroscopy
+	d. Theory as a tool! 
+	e. Some history of OR calculations (Harley's thesis)
+	f. TD-DFT not enough in most cases, CC needed (known problems of DFT)
+	g. Challenges of CC - (mention about MD as well.) 
+	h. My work comes in here!
+
+%\chapter{Modeling Optical Rotation}
+\chapter{Coupled Cluster Response Theory}
+\markright{Ashutosh Kumar \hfill Chapter 2. Introduction \hfill}
+%\subsection{Ground State}
+%\subsection{Response Theory}
+%\subsubsection{Sum of States}
+%\subsubsection{Linear Response}
+\chapter{Frozen Virtual Natural Orbitals for Coupled-Cluster Linear-Response Theory}
+\markright{Ashutosh Kumar \hfill Chapter 3. Frozen virtual natural orbitals\hfill}
+\input{FVNO.tex}
+\chapter{Perturbed Natural Orbitals for Coupled-Cluster Linear-Response Theory}
+\markright{Ashutosh Kumar \hfill Chapter 4. Perturbed Natural Orbitals  \hfill}
+\input{FVNO++.tex}
+\chapter{Perturbed Pair Natural Orbitals for Coupled-Cluster Linear-Response Theory}
+\markright{Ashutosh Kumar \hfill Chapter 5. Perturbed Pair Natural Orbitals\hfill}
+\input{PNO++.tex}
+\chapter{Conclusions}
+%%%%%%%%%%%%%%%%%
+%
+% Include an EPS figure with this command:
+%   \epsffile{filename.eps}
+%
+
+%%%%%%%%%%%%%%%%
+%
+% Do tables like this:
+
+% \begin{table}
+% \caption{The Graduate School wants captions above the tables.}
+%\begin{center}
+% \begin{tabular}{ccc}
+% x & 1 & 2 \\ \hline
+% 1 & 1 & 2 \\
+% 2 & 2 & 4 \\ \hline
+% \end{tabular}
+%\end{center}
+% \end{table}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% If you are using BibTeX, uncomment the following:
+%\thebibliography
+%\begin{thebibliography}{99}
+%\bibitem{Shavitt09}I. Shavitt and R. J. Bartlett. Many-Body Methods in Chemistry and
+%Physics: MBPT and Coupled-Cluster Theory; Cambridge University
+%Press: Cambridge, 2009. 
+%\end{thebibliography}
+%\bibliographystyle{unsrt}
+\bibliographystyle{plain}
+\bibliography{refs}
+%
+% Otherwise, uncomment the following:
+%\chapter*{Bibliography}
+
+% \appendix
+
+% In LaTeX, each appendix is a "chapter"
+% \chapter{Program Source}
+\end{document}
