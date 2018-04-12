@@ -64,6 +64,129 @@
 %\maketitle
 
 \section{Introduction}
+Accurate {\em ab initio} models like the coupled cluster theory have been 
+used quite reliably to predict the chiroptical properties of molecules\cite{}
+However, they have been limited to very small system sizes due to the heavy 
+computational expenses associated with such methods. For example, the coupled cluster 
+singles and doubles method (CCSD) has a high polynomial scaling of $O(N^6)$, where
+N is some measure of the system size. This is clearly unphysical as the phenomenon 
+of dynamic electron-correlation, which these methods aim to capture, is local in nature.\cite{}
+This steep scaling can be attributed to the use of delocalized canonical 
+Hartree-Fock MOs (CMOs) as the one electron basis for representing the wavefunction. 
+Local correlation techniques try to exploit the intrinsic sparsity in correlated wavefunctions  
+by unitarily localizing the occupied orbitals (LMOs) using methods like Boys-Foster, Pipek-Mezey etc\cite{}.
+and constructing excitation domains corresponding to each LMO. The sizes of these domains
+are usually very small compared to the full virtual space and become constant in the asymptotic limit,
+making these approaches reduced-scaling. Saebo and Pulay's introduction of projected atomic orbitals (PAO)
+as a representation of the virtual space stands as one of the earliest works in this regard\cite{}. As the name
+suggests, PAOs are formed by projecting out the occupied MO components from the AO basis. Since the PAOs are
+centered on atoms (just like AOs), an excitation domain for a given LMO can be constructed by 
+including only those PAOs which are on or near the atoms associated with that LMO. Subsequently, domains 
+corresponding to a pair of LMOs can be formed by taking a union of the PAO space of both the LMOs and so on.
+Wener, Sch{\"u}tz and co-workers \cite{} were the first to apply these concepts within the framework of CC theory.
+By employing truncated PAO domains coupled with other approximations like weak and distant pairs, they were 
+able to achieve linear scaling while maintaining accurate description of ground-state properties
+like reaction enthalpies, thermodynamic constants etc.\cite{} However, extension of such 
+approaches to excited states to calculate properties like excitation energies has seen 
+limited success as the domain size requirements for describing both ground and excited 
+states accurately have been shown to be quite large.\cite{} This is unsurprising as 
+excitations in say a charge-transfer excited state could be fairly non-local. PAOs have also been 
+used within the context of CC linear response theory to calculate higher-order response 
+properties like (hyper)polarizabilities, chiroptical response etc. albeit on a 
+much smaller scale.\cite{} In 2004, Korona and Werner\cite{} used PAOs with local 
+coupled cluster singles and doubles method (LCCSD) to calculate electric dipole moments and 
+static polarizabilities where they got average errors of 1.61\% and 0.48\% respectively.
+Further minimization of the errors required building bigger domains leading to a 
+significant increase in computational expenses. In the same year, Russ and Crawford\cite{}
+used a modified domain building procedure within the PAO framework, where they augmented 
+the ground state orbital domains on the basis of first-order orbital response coefficients 
+obtained by sloving the coupled-perturbed Hartree-Fock equations, to calculate CC static polarizabilities. 
+A few years later, they extended this formalism to calculate dynamic polarizabilities and optical rotations\cite{}. 
+While the localization errors for linear molecular structures were shown to be only a few percent of canonical
+results, three dimensional compounds required significantly large domains, specially for 
+optical rotations. A similar conclusion was drawn when Friedrich and co-workers
+applied the incremental scheme, a fragmentation based local correlation 
+technique to calculate CC dynamic polarizabilities.\cite{} 
+For a more detailed overview of the applications of PAO based methods in this field, 
+please refer to ref\cite{McAlexander15}. Within the framework of local correlation,
+the pair natural orbitals (PNOs) introduced in 1970s by Edimnston and Krauss\cite{}, 
+Meyer\cite{}, Ahlrichs\cite{}, Kutzelnigg\cite{}, Staemmler and co-workers\cite{} 
+and orbital specific virtuals (OSVs) developed by Chan and co-workers in 2011 \cite{}, are 
+are other popular alternatives to PAOs for a compact representation of the
+virtual space. In the PNO approach, each pair of LMOs have their own virtual space 
+which can be obtained by the diagonalization of the virtual-virtual 
+block of an approximate 1-electron pair specific density. The OSV approach
+on the other hand involves diagonalization of a separate density for each LMO.
+Although the PNOs could compress the 
+
+
+ 
+
+initially abandoned due to the comptational costs involved in the transfoirmation 
+
+% PNOs are other popular correlation techniques.
+% introduced as pseudonatural orbitals  by ...
+% each pair of LMO has its own virtual space
+% obtained from diagonalization of an approximate pair
+% density. but abandoned due to transformation of teis to pno basis
+% Neese and co-wokers revived by DF mechanisms
+% much more compact than PAO.
+% PAO scheme to help in integral transformations further,
+% thus PAO + PNO -> DL-PNO-CCSD(T) calculations on proteins -> very succesfull
+% excited states very successful - hattig, valeev, excitation energies.
+
+% how about response properties
+% only McAlexander and co-workers
+% showed that PNO much more compact than PAO and OSV approach developed by chan and co-workers
+% However, rotations for 2-d and 3-d systems very sensitive to truncation
+% inspired by our earlier work with natural orbitals,
+% want to improve that usiing field perturbed densities 
+%
+% Here we explotre just that!!!! 
+
+
+\section{Response Theory}
+\section{Pair Natural Orbitals}
+\section{Computational Details}
+\section{Results and Discussions}
+\section{Conclusions}
+
+
+
+
+%The most popular approaches
+%of inducing sparsity in the virtual orbital space 
+%are based on the concept of Natural
+%orbitals (NOs), introduced by L{\"o}wdin in 1955\cite{}as the eigenvectors of  
+%the one electron reduced density matrices (1-RDMs), where he referred to 
+%the corresponding eigenvalues as occupation numbers (ONs). L{\"o}wdin showed  
+%the configuration interaction (CI) wavefunction expansion in the NO basis 
+%converges quite rapidly compared to the CMO basis. Motivated by L{\"o}wdin's 
+%findings, Bender, Barr and Davidson\cite{} used NOs obtained from 
+%
+%a few years later used approximate NOs 
+%to construct optimized configurations in their CI calculations on first-row diatomic 
+%hydrides. A Barr 
+%and Davidson\cite{} employed what they called the frozen form of NOs 
+%obtained by diagonalizing only the virtual-virtual block of the density 
+%matrix to analyze the nature of the CI method through correlation energy 
+%studies on Ne atom; Edminston and Krauss,\cite{}Meyer\cite{}, Ahlrichs and 
+%co-workers\cite{} developed the concept of pair natural orbitals (PNOs) or 
+%``pseudonatural orbitals" as the eigenvectors of the 1-RDM associated 
+%with a single electron pair. 
+%The ONs can be seen as a metric for estimating the importance of a virtual NO in describing
+%electron correlation effects and hence all those virtual NOs which have ONs below a given threshold
+%can be removed without causing any significant errors in correlation energies. 
+
+%f. Recent work of FVNO and then PNO for excitation energies
+%g. How about response properties?
+%h. Properties are tough, cite all our papers, harley's paper, 
+%Extension of harley's work, can the results be improved by making use of perturbed densities
+%, cite my FVNO++ paper and explain the logic behind that
+%  but that's only a reduced-prefactor method! how to make it reduced-scaling?
+%i. Here we compare the performance of this approach for dynamic polarizabilities and specific 
+%   rotations vs regular PNO approach.
+
 
 %In the construction of many-body electronic wave functions, the scaling of a
 %given method with the number of molecular orbitals (MOs) plays a pivotal role

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  9 APR 2018 15:42
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  12 APR 2018 18:49
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -401,37 +401,42 @@ Package pdftex.def Info: figures_fvno/diplength.pdf used on input line 735.
 Chapter 4.
 (./FVNO++.tex
 
-LaTeX Warning: Citation `Sundholm13' on page 31 undefined on input line 109.
+LaTeX Warning: Citation `Sundholm13' on page 31 undefined on input line 110.
 
 
-LaTeX Warning: Citation `Mester17' on page 31 undefined on input line 126.
+LaTeX Warning: Citation `Mester17' on page 31 undefined on input line 127.
 
 
-LaTeX Warning: Citation `Mester18' on page 31 undefined on input line 126.
+LaTeX Warning: Citation `Mester18' on page 31 undefined on input line 127.
 
 [31
 
 
-] [32] [33] [34] [35] [36] [37] [38] [39]) [40] [41]
+] [32] [33] [34] [35] [36] [37] [38] [39] [40]) [41]
 Chapter 5.
-(./PNO++.tex) [42
+(./PNO++.tex
 
-]
+LaTeX Warning: Citation `McAlexander15' on page 42 undefined on input line 111.
+
+
+[42
+
+] [43] [44]) [45]
 Chapter 6.
-(./etd.bbl [43
+(./etd.bbl [46
 
-] [44
+] [47
 
-] [45] [46] [47] [48] [49]) [50] (./etd.aux)
+] [48] [49] [50] [51] [52]) [53] (./etd.aux)
 
 LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 2470 strings out of 493014
- 33794 string characters out of 6133351
- 102400 words of memory out of 5000000
- 5944 multiletter control sequences out of 15000+600000
+ 2471 strings out of 493014
+ 33809 string characters out of 6133351
+ 103400 words of memory out of 5000000
+ 5945 multiletter control sequences out of 15000+600000
  16998 words of font info for 59 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  37i,17n,23p,776b,237s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -454,10 +459,10 @@ ve/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/
 texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2016/te
 xmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2016/texm
 f-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on etd.pdf (60 pages, 722000 bytes).
+Output written on etd.pdf (63 pages, 727963 bytes).
 PDF statistics:
- 566 PDF objects out of 1000 (max. 8388607)
- 400 compressed objects within 4 object streams
+ 577 PDF objects out of 1000 (max. 8388607)
+ 407 compressed objects within 5 object streams
  0 named destinations out of 1000 (max. 500000)
  76 words of extra memory for PDF output out of 10000 (max. 10000000)
 

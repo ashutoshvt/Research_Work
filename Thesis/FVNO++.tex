@@ -72,7 +72,7 @@ exhibit polynomial scaling with the size of the system or equivalently
 with the number of one electron basis functions used in these calculations.
 Specifically, the size of the virtual space is of greater concern since  
 they usually far outnumber the occupied orbitals. Furthermore, the canonical virtual orbitals
-obtained from the Hartree-Fock (HF) procedure are quite de-localized and hence 
+obtained from the Hartree-Fock (HF) procedure are non-local in nature and hence 
 the convergence of a determinantal expansion involving these orbitals
 is quite slow. However, L{\"o}wdin \cite{}showed that using 
 ``natural orbitals'' (NOs) instead of canonical HF orbitals can significantly 
@@ -83,7 +83,8 @@ The corresponding eigenvalues are commonly referred to
 as ``occupation numbers''. Since L{\"o}wdin's pioneering 
 work, NOs have found a lot of applications especially in techniques 
 aimed at obtaining a compact representation of the virtual space for 
-correlated calculations.\cite{} Within the context of the CC theory,
+correlated calculations.\cite{} Please refer to ref. \cite{Landau10}
+for an excellent overview on this subject. Within the context of the CC theory, 
 the frozen virtual NO (FVNO) scheme where the NOs are usually obtained from 
 the 1-RDM of a less expensive correlated method such as second-order 
 M{\"o}ller-Plesset (MP2) theory and the virtual space for subsequent 
@@ -220,8 +221,8 @@ electric dipole polarizability. Specific rotation on the other hand
 is related to the one-third of the trace of the $\beta$ tensor (au) 
 also known as the Rosenfeld tensor by the following expression\cite{},
 \begin{equation}
-{\lbrack\alpha\rbrack}_{\omega} = \frac{(72.0 \times 10^6){\hbar}^2 N_A\;\omega}\
-{c^2{m_e}^2 M} \times \left[ \frac{1}{3}Tr(\beta)\right]
+{\lbrack\alpha\rbrack}_{\omega} = \frac{(72.0 \times 10^6){\hbar}^2 N_A\omega}{c^2{m_e}^2 M}
+\ \times \left[ \frac{1}{3}Tr(\beta)\right]
 \end{equation}
 where M is the mass of the molecule (amu), $m_e$ is the rest mass of an electron
 (kg), c is the speed if light in vacuum (m/s), $N_A$ is Avogadro's number and $\omega$
