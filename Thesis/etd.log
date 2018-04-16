@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  12 APR 2018 18:49
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  16 APR 2018 01:11
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -216,7 +216,7 @@ e
 [2] [3] [4
 
 ] (./etd.toc
-Overfull \hbox (0.22946pt too wide) in paragraph at lines 3--3
+Overfull \hbox (0.22946pt too wide) in paragraph at lines 7--7
  [] []\OT1/cmr/bx/n/12 Frozen Vir-tual Nat-u-ral Or-bitals for Coupled-Cluster 
 Linear-Response The- 
  []
@@ -224,7 +224,7 @@ Linear-Response The-
 [5
 
 ] [6]
-Overfull \hbox (3.41698pt too wide) in paragraph at lines 31--31
+Overfull \hbox (3.41698pt too wide) in paragraph at lines 35--35
  [] []\OT1/cmr/bx/n/12 Perturbed Pair Nat-u-ral Or-bitals for Coupled-Cluster L
 inear-Response The- 
  []
@@ -247,17 +247,77 @@ inear-Response The-
 
 ]
 Chapter 1.
-[1
+(./intro.tex [1
 
-]
+] [2] [3]) [4]
 Chapter 2.
-[2
+(./theory.tex
+Underfull \hbox (badness 10000) in paragraph at lines 363--417
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 363--417
+
+ []
+
+[5
 
 ]
-Chapter 3.
-(./FVNO.tex [3
+Underfull \hbox (badness 10000) in paragraph at lines 417--429
 
-] [4] [5]
+ []
+
+[6] [7] [8]
+Underfull \hbox (badness 10000) in paragraph at lines 508--556
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 508--556
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 556--578
+
+ []
+
+[9] [10] [11]
+Underfull \hbox (badness 10000) in paragraph at lines 689--697
+
+ []
+
+[12] [13] [14] [15]
+Overfull \hbox (98.05186pt too wide) detected at line 834
+[][] \OT1/cmr/m/n/12 = []\OMS/cmsy/m/n/12 h\OT1/cmr/m/n/12 ^^C\OMS/cmsy/m/n/12 
+j\OT1/cmr/m/n/12 [\OML/cmm/m/it/12 A; \OMS/cmsy/m/n/12 f\OML/cmm/m/it/12 a[]:a[
+]:\OMS/cmsy/m/n/12 g\OT1/cmr/m/n/12 ]\OMS/cmsy/m/n/12 j\OT1/cmr/m/n/12 	[]\OMS/
+cmsy/m/n/12 i[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 B; ![]\OT1/cmr/m/n/12 ) + [] [
+] [](\OML/cmm/m/it/12 A; \OMS/cmsy/m/n/12 ^^@\OML/cmm/m/it/12 ![]\OT1/cmr/m/n/1
+2 )\OML/cmm/m/it/12 :
+ []
+
+
+Overfull \hbox (32.63855pt too wide) in paragraph at lines 834--872
+\OT1/cmr/m/n/12 where [] 
+ []
+
+
+Overfull \hbox (21.54144pt too wide) in paragraph at lines 834--872
+\OT1/cmr/m/n/12 and [] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 834--872
+
+ []
+
+[16]) [17]
+Chapter 3.
+(./FVNO.tex [18
+
+] [19] [20]
 Overfull \hbox (6.38634pt too wide) in paragraph at lines 159--168
 \OT1/cmr/m/n/12 Here, $\OMS/cmsy/m/n/12 h\OML/cmm/m/it/12 ij\OMS/cmsy/m/n/12 jj
 \OML/cmm/m/it/12 ab\OMS/cmsy/m/n/12 i$ \OT1/cmr/m/n/12 is an an-ti-sym-metrized
@@ -265,21 +325,21 @@ Overfull \hbox (6.38634pt too wide) in paragraph at lines 159--168
 ; ^^O[]:::$
  []
 
-[6] [7] [8] [9] <figures_fvno/energy.pdf, id=79, 578.16pt x 361.35pt>
+[21] [22] [23] [24] <figures_fvno/energy.pdf, id=128, 578.16pt x 361.35pt>
 File: figures_fvno/energy.pdf Graphic file (type pdf)
 
 <use figures_fvno/energy.pdf>
 Package pdftex.def Info: figures_fvno/energy.pdf used on input line 291.
 (pdftex.def)             Requested size: 281.85585pt x 176.1588pt.
- [10 <./figures_fvno/energy.pdf>]
-<figures_fvno/Mp2c.pdf, id=100, 673.51625pt x 392.46625pt>
+ [25 <./figures_fvno/energy.pdf>]
+<figures_fvno/Mp2c.pdf, id=149, 673.51625pt x 392.46625pt>
 File: figures_fvno/Mp2c.pdf Graphic file (type pdf)
 
 <use figures_fvno/Mp2c.pdf>
 Package pdftex.def Info: figures_fvno/Mp2c.pdf used on input line 313.
 (pdftex.def)             Requested size: 281.85585pt x 164.24182pt.
- [11 <./figures_fvno/Mp2c.pdf>]
-<figures_fvno/h2o2_polar.pdf, id=121, 578.16pt x 361.35pt>
+ [26 <./figures_fvno/Mp2c.pdf>]
+<figures_fvno/h2o2_polar.pdf, id=170, 578.16pt x 361.35pt>
 File: figures_fvno/h2o2_polar.pdf Graphic file (type pdf)
 
 <use figures_fvno/h2o2_polar.pdf>
@@ -289,7 +349,7 @@ Package pdftex.def Info: figures_fvno/h2o2_polar.pdf used on input line 336.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[12] <figures_fvno/spatial.pdf, id=125, 556.0775pt x 360.34625pt>
+[27] <figures_fvno/spatial.pdf, id=175, 556.0775pt x 360.34625pt>
 File: figures_fvno/spatial.pdf Graphic file (type pdf)
 
 <use figures_fvno/spatial.pdf>
@@ -299,15 +359,15 @@ Package pdftex.def Info: figures_fvno/spatial.pdf used on input line 363.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[13 <./figures_fvno/h2o2_polar.pdf>]
-<figures_fvno/sort_spatial.pdf, id=146, 574.145pt x 360.34625pt>
+[28 <./figures_fvno/h2o2_polar.pdf>]
+<figures_fvno/sort_spatial.pdf, id=197, 574.145pt x 360.34625pt>
 File: figures_fvno/sort_spatial.pdf Graphic file (type pdf)
 
 <use figures_fvno/sort_spatial.pdf>
 Package pdftex.def Info: figures_fvno/sort_spatial.pdf used on input line 395.
 (pdftex.def)             Requested size: 281.85585pt x 176.90111pt.
- [14 <./figures_fvno/spatial.pdf>] [15 <./figures_fvno/sort_spatial.pdf>]
-<figures_fvno/polar_static.pdf, id=189, 578.16pt x 361.35pt>
+ [29 <./figures_fvno/spatial.pdf>] [30 <./figures_fvno/sort_spatial.pdf>]
+<figures_fvno/polar_static.pdf, id=238, 578.16pt x 361.35pt>
 File: figures_fvno/polar_static.pdf Graphic file (type pdf)
 
 <use figures_fvno/polar_static.pdf>
@@ -317,44 +377,44 @@ Package pdftex.def Info: figures_fvno/polar_static.pdf used on input line 433.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<figures_fvno/amp_trunc_cmo.pdf, id=190, 689.57625pt x 515.9275pt>
+<figures_fvno/amp_trunc_cmo.pdf, id=239, 689.57625pt x 515.9275pt>
 File: figures_fvno/amp_trunc_cmo.pdf Graphic file (type pdf)
 
 <use figures_fvno/amp_trunc_cmo.pdf>
 Package pdftex.def Info: figures_fvno/amp_trunc_cmo.pdf used on input line 456.
 
 (pdftex.def)             Requested size: 281.85585pt x 210.87823pt.
- [16]
+ [31]
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[17 <./figures_fvno/polar_static.pdf>] [18 <./figures_fvno/amp_trunc_cmo.pdf>]
+[32 <./figures_fvno/polar_static.pdf>] [33 <./figures_fvno/amp_trunc_cmo.pdf>]
 
-LaTeX Warning: Reference `fig:error_cmpare' on page 19 undefined on input line 
+LaTeX Warning: Reference `fig:error_cmpare' on page 34 undefined on input line 
 489.
 
-<figures_fvno/error_cmpare.pdf, id=244, 649.42625pt x 506.89375pt>
+<figures_fvno/error_cmpare.pdf, id=294, 649.42625pt x 506.89375pt>
 File: figures_fvno/error_cmpare.pdf Graphic file (type pdf)
 
 <use figures_fvno/error_cmpare.pdf>
 Package pdftex.def Info: figures_fvno/error_cmpare.pdf used on input line 492.
 (pdftex.def)             Requested size: 281.85585pt x 219.99425pt.
- [19 <./figures_fvno/error_cmpare.pdf>]
-<figures_fvno/amp_trunc_no.pdf, id=265, 627.34375pt x 485.815pt>
+ [34 <./figures_fvno/error_cmpare.pdf>]
+<figures_fvno/amp_trunc_no.pdf, id=315, 627.34375pt x 485.815pt>
 File: figures_fvno/amp_trunc_no.pdf Graphic file (type pdf)
 
 <use figures_fvno/amp_trunc_no.pdf>
 Package pdftex.def Info: figures_fvno/amp_trunc_no.pdf used on input line 512.
 (pdftex.def)             Requested size: 281.85585pt x 218.27373pt.
- [20 <./figures_fvno/amp_trunc_no.pdf>]
-[21] <figures_fvno/Faa.pdf, id=300, 524.96124pt x 384.43625pt>
+ [35 <./figures_fvno/amp_trunc_no.pdf>]
+[36] <figures_fvno/Faa.pdf, id=350, 524.96124pt x 384.43625pt>
 File: figures_fvno/Faa.pdf Graphic file (type pdf)
 
 <use figures_fvno/Faa.pdf>
 Package pdftex.def Info: figures_fvno/Faa.pdf used on input line 578.
 (pdftex.def)             Requested size: 281.85585pt x 206.4134pt.
 
-<figures_fvno/X1.pdf, id=301, 724.7075pt x 486.81876pt>
+<figures_fvno/X1.pdf, id=351, 724.7075pt x 486.81876pt>
 File: figures_fvno/X1.pdf Graphic file (type pdf)
 
 <use figures_fvno/X1.pdf>
@@ -364,8 +424,8 @@ Package pdftex.def Info: figures_fvno/X1.pdf used on input line 591.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[22 <./figures_fvno/Faa.pdf>]
-<figures_fvno/norm.pdf, id=323, 577.15625pt x 415.5525pt>
+[37 <./figures_fvno/Faa.pdf>]
+<figures_fvno/norm.pdf, id=372, 577.15625pt x 415.5525pt>
 File: figures_fvno/norm.pdf Graphic file (type pdf)
 
 <use figures_fvno/norm.pdf>
@@ -375,68 +435,98 @@ Package pdftex.def Info: figures_fvno/norm.pdf used on input line 610.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[23 <./figures_fvno/X1.pdf>]
-<figures_fvno/correctn.pdf, id=344, 572.1375pt x 433.62pt>
+[38 <./figures_fvno/X1.pdf>]
+<figures_fvno/correctn.pdf, id=393, 572.1375pt x 433.62pt>
 File: figures_fvno/correctn.pdf Graphic file (type pdf)
 
 <use figures_fvno/correctn.pdf>
 Package pdftex.def Info: figures_fvno/correctn.pdf used on input line 641.
 (pdftex.def)             Requested size: 281.85585pt x 213.62032pt.
- [24 <./figures_fvno/norm.pdf>] [25 <./figures_fvno/correctn.pdf>]
-<figures_fvno/perturbed.pdf, id=385, 577.15625pt x 415.5525pt>
+ [39 <./figures_fvno/norm.pdf>] [40 <./figures_fvno/correctn.pdf>]
+<figures_fvno/perturbed.pdf, id=435, 577.15625pt x 415.5525pt>
 File: figures_fvno/perturbed.pdf Graphic file (type pdf)
 
 <use figures_fvno/perturbed.pdf>
 Package pdftex.def Info: figures_fvno/perturbed.pdf used on input line 694.
 (pdftex.def)             Requested size: 281.85585pt x 202.94403pt.
- [26] [27 <./figures_fvno/perturbed.pdf>]
-<figures_fvno/diplength.pdf, id=410, 628.3475pt x 387.4475pt>
+ [41] [42 <./figures_fvno/perturbed.pdf>]
+<figures_fvno/diplength.pdf, id=459, 628.3475pt x 387.4475pt>
 File: figures_fvno/diplength.pdf Graphic file (type pdf)
 
 <use figures_fvno/diplength.pdf>
 Package pdftex.def Info: figures_fvno/diplength.pdf used on input line 735.
 (pdftex.def)             Requested size: 281.85585pt x 173.79404pt.
- [28] [29 <./figures_fvno/diplength.pdf>]
-[30])
+ [43] [44 <./figures_fvno/diplength.pdf>]
+[45])
 Chapter 4.
 (./FVNO++.tex
 
-LaTeX Warning: Citation `Sundholm13' on page 31 undefined on input line 110.
+LaTeX Warning: Citation `Sundholm13' on page 46 undefined on input line 110.
 
 
-LaTeX Warning: Citation `Mester17' on page 31 undefined on input line 127.
+LaTeX Warning: Citation `Mester17' on page 46 undefined on input line 127.
 
 
-LaTeX Warning: Citation `Mester18' on page 31 undefined on input line 127.
+LaTeX Warning: Citation `Mester18' on page 46 undefined on input line 127.
 
-[31
+[46
 
 
-] [32] [33] [34] [35] [36] [37] [38] [39] [40]) [41]
+] [47] [48]
+
+LaTeX Warning: Citation `koch90' on page 49 undefined on input line 193.
+
+
+LaTeX Warning: Citation `revisited' on page 49 undefined on input line 217.
+
+[49]
+
+LaTeX Warning: Citation `Revisited' on page 50 undefined on input line 244.
+
+[50] [51]
+Underfull \hbox (badness 10000) in paragraph at lines 315--321
+
+ []
+
+[52]
+Underfull \hbox (badness 10000) in paragraph at lines 367--373
+
+ []
+
+[53] [54] [55] [56]) [57]
 Chapter 5.
 (./PNO++.tex
 
-LaTeX Warning: Citation `McAlexander15' on page 42 undefined on input line 111.
+LaTeX Warning: Citation `McAlexander15' on page 58 undefined on input line 108.
 
 
-[42
+[58
 
-] [43] [44]) [45]
+] [59] [60] [61] [62] [63]) [64]
 Chapter 6.
-(./etd.bbl [46
+(./etd.bbl [65
 
-] [47
+] [66
 
-] [48] [49] [50] [51] [52]) [53] (./etd.aux)
+] [67] [68]
+Missing character: There is no ï in font cmr12!
+Missing character: There is no ¿ in font cmr12!
+Missing character: There is no ¼ in font cmr12!
+ [69] [70] [71] [72] [73] [74]
+Missing character: There is no â in font cmr12!
+Missing character: There is no € in font cmr12!
+Missing character: There is no  in font cmr12!
+ [75]) [76]
+(./etd.aux)
 
 LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 2471 strings out of 493014
- 33809 string characters out of 6133351
- 103400 words of memory out of 5000000
- 5945 multiletter control sequences out of 15000+600000
+ 2513 strings out of 493014
+ 34239 string characters out of 6133351
+ 108513 words of memory out of 5000000
+ 5981 multiletter control sequences out of 15000+600000
  16998 words of font info for 59 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  37i,17n,23p,776b,237s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -459,10 +549,10 @@ ve/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/
 texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2016/te
 xmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2016/texm
 f-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on etd.pdf (63 pages, 727963 bytes).
+Output written on etd.pdf (86 pages, 787962 bytes).
 PDF statistics:
- 577 PDF objects out of 1000 (max. 8388607)
- 407 compressed objects within 5 object streams
+ 651 PDF objects out of 1000 (max. 8388607)
+ 458 compressed objects within 5 object streams
  0 named destinations out of 1000 (max. 500000)
  76 words of extra memory for PDF output out of 10000 (max. 10000000)
 

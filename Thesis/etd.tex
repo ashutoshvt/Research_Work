@@ -144,24 +144,22 @@ support for all the calculations reported here.
 \pagenumbering{arabic}
 \pagestyle{myheadings}
 
+\def\ket#1{| #1 \rangle}
+\def\bra#1{\langle #1 |}
+\def\bm#1{\mbox{\boldmath $#1$}}
+\def\degrees{deg dm$^{-1}$ (g/mL)$^{-1}$}
+\def\optrot{$[\alpha]$}
+\def\crt#1{a_{#1}^{\dagger}}
+\def\ann#1{a_{#1}^{\ }}
+\def\cgs{($10^{-40}$ cgs)}
+
+
 \chapter{Introduction}
 \markright{Ashutosh Kumar \hfill Chapter 1. Introduction \hfill}
-
-Start talking about optical rotation as a property. Science behind this property!!
-Points to talk:
-1. Some history of optical rotation (MC Tam's thesis)
-	a. chirality - same story as my Internal Seminar.
-	b. Drug thalidomide example
-	c. Chiroptical spectroscopy
-	d. Theory as a tool! 
-	e. Some history of OR calculations (Harley's thesis)
-	f. TD-DFT not enough in most cases, CC needed (known problems of DFT)
-	g. Challenges of CC - (mention about MD as well.) 
-	h. My work comes in here!
-
-%\chapter{Modeling Optical Rotation}
+\input{intro.tex}
 \chapter{Coupled Cluster Response Theory}
-\markright{Ashutosh Kumar \hfill Chapter 2. Introduction \hfill}
+\input{theory.tex}
+\markright{Ashutosh Kumar \hfill Chapter 2. Coupled Cluster Response Theory\hfill}
 %\subsection{Ground State}
 %\subsection{Response Theory}
 %\subsubsection{Sum of States}
@@ -208,7 +206,8 @@ Points to talk:
 %\end{thebibliography}
 %\bibliographystyle{unsrt}
 \bibliographystyle{plain}
-\bibliography{refs}
+%\bibliography{refs}
+\bibliography{papes}
 %
 % Otherwise, uncomment the following:
 %\chapter*{Bibliography}

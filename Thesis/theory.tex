@@ -1,0 +1,889 @@
+%\section{Theory}
+%\subsection{Schr\"odinger's equation}
+%The most fundamental problem in quantum mechanics is to solve the time independent
+%non-relativistic  Schr\"odinger equation \cite{Schrodinger26}. 
+% \begin{equation}
+%-\frac{1}{2}\nabla^2\psi_n(r) + V(r)\psi_n(r) = E_n\psi_n(r) . \end{equation}
+%In atomic units, the Hamiltonian for N electrons and M nuclei is
+%\begin{equation} \hat{H}_{elec} = -\frac{1}{2}\sum\limits_{i=1}^N\nabla_{i}^2 -
+%\frac{1}{2M_A}\sum\limits_{A=1}^M\nabla_{A}^2 -
+%\sum\limits_{i=1}^N\sum\limits_{A=1}^M\frac{Z_A}{r_{iA}}+\sum\limits_{i=1}^N\sum\limits_{j>i}^N\frac{1}{r_{ij}}.
+%\end{equation}
+%The first term in above equation is the operator for the kinetic energy of the electrons; the second term 
+%is the operator fpr the kinetic energy of the nuclei; the third term represents the coulomb interaction
+%between electrons and nuclei; the fourth and fifth terms represent the repulsion between electrons and
+%between nuclei,respectively. Solving this eigenvalue equation gives us the wavefunction $\psi_n$, and $E_n$,
+%the energy of the system. It can be solved exactly for one electron
+%hydrogen-like species, while approximate solutions are obtained for higher
+%electron systems.  
+%\subsection{Born-Oppenheimer (BO) Approximation}
+%The BO approximation was proposed by Max Born and J.Robert
+%Oppenheimer\cite{Born27}. It states that the wavefunction of a molecule can be
+%broken down into its electronic and nuclear components. \\ \centerline{$\psi_{total} =
+%\psi_{electronic}*\psi_{nuclear}$ }\\.The rationale behind this approximation is
+%the lack of coupling between the electronic and nuclear degrees of freedom in a
+%molecule. Since the nuclei are a lot heavier compared to electrons, they can be
+%assumed to be stationary while solving the electronic Schr\"odinger equation. The
+%electronic Hamiltonian for a system of N electrons and M nuclei can be written
+%as : 
+%\begin{equation}
+%\hat{H}_{elec} = -\frac{1}{2}\sum\limits_{i=1}^N\nabla_{i}^2-\sum\limits_{i=1}^N\sum\limits_{A=1}^M\frac{Z_A}{r_{iA}}+\sum\limits_{i=1}^N\sum\limits_{j>i}^N\frac{1}{r_{ij}}.
+%\end{equation}
+%Thus, the electronic wavefunction and hence the electronic
+%energy depends parametrically on the nuclear coordinates and can be written as:\\
+%\centerline{ $\psi_{elec} = \psi_{elec}(\left\{{r_i}\right\};\left\{{R_A}\right\})$ ,
+%$E_{elec} = E_{elec}\left\{R_A\right\}.$}\\
+%The total energy of the fixed nuclei system can then be written as: 
+%\begin{equation}
+% E_{tot} = E_{elec} + \sum\limits_{A=1}^M\sum\limits_{B>A}^M \frac{Z_AZ_B}{R_{AB}}
+%\end{equation}
+%Only because of this approximation can we think of the potential energy surfaces (PES) of molecules.
+%\subsection{Hartree-Fock (HF) Approximation}
+%The Hartree-Fock approximation assumes that the exact wavefunction of a N electron
+%system can be approximated by a single slater determinant (SD) of N spin
+%orbitals\cite{SzaboOstlund}. For a two electron system, the SD looks like : \begin{equation}
+%\Psi = (2!)^{-1/2}
+%\begin{vmatrix}
+%\chi_1(x_1) & \chi_2(x_1)  \\
+%\chi_1(x_2) & \chi_2(x_2)  \\
+%%. & . & \; & .\\
+%%\chi_1(x_N) & \chi_2(x_N) & ... &\chi_N(x_N) \\
+% \end{vmatrix}
+%\end{equation}
+%The energy expectation value of a slater determinant is a functional of the
+%spin-orbitals. By invoking the  variational principle, optimized
+%spin orbitals are obtained by minimizing the energy functional with respect to
+%the orbitals. This minimization procedure, coupled with the constraint of an
+%orthonormal basis, gives rise to the following equation for spin orbitals:
+%\begin{equation}
+%\left[ h(1) + \sum\limits_{b=1}^NJ_b(1) - K_b(1)\right] \chi_a(1) = \sum\limits_{b=1}^N \epsilon_{ba}\chi_b(1) \;\;\;\;\;a = 1,2,....N
+%\end{equation}
+%The term in the square brackets is defined as Fock operator $f$. $J_b$ is
+%called the Coulomb operator as it describes mean coulombic 
+%repulsion between electrons.  \begin{equation}
+%J_b(1)\chi_a(1) = \left[\int {\chi_b}^*(2){r_{12}^{-1}}\chi_b(2)\,dx_2\right]\chi_a(1) 
+%\end{equation} 
+%$K_b$ is known as the Exchange operator as it arises due to the antisymmetry of the wavefunction.
+%\begin{equation}
+%K_b(1)\chi_a(1) = \left[\int {\chi_b}^*(2){r_{12}^{-1}}\chi_a(2)\,dx_2\right]\chi_b(1) 
+%\end{equation} 
+%%$J_b$ and $K_b$ are called the Coulomb and exchange operators, respectively. 
+%%Also, the fock operator is defined as: $ f = \left[ h(1) + \sum\limits_{b=1}^NJ_b(1) - K_b(1)\right]$
+%After a unitary transformation of the basis, we get the canonical Hartree-Fock (HF) equation:
+%\begin{equation}
+%f\ket{\chi_a} = \epsilon_a\ket{\chi_a}
+%\end{equation}
+%%Thus, the many body problem gets reduced to a one electron problem in HF approximation, which is easier to solve. 
+%The above equation can be solved numerically for atoms, but it becomes very
+%complicated for molecules. To overcome this problem, Roothan and Hall \cite{Roothan51,Hall51} expanded the
+%molecular orbital as a linear combination of known atomic basis functions,
+%which casts the HF equation in the matrix form.
+%%\begin{equation}
+%%\chi_i = \sum\limits_{\mu=1}^K C_{\mu i}\phi_{\mu} \;\;\;\;\;\;\;\;\;\;\; \;\;\;i=1,2,...K
+%%\end{equation}
+%%The final equation takes the following form:
+%\begin{equation}
+%FC = SC \epsilon ,
+%\end{equation}
+%where $F$ is the Fock matrix in the given basis : $ F_{\mu\nu} = \int
+%{\phi_{\mu}}^*f(1)\phi_{\nu}(1)\,dr_1 $ , C is the coefficient matrix and
+%$\epsilon$ is a diagonal matrix containing orbital energies. Since the Fock
+%matrix also depends on the coefficients, the above equation is solved through a
+%self consistent procedure.
+%  HF method is essentially a mean field theory where
+%an electron moves in the average field of all the other electrons and nuclei.
+%HF method recovers up to 99\% of the electronic energy and is usually the starting
+%point for accurate correlated methods due to its simplicity.
+%\section{Many body perturbation theory (MBPT)}
+%MBPT methods try to model a multi-electron system as a perturbation applied to a simpler and solvable system and adds the appropriate %corrections in successive orders. 
+%An example of MPPT is the Rayleigh-Schrodinger perturbation theory(RSPT) which treats the inter-electronic repulsions in a multi-electron %system as a perturbation.As such,it breaks down the electronic hamiltonian into two parts: 
+%\begin{equation}
+%\hat{H} = \hat{H_o} + \lambda\hat{V} , 
+%\end{equation}
+%where, $\hat{H_o}$ is the unperturbed hamiltonian, which is exactly solvable, $\hat{V}$(electron-electron repulsions) is the perturbation and %$\lambda$ is a parameter to track the perturbation.Equation(10) ensures that the energy and wavefunction of the system will also depend on %$\lambda$.Using Taylor's expansion the energy and the wavefunction of the $n^{th}$ state can be written as:
+%\begin{equation}
+%E_n = {E}^{(0)}_n + \lambda{E}^{(1)}_n + \lambda^2{E}^{(2)}_n + \lambda^3{E}^{(3)}_n + ...
+%\end{equation}
+%\begin{equation}
+%\Psi_n = {\Psi}^{(0)}_n + \lambda{\Psi}^{(1)}_n + \lambda^2{\Psi}^{(2)}_n + \lambda^3{\Psi}^{(3)}_n + ...
+%\end{equation}
+%where, ${E}^{(k)}_n = \frac{1}{k!}\frac{d^kE_n}{d{\lambda}^k}$ and 
+%${\Psi}^{(k)}_n = \frac{1}{k!}\frac{d^k\Psi_n}{d{\lambda}^k}.$
+%\\ Using the above equations
+%equations.First and second order equations that we get :
+%\hat{H_o}{\Psi}^{(0)}_n = {E}^{(0)}_n{\Psi}^{(0)}_n
+%\end{equation}
+%\begin{equation}
+%\hat{H_o}{\Psi}^{(1)}_n + \hat{V}{\Psi}^{(0)}_n = {E}^{(0)}_n{\Psi}^{(1)}_n + {E}^{(1)}_n{\Psi}^{(0)}_n
+%\end{equation}
+%\begin{equation}
+%\hat{H_o}{\Psi}^{(2)}_n + \hat{V}{\Psi}^{(1)}_n = {E}^{(0)}_n{\Psi}^{(2)}_n + {E}^{(1)}_n{\Psi}^{(1)}_n +  {E}^{(2)}_n{\Psi}^{(0)}_n
+%\end{equation}
+%and assuming intermediate normalization : $\bra{{\Psi}^{(0)}_n}{\Psi}_n\rangle = 1$ , we obtain the corrections to the energy by projecting %${\Psi}^{(0)}_n $ to the left in the schrodinger equation.
+%\begin{equation}
+%{E}^{(0)}_n = \bra{{\Psi}^{(0)}_n}\hat{H_o}\ket{{\Psi}^{(0)}_n}
+%\begin{equation}
+%{E}^{(1)}_n = \bra{{\Psi}^{(0)}_n}\hat{V}\ket{{\Psi}^{(0)}_n}
+%\end{equation}
+%\begin{equation}
+%{E}^{(2)}_n = \bra{{\Psi}^{(0)}_n}\hat{V}\ket{{\Psi}^{(1)}_n}
+%\end{equation} 
+%\begin{equation}
+%{E}^{(m)}_n = \bra{{\Psi}^{(0)}_n}\hat{V}\ket{{\Psi}^{(m-1)}_n}
+%\end{equation}
+%t appears from the above equation that we need the ${(m-1)}^{th}$ order correction in wavefunction to get the ${m}^{th}$ order correction in %energy. However Wigner(R7) showed that only a ${m}^{th}$ order correction in wavefunction can give a ${2m+1}^{th}$ order correction in %energy.
+%The wavefunction corrections are expressed as a linear combination of the eigenvectors of $\hat{H_o}$, as they form a complete space.
+%\begin{equation}
+%{\Psi}^{(m)}_n = \sum_l{C^{(m)}_{n,l}}{\Psi}^{(0)}_l 
+%\end{equation}
+%where, ${C^{(m)}_{n,l}} = \bra{{\Psi}^{(0)}_l}{\Psi}^{(m)}_n\rangle$ . The first order correction can be obtained by multiplying equation (17) on %left by $\bra{{\Psi}^{(0)}_l} $. 
+%\begin{equation}
+%{C^{(1)}_{n,l}} =\frac{\bra{{\Psi}^{(0)}_l}\hat{V}\ket{{\Psi}^{(0)}_n}}{({E}^{(0)}_n - {E}^{(0)}_l)}
+%\end{equation}
+%we can get the other higher order corrections as well using the same procedure as above.
+%RSPT provides us with a framework for other perturbation based methods which differ only in the partitioning of the the electronic hamiltonian.
+%\subsection{M\"oller-Plesset perturbation theory (MPPT)} MPPT named after
+%Christian M\"oller and Milton S. Plesset\cite{MollerPlesset34} can be seen as a
+%correction to the HF method by including electron correlation effects. It takes
+%the zeroth order Hamiltonian $\hat{H_o}$ to be the sum of the one-electron Fock
+%operators, and treats electron correlation as a perturbation.  \begin{equation}
+%\hat{H_o} = \sum_if(i) = \sum_ih(i) + V^{HF} 
+%\end{equation}
+%\begin{equation}
+%\hat{V} = \sum_{i>j} \frac{1}{r_{ij}} - V^{HF}   ,
+%\end{equation}
+%%where, ${V^{HF}_{pq}} = \sum_m\bra{pm}\ket{qm}$. 
+%Thus, the zeroth order wavefunction is just the HF wavefunction and the zeroth
+%order energy is the sum of orbital energies. The first order corrected energy
+%is just the HF energy, \\ \centerline{$E_n = {E^{(0)}_n} + {E^{(1)}_n}= \sum_i\epsilon_i -
+%\frac{1}{2}\sum_{ij}\bra{ij}\ket{ij} $.}\\
+%%\begin{equation}
+%%\end{equation}
+%\\The wavefunction corrections can be expressed as a linear combination of
+%eigenvectors of the Fock operator-slater determinants which form an
+%orthogonal complete space. The first order correctionn to the wavefunction
+%includes only the doubly excited determinants $\ket{{\Phi}^{ab}_{ij}}$, which can be
+%obtained by replacing the occupied orbitals $i$ and $j$ in the HF wavefunction by virtual 
+%orbitals $a$ and $b$ respectively. All
+%other determinants do not contribute to the second order correction in energy
+%because of Brillouin's theorem and the Slater Condon rules.  \begin{equation}
+%{\Psi}^{(1)}_n = \sum_{i>j;a>b}C^{(1)}_{n,ijab} \Psi^{ab}_{ij} 
+%\end{equation}
+%and 
+%\begin{equation}
+%C^{(1)}_{n,ijab} = \bra{\Psi^{ab}_{ij} }{\Psi}^{(1)}_n\rangle = \sum_{i>j;a>b}\frac{\bra{\Psi^{ab}_{ij} }{\Psi}^{(0)}_n\rangle}{\epsilon_i + \epsilon_j - \epsilon_a - \epsilon_b}
+%\end{equation}
+%Inserting the above expression into the equation for the second order MPPT energy or MP2 energy (in the spin orbital basis) yields:
+%\begin{equation}
+%E^{(2)}_{0} = \sum_{i>j;a>b}\frac{{|\bra{\Phi^{(0)}_0}\frac{1}{r_{12}} } \ket{\Psi^{ab}_{ij}}^2|}{\epsilon_i + \epsilon_j - \epsilon_a - \epsilon_b}=\frac{1}{4}\sum_{ijab}\frac{{|\bra{ij}\ket{ab}|}^2}{\epsilon_i + \epsilon_j - \epsilon_a - \epsilon_b}
+%\end{equation}
+%\subsection{Configuration Interaction (CI)}
+%CI is a matrix mechanics solution of the schr\"odinger's equation. For a
+%N electron molecule, the wavefunction can be expressed as a linear combination
+%of N electron basis functions. CI uses Slater determinants as the basis, since
+%they are antisymmetric, orthogonal and  form a complete space.  \begin{equation}
+%\ket{\Psi} = c_o\ket{\Phi_o} + \sum_{ia}{c}_{i}^{a}\ket{{\Phi}^a_i} + \sum_{i>j,a>b}c_{ij}^{ab}\ket{\Phi^{ab}_{ij}} + \sum_{i>j>k,a>b>c}c_{ijk}^{abc}\ket{\Phi^{abc}_{ijk}} + ...
+%\end{equation}
+%Now, just like the HF method, the variational method is invoked to minimize the
+%expectation value of energy with respect to the coefficients and we get the
+%final matrix eigenvalue equation: \begin{equation}
+%HC = CE
+%\end{equation}
+%where H is the Hamiltonian matrix, $H_{ij} = \bra{\Psi_i}H\ket{\Psi_j}$ , C is
+%the coefficient matrix and E is the diagonal matrix containing the energies,
+%with the lowest energy being
+%that of the ground state. In full CI all possible slater determinants are
+%included, and we get an exact wavefunction in the basis set limit. However, Full
+%CI is computationally very expensive and is not used except in benchmark
+%calculations of small molecules. Instead we use truncated CI schemes like CIS and
+%CISD, which only include singles and singles and doubles determinants,
+%respectively. These methods can extract up to 95\% of correlation energy\cite{HarrisonHandy83} and
+%can be applied to solve for excited states, open-shell systems and systems that
+%are far from their equilibrium geometry, which makes them very useful. However,
+%truncated CI methods are not size-extensive, which is a disadvantage.
+%\subsection{Coupled Cluster Theory}
+%Coupled cluster (CC) theory is one of the most accurate yet computationally
+%affordable methods which is very widely used in quantum chemistry. The CC
+%wavefunction \cite{Crawford00} incorporates the electron correlation effects through cluster operators 
+%$\hat{T}$.  
+%\begin{equation}
+%\ket{\Psi_{CC}} = e^{\hat{T}}\ket{\Psi_o} , 
+%\end{equation}
+%\begin{equation}
+% \hat{T} = \hat{T_1} + \hat{T_2} + \hat{T_3} + ... \;\hat {T_n} .
+%\end{equation} 
+%where $\hat{T_1}$ is the linear combination of all single excitation
+%operators, which replace an occupied orbital in reference wavefunction (HF) with a
+%virtual orbital. A singles excitation operator takes into account the relaxation of the one electron basis
+%functions, i.e. HF molecular orbitals, when electronic motions are correlated. In
+%second quantization\cite{JorgensenSimons81} formalism, $\hat{T_1}$ can be written as :
+%\begin{equation}
+% \hat{T_1} = \sum_{ia}t^a_i{a}^\dagger_a a_i
+%\end{equation}
+%In the above equation, ${a}^\dagger_a$ , the creation operator as it adds a particle (electron) to the SD.
+%\begin{equation}
+%{a}^\dagger_a\ket{\phi_b...\phi_d} = \ket{\phi_a\phi_b...\phi_d}
+%\end{equation}
+%and $a_i$ , which removes a particle from a SD is called the annihilation operator.
+%\begin{equation}
+%a_i\ket{\phi_i\phi_j...\phi_l} = \ket{\phi_j...\phi_l}
+%\end{equation}
+% The $\hat{T_2} $ operator is the linear combination of all double excitation operators. It correlates the motion of all pairs of electrons of the molecule and can be expressed in second quantization as:
+%\begin{equation}
+% \hat{T_2} = \frac{1}{4}\sum_{ijab}t^{ab}_{ij}a^\dagger_aa^\dagger_ba_ja_i
+%\end{equation}
+%Similarly, ${\hat{T_3}}$ correlates the motion of all triplets of electrons and so on. In general,
+%\begin{equation}
+%\hat{T_n} = {\frac{1}{n!}}^2\sum_{ij..ab..}^nt^{ab..}_{ij..}a^\dagger_aa^\dagger_b...a_ja_i
+%\end{equation}
+%\subsubsection{Coupled Cluster Energy}
+%If we expand the exponential ansatz of the CC wavefunction,
+%\begin{equation}
+%\ket{\Psi_{CC}} = (1+(\hat{T_1} + \hat{T_2} + \hat{T_3} + ... ) + \frac{1}{2!}{(\hat{T_1} + \hat{T_2} + \hat{T_3} + ...)}^2 + ... )\ket{\Psi_o}
+%\end{equation}
+%we can see that we will get a linear combination of all possible slater determinants, which makes the Full CC wavefunction an exact wavefunction in the basis set limit, just like Full CI. 
+%\begin{equation}
+%\hat{H}e^{\hat{T}}\ket{\Psi_o} = Ee^{\hat{T}}\ket{\Psi_o}
+%\end{equation} On multiplying the above equation by the inverse of the
+%exponential operator ($e^{-\hat{T}}$) and projecting it against the HF wavefunction and excited determinants from the left, we get the energy and the amplitude
+%equations of coupled cluster theory.
+%\begin {equation}
+%\bra{\Psi_o}e^{-\hat{T}}\hat{H}e^{\hat{T}}\ket{\Psi_o} = E
+%\end{equation} 
+%\begin{equation}
+%\bra{\Psi^{ab..}_{ij..}}e^{-\hat{T}}\hat{H}e^{\hat{T}}\ket{\Psi_o} = E\cancelto{0}{\bra{\Psi^{ab..}_{ij..}}\Psi_o\rangle} = 0 .
+%\end{equation}
+%The similarity transformed hamiltonian, $e^{-\hat{T}}\hat{H}e^{\hat{T}}$, also written as $\bar{H}$, can be expressed in Hausdorff expansion \cite{Merzbacher70}as:
+%\begin{equation}
+%e^{-\hat{T}}\hat{H}e^{\hat{T}} = \hat{H} + \lbrack\hat{H},\hat{T}\rbrack + \frac{1}{2!}\lbrack\lbrack\hat{H},\hat{T}\rbrack,\hat{T}\rbrack + \frac{1}{3!}\lbrack\lbrack\lbrack\hat{H},\hat{T}\rbrack,\hat{T}\rbrack,\hat{T}\rbrack + \frac{1}{4!}\lbrack\lbrack\lbrack\lbrack\hat{H},\hat{T}\rbrack,\hat{T}\rbrack,\hat{T}\rbrack,\hat{T}\rbrack + ...
+%\end{equation}
+%Also, the second quantized form of the hamiltonian can be written as:
+%\begin{equation}
+%\hat{H} = \sum_{pq}h_{pq}a^\dagger_pa_q + \frac{1}{4}\sum_{pqrs}\bra{pq}\ket{rs}a^\dagger_pa^\dagger_qa_sa_r
+%\end{equation}Using the above two equations and Wick's theorem\cite{Wick50}, the coupled cluster energy equation can be written simply as:
+%\begin{equation}
+%E_{CC} = E_o + \sum_{ia}f_{ia}t^a_i + \frac{1}{4}\sum_{aibj}\bra{ij}\ket{ab}t^{ab}_{ij} + \frac{1}{2}\sum_{aibj}\bra{ij}\ket{ab}t^a_it^b_j
+%\end{equation}
+%where the amplitudes $t^a_i$ and $t^{ab}_{ij}$ can be obtained by solving the
+%amplitude equations.\\Since full CC is computationally impractical, truncated CC
+%methods like CCSD, CCSD(T), CCSDT and CCSDTQ are used.\\ \centerline{CCSD: $\hat{T} =
+%\hat{T_1} + \hat{T_2} $ ,   CCSDT: $\hat{T} = \hat{T_1} + \hat{T_2} + \hat{T_3}$
+%,   CCSDTQ: $\hat{T} = \hat{T_1} + \hat{T_2} + \hat{T_3} + \hat{T_4}.$}\\The CCSD(T)
+%method includes an approximate treatment of triples using perturbation theory.\\
+%Using eq. 28, the CCSD amplitude equations can be obtained.
+
+%\section{Introduction}
+%Theoretical and computational chemistry has grown by leaps and bounds over the
+%past several decades. Ab initio quantum chemical methods can now accurately
+%predict a variety of molecular properties. More recently, these methods have
+%been extended to calculate chiroptical
+%properties like optical rotation. Theoretical calculations of optical rotation
+%can be very useful in solving experimental chemical problems.  Specifically, they
+%can provide a computational tool to modern organic chemists to determine
+%the absolute stereochemical configuration of a chiral compound, thus alleviating the experimental difficulties
+%involved.\\ Rosenfeld laid the theoretical foundations for calculating optical
+%roatation in 1929\cite{Rosenfeld29}. He showed that in the presence of an
+%external field, the induced dipole moment in a molecule can be written as:
+%\begin{equation}\langle\vec{\mu}\rangle = \alpha\vec{E} + \frac{1}{\omega}\textbf{G}^\prime\frac{\partial\vec{B}}{\partial t}
+%\end{equation} where $\vec{E} $ and $\vec{B}$ are the time dependent electric and
+%magnetic field vectors respectively, $\omega$ is the frequency of the filed, $\alpha$ is the electric dipole
+%polarizability tensor and the $\textbf{G}^\prime$ tensor, also known as the Rosenfeld
+%tensor contains the recipe for calculating optical rotation.
+%\begin{equation}
+%\textbf{G}^{\prime}(\omega) = -\frac{1}{\hbar} Im\sum_{n \neq 0}\left[\frac{\bra
+%{\psi_o}\vec{\mu}\ket{\psi_n}\bra{\psi_n}\vec{m}\ket{\psi_o}}{\omega_{no} - \omega - i\Gamma_{no}} + \frac{\bra
+%{\psi_o}\vec{m}\ket{\psi_n}\bra{\psi_n}\vec{\mu}\ket{\psi_o}}{\omega_{no} + \omega + i\Gamma_{no}} \right]
+%\end{equation}
+%Here, $\vec{\mu}$ and $\vec{m}$ are electric and magnetic dipole operators,
+%%: $\mu =
+%%\sum_ir_i,\;\; m= \sum_ir_i\times p_i$ (in atomic units).  
+% $\omega$ is the frequency of light, $\omega_{no}$ is the excitation energy of
+%the state $\psi_n$ and $\Gamma_{no}$ is the dephasing rate between the states
+%$\psi_o$ and $\psi_n$.
+%% taken to be zero when the field frequency is far from
+%%resonance
+%\cite{CrawfordTamJPA07}. $Im$ means the imaginary part of the equation and the
+%summation runs over all the excited states $\psi_n$. The trace of this tensor
+%is related to the specific rotation, usually denoted as
+%${\lbrack\alpha\rbrack}_\omega$ in
+%deg dm$^{\text{-1}}$(g/mL)$^{\text{-1}}$
+%%After averaging over all possible
+%%orientations of the molecule,the following expression is obtained
+%\cite{Crawford06}.
+%\begin{equation}
+%{\lbrack\alpha\rbrack}_{\omega} = \frac{(72.0 \times 10^6){\hbar}^2 N_A\;\omega}{c^2{m_e}^2 M} \times \left[ \frac{1}{3}Tr(\textbf{G}^\prime)\right]
+%\end{equation}
+%Here, $\textbf{G}^\prime$ and $\omega$ are in atomic units, c is the speed of light (m/s), m$_{\text{e}}$ is the mass of
+%electron (kg), M is the molecular mass (amu) and $N_A$ is Avogadro's
+%number. Calculating the $\textbf{G}^\prime$ tensor using equation (2) requires explicit calculations of a large
+%number of excited states, which is very computationally expensive. Most ab initio methods
+%use the linear response formalism\cite{Koch90,Kobayashi94} instead to calculate
+%${\lbrack\alpha\rbrack}_\omega$.
+%\begin{equation}
+%\textbf{G}^{\prime}(\omega) = Im\langle\langle\mu;m\rangle\rangle
+%\end{equation} The linear response approach focuses on the perturbation of the
+%ground state wavefunction in the presence of an external field, avoiding
+%excited state calculations. Different levels of theory have been employed
+%over the years for calculating optical rotation. Polavarapu was the first to
+%calculate ab-initio optical rotation of gas phase molecules using the time
+%dependent Hartree Fock method\cite{Polavarapu96}. The signs of the calculated optical
+%rotation values matched with that of the experiment for most of his structures,
+%while their magnitudes differed generally by a factor of two. Inspired by
+%Polavarapu's success, Cheeseman et al. \cite{Cheeseman00,Stephens01} included correlation
+%effects in the calculations by applying density functional theory.
+%Using large basis sets with diffuse functions like aug-cc-pVDZ and aug-cc-pVTZ,\cite{Dunning89} they were able to match the experimental values very closely, with a deviation of 20-25 degrees
+%for a set of 28 chiral molecules. Ruud et al. extended the calculations to the
+%coupled cluster level using the coupled cluster response
+%theory (CCLR) developed by Koch and J{\o}rgensen\cite{Koch90},
+%and obtained promising results\cite{Ruud03}. These initial breakthroughs have allowed optical
+%rotation calculations to be performed on a large number of chiral molecules over the years.  As
+%such, the gas phase calculations have become very reliable now and are being
+%increasingly used to determine absolute configurations of many chiral molecules.\cite{Kondru99}
+%\\However, since most of the experimental measurements of optical rotation are
+%performed in solutions, we need to be able to calculate this property for solutions
+%as well. But a larger number of molecules and stronger intermolecular interactions
+%makes the modelling of solution phase optical rotation much more challenging and
+%complicated than that of the gas phase. In recent years, the ab inito methods
+%mentioned above have been combined with various solvation based
+%approaches\cite{Neugebauer05,Neugebauer09,Mennucci02,Tomasi05,JensenGordon96}
+%to calculate the optical rotation in solution. This review condiders some of
+%the popular approaches that are being used and describes their working
+%mechanisms and performances in detail. In the current/future work section of
+%this review, some reduced scaling techniques are proposed with the aim of
+%making these methods more efficient and computationally practical. Also, some
+%of the essential, underlying coupled cluster and response theory used for
+%optical rotation calculations are presented and discussed.
+%for the sake of completeness, I also talk about the copuled cluster theory and
+%derive the working equations of the CCLR theory, which our group uses for
+%calculating optical rotation.
+
+
+\section{Theoretical tools}
+%\subsection{Schrodinger's equation}
+The most basic problem in quantum mechanics is to solve the time independent
+non-relativistic Schr\"odinger equation \cite{Schrodinger26}.
+% \begin{equation}
+%-\frac{1}{2}\nabla^2\psi_n(r) + V(r)\psi_n(r) = E_n\psi_n(r) , \end{equation}
+%Solving this eigen value equation gives us the wavefunction $\psi_n$, and $E_n$, the energy of the system.
+It can be solved exactly for one electron hydrogen-like species and only approximate
+solutions can be obtained for many electron systems.
+%\subsection{Born-Oppenheimer(BO) Approximation}
+%BO Approximation was proposed by Max Born and J.Robert
+%Oppenheimer\cite{Born27}.It states that the wavefunction of a molecule can be
+%broken down into it's electronic and nuclear components. $\psi_{total} =
+%\psi_{electronic}*\psi_{nuclear}$.The rationale behind this approximation is
+%the lack of coupling between the electronic and nuclear degrees of freedom in a
+%molecule.Since, the nuclei are a lot more heavier compared to electrons, they
+%can be assumed to be stationary while solving the electronic schrodinger
+%equation.So, the electronic hamiltonian for a system of N electrons and M
+%nuclei can be written as : \begin{equation}
+%\hat{H}_{elec} = -\frac{1}{2}\sum\limits_{i=1}^N\nabla_{i}^2-\sum\limits_{i=1}^N\sum\limits_{A=1}^M\frac{Z_A}{r_{iA}}+\sum\limits_{i=1}^N\sum\limits_{j>i}^N\frac{1}{r_{ij}},
+%\end{equation}
+%where the symbols have their usual meanings.Thus, the electronic wavefunction and hence the electronic energy depends parametrically on the nuclear coordinates and can be written as:
+%$\psi_{elec} = \psi_{elec}(\left\{{r_i}\right\};\left\{{R_A}\right\})$ , $E_{elec} = E_{elec}\left\{R_A\right\}.$
+%The total energy of the fixed nuclei system can then be written as: 
+%\begin{equation}
+% E_{tot} = E_{elec} + \sum\limits_{A=1}^M\sum\limits_{B>A}^M \frac{Z_AZ_B}{R_{AB}}
+%\end{equation}
+%Only because of this approximation, can we think of Potential energy surfaces of molecules.
+%\subsection{Hartree-Fock Approximation}
+Under the Born-Oppenheimer approximation\cite{Born27}, the Hartree-Fock (HF) theory\cite{SzaboOstlund} is one of the simplest
+approximation methods. The HF wavefunction is a single slater determinant of spin orbitals which
+naturally obeys the Pauli's antisymmetry principle.
+%It assumes that the exact wavefunction of a N electron
+%system can be approximated by a single slater determinant(SD)of N-spin
+%orbitals\cite{SzaboOstlund}.For a two electron system, the SD looks like : \begin{equation}
+%\Psi = (2!)^{-1/2}
+%\begin{vmatrix}
+%\chi_1(x_1) & \chi_2(x_1)  \\
+%\chi_1(x_2) & \chi_2(x_2)  \\
+%%. & . & \; & .\\
+%%\chi_1(x_N) & \chi_2(x_N) & ... &\chi_N(x_N) \\
+% \end{vmatrix}
+%\end{equation}
+Since the energy expectation value of a slater determinant is a functional of
+the spin-orbitals, optimized spin orbitals can be obtained by minimizing this
+functional with respect to the orbitals by invoking the variational principle.
+This minimization procedure is usually coupled with the constraints of an
+orthonormal basis using the Lagrangian method of undetermined multipliers.
+Finally, a set of non-linear equations are solved through a self consistent
+procedure, because of which HF is also called self consistent field theory
+(SCF). The HF method recovers up to 99\% of the electronic energy but fails to take
+into account the electron correlation effects which constitute the remaining
+1\% and are very important for accurate calculations of properties. 
+However, due to its simplicity it is usually the starting point for other
+correlation methods like the coupled cluster method. \\\\
+%\subsection{Coupled cluster theory} 
+\paragraph{Coupled cluster theory} ~ \\\\
+Coupled cluster\cite{Crawford00} (CC) theory is a very accurate electronic
+structure method that has been widely used in quantum chemistry.
+It takes into account the electron correlation effects by expressing the
+wavefunction as a linear combination of slater determinants within an
+exponential framework. This is achieved by the use of cluster operators $\hat{T}$ 
+acting on the HF wavefunction.
+%is one of the most accurate yet computationally
+%affordable method, which is very widely used in quantum chemistry.CC
+%wavefunction is an exponential ansatz\cite{Crawford00} which incorporates the electron
+%correlation effects through cluster operators 
+%$\hat{T}$.  
+\begin{equation}
+\ket{\Psi_{CC}} = e^{\hat{T}}\ket{\Psi_{o}} , 
+\end{equation}
+where
+\begin{equation}
+ \hat{T} = \hat{T_1} + \hat{T_2} + \hat{T_3} + ... \;\hat {T_n} 
+\end{equation}
+$\ket{\Psi_{o}}$ is the reference wavefunction, usually taken as the HF
+wavefunction, and the $\hat{T_1}$ operator is the linear combination of all single excitation
+operators, which replace an occupied orbital in the HF wavefunction with a
+virtual orbital. It takes into account the relaxation of the one electron basis
+functions, i.e HF molecular orbitals, due to the correlation of the electronic
+motions. In second quantization\cite{JorgensenSimons81} formalism, $\hat{T_1}$
+can be written as :
+\begin{equation}
+\hat{T_1} = \sum_{ia}t^a_i\{{a}^\dagger_a a_i\}
+\end{equation}
+where the indices i, j, k ... refer to occupied orbitals while
+the indices a, b, c ... refer to virtual spin orbitals.
+In the above equation, ${a}^\dagger_a$ is called the creation operator as it
+creates a new particle state (virtual orbital) when it acts on a slater determinant.
+\begin{equation}
+{a}^\dagger_a\ket{\phi_b...\phi_d} = \ket{\phi_a\phi_b...\phi_d}
+\end{equation}
+$a_i$ is the hermitian conjugate of the creation operator and is called
+the annihilation operator as it removes a hole state (occupied orbital) when it acts on a
+slater determinant.
+\begin{equation}
+a_i\ket{\phi_i\phi_j...\phi_l} = \ket{\phi_j...\phi_l}
+\end{equation}
+The $\hat{T_2} $ operator is the linear combination of all double excitation operators.
+It correlates the motion of all pairs of electrons of the molecule and can be expressed
+in second quantization as:
+\begin{equation}
+\hat{T_2} = \frac{1}{4}\sum_{ijab}t^{ab}_{ij}\{a^\dagger_aa^\dagger_ba_ja_i\}
+\end{equation}
+Similarly, the ${\hat{T_3}}$ operator correlates the motion of all triplets of
+electrons and so on. In general, \begin{equation}
+\hat{T_n} = {\frac{1}{n!}}^2\sum_{ij..ab..}^nt^{ab..}_{ij..}\{a^\dagger_aa^\dagger_b...a_ja_i\}
+\end{equation}
+%\subsubsection{Coupled Cluster energy}
+%\paragraph{Coupled Cluster energy}~ \\
+If we expand the exponential ansatz of the CC wavefunction,
+\begin{equation}
+\ket{\Psi_{CC}} = (1+(\hat{T_1} + \hat{T_2} + \hat{T_3} + ... ) + \frac{1}{2!}{(\hat{T_1} + \hat{T_2} + \hat{T_3} + ...)}^2 + ... )\ket{\Psi_o}
+\end{equation}
+we get a linear combination of all possible Slater determinants, which makes CC
+wavefunction an exact wavefunction in the basis set limit, just like full
+configuration interaction. Thus, the full CC
+wavefunction is a solution of the Schr\"odinger equation.
+\begin{equation}
+\hat{H}e^{\hat{T}}\ket{\Psi_o} = E_{cc}\;e^{\hat{T}}\ket{\Psi_o}
+\end{equation}
+On multiplying the above equation by the inverse of the exponential operator i.e
+$e^{-\hat{T}}$ and projecting it against the reference and excited
+determinants, we get the energy and the amplitude equations of coupled cluster
+theory.
+\begin {equation}
+\bra{\Psi_o}e^{-\hat{T}}\hat{H}e^{\hat{T}}\ket{\Psi_o} = E_{cc}
+\end{equation}
+\begin{equation}
+%\bra{\Psi^{ab..}_{ij..}}e^{-\hat{T}}\hat{H}e^{\hat{T}}\ket{\Psi_o} = E\cancelto{0}{\bra{\Psi^{ab..}_{ij..}}\Psi_o\rangle} = 0 .
+\bra{\Psi^{a.}_{i.}}e^{-\hat{T}}\hat{H}e^{\hat{T}}\ket{\Psi_o} = 0 .
+\end{equation} 
+Here $\Psi^{a.}_{i.}$ can refer to any excited Slater determinant singles, doubles etc. 
+The similarity transformed Hamiltonian $e^{-\hat{T}}\hat{H}e^{\hat{T}}$ also
+written as $\bar{H}$ can be expressed in the Hausdorf expansion
+\cite{Merzbacher70}as:
+\begin{equation}
+e^{-\hat{T}}\hat{H}e^{\hat{T}} = \hat{H} + \lbrack\hat{H},\hat{T}\rbrack + \frac{1}{2!}\lbrack\lbrack\hat{H},\hat{T}\rbrack,\hat{T}\rbrack + \frac{1}{3!}\lbrack\lbrack\lbrack\hat{H},\hat{T}\rbrack,\hat{T}\rbrack,\hat{T}\rbrack + \frac{1}{4!}\lbrack\lbrack\lbrack\lbrack\hat{H},\hat{T}\rbrack,\hat{T}\rbrack,\hat{T}\rbrack,\hat{T}\rbrack + ...
+\end{equation}
+Also, the second quantized form of the Hamiltonian can be written as\cite{Crawford00}:
+\begin{equation}
+\hat{H} = \sum_{pq}h_{pq}\{a^\dagger_pa_q\} + \frac{1}{4}\sum_{pqrs}\bra{pq}\ket{rs}\{a^\dagger_pa^\dagger_qa_sa_r\}
+\end{equation}
+Using the above two equations and the Wick's theorem\cite{Wick50}, the coupled cluster energy
+equation gets simplified as:
+\begin{equation}
+E_{cc} = E_o + \sum_{ia}f_{ia}t^a_i + \frac{1}{4}\sum_{aibj}\bra{ij}\ket{ab}t^{ab}_{ij} + \frac{1}{2}\sum_{aibj}\bra{ij}\ket{ab}t^a_it^b_j
+\end{equation} The amplitudes $t^a_i$ and $t^{ab}_{ij}$ can be obtained by
+solving the coupled cluster amplitude equations. However, Full CC is
+computationally impractical and truncated CC methods like CCSD:\;$\hat{T} =
+\hat{T_1} + \hat{T_2}$, CCSDT:\;$\hat{T} = \hat{T_1} + \hat{T_2} + \hat{T_3}$ 
+are used. The CCSD(T)\cite{Shen12} method, which treats the triples approximately using
+perturbation theory is also a popular method.
+%is also very popular and uses an approximate 
+%treatment of triples using perturbation theory.
+%CCSD: $\hat{T} = \hat{T_1} + \hat{T_2} $ , CCSDT: $\hat{T} = \hat{T_1} + \hat{T_2} + \hat{T_3}$
+%, CCSDTQ: $\hat{T} = \hat{T_1} + \hat{T_2} + \hat{T_3} + \hat{T_4}$.
+%\\%CCSD(T) method uses an approximate treatment of triples using perturbation theory.
+%For the CCSD method the amplitude equations are:
+%\begin{equation}
+%\bra{\Psi^{a}_{i}}e^{-\hat{T}}\hat{H}e^{\hat{T}}\ket{\Psi_o} = 0
+%\end{equation}
+%\begin{equation}
+%\bra{\Psi^{ab}_{ij}}e^{-\hat{T}}\hat{H}e^{\hat{T}}\ket{\Psi_o} = 0
+%\end{equation}
+%CC truncation methods are more effective compared to that of the
+%CI. For example, although CCSD has the same number of coefficients
+%($t^{ab}_{ij}$ and $t^a_i$) as CISD ($c^{ab}_{ij}$ and $c^a_i$), CCSD
+%implicitly includes higher excitations than CISD because of the products of
+%cluster operators like $\hat{T_1}\hat{T_2}$, ${(\hat{T_2})}^2$ which capture
+%the triple and quadruple excitation contributions to the singles and doubles
+%amplitudes.
+%The exponential structure of the CC wavefunction makes more advantageous than the 
+%linear CI method. Because of this, truncated CC methods like CCSD are size extensive, which means they
+The exponential structure of the wavefunction makes the truncated CC methods more efficient 
+compared to that of the linear CI methods. CCSD wavefunction implicitly includes the triples
+and quadruples excitation contributions to its singles and doubles amplitude equations because 
+of the products of cluster operators like $\hat{T_1}\hat{T_2}$, ${(\hat{T_2})}^2$ etc., unlike 
+the CISD method which can only include singles and doubles excitation contributions. 
+Another advantage of this exponential ansatz is the property of size consistency\cite{Crawford00}.
+It means that the sum of the CC energies of non-interacting fragments (each calculated 
+separately) is equal to the energy of the supermolecule when all fragments are included 
+in the calculations. CC methods give very accurate results for molecules at their equilibrium 
+geometries\cite{Bartlett}. CCSD(T) is often referred as the "gold standard" method of electronic structure 
+theory. 
+%Also, one of the major advantages with the CC truncation methods is their
+%size-extensivity which makes them very useful. 
+However, CC methods are computationally expensiver: CCSD scales as $O(N^6)$, CCSD(T) as
+$O(N^7)$, CCSDT as $O(N^8)$ and so on, where $N$ is the number of basis functions.\\\\
+%and is routinely used for accurate results only for small molecules. While CCSD(T)
+%gives very good results for molecules at their equilibrium geometry, it fails
+%to describe diradical species and bond-breaking. CCSDT and CCSDTQ methods are
+%used virtually exclusively for high accuracy calculations of small molecules
+%as they are very computationally expensive.
+%\paragrpah{\bf{CC analytic derivatives}} ~\\\\
+\paragraph{CC analytic derivatives} ~ \\\\
+Molecular properties like dipole
+moments, IR intensities, force constants etc., depend upon the gradients of the
+molecular energy with respect to external perturbations. 
+In this section, a derivation of first order gradient expressions of the CC method is presented.\\
+%If we take the derivative of the CC energy directly with respect to any perturbation 
+%X,
+%, we get
+%\begin{equation}
+%\frac{\partial{E_{cc}}}{\partial X} = \bra{\phi_0}\frac{\partial{\bar H}}{\partial X}\ket{\phi_0},
+%\end{equation}
+%If we use the above equation for calculating gradients, 
+%we need to calculate
+%$\frac{\partial{t^a_i}}{\partial X}, \frac{\partial{t^{ab}_{ij}}}{\partial X}$
+%, we need to calculate the derivatives of non-linear amplitude equations, 
+%which makes it very computationally expensive. As a result, a different 
+%approach is used where one needs to solve some linear equations i.e. 
+%the Lambda equations, which are independent of the perturbation. 
+%In this section, a derivation of first order gradient expressions 
+%of CC method is presented using this approach.\\
+The gradient of the CC energy with respect to any external perturbation 
+X is written as:
+\begin{equation}
+\frac{\partial{E_{cc}}}{\partial X} = \bra{\Psi_o}\frac{\partial{\bar H}}{\partial X}\ket{\Psi_o} = \bra{\Psi_o}{\bar{H}}^X + \lbrack\bar H , \frac{\partial{\hat T}}{\partial X}\rbrack\ket{\Psi_o} 
+\end{equation}
+where, $ {\bar{H}}^X =  e^{-\hat{T}}\frac{\partial{\hat H}}{\partial X}e^{\hat{T}}$ contains the 
+derivatives of the basis functions, MO coefficients etc. Invoking the 
+resolution of identity (RI),
+\begin{equation}
+ 1 = \ket{\Psi_o}\bra{\Psi_o} + \sum_{ia}\ket{{\Psi}^a_i}\bra{{\Psi}^a_i} + \frac{1}{4}\sum_{ijab}\ket{{\Psi}^{ab}_{ij}}\bra{{\Psi}^{ab}_{ij}} + ...
+\end{equation}
+equation (19) can be expressed as:
+\begin{equation}
+\frac{\partial{E_{cc}}}{\partial X} = \bra{\Psi_o}{\bar{H}}^X\ket{\Psi_o} + \sum_{i.a.}\bra{\Psi_o}\bar{H}\ket{{\Psi}^{a.}_{i.}}\bra{{\Psi}^{a.}_{i.}}\frac{\partial{\hat T}}{\partial X}\ket{\Psi_o}.
+\end{equation}
+The second term of the above equation involves calculating derivatives of
+amplitudes i.e. $\bra{{\Psi}^{a}_{i}}\frac{\partial{\hat T}}{\partial
+X}\ket{\Psi_o} = \frac{\partial{t^a_i}}{\partial X}$, which can be very
+computationally expensive if calculated directly. As a result, we would like to
+recast the above equation in something which is computationally practical. We
+start with the CC amplitude equations, say singles equation and take
+its derivative with respect to X.
+\begin{equation} 
+0 = \bra{{\Psi}^a_i}{\bar{H}}^X + \lbrack\bar H , \frac{\partial{\hat T}}{\partial
+X}\rbrack\ket{\Psi_o} 
+\end{equation} 
+Using RI as before, we can write the above equation in the folllowing form:
+\begin{equation}
+\sum_{j.b.}\bra{{\Psi}^a_i}\bar{H}-E_{cc}\ket{{\Psi}^{b.}_{j.}}\bra{{\Psi}^{b.}_{j.}}\frac{\partial{\hat T}}{\partial X}\ket{\Psi_o} = - \bra{{\Psi}^a_i}{\bar{H}}^X\ket{\Psi_o} 
+\end{equation}
+or,
+\begin{equation} \bra{{\Psi}^{b.}_{j.}}\frac{\partial{\hat T}}{\partial
+X}\ket{\Psi_o} = -\sum_{ia}
+\bra{{\Psi}^{b.}_{j.}}{(\bar{H}-E_{cc})}^{-1}\ket{{\Psi}^a_i}\bra{{\Psi}^a_i}{\bar{H}}^X\ket{\Psi_o}
+\end{equation}
+The above equation was derived by considering the gradient of just the singles equation.
+Including the gradient of all the other amplitude equations and plugging the modified 
+equation into the expression for the gradient of energy eq.(21), we obtain:
+\begin{equation}
+\frac{\partial{E_{cc}}}{\partial X} = \bra{\Psi_o}{\bar{H}}^X\ket{\Psi_o} -
+\sum_{i.a.}\bra{\Psi_o}\bar{H}\ket{{\Psi}^{a.}_{i.}}\sum_{j.b.}
+\bra{{\Psi}^{a.}_{i.}}{(\bar{H}-E_{cc})}^{-1}\ket{{\Psi}^{b.}_{j.}}
+\bra{{\Psi}^{b.}_{j.}}{\bar{H}}^X\ket{\Psi_o}
+\end{equation}
+We define a perturbation independent $\Lambda$ operator such that:
+\begin{equation}
+\bra{\Psi_o}\Lambda\ket{\Psi^{b.}_{j.}} = -\sum_{i.a.}\bra{\Psi_o}\bar{H}\ket{{\Psi}^{a.}_{i.}}
+\bra{{\Psi}^{a.}_{i.}}{(\bar{H}-E_{cc})}^{-1}\ket{{\Psi}^{b.}_{j.}}.
+\end{equation}
+This $\Lambda$ operator can be seen as a de-excitation operator and can be written as:
+\begin{equation}
+\Lambda = \Lambda_1 + \Lambda_2 + \Lambda_3 + ...
+\end{equation} 
+where $\Lambda_1 = \sum_{ia}\lambda^i_a\{{a}^\dagger_i a_a\}$ is the singles de-excitation
+operator, $\Lambda_2$ is the doubles de-excitation operator and so on.  
+Using the lambda operator, the gradient expression gets simplified as:
+\begin{equation}
+\frac{\partial{E_{cc}}}{\partial X} = \bra{\Psi_o}(1 + \Lambda){\bar{H}}^X\ket{\Psi_o} = \bra{\Psi_o}(1 + \Lambda)e^{-\hat{T}}\frac{\partial{\hat H}}{\partial X}\ket{\Psi_{cc}}
+\end{equation}
+The governing equation for calculating the lambda amplitudes eq. (26) can be written
+in a more compact form:
+\begin{equation}
+\bra{\Psi_o}(1 + \Lambda)(\bar{H} - E_{cc})\ket{{\Psi}^{a.}_{i.}} = 0
+\end{equation}
+Thus instead of taking the gradients of the non-linear $T$ amplitude
+equations with respect to perturbations, we solve the linear perturbation-independent 
+$\Lambda$ equations for calculating the energy gradient.\\
+Also, $\bra{\Psi_o}(1 + \Lambda)e^{-\hat{T}}$ is the CC left hand wavefunction and 
+eq. (28) is a generalized Hellman-Feynman equation\cite{Feynman39}. For full CC the left and 
+right hand wavefunctions are Hermitian conjugates of each other, but this is not true for 
+the truncated CC methods. This is because of the non-hermiticity of the $\bar{H}$ operator.
+However, for second order derivatives, we do need to calculate the first derivatives of 
+either the $T$ or $\Lambda$ amplitudes with respect to a perturbation.
+%The derivative of the similarity transformed hamiltonian can be expressed as:
+%\begin{equation}
+%\frac{\partial{\bar{H}}}{\partial X} = {\bar{H}}^X + \lbrack\bar H , \frac{\partial{\hat T}}{\partial X}\rbrack, 
+%\end{equation}
+
+%\\By combining the CC energy and amplitude equations, we can write:
+%\begin{equation}
+%E_{CC} = \bra{\Lambda}\hat{H}\ket{\Psi_{CC}}
+%\end{equation}
+%where
+%\begin{equation}
+%\bra{\Lambda} = \bra{\Psi_o} + \sum_{\mu}{\zeta_{\mu}}\bra{\mu}e^{-\hat{T}}
+%\end{equation} In the above equation, $\bra{\mu}$ represents any excited Slater determinant.
+%$\zeta_{\mu}$ can be obtained if the bra state (Lambda) obeys the schr\"odinger's
+%equation.
+%\begin{equation}
+%\bra{\Lambda}\hat{H}e^{\hat{T}} = \bra{\Lambda}e^{\hat{T}}E_{cc}
+%\end{equation}
+%Right projecting the above equation onto the subspace \{$\ket{\nu}$\} (excited Slater determinants):
+%\begin{equation}
+%\sum_{\mu}\zeta_{\mu}A_{\mu\nu} = -\bra{\Psi_o}\lbrack\hat{H},\hat{\tau_{\nu}}\rbrack\ket{\Psi_{cc}}
+%\end{equation}
+%where $\hat{\tau_{\nu}}$ is an excitation operator:$\;\;\;\hat{\tau_{\nu}}\ket{\Psi_o} = \ket{\nu}$ , and 
+%\begin{equation}
+%A_{\mu\nu} = \bra{\mu}e^{-\hat{T}}\lbrack\hat{H},\hat{\tau_{\nu}}\rbrack\ket{\Psi_{cc}}
+%\end{equation}
+%We can solve for the parameters $\zeta_{\mu}$ from the above equation to get $\bra{\Lambda}.$ In the presence of a time-independent perturbation described by $\alpha \hat{V}$ with $\alpha$ as the strength parameter, the gradient of coupled cluster energy with respect to $\alpha$ at zero perturbation strength can be shown as:
+%\begin{equation}
+%\frac{\partial{E_{cc}}}{\partial {\alpha}}|_{\alpha=0} \;\;= \frac{\partial}{\partial{\alpha}}\bra{\Lambda (\alpha)}\hat{H}+\alpha \hat{V}\ket{\Psi_{CC}(\alpha)}|_{\alpha=0}\;\; = \;\;\;\bra{\Lambda}\hat{V}\ket{\Psi_{CC}}
+%\end{equation}
+%We are able to obtain the first order gradients of CC just by solving the linear
+%lambda equations to get the $\zeta_{\mu}$ parameters and plugging them in the
+%above expression. The $\bra{\Lambda}$ state is nothing the left hand coupled cluster wave
+%function, as it is a solution to the Schr\"odinger equation and the above equation satisfies the 
+%generalized Hellmann-Feynman theorem\cite{Feynman39}.
+%%For full CC, $\bra{\Lambda}$ and $\ket{\Psi_{cc}}$ are just hermitian
+%%conjugate, but they are different in case of truncated CC methods because %of
+%%the non-hermiticity of $\bar{H}$ operator.
+%\subsubsection{Coupled Cluster Linear Response (CCLR)}
+%\paragraph{Exact states}~\\
+\paragraph{Coupled cluster linear response (CCLR)}~\\\\
+CCLR method proposed by Koch and J{\o}rgensen in 1990\cite{Koch90} is a recipe for accurate
+calculations of response properties like dynamic polarizabilities, optical
+rotations, etc. In this section, we will outline important steps for the
+derivations of both general and CCLR response functions and also talk about
+different gauge representations used for calculating the response functions.\\
+The operator $V(t)$ which describes the interaction between the molecule and 
+an external time-dependent field can be expressed in the frequency domain as: 
+\begin{equation}
+V(t) = \int_{-\infty}^{\infty}d\omega\;\;V(\omega) e^{(-i\omega + \Gamma)t} ,
+\end{equation}
+The full Hamiltonian can then be written as: $H = H_o + V(t)$, where $H_o$ is the
+time independent unperturbed Hamiltonian. Assuming that $\Psi_o$ is an eigenstate of $H_o$
+%An exact wavefunction satisfies the Schr\"odinger equation: $H_o\ket{O} =
+%E_o\ket{O}$ where $H_o$ is the time independent Hamiltonian and $\ket{O}$ is an
+%eigenstate of the system. 
+and that the molecule is in state $\Psi_o$ when the perturbation starts at $t = -\infty$, 
+the $\ket{\Psi_o}$ state evolves in time as $\ket{\Psi_o(t)}$ according to the time-dependent 
+Schr\"odinger equation.
+\begin{equation}
+i\frac{d}{dt}\ket{\Psi_o(t)} = (H_o + V^t)\ket{\Psi_o(t)}
+\end{equation}
+%It can be shown that the time dependent state $\ket{\Psi_o(t)}$ is related to 
+Following the work of Olsen\cite{Olsen85}, the time dependent state $\ket{\Psi_o(t)}$
+can be written as:
+\begin{equation}
+\ket{\Psi_o(t)} = \ket{\bar{\Psi_o}}e^{i\epsilon(t)}
+\end{equation}
+where $\epsilon$ is a phase factor and the state $\ket{\bar{\Psi_o}}$ can be expressed as\cite{Koch90}:
+%using perturbation theory. Specifically,
+\begin{equation}
+\ket{\bar{\Psi_o}} = \ket{\Psi_o} + {\ket{\Psi_o}}^{(1)}+ {\ket{\Psi_o}}^{(2)} + ...
+\end{equation}
+where first order correction ${\ket{\Psi_o}}^{(1)}$ and others can be determined 
+from the time dependent perturbation theory. For calculating any response property, the
+expectation value of the respective time independent  operator is calculated in
+the presence of an external field. The response functions can be seen as the
+coefficients of terms which appear in different orders of perturbation in $V(t)$
+in the expansion of the expectation value.\cite{Koch90} 
+%Furthermore, the expectation value of any time dependent operator $A$ can
+%expanded as\cite{Koch90} : 
+\begin{equation}
+\bra{\Psi_o(t)}A\ket{\Psi_o(t)} = \bra{\Psi_o}A\ket{\Psi_o} + \int_{-\infty}^{\infty}d\omega_1{\langle\langle A;V({\omega_1})\rangle\rangle}_{\omega_1 + i\Gamma}e^{(-i\omega_1 + \Gamma)t} + .....
+\end{equation}
+where we only considered the linear response function $\langle\langle A;V({\omega_1})\rangle\rangle$ 
+and neglected the higher order terms. If the perturbation field is composed of a 
+single frequency ($\omega_1$) , the linear response function can be written as:
+\begin{equation}
+\langle\langle A;V({\omega_1})\rangle\rangle = \sum_k\{
+\frac{\bra{\Psi_o}A\ket{\Psi_k}\bra{\Psi_k}V({\omega_1})\ket{\Psi_o}}{\omega_1
+- \omega_k + i\Gamma}  -
+\frac{\bra{\Psi_o}V({\omega_1})\ket{\Psi_k}\bra{\Psi_k}A\ket{\Psi_o}}{\omega_1 + \omega_k +
+i\Gamma}\} \end{equation}
+%The above equation is called the sum of states (SOS) equation , 
+where $\omega_k$ is the excitation energy between the states $\Psi_o$ and $\Psi_k$ 
+and the summation runs over all the solutions of the time independent Schr\"odinger equation $\Psi_k$.
+It can be seen from eq.(2) that $\textbf{G}^{\prime}(\omega)$ is nothing but the imaginary part of this 
+response function if we take $A$ as the dipole moment operator with $V$ as a magnetic field.
+However, this approach is very computationally expensive for CC methods and we approximate the above 
+linear response function using CCLR theory.
+%\paragraph{CC linear response function}~\\\\
+Using the same approach as above, the right and left hand CC wavefunction evolve in time as\cite{Koch90}:
+\begin{equation}
+\ket{\Psi_{cc}(t)} = e^{\hat{T}(t)}\ket{\Psi_o}e^{i\epsilon(t)}
+\end{equation}
+\begin{equation} \bra{\Lambda(t)} = \{\bra{\Psi_o} +
+\sum_{i.a.}\lambda^{a.}_{i.}(t)\bra{\Psi^{a.}_{i.}}e^{-\hat{T}(t)}\}e^{-i\epsilon(t)}
+\end{equation}
+where $e^{\pm i\epsilon(t)}$ is a time dependent phase factor
+and we have time dependent $T$ and $\lambda^{a.}_{i.}$ amplitudes. The governing equation for 
+the time dependence of these amplitudes is the time-dependent Schr\"odinger equation.
+\begin{equation}
+i\frac{d}{dt}\ket{\Psi_{cc}(t)} = (H_o + V(t))\ket{\Psi_{cc}(t)} 
+\end{equation}
+\begin{equation}
+\frac{d}{dt}\bra{\Lambda(t)} = i\bra{\Lambda(t)}(H_o + V(t))
+\end{equation}
+On multiplying eq. (38) by $e^{-\hat{T}(t)}$ on both sides and projecting 
+it against $\bra{\Psi^{a.}_{i.}}$, we obtain the expression for the time evolution 
+of $t^{a.}_{i.}$ amplitudes.
+\begin{equation}
+\frac{dt^{a.}_{i.}}{dt} = -i\bra{\Psi^{a.}_{i.}}e^{-\hat{T}(t)}(H_o + V(t))e^{\hat{T}(t)}\ket{\Psi_o}
+\end{equation}
+On multiplying eq.(38) by $e^{i\epsilon(t)}$ and invoking the RI, the expression for 
+time evolution of $\lambda^{b.}_{j.}$ amplitudes can be obtained:
+\begin{equation}
+\frac{d\lambda^{b.}_{j.}}{dt} =
+i\bra{{\tilde{\Lambda}}(t)}\lbrack H_o + V(t),\{{a}^\dagger_b.
+a_j.\}\rbrack\ket{{\widetilde{\Psi}_{cc}}(t)}
+\end{equation} 
+where $\sim$ denotes the usual expressions without the phase factor $e^{\pm i\epsilon(t)}$. 
+Expanding the $t^{a.}_{i.}$ amplitudes in orders of perturbation of V(t), the 
+expressions for the different orders can be obtained using eq. (38). The first order
+derivative can be written as:
+%\begin{equation}
+%t_\mu(t) = {t}^{(0)}_\mu(t) +  {t}^{(1)}_\mu(t) +  {t}^{(2)}_\mu(t) + ...
+%\end{equation}
+%\begin{equation}
+%i\frac{d\;{t^{a.}_{i.}}^{(0)}}{dt} = \bra{\Psi^{a.}_{i.}}e^{-\hat{T}(0)}H_o\ket{\Psi_{cc}} = 0 ,
+%\end{equation}
+\begin{equation}
+i\frac{d\;{t^{a.}_{i.}}^{(1)}}{dt} = \bra{\Psi^{a.}_{i.}}e^{-\hat{T}(0)}V(t)\ket{\Psi_{cc}} + \bra{\Psi^{a.}_{i.}}e^{-\hat{T}(0)}\lbrack H_o,T^{(1)}\rbrack\ket{\Psi_{cc}}
+\end{equation}
+The amplitude $t^{a.}_{i.}$ can be expressed in terms of its Fourier transform as: 
+\begin{equation}
+{t^{a.}_{i.}}^{(1)}(t) = \int_{-\infty}^{\infty} d\omega_1{X^{a.}_{i.}}^{(1)}(\omega_1 + i\Gamma)e^{(-i\omega_1 + \Gamma) t}
+\end{equation}
+where
+\begin{equation}
+{X^{a.}_{i.}}^{(1)}(\omega_1 + i\Gamma)  = \sum_{j.b.}{\left\{{(-A + (\omega_1 + i \Gamma) I )}^{-1}\right\}}^{j.b.}_{i.a.}{\lambda^{b.}_{j.}}^{(1)}(\omega_1),
+\end{equation}
+and  
+\begin{equation}
+{\lambda^{b.}_{j.}}^{(1)}(\omega_1) = \bra{\Psi^{b.}_{j.}}e^{-\hat{T}(0)}V(\omega_1)\ket{\Psi_{cc}}.
+\end{equation}
+$A$ is the coupled cluster Jacobian matrix defined as:
+\begin{equation}
+A^{j.b.}_{i.a.} = \bra{\Psi^{a.}_{i.}}e^{-\hat{T}}\lbrack H_o,\{{a}^\dagger_b.a_j.\}\rbrack\ket{\Psi_{cc}}
+\end{equation}
+The above process is repeated with $\lambda^{j.}_{b.}$ amplitudes to obtain the derivative expressions and the Fourier transform $Y$.
+\begin{equation}
+\frac{d\;{\lambda^{b.}_{j.}}^{(1)}}{dt} = i\bra{\Lambda}(\lbrack\lbrack H_o,\{{a}^\dagger_b.a_j.\}\rbrack,T^{(1)}\rbrack + \lbrack V(t),\{{a}^\dagger_b.a_j.\}\rbrack)\ket{\Psi_{cc}} + i\sum_{i.a.} {\lambda^{a.}_{i.}}^{(1)}A^{j.b.}_{i.a.} 
+\end{equation}
+\begin{equation} 
+{Y^{a.}_{i.}}^{(1)}(\omega_1 + i\Gamma) = - \sum_{j.b.}{\eta^{b.}_{j.}}^{(1)}(\omega_1) + \sum_{k.c.}F^{k.c.}_{j.b.} {X^{c.}_{k.}}^{(1)}(\omega_1 + i\Gamma)) \times\{{(A + (\omega_1 + i\Gamma)I)}^{-1}\}^{i.a.}_{j.b.}
+\end{equation}
+where
+\begin{equation}
+{\eta^{b.}_{j.}}^{(1)}(\omega_1) = \bra{\Lambda}\lbrack V(\omega_1),\{{a}^\dagger_b.a_j.\}\rbrack\ket{\Psi_{cc}} ,
+\end{equation}
+and 
+\begin{equation}
+F^{k.c.}_{j.b.} = \bra{\Lambda}\lbrack\lbrack H_o,\{{a}^\dagger_b.a_j.\}\rbrack,\{{a}^\dagger_c.a_k.\}\rbrack\ket{\Psi_{cc}}  
+\end{equation}
+The expectation value of any time dependent operator $A$ in CC can be expanded in orders of perturbation.
+\begin{equation}
+\langle A \rangle = \bra{\Lambda}A\ket{\Psi_{cc}} + \sum_{i.a.}{\lambda^{a.}_{i.}}^{(1)}\bra{\Psi^{a.}_{i.}}e^{-\hat{T}(0)}A\ket{\Psi_{cc}} + \bra{\Lambda}\lbrack A,T^{(1)}\rbrack\ket{\Psi_{cc}} + .....
+\end{equation}
+Comparing this with equation (34), the CC linear response function can be determined.
+\begin{equation}
+\int_{-\infty}^{\infty}d\omega_1{\langle\langle A;V(\omega_1)\rangle\rangle}_{\omega_1 + i \Gamma}e^{(-i\omega_1 + \Gamma)t} \equiv \sum_{i.a.}{\lambda^{a.}_{i.}}^{(1)}\bra{\Psi^{a.}_{i.}}e^{-\hat{T}(0)}A\ket{\Psi_{cc}} + \bra{\Lambda}\lbrack A,T^{(1)}\rbrack\ket{\Psi_{cc}}
+\end{equation}
+In more general terms, the response function can be written as:
+\begin{equation}
+{\langle\langle A;B\rangle\rangle}_{\omega_1} = \sum_{i.a.} \bra{\Lambda}\lbrack A,\{{a}^\dagger_a.a_i.\}\rbrack\ket{ \Psi_{cc}}{X^{a.}_{i.}}(B,\omega_1) + \sum_{i.a.}\left\{\bra{\Lambda}\lbrack B,\{{a}^\dagger_a.a_i.\}\rbrack\ket{\Psi_{cc}} + \sum_{k.c.}F^{k.c.}_{i.a.}{X^{c.}_{k.}}(B,\omega_1)\right\}{X^{a.}_{i.}}(A,-\omega_1).
+\end{equation}
+where \centerline{${X^{a.}_{i.}}(B,\omega_1) = \sum_{j.b.}\left\{ {( -A + \omega_1I)}^{-1}\right\}^{j.b.}_{i.a.}\;B^{b.}_{j.},$}\\and \centerline{ $B^{b.}_{j.} = \bra{\Psi^{a.}_{i.}}e^{-\hat{T}(0)}B\ket{\Psi_{cc}}$ .}\\\\
+Thus for calculating the response functions, we need to solve two sets of
+linear equations for obtaining ${X^{a.}_{i.}}(B,\omega_1)$ and
+${X^{a.}_{i.}}(A,-\omega_1)$.
+%\newpage
+%\paragraph{Optical rotation calculations}~\\
+%Rosenfeld,\cite{Rosenfeld29} using semi-classical electrodynamic theory, showed
+%that the induced electric dipole moment can be written as: \begin{equation}
+%\langle\vec{\mu}\rangle = \alpha\vec{E} +
+%\frac{1}{\omega}\textbf{G}^\prime\frac{\partial\vec{B}}{\partial t}
+%\end{equation}
+%where $\vec{E} $ and $\vec{B}$ are electric and magnetic field vectors
+%respectively, $\alpha$ is the electric dipole polarizability tensor while
+%$\textbf{G}^\prime$ tensor is the key quantity for calculating optical
+%rotation.  \begin{equation}
+%\textbf{G}^{\prime}_{xy}(\omega) = -\frac{2}{\hbar} Im\sum_{n \neq 0}\frac{\omega\; \bra{\psi_o}\mu_x\ket{\psi_n}\bra{\psi_n}m_y\ket{\psi_o}}{\omega^{2}_{n0}-\omega^2}
+%\end{equation}
+%where $\mu$ and $m$ are electric and magnetic dipole operators: $\mu = \sum_i
+%r_i , m= \sum_ir_i\times p_i$ in atomic units. $\omega$ is the frequency of
+%light, $\omega_{no}$ is the excitation energy for the $n^{th}$ state ($\psi_n$) and
+%$Im$ means the imaginary part of the equation. The trace of this tensor is related
+%to the specific rotation, usually denoted as ${\lbrack\alpha\rbrack}_\omega $ in
+%deg dm$^{\text{-1}}$(g/mL)$^{\text{-1}}$. After averaging over all possible
+%orientations of the molecule, the following expression is obtained\cite{Crawford06}. \begin{equation}
+%{\lbrack\alpha\rbrack}_{\omega} = \frac{(72.0 \times 10^6){\hbar}^2 N_A\;\omega}{c^2{m_e}^2 M} \times \left[ \frac{1}{3}Tr(\textbf{G}^\prime)\right]
+%\end{equation}
+%where $\textbf{G}^\prime$ and $\omega$ are in atomic units, $N_A$ is Avogadro's number, c is the speed of light in (m/s), m$_{\text{e}}$ is the mass of electron (kg) and M is the molecular mass (amu). The $\textbf{G}^\prime$ tensor can be obtained from using the CCLR method.
+Thus, we can use this linear response formalism and can calculate the $\textbf{G}^\prime$ tensor
+using eq.(4) in which A is the dipole moment operator and B is the magnetic field. However, there 
+can be different representations of an operator which are referred to as gauges. It is observed that 
+in the truncated CCLR method if the length gauge representation of the dipole operator is used, i.e. $\mu \equiv r$ (in atomic units), the optical rotation results are origin dependent. This problem is overcome in CCLR by using the velocity
+gauge representation where $\mu \equiv r\times p$. However, both these gauges are equivalent for 
+exact wavefunctions. However, the velcity gauge calculated optical rotation does not decay to zero 
+at the static limit, i.e. when the external field is zero, which is an unphysical result. 
+To correct this problem, another representation called the modified velocity gauge (MVG)
+proposed by Pedersen \cite{Pedersen04} is used which shifts the values obtained
+by velocity gauge by its static limit. 
+
+%\begin{equation}
+%\textbf{G}^{\prime}(\omega) = \text{-Im}\langle\langle\mu;m\rangle\rangle \equiv \text{- Im}\langle\langle r;r\times p\rangle\rangle
+%\end{equation} 
+%The above results obtained using the length gauge representation ($\mu
+%\equiv r$) above, however is origin dependent. This is fixed by using the velocity
+%gauge representation where the dipole moment operator is written as a momentum operator ($\mu
+%\equiv {\frac{p}{\omega}}$) . Length and velocity gauge representations are equivalent for exact 
+%wavefunctions.
+%\begin{equation}
+%\text{Tr}{\langle\langle r;r\times p\rangle\rangle}_{\omega} = \frac{1}{\omega}\text{Tr}{\langle\langle p;r\times p\rangle\rangle}_{\omega} 
+%\end{equation}
+%However, the velocity gauge calculations does not decay to zero at the static
+%limit, i.e when the external field is zero, which is an unphysical result. To
+%overcome this, another representation called modified velocity gauge (MVG)
+%proposed by Pedersen \cite{Pedersen04} is used which shifts the values obtained
+%by velocity gauge by it's static limit value.
+

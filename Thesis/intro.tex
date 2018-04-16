@@ -1,0 +1,95 @@
+%\section{Introduction}
+
+Start talking about optical rotation as a property. Science behind this property!!
+Points to talk:
+1. Some history of optical rotation (MC Tam's thesis)
+    a. chirality - same story as my Internal Seminar.
+    b. Drug thalidomide example
+    c. Chiroptical spectroscopy
+    d. Theory as a tool!
+    e. Some history of OR calculations (Harley's thesis)
+    f. TD-DFT not enough in most cases, CC needed (known problems of DFT)
+    g. Challenges of CC - (mention about MD as well.)
+    h. My work comes in here!
+
+
+Theoretical and computational chemistry has grown by leaps and bounds over the
+past several decades. Ab initio quantum chemical methods can now accurately
+predict a variety of molecular properties. More recently, these methods have
+been extended to calculate chiroptical
+properties like optical rotation. Theoretical calculations of optical rotation
+can be very useful in solving experimental chemical problems.  Specifically, they
+can provide a computational tool to modern organic chemists to determine
+the absolute stereochemical configuration of a chiral compound, thus alleviating the experimental difficulties
+involved.\\ Rosenfeld laid the theoretical foundations for calculating optical
+roatation in 1929\cite{Rosenfeld29}. He showed that in the presence of an
+external field, the induced dipole moment in a molecule can be written as:
+\begin{equation}\langle\vec{\mu}\rangle = \alpha\vec{E} + \frac{1}{\omega}\textbf{G}^\prime\frac{\partial\vec{B}}{\partial t}
+\end{equation} where $\vec{E} $ and $\vec{B}$ are the time dependent electric and
+magnetic field vectors respectively, $\omega$ is the frequency of the filed, $\alpha$ is the electric dipole
+polarizability tensor and the $\textbf{G}^\prime$ tensor, also known as the Rosenfeld
+tensor contains the recipe for calculating optical rotation.
+\begin{equation}
+\textbf{G}^{\prime}(\omega) = -\frac{1}{\hbar} Im\sum_{n \neq 0}\left[\frac{\bra
+{\psi_o}\vec{\mu}\ket{\psi_n}\bra{\psi_n}\vec{m}\ket{\psi_o}}{\omega_{no} - \omega - i\Gamma_{no}} + \frac{\bra
+{\psi_o}\vec{m}\ket{\psi_n}\bra{\psi_n}\vec{\mu}\ket{\psi_o}}{\omega_{no} + \omega + i\Gamma_{no}} \right]
+\end{equation}
+Here, $\vec{\mu}$ and $\vec{m}$ are electric and magnetic dipole operators,
+%: $\mu =
+%\sum_ir_i,\;\; m= \sum_ir_i\times p_i$ (in atomic units).  
+ $\omega$ is the frequency of light, $\omega_{no}$ is the excitation energy of
+the state $\psi_n$ and $\Gamma_{no}$ is the dephasing rate between the states
+$\psi_o$ and $\psi_n$.
+% taken to be zero when the field frequency is far from
+%resonance
+\cite{CrawfordTamJPA07}. $Im$ means the imaginary part of the equation and the
+summation runs over all the excited states $\psi_n$. The trace of this tensor
+is related to the specific rotation, usually denoted as
+${\lbrack\alpha\rbrack}_\omega$ in
+deg dm$^{\text{-1}}$(g/mL)$^{\text{-1}}$
+%After averaging over all possible
+%orientations of the molecule,the following expression is obtained
+\cite{Crawford06}.
+\begin{equation}
+{\lbrack\alpha\rbrack}_{\omega} = \frac{(72.0 \times 10^6){\hbar}^2 N_A\;\omega}{c^2{m_e}^2 M} \times \left[ \frac{1}{3}Tr(\textbf{G}^\prime)\right]
+\end{equation}
+Here, $\textbf{G}^\prime$ and $\omega$ are in atomic units, c is the speed of light (m/s), m$_{\text{e}}$ is the mass of
+electron (kg), M is the molecular mass (amu) and $N_A$ is Avogadro's
+number. Calculating the $\textbf{G}^\prime$ tensor using equation (2) requires explicit calculations of a large
+number of excited states, which is very computationally expensive. Most ab initio methods
+use the linear response formalism\cite{Koch90,Kobayashi94} instead to calculate
+${\lbrack\alpha\rbrack}_\omega$.
+\begin{equation}
+\textbf{G}^{\prime}(\omega) = Im\langle\langle\mu;m\rangle\rangle
+\end{equation} The linear response approach focuses on the perturbation of the
+ground state wavefunction in the presence of an external field, avoiding
+excited state calculations. Different levels of theory have been employed
+over the years for calculating optical rotation. Polavarapu was the first to
+calculate ab-initio optical rotation of gas phase molecules using the time
+dependent Hartree Fock method\cite{Polavarapu96}. The signs of the calculated optical
+rotation values matched with that of the experiment for most of his structures,
+while their magnitudes differed generally by a factor of two. Inspired by
+Polavarapu's success, Cheeseman et al. \cite{Cheeseman00,Stephens01} included correlation
+effects in the calculations by applying density functional theory.
+Using large basis sets with diffuse functions like aug-cc-pVDZ and aug-cc-pVTZ,\cite{Dunning89} they were able to match the experimental values very closely, with a deviation of 20-25 degrees
+for a set of 28 chiral molecules. Ruud et al. extended the calculations to the
+coupled cluster level using the coupled cluster response
+theory (CCLR) developed by Koch and J{\o}rgensen\cite{Koch90},
+and obtained promising results\cite{Ruud03}. These initial breakthroughs have allowed optical
+rotation calculations to be performed on a large number of chiral molecules over the years.  As
+such, the gas phase calculations have become very reliable now and are being
+increasingly used to determine absolute configurations of many chiral molecules.\cite{Kondru99} \\However, since most of the experimental measurements of optical rotation are
+performed in solutions, we need to be able to calculate this property for solutions
+as well. But a larger number of molecules and stronger intermolecular interactions
+makes the modelling of solution phase optical rotation much more challenging and
+complicated than that of the gas phase. In recent years, the ab inito methods
+mentioned above have been combined with various solvation based
+approaches\cite{Neugebauer05,Neugebauer09,Mennucci02,Tomasi05,JensenGordon96}
+to calculate the optical rotation in solution. This review condiders some of
+the popular approaches that are being used and describes their working
+mechanisms and performances in detail. In the current/future work section of
+this review, some reduced scaling techniques are proposed with the aim of
+making these methods more efficient and computationally practical. Also, some
+of the essential, underlying coupled cluster and response theory used for
+optical rotation calculations are presented and discussed.
+

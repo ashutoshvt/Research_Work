@@ -1,51 +1,135 @@
 This is BibTeX, Version 0.99d (TeX Live 2016)
 Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: etd.aux
+Case mismatch error between cite keys koch90 and Koch90
+---line 171 of file etd.aux
+ : \citation{koch90
+ :                 }
+I'm skipping whatever remains of this command
+Case mismatch error between cite keys Revisited and revisited
+---line 175 of file etd.aux
+ : \citation{Revisited
+ :                    }
+I'm skipping whatever remains of this command
 The style file: plain.bst
-Database file #1: refs.bib
+Database file #1: papes.bib
+"{" immediately follows a field name---line 1644 of file papes.bib
+ : @article
+ :         {Kitaura01,
+I'm skipping whatever remains of this entry
+Repeated entry---line 3412 of file papes.bib
+ : @article{Becke93
+ :                 ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 3446 of file papes.bib
+ : @article{psi4
+ :              ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 3477 of file papes.bib
+ : @article{Dunning89
+ :                   ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 3505 of file papes.bib
+ : @article{Lowdin55
+ :                  ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 3541 of file papes.bib
+ : @article{Meyer73
+ :                 ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 3549 of file papes.bib
+ : @article{Ahlrichs75
+ :                    ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 3558 of file papes.bib
+ : @article{Jensen88
+ :                  ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 3600 of file papes.bib
+ : @article{Taube08
+ :                 ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 3617 of file papes.bib
+ : @article{Neese09
+ :                 ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 3679 of file papes.bib
+ : @article{McAlexander12
+ :                       ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 3705 of file papes.bib
+ : @article{Russ04
+ :                ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 3713 of file papes.bib
+ : @article{Russ08
+ :                ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 3721 of file papes.bib
+ : @article{Korona04
+ :                  ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 3747 of file papes.bib
+ : @article{Rice91
+ :                ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 3758 of file papes.bib
+ : @article{Hattig95
+ :                  ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 3769 of file papes.bib
+ : @article{Aiga96
+ :                ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 3831 of file papes.bib
+ : @article{Pedersen01
+ :                    ,
+I'm skipping whatever remains of this entry
 Warning--I didn't find a database entry for "Sundholm13"
 Warning--I didn't find a database entry for "Mester17"
 Warning--I didn't find a database entry for "Mester18"
+Warning--I didn't find a database entry for "revisited"
 Warning--I didn't find a database entry for "McAlexander15"
-You've used 45 entries,
+Warning--empty title in Olsen85
+You've used 72 entries,
             2118 wiz_defined-function locations,
-            829 strings with 12890 characters,
-and the built_in function-call counts, 16423 in all, are:
-= -- 1572
-> -- 836
-< -- 7
-+ -- 331
-- -- 278
-* -- 1297
-:= -- 2785
-add.period$ -- 138
-call.type$ -- 45
-change.case$ -- 267
+            1012 strings with 17410 characters,
+and the built_in function-call counts, 26107 in all, are:
+= -- 2508
+> -- 1289
+< -- 9
++ -- 516
+- -- 430
+* -- 2077
+:= -- 4390
+add.period$ -- 218
+call.type$ -- 72
+change.case$ -- 420
 chr.to.int$ -- 0
-cite$ -- 45
-duplicate$ -- 534
-empty$ -- 1248
-format.name$ -- 278
-if$ -- 3400
+cite$ -- 73
+duplicate$ -- 858
+empty$ -- 1995
+format.name$ -- 430
+if$ -- 5416
 int.to.chr$ -- 0
-int.to.str$ -- 45
-missing$ -- 46
-newline$ -- 228
-num.names$ -- 96
-pop$ -- 193
+int.to.str$ -- 72
+missing$ -- 76
+newline$ -- 362
+num.names$ -- 150
+pop$ -- 320
 preamble$ -- 1
-purify$ -- 223
+purify$ -- 353
 quote$ -- 0
-skip$ -- 362
+skip$ -- 587
 stack$ -- 0
-substring$ -- 1217
-swap$ -- 73
-text.length$ -- 7
+substring$ -- 1979
+swap$ -- 124
+text.length$ -- 9
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 178
-warning$ -- 0
-while$ -- 141
-width$ -- 47
-write$ -- 505
-(There were 4 warnings)
+type$ -- 280
+warning$ -- 1
+while$ -- 220
+width$ -- 74
+write$ -- 798
+(There were 20 error messages)

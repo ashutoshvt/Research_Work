@@ -188,26 +188,89 @@ polarizabilities and specific rotations of a number of chiral molecules .
 
 \subsection{Coupled Cluster Response Theory}
 The response functions for calculating dynamic higher-order properties 
-are defined by the frequency dependent coefficients 
-appearing in the expansion of the expectation value of an appropriate 
-time-independent operator in orders of the perturbation.
+can be defined by the frequency dependent coefficients appearing in the 
+expansion of the expectation value of an appropriate time-independent 
+operator in orders of the perturbation.\cite{koch90}
 \begin{equation}
-A(t) = \langle \Psi^{(0)} | \hat{A} | \Psi^{(0)} \rangle \
-+ \langle \Psi^{(1)}(t) | \hat{A} | \Psi^{(0)} \rangle\
-+ \langle \Psi^{(0)} | \hat{A} | \Psi^{(1)}(t) \rangle\ 
-+ \langle \Psi^{(1)}(t) | \hat{A} | \Psi^{(1)}(t) \rangle + ... \\
+\begin{split}
+\langle A \rangle (t) = \langle A \rangle + & \int_{-\infty}^{\infty}\
+d\omega_1{\langle\langle A;V^{\omega_1}\rangle\rangle}_{\omega_1  \
++ i\alpha}e^{-i(\omega_1 + i\alpha)t} \\
+& + \frac{1}{2} \int_{-\infty}^{\infty}d\omega_1\int_{-\infty}^{\infty}d\omega_2\
+{\langle\langle A;V^{\omega_1};V^{\omega_2}\rangle\rangle}_{\omega_1 \
++ i\alpha,\omega_2 + i\alpha}e^{-i(\omega_1 + \omega_2 + 2i\alpha)t} + .....
+\end{split}
 \end{equation}
-For example, the linear reponse function ${\langle\langle A;B\rangle\rangle}_{\omega_1} $ 
-can be seen as the first order change in the expectation value of $\hat{A}$ in 
-the time-dependent field parametrized by the operator $B$,
+%\begin{equation}
+%A(t) = \langle \Psi^{(0)} | \hat{A} | \Psi^{(0)} \rangle \
+%+ \langle \Psi^{(1)}(t) | \hat{A} | \Psi^{(0)} \rangle\
+%+ \langle \Psi^{(0)} | \hat{A} | \Psi^{(1)}(t) \rangle\ 
+%+ \langle \Psi^{(1)}(t) | \hat{A} | \Psi^{(1)}(t) \rangle + ... \\
+%\end{equation}
+\\
+Here $\langle A \rangle$ is the time independent expectation value and
+${\langle\langle A;V^{\omega_1}\rangle\rangle}_{\omega_1 + i\alpha}$
+%${\langle\langle A,V^{\omega_1},V^{\omega_2}\rangle\rangle}_{\omega_1 + i\alpha,\omega_2 + i\alpha}$ is the 
+is the linear response function (LRF) i.e. the first order change in the expectation value of 
+$A$ in a time-dependent field $V$ at frequency $\omega_1$. The third term in the expansion
+contains the quadratic response function and so on. For a CC wavefunction, time-dependent 
+expectation value of $A$ is defined as\cite{revisited},
 \begin{equation}
-\int_{-\infty}^{\infty}d\omega_1{\langle\langle A;\
-B\rangle\rangle}_{\omega_1 + i\alpha}e^{(-i\omega_1 + \alpha)t} \
-= \langle \Psi^{(1)}(t) | \hat{A} | \Psi^{(0)} \rangle\
-+ \langle \Psi^{(0)} | \hat{A} | \Psi^{(1)}(t) \rangle\
+\begin{split}
+{\langle A \rangle}_{CC} (t) = & Re [\langle \Lambda(t) | A | CC(t)\rangle ]\\
+& = \frac{1}{2} (\langle \Lambda(t) | A | CC(t)\rangle  + {\langle \Lambda(t) | A | CC(t)\rangle}^{*})
+\end{split}
 \end{equation}
-One can obtain electric-electric ($\alpha$) and electric-magnetic ($\beta$)
-dipole polarizability tensors from the linear response function with appropriate
+\\
+where $\langle \Lambda(t)|$ and $|CC(t)\rangle$ are the left and right time dependent 
+phase-isolated CC wavefunction, parametrized as,
+\begin{equation}
+\begin{split}
+&  \langle \Lambda(t) |  = \langle 0 | + \sum_{\mu}\lambda_{\mu}(t)\langle \mu|e^{-T(t)} \\
+& |CC(t)\rangle = e^{T(t)}|0\rangle.
+\end{split}
+\end{equation}
+\\
+%parametrized by the operator $B$,
+%\begin{equation}
+%\int_{-\infty}^{\infty}d\omega_1{\langle\langle A;\
+%B\rangle\rangle}_{\omega_1 + i\alpha}e^{(-i\omega_1 + \alpha)t} \
+%= \langle \Psi^{(1)}(t) | \hat{A} | \Psi^{(0)} \rangle\
+%+ \langle \Psi^{(0)} | \hat{A} | \Psi^{(1)}(t) \rangle\
+%\end{equation}
+where $\mu$ refers to excited determinants i.e. singles, doubles etc.,
+and $|0\rangle$ is the reference wavefunction. To identify CC response 
+functions one needs to expand $\langle \Lambda(t) | A | CC(t)\rangle$ 
+in orders of perturbation\cite{Revisited},
+\begin{equation}
+\begin{split}
+\langle \Lambda(t) | A | CC(t) \rangle & = {\langle \Lambda(t) | A | CC(t) \rangle}^{(0)}\
+ + {\langle \Lambda(t) | A | CC(t) \rangle}^{(1)} \
++ {\langle \Lambda(t) | A | CC(t) \rangle}^{(2)} + ... \\
+& = \langle \Lambda | A | CC \rangle + \int_{-\infty}^{\infty}d\omega_1 \
+F^{A;V^{\omega_1}}_{\omega_1 + i\alpha}e^{-i(\omega_1 + i\alpha)t} \\
+& + \frac{1}{2} \int_{-\infty}^{\infty}d\omega_1\int_{-\infty}^{\infty}d\omega_2\
+F^{A;V^{\omega_1};V^{\omega_2}}_{\omega_1 + i\alpha,\omega_2 \
++ i\alpha}e^{-i(\omega_1 + \omega_2 + 2i\alpha)t} + .....
+\end{split}
+\end{equation}
+\\
+From eqns 4.1-4.4 and using the relation $F^{B;A}_{-\omega_1}=F^{A;B}_{\omega_1}$,
+the CC-LRF can be identified as
+\begin{equation}
+{\langle\langle A;V^{\omega_1} \rangle\rangle}_{\omega_1 + i\alpha} \
+= \frac{1}{2}( F^{A;V^{\omega_1}}_{\omega_1 + i\alpha} + \
+(F^{V^{\omega_1};A}_{\omega_1 + i\alpha})^{*})
+\end{equation}
+Alternatively, LRFs can also be defined as second-order derivatives 
+of a time-averaged quasi-energy with respect to external perturbations $\hat{A}$ and
+$\hat{B}$. This formalism is specially useful for deriving LRFs for approximate
+coupled cluster theories like CC2, CC3 etc. 
+%Moreover, it also lets one see the connection   
+%between response theory and the regular gradient theory for calculating molecular
+%gradients. 
+The electric-electric ($\alpha$) and electric-magnetic ($\beta$)
+dipole polarizability tensors can be obtained from the LRF with appropriate
 operators,
 \begin{equation}
 \alpha_{xy}(\omega) = {\langle\langle \mu_x;\mu_y\rangle\rangle}_{\omega_1}
@@ -216,10 +279,10 @@ operators,
 \beta_{xy}(\omega) = {-\text{Im} \langle\langle \mu_x;m_y\rangle\rangle}_{\omega_1}
 \end{equation}
 where $\mu = \sum_i q_i r_i $ and $m = \sum_i \frac{q_i}{2m_i} r_i \times p_i$. 
-One-third of the trace of the $\alpha$ tensor is the isotropic 
-electric dipole polarizability. Specific rotation on the other hand 
-is related to the one-third of the trace of the $\beta$ tensor (au) 
-also known as the Rosenfeld tensor by the following expression\cite{},
+Isotropic electric dipole polarizability is one-third of the trace of the $\alpha$ tensor 
+while specific rotation is related to the one-third of the trace 
+of the $\beta$ tensor (au) also known as the Rosenfeld tensor normalized
+by the path-length and concentration\cite{},
 \begin{equation}
 {\lbrack\alpha\rbrack}_{\omega} = \frac{(72.0 \times 10^6){\hbar}^2 N_A\omega}{c^2{m_e}^2 M}
 \ \times \left[ \frac{1}{3}Tr(\beta)\right]
@@ -227,41 +290,49 @@ also known as the Rosenfeld tensor by the following expression\cite{},
 where M is the mass of the molecule (amu), $m_e$ is the rest mass of an electron
 (kg), c is the speed if light in vacuum (m/s), $N_A$ is Avogadro's number and $\omega$
 is the frequency of the electromagnetic field (au). \\
-The coupled cluster linear response function can be written as\cite{}: 
+Following is the final simplified expression of CC-LRF\cite{}: 
 \begin{equation}
-{\langle\langle A;B\rangle\rangle}_{\omega_1} =  \langle \Psi_0 | \
-[\hat{Y}^{B}_{\omega_1}, \bar{A}]|\Psi_0\rangle + \langle \Psi_0 | \
-(1 + \hat{\Lambda})|[\bar{A},\hat{X}^{B}_{\omega_1}]|\Psi_0\rangle 
+{\langle\langle A;B\rangle\rangle}_{\omega_1} =  \hat{P}(A,B)[\langle 0 | \
+[\hat{Y}^{B}_{\omega_1}, \bar{A}]|0\rangle + \langle 0 | \
+(1 + \hat{\Lambda})|[\bar{A},\hat{X}^{B}_{\omega_1}]|0\rangle]
 \end{equation}
 where $A$ and $B$ are the one electron property operators,
+$\hat{P}(A,B)$ simultaneously interchanges operators $A$ and $B$
+and takes the complex conjugate of the expression,
 $\omega_1$ is the frequency of the external field, 
-$\Psi_0$ is the reference wavefunction, $\hat{\Lambda}$ is 
+$|0\rangle$ is the reference wavefunction, $\hat{\Lambda}$ is 
 a linear de-excitation operator that parametrizes the CC left hand 
 wavefunction to make sure that the CC gradients satisfy the 
 generalized Hellman-Feynman theorem\cite{}, $\bar{A}$ is the 
-similarity transformed $\hat{A}$ operator $\hat{A}$, $\bar{A} = e^{-\hat{T}}\hat{A}e^{\hat{T}}$,
-$\hat{X}^{B}_{\omega_1}$ and $\hat{Y}^{B}_{\omega_1}$ are the first-order 
-perturbed right and left hand amplitudes corresponding to perturbation operator 
+similarity transformed $\hat{A}$ operator, $\bar{A} = e^{-\hat{T}}\hat{A}e^{\hat{T}}$
+and $\hat{X}^{B}_{\omega_1}$ and $\hat{Y}^{B}_{\omega_1}$ are the first-order 
+right and left hand perturbed amplitudes corresponding to perturbation operator 
 $B$ respectively. 
 \subsection{Perturbed Natural Orbitals}
-The CC linear response function (eq. ) can also be formulated in terms of densities,
+The CC-LRF (eq. 4.9) can also be formulated in terms of perturbed densities,
 \begin{equation}
-{\langle\langle A;B\rangle\rangle}_{\omega_1} =  \sum_{pq} A_{pq}D^{B}_{pq}(\omega_1)
+{\langle\langle A;B\rangle\rangle}_{\omega_1} =  \frac{1}{2}\hat{P}(A,B)\big[\sum_{pq} A_{pq}D^{B}_{pq}(\omega_1)\big]
 \end{equation}
 where $D^{B}(\omega_1)$ is the frequency dependent first-order
 perturbed one-electron density related to operator B. The structures  
 of the virtual-virtual block of the perturbed densities for a given
 perturbation operator can be easily identified in spin orbitals as,
+\\
 \begin{equation}
 \begin{split}
 %\begin{multline}
-& D^{(0)}_{ab} = \frac{1}{2}(\lambda^{ij}_{ac})^{(0)}(t^{bc}_{ij})^{(0)} + (\lambda^{i}_{a})^{(0)}(t^{b}_{i})^{(0)} \\
-&D^{(1)}_{ab} = \frac{1}{2}[(\lambda^{ij}_{ac})^{(0)}(t^{bc}_{ij})^{(1)} + (\lambda^{ij}_{ac})^{(1)}(t^{bc}_{ij})^{(0)}] + [(\lambda^{i}_{a})^{(0)}(t^{b}_{i})^{(1)} + (\lambda^{i}_{a})^{(1)}(t^{b}_{i})^{(0)}] \\
-&D^{(2)}_{ab} = \frac{1}{2}[{(\lambda^{ij}_{ac}})^{(1)}(t^{bc}_{ij})^{(1)} + (\lambda^{ij}_{ac})^{(0)}(t^{bc}_{ij})^{(2)}]
-\ + [(\lambda^{i}_{a})^{(1)} (t^{b}_{i})^{(1)} + (\lambda^{i}_{a})^{(0)}(t^{b}_{i})^{(2)}]\\
+& D^{(0)}_{ab} = \frac{1}{2}(\lambda^{ij}_{ac})^{(0)}(t^{bc}_{ij})^{(0)} \
++ (\lambda^{i}_{a})^{(0)}(t^{b}_{i})^{(0)} \\
+&D^{(1)}_{ab} = \frac{1}{2}[(\lambda^{ij}_{ac})^{(0)}(t^{bc}_{ij})^{(1)} \
++ (\lambda^{ij}_{ac})^{(1)}(t^{bc}_{ij})^{(0)}] + [(\lambda^{i}_{a})^{(0)}(t^{b}_{i})^{(1)}\
+ + (\lambda^{i}_{a})^{(1)}(t^{b}_{i})^{(0)}] \\
+&D^{(2)}_{ab} = \frac{1}{2}[{(\lambda^{ij}_{ac}})^{(1)}(t^{bc}_{ij})^{(1)}\
+ + (\lambda^{ij}_{ac})^{(0)}(t^{bc}_{ij})^{(2)}]\ 
++ [(\lambda^{i}_{a})^{(1)} (t^{b}_{i})^{(1)} + (\lambda^{i}_{a})^{(0)}(t^{b}_{i})^{(2)}]\\
 %\end{multline}
 \end{split}
 \end{equation}
+\\
 In the above equation, the indices $i,j$ and $a,b,c$ refer to occupied and virtual orbitals respectively
 and Einstein summation notation is used. The first order perturbed amplitudes $(\lambda^{ij}_{ac})^{(1)}$ 
 and $(t^{bc}_{ij})^{(1)}$ are nothing but the $\hat{X}^{B}_{\omega_1}$ and $\hat{Y}^{B}_{\omega_1}$ 
@@ -279,23 +350,26 @@ should in principle be a better metric for estimating the importance of a virtua
 In this paper, we use second-order guess densities to define our virtual space for correlated response calculations.
 For a perurbation operator A,
 \begin{equation}
-{D^{'}(A)}^{(2)}_{ab} = \frac{1}{2}(t^{ac}_{ij}(A))^{(1)}(t^{bc}_{ij}(A))^{(1)} + (t^{a}_{i}(A))^{(1)} (t^{b}_{i}(A))^{(1)}, 
+{D^{'}(A)}^{(2)}_{ab} = \frac{1}{2}(t^{ac}_{ij}(A))^{(1)}(t^{bc}_{ij}(A))^{(1)} \
++ (t^{a}_{i}(A))^{(1)} (t^{b}_{i}(A))^{(1)}, 
 \end{equation}
 where,
 \begin{equation}
 \begin{split}
-& t^{ac}_{ij}(A)^{(1)} = \frac{-\bar{A}^{ac}_{ij}}{\epsilon_i + \epsilon_j - \epsilon_a - \epsilon_c},\\
-& t^{a}_{i}(A)^{(1)} = \frac{-\bar{A}^{a}_{i}}{\epsilon_i - \epsilon_a}\\
+& t^{ac}_{ij}(A)^{(1)} = \frac{\bar{A}^{ac}_{ij}}{\epsilon_a + \epsilon_c - \epsilon_i - \epsilon_j},\\
+& t^{a}_{i}(A)^{(1)} = \frac{\bar{A}^{a}_{i}}{\epsilon_a - \epsilon_i}\\
 \end{split}
 \end{equation}
-Here, we have used MP2 amplitudes for the similarity transformation, i.e. 
+\\
+Here, we have used MP2 amplitudes for the similarity transformation,
 \begin{equation}
 \bar{A}^{ac}_{ij} = P_{ij}^{ac}(t^{ec}_{ij}A^a_e - t^{ac}_{mj}A^m_i) ,
 \end{equation}
 ignored the terms involving second-order perturbed amplitudes and 
-approximated the first-order perturbed $\lambda$ amplitudes by the 
+approximated the first-order perturbed $\lambda$ amplitudes with the 
 corresponding $t$ amplitudes. The first-order right-hand perturbed
 amplitudes in CC linear response theory can be expressed as, 
+\\
 \begin{equation}
 \begin{split}
 & t^{ac}_{ij}(A)^{(1)}(\omega_1) = - \langle\Phi_{ij}^{ac}| {(\bar{H} -\omega_1 I)}^{-1} |
@@ -304,6 +378,7 @@ amplitudes in CC linear response theory can be expressed as,
 \Phi_{k\ldots}^{d\ldots}\rangle \langle \Phi_{k\ldots}^{d\ldots}| \bar{A} | \Phi_0\rangle \\
 \end{split}
 \end{equation}
+\\
 It can be clearly seen that the guesses for $t^{ac}_{ij}(A)^{(1)}$ and 
 $t^{a}_{i}(A)^{(1)}$ amplitudes in this work have been chosen by 
 only considering the diagonal elements of $(\bar{H} -\omega_1 I)^{-1}$
