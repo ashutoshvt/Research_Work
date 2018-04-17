@@ -130,62 +130,12 @@ reasons behind the failure of our perturbed density approach.
 Finally, we have developed a new method which we call FVNO++ 
 where we construct a second-order perturbed density to 
 capture the response of the wavefunction to the external electric 
-and magnetic fields. In this paper, we look at some of the basis aspects of 
-this method and report its performance in calculating CC dynamic 
-polarizabilities and specific rotations of a number of chiral molecules .
+and magnetic fields. In this paper, we take a closer look at this 
+scheme and report its performance in calculating CC dynamic 
+polarizabilities and specific rotations of a number of chiral molecules.
+We also look at the potential applications of this approach to large
+solvated clusters.
 \section{Theoretical Background}
-%\subsection{Frozen Virtual Natural Orbitals}
-%The MP2 unrelaxed one-electron density matrix can be written in terms of
-%spin orbitals as: 
-%\begin{equation}
-%\gamma_{pq} = \langle \Psi^{(1)}|\{ a^{\dagger}_{p}a_q\}|\Psi^{(1)}\rangle,
-%\label{Eq:density}
-%\end{equation}
-%where $|\Psi^{(1)}\rangle$ is the first order correction to the Hartree-Fock
-%wave function,
-%\begin{equation}
-%|\Psi^{(1)}\rangle = \frac{1}{4}\sum_{ijab} t^{ab}_{ij}|\Phi^{ab}_{ij}\rangle
-%\end{equation}
-%and
-%\begin{equation}
-%t^{ab}_{ij} = \frac{\langle ij||ab\rangle}{\epsilon_i + \epsilon_j -
-%\epsilon_a - \epsilon_b}.
-%\end{equation}
-%Here, $\langle ij||ab\rangle$ is an antisymmetrized two-electron integral in
-%Dirac's notation and $\epsilon_i,\epsilon_a...$ refer to the Hartree-Fock
-%molecular orbital energies. We use the indices $i,j,k,...$ to indicate occupied
-%orbitals while $a,b,c,...$ denote virtual orbitals. $|\Phi^{ab}_{ij}\rangle$
-%refers to a doubly-excited determinant where occupied orbitals $i$ and $j$ are
-%replaced by virtuals $a$ and $b$ respectively.  The brackets around the
-%second-quantized operators in Eq.~(\ref{Eq:density}) indicate normal ordering
-%with respect to the reference wave function.
-%
-%In the MP2 based NO method, the virtual-virtual block of $\gamma_{pq}$
-%is constructed,
-%\begin{equation}
-%\gamma_{ab} = \frac{1}{2}\sum_{ijc} t^{ac}_{ij}t^{bc}_{ij},
-%\label{Eq:dens}
-%\end{equation}
-%and then diagonalized,
-%\begin{equation}
-%\bm{\gamma} \bm{V} = \bm{n} \bm{V}.
-%\end{equation}
-%The eigenvectors, $\bm{V}$, are the virtual natural orbitals (NOs), and the
-%eigenvalues, $\bm{n}$, are the associated occupation numbers.  As noted
-%earlier, the wave function amplitudes contain significantly greater sparsity
-%when represented in the NO basis than the original canonical MO basis;
-%orbitals with lower occupation numbers yield $\hat{T}_2$ amplitudes with
-%smaller magnitudes and concomitantly smaller contributions to the correlation
-%energy.  Thus, orbitals with occupation numbers below a selected threshold can
-%be removed without introduction of significant errors, leading to reduced
-%computational cost.  The Hartree-Fock virtual molecular orbitals and
-%associated integrals are then transformed to this truncated NO basis, followed
-%by semicanonicalization of the virtual-virtual block of the Fock matrix, for
-%subsequent computations using higher-order correlation methods such as CC
-%theory.  In most cases, the final correlation energy in the truncated virtual
-%space is corrected using the MP2 energy in the external (non-truncated) NO
-%space to minimize the resulting errors, as described belowa
-
 \subsection{Coupled Cluster Response Theory}
 The response functions for calculating dynamic higher-order properties 
 can be defined by the frequency dependent coefficients appearing in the 
@@ -296,18 +246,41 @@ Following is the final simplified expression of CC-LRF\cite{}:
 [\hat{Y}^{B}_{\omega_1}, \bar{A}]|0\rangle + \langle 0 | \
 (1 + \hat{\Lambda})|[\bar{A},\hat{X}^{B}_{\omega_1}]|0\rangle]
 \end{equation}
-where $A$ and $B$ are the one electron property operators,
+where $A$ and $B$ are the one electron perturbation operators,
 $\hat{P}(A,B)$ simultaneously interchanges operators $A$ and $B$
 and takes the complex conjugate of the expression,
 $\omega_1$ is the frequency of the external field, 
 $|0\rangle$ is the reference wavefunction, $\hat{\Lambda}$ is 
 a linear de-excitation operator that parametrizes the CC left hand 
 wavefunction to make sure that the CC gradients satisfy the 
-generalized Hellman-Feynman theorem\cite{}, $\bar{A}$ is the 
-similarity transformed $\hat{A}$ operator, $\bar{A} = e^{-\hat{T}}\hat{A}e^{\hat{T}}$
-and $\hat{X}^{B}_{\omega_1}$ and $\hat{Y}^{B}_{\omega_1}$ are the first-order 
-right and left hand perturbed amplitudes corresponding to perturbation operator 
-$B$ respectively. 
+generalized Hellman-Feynman theorem\cite{},
+overbar on operataor $A$ denotes similarity transformation with the ground state
+$T$ operator, $\bar{A} = e^{-\hat{T}}\hat{A}e^{\hat{T}}$
+and $\hat{X}^{B}_{\omega_1}$ and $\hat{Y}^{B}_{\omega_1}$ are excitation operators involving 
+the first-order right and left hand perturbed amplitudes corresponding to operator 
+$B$ respectively. These amplitudes can be obtained by solving a linear system
+of equations involving the CC Jacobian ($\bar{H}_{\mu\nu} = \langle \mu | \big[\bar{H},\tau_\nu\big] |0\rangle$),
+\\
+\begin{equation}
+\begin{split}
+&\sum_\nu\langle \mu | \big[(\bar{H} - \omega I),\tau_\nu\big] |0 \
+\rangle X_{\nu}^{B} = -\langle \mu|\bar{B}|0 \rangle \\
+&\sum_\nu Y_{\nu}^{B}\langle \nu | \big[(\bar{H} + \omega I),\tau_\mu\big] |0 \rangle \
++ \langle 0|(1 + \hat{\Lambda})|\big[\big[\bar{H},\tau_\nu\big],\tau_\mu\big] |0 \rangle\  X_{\nu}^{B}
+= -\langle 0|(1 + \hat{\Lambda})|\big[\bar{B},\tau_\mu\big] |0 \rangle \\
+\end{split}
+\end{equation}
+\\
+Here $\tau_\mu$, $\tau_\nu$ are excitation operators which when act on the
+reference wavefunction $|0\rangle$ create excited determinats $|\mu\rangle$ 
+and $|\nu\rangle$ respectively. Also, the dependence of perturbed amplitudes
+ on $\omega_1$ is assumed. The right hand amplitudes are solved first after 
+which they enter into the left hand amplitude equations as inhomogenous terms. 
+It should be noted that these equations need to be solved for every cartesian 
+component of the given perturbation operators. For example, calculation of 
+optical rotation tensor using length-gauge representation of the dipole 
+operator would require solving a total of 12 linear equations, six each 
+for both electric and magnetic dipole perturbation.
 \subsection{Perturbed Natural Orbitals}
 The CC-LRF (eq. 4.9) can also be formulated in terms of perturbed densities,
 \begin{equation}
@@ -339,16 +312,20 @@ and $(t^{bc}_{ij})^{(1)}$ are nothing but the $\hat{X}^{B}_{\omega_1}$ and $\hat
 amplitudes that we saw earlier.\\ Just as the ground state MP2 density can transfer its knowledge of 
 electron correlation effects to the one electron basis (virtual NOs) through diagonalization, 
 the perturbed densities can be used in a similar way to construct a compact ``perturbation aware''
-basis. In our earlier work, we used a guess first-order perturbed density constructed from MP2 amplitudes
-to obtain our virtual space but this approach offered only a minor improvement\cite{}.
+basis. In our earlier work, we constructed a guess first-order pertubed density associated  
+with each cartesian component (x,y,z) of the perturbation operator (dipole in the case of polarizabilities)
+from MP2 amplitudes, took an average of the three densities and then diagonalized it to obtain our 
+virtual space but this approach offered only a minor improvement\cite{}.
 To investigate the reason behind the failure of this model, we constructed the virtual-virtual
 block of the full CCSD first-order perturbed density. All the diagonal elements of this density 
 matrix were found to be zeros irrespective of the perturbation operator. The exact reason for this
-is not yet understood but clearly, the NOs obtained from this (or guess) density doesn't carry any useful
-information. However, since the polarizabilities are second-order in perturbation, second-order perturbed densities 
-should in principle be a better metric for estimating the importance of a virtual NO for these properties.
-In this paper, we use second-order guess densities to define our virtual space for correlated response calculations.
-For a perurbation operator A,
+is not yet understood but clearly, the virtual NOs (VNOs) obtained from this (or guess) density 
+doesn't carry any useful information. However, since the polarizabilities and specific rotations are 
+second-order in perturbation, second-order perturbed densities should in principle be a better 
+metric for estimating the importance of a VNO for these properties.
+In this paper, we use an average of second-order guess densities corresponding to each cartesian
+component of an appropriate perturbation operator to define our virtual space 
+for correlated response calculations. For a perturbation operator A, 
 \begin{equation}
 {D^{'}(A)}^{(2)}_{ab} = \frac{1}{2}(t^{ac}_{ij}(A))^{(1)}(t^{bc}_{ij}(A))^{(1)} \
 + (t^{a}_{i}(A))^{(1)} (t^{b}_{i}(A))^{(1)}, 
@@ -367,15 +344,16 @@ Here, we have used MP2 amplitudes for the similarity transformation,
 \end{equation}
 ignored the terms involving second-order perturbed amplitudes and 
 approximated the first-order perturbed $\lambda$ amplitudes with the 
-corresponding $t$ amplitudes. The first-order right-hand perturbed
-amplitudes in CC linear response theory can be expressed as, 
+corresponding $t$ amplitudes. The equations for solving the first-order 
+right-hand perturbed amplitudes (eq. 4.10) can also be written in terms
+of the inverse of the CC Jacobian,
 \\
 \begin{equation}
 \begin{split}
-& t^{ac}_{ij}(A)^{(1)}(\omega_1) = - \langle\Phi_{ij}^{ac}| {(\bar{H} -\omega_1 I)}^{-1} |
-\Phi_{k\ldots}^{d\ldots}\rangle \langle \Phi_{k\ldots}^{d\ldots}| \bar{A} | \Phi_0\rangle, \\
-& t^{a}_{i}(A)^{(1)}(\omega_1) = - \langle\Phi_{i}^{a}| {(\bar{H} -\omega_1 I)}^{-1} |
-\Phi_{k\ldots}^{d\ldots}\rangle \langle \Phi_{k\ldots}^{d\ldots}| \bar{A} | \Phi_0\rangle \\
+& t^{ac}_{ij}(A)^{(1)}(\omega_1) = \sum_\mu - \langle\Phi_{ij}^{ac}| {(\bar{H} -\omega_1 I)}^{-1} |
+\mu\rangle\langle \mu| \bar{A} | 0\rangle, \\
+& t^{a}_{i}(A)^{(1)}(\omega_1) = \sum_\mu -\langle\Phi_{i}^{a}| {(\bar{H} -\omega_1 I)}^{-1} |
+\mu\rangle \langle \mu| \bar{A} | 0\rangle \\
 \end{split}
 \end{equation}
 \\
@@ -386,26 +364,51 @@ which can be justified due to the diagonally dominant nature of the
 $\bar{H}$ matrix. Furthermore, we keep $\omega_1$ as zero as we 
 want to use the same density matrix for a given property calculation at different
 frequencies. We also assume that removing $\omega_1$ should not significantly change the 
-sparsity pattern of the perturbed amplitudes. 
+sparsity pattern of the perturbed amplitudes. Finally, the basic outline of this approach
+involves doing a MP2 calculation, generation of guess densities using MP2 amplitudes and 
+perturbation operators, diagonalization of the virtual-virtual block of the guess density 
+to obtain VNOs, truncation of VNOs with occupation numbers below a given threshold, 
+diagonalization of the Fock matrix in the truncated VNO basis to obtain a semi-canonical 
+basis, transformation of all the one and two electron integrals to this semi-canonical 
+basis, followed by CC2/CCSD-LR calculations at given frequencies.
 \section{Computational Details}
-1. primary application : optical rotation of solvated molecular clusters. But for pilot studies,
-   (for the right behavior or tend)
-   we chose chiral test cases - $h_2o_2$, linear (H2)n helices, phenylethanol, betapinene
-   norbornenone 
-2. properties - dynamic polarizabilities 
-   and specific rotation. Polarizabilities mostly as a diagnostic tool
-   because even though its linear response function is quite similar in structure
-   to optical rotation, it is less sensitive to the truncation of the wavefunction.
-  for polarizabilities - second-order guess densities based on a) elctric dipole,
-  for specific rotation - b) magnetic dipole and c) both electric and magnetic dipoles
-3. CC2 and CCSD method  - length and MVG - aug-cc-pvdz basis
-4. sparsity plots of large solvated clusters (since we can't do full calculations 
-	right now!) using densities constructed using density-fitting.
-5. Psi4 and Psi4Numpy software used!
-6. We have used the same virtual space for calculating both unperturbed and 
-perturbed amplitudes as this ensures a match with results obtained 
-from finite-field procedures.
-
+The main target of this work is large scale CC2/CCSD calculations of specific 
+rotations of solvated molecular clusters. However, first, we need to ensure 
+that the FVNO++ approach has the right convergence behavior towards the full
+canonical result. In this regard, we carry out dynamic polarizabilities 
+and specific rotation calculations of a number of small and medium sized 
+chiral molecules ranging from linear hydrogen dimer (P)-($H_2)_n$ helices
+and (M)-1-Fluoralkanes to (S)-1-Phenylethanol, a molecule having two-dimensional 
+structure and ultimately molecules with cagelike structutes: (1R,4R)-Norbornenone
+and (1R,5R)-$\beta$-Pinene. 
+\subsection{Polarizabilities}
+Polarizability calculations on these chiral molecules can be as seen as a diagnostic 
+tool for gaining insight into the nature of specific rotation calculations as one 
+truncates the virtual space as even though the response functions of 
+both the properties are quite similar, polarizabilities are much less sensitive to the 
+wavefunction truncation. In all the polarizability calculations, the length-gauge 
+(LG) representation of the electric dipole operator was used. The natural choice of 
+perturbed densities for such calculations is : $\sum\limits_q \frac{1}{3}{D^{'}(\mu_q)}^{(2)}$,
+where $q \equiv [x,y,z]$ . 
+\subsection{Specific Rotations}
+For specific rotation calculations, we employed both the LG and velocity-gauge (VG) 
+representations. If we just consider the LG calculations for now, there is no obvious
+choice of how to construct perturbed densities now. One can have either 
+$\sum\limits_q \frac{1}{3}{D^{'}(\mu_q)}^{(2)}$ or $\sum\limits_q\frac{1}{3}{D^{'}(m_q)}^{(2)}$.
+Another possible option is to diagonalize both the densities separately, truncate the VNOs,
+and then form the virtual space by taking a union of the truncated VNOs. The only difference
+in VG calculations is the replacement of $\sum\limits_q \frac{1}{3}{D^{'}(\mu_q)}^{(2)}$ by 
+by $\sum\limits_q \frac{1}{3}{D^{'}(p_q)}^{(2)}$ where $p_q = -i\frac{\partial}{\partial{q}}$.
+We report the performances of all the three approaches.\\ \\
+The primary basis set used in this work is aug-cc-pVDZ basis
+and all the property calculations were carried out at 589 nm using 
+using Psi4 and Psi4Numpy software packages.\cite{}
+We also report the sparsity pattern of the guess densities of large
+solvated molecular clusters using DF-MP2 which can give us an estimate of 
+the computational savings that can be exploited. It should be noted that 
+we have used the same virtual space for calculating both unperturbed 
+and perturbed amplitudes as this ensures a match with results obtained from 
+the finite-field procedures. 
 %The r test cases of this work is hydrogen peroxide,
 %H$_2$O$_2$, though additional tests are reported for related species such as
 %(\textit{P})-dimethylallene and (\textit{S})-methyloxirane, as well as those
@@ -462,359 +465,6 @@ in the next sections.
 Maybe bring MP2 diagnostics here as a reason for poor behavior! I mean here the pi-pi*
 excitations might require accurate T2 amplitudes as well.
 \subsection{Sparsity in solvated cluster}
-
-%It is well known that deletion of higher-energy canonical Hartree-Fock MOs
-%(CMOs) typically leads to significant errors in the recovery of electron
-%correlation energies, whereas, by design, the truncation of virtual NOs with
-%low occupation numbers results in little loss of accuracy.\cite{Landau10,Taube05,Taube08}
-%For example, Fig.~\ref{fig:energy} plots the error in
-%the CCSD correlation energy of H$_2$O$_2$ in the aDZ basis as a function of
-%the number of frozen virtual CMOs (removed starting from the highest energy
-%orbitals) or NOs (starting from the lowest occupation numbers).  Clearly the
-%correlation energy is very sensitive towards the removal of CMOs, with the
-%error increasing by more than 4 kcal/mol after the deletion of even one
-%virtual orbital.  On the other hand, removal of low occupation-number NOs
-%introduces errors of only ca.\ 2.5 kcal/mol even when up to 33\% of the
-%virtual space (18 of 55 orbitals) is truncated.  The errors in
-%the NO basis can be further minimized by employing an MP2 energy correction,
-%\begin{equation}
-%E^{\rm MP2}_{\rm corr} = \frac{1}{4} \sum_{ij} \sum_{ab \in {\rm ext}} \frac{|\langle
-%ij||ab\rangle|^2}{\epsilon_i + \epsilon_j - \epsilon_a - \epsilon_b}.
-%\label{Eq:MP2}
-%\end{equation}
-%where the summation over virtual orbitals is limited to NOs in the external,
-%truncated space.  Fig.~\ref{fig:MP2_corr} plots the error in the CCSD
-%correlation energy for the same system as above in the NO basis, with and
-%without this correction (left-hand vertical axis), as well as the correction
-%itself (right-hand axis).  After employing the correction, the error in the
-%correlation energy falls to less than 0.1 kcal/mol when 1/3 of the virtual
-%space is eliminated. Similar results are obtained for aTZ and aQZ basis sets,
-%where the truncation errors are less than 1 kcal/mol even after the removal of 50\%
-%of the virtual space. We note that the MP2 energy correction is significant 
-%(on the order of m$E_h$ or several kcal/mol) even for small compounds such as 
-%H$_2$O$_2$.  The correction scales linearly with the number of electrons and 
-%thus is a critical component for the success of the frozen virtual NO approach 
-%for larger molecules.
-%
-%\subsection{Frozen Virtual Orbitals and Response Properties}
-%
-%What is the impact of freezing virtual orbitals --- whether CMO or NO --- on
-%higher-order properties?  Fig.\ \ref{fig:polar_h2o2} plots errors in dynamic
-%polarizabilites (computed at a wavelength of 589 nm) as a function of the
-%number of virtual orbitals deleted at the CCSD/aDZ level of theory for the
-%same H$_2$O$_2$ test case as above.  Comparison to Fig.\ \ref{fig:energy}
-%reveals precisely the opposite behavior for polarizabilities as for
-%correlation energies, {\em viz.}, truncation of the CMO virtual space induces
-%much smaller errors than does that of the NO virtual space.  For the latter,
-%errors increase approximately linearly with the number of frozen virtual NOs.
-%On the other hand, for the CMO basis, the error increases slowly to a maximum
-%of 1.9\% when 13 virtual orbitals are removed and then decreases to only
-%-0.3\% when as many as 27 orbitals (ca.\ 50\% of the virtual space) are
-%frozen.  This trend is not unique to H$_2$O$_2$ or the aDZ basis set. As shown
-%in Fig.~S1 of the Supporting Information, the same behavior is observed for
-%other molecules such as dimethylallene, methyloxirane, and such compounds
-%interacting with explicit solvent molecules.  In addition, Figs.~S2 and S3
-%report the same trends for H$_2$O$_2$ with the larger aTZ and aQZ basis sets.
-%
-%
-%What is the source of this unexpected behavior?  It is well known that diffuse
-%basis sets are essential for the accurate descriptions of a variety of
-%response properties, such as dipole polarizabilities.\cite{Woon94}  Fig.~\ref{fig:spatial}
-%plots the spatial extent --- $\langle r^2 \rangle$ --- for each virtual CMO or
-%NO in the same ordering as they are deleted in Fig.~\ref{fig:polar_h2o2}.  The
-%Figure clearly shows that the earliest NOs to be removed (the ones with the
-%lowest occupation numbers) are the most diffuse, {\em i.e.}, they should
-%contribute substantially to the description of the dynamic polarizability.  On
-%the other hand, the first CMOs to be frozen (those with the highest orbital
-%energies) are also the most compact and thus contribute the least to this
-%property.  Given that highly diffuse basis functions typically contribute
-%primarily to CMOs with low orbital energies --- often below that of what is
-%normally considered the true anti-bonding ``LUMO'' --- the latter result is
-%not surprising; these diffuse CMOs appear to the far right of
-%Fig.~\ref{fig:spatial} and are thus never deleted, leading to the good
-%behavior of the CMO truncation in Fig.~\ref{fig:polar_h2o2}.  These same
-%diffuse basis functions, however, contribute little to the description of
-%dynamical correlation effects, and thus exhibit very low occupation numbers
-%upon transformation to the NO virtual space.  Thus, they are truncated first
-%in the NO basis, yielding the large errors in the polarizability depicted in
-%Fig.~\ref{fig:polar_h2o2}.
-%
-%The above observations suggest that, for computing response properties such as
-%dynamic polarizabilities, an alternative approach to truncation of the virtual
-%space is to order the orbitals by increasing values of $\langle r^2 \rangle$
-%rather than by decreasing orbital energies (as is done for CMOs) or increasing
-%occupation numbers (for NOs).  Fig.~\ref{fig:sort_spatial} plots errors in the
-%CCSD/aDZ dynamic polarizability of H$_2$O$_2$ as the virtual CMOs or NOs are
-%removed in order of increasing spatial extent.  While the errors are
-%comparable to that observed in Fig.~\ref{fig:polar_h2o2} for the CMO
-%truncation, the behavior associated with removal of virtual NOs is
-%significantly different.  First, the polarizability errors exhibit two
-%plateaus: one associated with diffuse NOs 2-5 and another with NOs 16-30, and
-%removal of these NOs has little impact on the observed error.  However,
-%deletion of the virtual NO with the {\em smallest} spatial extent unexpectedly
-%leads to a large initial error (ca.\ 7.5 a.u.), followed later by a linearly
-%increasing error as virtual NOs 6-15 are removed.  Clearly, spatial extent is
-%not the only criterion by which we may predict the importance of a given
-%virtual NO to the polarizability.
-%
-%Another possible source of error is the lack of orbital response in the chosen
-%formulation of the coupled cluster linear response function.\cite{Koch94:BCC}
-%In the infinite-lifetime approximation, frequency-dependent properties such as
-%dipole polarizabilities exhibit first-order poles at the excitation
-%frequencies.  In the coupled cluster formulation described above, the orbital
-%response to the external field is typically neglected so that these poles
-%correspond solely to the response for the correlated wave function, and
-%additional, spurious poles arising due to the Hartree-Fock reference
-%determinant will not appear.  (This approximation is typically justified based
-%on the fact that much of the orbital-response effects are accounted for by the
-%singles amplitudes.\cite{Christiansen95:CC2})  In order to test whether the
-%orbital relaxation significantly impacts the behavior of the computed
-%polarizability as the virtual space is reduced, we have computed {\em static}
-%($\omega = 0.0$) polarizabilities using finite-differences (with a a
-%central-difference formula with a differential field strength of 0.001 a.u.)
-%The errors in the CCSD/aDZ static polarizability of H$_2$O$_2$ for both CMO
-%and NO virtual spaces are reported in Fig.~\ref{fig:static}.  Interestingly,
-%with orbital relaxation included, the truncation of the NO space now becomes
-%better behaved than the CMO space over a large domain of orbitals removed.
-%Unfortunately, we cannot take advantage of this improvement in conjunction
-%with Hartree-Fock orbitals without corrupting the pole structure of the
-%response function.  A Brueckner or orbital-optimized approach may prove
-%superior in this regard, though further investigation is
-%warranted.\cite{Koch94:BCC,Pedersen01}
-%
-%\subsection{Wave Function Truncation in the Virtual-Orbital Space}
-%
-%For additional insight into the above observations, we examine errors arising
-%in dynamic polarizabilities as a function of truncation of specific
-%wavefunction parameters in either the CMO or NO basis.
-%Fig.~\ref{fig:amp_trunc_cmo} plots the errors in CCSD/aDZ dynamic
-%polarizabilities of H$_2$O$_2$ as a result of truncations of the unperturbed
-%ground-state cluster amplitudes $\hat{T}$ and $\hat{\Lambda}$, as well as
-%perturbed amplitudes, $\hat{X}_\omega^\mu$, represented in the CMO basis.
-%Note that, in this analysis, only the specified amplitudes associated with the
-%selected CMOs are forced to zero; the CMOs remain active for all other wave
-%function components.  From the Figure, it can be clearly seen that removing
-%$\hat{T}_1$ alone does not introduce any significant error in the
-%polarizability, whereas truncating $\hat{T}_2$ amplitudes results in
-%substantial positive errors which increase almost linearly with the number of
-%virtual CMOs. (Not surprisingly, freezing both $\hat{T}_1$ and $\hat{T}_2$
-%amplitudes together have essentially the same effect as freezing $\hat{T}_2$
-%amplitudes alone.) Alternatively, for the left-hand wave function, removing
-%$\hat{\Lambda}_1$ and $\hat{\Lambda}_2$ amplitudes either separately or
-%pairwise seem to have negligible impact.  In the case of the perturbed
-%amplitudes, only small (negative) errors are introduced even after freezing
-%all $\hat{X}_1$ amplitudes involving almost 23 virtual CMOs, but the error
-%then rises sharply with further truncation.  On the other hand, the negative
-%errors due to truncation of $\hat{X}_2$ amplitudes are significant from the
-%beginning and increase almost linearly.  Thus the error due to removal of both
-%$\hat{X}_1$ and $\hat{X}_2$ amplitudes belonging to the first 23 CMOs is due
-%to elimination of $\hat{X}_2$ amplitudes alone, whereas beyond that limit, the
-%total error corresponds to the sum of errors from $\hat{X}_1$ and $\hat{X}_2$
-%truncation.
-%
-%A key observation is that, within the domain of the first 23 virtual CMOs, the
-%positive errors introduced by truncation of $\hat{T}_2$ is cancelled almost
-%exactly by the negative errors arising from the truncation of $\hat{X}_2$.
-%This is further illustrated in Fig.~\ref{fig:error_cmpare}, which plots on a
-%narrow range the errors in the polarizability associated with truncating
-%specific classes of $\hat{T}_2$ and $\hat{X}_2$ amplitudes against the total errors
-%obtained by freezing CMOs entirely (for all amplitudes).  Outside of this
-%domain, errors associated with neglect of $\hat{X}_1$ amplitudes become
-%dominant, leading to the accumulation of negative total errors observed in
-%Fig.~\ref{fig:polar_h2o2}.  Thus, the apparently robust performance of the
-%truncation of the virtual CMO space arises, in fact, from offsetting
-%errors.
-%
-%Similarly to the above analysis for the virtual CMO space,
-%Fig.~\ref{fig:amp_trunc_no} reports errors in the CCSD/aDZ polarizability of
-%H$_2$O$_2$ introduced by the neglect of various classes of wave function
-%amplitudes associated with selected virtual NOs.  We observe first that,
-%unlike the CMO case, neglecting $\hat{T}_2$ amplitudes associated with
-%particular virtual NOs has no significant effect on the error.  This behavior
-%is expected, because the $\hat{T}_2$ amplitudes are, by construction, sparse
-%in the virtual NO basis such that orbitals with low occupation numbers are
-%associated with $\hat{T}_2$ amplitudes of smaller magnitude.  Furthermore,
-%just as in the CMO case, the removal of $\hat{T}_1$, $\hat{\Lambda}_1$ and
-%$\hat{\Lambda}_2$ amplitudes introduces only small errors, while the removal
-%of selected $\hat{X}_2$ amplitudes based on NOs yields significant negative
-%errors that increase linearly with the number of virtual NOs truncated.
-%
-%However, unlike the virtual CMO case, neglecting $\hat{X}_1$ amplitudes
-%corresponding to specific virtual NOs introduces large negative errors in the
-%polarizability even from the first NO removed, and the total error obtained by
-%truncating both $\hat{X}_1$ and $\hat{X}_2$ amplitudes is almost the same as
-%the error due to truncation of the $\hat{X}_1$ amplitudes alone.  Indeed, 
-%the greatest contribution ($>90\%$) to the
-%total polarizability errors arises from the perturbed singles amplitudes.
-%
-%The significance of the $\hat{X}_1$ amplitudes is evident upon analysis of
-%their leading-order contribution to the polarizability [cf.\
-%Eq.~(\ref{Eq:alpha})],
-%\begin{equation}
-%\alpha_\omega \leftarrow \frac{1}{3} \sum\limits_{ia}\sum\limits_x \mu^{x}_{ia}(X^x_{ia}(\omega) +
-%X^x_{ia}(-\omega)),
-%\label{Eq:leading_X1}
-%\end{equation} 
-%where $\mu^x_{ia}$ is an element of the occupied-virtual block of the
-%Cartesian component, $x$, of the electric-dipole moment integral matrix, and the inner
-%sum runs over all such components. The singles
-%themselves are obtained from the corresponding form of
-%Eq.~(\ref{Eq:perturbed_wfn}),
-%\begin{equation} 
-%\langle\Psi^a_i|X^{\mu}_{\omega}|\Psi_0\rangle =
-%-\sum_{\nu}\langle\Psi^a_i|(\bar{H} -
-%\omega)^{-1}|\nu\rangle\langle\nu|\bar{\mu}|\Psi_0\rangle,
-%\hspace{0.15in}\nu
-%\in \{\Psi^b_j,\Psi^{cd}_{jk}\},
-%\label{Eq:singles}
-%\end{equation} 
-%where $\bar{\mu}$ is the similarity transformed electric-dipole operator,
-%\begin{equation}
-%\bar{\mu} = \hat{\mu} + \bigg[\hat{\mu},\hat{T}\bigg] +
-%\frac{1}{2}\bigg[\bigg[\hat{\mu},\hat{T}\bigg],\hat{T}\bigg].
-%\label{Eq:mubar}
-%\end{equation}
-%The corresponding leading-order contribution to the $\hat{X}_1$ amplitudes themselves is
-%\begin{equation}
-%X^{\mu}_{ia}(\omega) \leftarrow \frac{\mu_{ia}}{\overbar{H}_{ii} -
-%\overbar{H}_{aa} + \omega},
-%\label{Eq:X1}
-%\end{equation}
-%where the largest contribution to the diagonal elements of the similarity
-%transformed Hamiltonian, $\bar{H}$, arises from the orbital energies (more
-%precisely, the diagonal Fock matrix elements expressed in the CMO or NO
-%basis), which are plotted in Fig.~\ref{fig:Faa}.  While the values for the
-%virtual CMOs decrease steadily, their NO counterparts actually {\em increase}
-%and display greater oscillation.  Clearly, the diagonal elements of the fock
-%matrix for virtual NOs are significantly smaller in magnitude than the
-%corresponding CMOs, which concomitantly increases the values of the
-%$\hat{X}_1$ amplitudes associated with such NOs.  This effect can be seen in
-%Fig.~\ref{fig:X1} which plots the sum of the absolute values of $\hat{X_1}$
-%amplitudes for a given virtual orbital, i.e.  $\sum_i |X_i^a|$, for both
-%virtual CMOs and NOs.  Thus, the sparsity of the $\hat{X}_1$ amplitudes present in the
-%CMO basis is almost completely lost in the NO basis, which leads to the large
-%errors in dynamic polarizabilities due to the truncation of $\hat{X}_1$
-%amplitudes in the NO basis observed earlier.  
-%
-%Furthermore, the dependence of the $\hat{X}_1$ amplitudes on both $\hat{T}_2$
-%and $\hat{X}_2$ plays a significant role in the overall {\em sign} of the
-%polarizability error.  This point is clearly illustrated in
-%Fig.~\ref{fig:norm}, which plots the 2-norm of the $\hat{X}_1$ vector as
-%$\hat{T}_2$ or $\hat{X}_2$ amplitudes associated with a given virtual CMO is
-%neglected (in the same manner as used in Figs.~\ref{fig:amp_trunc_cmo} and
-%\ref{fig:error_cmpare}). As the $\hat{T}_2$ amplitudes associated with a given
-%virtual orbital are removed, the norm of the $\hat{X}_1$ vector
-%increases, leading to the positive errors in the polarizability observed in
-%Fig.~\ref{fig:amp_trunc_cmo}.  On the other hand, removal of $\hat{X}_2$
-%amplitudes leads to a decrease in the norm of the $\hat{X}_1$ vector and
-%the negative errors in the polarizability appearing in
-%Fig.~\ref{fig:amp_trunc_cmo}.
-%
-%\subsection{External-Space Corrections}
-%
-%As noted earlier, a key aspect of the strong performance of virtual NOs for
-%correlation energies is the use of MP2-based corrections for the contributions
-%of the truncated or ``external'' virtual space, as given in
-%Eq.~(\ref{Eq:MP2}).  When considering a similar correction for properties,
-%however, we have explored three options: time-dependent Hartree-Fock (TDHF)
-%and both static and dynamic CC2\cite{Christiansen95:CC2} corrections.  In each
-%case, we have used the same MP2-based virtual NO space and computed the
-%correction as the difference between the full-virtual space polarizability and
-%the truncated virtual-NO polarizability, with the CCSD/aDZ results for
-%polarizabilties of H$_2$O$_2$ shown in Fig.~\ref{fig:corrections}.
-%
-%The CC2-based corrections recover nearly all of the error associated with the
-%uncorrected virtual NO space across a wide range of truncation, with the
-%static correction actually yielding slightly smaller errors than its dynamic
-%counterpart.  The less expensive TDHF corrections offer significant
-%improvement over the original virtual NO results, and recover most (ca.\ 85\%)
-%of the error until about 40\% (21 orbitals) of the virtual space has been
-%deleted, but it clearly produces overall larger errors than the correlated
-%methods.  In addition, the TDHF corrections are potentially problematic
-%because the pole structure of the polarizability naturally follows that of the
-%underlying Hartree-Fock perturbed orbitals rather than that of the correlated
-%wave functions,\cite{Rice91,Hattig95,Aiga96} a criticism that would also hold
-%for purely MP2-based corrections.  On the other hand, the CC2-based
-%corrections are significantly more expensive than TDHF, in part because of
-%their iterative nature and the
-%need to transform two-electron integrals involving three virtual orbitals
-%(with the latter criticism again holding for an MP2-based correction).
-%
-%\subsection{Perturbed Natural Orbitals}
-%
-%Given that the purpose of the NOs is to ``focus'' the important components of
-%the basis for the description of electron correlation effects into a compact
-%space, without consideration of the importance of the basis set for other
-%properties, an alternative approach might be to build a virtual space that
-%explicitly takes such properties into account, such as the inclusion of the
-%perturbed one-electron density in the definition of the space.  Instead of
-%diagonalizing the ground-state MP2 density, we diagonalize its gradient with
-%respect to the external electric field, thereby incorporating the effects of
-%the external perturbations.  The resulting ``occupation numbers'' obtained
-%thus carry information about orbital occupancies in the perturbed states.  The
-%$x^{th}$ Cartesian component of the perturbed density matrix can be written in
-%terms of spin orbitals as
-%\begin{equation}
-%\gamma^x_{ab} = \frac{1}{2}\sum_{ijc}P_{+}(a,b)\left[\frac{t^{bc}_{ij}}{D^{ac}_{ij}}\left(P_{-}(a,c)\sum_dt^{ad}_{ij}\mu^x_{cd} - P_{-}(i,j)\sum_m t^{ac}_{im}\mu^x_{mj}\right)\right]
-%\label{Eq:perturb_d}
-%\end{equation}
-%where $P_{+}$ and $P_{-}$ are symmetric and anti-symmetric permutation
-%operators, respectively, and the orbital-energy denominator $D^{ac}_{ij} =
-%\epsilon_i + \epsilon_j  -\epsilon_a -\epsilon_c $.  (For computational
-%convenience, orbital relaxation terms have been neglected.) To obtain the
-%perturbed NOs and their corresponding eigenvalues, we take an average of the
-%three cartesian components of the density and diagonalize the result.
-%The eigenvalues consist of both positive and negative values as the perturbed
-%density matrix is not positive definite, and thus we truncate the orbitals
-%based on the absolute values of these eigenvalues.
-%
-%Fig.~\ref{fig:perturb} compares the performance of these perturbed NOs with
-%that of the CMOs and NOs, where the error in the CCSD/aDZ dynamic
-%polarizability of H$_2$O$_2$ is plotted as a function of the number of virtual
-%orbitals removed. While the perturbed NOs lower the truncation errors
-%associated with conventional NOs, they still introduce significantly higher
-%errors than the corresponding CMOs.  The reason for this underperformance is
-%related to the definition of the perturbed density, which naturally bears
-%strong similarity to its unperturbed counterpart [cf. Eqs.~(\ref{Eq:dens}) and
-%(\ref{Eq:perturb_d}).]  As a result, similar sparsity and orbital energy issues
-%illustrated in Figs.~\ref{fig:Faa} and \ref{fig:X1} arise for the perturbed
-%density just as for the original NOs, indicating that such an approach does not
-%resolve the problem.
-%
-%\subsection{The Dipole-Amplitude Criterion}
-%
-%The above results demonstrate that the CMO basis provides the best performance
-%among the various virtual spaces considered here, albeit based on cancellation
-%of errors, but what criterion should be used to determine the truncation level
-%that provides optimal balance between computational cost (most compact virtual
-%space) and accuracy?  The CMO orbital energies are one possibility, but they
-%have no direct connection to the properties in question.  Another alternative
-%is the ``dipole amplitude'', $d_a$, which is defined for each virtual CMO as
-%\begin{equation}
-%d_a \equiv \sum\limits_x\sum\limits_i\frac{({\mu^x_{ia}})^2}{\epsilon_i - \epsilon_a}.
-%\label{Eq:dipole}
-%\end{equation}
-%This expression, which is trivially computed post-Hartree-Fock, is based on
-%Eqs.~(\ref{Eq:leading_X1}) and (\ref{Eq:X1}), using the fact that the leading
-%contributions to the diagonal elements of the similarty-transformed
-%Hamiltonian are the orbital energies.    As we are constructing a
-%phenomenological truncation criterion, we have chosen to neglect the
-%dependence on the field frequency.
-%
-%Fig.~\ref{fig:dipole_length} plots the values of the dipole amplitude for
-%each CMO, as well as the corresponding error in the CCSD/aDZ
-%dipole-polarizability of H$_2$O$_2$ introduced by deleting the $\hat{X}_1$
-%amplitude associated with a given virtual CMO. There is a clear correlation
-%between the two functions, and one can see that as both the error due to
-%truncation of $\hat{X}_1$ and the value of the dipole length increase sharply
-%once we reach CMOs 27-28 --- ca. 50\% of the virtual space for this test case.
-%Accordingly, one should stop the truncation of the virtual CMO space once the
-%dipole length values start rising sharply.  While the optimal choice of
-%such a threshold will be addressed systematically in subsequent work, our
-%preliminary analyses using H$_2$O$_2$, methyloxirane, dimethylallene, and
-%related compounds suggest a cutoff of ca.\ 3-3.5\% yields minimal errors
-%in the polarizability.
-%
 \section{Conclusions}
 
 - Within the FVNO++ formalism, explored 
@@ -831,38 +481,4 @@ Thus, we are going to implement RI-CC2 linear response
 in conjunction with the FVNO++ aproach.
 Also, this could easily be extended to PNO aproaches for reduced scaling.
 
-%
-%On the basis of the above findings, we conclude that, in the absence of
-%orbital relaxation, virtual NOs are not
-%suited for higher-order property calculations such as dynamic
-%polarizabilities, and that the occupation number is not an acceptable
-%criterion for estimating the importance of a virtual orbital for such
-%calculations.  Although the use of external space corrections based on CC2
-%polarizabilities reduces the observed truncation errors, they are too
-%relatively costly to be practical for large molecular systems.  Furthermore,
-%the use of perturbed virtual NOs offers only slight improvement as compared to
-%unperturbed virtual NOs.  CMOs, on the other hand, provide a much more stable
-%mechanism for reducing the size of the virtual space --- with truncation of up
-%to 50\% of the orbitals yielding shifts of less than 2\% as compared to
-%full-space calculation -- but the source of their success lies in a
-%significant cancellation of errors.  Although further systematic studies are
-%needed, the dipole amplitude appears to provide a useful threshold for an {\em
-%a priori} truncation of the CMO virtual space.
-%
 \section{Acknowledgements}
-%
-%This research was supported by a grant (CHE-1465149) from the U.S.\
-%National Science Foundation. The authors acknowledge Advanced Research
-%Computing at Virginia Tech for providing computational resources and
-%technical support that have contributed to the results reported within this
-%paper.
-
-%\clearpage
-%%\bibliographystyle{rsc}
-%\bibliography{refs}
-%
-%\newpage
-%
-%\input{figures.tex}
-%
-%\end{document}

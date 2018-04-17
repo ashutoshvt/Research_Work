@@ -144,10 +144,33 @@ the regular method for the same test systems as our earlier PNO paper.
 % want to improve that usiing field perturbed densities 
 % Here we explotre just that!!!! - exploration, that's why simulation code!
 \section{Theory}
-\subsection{Response Theory}
+\subsection{Coupled Cluster Response Theory}
+Coupled cluster (CC) response theory has been proven to be quite a reliable and accurate theoretical
+tool to calculate higher-order response properties\cite{}. Within this formalism,
+one expands the time-dependent expectation value of a time-independent operator 
+in different orders of the perturbation. The response functions can then be identified 
+as fourier analogues (FA) of the time-dependent expansion terms up to a given order, ex. the
+linear response function (LRF) is the FA of terms appearing in the first order in the
+expansion. The LRFs can also be seen as frequency-dependent first-order perturbed densities. 
+The expression of CC-LRF in terms of these densities can be written as\cite{},
+\begin{equation}
+{\langle\langle A;B\rangle\rangle}_{\omega_1} =  \hat{P}(A,B)[\langle 0 | \
+[\hat{Y}^{B}_{\omega_1}, \bar{A}]|0\rangle + \langle 0 | \
+(1 + \hat{\Lambda})|[\bar{A},\hat{X}^{B}_{\omega_1}]|0\rangle]
+\end{equation}
+where $A$ and $B$ are time-independent one electron perturbation opeartors,
+$\hat{P}(A,B)$ is a symmetrizing operator which simultaneously interchanges 
+operators $A$ and $B$ and takes the complex conjugate of the expression, $\omega_1$ 
+is the frequency of the external field, $|0\rangle$ is the reference wavefunction, $\hat{\Lambda}$ is
+a linear de-excitation operator that parametrizes the CC left hand wavefunction, 
+overbar on operator $A$ denotes a similarity transformation with the ground state 
+$T$ operator, $\bar{A} = e^{-\hat{T}}\hat{A}e^{\hat{T}}$
+and $\hat{X}^{B}_{\omega_1}$ and $\hat{Y}^{B}_{\omega_1}$ are the first-order right and left 
+hand perturbed amplitudes corresponding to perturbation operator $B$ respectively.
+These perturbed amplitudes can be obtained by solving a set of linear equations involving
+CC Jacobian,
 
-I am thinking of bringing the quasi-energy formalism here and then the regular
-density approach : polarizability, rotation (LG, MVG) and 
+
 \subsection{Pair Natural Orbitals}
 The regular PNO density can be written as,
 \begin{equation}
