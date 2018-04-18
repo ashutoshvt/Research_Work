@@ -141,6 +141,7 @@ The response functions for calculating dynamic higher-order properties
 can be defined by the frequency dependent coefficients appearing in the 
 expansion of the expectation value of an appropriate time-independent 
 operator in orders of the perturbation.\cite{koch90}
+\\
 \begin{equation}
 \begin{split}
 \langle A \rangle (t) = \langle A \rangle + & \int_{-\infty}^{\infty}\
@@ -151,13 +152,13 @@ d\omega_1{\langle\langle A;V^{\omega_1}\rangle\rangle}_{\omega_1  \
 + i\alpha,\omega_2 + i\alpha}e^{-i(\omega_1 + \omega_2 + 2i\alpha)t} + .....
 \end{split}
 \end{equation}
+\\
 %\begin{equation}
 %A(t) = \langle \Psi^{(0)} | \hat{A} | \Psi^{(0)} \rangle \
 %+ \langle \Psi^{(1)}(t) | \hat{A} | \Psi^{(0)} \rangle\
 %+ \langle \Psi^{(0)} | \hat{A} | \Psi^{(1)}(t) \rangle\ 
 %+ \langle \Psi^{(1)}(t) | \hat{A} | \Psi^{(1)}(t) \rangle + ... \\
 %\end{equation}
-\\
 Here $\langle A \rangle$ is the time independent expectation value and
 ${\langle\langle A;V^{\omega_1}\rangle\rangle}_{\omega_1 + i\alpha}$
 %${\langle\langle A,V^{\omega_1},V^{\omega_2}\rangle\rangle}_{\omega_1 + i\alpha,\omega_2 + i\alpha}$ is the 
@@ -165,6 +166,7 @@ is the linear response function (LRF) i.e. the first order change in the expecta
 $A$ in a time-dependent field $V$ at frequency $\omega_1$. The third term in the expansion
 contains the quadratic response function and so on. For a CC wavefunction, time-dependent 
 expectation value of $A$ is defined as\cite{revisited},
+\\
 \begin{equation}
 \begin{split}
 {\langle A \rangle}_{CC} (t) = & Re [\langle \Lambda(t) | A | CC(t)\rangle ]\\
@@ -174,6 +176,7 @@ expectation value of $A$ is defined as\cite{revisited},
 \\
 where $\langle \Lambda(t)|$ and $|CC(t)\rangle$ are the left and right time dependent 
 phase-isolated CC wavefunction, parametrized as,
+\\
 \begin{equation}
 \begin{split}
 &  \langle \Lambda(t) |  = \langle 0 | + \sum_{\mu}\lambda_{\mu}(t)\langle \mu|e^{-T(t)} \\
@@ -192,6 +195,7 @@ where $\mu$ refers to excited determinants i.e. singles, doubles etc.,
 and $|0\rangle$ is the reference wavefunction. To identify CC response 
 functions one needs to expand $\langle \Lambda(t) | A | CC(t)\rangle$ 
 in orders of perturbation\cite{Revisited},
+\\
 \begin{equation}
 \begin{split}
 \langle \Lambda(t) | A | CC(t) \rangle & = {\langle \Lambda(t) | A | CC(t) \rangle}^{(0)}\
@@ -207,11 +211,13 @@ F^{A;V^{\omega_1};V^{\omega_2}}_{\omega_1 + i\alpha,\omega_2 \
 \\
 From eqns 4.1-4.4 and using the relation $F^{B;A}_{-\omega_1}=F^{A;B}_{\omega_1}$,
 the CC-LRF can be identified as
+\\
 \begin{equation}
 {\langle\langle A;V^{\omega_1} \rangle\rangle}_{\omega_1 + i\alpha} \
 = \frac{1}{2}( F^{A;V^{\omega_1}}_{\omega_1 + i\alpha} + \
 (F^{V^{\omega_1};A}_{\omega_1 + i\alpha})^{*})
 \end{equation}
+\\
 Alternatively, LRFs can also be defined as second-order derivatives 
 of a time-averaged quasi-energy with respect to external perturbations $\hat{A}$ and
 $\hat{B}$. This formalism is specially useful for deriving LRFs for approximate
@@ -220,32 +226,38 @@ coupled cluster theories like CC2, CC3 etc.
 %between response theory and the regular gradient theory for calculating molecular
 %gradients. 
 The electric-electric ($\alpha$) and electric-magnetic ($\beta$)
-dipole polarizability tensors can be obtained from the LRF with appropriate
+dipole polarizability tensor elements can be obtained from the LRF with appropriate
 operators,
+\\
 \begin{equation}
 \alpha_{xy}(\omega) = {\langle\langle \mu_x;\mu_y\rangle\rangle}_{\omega_1}
 \end{equation}
 \begin{equation}
 \beta_{xy}(\omega) = {-\text{Im} \langle\langle \mu_x;m_y\rangle\rangle}_{\omega_1}
 \end{equation}
-where $\mu = \sum_i q_i r_i $ and $m = \sum_i \frac{q_i}{2m_i} r_i \times p_i$. 
+\\
+where $\bm{\mu} = \sum_i q_i \bm{r_i} $ and $\bm{m} = \sum_i \frac{q_i}{2m_i} \bm{r_i} \times \bm{p_i}$. 
 Isotropic electric dipole polarizability is one-third of the trace of the $\alpha$ tensor 
 while specific rotation is related to the one-third of the trace 
 of the $\beta$ tensor (au) also known as the Rosenfeld tensor normalized
 by the path-length and concentration\cite{},
+\\
 \begin{equation}
 {\lbrack\alpha\rbrack}_{\omega} = \frac{(72.0 \times 10^6){\hbar}^2 N_A\omega}{c^2{m_e}^2 M}
 \ \times \left[ \frac{1}{3}Tr(\beta)\right]
 \end{equation}
+\\
 where M is the mass of the molecule (amu), $m_e$ is the rest mass of an electron
 (kg), c is the speed if light in vacuum (m/s), $N_A$ is Avogadro's number and $\omega$
 is the frequency of the electromagnetic field (au). \\
 Following is the final simplified expression of CC-LRF\cite{}: 
+\\
 \begin{equation}
-{\langle\langle A;B\rangle\rangle}_{\omega_1} =  \hat{P}(A,B)[\langle 0 | \
+{\langle\langle A;B\rangle\rangle}_{\omega_1} =  \frac{1}{2}\hat{P}(A,B)[\langle 0 | \
 [\hat{Y}^{B}_{\omega_1}, \bar{A}]|0\rangle + \langle 0 | \
 (1 + \hat{\Lambda})|[\bar{A},\hat{X}^{B}_{\omega_1}]|0\rangle]
 \end{equation}
+\\
 where $A$ and $B$ are the one electron perturbation operators,
 $\hat{P}(A,B)$ simultaneously interchanges operators $A$ and $B$
 and takes the complex conjugate of the expression,
@@ -259,7 +271,8 @@ $T$ operator, $\bar{A} = e^{-\hat{T}}\hat{A}e^{\hat{T}}$
 and $\hat{X}^{B}_{\omega_1}$ and $\hat{Y}^{B}_{\omega_1}$ are excitation operators involving 
 the first-order right and left hand perturbed amplitudes corresponding to operator 
 $B$ respectively. These amplitudes can be obtained by solving a linear system
-of equations involving the CC Jacobian ($\bar{H}_{\mu\nu} = \langle \mu | \big[\bar{H},\tau_\nu\big] |0\rangle$),
+of equations,
+%involving the CC Jacobian ($\bar{H}_{\mu\nu} = \langle \mu | \big[\bar{H},\tau_\nu\big] |0\rangle$),
 \\
 \begin{equation}
 \begin{split}
@@ -284,12 +297,12 @@ for both electric and magnetic dipole perturbation.
 \subsection{Perturbed Natural Orbitals}
 The CC-LRF (eq. 4.9) can also be formulated in terms of perturbed densities,
 \begin{equation}
-{\langle\langle A;B\rangle\rangle}_{\omega_1} =  \frac{1}{2}\hat{P}(A,B)\big[\sum_{pq} A_{pq}D^{B}_{pq}(\omega_1)\big]
+{\langle\langle A;B\rangle\rangle}_{\omega_1} =  \frac{1}{2}\hat{P}(A,B)\big[\sum_{pq} A_{pq}[{D^{B^{\omega_1}}_{pq}}]^{(1)}\big]
 \end{equation}
-where $D^{B}(\omega_1)$ is the frequency dependent first-order
+where $[{D^{B^{\omega_1}}}]^{(1)}$ is the frequency dependent first-order
 perturbed one-electron density related to operator B. The structures  
-of the virtual-virtual block of the perturbed densities for a given
-perturbation operator can be easily identified in spin orbitals as,
+of the virtual-virtual block of perturbed densities of different orders
+(for a given perturbation operator) can be easily identified in spin orbitals,
 \\
 \begin{equation}
 \begin{split}
@@ -301,7 +314,7 @@ perturbation operator can be easily identified in spin orbitals as,
  + (\lambda^{i}_{a})^{(1)}(t^{b}_{i})^{(0)}] \\
 &D^{(2)}_{ab} = \frac{1}{2}[{(\lambda^{ij}_{ac}})^{(1)}(t^{bc}_{ij})^{(1)}\
  + (\lambda^{ij}_{ac})^{(0)}(t^{bc}_{ij})^{(2)}]\ 
-+ [(\lambda^{i}_{a})^{(1)} (t^{b}_{i})^{(1)} + (\lambda^{i}_{a})^{(0)}(t^{b}_{i})^{(2)}]\\
++ [(\lambda^{i}_{a})^{(1)} (t^{b}_{i})^{(1)} + (\lambda^{i}_{a})^{(0)}(t^{b}_{i})^{(2)}].\\
 %\end{multline}
 \end{split}
 \end{equation}
@@ -325,10 +338,11 @@ second-order in perturbation, second-order perturbed densities should in princip
 metric for estimating the importance of a VNO for these properties.
 In this paper, we use an average of second-order guess densities corresponding to each cartesian
 component of an appropriate perturbation operator to define our virtual space 
-for correlated response calculations. For a perturbation operator A, 
+for correlated response calculations. For a perturbation operator A, this guess density looks like,
+\\
 \begin{equation}
-{D^{'}(A)}^{(2)}_{ab} = \frac{1}{2}(t^{ac}_{ij}(A))^{(1)}(t^{bc}_{ij}(A))^{(1)} \
-+ (t^{a}_{i}(A))^{(1)} (t^{b}_{i}(A))^{(1)}, 
+[{D^A_{ab}}]^{(2)} = \frac{1}{2}[t^{ac}_{ij}(A)]^{(1)}[t^{bc}_{ij}(A)]^{(1)} \
++ [t^{a}_{i}(A)]^{(1)} [t^{b}_{i}(A)]^{(1)}, 
 \end{equation}
 where,
 \begin{equation}
@@ -388,18 +402,19 @@ truncates the virtual space as even though the response functions of
 both the properties are quite similar, polarizabilities are much less sensitive to the 
 wavefunction truncation. In all the polarizability calculations, the length-gauge 
 (LG) representation of the electric dipole operator was used. The natural choice of 
-perturbed densities for such calculations is : $\sum\limits_q \frac{1}{3}{D^{'}(\mu_q)}^{(2)}$,
+perturbed densities for such calculations is : $\sum\limits_q \frac{1}{3}[{D^{\mu_q}_{ab}}]^{(2)}$,
 where $q \equiv [x,y,z]$ . 
 \subsection{Specific Rotations}
 For specific rotation calculations, we employed both the LG and velocity-gauge (VG) 
-representations. If we just consider the LG calculations for now, there is no obvious
-choice of how to construct perturbed densities now. One can have either 
-$\sum\limits_q \frac{1}{3}{D^{'}(\mu_q)}^{(2)}$ or $\sum\limits_q\frac{1}{3}{D^{'}(m_q)}^{(2)}$.
+representations. If we consider the LG calculations, there is no obvious
+choice of how to construct perturbed densities now as one can have either 
+$\sum\limits_q \frac{1}{3}[{D^{\mu_q}_{ab}}]^{(2)}$ or $\sum\limits_q\frac{1}{3}[{D^{p_q}_{ab}}]^{(2)}$.
 Another possible option is to diagonalize both the densities separately, truncate the VNOs,
 and then form the virtual space by taking a union of the truncated VNOs. The only difference
-in VG calculations is the replacement of $\sum\limits_q \frac{1}{3}{D^{'}(\mu_q)}^{(2)}$ by 
-by $\sum\limits_q \frac{1}{3}{D^{'}(p_q)}^{(2)}$ where $p_q = -i\frac{\partial}{\partial{q}}$.
-We report the performances of all the three approaches.\\ \\
+in VG calculations is the replacement of $\sum\limits_q \frac{1}{3}[{D^{\mu_q}_{ab}}]^{(2)}$ by 
+$\sum\limits_q \frac{1}{3}[{D^{p_q}_{ab}}]^{(2)}$ where $p$ is the momentum operator, i.e. 
+$p_q = -i\frac{\partial}{\partial{q}}$. We report the performances of all the three approaches
+for specific rotations.\\ \\
 The primary basis set used in this work is aug-cc-pVDZ basis
 and all the property calculations were carried out at 589 nm using 
 using Psi4 and Psi4Numpy software packages.\cite{}

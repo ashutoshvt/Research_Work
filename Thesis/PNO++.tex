@@ -136,13 +136,6 @@ we have recently demonstrated that the NOs obtained from ``perturbation aware" d
 for calculating these response properties.\cite{} In this paper, we extend this approach which we have named 
 PNO++ by constructing second-order pair specific perturbed densities, and compare its performance with 
 the regular method for the same test systems as our earlier PNO paper.
-% how about response properties
-% only McAlexander and co-workers
-% showed that PNO much more compact than PAO and OSV approach 
-% However, rotations for 2-d and 3-d systems very sensitive to truncation
-% inspired by our earlier work with natural orbitals,
-% want to improve that usiing field perturbed densities 
-% Here we explotre just that!!!! - exploration, that's why simulation code!
 \section{Theory}
 \subsection{Coupled Cluster Response Theory}
 Coupled cluster (CC) response theory has been proven to be quite a reliable and accurate theoretical
@@ -151,28 +144,84 @@ one expands the time-dependent expectation value of a time-independent operator
 in different orders of the perturbation. The response functions can then be identified 
 as fourier analogues (FA) of the time-dependent expansion terms up to a given order, ex. the
 linear response function (LRF) is the FA of terms appearing in the first order in the
-expansion. The LRFs can also be seen as frequency-dependent first-order perturbed densities. 
-The expression of CC-LRF in terms of these densities can be written as\cite{},
+expansion. CC-LRF for time independent operators $A$ and $B$ can be written as\cite{},
+\\
 \begin{equation}
-{\langle\langle A;B\rangle\rangle}_{\omega_1} =  \hat{P}(A,B)[\langle 0 | \
+{\langle\langle A;B\rangle\rangle}_{\omega_1} =  \frac{1}{2}\hat{P}(A,B)[\langle 0 | \
 [\hat{Y}^{B}_{\omega_1}, \bar{A}]|0\rangle + \langle 0 | \
 (1 + \hat{\Lambda})|[\bar{A},\hat{X}^{B}_{\omega_1}]|0\rangle]
 \end{equation}
-where $A$ and $B$ are time-independent one electron perturbation opeartors,
-$\hat{P}(A,B)$ is a symmetrizing operator which simultaneously interchanges 
+\\
+where $\hat{P}(A,B)$ is a symmetrizing operator which simultaneously interchanges 
 operators $A$ and $B$ and takes the complex conjugate of the expression, $\omega_1$ 
 is the frequency of the external field, $|0\rangle$ is the reference wavefunction, $\hat{\Lambda}$ is
 a linear de-excitation operator that parametrizes the CC left hand wavefunction, 
 overbar on operator $A$ denotes a similarity transformation with the ground state 
-$T$ operator, $\bar{A} = e^{-\hat{T}}\hat{A}e^{\hat{T}}$
-and $\hat{X}^{B}_{\omega_1}$ and $\hat{Y}^{B}_{\omega_1}$ are the first-order right and left 
-hand perturbed amplitudes corresponding to perturbation operator $B$ respectively.
-These perturbed amplitudes can be obtained by solving a set of linear equations involving
-CC Jacobian,
-
-
+$T$ operator, $\bar{A} = e^{-\hat{T}}\hat{A}e^{\hat{T}}$ and $\hat{X}^{B}_{\omega_1}$ 
+and $\hat{Y}^{B}_{\omega_1}$ are the first-order right and left hand perturbed 
+amplitudes corresponding to perturbation operator $B$ respectively.
+The LRF expression above can be re-written in terms of frequency-dependent first-order 
+perturbed densities ${D^{B^{\omega_1}}_{pq}}^{(1)}$, 
+\\
+\begin{equation}
+\begin{split}
+{\langle\langle A;B\rangle\rangle}_{\omega_1} & =  \frac{1}{2}\hat{P}(A,B)[\sum_{pq}A_{pq}\langle 0 | \
+\hat{Y}^{B}_{\omega_1}, \overbar{a^{\dagger}_{p}a_q}]|0\rangle + \langle 0 | \
+(1 + \hat{\Lambda})|[\overbar{a^{\dagger}_{p}a_q},\hat{X}^{B}_{\omega_1}]|0\rangle] \\
+& = \frac{1}{2}\hat{P}(A,B) \big[\sum_{pq} A_{pq}[{D^{B^{\omega_1}}_{pq}}]^{(1)}\big]
+\end{split}
+\end{equation}
+\\
+where $a^{\dagger}_{p}$ and $a_q$ are creation and annihilation operators respectively. 
+In spin orbitals, the virtual-virtual block of this density looks like,
+\\
+\begin{equation}
+{D^{B^{\omega_1}}_{ab}}^{(1)}= \frac{1}{2}\sum_{ijc}[\lambda^{ij}_{ac}X^{bc}_{ij} \
++ Y^{ij}_{ac}t^{bc}_{ij}] + \sum_i[\lambda^{i}_{a}X^{b}_{i}\
+ + Y^{i}_{a}t^{b}_{i}] 
+\end{equation}
+\\
+where $X$ and $Y$ are the right and left hand first order perturbed amplitudes associated with 
+perturbation $B$ at frequency $\omega_1$. These amplitudes can be obtained 
+by solving a linear system of equations,  
+\\
+\begin{equation}
+\begin{split}
+& \sum_\nu{(\bar{H} - \omega I)}_{\mu\nu}X_{\nu}^{B} = -\bar{B}_{\mu} \\
+&\sum_\nu Y_{\nu}^{B}{(\bar{H} + \omega I)}_{\nu\mu}
+= -  \sum_\nu X_{\nu}^{B} F^{'}_{\nu\mu} - \bar{B}^{'}_{\mu}
+\end{split}
+\end{equation}
+\\
+where,
+\begin{equation}
+\begin{split}
+&{(\bar{H} \pm \omega I)}_{\mu\nu} = \langle \mu | \big[(\bar{H} \pm \omega I),\tau_\nu\big] |0\rangle\\
+&F^{'}_{\nu\mu} = \langle 0|(1 + \hat{\Lambda})|\big[\big[\bar{H},\tau_\nu\big],\tau_\mu\big] |0 \rangle\\ 
+&\bar{B}_{\mu} = \langle \mu|\bar{B}|0 \rangle \\
+& \bar{B}^{'}_{\mu} = \langle 0|(1 + \hat{\Lambda})|\big[\bar{B},\tau_\mu\big] |0 \rangle.
+\end{split}
+\end{equation}
+\\
+Here $\tau_\mu$, $\tau_\nu$ are operators which generate excited determinats $|\mu\rangle$
+and $|\nu\rangle$ by acting on the reference wavefunction $|0\rangle$. Once, we solve for 
+$X_{\nu}^{B}$ and $Y_{\nu}^{B}$ amplitudes, the first-order perturbed density can be built 
+from eq.(5.3) to construct the CC-LRF. Elements of the dynamic polarizability ($\bm{\alpha}$) 
+and optical rotation ($\bm{\beta}$) tensors can be obtained from the LRF with appropriate 
+perturbation operators. For example,
+\begin{equation}
+\begin{split}
+& \alpha_{xy}(\omega) = {\langle\langle \mu_x;\mu_y\rangle\rangle}_{\omega_1}\\
+&\beta_{xy}(\omega) = {-\text{Im} \langle\langle \mu_x;m_y\rangle\rangle}_{\omega_1} \\
+\end{split}
+\end{equation}
+where $\bm{\mu} = \sum_i q_i \bm{r_i} $, $\bm{m} = \sum_i \frac{q_i}{2m_i} \bm{r_i} \times \bm{p_i}$
+and "Im" signifies that $\beta_{xy}(\omega)$ equals the imaginary part of the corresponding LRF.
 \subsection{Pair Natural Orbitals}
-The regular PNO density can be written as,
+Localization of Occupied orbitals using schemes like Boys-Foster, Pipek-Mezey
+PNO method involves diagonalization of an approximate pair specific density
+Most popular - T2 amplitudes
+The PNO density for pair $ij$ can be written as,
 \begin{equation}
 \bm{D}^{ij} = \frac{2}{1+\delta_{ij}} (\bm{T}^{ij}\tilde{\bm{T}}^{ij\dagger} + \bm{T}^{ij\dagger}\tilde{\bm{T}}^{ij})
 \end{equation}
@@ -183,11 +232,14 @@ where,
 \begin{equation}
 T^{ij}_{ab} = \frac{\langle ab|ij \rangle}{f_{ii} + f_{jj} - \epsilon_a - \epsilon_b}
 \end{equation} 
+Every pair has their own virtual space. They are non-orthogonal among each other. So 
+Every pair has their own set of OEI and TEIs. Talk about transformation of doubles 
+and singles. shortcomings for response properties. 
 In the PNO++ approach, we create a perturbation specific density for each $ij$ pair. For a given
 perturbation A, the PNO++ density is constructed by replacing the ground state $T^{ij}_{ab}$ amplitudes 
-by perturbed amplitudes $T(A)^{ij}_{ab}$,
+by perturbed amplitudes $X^{ij}_{ab}$,
 \begin{equation}
-\bm{D}(A)^{ij} = \frac{2}{1+\delta_{ij}} (\bm{T}(A)^{ij}\bm{\tilde{T}}(A)^{ij\dagger} + \bm{T}(A)^{ij\dagger}\bm{\tilde{T}}(A)^{ij})
+\bm{D}^{A;ij} = \frac{2}{1+\delta_{ij}} (\bm{T}_{A}^{ij}\bm{\tilde{T}}_{A}^{ij\dagger} + \bm{T}_{A}^{ij\dagger}\bm{\tilde{T}}_{A}^{ij})
 \end{equation}
 The leading order contribution to these perturbed amplitudes come from $\bar{A}$ which is nothing but 
 the similarity transformed perturbation operator $A$, $e^{-T}\hat{A}e^{T}$. So, we choose the following
