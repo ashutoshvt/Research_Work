@@ -276,7 +276,7 @@ schemes could be explored where a) PNOs are defined from perturbed densities b) 
 are obtained by a union of truncated PNOs defined from MP2 and perturbed densities. It should
 be noted that one can't just add ground state and perturbed densities together to define an effective
 density as they are not in the same units. We have implemented scheme a) in this work and call it LPNO++.
-The LPNO++ approach can be justified due to the fact that our target is not total energies but the 
+This approach can be justified due to the fact that our target is not total energies but the 
 derivative of the total energies in the presence of external fields. Furthermore, it can
 be shown that on replacing the CC ground state amplitudes with that of MP2 in CC-LR theory
 one introduces minimal errors for both polarizabilities and specific rotations.\cite{} 
@@ -334,16 +334,72 @@ The choice of perturbed pair density for polarizabilities are pretty straightfor
 the electric dipole operator. Thus, one takes an average of the density corresponding to this operator over all cartesian 
 compoments to define our virtual space. i,e. $ {\bm{D}^{\mu;ij}} = \sum\limits_q \frac{1}{3}[{\bm{D}^{\mu_q;ij}}]$,
 where $q \equiv [x,y,z]$. Since, specific rotation's LRF has both electric and magnetic dipole operators, we use 
-both the densities individually and compare their performances in this work. 
-
-
-However, these in MVG represntation, the electric dipole is expressed in terms of momentum operator, we construct  
-
- 
-residual update procedure
-harley's eq 15 ( show 4 singles too!)
+the associated densities individually and compare their performances in this work. As the MVG representation expresses
+electric dipole in terms of the momentum operator $\hat{p}$, we use ${\bm{D}^{p;ij}}$ instead of ${\bm{D}^{\mu;ij}}$.\\
+One of the advantages of the simulation code is that it requires minimal changes in the canonical CCLR code. In this
+procedure, the residual of the CC amplitude equations, ($R^{ij}, R^{i}$) is transformed from the canonical MO basis to 
+the PNO basis in every iteration.
+\begin{equation}
+\begin{split}
+&\bm{R}^{ij} = {\bm{Q}^{ij}}^{\dagger} R^{ij} \bm{Q}^{ij}\\
+&\bm{R}^{ii} = {\bm{Q}^{ii}}^{\dagger} R^{i} \bm{Q}^{ii}\\
+\end{split}
+\end{equation}
+\\
+One can can continue to work in the PNO basis but since the virtual-virtual block of the Fock matrix is 
+not diagonal in this basis, the convergence of the amplitude equations is expected to be slower. Thus, its common to 
+use a semicanonical PNO basis which diagonalizes $\bm{F}^{ij}_{vir}$,
+\begin{equation}
+\begin{split}
+&{\bm{U}^{ij}}^{\dagger} \bm{F}^{ij}_{vir} \bm{U}^{ij} = \bm{\Lambda}^{ij} \\
+&\bm{\bar{R}}^{ij} = {\bm{U}^{ij}}^{\dagger} \bm{R}^{ij} \bm{U}^{ij}\\
+&\bm{\bar{R}}^{ii} = {\bm{U}^{ii}}^{\dagger} \bm{R}^{ii} \bm{U}^{ii}\\
+\end{split}
+\end{equation}
+where $\bm{\Lambda}^{ij}$ is the diagonal matrix containing orbital energies ($\bm{\epsilon}^{ij}_{a}$, $\bm{\epsilon}^{ij}_{b}, ..$).
+Subsequently, the preconditioner is applied to the residual to calculate the increment,
+\begin{equation}
+\begin{split}
+&{\bm{\bar{\Delta}}}^{ij} = \frac{\bm{\bar{R}}^{ij}}{F_{ii} + F_{jj} - \bm{\epsilon}^{ij}_{a} - \bm{\epsilon}^{ij}_{b}} \\
+&{\bm{\bar{\Delta}}}^{i} = \frac{\bm{\bar{R}}^{ii}}{F_{ii} - \bm{\epsilon}^{ii}_{a}}.\\
+\end{split}
+\end{equation}
+The increment is transformed back to the canonical basis,
+\begin{equation}
+\begin{split}
+{\Delta}^{ij} = \bm{Q}^{ij}\bm{U}^{ij} {\bm{\bar{\Delta}}}^{ij} {\bm{U}^{ij}}^{\dagger} {\bm{Q}^{ij}}^{\dagger}\\
+{\Delta}^{ii} = \bm{Q}^{ii}\bm{U}^{ii} {\bm{\bar{\Delta}}}^{ii} {\bm{U}^{ii}}^{\dagger} {\bm{Q}^{ii}}^{\dagger}\\
+\end{split}
+\end{equation}
+and added to the amplitudes of the previous iteration $(n-1)$,
+\begin{equation}
+\begin{split}
+&t^{ij}(n) = t^{ij}(n-1) + \Delta^{ij}\\
+&t^{i}(n) = t^{i}(n-1) + \Delta^{i}.\\
+\end{split}
+\end{equation}
+It should be noted that this procedure is applied for filtering the non-local parts of $\hat{T}$, $\hat{\Lambda}$, $X^{A}_{\omega}$ 
+and $Y^{A}_{\omega}$ amplitudes. 
 \section{Results and Discussions}
-whatever I have so far.
+\subsection{$(H_2)_n$ Helices}
+First thing would be showing the retention of diffuse space. show the two graphs
+showing for (h2)7 systems. name it PNO(M) for modified PNO, mention that
+this is not feasible as big number of diffuse-functions, plus not a blackbox 
+way for selecting the cutoff for retention.
+- Linear structure, chiral, helical arrangement
+- best case for local correlation problems
+- small masses, high OR
+- Polariz, specific rotation (h2)4, (h2)5, (h2)6, (h2)7, maybe-bigger!! : LG, MVG, aDZ basis
+- diagnostics for FVNO++ approach:
+    - first comparing the structure of the ground state and perturbed density, one can see
+      that perturbed density would have a higher rank than ground-state density.
+    - how about incorporating L*L density as well and optimized NOs by better guess densities.
+    - Here we mostly concentrate on capturing the right kind of behavior rather
+    than savings, since there is not enough sparsity on offer for these cases.
+    This is applicable for other test cases as well.
+\subsection{beta-pinene}
+\subsection{phenyl-ethanol}
+\subsection{norbornenone}
 \section{Conclusions}
 
 %The most popular approaches
