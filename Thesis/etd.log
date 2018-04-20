@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  18 APR 2018 23:09
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  19 APR 2018 20:07
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -542,12 +542,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 358--365
 
  []
 
-[54] [55]
-Underfull \hbox (badness 10000) in paragraph at lines 408--449
-
- []
-
-[56] [57] [58]) [59] [60]
+[54] [55] [56] [57] [58]) [59] [60]
 Chapter 5.
 (./PNO++.tex
 
@@ -576,21 +571,26 @@ Underfull \hbox (badness 10000) in paragraph at lines 182--188
 
  []
 
-[67] [68] [69] [70]) [71] [72]
+[67] [68] [69] [70]
+Underfull \hbox (badness 10000) in paragraph at lines 301--306
+
+ []
+
+[71] [72]) [73]
 Chapter 6.
-(./etd.bbl [73
+(./etd.bbl [74
 
-] [74
+] [75
 
-] [75] [76]
+] [76] [77]
 Missing character: There is no ï in font cmr12!
 Missing character: There is no ¿ in font cmr12!
 Missing character: There is no ¼ in font cmr12!
- [77] [78] [79] [80] [81] [82]
+ [78] [79] [80] [81] [82] [83]
 Missing character: There is no â in font cmr12!
 Missing character: There is no € in font cmr12!
 Missing character: There is no  in font cmr12!
- [83]) [84]
+ [84]) [85]
 (./etd.aux)
 
 LaTeX Warning: There were undefined references.
@@ -624,10 +624,10 @@ ive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive
 016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/201
 6/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2016/
 texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on etd.pdf (94 pages, 814410 bytes).
+Output written on etd.pdf (95 pages, 817710 bytes).
 PDF statistics:
- 680 PDF objects out of 1000 (max. 8388607)
- 478 compressed objects within 5 object streams
+ 683 PDF objects out of 1000 (max. 8388607)
+ 480 compressed objects within 5 object streams
  0 named destinations out of 1000 (max. 500000)
  76 words of extra memory for PDF output out of 10000 (max. 10000000)
 

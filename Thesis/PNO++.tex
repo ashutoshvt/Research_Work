@@ -178,7 +178,7 @@ In spin orbitals, the virtual-virtual block of this density looks like,
 \begin{equation}
 {D^{B^{\omega_1}}_{ab}}^{(1)}= \frac{1}{2}\sum_{ijc}[\lambda^{ij}_{ac}X^{bc}_{ij} \
 + Y^{ij}_{ac}t^{bc}_{ij}] + \sum_i[\lambda^{i}_{a}X^{b}_{i}\
- + Y^{i}_{a}t^{b}_{i}] 
++ Y^{i}_{a}t^{b}_{i}] 
 \end{equation}
 \\
 where $X$ and $Y$ are the right and left hand first order perturbed amplitudes associated with 
@@ -264,8 +264,8 @@ of amplitudes from one pair to another requires a overlap metric given by,
 \subsection{Perturbed PNOs}
 It was shown from our earlier work that the regular LPNO-[CCSD/CC2]-LR approach has
 very slow convergence towards the full canonical result both for dynamic polarizabilities
-and specific rotations\cite{}. This is not unsurprising since the sparsity of perturbed 
-amplitudes are very different from unperturbed wavefunction amplitudes. Thus, the 
+and specific rotations\cite{}. This is unsurprising since the sparsity of perturbed 
+and unperturbed amplitudes are usually very different from each other. Thus, the 
 pair densities should be able to capture the response of the ground state amplitudes. 
 Recent reduced scaling works on ADC(2) or EOM-CC2/CCSD excitation energies employ 
 PNO-MP2 and PNO-CIS(D) densities for ground and excited state calculations respectively.\cite{}
@@ -275,40 +275,73 @@ obtained from finite field procedures. Due to this constraint, two different
 schemes could be explored where a) PNOs are defined from perturbed densities b) effective PNOs 
 are obtained by a union of truncated PNOs defined from MP2 and perturbed densities. It should
 be noted that one can't just add ground state and perturbed densities together to define an effective
-density as they are not in the same units. We have named scheme a) as LPNO++ .
+density as they are not in the same units. We have implemented scheme a) in this work and call it LPNO++.
 The LPNO++ approach can be justified due to the fact that our target is not total energies but the 
 derivative of the total energies in the presence of external fields. Furthermore, it can
 be shown that on replacing the CC ground state amplitudes with that of MP2 in CC-LR theory
 one introduces minimal errors for both polarizabilities and specific rotations.\cite{} 
 Hence, even though LPNO++ can't be expected to work as well as LPNO for ground state 
 calculations, it can capture the response of the wavefunction very efficiently and 
-hence should perform a lot better for these kinds of properties. In the LPNO++ approach, 
-we create a perturbation specific density for each $ij$ pair. For a given perturbation A, 
-the LPNO++ density is constructed by replacing the ground state $T^{ij}_{ab}$ amplitudes 
-by the corresponding perturbed amplitudes $X^{ij}_{ab}$, 
+hence should perform a lot better for these kinds of properties. The LPNO++ approach
+involves creation of a perturbation specific density for each $ij$ pair. 
+This is an extension of our work on natural orbitals where we showed that second-order
+perturbed densities can be used quite efficiently for calculating response properties\cite{}.
+For a given perturbation A, the LPNO++ density is constructed by replacing the MP2 
+$T^{ij}_{ab}$ amplitudes by the corresponding perturbed amplitudes $X^{ij}_{ab}$.
 \begin{equation}
 \bm{D}^{A;ij} = \frac{2}{1+\delta_{ij}} (\bm{X}^{ij}\bm{\tilde{X}}^{ij\dagger} + \bm{X}^{ij\dagger}\bm{\tilde{X}}^{ij})
 \end{equation}
-The leading order contribution to these perturbed amplitudes come from $\bar{A}$ which is nothing but 
-the similarity transformed perturbation operator $A$, $e^{-T}\hat{A}e^{T}$. So, we choose the following
-form of the $X^{ij}_{ab}$ amplitudes,
+Rewriting the first part of eq.(5.4),
+\begin{equation}
+X_{\mu}^{A} = -\sum_{\nu}{{(\bar{H} - \omega I)}^{-1}}_{\mu\nu}\bar{A}_{\nu}
+\end{equation}
+one can see that an obvious guess for $X^{ij}_{ab}$ amplitudes could be constructed as
 \begin{equation}
 X^{ij}_{ab} =  \frac{\bar{A}^{ij}_{ab}}{f_{ii} + f_{jj} - \epsilon_a - \epsilon_b} 
 \end{equation} 
-where,
+since the leading contribution to the inverse of the diagonally dominant $(\bar{H} - \omega I)$ matrix 
+would come from the inverse of its diagonal elements, i.e. $f_{ii} + f_{jj} - \epsilon_a - \epsilon_b$. 
+Also, $\bar{A}$ has been approximated by using MP2 amplitudes for the similarity transformation,
+\\
 \begin{equation}
-\bar{A}^{ij}_{ab} = P_{ij}^{ab}\bigg[\sum_e t^{ij}_{eb}[A^a_e - t^m_a A^m_e] -\sum_m t^{mj}_{ab}[A^m_i - t^i_e A^m_e]\bigg]
-\end{equation} 
-\begin{equation}
-P_{ij}^{ab} f_{ij}^{ab} = f_{ij}^{ab} + f_{ji}^{ba} .
+\begin{split}
+\bar{A}^{ij}_{ab} = P_{ij}^{ab}\bigg[\sum_e t^{ij}_{eb}[A^a_e - & t^m_a A^m_e] -\sum_m t^{mj}_{ab}[A^m_i - t^i_e A^m_e]\bigg] \\
+& P_{ij}^{ab} f_{ij}^{ab}  = f_{ij}^{ab} + f_{ji}^{ba}
+\end{split}
 \end{equation}
+\\
+Furthermore, we have taken $omega_1$ as zero so that we can use the same density for response calculations at
+multiple frequencies. This can be justified as the sparsity of the perturbed amplitudes should more or less
+stay the same at the frequencies we are interested in. In this approach, the weak pair approximation can also 
+be employed by using a pair-pseudoresponse metric,
+\begin{equation}
+e^{A}_{ab} =  \sum_{ij} \bar{A}^{ij}_{ab}\bm{\tilde{X}}^{ij}_{ab}.
+\end{equation}
+All the pairs whose pseudoresponses are below a given threshold can be considered as weak pairs and neglected. 
 \section{Computational Details}
-Here we are exploring !!!! that's why simulation code!
-looking at the right behviour pattern mainly
-look at harley's paper for more details.
+The ultimate goal of this work is to be able to carry out response calculations of large solvated molecular clusters.
+for which one would need a production level CC2/CCSD-LPNO++-LR code. As can be seen from eq (5.4), such a code would
+involve reconstruction of $\bar{H}$ elements in every iteration of response equations from the density-fitted 
+3-centered integrals. However, before investing a lot of time and effort in this regard, we use a simulation code in 
+this work to test if the LPNO++ approach can offer a more compact virtual space for calculating these properties. 
+As a result, we mostly focus on small chiral systems of varying topologies: (linear) (P)-$(H_2)_n$ helices and (M)-1-Fluoralkanes, 
+(two-dimensional) (S)-1-Phenylethanol, (three-dimensional cagelike) (1R,4R)-Norbornenone and (1R,5R)-$\beta$-Pinene. 
+Dynamic polarizabilities and specific rotations calculations are carried out for all of these systems within the CC2,CCSD-LR
+formalism with aug-cc-pVDZ\cite{} basis set at 589 nm using Psi4 and Psi4Numpy software packages\cite{}.
+Furthermore, the electric dipole operator $\mu$ is represented in length gauge (LG) for polarizabilities
+while for specific rotations both LG and modified velocity gauge (MVG)\cite{} representations are used.
+The choice of perturbed pair density for polarizabilities are pretty straightforward as its LRF only involves 
+the electric dipole operator. Thus, one takes an average of the density corresponding to this operator over all cartesian 
+compoments to define our virtual space. i,e. $ {\bm{D}^{\mu;ij}} = \sum\limits_q \frac{1}{3}[{\bm{D}^{\mu_q;ij}}]$,
+where $q \equiv [x,y,z]$. Since, specific rotation's LRF has both electric and magnetic dipole operators, we use 
+both the densities individually and compare their performances in this work. 
+
+
+However, these in MVG represntation, the electric dipole is expressed in terms of momentum operator, we construct  
+
+ 
 residual update procedure
 harley's eq 15 ( show 4 singles too!)
-
 \section{Results and Discussions}
 whatever I have so far.
 \section{Conclusions}

@@ -405,47 +405,27 @@ wavefunction truncation. In all the polarizability calculations, the length-gaug
 perturbed densities for such calculations is : $\sum\limits_q \frac{1}{3}[{D^{\mu_q}_{ab}}]^{(2)}$,
 where $q \equiv [x,y,z]$ . 
 \subsection{Specific Rotations}
-For specific rotation calculations, we employed both the LG and velocity-gauge (VG) 
+For specific rotation calculations, we employed both the LG and modified velocity gauge (MVG)\cite{} 
 representations. If we consider the LG calculations, there is no obvious
-choice of how to construct perturbed densities now as one can have either 
-$\sum\limits_q \frac{1}{3}[{D^{\mu_q}_{ab}}]^{(2)}$ or $\sum\limits_q\frac{1}{3}[{D^{p_q}_{ab}}]^{(2)}$.
-Another possible option is to diagonalize both the densities separately, truncate the VNOs,
-and then form the virtual space by taking a union of the truncated VNOs. The only difference
-in VG calculations is the replacement of $\sum\limits_q \frac{1}{3}[{D^{\mu_q}_{ab}}]^{(2)}$ by 
-$\sum\limits_q \frac{1}{3}[{D^{p_q}_{ab}}]^{(2)}$ where $p$ is the momentum operator, i.e. 
-$p_q = -i\frac{\partial}{\partial{q}}$. We report the performances of all the three approaches
-for specific rotations.\\ \\
-The primary basis set used in this work is aug-cc-pVDZ basis
+choice of how to construct perturbed densities. Both $[{D^{\mu_q}_{ab}}]^{(2)}$ 
+and $[{D^{m_q}_{ab}}]^{(2)}$ are valid choices. Hence, we use both the densities
+for defining our virtual space and compare their performances.
+%Another possible option is to diagonalize both the densities separately, truncate the VNOs,
+%and then form the virtual space by taking a union of the truncated VNOs. 
+Similarly, in MVG calculations, we use both $[{D^{p_q}_{ab}}]^{(2)}$ 
+and $[{D^{m_q}_{ab}}]^{(2)}$ as our definitions of 
+perturbed densities where $p$ is the momentum operator, i.e. 
+$p_q = -i\frac{\partial}{\partial{q}}$. 
+%We report the performances of both the three approaches for specific rotations.\\ \\
+The primary basis set used in this work is aug-cc-pVDZ\cite{}
 and all the property calculations were carried out at 589 nm using 
 using Psi4 and Psi4Numpy software packages.\cite{}
 We also report the sparsity pattern of the guess densities of large
-solvated molecular clusters using DF-MP2 which can give us an estimate of 
-the computational savings that can be exploited. It should be noted that 
-we have used the same virtual space for calculating both unperturbed 
+solvated molecular clusters using DF-MP2 which give us an estimate of 
+the computational savings that can be exploited for such systems. It should 
+be noted that we have used the same virtual space for calculating both unperturbed 
 and perturbed amplitudes as this ensures a match with results obtained from 
 the finite-field procedures. 
-%The r test cases of this work is hydrogen peroxide,
-%H$_2$O$_2$, though additional tests are reported for related species such as
-%(\textit{P})-dimethylallene and (\textit{S})-methyloxirane, as well as those
-%same molecules interacting with one or more water molecules.  All molecular
-%structures were optimized using the B3LYP
-%functional\cite{Becke93,Stephens94:B3LYP,Lee88:LYP} in the aug-cc-pVDZ (aDZ)
-%basis.\cite{Dunning89,Kendall92,Woon94} (Coordinates of all structures are
-%provided in Tables S1-S5 of the Supporting Information.) Frequency-dependent
-%polarizabilities were computed at the coupled cluster singles and doubles
-%(CCSD) level of theory\cite{Purvis82} using a linear-response
-%formulation.\cite{Christiansen98} While the aDZ basis set was used for most
-%test calculations, the larger aug-cc-pVTZ (aTZ) and aug-cc-pVQZ (aQZ) basis
-%sets were also employed for selected analyses.\cite{Kendall92} All orbitals
-%were active in the correlated models utilized here, and all coupled-cluster
-%calculations were carried out using the PSI4 open-source quantum chemistry
-%package.\cite{psi4}  In all calculations in which virtual orbitals are
-%truncated, the same orbital space is used in the solution of the unperturbed
-%and perturbed amplitudes equations, just as is required for locally correlated
-%property calculations.\cite{Crawford10}  We note that the size-extensivity of
-%the polarizability is unaffected by the truncation of
-%the virtual space.
-%
 \section{Results and Discussion}
 Retention of diffuse space: Sort all the canonical MOs by their spatial
 extents <i|r*r|i>, choose a cutoff, retain all the orbitals above that cutoff
