@@ -142,15 +142,12 @@ on the computational resources. An obvious way to make these compuations practic
 techniques like projected natural orbitals (PNO) approach\cite{} which has been really sucessfull in describing energetics of 
 large molecular systems. However, works towards the extension of these methods to calculate chiroptical properties has been 
 fairly limited\cite{}. McAlexander and Crawford in their recent work\cite{} demonstrated that the regular PNO approach
-suffers from slow convergence towards the full canonical result. The main focus of this work is identifying the problems
-associated with such approaches for calculating optical rotation and finding out ways in which they can be alleviated.
-The theoretical tools needed to calculate chiroptical properties are derived in Chapter 2 within the context of coupled cluster 
-linear response theory.
-are derived in chapter 2.
-and talks about the challenges of modelling optical rotation in solutions. Chapter 3 
-
-
-describes application of a very useful 
-technique to reduce the computational costs for response properties and identifies the inherent
-problems associated with such approaches. Corrected in chapter 3 and extended to reduced-scaling
-domain in chapter 4.
+suffers from slow convergence towards the full canonical result. The main focus of this work is identifying the reasons
+behind the sub-optimal peformance of such approaches for optical rotations. Subsequently, novel modifications
+have been proposed which significantly improves the performance of these schemes.\\
+The necessary equations to calculate chiroptical properties within CC linear response theory are derived in 
+Chapter 2. Also, a brief description of solvation models that have been used for modeling chiroptical properties 
+is provided. Chapter 3 investigates the performance of natural orbitals (FVNO scheme) for CC dynamaic  polarizabilites.
+A new scheme called FVNO++ is developed in chapter 4 which significantly outperforms the regular FVNO scheme
+for both polarizabilities and rotations. Chapter 5 extends the FVNO++ (a reduced-prefactor) approach to the reduced-scaling 
+domain by implementing what we call as PNO++ method. Finally, concluding remarks are given in Chapter 6.
