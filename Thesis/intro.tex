@@ -10,10 +10,12 @@
 %    h. My work comes in here!
 %	i. local correlatin - which chapter discusses what... end by conclusion..
 \section{Chirality}
-Lord Kelvin was the first to use the word `chiral' at a lecture he gave at Oxford 
+Lord Kelvin was the first to use the word `chiral' in his lecture at Oxford 
 University in 1894: ``I call any geometrical figure, or group of points, 
 `chiral', and say that it has chirality if its image in a plane mirror, ideally realized, 
-cannot be brought to coincide with itself"\cite{}. There are different ways in which a molecule 
+cannot be brought to coincide with itself"\cite{}. 
+\\
+There are different ways in which a molecule 
 could be chiral. The most common example being the presence of a chiral center 
 like a carbon or nitrogen atom with four different substituents. Axial chirality, usually 
 possessed by molecules with cumulated double bonds like allenes and chirality planes 
@@ -27,12 +29,12 @@ as the name sugggests, the (S) enantiomer on the other hand smells like turpenti
 Thus, the interaction of the (S) enantiomer with the chiral molecules constituting the olfactory receptors 
 responsible for the sensation of smell is totally different from its fellow enantiomer.
 The enantiomers also interact differently with the left- and right-hand circularly polarized (LCP and
-RCP) light in processes of absorption, refraction etc. A given chiral molecule posesses the 
+RCP) light in processes of absorption, refraction, etc. A chiral molecule posesses the 
 properties of circular dichroism (CD) and circular birefringence, i.e. it has different absorption 
-coefficents and refractive indices for the LCP and RCP light respectively. As a result of circular 
-birefringence, a chiral molecule rotates the plane of polarized light as it passes through it,
-a phenomenon known as optical rotation. It should be noted that an enantiomeric pair of chiral
-molecules has equal optical rotations but in opposite directions.\\
+coefficents and refractive indices for the LCP and RCP light, respectively. As a result of circular 
+birefringence, the plane of polarization of a plane-polarized light in a chiral medium gets rotated/shifted
+by an amount known as the optical rotation of the medium. It should be noted that an enantiomeric pair of chiral
+molecules has equal magnitudes of optical rotation but in opposite directions.\\
 Since almost every part of the human body is composed of chiral molecules, its unsurprising that
 more than 60\% of the pharmaceutical drugs are chiral as well. Hence, one of the most 
 important aspect of the drug-design research is to be able to define the absolute configuration 
@@ -43,23 +45,26 @@ Europe in 1950s to cure morning sickness but resulted in birth-defects in thousa
 infants. It was found through a study done on rodents that the (R) enantiomer is indeed 
 a sedative but the (S) enantiomer is a teratogen\cite{}. Furthemore, these enantiomers were 
 found to rapidly interconvert in vivo in humans\cite{} because of which separating 
-these two forms before use is useless.
+these two forms before use doesn't help.
 \\
 The first step in experimental determination of AC either involves the separation of 
 a racemic mixture (equal concentration of both the enantiomers) into individual enantiomers
 using chiral resolution methods like chiral column chromatography or a selective synthesis
-of a given enantiomer using asymmetric synthesis. X-ray crystallography would then be the 
+of a given enantiomer using the process of asymmetric synthesis. X-ray crystallography would then be the 
 most popular procedure, provided one can crystallize the molecule first which usually 
 requires the presence of heavy atom(s). Alternatively, one can measure the responses of 
-the enantiomers like CD, optical rotation using corresponding chiroptical spectroscopy
-techniques like electronic and vibrational CD i.e. ECD (UV-VIS) and VCD (IR), polarimetry etc.
-and compare that against some suitable reference chiral substrate. If no such reference
-exists, then accuarate {\em ab initio} methods can come to the rescuse and help validate
-these experimental measurements. Sometimes, designing an asymmteric synthesis might be  
-too complicated for molecules with large number of stereocenters and in these cases,
-theory can take the lead and predict the AC of such compounds. In other words, theoretical
-calculations of these chiroptical properties could serve as a very useful 
-computational tool for modern organic chemists.\\\\
+the enantiomers like CD and optical rotation using corresponding chiroptical spectroscopy
+techniques like electronic and vibrational CD i.e. ECD (UV-VIS) and VCD (IR) and polarimetry,
+followed by comparision against some suitable reference chiral substrate. However, in cases of 
+ambiguity regarding appropriate references, accurate {\em ab initio} methods can come to the rescue and 
+help validate these experimental measurements. Furthermore, designing an asymmteric synthesis might not
+be straightforward for many chiral systems, especially the ones with large number of stereocenters. 
+In such cases, theory can even take the lead and predict the corresponding AC. In other words, theoretical
+calculations of these chiroptical properties could serve as a very useful computational tool for 
+modern organic chemists. In particular, accurate optical rotation calculations are highly desired 
+as the experimental techniques for measuring this property are fairly stable and robust in 
+both gas and solution phases.
+\\
 %Theoretical and computational chemistry has grown by leaps and bounds over the
 %past several decades. {\em ab initio} quantum chemical methods can now accurately
 %predict a variety of molecular properties. More recently, these methods have
@@ -69,32 +74,34 @@ computational tool for modern organic chemists.\\\\
 %can provide a computational tool to modern organic chemists to determine
 %the absolute stereochemical configuration of a chiral compound, thus alleviating the experimental difficulties
 %involved.\\ 
+\section{{\em Ab Initio} Optical Rotation Calculations}
 Rosenfeld developed a quantum mechanical recipe for calculating optical rotations in the year
 1929\cite{Rosenfeld29}. He showed that in the presence of an external electromagnetic field,
 the induced dipole moment in a molecule can be written as:
-\begin{equation}\langle\vec{\mu}\rangle = \alpha\vec{E} + \frac{1}{\omega}\textbf{G}^\prime\frac{\partial\vec{B}}{\partial t}
+\begin{equation}\langle\vec{\mu}\rangle = \bm{\alpha}\vec{E} + \frac{1}{\omega}\textbf{G}^\prime\frac{\partial\vec{B}}{\partial t}
 \end{equation} where $\vec{E} $ and $\vec{B}$ are the time dependent electric and
 magnetic field vectors respectively, $\omega$ is the frequency of the filed, $\alpha$ is the electric dipole
 polarizability tensor and the $\textbf{G}^\prime$ tensor, also known as the Rosenfeld tensor is associated 
 with the property of optical rotation. Invoking time-dependent Schr\"odinger's equation in conjunction 
 with perturbation theory, expanding the expectation value of dipole operator in orders of perturbation 
-and identifying the term linear in $\frac{\partial\vec{B}}{\partial t}$, 
-for exact states, the $\textbf{G}^\prime$ tensor looks 
+and identifying the term linear in $\vec{E}$ and $\frac{\partial\vec{B}}{\partial t}$, 
+for exact states, the $\bm{\alpha}$ and $\textbf{G}^\prime$ tensor look like,
 \\
 \begin{equation}
-%\textbf{G}^{\prime}(\omega) = -\frac{1}{\hbar} \text{Im}\sum_{n \neq 0}\left[\frac{\bra
-%{\psi_o}\vec{\mu}\ket{\psi_n}\bra{\psi_n}\vec{m}\ket{\psi_o}}{\omega_{no} - \omega - i\Gamma_{no}} + \frac{\bra
-%{\psi_o}\vec{m}\ket{\psi_n}\bra{\psi_n}\vec{\mu}\ket{\psi_o}}{\omega_{no} + \omega + i\Gamma_{no}} \right]
-\textbf{G}^{\prime}(\omega) = -\frac{2}{\hbar} \text{Im}\sum_{n \neq 0}\frac{\omega \bra
-{\psi_o}\vec{\mu}\ket{\psi_n}\bra{\psi_n}\vec{m}\ket{\psi_o}}{{\omega_{no}}^2 - {\omega}^2 }.
+\begin{split}
+& \bm{\alpha}(\omega) = -\frac{2}{\hbar} \sum_{n \neq 0}\frac{\omega_{no}\bra
+{\psi_o}\vec{\mu}\ket{\psi_n}\bra{\psi_n}\vec{\mu}\ket{\psi_o}}{{\omega_{no}}^2 - {\omega}^2 }\\
+& \textbf{G}^{\prime}(\omega) = -\frac{2}{\hbar} \text{Im}\sum_{n \neq 0}\frac{\omega \bra
+{\psi_o}\vec{\mu}\ket{\psi_n}\bra{\psi_n}\vec{m}\ket{\psi_o}}{{\omega_{no}}^2 - {\omega}^2 }\\
+\end{split}
 \end{equation}
 \\
 Here, $\vec{\mu}$ and $\vec{m}$ are electric and magnetic dipole operators, 
 $\vec{\mu} = \sum\limits_i q_i \vec{{r}_i}$ and $\vec{m} = \sum\limits_i \frac{q_i}{2m_i} \vec{{r}_i} \times \vec{{p}_i}$, $\omega$ is the frequency of light, $\omega_{no}$ is the excitation energy of the state $\psi_n$.
 %\cite{CrawfordTamJPA07}. 
 Im means the imaginary part of the equation and the summation runs over all the excited
-states $\psi_n$. Specific rotation, ${\lbrack\alpha\rbrack}_\omega$ is related to the trace of this tensor 
-normalized by pathlength and concentration and is usually reported in units of in deg dm$^{\text{-1}}$(g/mL)$^{\text{-1}}$,\cite{Crawford06}
+states $\psi_n$. Specific rotation, ${\lbrack\alpha\rbrack}_\omega$ is related to the trace of the Rosenfeld tensor 
+normalized by pathlength and concentration and is usually reported in the units of deg dm$^{\text{-1}}$(g/mL)$^{\text{-1}}$,\cite{Crawford06}
 \\
 \begin{equation}
 {\lbrack\alpha\rbrack}_{\omega} = \frac{(72.0 \times 10^6){\hbar}^2 N_A\;\omega}{c^2{m_e}^2 M} \times \left[ \frac{1}{3}Tr(\textbf{G}^\prime)\right]
@@ -102,42 +109,48 @@ normalized by pathlength and concentration and is usually reported in units of i
 \\
 Here, $\textbf{G}^\prime$ and $\omega$ are in atomic units, c is the speed of light (m/s), m$_{\text{e}}$ is the 
 mass of electron (kg), M is the molecular mass (amu) and $N_A$ is Avogadro's number. Calculating the 
-$\textbf{G}^\prime$ tensor using equation (1.2) requires explicit calculations of a large number of excited states which is very computationally expensive. Most ab initio methods use the linear response formalism
-\cite{Koch90,Kobayashi94} instead to calculate ${\lbrack\alpha\rbrack}_\omega$.
+$\textbf{G}^\prime$ tensor using equation (1.2) requires explicit calculations of a large number of 
+excited states which is computationally prohibitive. A more practical approach is to invoke the response formalism
+\cite{Koch90,Kobayashi94}, which casts these tensors as response functions,
 \begin{equation}
-\textbf{G}^{\prime}(\omega) = Im\langle\langle\mu;m\rangle\rangle
-\end{equation} The linear response approach focuses on the perturbation of the
-ground state wavefunction in the presence of an external field, avoiding
-excited state calculations. Different levels of theory have been employed
-over the years for calculating optical rotation. Polavarapu was the first to
-calculate ab-initio optical rotation of gas phase molecules using the time
-dependent Hartree Fock method\cite{Polavarapu96}. The signs of the calculated optical
-rotation values matched with that of the experiment for most of his structures,
-while their magnitudes differed generally by a factor of two. Inspired by
-Polavarapu's success, Cheeseman et al. \cite{Cheeseman00,Stephens01} included correlation
-effects in the calculations by applying density functional theory.
-Using large basis sets with diffuse functions like aug-cc-pVDZ and aug-cc-pVTZ,\cite{Dunning89} they were able to match the experimental values very closely, with a deviation of 20-25 degrees
-for a set of 28 chiral molecules. Ruud et al. extended the calculations to the
-coupled cluster level using the coupled cluster response
-theory (CCLR) developed by Koch and J{\o}rgensen\cite{Koch90},
-and obtained promising results\cite{Ruud03}. These initial breakthroughs have allowed optical
-rotation calculations to be performed on a large number of chiral molecules over the years.  As
-such, the gas phase calculations have become very reliable now and are being
-increasingly used to determine absolute configurations of many chiral molecules.\cite{Kondru99} \\However, since most of the experimental measurements of optical rotation are
-performed in solutions, we need to be able to calculate this property for solutions
-as well. But a larger number of molecules and stronger intermolecular interactions
-makes the modelling of solution phase optical rotation much more challenging and
-complicated than that of the gas phase. In recent years, the ab inito methods
-mentioned above have been combined with various solvation based
-approaches\cite{Neugebauer05,Neugebauer09,Mennucci02,Tomasi05,JensenGordon96}
-to calculate the optical rotation in solution. This review condiders some of
-the popular approaches that are being used and describes their working
-mechanisms and performances in detail. In the current/future work section of
-this review, some reduced scaling techniques are proposed with the aim of
-making these methods more efficient and computationally practical. Also, some
-of the essential, underlying coupled cluster and response theory used for
-optical rotation calculations are presented and discussed.
+\begin{split}
+&\bm{\alpha}(\omega) = \langle\langle\vec{\mu};\vec{\mu}\rangle\rangle\\
+&\textbf{G}^{\prime}(\omega) = -\text{Im}\langle\langle\vec{\mu};\vec{m}\rangle\rangle\\
+\end{split}
+\end{equation} 
+The response theory focuses on the perturbation of the ground state wavefunction in the presence of an external 
+field, avoiding explicit calculations of excited states. Polavarapu was the first to use this theory to calculate 
+{\em ab initio} specific rotations of molecules using time dependent Hartree Fock (TDHF) method \cite{Polavarapu96}. 
+The signs of the calculated values matched with that of the experiment for most of his structures, while their magnitudes 
+differed generally by a factor of two. Inspired by Polavarapu's success, Cheeseman et al. \cite{Cheeseman00,Stephens01} 
+included correlation effects in these calculations by using TD-DFT. Using large basis sets with diffuse functions like 
+aug-cc-pVDZ and aug-cc-pVTZ,\cite{Dunning89} they were able to match the experimental values very closely, with a 
+deviation of 20-25 degrees for a set of 28 chiral molecules. Ruud et al. extended the calculations to the coupled cluster 
+level using coupled cluster response theory developed by Koch and J{\o}rgensen\cite{Koch90}, and obtained very 
+promising results\cite{Ruud03}. Unsurprisingly, these response based simulations have been used as an accurate and 
+reliable tool in the process of determining the AC of a large number of chiral molecules\cite{Kondru99}. However, all 
+these calculations were done on single isolated molecules and thus ideally they should only be expected to match vapor phase 
+optical rotation (OR) which can be measured by using cavity ring down spectrometry, thanks to the pioneering 
+works of Vacaaro and co-workers.\cite{} Thus, in order to match the solution phase OR measurements, the response theory
+needs to be combined with accurate solvation models. \\ 
+However, works in this regard, as shown in chapter 2 of this manuscript have been less than satisfactory and 
+the only robust way of accounting for solvent effects seem to be including the solvent molecules explicitly 
+in the QM calculations. Since rotation is a dynamic property, one needs to average OR values over several 
+configurations or snapshots (obtained by molecular dynamics (MD) simulations) to be able to match experimental 
+values. Multiple calculations coupled with the polynomical scaling of coupled cluster (CC) methods, puts a heavy burden 
+on the computational resources. An obvious way to make these compuations practical is to seek the help of CC reduced-scaling 
+techniques like projected natural orbitals (PNO) approach\cite{} which has been really sucessfull in describing energetics of 
+large molecular systems. However, works towards the extension of these methods to calculate chiroptical properties has been 
+fairly limited\cite{}. McAlexander and Crawford in their recent work\cite{} demonstrated that the regular PNO approach
+suffers from slow convergence towards the full canonical result. The main focus of this work is identifying the problems
+associated with such approaches for calculating optical rotation and finding out ways in which they can be alleviated.
+The theoretical tools needed to calculate chiroptical properties are derived in Chapter 2 within the context of coupled cluster 
+linear response theory.
+are derived in chapter 2.
+and talks about the challenges of modelling optical rotation in solutions. Chapter 3 
 
-%\section{Introduction}
 
-%    a. chirality - same story as my Internal Seminar.
+describes application of a very useful 
+technique to reduce the computational costs for response properties and identifies the inherent
+problems associated with such approaches. Corrected in chapter 3 and extended to reduced-scaling
+domain in chapter 4.

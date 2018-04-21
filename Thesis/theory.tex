@@ -887,3 +887,53 @@ by velocity gauge by its static limit.
 %proposed by Pedersen \cite{Pedersen04} is used which shifts the values obtained
 %by velocity gauge by it's static limit value.
 
+\section{Solvation Models}
+For the purpose of computational practicality, the QM solvation models aim to reduce the degrees of freedom of
+the solvent molecules without compromising the quality of description of the solvent-solute and the solvent-solvent
+interactions. \\
+In this regard, the molecular mechanics (MM) based models, broadly known as QM/MM methods, usually represent the
+solvent molecules in the form of a classical potential by replacing them with point charges, polarizabilities etc.\cite{}
+This potential polarizes the charge distribution of the solute which in turn creates a new potential or field because of
+which induced dipole moments appear in solvents (depending on the point polarizabilities), resulting in a new
+potential which again polarizes the solute and so on. Thus, the final one-electron solvent potential is attained in a
+self-consistent procedure and gets added to the solute's Hamiltonian for further response calculations. Fluctuating
+charge model(FQ)\cite{}, the drude oscillator model\cite{} and effective fragmentation potential (EFP)\cite{} are some
+other popular examples of QM/MM methods.
+
+Quantum continuum models like the polarizable continuum model (PCM)\cite{}
+on the other hand place the solute in a cavity and replace the solvent molecules by a dielectric medium. The
+solute-solvent interactions are then captured by adding charges on the surface on the cavity (apparent surface charges)
+which are solved in a self-consistent manner as described above.\\
+
+
+Mennucci et al. extended PCM to work with the linear response formalism of TD-DFT\cite{Mennucci02}
+and calculated optical rotations for chiral molecules in different solvents. They were able to obtain promising results
+
+More recently, Cappelli implemented the
+QM/FQ/PCM approach for calculating optical rotations of methyloxirane
+
+
+with molecular dynamics (MD) simulations
+
+
+
+ a series of snapshots from the MD is extracted, which constitute the actual model system on which the QM/FQ/PCM calculations of the desired properties are performed and then averaged out to obtain the final results. Actually, the computational cost of the procedure is mainly determined by the cost of the single QM/FQ/PCM calculation, which basically depends on the QM level and the kind of property (first, second, third derivative, etc.) to be calculated, together with the number of representative snapshots necessary to allow the final results to converge to a sensible value.
+
+
+
+FQ/PCM/MM has been combined by
+
+In recent years, the ab inito methods
+mentioned above have been combined with various solvation based
+approaches\cite{Neugebauer05,Neugebauer09,Mennucci02,Tomasi05,JensenGordon96}
+to calculate the optical rotation in solution. This review condiders some of
+the popular approaches that are being used and describes their working
+mechanisms and performances in detail. In the current/future work section of
+this review, some reduced scaling techniques are proposed with the aim of
+making these methods more efficient and computationally practical. Also, some
+of the essential, underlying coupled cluster and response theory used for
+optical rotation calculations are presented and discussed.
+
+%1. couple solvent response to the electromangnetoic field
+%2. include vibrational contributions in solvents
+%3. explicit + implicit models
