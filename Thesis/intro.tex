@@ -1,27 +1,118 @@
 %\section{Introduction}
 
-Start talking about optical rotation as a property. Science behind this property!!
-Points to talk:
-1. Some history of optical rotation (MC Tam's thesis)
-    a. chirality - same story as my Internal Seminar.
-    b. Drug thalidomide example
-    c. Chiroptical spectroscopy
-    d. Theory as a tool!
-    e. Some history of OR calculations (Harley's thesis)
-    f. TD-DFT not enough in most cases, CC needed (known problems of DFT)
-    g. Challenges of CC - (mention about MD as well.)
-    h. My work comes in here!
+%    a. chirality - same story as my Internal Seminar.
+%    b. Drug thalidomide example
+%    c. Chiroptical spectroscopy
+%    d. Theory as a tool!
+%    e. Some history of OR calculations (Harley's thesis)
+%    f. TD-DFT not enough in most cases, CC needed (known problems of DFT)
+%    g. Challenges of CC - (mention about MD as well.)
+%    h. My work comes in here!
+%	i. local correlatin - which chapter discusses what... end by conclusion..
+\section{Chirality}
+Lord Kelvin was the first to use the word `chiral' at a lecture he gave at Oxford 
+University in 1894: ``I call any geometrical figure, or group of points, 
+`chiral', and say that it has chirality if its image in a plane mirror, ideally realized, 
+cannot be brought to coincide with itself"\cite{}. There are different ways in which a molecule 
+can be chiral. The most common example being the presence of a chiral center 
+like a carbon or nitrogen atom with four different substituents. Axial chirality, usually 
+possessed by molecules with cumulated double bonds like allenes and chirality planes 
+found in compounds like paracyclophanes are other popular examples of chiral elements 
+found in nature. \\
+A chiral molecule and its mirror image are known as enantiomers. Although the
+enantiomers have idential phyical properties like boiling and melting points their
+interactions in a chiral environment can be quite different. For example,
+while the (R) enantiomer of the compound limonene smells like lemons and oranges,
+as the name sugggests, the (S) enantiomer on the other hand smells like turpentine. 
+Thus, the interaction of the (S) enantiomer with the chiral molecules constituting the olfactory receptors 
+responsible for the sensation of smell is totally different from its fellow enantiomer.
+Since every part of the human body is composed of chiral molecules, its unsurprising that
+more than 60\% of the pharmaceutical drugs are chiral as well. Hence, one of the most 
+important aspect of the drug-design research is to be able to define the absolute configuration 
+(AC) of the chiral molecules in order to study their behaviour in  biological systems as 
+many biological activities are only associated with one specific AC. A very tragic example
+in this regard is that of the drug thalidomide which was originally prescribed to pregnat women in 
+Europe in 1950s to cure morning sickness but resulted in birth-defects in thousands of 
+infants. It was found through a study done on rodents that the (R) enantiomer is indeed 
+a sedative but the (S) enantiomer is a teratogen\cite{}. Furthemore, these enantiomers were 
+found to rapidly interconvert in vivo in humans\cite{} because of which separating 
+these two forms before use is useless.\\
 
 
-Theoretical and computational chemistry has grown by leaps and bounds over the
-past several decades. Ab initio quantum chemical methods can now accurately
-predict a variety of molecular properties. More recently, these methods have
-been extended to calculate chiroptical
-properties like optical rotation. Theoretical calculations of optical rotation
-can be very useful in solving experimental chemical problems.  Specifically, they
-can provide a computational tool to modern organic chemists to determine
-the absolute stereochemical configuration of a chiral compound, thus alleviating the experimental difficulties
-involved.\\ Rosenfeld laid the theoretical foundations for calculating optical
+
+The first step in experimental determination of AC involves the separation/synthesis of 
+enantiomers. While chiral resolution methods like chiral column chromatography can separate 
+a racemic mixture (equal concentration of both the enantiomers) into individual enantiomers,
+assymetric synthesis can be employed to selectively synthesize a given enantiomer.
+X-ray crystallography would then be the most popular route to assign the AC, provided one
+can crystallize the molecule first which usually requires the presence of heavy atom(s).
+\\
+Alternatively, 
+
+Alternatively, chiral molecules have properties of circular dichroism (CD) i.e they posess different absorption 
+coefficents for the left and right hand circularly polarized light (LCP and RCP), which can be measured 
+in the UV-VIS range by electronic CD (ECD) and in the IR region by vibrational CD (VCD) spectroscopic 
+techniques. 
+
+
+
+Alternatively, one can exploit the properties of dichroism and b
+
+(different absorption coefficents) 
+and birefringence of a chiral medium,
+
+
+
+property of having different absorption coefficents and refractive indices for the left and right hand circularly polarizedlight (LCP and RCP) respectively
+
+f a chiral medium in the presence
+of light, ex. dichroism and birefringence which refers to the property of having different 
+absorption coefficents and refractive indices for the left and right hand circularly polarized 
+
+
+of chiral molecules in the presence of
+circularly polarized light. For example, a chiral molecule posesses properties of dichroism
+and birefringence which different absorption
+coefficients and refractive indices for left and right hand circularly polarized light,
+
+
+
+use chiroptical spectroscopy techniques to measure the 
+differential response of an enantiomer to the left and right hand circularly polarized 
+light (LCP and RCP). For example, a chiral molecule  posesses 
+
+a chiral molecule has different absorption coefficients for LCP
+and RCP, a property known as 'dichroism'.
+
+
+ Electronic and vibrational circular dichroism 
+
+Similarly, the property of different ref
+
+
+electronic circular dichroism
+(ECD), 
+
+
+the phenomenon electronic and vibrational circular dichroism (CD) measurements 
+capture the difference in UV-VIS and IR intensities between LCP and RCP respectively
+for a given enantiomer. Similarly, optical rotation is y
+
+ 
+
+
+%Theoretical and computational chemistry has grown by leaps and bounds over the
+%past several decades. {\em ab initio} quantum chemical methods can now accurately
+%predict a variety of molecular properties. More recently, these methods have
+%been extended to calculate chiroptical
+%properties like optical rotation. Theoretical calculations of optical rotation
+%can be very useful in solving experimental chemical problems.  Specifically, they
+%can provide a computational tool to modern organic chemists to determine
+%the absolute stereochemical configuration of a chiral compound, thus alleviating the experimental difficulties
+%involved.\\ 
+
+
+Rosenfeld laid the theoretical foundations for calculating optical
 roatation in 1929\cite{Rosenfeld29}. He showed that in the presence of an
 external field, the induced dipole moment in a molecule can be written as:
 \begin{equation}\langle\vec{\mu}\rangle = \alpha\vec{E} + \frac{1}{\omega}\textbf{G}^\prime\frac{\partial\vec{B}}{\partial t}
@@ -93,3 +184,6 @@ making these methods more efficient and computationally practical. Also, some
 of the essential, underlying coupled cluster and response theory used for
 optical rotation calculations are presented and discussed.
 
+%\section{Introduction}
+
+%    a. chirality - same story as my Internal Seminar.
