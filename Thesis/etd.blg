@@ -2,12 +2,12 @@ This is BibTeX, Version 0.99d (TeX Live 2016)
 Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: etd.aux
 Case mismatch error between cite keys koch90 and Koch90
----line 172 of file etd.aux
+---line 171 of file etd.aux
  : \citation{koch90
  :                 }
 I'm skipping whatever remains of this command
 Case mismatch error between cite keys Revisited and revisited
----line 176 of file etd.aux
+---line 175 of file etd.aux
  : \citation{Revisited
  :                    }
 I'm skipping whatever remains of this command
@@ -91,45 +91,45 @@ Warning--I didn't find a database entry for "Mester18"
 Warning--I didn't find a database entry for "revisited"
 Warning--I didn't find a database entry for "McAlexander15"
 Warning--empty title in Olsen85
-You've used 72 entries,
+You've used 71 entries,
             2118 wiz_defined-function locations,
-            1012 strings with 17410 characters,
-and the built_in function-call counts, 26107 in all, are:
-= -- 2508
-> -- 1289
+            1005 strings with 17200 characters,
+and the built_in function-call counts, 25713 in all, are:
+= -- 2470
+> -- 1271
 < -- 9
-+ -- 516
-- -- 430
-* -- 2077
-:= -- 4390
-add.period$ -- 218
-call.type$ -- 72
-change.case$ -- 420
++ -- 508
+- -- 424
+* -- 2041
+:= -- 4326
+add.period$ -- 215
+call.type$ -- 71
+change.case$ -- 414
 chr.to.int$ -- 0
-cite$ -- 73
-duplicate$ -- 858
-empty$ -- 1995
-format.name$ -- 430
-if$ -- 5416
+cite$ -- 72
+duplicate$ -- 847
+empty$ -- 1964
+format.name$ -- 424
+if$ -- 5335
 int.to.chr$ -- 0
-int.to.str$ -- 72
-missing$ -- 76
-newline$ -- 362
-num.names$ -- 150
-pop$ -- 320
+int.to.str$ -- 71
+missing$ -- 75
+newline$ -- 357
+num.names$ -- 148
+pop$ -- 316
 preamble$ -- 1
-purify$ -- 353
+purify$ -- 348
 quote$ -- 0
-skip$ -- 587
+skip$ -- 580
 stack$ -- 0
-substring$ -- 1979
-swap$ -- 124
+substring$ -- 1940
+swap$ -- 123
 text.length$ -- 9
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 280
+type$ -- 276
 warning$ -- 1
-while$ -- 220
-width$ -- 74
-write$ -- 798
+while$ -- 217
+width$ -- 73
+write$ -- 787
 (There were 20 error messages)

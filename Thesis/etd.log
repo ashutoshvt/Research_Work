@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  20 APR 2018 19:22
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  21 APR 2018 01:24
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -247,9 +247,24 @@ inear-Response The-
 
 ]
 Chapter 1.
-(./intro.tex [1
+(./intro.tex
+Underfull \hbox (badness 10000) in paragraph at lines 13--75
 
-] [2] [3] [4] [5]) [6]
+ []
+
+[1
+
+] [2] [3]
+Underfull \hbox (badness 10000) in paragraph at lines 76--84
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 90--99
+
+ []
+
+[4] [5]) [6]
 Chapter 2.
 (./theory.tex
 Underfull \hbox (badness 10000) in paragraph at lines 363--417
@@ -597,10 +612,10 @@ LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 2513 strings out of 493014
- 34239 string characters out of 6133351
- 108513 words of memory out of 5000000
- 5981 multiletter control sequences out of 15000+600000
+ 2512 strings out of 493014
+ 34221 string characters out of 6133351
+ 108509 words of memory out of 5000000
+ 5980 multiletter control sequences out of 15000+600000
  16998 words of font info for 59 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  37i,19n,23p,776b,237s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -624,7 +639,7 @@ ive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive
 016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/201
 6/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2016/
 texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on etd.pdf (100 pages, 827535 bytes).
+Output written on etd.pdf (100 pages, 827396 bytes).
 PDF statistics:
  699 PDF objects out of 1000 (max. 8388607)
  491 compressed objects within 5 object streams
