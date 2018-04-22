@@ -41,11 +41,6 @@ C.~F. Bender and E.~R. Davidson.
   hydrides.
 \newblock {\em Phys. Rev.}, 183(1):23--30, 1969.
 
-\bibitem{Born27}
-Max Born and J.~Robert Oppenheimer.
-\newblock Zur quantentheorie der molekeln [on the quantum theory of molecules].
-\newblock {\em Annalen der Physik (in German)}, 389(20):457--484, 1927.
-
 \bibitem{Cheeseman00}
 James~R. Cheeseman, Michael~J. Frisch, Frank~J. Devlin, and Philip~J. Stephens.
 \newblock Hartree-fock and density functional theory ab initio calculation of
@@ -144,6 +139,11 @@ J.~Gauss.
   Kollman, H.~F. {Schaefer III}, and P.~R. Schreiner, editors, {\em
   Encyclopedia of Computational Chemistry}, pages 615--636. John Wiley and
   Sons, Chichester, 1998.
+
+\bibitem{HarrisonHandy83}
+R.~J. Harrison and N.~C. Handy.
+\newblock Full ci calculations on bh, h2o, nh3, and hf.
+\newblock {\em Chem. Phys. Lett.}, 95:386--391, March 1983.
 
 \bibitem{Hattig95}
 Christof Hattig and Bernd~Artur Hebeta.
@@ -380,12 +380,6 @@ P.~J. Stephens, F.~J. Devlin, C.~F. Chabalowski, and M.~J. Frisch.
 Philip~J. Stephens, Frank~J. Devlin, James~R. Cheeseman, and Michael~J. Frisch.
 \newblock Calculation of optical rotation using density functional theory.
 \newblock {\em J. Phys. Chem. A}, 105:5356--5371, May 2001.
-
-\bibitem{SzaboOstlund}
-Attila Szabo and Neil~S. Ostlund.
-\newblock {\em Modern Quantum Chemistry: Introduction to Advanced Electronic
-  Structure Theory}.
-\newblock Dover Publications, Inc., Mineola, New York, 1996.
 
 \bibitem{Taube05}
 A.~G. Taube and R.~J. Bartlett.

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  21 APR 2018 18:59
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  21 APR 2018 23:28
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -216,7 +216,7 @@ e
 [2] [3] [4
 
 ] (./etd.toc
-Overfull \hbox (0.22946pt too wide) in paragraph at lines 10--10
+Overfull \hbox (0.22946pt too wide) in paragraph at lines 11--11
  [] []\OT1/cmr/bx/n/12 Frozen Vir-tual Nat-u-ral Or-bitals for Coupled-Cluster 
 Linear-Response The- 
  []
@@ -224,7 +224,7 @@ Linear-Response The-
 [5
 
 ] [6]
-Overfull \hbox (3.41698pt too wide) in paragraph at lines 40--40
+Overfull \hbox (3.41698pt too wide) in paragraph at lines 41--41
  [] []\OT1/cmr/bx/n/12 Perturbed Pair Nat-u-ral Or-bitals for Coupled-Cluster L
 inear-Response The- 
  []
@@ -264,47 +264,32 @@ Underfull \hbox (badness 10000) in paragraph at lines 97--106
 
  []
 
-[4]) [5] [6] [7]
+[4]
+Underfull \hbox (badness 10000) in paragraph at lines 120--136
+
+ []
+
+[5] [6]
+Underfull \hbox (badness 10000) in paragraph at lines 152--156
+
+ []
+
+[7]) [8] [9]
 Chapter 2.
-(./theory.tex
-Underfull \hbox (badness 10000) in paragraph at lines 363--417
+(./theory.tex [10
+
+] [11] [12] [13] [14]
+Underfull \hbox (badness 10000) in paragraph at lines 145--193
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 363--417
+Underfull \hbox (badness 10000) in paragraph at lines 145--193
 
  []
 
-[8
-
-]
-Underfull \hbox (badness 10000) in paragraph at lines 417--429
-
- []
-
-[9] [10] [11]
-Underfull \hbox (badness 10000) in paragraph at lines 508--556
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 508--556
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 556--578
-
- []
-
-[12] [13] [14]
-Underfull \hbox (badness 10000) in paragraph at lines 689--697
-
- []
-
-[15] [16] [17] [18]
-Overfull \hbox (98.05186pt too wide) detected at line 834
+[15] [16] [17] [18] [19] [20] [21]
+Overfull \hbox (98.05186pt too wide) detected at line 473
 [][] \OT1/cmr/m/n/12 = []\OMS/cmsy/m/n/12 h\OT1/cmr/m/n/12 ^^C\OMS/cmsy/m/n/12 
 j\OT1/cmr/m/n/12 [\OML/cmm/m/it/12 A; \OMS/cmsy/m/n/12 f\OML/cmm/m/it/12 a[]:a[
 ]:\OMS/cmsy/m/n/12 g\OT1/cmr/m/n/12 ]\OMS/cmsy/m/n/12 j\OT1/cmr/m/n/12 	[]\OMS/
@@ -314,30 +299,25 @@ cmsy/m/n/12 i[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 B; ![]\OT1/cmr/m/n/12 ) + [] [
  []
 
 
-Overfull \hbox (32.63855pt too wide) in paragraph at lines 834--872
+Overfull \hbox (32.63855pt too wide) in paragraph at lines 473--511
 \OT1/cmr/m/n/12 where [] 
  []
 
 
-Overfull \hbox (21.54144pt too wide) in paragraph at lines 834--872
+Overfull \hbox (21.54144pt too wide) in paragraph at lines 473--511
 \OT1/cmr/m/n/12 and [] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 834--872
+Underfull \hbox (badness 10000) in paragraph at lines 473--511
 
  []
 
-[19] [20]
-Underfull \hbox (badness 10000) in paragraph at lines 903--907
-
- []
-
-[21]) [22]
+[22]) [23]
 Chapter 3.
-(./FVNO.tex [23
+(./FVNO.tex [24
 
-] [24] [25]
+] [25] [26]
 Overfull \hbox (6.38634pt too wide) in paragraph at lines 159--168
 \OT1/cmr/m/n/12 Here, $\OMS/cmsy/m/n/12 h\OML/cmm/m/it/12 ij\OMS/cmsy/m/n/12 jj
 \OML/cmm/m/it/12 ab\OMS/cmsy/m/n/12 i$ \OT1/cmr/m/n/12 is an an-ti-sym-metrized
@@ -345,21 +325,21 @@ Overfull \hbox (6.38634pt too wide) in paragraph at lines 159--168
 ; ^^O[]:::$
  []
 
-[26] [27] [28] [29] <figures_fvno/energy.pdf, id=148, 578.16pt x 361.35pt>
+[27] [28] [29] [30] <figures_fvno/energy.pdf, id=151, 578.16pt x 361.35pt>
 File: figures_fvno/energy.pdf Graphic file (type pdf)
 
 <use figures_fvno/energy.pdf>
 Package pdftex.def Info: figures_fvno/energy.pdf used on input line 291.
 (pdftex.def)             Requested size: 281.85585pt x 176.1588pt.
- [30 <./figures_fvno/energy.pdf>]
-<figures_fvno/Mp2c.pdf, id=169, 673.51625pt x 392.46625pt>
+ [31 <./figures_fvno/energy.pdf>]
+<figures_fvno/Mp2c.pdf, id=172, 673.51625pt x 392.46625pt>
 File: figures_fvno/Mp2c.pdf Graphic file (type pdf)
 
 <use figures_fvno/Mp2c.pdf>
 Package pdftex.def Info: figures_fvno/Mp2c.pdf used on input line 313.
 (pdftex.def)             Requested size: 281.85585pt x 164.24182pt.
- [31 <./figures_fvno/Mp2c.pdf>]
-<figures_fvno/h2o2_polar.pdf, id=191, 578.16pt x 361.35pt>
+ [32 <./figures_fvno/Mp2c.pdf>]
+<figures_fvno/h2o2_polar.pdf, id=195, 578.16pt x 361.35pt>
 File: figures_fvno/h2o2_polar.pdf Graphic file (type pdf)
 
 <use figures_fvno/h2o2_polar.pdf>
@@ -369,7 +349,7 @@ Package pdftex.def Info: figures_fvno/h2o2_polar.pdf used on input line 336.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[32] <figures_fvno/spatial.pdf, id=196, 556.0775pt x 360.34625pt>
+[33] <figures_fvno/spatial.pdf, id=199, 556.0775pt x 360.34625pt>
 File: figures_fvno/spatial.pdf Graphic file (type pdf)
 
 <use figures_fvno/spatial.pdf>
@@ -379,15 +359,15 @@ Package pdftex.def Info: figures_fvno/spatial.pdf used on input line 363.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[33 <./figures_fvno/h2o2_polar.pdf>]
-<figures_fvno/sort_spatial.pdf, id=217, 574.145pt x 360.34625pt>
+[34 <./figures_fvno/h2o2_polar.pdf>]
+<figures_fvno/sort_spatial.pdf, id=220, 574.145pt x 360.34625pt>
 File: figures_fvno/sort_spatial.pdf Graphic file (type pdf)
 
 <use figures_fvno/sort_spatial.pdf>
 Package pdftex.def Info: figures_fvno/sort_spatial.pdf used on input line 395.
 (pdftex.def)             Requested size: 281.85585pt x 176.90111pt.
- [34 <./figures_fvno/spatial.pdf>] [35 <./figures_fvno/sort_spatial.pdf>]
-<figures_fvno/polar_static.pdf, id=258, 578.16pt x 361.35pt>
+ [35 <./figures_fvno/spatial.pdf>] [36 <./figures_fvno/sort_spatial.pdf>]
+<figures_fvno/polar_static.pdf, id=261, 578.16pt x 361.35pt>
 File: figures_fvno/polar_static.pdf Graphic file (type pdf)
 
 <use figures_fvno/polar_static.pdf>
@@ -397,44 +377,44 @@ Package pdftex.def Info: figures_fvno/polar_static.pdf used on input line 433.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<figures_fvno/amp_trunc_cmo.pdf, id=259, 689.57625pt x 515.9275pt>
+<figures_fvno/amp_trunc_cmo.pdf, id=262, 689.57625pt x 515.9275pt>
 File: figures_fvno/amp_trunc_cmo.pdf Graphic file (type pdf)
 
 <use figures_fvno/amp_trunc_cmo.pdf>
 Package pdftex.def Info: figures_fvno/amp_trunc_cmo.pdf used on input line 456.
 
 (pdftex.def)             Requested size: 281.85585pt x 210.87823pt.
- [36]
+ [37]
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[37 <./figures_fvno/polar_static.pdf>] [38 <./figures_fvno/amp_trunc_cmo.pdf>]
+[38 <./figures_fvno/polar_static.pdf>] [39 <./figures_fvno/amp_trunc_cmo.pdf>]
 
-LaTeX Warning: Reference `fig:error_cmpare' on page 39 undefined on input line 
+LaTeX Warning: Reference `fig:error_cmpare' on page 40 undefined on input line 
 489.
 
-<figures_fvno/error_cmpare.pdf, id=314, 649.42625pt x 506.89375pt>
+<figures_fvno/error_cmpare.pdf, id=317, 649.42625pt x 506.89375pt>
 File: figures_fvno/error_cmpare.pdf Graphic file (type pdf)
 
 <use figures_fvno/error_cmpare.pdf>
 Package pdftex.def Info: figures_fvno/error_cmpare.pdf used on input line 492.
 (pdftex.def)             Requested size: 281.85585pt x 219.99425pt.
- [39 <./figures_fvno/error_cmpare.pdf>]
-<figures_fvno/amp_trunc_no.pdf, id=336, 627.34375pt x 485.815pt>
+ [40 <./figures_fvno/error_cmpare.pdf>]
+<figures_fvno/amp_trunc_no.pdf, id=339, 627.34375pt x 485.815pt>
 File: figures_fvno/amp_trunc_no.pdf Graphic file (type pdf)
 
 <use figures_fvno/amp_trunc_no.pdf>
 Package pdftex.def Info: figures_fvno/amp_trunc_no.pdf used on input line 512.
 (pdftex.def)             Requested size: 281.85585pt x 218.27373pt.
- [40 <./figures_fvno/amp_trunc_no.pdf>]
-[41] <figures_fvno/Faa.pdf, id=370, 524.96124pt x 384.43625pt>
+ [41 <./figures_fvno/amp_trunc_no.pdf>]
+[42] <figures_fvno/Faa.pdf, id=373, 524.96124pt x 384.43625pt>
 File: figures_fvno/Faa.pdf Graphic file (type pdf)
 
 <use figures_fvno/Faa.pdf>
 Package pdftex.def Info: figures_fvno/Faa.pdf used on input line 578.
 (pdftex.def)             Requested size: 281.85585pt x 206.4134pt.
 
-<figures_fvno/X1.pdf, id=371, 724.7075pt x 486.81876pt>
+<figures_fvno/X1.pdf, id=374, 724.7075pt x 486.81876pt>
 File: figures_fvno/X1.pdf Graphic file (type pdf)
 
 <use figures_fvno/X1.pdf>
@@ -444,8 +424,8 @@ Package pdftex.def Info: figures_fvno/X1.pdf used on input line 591.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[42 <./figures_fvno/Faa.pdf>]
-<figures_fvno/norm.pdf, id=392, 577.15625pt x 415.5525pt>
+[43 <./figures_fvno/Faa.pdf>]
+<figures_fvno/norm.pdf, id=395, 577.15625pt x 415.5525pt>
 File: figures_fvno/norm.pdf Graphic file (type pdf)
 
 <use figures_fvno/norm.pdf>
@@ -455,46 +435,46 @@ Package pdftex.def Info: figures_fvno/norm.pdf used on input line 610.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[43 <./figures_fvno/X1.pdf>]
-<figures_fvno/correctn.pdf, id=413, 572.1375pt x 433.62pt>
+[44 <./figures_fvno/X1.pdf>]
+<figures_fvno/correctn.pdf, id=417, 572.1375pt x 433.62pt>
 File: figures_fvno/correctn.pdf Graphic file (type pdf)
 
 <use figures_fvno/correctn.pdf>
 Package pdftex.def Info: figures_fvno/correctn.pdf used on input line 641.
 (pdftex.def)             Requested size: 281.85585pt x 213.62032pt.
- [44 <./figures_fvno/norm.pdf>] [45 <./figures_fvno/correctn.pdf>]
-<figures_fvno/perturbed.pdf, id=455, 577.15625pt x 415.5525pt>
+ [45 <./figures_fvno/norm.pdf>] [46 <./figures_fvno/correctn.pdf>]
+<figures_fvno/perturbed.pdf, id=458, 577.15625pt x 415.5525pt>
 File: figures_fvno/perturbed.pdf Graphic file (type pdf)
 
 <use figures_fvno/perturbed.pdf>
 Package pdftex.def Info: figures_fvno/perturbed.pdf used on input line 694.
 (pdftex.def)             Requested size: 281.85585pt x 202.94403pt.
- [46] [47 <./figures_fvno/perturbed.pdf>]
-<figures_fvno/diplength.pdf, id=480, 628.3475pt x 387.4475pt>
+ [47] [48 <./figures_fvno/perturbed.pdf>]
+<figures_fvno/diplength.pdf, id=483, 628.3475pt x 387.4475pt>
 File: figures_fvno/diplength.pdf Graphic file (type pdf)
 
 <use figures_fvno/diplength.pdf>
 Package pdftex.def Info: figures_fvno/diplength.pdf used on input line 735.
 (pdftex.def)             Requested size: 281.85585pt x 173.79404pt.
- [48] [49 <./figures_fvno/diplength.pdf>]
-[50])
+ [49] [50 <./figures_fvno/diplength.pdf>]
+[51])
 Chapter 4.
 (./FVNO++.tex
 
-LaTeX Warning: Citation `Sundholm13' on page 51 undefined on input line 110.
+LaTeX Warning: Citation `Sundholm13' on page 52 undefined on input line 110.
 
 
-LaTeX Warning: Citation `Mester17' on page 51 undefined on input line 127.
+LaTeX Warning: Citation `Mester17' on page 52 undefined on input line 127.
 
 
-LaTeX Warning: Citation `Mester18' on page 51 undefined on input line 127.
+LaTeX Warning: Citation `Mester18' on page 52 undefined on input line 127.
 
-[51
+[52
 
 
-] [52] [53]
+] [53] [54]
 
-LaTeX Warning: Citation `koch90' on page 54 undefined on input line 143.
+LaTeX Warning: Citation `koch90' on page 55 undefined on input line 143.
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 140--145
@@ -502,20 +482,20 @@ Underfull \hbox (badness 10000) in paragraph at lines 140--145
  []
 
 
-LaTeX Warning: Citation `revisited' on page 54 undefined on input line 168.
+LaTeX Warning: Citation `revisited' on page 55 undefined on input line 168.
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 154--170
 
  []
 
-[54]
+[55]
 Underfull \hbox (badness 10000) in paragraph at lines 175--180
 
  []
 
 
-LaTeX Warning: Citation `Revisited' on page 55 undefined on input line 197.
+LaTeX Warning: Citation `Revisited' on page 56 undefined on input line 197.
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 185--199
@@ -532,7 +512,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 219--232
 
  []
 
-[55]
+[56]
 Underfull \hbox (badness 10000) in paragraph at lines 237--245
 
  []
@@ -547,7 +527,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 259--277
 
  []
 
-[56] [57]
+[57] [58]
 Underfull \hbox (badness 10000) in paragraph at lines 301--307
 
  []
@@ -557,31 +537,31 @@ Underfull \hbox (badness 10000) in paragraph at lines 320--343
 
  []
 
-[58]
+[59]
 Underfull \hbox (badness 10000) in paragraph at lines 358--365
 
  []
 
-[59] [60] [61] [62] [63]) [64] [65]
+[60] [61] [62] [63] [64]) [65] [66]
 Chapter 5.
 (./PNO++.tex
 
-LaTeX Warning: Citation `McAlexander15' on page 66 undefined on input line 108.
+LaTeX Warning: Citation `McAlexander15' on page 67 undefined on input line 108.
 
 
-[66
+[67
 
-] [67] [68] [69]
+] [68] [69] [70]
 Underfull \hbox (badness 10000) in paragraph at lines 141--149
 
  []
 
-[70]
+[71]
 Underfull \hbox (badness 10000) in paragraph at lines 153--166
 
  []
 
-[71]
+[72]
 Underfull \hbox (badness 10000) in paragraph at lines 173--178
 
  []
@@ -591,36 +571,36 @@ Underfull \hbox (badness 10000) in paragraph at lines 182--188
 
  []
 
-[72] [73] [74] [75]
+[73] [74] [75] [76]
 Underfull \hbox (badness 10000) in paragraph at lines 301--306
 
  []
 
-[76] [77] [78] [79]) [80]
+[77] [78] [79] [80]) [81]
 Chapter 6.
-(./etd.bbl [81
+(./etd.bbl [82
 
-] [82
+] [83
 
-] [83] [84]
+] [84] [85]
 Missing character: There is no ï in font cmr12!
 Missing character: There is no ¿ in font cmr12!
 Missing character: There is no ¼ in font cmr12!
- [85] [86] [87] [88] [89] [90]
+ [86] [87] [88] [89] [90] [91]
 Missing character: There is no â in font cmr12!
 Missing character: There is no € in font cmr12!
 Missing character: There is no  in font cmr12!
- [91]) [92]
+ [92]) [93]
 (./etd.aux)
 
 LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 2514 strings out of 493014
- 34248 string characters out of 6133351
- 108509 words of memory out of 5000000
- 5981 multiletter control sequences out of 15000+600000
+ 2513 strings out of 493014
+ 34243 string characters out of 6133351
+ 108505 words of memory out of 5000000
+ 5980 multiletter control sequences out of 15000+600000
  17357 words of font info for 60 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  37i,19n,23p,776b,237s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -645,10 +625,10 @@ e/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl12.pfb></usr/local/texlive
 2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/20
 16/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2016
 /texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on etd.pdf (103 pages, 841212 bytes).
+Output written on etd.pdf (104 pages, 844226 bytes).
 PDF statistics:
- 714 PDF objects out of 1000 (max. 8388607)
- 501 compressed objects within 6 object streams
+ 717 PDF objects out of 1000 (max. 8388607)
+ 503 compressed objects within 6 object streams
  0 named destinations out of 1000 (max. 500000)
  76 words of extra memory for PDF output out of 10000 (max. 10000000)
 

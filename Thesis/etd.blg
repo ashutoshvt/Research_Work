@@ -91,45 +91,45 @@ Warning--I didn't find a database entry for "Mester18"
 Warning--I didn't find a database entry for "revisited"
 Warning--I didn't find a database entry for "McAlexander15"
 Warning--empty title in Olsen85
-You've used 71 entries,
+You've used 70 entries,
             2118 wiz_defined-function locations,
-            1005 strings with 17200 characters,
-and the built_in function-call counts, 25713 in all, are:
-= -- 2470
-> -- 1271
+            997 strings with 16980 characters,
+and the built_in function-call counts, 25455 in all, are:
+= -- 2447
+> -- 1258
 < -- 9
-+ -- 508
-- -- 424
-* -- 2041
-:= -- 4326
-add.period$ -- 215
-call.type$ -- 71
-change.case$ -- 414
++ -- 503
+- -- 420
+* -- 2027
+:= -- 4281
+add.period$ -- 212
+call.type$ -- 70
+change.case$ -- 410
 chr.to.int$ -- 0
-cite$ -- 72
-duplicate$ -- 847
-empty$ -- 1964
-format.name$ -- 424
-if$ -- 5335
+cite$ -- 71
+duplicate$ -- 835
+empty$ -- 1941
+format.name$ -- 420
+if$ -- 5280
 int.to.chr$ -- 0
-int.to.str$ -- 71
-missing$ -- 75
-newline$ -- 357
-num.names$ -- 148
-pop$ -- 316
+int.to.str$ -- 70
+missing$ -- 73
+newline$ -- 352
+num.names$ -- 146
+pop$ -- 308
 preamble$ -- 1
-purify$ -- 348
+purify$ -- 344
 quote$ -- 0
-skip$ -- 580
+skip$ -- 573
 stack$ -- 0
-substring$ -- 1940
-swap$ -- 123
+substring$ -- 1935
+swap$ -- 122
 text.length$ -- 9
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 276
+type$ -- 274
 warning$ -- 1
-while$ -- 217
-width$ -- 73
-write$ -- 787
+while$ -- 215
+width$ -- 72
+write$ -- 776
 (There were 20 error messages)
