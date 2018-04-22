@@ -3,8 +3,9 @@ Central to the field of quantum mechanics is the equation proposed by Erwin Schr
 in 1926 or the Schr\"odinger's equation \cite{Schrodinger26}. One of the biggest factors 
 contributing to the rich diversity of quantum chemical theories is the fact that Schr\"odinger's equation (SE)
 is exactly solvable for only one electron systems like hydrogen atom. As such, numerous approximations
-have been proposed over the years to solve the equation for many electron systems.
-The Hartree-Fock (HF) theory\cite{} is one of the simplest approximation in this regard. This
+have been proposed over the years to solve this equation for many electron systems.
+The Hartree-Fock (HF) theory\cite{} is one of the simplest approximation in this regard
+under the Born-Oppenheimer approximation\cite{} and non-relativistic regimes\cite{}. This
 model attempts to transform the many body problem of SE into a one body problem where each electron
 only interacts with a mean field created by the other electrons. For an N-electron system, the HF 
 wavefunction is a slater determinant (obeys Pauli's antisymmetry principle naturally) composed of N 
@@ -19,38 +20,53 @@ the Fock operator which itself depends on the spin orbitals themselves.
 Thus the equation is solved in a self-consistent manner usually in conjunction with 
 the linear combination of atomic orbital model (LCAO) approach, where the spin 
 orbitals are expressed as a linear combination of basis functions and the 
-coefficients are determined from the matrix based formulation of the above eigenvalue equation.\\
+coefficients are determined from the solving a generalized eigenvalue problem.
+The eigenvectors with the lowest N eigenvalues are the occupied orbitals, usually 
+denoted by symbols $i,j,k,l,..$. If a basis set of size $K$ is employed, the remaining $K-N$
+orbitals are termed as unoccupied or virtual orbitals usually denoted by symbols $a,b,c,d,..$.
+\\
 Even with this mean field approach, one can extract almost 95-98\% of the total 
 electronic energy. The remaining energy, also known as the correlation energy,
 however, is very essential if one wants to attain ``chemical accuracy", ex.  
 1kcal/mol for interaction energies. Inspite of this, the simple yet robust 
 structure of the HF procedure makes it one of the most popular reference 
 wavefunctions for more complicated and accurate theoretical models.
-\subsection{Configuration interaction Method}
-CI is a matrix mechanics solution of the schrodinger's equation.For a
-N-electron molecule, the wavefunction can be expressed as a linear combination
-of N-electron basis functions.CI uses slater determinants as the basis, since
-they are antisymmetric, orthogonal and  form a complete space.  \begin{equation}
+\subsection{Configuration Interaction Method}
+Configuration interaction (CI) method is a matrix based formulation of the time 
+independent Schr\"odinger's equation,
+\begin{equation}
+HC = EC
+\end{equation}
+where H is matrix representation of the Hamiltonian , C is the coefficient matrix and 
+E is the diagonal matrix containing the electronic energies (The lowest energy 
+corresponds to the ground state). If the vector space used to represent the Hamiltonian 
+is complete, the CI approach, then popularly known as the Full CI method gives exact 
+wavefunctions and electronic energies. Specifically, this model uses a vector space 
+composed of substituted or excited slater determiants which besides being complete 
+also have the desired properties of antisymmetry and orthogonality. 
+As such, the CI wavefunction is a linear combination of slater determinants.
+\\
+\begin{equation}
 \ket{\Psi} = c_o\ket{\Phi_o} + \sum_{ia}{c}_{i}^{a}\ket{{\Phi}^a_i} + \sum_{i>j,a>b}c_{ij}^{ab}\ket{\Psi^{ab}_{ij}} + \sum_{i>j>k,a>b>c}c_{ijk}^{abc}\ket{\Psi^{abc}_{ijk}} + ...
 \end{equation}
- Now, just like HF method, the variational method is invoked to minimize the
-expectation value of energy with respect to the coefficients.We get the final
-matrix eigenvalue equation : \begin{equation}
-HC = CE
-\end{equation}
-where , $H_{ij} = \bra{\Psi_i}H\ket{\Psi_j}$ , C is the coefficient matrix and
-E is the diagonal matrix containing the energies, with the lowest energy, being
-that of the ground state.In full CI, all possible slater determinants are
-included, and we get an exact wavefunction in the basis set limit.However, Full
-CI is computationally very expensive and is not used except in benchmark
-calculations of small molecules.So, we use truncated CI schemes like CIS and
-CISD which only include singles and singles and doubles determinants
-respectively.These methods can extract up to 95\% of correlation energy\cite{HarrisonHandy83} and
-can be applied to solve for excited states, open-shell systems and systems that
-are far from their equilibrium geometry, which makes them very useful.However,
-truncated CI methods are not size-extensive,which is a big disadvantage.
+\\
+where $\ket{\Phi_o}$ is the reference wavefunction (usuallly HF), $\ket{{\Phi}^a_i}$ refers to a singly excited determinant where an occupied orbital $i$ of the reference wavefunction is replaced by a virtual orbital $a$
+and so on.\\
+Full CI method is computationally very expensive and scales factorially with 
+system size. Unsurprsingly, it is mostly used in benchmark calculations of small molecules and
+the largest Full CI calculation to date has been on nitrogen molecule\cite{} which involved 
+billions of determinants. In practice, truncated CI methods like CISD, CISDT, etc.,
+where the vector space is restricted to include up to doubly and triply excited determinants 
+and so on is used. However, unlike the exact wavefunction, truncated CI wavefunctions 
+do not posess the property of size-extensivity i.e. the CISD energy doesn't scale 
+linearly with the number of electrons in the asymptotic limit. As a result,
+the accuracy of these methods takes a hit as the size of the system increases.
+%.These methods can extract up to 95\% of correlation energy\cite{HarrisonHandy83} and
+%can be applied to solve for excited states, open-shell systems and systems that
+%are far from their equilibrium geometry, which makes them very useful.
 \subsection{Coupled Cluster Theory} 
 %\paragraph{Coupled cluster theory} ~ \\\\
+
 Coupled cluster\cite{Crawford00} (CC) theory is a very accurate electronic
 structure method that has been widely used in quantum chemistry.
 It takes into account the electron correlation effects by expressing the

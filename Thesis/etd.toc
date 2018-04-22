@@ -2,12 +2,12 @@
 \contentsline {section}{\numberline {1.1}Chirality}{1}
 \contentsline {section}{\numberline {1.2}{\em Ab Initio} Optical Rotation Calculations}{4}
 \contentsline {section}{\numberline {1.3}Solvation Models}{6}
-\contentsline {chapter}{\numberline {2}Coupled Cluster Response Theory}{10}
+\contentsline {chapter}{\numberline {2}Theoretical Background}{10}
 \contentsline {section}{\numberline {2.1}Hartree-Fock Theory}{10}
-\contentsline {subsection}{\numberline {2.1.1}Configuration interaction Method}{11}
-\contentsline {subsection}{\numberline {2.1.2}Coupled Cluster Theory}{12}
+\contentsline {subsection}{\numberline {2.1.1}Configuration Interaction Method}{12}
+\contentsline {subsection}{\numberline {2.1.2}Coupled Cluster Theory}{13}
 \contentsline {subsection}{\numberline {2.1.3}Coupled Cluster Analytic Derivatives}{16}
-\contentsline {subsection}{\numberline {2.1.4}Coupled Cluster Linear Response (CCLR) Theory}{18}
+\contentsline {subsection}{\numberline {2.1.4}Coupled Cluster Linear Response (CCLR) Theory}{19}
 \contentsline {chapter}{\numberline {3}Frozen Virtual Natural Orbitals for Coupled-Cluster Linear-Response Theory}{24}
 \contentsline {section}{\numberline {3.1}Introduction}{24}
 \contentsline {section}{\numberline {3.2}Theoretical Background}{27}
