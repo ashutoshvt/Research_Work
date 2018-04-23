@@ -1,3 +1,10 @@
+This chapter focuses on covering the necessary theoretical background 
+for deriving the coupled cluster (CC) response functions and identifying
+the challenges associated with these approaches.
+As a prelude to the CC response theory, the formalism for obtaining ground state CC energies 
+is discussed after a brief description of Hartree-Fock and Configuration Interaction models.
+The next section derives the simplified gradient expressions of the CC energy and subsequently 
+parametrizes the left hand CC wavefunction.
 \section{Hartree-Fock Theory}
 Central to the field of quantum mechanics is the equation proposed by Erwin Schr\"odinger 
 in 1926 or the Schr\"odinger's equation \cite{Schrodinger26}. One of the biggest factors 
@@ -61,8 +68,11 @@ billions of determinants. In practice, truncated CI methods like CISD, CISDT whe
 space is restricted to include up to doubly and triply excited determinants 
 is used. Unlike the exact wavefunction, truncated CI wavefunctions, however, 
 do not posess the property of size-extensivity i.e. the CIS[D/T] energy doesn't scale 
-linearly with the number of electrons in the asymptotic limit. As a result,
-the accuracy of these methods decrease progressively as the size of the system increases.
+linearly with the number of electrons in the asymptotic limit. Another notable deficiency 
+is the lack of size-consistency which means that within these approaches, the sum of the 
+energies of non-interacting fragments (each calculated separately) is not equal to the energy 
+of the supermolecule when all the fragments are included in the calculations.
+As a result, the accuracy of these methods decrease progressively as the size of the system increases.
 %.These methods can extract up to 95\% of correlation energy\cite{HarrisonHandy83} and
 %can be applied to solve for excited states, open-shell systems and systems that
 %are far from their equilibrium geometry, which makes them very useful.
@@ -110,7 +120,7 @@ acts on a Slater determinant.
 \begin{equation}
 a_i\ket{\phi_i\phi_j...\phi_l} = \ket{\phi_j...\phi_l}
 \end{equation}
-Thus, the action of the $\hat{T_2} $ operator on a Slater determinant will create a 
+Thus, the action of the $\hat{T_2} $ operator on a Slater determinant creates a 
 linear combination of all doublly excited determinants with corresponding coefficients
 $t^{ab}_{ij}$ which can be seen as the contribution of virtual orbitals $a$ and $b$
 to the pair correlation function $f_{ij}$ which correlates the motions of any two 
@@ -124,8 +134,15 @@ electrons associated with occupied orbitals $i$ and $j$.
 \end{equation}
 \\
 Similarly, the ${\hat{T_3}}$ operator correlates the motion of all triplets of electrons. 
-The $\hat{T_1}$ operator on the other hand captures the ``adjustment of the one-electron basis"\cite{}
-as the effect of other correlation operators are added to the wavefunction.
+The $\hat{T_1}$ operator on the other hand are one electron operators that capture the 
+``adjustment of the one-electron basis"\cite{} as the effect of other correlation operators 
+are added to the wavefunction.
+\\
+\begin{equation}
+\hat{T_1} = \sum_{ia}t^a_i\{{a}^\dagger_a a_i\}
+\end{equation}
+\\
+In general, the structure of these cluster operators can be shown as,
 \\
 \begin{equation}
 \hat{T_n} = {\bigg(\frac{1}{n!}\bigg)}^2\sum_{ij..ab..}^nt^{ab..}_{ij..}\{a^\dagger_aa^\dagger_b...a_ja_i\}
@@ -146,10 +163,18 @@ should be an exact solution of the TISE just like the Full CI wavefunction.
 \hat{H}e^{\hat{T}}\ket{\Psi_o} = E_{cc}\;e^{\hat{T}}\ket{\Psi_o}
 \end{equation}
 \\
-On multiplying the above equation by the inverse of the exponential operator i.e
+The Hamiltonian is also expressed in second-quantized form \cite{Crawford00}:
+\\
+\begin{equation}
+\hat{H} = \sum_{pq}h_{pq}\{a^\dagger_pa_q\} + \frac{1}{4}\sum_{pqrs}\bra{pq}\ket{rs}\{a^\dagger_pa^\dagger_qa_sa_r\}
+\end{equation}
+\\
+where, $h_{pq} = \langle h_{pq} \rangle$ and $\langle pq||rs \rangle = \langle pq|rs \rangle - \langle pq|sr \rangle$ are the one and two electron components of the Hamiltonian repectively.
+The CC equations for calculating the amplitudes and the energy can be  
+obtained by multiplying the above equation by the inverse of the exponential operator i.e
 $e^{-\hat{T}}$ and projecting it against the reference and excited
-determinants, we get the energy and the amplitude equations of coupled cluster
-theory.
+determinants.
+\\
 \begin {equation}
 \bra{\Psi_o}e^{-\hat{T}}\hat{H}e^{\hat{T}}\ket{\Psi_o} = E_{cc}
 \end{equation}
@@ -157,75 +182,58 @@ theory.
 %\bra{\Psi^{ab..}_{ij..}}e^{-\hat{T}}\hat{H}e^{\hat{T}}\ket{\Psi_o} = E\cancelto{0}{\bra{\Psi^{ab..}_{ij..}}\Psi_o\rangle} = 0 .
 \bra{\Psi^{a.}_{i.}}e^{-\hat{T}}\hat{H}e^{\hat{T}}\ket{\Psi_o} = 0 .
 \end{equation} 
-Here $\Psi^{a.}_{i.}$ can refer to any excited Slater determinant singles, doubles etc. 
-The similarity transformed Hamiltonian $e^{-\hat{T}}\hat{H}e^{\hat{T}}$ also
-written as $\bar{H}$ can be expressed in the Hausdorf expansion
-\cite{Merzbacher70}as:
+\\
+Here $\Psi^{a.}_{i.}$ can refer to any excited Slater determinant: singles, doubles etc. 
+The similarity transformed Hamiltonian $e^{-\hat{T}}\hat{H}e^{\hat{T}}$, also written as 
+written as $\bar{H}$ can be expressed in terms of commutators of the Hamiltonian with the 
+cluster operators $\hat{T}$ by using the Campbell-Baker-Hausdorff formula\cite{Merzbacher70}.
+\\
 \begin{equation}
 e^{-\hat{T}}\hat{H}e^{\hat{T}} = \hat{H} + \lbrack\hat{H},\hat{T}\rbrack + \frac{1}{2!}\lbrack\lbrack\hat{H},\hat{T}\rbrack,\hat{T}\rbrack + \frac{1}{3!}\lbrack\lbrack\lbrack\hat{H},\hat{T}\rbrack,\hat{T}\rbrack,\hat{T}\rbrack + \frac{1}{4!}\lbrack\lbrack\lbrack\lbrack\hat{H},\hat{T}\rbrack,\hat{T}\rbrack,\hat{T}\rbrack,\hat{T}\rbrack + ...
 \end{equation}
-Also, the second quantized form of the Hamiltonian can be written as\cite{Crawford00}:
-\begin{equation}
-\hat{H} = \sum_{pq}h_{pq}\{a^\dagger_pa_q\} + \frac{1}{4}\sum_{pqrs}\bra{pq}\ket{rs}\{a^\dagger_pa^\dagger_qa_sa_r\}
-\end{equation}
-Using the above two equations and the Wick's theorem\cite{Wick50}, the coupled cluster energy
-equation gets simplified as:
+\\
+The expansion truncates naturally at the four nested commutator term since the Hamiltonian is at most a two 
+electron operator and the cluster operators commute among themselves\cite{}.
+%Also, the second quantized form of the Hamiltonian can be written as\cite{Crawford00}:
+%\begin{equation}
+%\hat{H} = \sum_{pq}h_{pq}\{a^\dagger_pa_q\} + \frac{1}{4}\sum_{pqrs}\bra{pq}\ket{rs}\{a^\dagger_pa^\dagger_qa_sa_r\}
+%\end{equation}
+Invoking Wick's theorem\cite{Wick50}, the CC energy equation gets simplified as:
+\\
 \begin{equation}
 E_{cc} = E_o + \sum_{ia}f_{ia}t^a_i + \frac{1}{4}\sum_{aibj}\bra{ij}\ket{ab}t^{ab}_{ij} + \frac{1}{2}\sum_{aibj}\bra{ij}\ket{ab}t^a_it^b_j
-\end{equation} The amplitudes $t^a_i$ and $t^{ab}_{ij}$ can be obtained by
-solving the coupled cluster amplitude equations. However, Full CC is
-computationally impractical and truncated CC methods like CCSD:\;$\hat{T} =
+\end{equation} 
+\\
+The non-linear amplitude equations are solved iteratively until the change in energies
+fall below a convergence threshold. However, just like its CI counterpart, Full CC is 
+computationally impractical and hence truncated CC methods like CCSD:\;$\hat{T} =
 \hat{T_1} + \hat{T_2}$, CCSDT:\;$\hat{T} = \hat{T_1} + \hat{T_2} + \hat{T_3}$ 
-are used. The CCSD(T)\cite{Shen12} method, which treats the triples approximately using
-perturbation theory is also a popular method.
-%is also very popular and uses an approximate 
-%treatment of triples using perturbation theory.
-%CCSD: $\hat{T} = \hat{T_1} + \hat{T_2} $ , CCSDT: $\hat{T} = \hat{T_1} + \hat{T_2} + \hat{T_3}$
-%, CCSDTQ: $\hat{T} = \hat{T_1} + \hat{T_2} + \hat{T_3} + \hat{T_4}$.
-%\\%CCSD(T) method uses an approximate treatment of triples using perturbation theory.
-%For the CCSD method the amplitude equations are:
-%\begin{equation}
-%\bra{\Psi^{a}_{i}}e^{-\hat{T}}\hat{H}e^{\hat{T}}\ket{\Psi_o} = 0
-%\end{equation}
-%\begin{equation}
-%\bra{\Psi^{ab}_{ij}}e^{-\hat{T}}\hat{H}e^{\hat{T}}\ket{\Psi_o} = 0
-%\end{equation}
-%CC truncation methods are more effective compared to that of the
-%CI. For example, although CCSD has the same number of coefficients
-%($t^{ab}_{ij}$ and $t^a_i$) as CISD ($c^{ab}_{ij}$ and $c^a_i$), CCSD
-%implicitly includes higher excitations than CISD because of the products of
-%cluster operators like $\hat{T_1}\hat{T_2}$, ${(\hat{T_2})}^2$ which capture
-%the triple and quadruple excitation contributions to the singles and doubles
-%amplitudes.
-%The exponential structure of the CC wavefunction makes more advantageous than the 
-%linear CI method. Because of this, truncated CC methods like CCSD are size extensive, which means they
-The exponential structure of the wavefunction makes the truncated CC methods more efficient 
-compared to that of the linear CI methods. CCSD wavefunction implicitly includes the triples
-and quadruples excitation contributions to its singles and doubles amplitude equations because 
-of the products of cluster operators like $\hat{T_1}\hat{T_2}$, ${(\hat{T_2})}^2$ etc., unlike 
-the CISD method which can only include singles and doubles excitation contributions. 
-Another advantage of this exponential ansatz is the property of size consistency\cite{Crawford00}.
-It means that the sum of the CC energies of non-interacting fragments (each calculated 
-separately) is equal to the energy of the supermolecule when all fragments are included 
-in the calculations. CC methods give very accurate results for molecules at their equilibrium 
-geometries\cite{Bartlett}. CCSD(T) is often referred as the "gold standard" method of electronic structure 
-theory. 
+are used. The exponential structure of the CC wavefunction makes the truncated CC methods 
+more efficient and accurate than the corresponding linear CI methods. For example,
+the CCSD wavefunction implicitly includes the triples and quadruples excitation contributions to 
+its singles and doubles amplitude equations because of the products of cluster operators like 
+$\hat{T_1}\hat{T_2}$, ${(\hat{T_2})}^2$ etc., unlike the CISD method which can only include 
+singles and doubles excitation contributions. Furthermore, CC energies have the desired 
+properties of size-extensivity and size-consistency (provided the reference wavefunction is
+size-consistent). Unsurprisingly, the CCSD(T)\cite{Shen12} method, which approximates the triples using
+perturbation theory is considered to be the ``gold standard" of quantum chemistry.
 %Also, one of the major advantages with the CC truncation methods is their
 %size-extensivity which makes them very useful. 
-However, CC methods are computationally expensiver: CCSD scales as $O(N^6)$, CCSD(T) as
-$O(N^7)$, CCSDT as $O(N^8)$ and so on, where $N$ is the number of basis functions.\\\\
+However, CC methods just like their CI counterparts, are computationally expensive: 
+CCSD scales as $O(N^6)$, CCSD(T) as $O(N^7)$, CCSDT as $O(N^8)$ and so on, where $N$ 
+is the number of basis functions.\\
 %and is routinely used for accurate results only for small molecules. While CCSD(T)
 %gives very good results for molecules at their equilibrium geometry, it fails
 %to describe diradical species and bond-breaking. CCSDT and CCSDTQ methods are
 %used virtually exclusively for high accuracy calculations of small molecules
 %as they are very computationally expensive.
 %\paragrpah{\bf{CC analytic derivatives}} ~\\\\
-\subsection{Coupled Cluster Analytic Derivatives}
+\subsection{Coupled Cluster Analytic Gradients}
 %\paragraph{CC analytic derivatives} ~ \\\\
-Molecular properties like dipole
-moments, IR intensities, force constants etc., depend upon the gradients of the
-molecular energy with respect to external perturbations. 
-In this section, a derivation of first order gradient expressions of the CC method is presented.\\
+%Molecular properties like dipole
+%moments, IR intensities, force constants etc., depend upon the gradients of the
+%molecular energy with respect to external perturbations. 
+%In this section, a derivation of first order gradient expressions of the CC method is presented.\\
 %If we take the derivative of the CC energy directly with respect to any perturbation 
 %X,
 %, we get
@@ -241,79 +249,112 @@ In this section, a derivation of first order gradient expressions of the CC meth
 %the Lambda equations, which are independent of the perturbation. 
 %In this section, a derivation of first order gradient expressions 
 %of CC method is presented using this approach.\\
-The gradient of the CC energy with respect to any external perturbation 
-X is written as:
+The gradient of the CC energy (equation 2.14) with respect to any external perturbation X 
+can be written as:
+\\
 \begin{equation}
 \frac{\partial{E_{cc}}}{\partial X} = \bra{\Psi_o}\frac{\partial{\bar H}}{\partial X}\ket{\Psi_o} = \bra{\Psi_o}{\bar{H}}^X + \lbrack\bar H , \frac{\partial{\hat T}}{\partial X}\rbrack\ket{\Psi_o} 
 \end{equation}
-where, $ {\bar{H}}^X =  e^{-\hat{T}}\frac{\partial{\hat H}}{\partial X}e^{\hat{T}}$ contains the 
-derivatives of the basis functions, MO coefficients etc. Invoking the 
-resolution of identity (RI),
+where, 
+\begin{equation}
+{\bar{H}}^X =  e^{-\hat{T}}\frac{\partial{\hat H}}{\partial X}e^{\hat{T}}.
+\end{equation}
+\\
+Invoking the resolution of identity (RI),
+\\
 \begin{equation}
  1 = \ket{\Psi_o}\bra{\Psi_o} + \sum_{ia}\ket{{\Psi}^a_i}\bra{{\Psi}^a_i} + \frac{1}{4}\sum_{ijab}\ket{{\Psi}^{ab}_{ij}}\bra{{\Psi}^{ab}_{ij}} + ...
 \end{equation}
-equation (19) can be expressed as:
+\\
+equation (2.18) can be seen to involve the derivatives of the amplitudes i.e $\frac{\partial{t^{a.}_{i.}}}{\partial X}$
+\\
 \begin{equation}
-\frac{\partial{E_{cc}}}{\partial X} = \bra{\Psi_o}{\bar{H}}^X\ket{\Psi_o} + \sum_{i.a.}\bra{\Psi_o}\bar{H}\ket{{\Psi}^{a.}_{i.}}\bra{{\Psi}^{a.}_{i.}}\frac{\partial{\hat T}}{\partial X}\ket{\Psi_o}.
+\frac{\partial{E_{cc}}}{\partial X} = \bra{\Psi_o}{\bar{H}}^X\ket{\Psi_o} + \sum_{i.a.}\bra{\Psi_o}\bar{H}\ket{{\Psi}^{a.}_{i.}} \frac{\partial{t^{a.}_{i.}}}{\partial X}
+%\bra{{\Psi}^{a.}_{i.}}\frac{\partial{\hat T}}{\partial X}\ket{\Psi_o}.
 \end{equation}
-The second term of the above equation involves calculating derivatives of
-amplitudes i.e. $\bra{{\Psi}^{a}_{i}}\frac{\partial{\hat T}}{\partial
-X}\ket{\Psi_o} = \frac{\partial{t^a_i}}{\partial X}$, which can be very
-computationally expensive if calculated directly. As a result, we would like to
-recast the above equation in something which is computationally practical. We
-start with the CC amplitude equations, say singles equation and take
-its derivative with respect to X.
+\\
+Calculating gradients using this approach would require taking the derivative of the non-linear equations
+used to solve for the amplitudes, which could be computationally demanding. However, explicit gradient 
+calculations of the amplitudes can be avoided altogether through an alternative formulation.
+Taking the derivative of the CC amplitude equations with respect to X, 
+\\
 \begin{equation} 
-0 = \bra{{\Psi}^a_i}{\bar{H}}^X + \lbrack\bar H , \frac{\partial{\hat T}}{\partial
-X}\rbrack\ket{\Psi_o} 
+0 = \bra{{\Psi}^{a.}_{i.}}{\bar{H}}^X + \lbrack\bar H , \frac{\partial{\hat T}}{\partial
+X}\rbrack\ket{\Psi_o}.
 \end{equation} 
-Using RI as before, we can write the above equation in the folllowing form:
+\\
+Using the RI method again, the above equation can be simplified.
+\\
 \begin{equation}
-\sum_{j.b.}\bra{{\Psi}^a_i}\bar{H}-E_{cc}\ket{{\Psi}^{b.}_{j.}}\bra{{\Psi}^{b.}_{j.}}\frac{\partial{\hat T}}{\partial X}\ket{\Psi_o} = - \bra{{\Psi}^a_i}{\bar{H}}^X\ket{\Psi_o} 
+\sum_{j.b.}\bra{{\Psi}^{a.}_{i.}}\bar{H}-E_{cc}\ket{{\Psi}^{b.}_{j.}} \frac{\partial{t^{b.}_{j.}}}{\partial X}
+= - \bra{{\Psi}^{a.}_{i.}}{\bar{H}}^X\ket{\Psi_o}
+%\bra{{\Psi}^{b.}_{j.}}\frac{\partial{\hat T}}{\partial X}\ket{\Psi_o} = - \bra{{\Psi}^a_i}{\bar{H}}^X\ket{\Psi_o} 
 \end{equation}
 or,
-\begin{equation} \bra{{\Psi}^{b.}_{j.}}\frac{\partial{\hat T}}{\partial
-X}\ket{\Psi_o} = -\sum_{ia}
-\bra{{\Psi}^{b.}_{j.}}{(\bar{H}-E_{cc})}^{-1}\ket{{\Psi}^a_i}\bra{{\Psi}^a_i}{\bar{H}}^X\ket{\Psi_o}
+\\
+\begin{equation} 
+%\bra{{\Psi}^{b.}_{j.}}\frac{\partial{\hat T}}{\partial X}\ket{\Psi_o} 
+\frac{\partial{t^{b.}_{j.}}}{\partial X} = -\sum_{i.a.}
+\bra{{\Psi}^{b.}_{j.}}{(\bar{H}-E_{cc})}^{-1}\ket{{\Psi}^{a.}_{i.}}\bra{{\Psi}^{a.}_{i.}}{\bar{H}}^X\ket{\Psi_o}
 \end{equation}
-The above equation was derived by considering the gradient of just the singles equation.
-Including the gradient of all the other amplitude equations and plugging the modified 
-equation into the expression for the gradient of energy eq.(21), we obtain:
+\\
+%The above equation was derived by considering the gradient of just the singles equation.
+%Including the gradient of all the other amplitude equations and plugging the modified 
+Plugging this gradient expression back into equation (2.21), we obtain the following equation,
+\\
 \begin{equation}
 \frac{\partial{E_{cc}}}{\partial X} = \bra{\Psi_o}{\bar{H}}^X\ket{\Psi_o} -
 \sum_{i.a.}\bra{\Psi_o}\bar{H}\ket{{\Psi}^{a.}_{i.}}\sum_{j.b.}
 \bra{{\Psi}^{a.}_{i.}}{(\bar{H}-E_{cc})}^{-1}\ket{{\Psi}^{b.}_{j.}}
-\bra{{\Psi}^{b.}_{j.}}{\bar{H}}^X\ket{\Psi_o}
+\bra{{\Psi}^{b.}_{j.}}{\bar{H}}^X\ket{\Psi_o}.
 \end{equation}
-We define a perturbation independent $\Lambda$ operator such that:
+\\
+The second term of the RHS of the above equation involves an inverted 
+$\bar{H}$ matrix which needs to be avoided at all costs as the dimensions
+of this matrix can be very large. As such, a linear operator $\hat{\Lambda}$
+is defined in the following manner.
+\\
 \begin{equation}
-\bra{\Psi_o}\Lambda\ket{\Psi^{b.}_{j.}} = -\sum_{i.a.}\bra{\Psi_o}\bar{H}\ket{{\Psi}^{a.}_{i.}}
+\bra{\Psi_o}\hat{\Lambda}\ket{\Psi^{b.}_{j.}} = -\sum_{i.a.}\bra{\Psi_o}\bar{H}\ket{{\Psi}^{a.}_{i.}}
 \bra{{\Psi}^{a.}_{i.}}{(\bar{H}-E_{cc})}^{-1}\ket{{\Psi}^{b.}_{j.}}.
 \end{equation}
-This $\Lambda$ operator can be seen as a de-excitation operator and can be written as:
+\\
+or, 
 \begin{equation}
-\Lambda = \Lambda_1 + \Lambda_2 + \Lambda_3 + ...
+\sum_{i.a.}\bra{\Psi_o}\hat{\Lambda}\ket{\Psi^{a.}_{i.}}\bra{{\Psi}^{a.}_{i.}}{(\bar{H}-E_{cc})}\ket{{\Psi}^{b.}_{j.}}
+ = - \bra{\Psi_o}\bar{H}\ket{{\Psi}^{b.}_{j.}}
+%\bra{{\Psi}^{a.}_{i.}}{(\bar{H}-E_{cc})}^{-1}\ket{{\Psi}^{b.}_{j.}}.
+\end{equation}
+\\
+It can be easily seen from above equations that $\hat{\Lambda}$ is a linear de-excitation operator,
+\begin{equation}
+\hat{\Lambda} = \hat{\Lambda}_1 + \hat{\Lambda}_2 + \hat{\Lambda}_3 + ...
 \end{equation} 
-where $\Lambda_1 = \sum_{ia}\lambda^i_a\{{a}^\dagger_i a_a\}$ is the singles de-excitation
-operator, $\Lambda_2$ is the doubles de-excitation operator and so on.  
-Using the lambda operator, the gradient expression gets simplified as:
+\\
+where $\hat{\Lambda}_1 = \sum\limits_{ia}\lambda^i_a\{{a}^\dagger_i a_a\}$, $\hat{\Lambda}_2=\sum\limits_{ijab}
+\lambda^{ij}_{ab}\{{a}^\dagger_i {a}^\dagger_j a_b a_a\}$ 
+are the singles and doubles de-excitation operators respectively. The CC gradient expression can now be expressed 
+in terms of the lambda operator,
+\\
 \begin{equation}
-\frac{\partial{E_{cc}}}{\partial X} = \bra{\Psi_o}(1 + \Lambda){\bar{H}}^X\ket{\Psi_o} = \bra{\Psi_o}(1 + \Lambda)e^{-\hat{T}}\frac{\partial{\hat H}}{\partial X}\ket{\Psi_{cc}}
+\frac{\partial{E_{cc}}}{\partial X} = \bra{\Psi_o}(1 + \hat{\Lambda}){\bar{H}}^X\ket{\Psi_o} = \bra{\Psi_o}(1 + \hat{\Lambda})e^{-\hat{T}}\frac{\partial{\hat H}}{\partial X}\ket{\Psi_{cc}}
 \end{equation}
-The governing equation for calculating the lambda amplitudes eq. (26) can be written
-in a more compact form:
+\\
+and the governing equation for sloving the lambda amplitudes eq. (2.27) can be written in a more compact form as,
+\\
 \begin{equation}
-\bra{\Psi_o}(1 + \Lambda)(\bar{H} - E_{cc})\ket{{\Psi}^{a.}_{i.}} = 0
+\bra{\Psi_o}(1 + \hat{\Lambda})(\bar{H} - E_{cc})\ket{{\Psi}^{a.}_{i.}} = 0.
 \end{equation}
+\\
 Thus instead of taking the gradients of the non-linear $T$ amplitude
-equations with respect to perturbations, we solve the linear perturbation-independent 
-$\Lambda$ equations for calculating the energy gradient.\\
-Also, $\bra{\Psi_o}(1 + \Lambda)e^{-\hat{T}}$ is the CC left hand wavefunction and 
-eq. (28) is a generalized Hellman-Feynman equation\cite{Feynman39}. For full CC the left and 
-right hand wavefunctions are Hermitian conjugates of each other, but this is not true for 
-the truncated CC methods. This is because of the non-hermiticity of the $\bar{H}$ operator.
-However, for second order derivatives, we do need to calculate the first derivatives of 
-either the $T$ or $\Lambda$ amplitudes with respect to a perturbation.
+equations with respect to perturbations, we solve linear perturbation-independent 
+$\hat{\Lambda}$ equations for calculating the CC energy gradient.
+Furthermore, CC gradients satisfy the generalized Hellman-Feynman equation\cite{Feynman39}
+if $\bra{\Psi_o}(1 + \hat{\Lambda})e^{-\hat{T}}$ is defined as the CC left hand wavefunction
+as due to the non-hermiticity of the $\bar{H}$ operator or the non-variational nature of the 
+CC method, the left and right hand wavefunctions are not simple hermitian conjugates of each other.
+%However, for second order derivatives, we do need to calculate the first derivatives of 
+%either the $T$ amplitudes with respect to a perturbation.
 %The derivative of the similarity transformed hamiltonian can be expressed as:
 %\begin{equation}
 %\frac{\partial{\bar{H}}}{\partial X} = {\bar{H}}^X + \lbrack\bar H , \frac{\partial{\hat T}}{\partial X}\rbrack, 
