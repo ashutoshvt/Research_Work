@@ -5,13 +5,13 @@ contributing to the rich diversity of quantum chemical theories is the fact that
 is exactly solvable for only one electron systems like hydrogen atom. As such, numerous approximations
 have been proposed over the years to solve this equation for many electron systems.
 The Hartree-Fock (HF) theory\cite{} is one of the simplest approximation in this regard
-under the Born-Oppenheimer approximation\cite{} and non-relativistic regimes\cite{}. This
+under the Born-Oppenheimer approximation\cite{} in non-relativistic regimes\cite{}. This
 model attempts to transform the many body problem of SE into a one body problem where each electron
 only interacts with a mean field created by the other electrons. For an N-electron system, the HF 
-wavefunction is a slater determinant (obeys Pauli's antisymmetry principle naturally) composed of N 
+wavefunction is a Slater determinant (obeys Pauli's antisymmetry principle naturally) composed of N 
 spin orbitals, i.e. the one electron solutions of the HF equation. Following is a brief outline
 of the HF procedure: A Lagrangian is constructed with the HF energy (the expectation value of the 
-slater determinant) coupled with the constraint of the spin orbitals always remaining 
+Slater determinant) coupled with the constraint of the spin orbitals always remaining 
 orthonormal to each other. The Lagrangian thus can be seen as a functional of the spin 
 orbitals. In the next step, the variational principle is employed to set the first order 
 change in the Lagrangian with respect to spin orbitals to zero. Finally, one obtains 
@@ -32,19 +32,21 @@ however, is very essential if one wants to attain ``chemical accuracy", ex.
 structure of the HF procedure makes it one of the most popular reference 
 wavefunctions for more complicated and accurate theoretical models.
 \subsection{Configuration Interaction Method}
-Configuration interaction (CI) method is a matrix based formulation of the time 
-independent Schr\"odinger's equation,
+Configuration interaction (CI) method attempts to solve the time independent 
+Schr\"odinger's (TISE) by recasting it into a matrix eigenvalue problem, 
 \begin{equation}
 HC = EC
 \end{equation}
-where H is matrix representation of the Hamiltonian , C is the coefficient matrix and 
-E is the diagonal matrix containing the electronic energies (The lowest energy 
-corresponds to the ground state). If the vector space used to represent the Hamiltonian 
+where H is the matrix representation of the Hamiltonian, C is the coefficient matrix
+whose columns are the eigenvectors of the Hamiltonian and E is the diagonal matrix 
+containing the eigenvalues or electronic energies (The lowest energy corresponds to 
+the ground state wavefunction). If the vector space used to represent the Hamiltonian 
 is complete, the CI approach, then popularly known as the Full CI method gives exact 
 wavefunctions and electronic energies. Specifically, this model uses a vector space 
-composed of substituted or excited slater determiants which besides being complete 
-also have the desired properties of antisymmetry and orthogonality. 
-As such, the CI wavefunction is a linear combination of slater determinants.
+composed of substituted or excited Slater determiants which can form a complete
+space in the limit of an infinite one electron basis. Furthermore, this vector space 
+also have the desired properties of antisymmetry and orthogonality. Indeed the Full 
+CI wavefunction is a linear combination of all possible Slater determinants for a given basis set,
 \\
 \begin{equation}
 \ket{\Psi} = c_o\ket{\Phi_o} + \sum_{ia}{c}_{i}^{a}\ket{{\Phi}^a_i} + \sum_{i>j,a>b}c_{ij}^{ab}\ket{\Psi^{ab}_{ij}} + \sum_{i>j>k,a>b>c}c_{ijk}^{abc}\ket{\Psi^{abc}_{ijk}} + ...
@@ -52,85 +54,98 @@ As such, the CI wavefunction is a linear combination of slater determinants.
 \\
 where $\ket{\Phi_o}$ is the reference wavefunction (usuallly HF), $\ket{{\Phi}^a_i}$ refers to a singly excited determinant where an occupied orbital $i$ of the reference wavefunction is replaced by a virtual orbital $a$
 and so on.\\
-Full CI method is computationally very expensive and scales factorially with 
+However, Full CI method is computationally very expensive and scales factorially with 
 system size. Unsurprsingly, it is mostly used in benchmark calculations of small molecules and
-the largest Full CI calculation to date has been on nitrogen molecule\cite{} which involved 
-billions of determinants. In practice, truncated CI methods like CISD, CISDT, etc.,
-where the vector space is restricted to include up to doubly and triply excited determinants 
-and so on is used. However, unlike the exact wavefunction, truncated CI wavefunctions 
-do not posess the property of size-extensivity i.e. the CISD energy doesn't scale 
+the largest Full CI calculation to date has been on nitrogen molecule\cite{} involving 
+billions of determinants. In practice, truncated CI methods like CISD, CISDT where the vector 
+space is restricted to include up to doubly and triply excited determinants 
+is used. Unlike the exact wavefunction, truncated CI wavefunctions, however, 
+do not posess the property of size-extensivity i.e. the CIS[D/T] energy doesn't scale 
 linearly with the number of electrons in the asymptotic limit. As a result,
-the accuracy of these methods takes a hit as the size of the system increases.
+the accuracy of these methods decrease progressively as the size of the system increases.
 %.These methods can extract up to 95\% of correlation energy\cite{HarrisonHandy83} and
 %can be applied to solve for excited states, open-shell systems and systems that
 %are far from their equilibrium geometry, which makes them very useful.
 \subsection{Coupled Cluster Theory} 
 %\paragraph{Coupled cluster theory} ~ \\\\
-
-Coupled cluster\cite{Crawford00} (CC) theory is a very accurate electronic
-structure method that has been widely used in quantum chemistry.
-It takes into account the electron correlation effects by expressing the
-wavefunction as a linear combination of slater determinants within an
-exponential framework. This is achieved by the use of cluster operators $\hat{T}$ 
-acting on the HF wavefunction.
+Coupled cluster (CC) theory\cite{} is an alternative formulation of TDSE which attempts to 
+reproduce the Full CI wavefunction through an exponential parametrization
+of the wavefunction. The CC wavefunction can be obtained by the operation of cluster
+operators $\hat{T}$ acting on the reference Slater determinant. 
 %is one of the most accurate yet computationally
 %affordable method, which is very widely used in quantum chemistry.CC
 %wavefunction is an exponential ansatz\cite{Crawford00} which incorporates the electron
 %correlation effects through cluster operators 
 %$\hat{T}$.  
+\\
 \begin{equation}
 \ket{\Psi_{CC}} = e^{\hat{T}}\ket{\Psi_{o}} , 
 \end{equation}
-where
+where,
 \begin{equation}
- \hat{T} = \hat{T_1} + \hat{T_2} + \hat{T_3} + ... \;\hat {T_n} 
+ \hat{T} = \hat{T_1} + \hat{T_2} + \hat{T_3} + ... \;\hat {T_n}.
 \end{equation}
-$\ket{\Psi_{o}}$ is the reference wavefunction, usually taken as the HF
-wavefunction, and the $\hat{T_1}$ operator is the linear combination of all single excitation
-operators, which replace an occupied orbital in the HF wavefunction with a
-virtual orbital. It takes into account the relaxation of the one electron basis
-functions, i.e HF molecular orbitals, due to the correlation of the electronic
-motions. In second quantization\cite{JorgensenSimons81} formalism, $\hat{T_1}$
-can be written as :
-\begin{equation}
-\hat{T_1} = \sum_{ia}t^a_i\{{a}^\dagger_a a_i\}
-\end{equation}
-where the indices i, j, k ... refer to occupied orbitals while
-the indices a, b, c ... refer to virtual spin orbitals.
-In the above equation, ${a}^\dagger_a$ is called the creation operator as it
-creates a new particle state (virtual orbital) when it acts on a slater determinant.
-\begin{equation}
-{a}^\dagger_a\ket{\phi_b...\phi_d} = \ket{\phi_a\phi_b...\phi_d}
-\end{equation}
-$a_i$ is the hermitian conjugate of the creation operator and is called
-the annihilation operator as it removes a hole state (occupied orbital) when it acts on a
-slater determinant.
-\begin{equation}
-a_i\ket{\phi_i\phi_j...\phi_l} = \ket{\phi_j...\phi_l}
-\end{equation}
-The $\hat{T_2} $ operator is the linear combination of all double excitation operators.
-It correlates the motion of all pairs of electrons of the molecule and can be expressed
-in second quantization as:
+\\
+Here $\ket{\Psi_{o}}$ is the reference wavefunction, usually taken as the HF
+wavefunction. One of the most popular tools used for the derivation of the 
+complicated CC equations is second-quantization\cite{JorgensenSimons81}.
+The $\hat{T_2}$ operator in SQ form can be written as
+\\
 \begin{equation}
 \hat{T_2} = \frac{1}{4}\sum_{ijab}t^{ab}_{ij}\{a^\dagger_aa^\dagger_ba_ja_i\}
 \end{equation}
-Similarly, the ${\hat{T_3}}$ operator correlates the motion of all triplets of
-electrons and so on. In general, \begin{equation}
-\hat{T_n} = {\frac{1}{n!}}^2\sum_{ij..ab..}^nt^{ab..}_{ij..}\{a^\dagger_aa^\dagger_b...a_ja_i\}
+\\
+%\begin{equation}
+%\hat{T_1} = \sum_{ia}t^a_i\{{a}^\dagger_a a_i\}
+%\end{equation}
+where ${a}^\dagger_a$ (or ${a}^\dagger_b)$ is called a creation operator as it 
+creates a new particle state (virtual orbital) when it acts on a Slater determinant.
+\begin{equation}
+{a}^\dagger_a\ket{\phi_b...\phi_d} = \ket{\phi_a\phi_b...\phi_d}
 \end{equation}
+Here, $\ket{\phi_a\phi_b...\phi_d}$ is a shorthand notation (Dirac) for a Slater determinant
+with orbitals $a,b,..d$. The $a_i$ (or $a_j$) operator on other hand is called 
+as annihilation operator as it removes a hole state (occupied orbital) when it 
+acts on a Slater determinant.
+\begin{equation}
+a_i\ket{\phi_i\phi_j...\phi_l} = \ket{\phi_j...\phi_l}
+\end{equation}
+Thus, the action of the $\hat{T_2} $ operator on a Slater determinant will create a 
+linear combination of all doublly excited determinants with corresponding coefficients
+$t^{ab}_{ij}$ which can be seen as the contribution of virtual orbitals $a$ and $b$
+to the pair correlation function $f_{ij}$ which correlates the motions of any two 
+electrons associated with occupied orbitals $i$ and $j$. 
+\\
+\begin{equation}
+\begin{split}
+& \hat{T_2} = \sum_{ij}f_{ij} \\
+& f_{ij} = \frac{1}{4}\sum_{ab}t^{ab}_{ij}\{a^\dagger_aa^\dagger_ba_ja_i\}\\
+\end{split}
+\end{equation}
+\\
+Similarly, the ${\hat{T_3}}$ operator correlates the motion of all triplets of electrons. 
+The $\hat{T_1}$ operator on the other hand captures the ``adjustment of the one-electron basis"\cite{}
+as the effect of other correlation operators are added to the wavefunction.
+\\
+\begin{equation}
+\hat{T_n} = {\bigg(\frac{1}{n!}\bigg)}^2\sum_{ij..ab..}^nt^{ab..}_{ij..}\{a^\dagger_aa^\dagger_b...a_ja_i\}
+\end{equation}
+\\
 %\subsubsection{Coupled Cluster energy}
 %\paragraph{Coupled Cluster energy}~ \\
-If we expand the exponential ansatz of the CC wavefunction,
+Expanding the ``exponential ansatz" of the CC wavefunction,
+\\
 \begin{equation}
 \ket{\Psi_{CC}} = (1+(\hat{T_1} + \hat{T_2} + \hat{T_3} + ... ) + \frac{1}{2!}{(\hat{T_1} + \hat{T_2} + \hat{T_3} + ...)}^2 + ... )\ket{\Psi_o}
 \end{equation}
-we get a linear combination of all possible Slater determinants, which makes CC
-wavefunction an exact wavefunction in the basis set limit, just like full
-configuration interaction. Thus, the full CC
-wavefunction is a solution of the Schr\"odinger equation.
+\\
+a linear combination of all possible Slater determinants is obtained, which in the basis set limit,  
+should be an exact solution of the TISE just like the Full CI wavefunction. 
+\\
 \begin{equation}
 \hat{H}e^{\hat{T}}\ket{\Psi_o} = E_{cc}\;e^{\hat{T}}\ket{\Psi_o}
 \end{equation}
+\\
 On multiplying the above equation by the inverse of the exponential operator i.e
 $e^{-\hat{T}}$ and projecting it against the reference and excited
 determinants, we get the energy and the amplitude equations of coupled cluster

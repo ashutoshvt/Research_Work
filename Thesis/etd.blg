@@ -2,12 +2,12 @@ This is BibTeX, Version 0.99d (TeX Live 2016)
 Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: etd.aux
 Case mismatch error between cite keys koch90 and Koch90
----line 173 of file etd.aux
+---line 172 of file etd.aux
  : \citation{koch90
  :                 }
 I'm skipping whatever remains of this command
 Case mismatch error between cite keys Revisited and revisited
----line 177 of file etd.aux
+---line 176 of file etd.aux
  : \citation{Revisited
  :                    }
 I'm skipping whatever remains of this command
