@@ -501,10 +501,9 @@ number of virtual orbitals removed.}}
 \label{fig:fvno++_optrot}
 \end{MyFigure}
 which plots the errors in the LG specific rotations in both FVNO and FVNO++($\mu$) schemes as VNOs
-are removed, also shows similar trends. Specific rotations can be seen to be more 
-sensitive than polarizabilities with respect to truncation of orbitals in both the methods.
-However, the FVNO++ curve shows a systematic increase in error as more and more VNOs are
-removed while the errors in the FVNO procedure are at best erratic.
+are removed, also shows similar trends. However, specific rotations can be seen to be more 
+sensitive than the polarizabilities with respect to truncation of orbitals.
+
 
 %for large-scale calculations. Moreover, the metric of retention might
 %be not well-defined. Thus, we instead look at the performance
@@ -532,12 +531,9 @@ removed while the errors in the FVNO procedure are at best erratic.
 %excitations might require accurate T2 amplitudes as well.
 %\subsection{Sparsity in solvated cluster}
 \section{Conclusions}
-We have developed a new formalism FVNO++ for finding the most
-compact representations of the virtual space for response 
-calculations. Based on plot studies on h2o2, we can conclude that 
-this approach has the right behaviour/convergence towards the
-full canonical result. In the future, we hope to comCalculations on other test molecules
-are undergoing. 
+We have developed an extension of the FVNO scheme for efficient 
+calculation of response properties.
+
 
 - Within the FVNO++ formalism, explored 
 structures of second-order perturbed densities:

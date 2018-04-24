@@ -128,14 +128,14 @@ aug-cc-pVDZ and aug-cc-pVTZ,\cite{Dunning89} they were able to match the experim
 deviation of 20-25 degrees for a set of 28 chiral molecules. Ruud et al. extended the calculations to the coupled cluster 
 level using coupled cluster response theory developed by Koch and J{\o}rgensen\cite{Koch90}, and obtained very 
 promising results\cite{Ruud03}. Unsurprisingly, these response based simulations have been used as an accurate and 
-reliable tool in the process of determining the AC of a large number of chiral molecules\cite{Kondru99}. However, all 
+reliable tool in the process of determining the AC of a large number of chiral molecules\cite{Kondru99}. 
+
+
+However, all 
 these calculations were done on single isolated molecules and thus ideally they should only be expected to match vapor phase 
 optical rotation (OR) which can be measured by using cavity ring down spectrometry, thanks to the pioneering 
 works of Vacaaro and co-workers.\cite{} Thus, in order to match the solution phase OR measurements, the response theory
 needs to be combined with accurate solvation models. \\ 
-
-However, works in this regard, as shown in chapter 2 of this manuscript have been less than satisfactory and 
-
 \section{Solvation Models}
 For the purpose of computational practicality, the QM solvation models aim to reduce the degrees of freedom of
 the solvent molecules without compromising the quality of description of the solvent-solute and the solvent-solvent
@@ -175,7 +175,7 @@ FQ/PCM/MM has been combined by
 In recent years, the ab inito methods
 mentioned above have been combined with various solvation based
 approaches\cite{Neugebauer05,Neugebauer09,Mennucci02,Tomasi05,JensenGordon96}
-to calculate the optical rotation in solution. This review condiders some of
+to calculate the optical rotation in solution. This review considers some of
 the popular approaches that are being used and describes their working
 mechanisms and performances in detail. In the current/future work section of
 this review, some reduced scaling techniques are proposed with the aim of
@@ -188,15 +188,28 @@ optical rotation calculations are presented and discussed.
 %3. explicit + implicit models
 
 
-
-
-
-
 The only robust way of accounting for solvent effects seem to be including the solvent molecules explicitly 
 in the QM calculations. Since rotation is a dynamic property, one needs to average OR values over several 
 configurations or snapshots (obtained by molecular dynamics (MD) simulations) to be able to match experimental 
-values. Multiple calculations coupled with the polynomical scaling of coupled cluster (CC) methods, puts a heavy burden 
-on the computational resources. An obvious way to make these compuations practical is to seek the help of CC reduced-scaling 
+values.
+
+Besides solvation, another challenging problem faced by the CCLR theory is that of 
+gauge and origin invariance.
+The origin dependence while using length-gauge representation is a consequence of the non-variational nature of the 
+coupled cluster wavefunction. Unlike HF and DFT methods, properties such as optical rotation computed via CCLR 
+are not origin independent even at the complete basis set limit, and the dependence cannot be resolved using GIAOs.6 
+The modified velocity gauge formalism for the electric dipole operator has been developed to help address this 
+issue. The velocity-gauge formalism, ⟨⟨⃗p, L⃗ ⟩⟩ω , allows for the trace of the property tensor to be origin 
+invariant. Here ⃗p and L⃗ are the electronic momentum and angular momentum operators, respectively, and 
+⟨⟨, ⟩⟩ω represents the response function evaluated at frequency ω. However, without a complete basis
+set, using the velocity gauge formalism results in unphysical behavior at zero frequency. To achieve the 
+appropriate behavior, the value for the velocity gauge representation at the static limit (at zero frequency) 
+is subtracted from the original expression, as shown in Equation 1.1. 13
+⟨⟨⃗p, L⃗ ⟩⟩ω → ⟨⟨⃗p, L⃗ ⟩⟩ω − ⟨⟨⃗p, L⃗ ⟩⟩0 (1.1) Alternatively, the underlying response theory can be reformulated to incorporate 
+orbital rotation parameters explicitly to achieve origin invariance.14,15
+
+Polynomical sclaling restricts use to large or solvated molecular sytstems.
+An obvious way to make these compuations practical is to seek the help of CC reduced-scaling 
 techniques like projected natural orbitals (PNO) approach\cite{} which has been really sucessfull in describing energetics of 
 large molecular systems. However, works towards the extension of these methods to calculate chiroptical properties has been 
 fairly limited\cite{}. McAlexander and Crawford in their recent work\cite{} demonstrated that the regular PNO approach
