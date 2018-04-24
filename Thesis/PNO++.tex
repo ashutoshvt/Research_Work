@@ -192,7 +192,6 @@ by solving a linear system of equations,
 = -  \sum_\nu X_{\nu}^{B} F^{'}_{\nu\mu} - \bar{B}^{'}_{\mu}
 \end{split}
 \end{equation}
-\\
 where,
 \begin{equation}
 \begin{split}
@@ -202,7 +201,6 @@ where,
 & \bar{B}^{'}_{\mu} = \langle 0|(1 + \hat{\Lambda})|\big[\bar{B},\tau_\mu\big] |0 \rangle.
 \end{split}
 \end{equation}
-\\
 Here $\tau_\mu$, $\tau_\nu$ are operators which generate excited determinats $|\mu\rangle$
 and $|\nu\rangle$ by acting on the reference wavefunction $|0\rangle$. Once, we solve for 
 $X_{\nu}^{B}$ and $Y_{\nu}^{B}$ amplitudes, the first-order perturbed density can be built 
@@ -246,7 +244,6 @@ where,
 T^{ij}_{ab} = \frac{\langle ab|ij \rangle}{f_{ii} + f_{jj} - \epsilon_a - \epsilon_b}.\\
 \end{split}
 \end{equation} 
-\\
 Here, indices $i,j,k$ and $a,b,c$ have been used for occupied and virtual orbitals respectively. The 
 integrals $\langle ab|ij \rangle$ are in physicist notation, $f_{ii}$ and $f_{jj}$ are the
 $i^{th}$ and $j^{th}$ diagonal elements of the Fock matrix in the LMO basis and 
@@ -302,14 +299,12 @@ X^{ij}_{ab} =  \frac{\bar{A}^{ij}_{ab}}{f_{ii} + f_{jj} - \epsilon_a - \epsilon_
 since the leading contribution to the inverse of the diagonally dominant $(\bar{H} - \omega I)$ matrix 
 would come from the inverse of its diagonal elements, i.e. $f_{ii} + f_{jj} - \epsilon_a - \epsilon_b$. 
 Also, $\bar{A}$ has been approximated by using MP2 amplitudes for the similarity transformation,
-\\
 \begin{equation}
 \begin{split}
 \bar{A}^{ij}_{ab} = P_{ij}^{ab}\bigg[\sum_e t^{ij}_{eb}[A^a_e - & t^m_a A^m_e] -\sum_m t^{mj}_{ab}[A^m_i - t^i_e A^m_e]\bigg] \\
 & P_{ij}^{ab} f_{ij}^{ab}  = f_{ij}^{ab} + f_{ji}^{ba}
 \end{split}
 \end{equation}
-\\
 Furthermore, we have taken $omega_1$ as zero so that we can use the same density for response calculations at
 multiple frequencies. This can be justified as the sparsity of the perturbed amplitudes should more or less
 stay the same at the frequencies we are interested in. In this approach, the weak pair approximation can also 
@@ -345,7 +340,6 @@ the PNO basis in every iteration.
 &\bm{R}^{ii} = {\bm{Q}^{ii}}^{\dagger} R^{i} \bm{Q}^{ii}\\
 \end{split}
 \end{equation}
-\\
 One can can continue to work in the PNO basis but since the virtual-virtual block of the Fock matrix is 
 not diagonal in this basis, the convergence of the amplitude equations is expected to be slower. Thus, its common to 
 use a semicanonical PNO basis which diagonalizes $\bm{F}^{ij}_{vir}$,
@@ -381,26 +375,135 @@ and added to the amplitudes of the previous iteration $(n-1)$,
 It should be noted that this procedure is applied for filtering the non-local parts of $\hat{T}$, $\hat{\Lambda}$, $X^{A}_{\omega}$ 
 and $Y^{A}_{\omega}$ amplitudes. 
 \section{Results and Discussions}
-\subsection{$(H_2)_n$ Helices}
-First thing would be showing the retention of diffuse space. show the two graphs
-showing for (h2)7 systems. name it PNO(M) for modified PNO, mention that
-this is not feasible as big number of diffuse-functions, plus not a blackbox 
-way for selecting the cutoff for retention.
-- Linear structure, chiral, helical arrangement
-- best case for local correlation problems
-- small masses, high OR
-- Polariz, specific rotation (h2)4, (h2)5, (h2)6, (h2)7, maybe-bigger!! : LG, MVG, aDZ basis
-- diagnostics for FVNO++ approach:
-    - first comparing the structure of the ground state and perturbed density, one can see
-      that perturbed density would have a higher rank than ground-state density.
-    - how about incorporating L*L density as well and optimized NOs by better guess densities.
-    - Here we mostly concentrate on capturing the right kind of behavior rather
-    than savings, since there is not enough sparsity on offer for these cases.
-    This is applicable for other test cases as well.
-\subsection{beta-pinene}
-\subsection{phenyl-ethanol}
-\subsection{norbornenone}
+Through our earlier works\cite{}, we have demonstrated the poor performances of 
+the NOs based on the ground state MP2 density in describing the response 
+of the CC wavefunction. This behaviour is not unexpected since the diffuse orbitals
+which are crucial to the description of the low lying Rydberg states and hence to the  
+the response properties, have very low contributions to the ground state correlation energy
+because of which they will always be removed first when ground state densities are used
+for generating the NOs. By the same logic, the ground state based PNOs can't be expected to 
+perform well for calculating response properties. Consequently, we devised a simple strategy 
+where we use a hybrid virtual space consisting of virtual MOs (VMOs) and ground state PNOs. 
+Specifically, we identify the most diffuse VMOs on the basis of their spatial extents\cite{} 
+by choosing an (empirical) cutoff and construct the MP2 pair specific density in the remaining  
+virtual space. Thus, in this modified PNO approach (PNO(M)) every pair of LMOs, in addition to 
+their PNOs, posess the same set of VMOs. 
+Fig.~\ref{fig:pno_m_h2_7_polar}
+\begin{MyFigure}[h!]
+\centering
+\includegraphics[width=0.6\linewidth,natwidth=610,natheight=642]{figures_pno++/pno_m_h2_7_adz_polar.pdf}
+\caption{{\footnotesize CCSD/aDZ polarizabilities of (H$_2$)$_7$ in both PNO and PNO(M) approaches 
+as a function of -log(occupation threshold)}}
+\label{fig:pno_m_h2_7_polar}
+\end{MyFigure}
+compares the performance of both PNO(M) amd PNO approaches for calculating CCSD dynamic polarizabilities of
+(H$_2$)$_7$ molecule at 589 nm. It can be seen that the PNO(M) scheme converges to the full result much 
+faster than the PNO method. A cutoff of 10$^{-6}$ in the PNO(M) approach gives almost the same accuracy as 
+a cutoff of 10$^{-9}$ for the PNO approach. Similar trends can be seen for specific rotation as well
+for the same system (see Fig.~\ref{fig:pno_m_h2_7_optrot}),
+\begin{MyFigure}[h!]
+\centering
+\includegraphics[width=0.6\linewidth,natwidth=610,natheight=642]{figures_pno++/pno_m_h2_7_adz_optrot.pdf}
+\caption{{\footnotesize CCSD/aDZ/MVG Specific rotations of (H$_2$)$_7$ in both PNO and PNO(M) approaches
+as a function of -log(occupation threshold)}}
+\label{fig:pno_m_h2_7_optrot}
+\end{MyFigure}
+where even at a very high cutoff of 10$^{-4}$, the PNO(M) approach has almost converged to the full 
+canonical result. On the other hand, the PNO approach even at a tight cutoff of 10$^{-9}$ doesn't
+reproduce the canonical value. Furthermore, on account of fortuitous cancellation of errors in the
+PNO approach, a cutoff of 10$^{-7}$ gives much more accurate results than 10$^{-9}$.
+However, in the PNO(M) approach, evey pair of LMOs becomes ``important" as it always posesses 
+a certain number of VMOs. Thus, the computational expenses are significantly higher in such an
+approach. Also, the selection of the diffuse space is not straightforward as the criteria of 
+spatial extents is not robust enough. We look at the PNO++($\mu$) approach to see if it can naturally
+identify and retain the PNOs which are important for response properties.
+Fig.~\ref{fig:pno_m_h2_4_polar_D}
+\begin{MyFigure}[h!]
+\centering
+\includegraphics[width=0.6\linewidth,natwidth=610,natheight=642]{figures_pno++/h2_4_polar_D.pdf}
+\caption{{\footnotesize CCSD/aDZ dynamic polarizabilities of (H$_2$)$_4$ at 589 nm in both PNO and PNO++($\mu$) approaches
+with only doubles amplitudes truncated, as a function of -log(occupation threshold)}}
+\label{fig:pno_m_h2_4_polar_D}
+\end{MyFigure}
+compares the performances of both PNO and PNO++($\mu$) approaches when the singles
+amplitudes are kept untruncated in calculating CCSD dynamic polarizabilities 
+of (H$_2$)$_4$. It can be easily seen that the PNO++ scheme significanty outperforms 
+the PNO scheme and converges to the full result at a T2 ratio slightly greater 
+than 0.2, while the PNO approach converges to the canonical result only after the retention
+of more than 70\% of the doubles amplitudes. When both singles and doubles amplitudes
+are truncated (see Fig.~\ref{fig:pno_m_h2_4_polar_SD}), the truncation errors increase
+as expected, but the difference between the two approaches become more pronounced.
+For example, the error in the PNO approach at a T2 ratio of 0.2 is an order of
+magnitude greater than that of PNO++. 
+\begin{MyFigure}[h!]
+\centering
+\includegraphics[width=0.6\linewidth,natwidth=610,natheight=642]{figures_pno++/h2_4_polar_DS.pdf}
+\caption{{\footnotesize CCSD/aDZ polarizabilities of (H$_2$)$_4$ in both PNO and PNO++ approaches
+with both singles and doubles amplitudes truncated, as a function of -log(occupation threshold)}}
+\label{fig:pno_m_h2_4_polar_SD}
+\end{MyFigure}
+In a similar analysis for specific rotations, (see Fig.~\ref{fig:pno_m_h2_4_optrot_D})
+\begin{MyFigure}[h!]
+\centering
+\includegraphics[width=0.6\linewidth,natwidth=610,natheight=642]{figures_pno++/h2_4_optrot_lg_D.pdf}
+\caption{{\footnotesize CCSD/aDZ/LG specific rotations of (H$_2$)$_4$ in both PNO and PNO++ approaches
+with only doubles amplitudes truncated, as a function of -log(occupation threshold)}}
+\label{fig:pno_m_h2_4_optrot_D}
+\end{MyFigure}
+it can be seen that the truncation errors are higher compared to polarizabilities, which is not 
+unexpected since specific rotations are found to be more sensitive to the wavefunction truncation.
+When only doubles amplitudes are truncated, the specific rotations in the case of PNOs, continue 
+to move farther away from the full result up to T2 ratios close to 0.6. Thereafter, it slowly 
+converges towards the canonical result. On the other hand, the PNO++ curve has the right
+convergence behavior: as the values of T2 ratios increase, it converges faster to the full result.
+On truncating both singles and doubles amplitudes, (see Fig.~\ref{fig:pno_m_h2_4_optrot_SD})
+\begin{MyFigure}[h!]
+\centering
+\includegraphics[width=0.6\linewidth,natwidth=610,natheight=642]{figures_pno++/h2_4_optrot_lg_DS.pdf}
+\caption{{\footnotesize CCSD/aDZ/LG specific rotations of (H$_2$)$_4$ in both PNO and PNO++ approaches
+with both singles and doubles amplitudes truncated, as a function of -log(occupation threshold)}}
+\label{fig:pno_m_h2_4_optrot_SD}
+\end{MyFigure}
+the errors are much higher. The PNO curve starts moving towards the canonical result only 
+after T2 ratios higher than 0.8 is achieved whereas the PNO++ graph starts converging
+in the right direction after just 20\% of the wavefunction is retained.
+%\subsection{$(H_2)_n$ Helices}
+%First thing would be showing the retention of diffuse space. show the two graphs
+%showing for (h2)7 systems. name it PNO(M) for modified PNO, mention that
+%this is not feasible as big number of diffuse-functions, plus not a blackbox 
+%way for selecting the cutoff for retention.
+%- Linear structure, chiral, helical arrangement
+%- best case for local correlation problems
+%- small masses, high OR
+%- Polariz, specific rotation (h2)4, (h2)5, (h2)6, (h2)7, maybe-bigger!! : LG, MVG, aDZ basis
+%- diagnostics for FVNO++ approach:
+%    - first comparing the structure of the ground state and perturbed density, one can see
+%      that perturbed density would have a higher rank than ground-state density.
+%    - how about incorporating L*L density as well and optimized NOs by better guess densities.
+%    - Here we mostly concentrate on capturing the right kind of behavior rather
+%    than savings, since there is not enough sparsity on offer for these cases.
+%    This is applicable for other test cases as well.
+%\subsection{beta-pinene}
+%\subsection{phenyl-ethanol}
+%\subsection{norbornenone}
+%\pagebreak
 \section{Conclusions}
+We have a developed an extension of the PNO method, the PNO++ 
+approach for calculating response properties. The pair 
+specific densities constructed in this approach strongly
+resemble in structure with the underlying response equations
+and preliminary results on linear chain hydrogen helices
+seem to indicate that the ONs obtained by diagonalizing these densities
+are a good metric for estimating the importance of a
+VNO in the response of the wavefunction. we plan to use this
+method with RI-CC2/CCSD linear response theory to calculate  
+CC level properties of large solvated clusters.
+Furthermore, calculations on two and three dimensional structures 
+involving different forms of second-order perturbed density 
+are still running and are expected to give more insight
+which can be used to make PNO++ a truly black-box method.
+
+
 
 %The most popular approaches
 %of inducing sparsity in the virtual orbital space 

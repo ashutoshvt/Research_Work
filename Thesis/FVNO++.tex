@@ -452,7 +452,7 @@ Figs.~\ref{fig:fvno(m)_polar} and ~\ref{fig:fvno(m)_optrot}
 \begin{MyFigure}[h!]
 \centering
 \includegraphics[width=0.6\linewidth]{figures_fvno++/fvno(m)_h2o2_adz_polar.pdf}
-\caption{{\footnotesize Errors introduced in CCSD/aDZ polarizabilities of
+\caption{{\footnotesize CCSD/aDZ polarizabilities of
 H$_2$O$_2$ in both FVNO and FVNO(M) schemes as a function of 
 number of virtual orbitals removed.}}
 \label{fig:fvno(m)_polar}
@@ -460,7 +460,7 @@ number of virtual orbitals removed.}}
 \begin{MyFigure}[h!]
 \centering
 \includegraphics[width=0.6\linewidth]{figures_fvno++/fvno(m)_h2o2_adz_optrot.pdf}
-\caption{{\footnotesize Errors introduced in CCSD/aDZ/MVG specific rotations of
+\caption{{\footnotesize CCSD/aDZ/MVG specific rotations of
 H$_2$O$_2$ in both FVNO and FVNO(M) schemes as a function of 
 number of virtual orbitals removed.}}
 \label{fig:fvno(m)_optrot}
@@ -482,7 +482,7 @@ calculate these properties. Fig.~\ref{fig:fvno++_polar}
 \begin{MyFigure}[h!]
 \centering
 \includegraphics[width=0.6\linewidth]{figures_fvno++/fvno++_h2o2_adz_polar.pdf}
-\caption{{\footnotesize Errors introduced in CCSD/aDZ polarizabilities of
+\caption{{\footnotesize CCSD/aDZ polarizabilities of
 H$_2$O$_2$ in both FVNO and FVNO++($\mu$) schemes as a function of
 number of virtual orbitals removed.}}
 \label{fig:fvno++_polar}
@@ -495,7 +495,7 @@ seem to have negligible effect on polarizabilities. Fig.~\ref{fig:fvno++_optrot}
 \begin{MyFigure}[h!]
 \centering
 \includegraphics[width=0.6\linewidth]{figures_fvno++/fvno++_h2o2_adz_optrot.pdf}
-\caption{{\footnotesize Errors introduced in CCSD/aDZ/LG specific rotations of
+\caption{{\footnotesize CCSD/aDZ/MVG specific rotations of
 H$_2$O$_2$ in both FVNO and FVNO++($\mu$) schemes as a function of
 number of virtual orbitals removed.}}
 \label{fig:fvno++_optrot}
@@ -532,29 +532,30 @@ removed while the errors in the FVNO procedure are at best erratic.
 %excitations might require accurate T2 amplitudes as well.
 %\subsection{Sparsity in solvated cluster}
 \section{Conclusions}
-We have developed a new formalism FVNO++ for finding the most
-compact representations of the virtual space for response 
-calculations. Based on plot studies on h2o2, we can conclude that 
-this approach has the right behaviour/convergence towards the
-full canonical result. In the future, we hope to comCalculations on other test molecules
-are undergoing. 
+We have developed a new formalism FVNO++ which offers a very 
+compact representation of the virtual space for response 
+property calculations. Based on plot studies on H$_2$O$_2$ using second-order 
+electric dipole based perturbed densities, we conclude that this
+approach has faster convergence towards the full canonical result for both 
+polarizabilities and optical rotations than the original FVNO approach.
+However, calculations with other choices of perturbed densities also need to be 
+done, especially for bigger molecules to make the FVNO++ truncation scheme truly robust. 
+We are currently in the process of a RI-CC2 linear response code\cite{} which we intend 
+to use in conjunction with the FVNO++ formalism to tackle larger molecular systems.
+Furthermore, we propose to extend this approach to the reduced-scaling techniques based 
+on pair natural orbitals\cite{}.
 
-- Within the FVNO++ formalism, explored 
-structures of second-order perturbed densities:
-Dab(2)(MU), 
-%Dab(2)(P), Dab(2)(MU,L), Dab2(P,L), Dab(2)(L) 
+%- Within the FVNO++ formalism, explored structures of second-order perturbed densities:
+%Dab(2)(MU), Dab(2)(P), Dab(2)(MU,L), Dab2(P,L), Dab(2)(L) 
 %employing different guesses of first-order perturbed amplitudes.  
-Based on plot studies on h2o2, we can conclude that 
-this approach works, has the right behavior/convergence properties.
-however, as usual, specific rotation is more sensitive than
-polarizabilities %and requires bigger virtual spaces.
-Future work: We also wish to report the sparsity pattern of the guess densities of large
-solvated molecular clusters using DF-MP2 which give us an estimate of
-the computational savings that can be exploited for such systems.
-Real application is solvated clusters, where we conclude that
-Hopefully, there is a lot of sparsity to take advantage of.
-Thus, we are going to implement RI-CC2 linear response
-in conjunction with the FVNO++ aproach.
-Also, this could easily be extended to PNO aproaches for reduced scaling.
+%Based on plot studies on h2o2, we can conclude that 
+%this approach works, has the right behavior/convergence properties.
+%however, as usual, specific rotation is more sensitive than
+%polarizabilities %and requires bigger virtual spaces.
+%Future work: We also wish to report the sparsity pattern of the guess densities of large
+%solvated molecular clusters using DF-MP2 which give us an estimate of
+%the computational savings that can be exploited for such systems.
+%Real application is solvated clusters, where we conclude that
+%Hopefully, there is a lot of sparsity to take advantage of.
+%\section{Acknowledgements}
 
-\section{Acknowledgements}
