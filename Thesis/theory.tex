@@ -1,6 +1,7 @@
 This chapter focuses on covering the necessary theoretical background 
-for deriving the coupled cluster (CC) response functions and identifying
-the challenges associated with these approaches.
+for deriving the coupled cluster (CC) response functions.
+%and identifying
+%the challenges associated with these approaches.
 As a prelude to the CC response theory, the formalism for obtaining ground state CC energies 
 is discussed after a brief description of Hartree-Fock and Configuration Interaction models.
 The next section derives the simplified gradient expressions of the CC energy and subsequently 
@@ -11,27 +12,27 @@ in 1926 or the Schr\"odinger's equation \cite{Schrodinger26}. One of the biggest
 contributing to the rich diversity of quantum chemical theories is the fact that Schr\"odinger's equation (SE)
 is exactly solvable for only one electron systems like hydrogen atom. As such, numerous approximations
 have been proposed over the years to solve this equation for many electron systems.
-The Hartree-Fock (HF) theory\cite{} is one of the simplest approximation in this regard
-under the Born-Oppenheimer approximation\cite{} in non-relativistic regimes\cite{}. This
-model attempts to transform the many body problem of SE into a one body problem where each electron
+The Hartree-Fock (HF) theory\cite{SzaboOstlund} is one of the simplest approximation in this regard
+under the Born-Oppenheimer approximation\cite{Born27}. %in non-relativistic regimes. 
+This model attempts to transform the many body problem of SE into a one body problem where each electron
 only interacts with a mean field created by the other electrons. For an N-electron system, the HF 
 wavefunction is a Slater determinant (obeys Pauli's antisymmetry principle naturally) composed of N 
 spin orbitals, i.e. the one electron solutions of the HF equation. Following is a brief outline
 of the HF procedure: A Lagrangian is constructed with the HF energy (the expectation value of the 
 Slater determinant) coupled with the constraint of the spin orbitals always remaining 
-orthonormal to each other. The Lagrangian thus can be seen as a functional of the spin 
+orthonormal to each other. The Lagrangian, thus, can be seen as a functional of the spin 
 orbitals. In the next step, the variational principle is employed to set the first order 
 change in the Lagrangian with respect to spin orbitals to zero. Finally, one obtains 
 a non-linear eigenvalue equation where the spin orbitals are the eigenfunctions of 
 the Fock operator which itself depends on the spin orbitals themselves. 
-Thus the equation is solved in a self-consistent manner usually in conjunction with 
-the linear combination of atomic orbital model (LCAO) approach, where the spin 
+Thus, the equation is solved in a self-consistent manner usually in conjunction with 
+the linear combination of atomic orbital (LCAO) approach, where the spin 
 orbitals are expressed as a linear combination of basis functions and the 
-coefficients are determined from the solving a generalized eigenvalue problem.
+coefficients are determined from the solving a generalized eigenvalue equation.
 The eigenvectors with the lowest N eigenvalues are the occupied orbitals, usually 
 denoted by symbols $i,j,k,l,..$. If a basis set of size $K$ is employed, the remaining $K-N$
 orbitals are termed as unoccupied or virtual orbitals usually denoted by symbols $a,b,c,d,..$.
-\\
+\\\\
 Even with this mean field approach, one can extract almost 95-98\% of the total 
 electronic energy. The remaining energy, also known as the correlation energy,
 however, is very essential if one wants to attain ``chemical accuracy", ex.  
@@ -39,7 +40,7 @@ however, is very essential if one wants to attain ``chemical accuracy", ex.
 structure of the HF procedure makes it one of the most popular reference 
 wavefunctions for more complicated and accurate theoretical models.
 \subsection{Configuration Interaction Method}
-Configuration interaction (CI) method attempts to solve the time independent 
+Configuration interaction (CI) method\cite{SherrillCI98} attempts to solve the time independent 
 Schr\"odinger's (TISE) by recasting it into a matrix eigenvalue problem, 
 \begin{equation}
 HC = EC
@@ -59,12 +60,13 @@ CI wavefunction is a linear combination of all possible Slater determinants for 
 \ket{\Psi} = c_o\ket{0} + \sum_{ia}{c}_{i}^{a}\ket{{\Psi}^a_i} + \sum_{i>j,a>b}c_{ij}^{ab}\ket{\Psi^{ab}_{ij}} + \sum_{i>j>k,a>b>c}c_{ijk}^{abc}\ket{\Psi^{abc}_{ijk}} + ...
 \end{equation}
 \\
-where $\ket{\Phi_o}$ is the reference wavefunction (usuallly HF), $\ket{{\Phi}^a_i}$ refers to a singly excited determinant where an occupied orbital $i$ of the reference wavefunction is replaced by a virtual orbital $a$
+where $\ket{0}$ is the reference wavefunction (usuallly HF), $\ket{{\Phi}^a_i}$ refers to a singly excited determinant where an occupied orbital $i$ of the reference wavefunction is replaced by a virtual orbital $a$
 and so on.\\
-However, Full CI method is computationally very expensive and scales factorially with 
-system size. Unsurprsingly, it is mostly used in benchmark calculations of small molecules and
-the largest Full CI calculation to date has been on nitrogen molecule\cite{} involving 
-billions of determinants. In practice, truncated CI methods like CISD, CISDT where the vector 
+However, the Full CI method is computationally very expensive and scales factorially with 
+system size. Unsurprsingly, it is mostly used in benchmark calculations of small molecules.
+% and the largest Full CI calculation to date has been on nitrogen molecule\cite{} involving 
+%billions of determinants. 
+In practice, truncated CI methods like CISD, CISDT where the vector 
 space is restricted to include up to doubly and triply excited determinants 
 is used. Unlike the exact wavefunction, truncated CI wavefunctions, however, 
 do not posess the property of size-extensivity i.e. the CIS[D/T] energy doesn't scale 
@@ -78,7 +80,7 @@ As a result, the accuracy of these methods decrease progressively as the size of
 %are far from their equilibrium geometry, which makes them very useful.
 \subsection{Coupled Cluster Theory} 
 %\paragraph{Coupled cluster theory} ~ \\\\
-Coupled cluster (CC) theory\cite{} is an alternative formulation of TDSE which attempts to 
+Coupled cluster (CC) theory\cite{Crawford00} is an alternative formulation of the TDSE which attempts to 
 reproduce the Full CI wavefunction through an exponential parametrization
 of the wavefunction. The CC wavefunction can be obtained by the operation of cluster
 operators $\hat{T}$ acting on the reference Slater determinant. 
@@ -102,7 +104,7 @@ complicated CC equations is second-quantization\cite{JorgensenSimons81}.
 The $\hat{T_2}$ operator in SQ form can be written as
 \\
 \begin{equation}
-\hat{T_2} = \frac{1}{4}\sum_{ijab}t^{ab}_{ij}\{a^\dagger_aa^\dagger_ba_ja_i\}
+\hat{T_2} = \frac{1}{4}\sum_{ijab}t^{ab}_{ij}\{a^\dagger_aa^\dagger_ba_ja_i\}.
 \end{equation}
 \\
 %\begin{equation}
@@ -111,19 +113,19 @@ The $\hat{T_2}$ operator in SQ form can be written as
 where ${a}^\dagger_a$ (or ${a}^\dagger_b)$ is called a creation operator as it 
 creates a new particle state (virtual orbital) when it acts on a Slater determinant.
 \begin{equation}
-{a}^\dagger_a\ket{\phi_b...\phi_d} = \ket{\phi_a\phi_b...\phi_d}
+{a}^\dagger_a\ket{\phi_b...\phi_d} = \ket{\phi_a\phi_b...\phi_d}.
 \end{equation}
 Here, $\ket{\phi_a\phi_b...\phi_d}$ is a shorthand notation (Dirac) for a Slater determinant
 with orbitals $a,b,..d$. The $a_i$ (or $a_j$) operator on other hand is called 
 as annihilation operator as it removes a hole state (occupied orbital) when it 
 acts on a Slater determinant.
 \begin{equation}
-a_i\ket{\phi_i\phi_j...\phi_l} = \ket{\phi_j...\phi_l}
+a_i\ket{\phi_i\phi_j...\phi_l} = \ket{\phi_j...\phi_l}.
 \end{equation}
 Thus, the action of the $\hat{T_2} $ operator on a Slater determinant creates a 
 linear combination of all doublly excited determinants with corresponding coefficients
 $t^{ab}_{ij}$ which can be seen as the contribution of virtual orbitals $a$ and $b$
-to the pair correlation function $f_{ij}$ which correlates the motions of any two 
+to the pair correlation function $f_{ij}$, which correlates the motions of any two 
 electrons associated with occupied orbitals $i$ and $j$. 
 \\
 \begin{equation}
@@ -135,7 +137,7 @@ electrons associated with occupied orbitals $i$ and $j$.
 \\
 Similarly, the ${\hat{T_3}}$ operator correlates the motion of all triplets of electrons. 
 The $\hat{T_1}$ operator on the other hand are one electron operators that capture the 
-``adjustment of the one-electron basis"\cite{} as the effect of other correlation operators 
+``adjustment of the one-electron basis"\cite{Crawford00} as the effect of other correlation operators 
 are added to the wavefunction.
 \\
 \begin{equation}
@@ -169,9 +171,9 @@ The Hamiltonian is also expressed in second-quantized form \cite{Crawford00}:
 \hat{H} = \sum_{pq}h_{pq}\{a^\dagger_pa_q\} + \frac{1}{4}\sum_{pqrs}\bra{pq}\ket{rs}\{a^\dagger_pa^\dagger_qa_sa_r\}
 \end{equation}
 \\
-where, $h_{pq} = \langle p|h|q \rangle$ and $\langle pq||rs \rangle = \langle pq|rs \rangle - \langle pq|sr \rangle$ are the one and two electron components of the Hamiltonian repectively.
+where, $h_{pq} = \langle p|h|q \rangle$ and $\langle pq||rs \rangle = \langle pq|rs \rangle - \langle pq|sr \rangle$ are the one and two electron components of the Hamiltonian respectively.
 The CC equations for calculating the amplitudes and the energy can be  
-obtained by multiplying the above equation by the inverse of the exponential operator i.e
+obtained by multiplying equation (2.12) by the inverse of the exponential operator i.e
 $e^{-\hat{T}}$ and projecting it against the reference and excited
 determinants.
 \\
@@ -193,7 +195,7 @@ e^{-\hat{T}}\hat{H}e^{\hat{T}} = \hat{H} + \lbrack\hat{H},\hat{T}\rbrack + \frac
 \end{equation}
 \\
 The expansion truncates naturally at the four nested commutator term since the Hamiltonian is at most a two 
-electron operator and the cluster operators commute among themselves\cite{}.
+electron operator and the cluster operators commute among themselves\cite{Crawford00}.
 %Also, the second quantized form of the Hamiltonian can be written as\cite{Crawford00}:
 %\begin{equation}
 %\hat{H} = \sum_{pq}h_{pq}\{a^\dagger_pa_q\} + \frac{1}{4}\sum_{pqrs}\bra{pq}\ket{rs}\{a^\dagger_pa^\dagger_qa_sa_r\}
@@ -201,18 +203,18 @@ electron operator and the cluster operators commute among themselves\cite{}.
 Invoking Wick's theorem\cite{Wick50}, the CC energy equation gets simplified as:
 \\
 \begin{equation}
-E_{cc} = E_o + \sum_{ia}f_{ia}t^a_i + \frac{1}{4}\sum_{aibj}\bra{ij}\ket{ab}t^{ab}_{ij} + \frac{1}{2}\sum_{aibj}\bra{ij}\ket{ab}t^a_it^b_j
+E_{cc} = E_o + \sum_{ia}f_{ia}t^a_i + \frac{1}{4}\sum_{aibj}\bra{ij}\ket{ab}t^{ab}_{ij} + \frac{1}{2}\sum_{aibj}\bra{ij}\ket{ab}t^a_it^b_j.
 \end{equation} 
 \\
 The non-linear amplitude equations are solved iteratively until the change in energies
 fall below a convergence threshold. However, just like its CI counterpart, Full CC is 
-computationally impractical and hence truncated CC methods like CCSD:\;$\hat{T} =
-\hat{T_1} + \hat{T_2}$, CCSDT:\;$\hat{T} = \hat{T_1} + \hat{T_2} + \hat{T_3}$ 
+computationally impractical and hence, truncated CC methods like CCSD:\;$\hat{T} =
+\hat{T_1} + \hat{T_2}$, CCSDT:\;$\hat{T} = \hat{T_1} + \hat{T_2} + \hat{T_3}$, 
 are used. The exponential structure of the CC wavefunction makes the truncated CC methods 
 more efficient and accurate than the corresponding linear CI methods. For example,
 the CCSD wavefunction implicitly includes the triples and quadruples excitation contributions to 
 its singles and doubles amplitude equations because of the products of cluster operators like 
-$\hat{T_1}\hat{T_2}$, ${(\hat{T_2})}^2$ etc., unlike the CISD method which can only include 
+$\hat{T_1}\hat{T_2}$, ${(\hat{T_2})}^2$ etc., unlike the CISD method, which can only include 
 singles and doubles excitation contributions. Furthermore, CC energies have the desired 
 properties of size-extensivity and size-consistency (provided the reference wavefunction is
 size-consistent). Unsurprisingly, the CCSD(T)\cite{Shen12} method, which approximates the triples using
@@ -220,7 +222,7 @@ perturbation theory is considered to be the ``gold standard" of quantum chemistr
 %Also, one of the major advantages with the CC truncation methods is their
 %size-extensivity which makes them very useful. 
 However, CC methods just like their CI counterparts, are computationally expensive: 
-CCSD scales as $O(N^6)$, CCSD(T) as $O(N^7)$, CCSDT as $O(N^8)$ and so on, where $N$ 
+CCSD, CCSD(T), CCSDT scale as $O(N^6)$, $O(N^7)$, $O(N^8)$ respectively, where $N$ 
 is the number of basis functions.\\
 %and is routinely used for accurate results only for small molecules. While CCSD(T)
 %gives very good results for molecules at their equilibrium geometry, it fails
@@ -283,7 +285,7 @@ Taking the derivative of the CC amplitude equations with respect to X,
 X}\rbrack\ket{0}.
 \end{equation} 
 \\
-Using the RI method again, the above equation can be simplified.
+and using the RI method again, the above equation can be simplified as
 \\
 \begin{equation}
 \sum_{\nu}\bra{\mu}\bar{H}-E_{cc}\ket{\nu} \frac{\partial{t_\nu}}{\partial X}
@@ -299,7 +301,7 @@ or,
 \\
 %The above equation was derived by considering the gradient of just the singles equation.
 %Including the gradient of all the other amplitude equations and plugging the modified 
-Plugging this gradient expression back into equation (2.21), we obtain the following equation,
+Plugging this gradient expression back into equation (2.21), we obtain the following expression,
 \\
 \begin{equation}
 \frac{\partial{E_{cc}}}{\partial X} = \bra{0}{\bar{H}}^X\ket{0} -
@@ -320,13 +322,13 @@ is defined in the following manner.
 or, 
 \begin{equation}
 \sum_{\mu}\bra{0}\hat{\Lambda}\ket{\mu}\bra{\mu}{(\bar{H}-E_{cc})}\ket{\nu}
- = - \bra{0}\bar{H}\ket{\nu}
+ = - \bra{0}\bar{H}\ket{\nu}.
 %\bra{{\Psi}^{a.}_{i.}}{(\bar{H}-E_{cc})}^{-1}\ket{{\Psi}^{b.}_{j.}}.
 \end{equation}
 \\
 It can be easily seen from above equations that $\hat{\Lambda}$ is a linear de-excitation operator,
 \begin{equation}
-\hat{\Lambda} = \hat{\Lambda}_1 + \hat{\Lambda}_2 + \hat{\Lambda}_3 + ...
+\hat{\Lambda} = \hat{\Lambda}_1 + \hat{\Lambda}_2 + \hat{\Lambda}_3 + ...,
 \end{equation} 
 \\
 where $\hat{\Lambda}_1 = \sum\limits_{ia}\lambda^i_a\{{a}^\dagger_i a_a\}$, $\hat{\Lambda}_2=\sum\limits_{ijab}
@@ -344,7 +346,7 @@ and the governing equation for sloving the lambda amplitudes eq. (2.27) can be w
 \bra{0}(1 + \hat{\Lambda})(\bar{H} - E_{cc})\ket{\mu} = 0.
 \end{equation}
 \\
-Thus instead of taking the gradients of the non-linear $T$ amplitude
+Thus, instead of taking the gradients of the non-linear $T$ amplitude
 equations with respect to perturbations, we solve linear perturbation-independent 
 $\hat{\Lambda}$ equations for calculating the CC energy gradient.
 Furthermore, CC gradients satisfy the generalized Hellman-Feynman equation\cite{Feynman39}
@@ -395,9 +397,9 @@ CC method, the left and right hand wavefunctions are not simple hermitian conjug
 %\paragraph{Exact states}~\\
 %\paragraph{Coupled cluster linear response (CCLR)}~\\\\
 \subsection{General Response Theory}
-Response theory as the name suggests, attempts to calculate molecular properties related 
-the response of the ground state wavefunction to an external perturbation. Within this 
-formalism, the effect of an external electromagnetic field is incoroporated into the 
+Response theory, as the name suggests, attempts to calculate molecular properties related 
+to the response of the ground state wavefunction to an external perturbation. Within this 
+formalism, the effect of an external electromagnetic field is incorporated into the 
 Hamiltonian using the standard time-dependent perturbation theory:
 \\
 \begin{equation}
@@ -410,7 +412,7 @@ Hamiltonian using the standard time-dependent perturbation theory:
 where $H_o$ is the time independent or unperturbed Hamiltonian, $V(t)$ is the interaction 
 operator with $V(\omega)$ as its fourier transform and $\alpha$ is a real postive infinitesimal.
 The representation used for the $V(t)$ operator is an example of the adiabatically 
-switched on perturbation\cite{} where the perturbation is assumed to be zero at 
+switched on perturbation\cite{Koch90} where the perturbation is assumed to be zero at 
 $t = -\infty$. Thus, the molecule can be assumed to be in state $\Psi_o$, an 
 eigenstate of $H_o$ at $t = -\infty$.
 %In the presence of an external time dependent field,
@@ -583,7 +585,7 @@ The $\bm{\eta}^{(1)}$ vector and the symmetric $\bm{F}$ matrix are defined as,
 \end{equation}
 \\
 For a CC wavefunction, time-dependent expectation value of a time-independent operator 
-$A$ is defined as\cite{revisited},
+$A$ is defined as\cite{Pedersen97},
 \\
 \begin{equation}
 \begin{split}
@@ -595,7 +597,7 @@ $A$ is defined as\cite{revisited},
 since both $\hat{T}$ and $\hat{\Lambda}$ amplitudes can be complex quantities but 
 the expectation values should always be real. To identify CC response functions,  
 the quantity $\langle \Lambda(t) | A | CC(t)\rangle$ is expanded in orders of 
-perturbation\cite{Revisited}.
+perturbation\cite{Pedersen97}.
 \\
 \begin{equation}
 \begin{split}

@@ -25,6 +25,12 @@ T.~L. Barr and E.~R. Davidson.
   calculations. i. ne ground state.
 \newblock {\em Phys. Rev. A}, 1(3):644--658, 1970.
 
+\bibitem{Baudin17}
+Pablo Baudin and Kasper Kristensen.
+\newblock Correlated natural transition orbital framework for low-scaling
+  excitation energy calculations (cornflex).
+\newblock {\em The Journal of Chemical Physics}, 146(21):214114, 2017.
+
 \bibitem{Becke93}
 A.~D. Becke.
 \newblock Density-functional thermochemistry. iii. the role of exact exchange.
@@ -35,6 +41,17 @@ C.~F. Bender and E.~R. Davidson.
 \newblock Studies in configuration interaction: The first-row diatomic
   hydrides.
 \newblock {\em Phys. Rev.}, 183(1):23--30, 1969.
+
+\bibitem{Born27}
+Max Born and J.~Robert Oppenheimer.
+\newblock Zur quantentheorie der molekeln [on the quantum theory of molecules].
+\newblock {\em Annalen der Physik (in German)}, 389(20):457--484, 1927.
+
+\bibitem{BoughtonPulay93}
+J.~W. Boughton and Peter Pulay.
+\newblock Comparison of the boys and pipek-mezey localizations in the local
+  correlation approach and automatic virtual basis selection.
+\newblock {\em J. Comput. Chem.}, 14(6):736--740, June 1993.
 
 \bibitem{Cheeseman00}
 James~R. Cheeseman, Michael~J. Frisch, Frank~J. Devlin, and Philip~J. Stephens.
@@ -75,17 +92,20 @@ T.~Daniel Crawford.
 \newblock Ab initio calculation of molecular chiroptical properties.
 \newblock {\em Theor. Chem. Acc.}, 115:227--245, December 2006.
 
+\bibitem{CrawfordKing02}
+T.~Daniel Crawford and Rollin~A. King.
+\newblock Locally correlated equation-of-motion coupled cluster theory for the
+  excited states of large molecules.
+\newblock {\em Chem. Phys. Lett.}, 366:611--622, 2002.
+
 \bibitem{Crawford00}
 T.~Daniel Crawford and Henry~F. Schaefer.
 \newblock An introduction to coupled cluster theory for computational chemists.
 \newblock {\em Reviews in Computational Chemistry}, 14:33--136, 2000.
 
-\bibitem{JensenGordon96}
-Paul~N Day, Jan~H. Jensen, Mark~S. Gordon, Simon~P. Webb, Walter~J. Stevens,
-  Morris Krauss, David Garmer, Harold Basch, and Drora Cohen.
-\newblock An effective fragment method for modeling solvent effects in quantum
-  mechanical calculations.
-\newblock {\em J. Chem. Phys.}, 105(5):1968--1986, 1996.
+\bibitem{silva04}
+C.~O. da~Silva, Benedetta Mennucci, and T.~Vreven.
+\newblock {\em J. Org. Chem}, 69:8161, 2004.
 
 \bibitem{DePrince13}
 A.~E. DePrince and C.~D. Sherrill.
@@ -122,6 +142,12 @@ R.P. Feynman.
 \newblock Forces in molecules.
 \newblock {\em Physical review}, 56:340--343, 1939.
 
+\bibitem{Hattig18}
+Marius~S. Frank and Christof H{\"a}ttig.
+\newblock A pair natural orbital based implementation of ccsd excitation
+  energies within the framework of linear response theory.
+\newblock {\em The Journal of Chemical Physics}, 148(13):134102, 2018.
+
 \bibitem{Friedrich15}
 J.~Friedrich, H.~R. McAlexander, A.~Kumar, and T.~D. Crawford.
 \newblock Incremental evaluation of coupled cluster dipole polarizabilities.
@@ -135,6 +161,17 @@ J.~Gauss.
   Encyclopedia of Computational Chemistry}, pages 615--636. John Wiley and
   Sons, Chichester, 1998.
 
+\bibitem{Gauss00}
+J\"{u}rgen Gauss and Hans-Joachim Werner.
+\newblock Nmr chemical shift calculations within local correlation methods: the
+  giao-lmp2 approach.
+\newblock {\em Phys. Chem. Chem. Phys.}, 2:2083--2090, March 2000.
+
+\bibitem{Hampel96}
+Claudia Hampel and Hans-Joachim Werner.
+\newblock Local treatment of electron correlation in coupled cluster theory.
+\newblock {\em J. Chem. Phys.}, 104(16):6286--6297, April 1996.
+
 \bibitem{Hattig95}
 Christof Hattig and Bernd~Artur Hebeta.
 \newblock ￼correlated frequency-dependent polarizabilities and dispersion
@@ -147,6 +184,25 @@ T.~Helgaker, S.~Coriani, P.~J{\o}rgensen, K.~Kristensen, J.~Olsen, and K.~Ruud.
   calculations.
 \newblock {\em Chem. Rev.}, 112:543--631, 2012.
 
+\bibitem{Hattig13}
+B.~Helmich and C.~Hättig.
+\newblock A pair natural orbital implementation of the coupled cluster model
+  cc2 for excitation energies.
+\newblock {\em J. Chem. Phys.}, 139(8):084114, 2013.
+
+\bibitem{Schutz00a}
+Georg Hetzer, Martin Sch\"{u}tz, Hermann Stoll, and Hans-Joachim Werner.
+\newblock Low-order scaling local correlation methods. ii: Splitting the
+  coulomb operator in linear scaling local second-order moller-plesset
+  perturbation theory.
+\newblock {\em J. Chem. Phys.}, 113(21):9443--9455, December 2000.
+
+\bibitem{HofenerKlopper17}
+Sebastian H{\"o}fener and Wim Klopper.
+\newblock Natural transition orbitals for the calculation of correlation and
+  excitation energies.
+\newblock {\em Chemical Physics Letters}, 679:52 -- 59, 2017.
+
 \bibitem{Jensen88}
 H.~J.~Aa. Jensen, Poul. Jorgensen, H.~Agren, and Jeppe Olsen.
 \newblock Secondorder moller--plesset perturbation theory as a configuration
@@ -158,6 +214,10 @@ H.~J.~Aa. Jensen, Poul. Jorgensen, H.~Agren, and Jeppe Olsen.
 P.~Jorgensen and J.~Simons.
 \newblock {\em Second Quantization-Based Methods in Quantum Chemistry}.
 \newblock Academic Press, New York, 1981.
+
+\bibitem{Kelvin}
+Sir William Thomson~Lord Kelvin.
+\newblock In {\em The Molecular Tactics of a Crystal}.
 
 \bibitem{Kendall92}
 R.~A. Kendall, T.~H. Dunning, and R.~J. Harrison.
@@ -186,11 +246,34 @@ Rama~K. Kondru, Peter Wibf, and David~N. Beratan.
 \newblock Structural and conformational dependence of optical rotation angles.
 \newblock {\em J. Phys. Chem. A}, 103(33):6603--6611, 1999.
 
+\bibitem{Kongsted05}
+Jacob Kongsted, Thomas~Bondo Pedersen, Mikkel Strange, Anders Osted, Aage~E.
+  Hansen, Kurt~V. Mikkelsen, Filip Pawlowski, Poul J{\o}rgensen, and Christof
+  H\"{a}ttig.
+\newblock Coupled cluster calculations of the optical rotation of s-propylene
+  oxide in gas phase and solution.
+\newblock {\em Chem. Phys. Lett.}, 401:385--392, December 2005.
+
 \bibitem{Korona04}
 Tatiana Korona, Klaus Pfl\"{u}ger, and Hans-Joachim Werner.
 \newblock The effect of local approximations in coupled-cluster wave functions
   on dipole moments and static dipole polarizabilities.
 \newblock {\em Phys. Chem. Chem. Phys.}, 6:2059--2065, March 2004.
+
+\bibitem{Kumar18:1}
+A.~Kumar and T.~D. Crawford.
+\newblock {\em manuscript in preparation}.
+
+\bibitem{Kumar18:2}
+A.~Kumar and T.~D. Crawford.
+\newblock {\em manuscript in preparation}.
+
+\bibitem{Kumar17}
+Ashutosh Kumar and T.~Daniel Crawford.
+\newblock Frozen virtual natural orbitals for coupled-cluster linear-response
+  theory.
+\newblock {\em The Journal of Physical Chemistry A}, 121(3):708--716, 2017.
+\newblock PMID: 28045265.
 
 \bibitem{Landau10}
 A.~Landau, K.~Khistyaev, S.~Dolgikh, and A.~I. Krylov.
@@ -240,6 +323,18 @@ E.~Merzbacher.
 \newblock {\em Quantum Mechanics,2nd ed.}
 \newblock Wiley, New York, 1970.
 
+\bibitem{Mester17}
+D{\'a}vid Mester, P{\'e}ter~R. Nagy, and Mih{\'a}ly K{\'a}llay.
+\newblock Reduced-cost linear-response cc2 method based on natural orbitals and
+  natural auxiliary functions.
+\newblock {\em The Journal of Chemical Physics}, 146(19):194102, 2017.
+
+\bibitem{Mester18}
+D{\'a}vid Mester, P{\'e}ter~R. Nagy, and Mih{\'a}ly K{\'a}llay.
+\newblock Reduced-cost second-order algebraic-diagrammatic construction method
+  for excitation energies and transition moments.
+\newblock {\em The Journal of Chemical Physics}, 148(9):094111, 2018.
+
 \bibitem{Meyer73}
 Wilfried Meyer.
 \newblock Pnoci studies of electron correlatione ffects. i. configuration
@@ -247,28 +342,36 @@ Wilfried Meyer.
   state and ionized states of methane.
 \newblock {\em J. Chem. Phys.}, 58(3):1017--1035, February 1973.
 
+\bibitem{NeeseCCSD09}
+Frank Neese, Andreas Hanse, and Dimitrios~G. Liakos.
+\newblock Efficient and accurate approximations to the local coupled cluster
+  singles and doubles method using a truncated pair natural orbtial basis.
+\newblock {\em J. Chem. Phys.}, 131(064103):064103--1 -- 064103--15, August
+  2009.
+
 \bibitem{Neese09}
 Frank Neese, Frank Wennmohs, and Andreas Hansen.
 \newblock Efficient and accurate local approximations to coupled-electron pair
   approaches: An attempt to revive the pair natural orbital method.
 \newblock {\em J. Chem. Phys.}, 130(114108):114108--1 -- 114108--18, 2009.
 
-\bibitem{Neugebauer09}
-Johannes Neugebauer.
-\newblock On the calculation of general response properties in subsystem
-  density functional theory.
-\newblock {\em J. Chem. Phys.}, page 084104, 2009.
-
-\bibitem{Neugebauer05}
-Johannes Neugebauer, M.~J. Louwerse, E.~J. Baerends, and Tomasz~Adam
-  Wesolowski.
-\newblock The merits of the frozen-density embedding scheme to model
-  solvatochromatic shifts.
-\newblock {\em J. Chem. Phys.}, 122:094115, 2005.
-
 \bibitem{Olsen85}
 Jeppe Olsen and Poul Jorgensen.
 \newblock {\em J. Chem. Phys.}, 82:3235, 1985.
+
+\bibitem{Parrish17}
+Robert~M. Parrish, Lori~A. Burns, Daniel G.~A. Smith, Andrew~C. Simmonett,
+  A.~Eugene DePrince, Edward~G. Hohenstein, U{\u g}ur Bozkaya, Alexander~Yu.
+  Sokolov, Roberto Di~Remigio, Ryan~M. Richard, J{\'e}r{\^o}me~F. Gonthier,
+  Andrew~M. James, Harley~R. McAlexander, Ashutosh Kumar, Masaaki Saitow, Xiao
+  Wang, Benjamin~P. Pritchard, Prakash Verma, Henry~F. Schaefer, Konrad
+  Patkowski, Rollin~A. King, Edward~F. Valeev, Francesco~A. Evangelista,
+  Justin~M. Turney, T.~Daniel Crawford, and C.~David Sherrill.
+\newblock Psi4 1.1: An open-source electronic structure program emphasizing
+  automation, advanced libraries, and interoperability.
+\newblock {\em Journal of Chemical Theory and Computation}, 13(7):3185--3197,
+  2017.
+\newblock PMID: 28489372.
 
 \bibitem{Pedersen01}
 Thomas~Bondo Pedersen and Berta Fernandez.
@@ -276,10 +379,34 @@ Thomas~Bondo Pedersen and Berta Fernandez.
   nonorthogonal orbitals.
 \newblock {\em J. Chem. Phys.}, 114(16):6983--6993, February 2001.
 
+\bibitem{Pedersen97}
+Thomas~Bondo Pedersen and Henrik Koch.
+\newblock Coupled cluster response functions revisited.
+\newblock {\em J. Chem. Phys.}, 106(19):8059--8072, May 1997.
+
+\bibitem{Pedersen04}
+Thomas~Bondo Pedersen, Henrik Koch, Linus Boman, and Alfredo~M.J. Sanchez~de
+  Meras.
+\newblock Origin invariant calculation of optical rotation without recourse to
+  london orbitals.
+\newblock {\em Chem. Phys. Lett.}, 393:319--326, June 2004.
+
+\bibitem{Chong18}
+C.~{Peng}, M.~C. {Clement}, and E.~F. {Valeev}.
+\newblock {Exploration of Reduced Scaling Formulation of Equation of Motion
+  Coupled-Cluster Singles and Doubles Based on State-Averaged Pair Natural
+  Orbitals}.
+\newblock {\em ArXiv e-prints}, February 2018.
+
 \bibitem{Polavarapu96}
 Prasad~L. Polavarapu.
 \newblock Ab initio molecular optical rotations and absolute configurations.
 \newblock {\em Mol. Phys.}, 91(3):551--554, November 1997.
+
+\bibitem{Pulay83}
+Peter Pulay.
+\newblock Localizability of dynamic electron correlation.
+\newblock {\em Chem. Phys. Lett.}, 100(2):151--154, June 1983.
 
 \bibitem{Purvis82}
 G.~D. Purvis and R.~J. Bartlett.
@@ -324,10 +451,45 @@ Kenneth Ruud, Philip~J. Stephens, Frank~J. Devlin, Peter~R. Taylor, James~R.
 \newblock Coupled-cluster calculations of optical rotation.
 \newblock {\em Chem. Phys. Lett.}, 373:606--614, March 2003.
 
+\bibitem{Saebo86}
+Svein Saeb{\o} and Peter Pulay.
+\newblock Fourth-order moller-plessett perturbation theory in the local
+  correlation treatment. i. method.
+\newblock {\em J. Chem. Phys.}, 86(2):914--922, January 1986.
+
+\bibitem{PulaySaebo93}
+Svein Saeb{\o} and Peter Pulay.
+\newblock Local treatment of electron correlation.
+\newblock {\em Annual Reviews in Physical Chemistry}, 44:213--236, 1993.
+
 \bibitem{Schrodinger26}
 Ervin Schrodinger.
 \newblock An undulatory theory of the mechanics of atoms and molecules.
 \newblock {\em Physical review}, 28(6):1049--1070, December 1926.
+
+\bibitem{Schutz00b}
+Martin Sch\"{u}tz.
+\newblock Low-order scaling local correlation methods. iii. linear scaling
+  local perturbative triples correction (t).
+\newblock {\em J. Chem. Phys.}, 113(22):9986--10001, December 2000.
+
+\bibitem{Schutz03}
+Martin Sch\"{u}tz and Fred Manby.
+\newblock Linear scaling local coupled cluster theory with density fitting.
+  part i: 4-external integrals.
+\newblock {\em Phys. Chem. Chem. Phys.}, 5:3349--3358, July 2003.
+
+\bibitem{Schutz01}
+Martin Sch\"{u}tz and Hans-Joachim Werner.
+\newblock Low-order scaling local correlation methods. iv. linear scaling local
+  coupled-cluster (lccsd).
+\newblock {\em J. Chem. Phys.}, 114(2):661--681, January 2001.
+
+\bibitem{Sundholm11}
+Robert Send, Ville R.~I. Kaila, and Dage Sundholm.
+\newblock Reduction of the virtual space for coupled-cluster excitation
+  energies of large molecules and embedded systems.
+\newblock {\em The Journal of Chemical Physics}, 134(21):214114, 2011.
 
 \bibitem{Shavitt09}
 I.~Shavitt and R.~J. Bartlett.
@@ -341,17 +503,39 @@ Jun Shen, Zhuangfei Kou, Enhua Xu, and Shuhua Li.
   connected triples based on the split virtual orbitals.
 \newblock {\em J. Chem. Phys.}, 136:044101--1 -- 044101--9, January 2012.
 
+\bibitem{SherrillCI98}
+C.~D. Sherrill and H.~F. Schaefer.
+\newblock The configuration interaction method: Advances in highly correlated
+  approaches.
+\newblock {\em Adv. Quantum Chem.}, 34:143--269, 1999.
+
 \bibitem{Sherrill98:CI}
 C.~D. Sherrill and H.~F. Schaefer.
 \newblock The configuration interaction method: Advances in highly correlated
   approaches.
 \newblock {\em Adv. Quantum Chem.}, 34:143--269, 1999.
 
+\bibitem{Smith18}
+Daniel Smith, Lori~A Burns, Dominic~A. Sirianni, Daniel~R. Nascimento, Ashutosh
+  Kumar, Andrew~M. James, Jeffrey~B. Schriber, Tianyuan Zhang, Boyi Zhang,
+  Adam~S. Abbott, Eric Berquist, Marvin~H. Lechner, Leonardo dos Anjos~Cunha,
+  Alexander~G. Heide, Rollin~A. King, Andrew~C. Simmonett, Justin~M. Turney,
+  Henry~F. Schaefer, Francesco~A. Evangelista, A.~Eugene~DePrince III,
+  T.~Daniel Crawford, Konrad Patkowski, and C.~David Sherrill.
+\newblock {Psi4NumPy: An Interactive Quantum Chemistry Programming Environment
+  for Reference Implementations and Rapid Development}.
+\newblock 1 2018.
+
 \bibitem{Sosa89}
 C.~Sosa, J.~Geertsen, G.~W. Trucks, R.~J. Bartlett, and J.~A. Franz.
 \newblock Selection of the reduced virtual space for correlated calculations.
   an application to the energy and dipole moment of h$_2$o.
 \newblock {\em Chem. Phys. Lett.}, 159(2,3):148--154, 1989.
+
+\bibitem{Stephens001}
+P.~J. Stepehens, James~R. Cheeseman, Michael~J. Frisch, Benedetta Mennucci, and
+  Jacopo Tomasi.
+\newblock {\em J. Tetrahedron-Asymmetry}, 11:2443, 2000.
 
 \bibitem{Stephens94:B3LYP}
 P.~J. Stephens, F.~J. Devlin, C.~F. Chabalowski, and M.~J. Frisch.
@@ -363,6 +547,12 @@ P.~J. Stephens, F.~J. Devlin, C.~F. Chabalowski, and M.~J. Frisch.
 Philip~J. Stephens, Frank~J. Devlin, James~R. Cheeseman, and Michael~J. Frisch.
 \newblock Calculation of optical rotation using density functional theory.
 \newblock {\em J. Phys. Chem. A}, 105:5356--5371, May 2001.
+
+\bibitem{SzaboOstlund}
+Attila Szabo and Neil~S. Ostlund.
+\newblock {\em Modern Quantum Chemistry: Introduction to Advanced Electronic
+  Structure Theory}.
+\newblock Dover Publications, Inc., Mineola, New York, 1996.
 
 \bibitem{Taube05}
 A.~G. Taube and R.~J. Bartlett.
@@ -376,11 +566,6 @@ Andrew~G. Taube and Rodney~J. Bartlett.
   to decomposition of nitroethane.
 \newblock {\em J. Chem. Phys.}, 128(164101):164101--1 -- 161101--17, April
   2008.
-
-\bibitem{Tomasi05}
-Jacopo Tomasi, Benedetta Mennucci, and Roberto Cammi.
-\newblock Quantum mechanical continuum solvation models.
-\newblock {\em Chem. Rev.}, 105(8):2999--3093, July 2005.
 
 \bibitem{psi4}
 Justin~M. Turney, Andrew~C. Simmonett, Robert~M. Parrish, Edward~G. Hohenstein,
@@ -401,5 +586,13 @@ D.~E. Woon and T.~H. Dunning.
 \newblock Gaussian basis sets for use in correlated molecular calculations. iv.
   calculation of static electrical response properties.
 \newblock {\em J. Chem. Phys.}, 100(4):2975--2988, 1994.
+
+\bibitem{Yang12}
+Jun Yang, Garnet Kin-Lic Chan, Frederick~R. Manby, Martin Sch\"{u}tz, and
+  Hans-Joachim Werner.
+\newblock The orbital-specific-virtual local coupled cluster singles and
+  doubles method.
+\newblock {\em J. Chem. Phys.}, 136(144105):144105--1 -- 144105--16, April
+  2012.
 
 \end{thebibliography}

@@ -1,21 +1,15 @@
 This is BibTeX, Version 0.99d (TeX Live 2016)
 Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: etd.aux
-Case mismatch error between cite keys Revisited and revisited
----line 45 of file etd.aux
- : \citation{Revisited
- :                    }
-I'm skipping whatever remains of this command
-Case mismatch error between cite keys koch90 and Koch90
----line 171 of file etd.aux
- : \citation{koch90
- :                 }
-I'm skipping whatever remains of this command
 The style file: plain.bst
 Database file #1: papes.bib
 "{" immediately follows a field name---line 1644 of file papes.bib
  : @article
  :         {Kitaura01,
+I'm skipping whatever remains of this entry
+"," immediately follows an entry type---line 1928 of file papes.bib
+ : @article7Christiansen95
+ :                        ,
 I'm skipping whatever remains of this entry
 Repeated entry---line 3412 of file papes.bib
  : @article{Becke93
@@ -81,55 +75,72 @@ Repeated entry---line 3769 of file papes.bib
  : @article{Aiga96
  :                ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 3831 of file papes.bib
+You're missing a field part---line 3834 of file papes.bib
+ :  number = 
+ :           ,
+I'm skipping whatever remains of this entry
+You're missing a field part---line 3843 of file papes.bib
+ :  number = 
+ :           ,
+I'm skipping whatever remains of this entry
+You're missing a field part---line 3853 of file papes.bib
+ :  chapter = 
+ :            ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 4000 of file papes.bib
  : @article{Pedersen01
  :                    ,
 I'm skipping whatever remains of this entry
-Warning--I didn't find a database entry for "revisited"
-Warning--I didn't find a database entry for "Sundholm13"
-Warning--I didn't find a database entry for "Mester17"
-Warning--I didn't find a database entry for "Mester18"
-Warning--I didn't find a database entry for "McAlexander15"
+Warning--empty title in silva04
+Warning--empty title in Kelvin
+Warning--empty publisher in Kelvin
+Warning--empty year in Kelvin
+Warning--empty title in Kumar18:1
+Warning--empty year in Kumar18:1
+Warning--empty title in Kumar18:2
+Warning--empty year in Kumar18:2
 Warning--empty title in Olsen85
-You've used 67 entries,
+Warning--empty journal in Smith18
+Warning--empty title in Stephens001
+You've used 98 entries,
             2118 wiz_defined-function locations,
-            976 strings with 16537 characters,
-and the built_in function-call counts, 24474 in all, are:
-= -- 2352
-> -- 1209
-< -- 9
-+ -- 484
-- -- 404
-* -- 1952
-:= -- 4111
-add.period$ -- 203
-call.type$ -- 67
-change.case$ -- 393
+            1147 strings with 22453 characters,
+and the built_in function-call counts, 35919 in all, are:
+= -- 3405
+> -- 1890
+< -- 8
++ -- 753
+- -- 640
+* -- 2948
+:= -- 6085
+add.period$ -- 293
+call.type$ -- 98
+change.case$ -- 598
 chr.to.int$ -- 0
-cite$ -- 68
-duplicate$ -- 802
-empty$ -- 1867
-format.name$ -- 404
-if$ -- 5079
+cite$ -- 109
+duplicate$ -- 1131
+empty$ -- 2678
+format.name$ -- 640
+if$ -- 7365
 int.to.chr$ -- 0
-int.to.str$ -- 67
-missing$ -- 70
-newline$ -- 337
-num.names$ -- 140
-pop$ -- 297
+int.to.str$ -- 98
+missing$ -- 102
+newline$ -- 489
+num.names$ -- 202
+pop$ -- 479
 preamble$ -- 1
-purify$ -- 330
+purify$ -- 510
 quote$ -- 0
-skip$ -- 550
+skip$ -- 758
 stack$ -- 0
-substring$ -- 1869
-swap$ -- 119
-text.length$ -- 9
+substring$ -- 2638
+swap$ -- 136
+text.length$ -- 8
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 262
-warning$ -- 1
-while$ -- 206
-width$ -- 69
-write$ -- 743
-(There were 20 error messages)
+type$ -- 384
+warning$ -- 11
+while$ -- 293
+width$ -- 100
+write$ -- 1069
+(There were 22 error messages)
