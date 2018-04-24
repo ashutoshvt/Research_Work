@@ -7,25 +7,26 @@
 \contentsline {subsection}{\numberline {2.1.1}Configuration Interaction Method}{12}
 \contentsline {subsection}{\numberline {2.1.2}Coupled Cluster Theory}{14}
 \contentsline {subsection}{\numberline {2.1.3}Coupled Cluster Analytic Gradients}{18}
-\contentsline {subsection}{\numberline {2.1.4}Coupled Cluster Linear Response (CCLR) Theory}{21}
-\contentsline {chapter}{\numberline {3}Frozen Virtual Natural Orbitals for Coupled-Cluster Linear-Response Theory}{27}
-\contentsline {section}{\numberline {3.1}Introduction}{27}
-\contentsline {section}{\numberline {3.2}Theoretical Background}{30}
-\contentsline {subsection}{\numberline {3.2.1}Frozen Virtual Natural Orbitals}{30}
-\contentsline {subsection}{\numberline {3.2.2}Coupled Cluster Response Theory}{32}
-\contentsline {section}{\numberline {3.3}Computational Details}{33}
-\contentsline {section}{\numberline {3.4}Results and Discussion}{34}
-\contentsline {subsection}{\numberline {3.4.1}Frozen Virtual Orbitals and Response Properties}{36}
-\contentsline {subsection}{\numberline {3.4.2}Wave Function Truncation in the Virtual-Orbital Space}{41}
-\contentsline {subsection}{\numberline {3.4.3}External-Space Corrections}{48}
-\contentsline {subsection}{\numberline {3.4.4}Perturbed Natural Orbitals}{50}
-\contentsline {subsection}{\numberline {3.4.5}The Dipole-Amplitude Criterion}{52}
-\contentsline {section}{\numberline {3.5}Conclusions}{54}
-\contentsline {section}{\numberline {3.6}Acknowledgements}{54}
-\contentsline {chapter}{\numberline {4}Perturbed Natural Orbitals for Coupled-Cluster Linear-Response Theory}{55}
-\contentsline {section}{\numberline {4.1}Introduction}{55}
-\contentsline {section}{\numberline {4.2}Theoretical Background}{58}
-\contentsline {subsection}{\numberline {4.2.1}Coupled Cluster Response Theory}{58}
+\contentsline {subsection}{\numberline {2.1.4}General Response Theory}{21}
+\contentsline {subsection}{\numberline {2.1.5}Coupled Cluster Response Theory}{24}
+\contentsline {chapter}{\numberline {3}Frozen Virtual Natural Orbitals for Coupled-Cluster Linear-Response Theory}{29}
+\contentsline {section}{\numberline {3.1}Introduction}{29}
+\contentsline {section}{\numberline {3.2}Theoretical Background}{32}
+\contentsline {subsection}{\numberline {3.2.1}Frozen Virtual Natural Orbitals}{32}
+\contentsline {subsection}{\numberline {3.2.2}Coupled Cluster Response Theory}{34}
+\contentsline {section}{\numberline {3.3}Computational Details}{35}
+\contentsline {section}{\numberline {3.4}Results and Discussion}{36}
+\contentsline {subsection}{\numberline {3.4.1}Frozen Virtual Orbitals and Response Properties}{38}
+\contentsline {subsection}{\numberline {3.4.2}Wave Function Truncation in the Virtual-Orbital Space}{43}
+\contentsline {subsection}{\numberline {3.4.3}External-Space Corrections}{50}
+\contentsline {subsection}{\numberline {3.4.4}Perturbed Natural Orbitals}{52}
+\contentsline {subsection}{\numberline {3.4.5}The Dipole-Amplitude Criterion}{54}
+\contentsline {section}{\numberline {3.5}Conclusions}{56}
+\contentsline {section}{\numberline {3.6}Acknowledgements}{56}
+\contentsline {chapter}{\numberline {4}Perturbed Natural Orbitals for Coupled-Cluster Linear-Response Theory}{57}
+\contentsline {section}{\numberline {4.1}Introduction}{57}
+\contentsline {section}{\numberline {4.2}Theoretical Background}{60}
+\contentsline {subsection}{\numberline {4.2.1}Coupled Cluster Response Theory}{60}
 \contentsline {subsection}{\numberline {4.2.2}Perturbed Natural Orbitals}{62}
 \contentsline {section}{\numberline {4.3}Computational Details}{65}
 \contentsline {subsection}{\numberline {4.3.1}Polarizabilities}{65}

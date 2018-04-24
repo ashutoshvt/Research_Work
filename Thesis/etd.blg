@@ -1,15 +1,15 @@
 This is BibTeX, Version 0.99d (TeX Live 2016)
 Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: etd.aux
-Case mismatch error between cite keys koch90 and Koch90
----line 170 of file etd.aux
- : \citation{koch90
- :                 }
-I'm skipping whatever remains of this command
 Case mismatch error between cite keys Revisited and revisited
----line 174 of file etd.aux
+---line 45 of file etd.aux
  : \citation{Revisited
  :                    }
+I'm skipping whatever remains of this command
+Case mismatch error between cite keys koch90 and Koch90
+---line 171 of file etd.aux
+ : \citation{koch90
+ :                 }
 I'm skipping whatever remains of this command
 The style file: plain.bst
 Database file #1: papes.bib
@@ -85,51 +85,51 @@ Repeated entry---line 3831 of file papes.bib
  : @article{Pedersen01
  :                    ,
 I'm skipping whatever remains of this entry
+Warning--I didn't find a database entry for "revisited"
 Warning--I didn't find a database entry for "Sundholm13"
 Warning--I didn't find a database entry for "Mester17"
 Warning--I didn't find a database entry for "Mester18"
-Warning--I didn't find a database entry for "revisited"
 Warning--I didn't find a database entry for "McAlexander15"
 Warning--empty title in Olsen85
-You've used 68 entries,
+You've used 67 entries,
             2118 wiz_defined-function locations,
-            982 strings with 16742 characters,
-and the built_in function-call counts, 24856 in all, are:
-= -- 2388
-> -- 1232
+            976 strings with 16537 characters,
+and the built_in function-call counts, 24474 in all, are:
+= -- 2352
+> -- 1209
 < -- 9
-+ -- 493
-- -- 412
-* -- 1985
-:= -- 4177
-add.period$ -- 206
-call.type$ -- 68
-change.case$ -- 400
++ -- 484
+- -- 404
+* -- 1952
+:= -- 4111
+add.period$ -- 203
+call.type$ -- 67
+change.case$ -- 393
 chr.to.int$ -- 0
-cite$ -- 69
-duplicate$ -- 813
-empty$ -- 1893
-format.name$ -- 412
-if$ -- 5156
+cite$ -- 68
+duplicate$ -- 802
+empty$ -- 1867
+format.name$ -- 404
+if$ -- 5079
 int.to.chr$ -- 0
-int.to.str$ -- 68
-missing$ -- 71
-newline$ -- 342
-num.names$ -- 142
-pop$ -- 302
+int.to.str$ -- 67
+missing$ -- 70
+newline$ -- 337
+num.names$ -- 140
+pop$ -- 297
 preamble$ -- 1
-purify$ -- 336
+purify$ -- 330
 quote$ -- 0
-skip$ -- 557
+skip$ -- 550
 stack$ -- 0
-substring$ -- 1895
-swap$ -- 120
+substring$ -- 1869
+swap$ -- 119
 text.length$ -- 9
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 266
+type$ -- 262
 warning$ -- 1
-while$ -- 209
-width$ -- 70
-write$ -- 754
+while$ -- 206
+width$ -- 69
+write$ -- 743
 (There were 20 error messages)

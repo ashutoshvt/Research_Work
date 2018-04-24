@@ -153,6 +153,7 @@ d\omega_1{\langle\langle A;V^{\omega_1}\rangle\rangle}_{\omega_1  \
 \end{split}
 \end{equation}
 \\
+
 %\begin{equation}
 %A(t) = \langle \Psi^{(0)} | \hat{A} | \Psi^{(0)} \rangle \
 %+ \langle \Psi^{(1)}(t) | \hat{A} | \Psi^{(0)} \rangle\
@@ -164,26 +165,31 @@ ${\langle\langle A;V^{\omega_1}\rangle\rangle}_{\omega_1 + i\alpha}$
 %${\langle\langle A,V^{\omega_1},V^{\omega_2}\rangle\rangle}_{\omega_1 + i\alpha,\omega_2 + i\alpha}$ is the 
 is the linear response function (LRF) i.e. the first order change in the expectation value of 
 $A$ in a time-dependent field $V$ at frequency $\omega_1$. The third term in the expansion
-contains the quadratic response function and so on. For a CC wavefunction, time-dependent 
-expectation value of $A$ is defined as\cite{revisited},
+contains the quadratic response function and so on. The CC-LRF is defined as,
 \\
-\begin{equation}
-\begin{split}
-{\langle A \rangle}_{CC} (t) = & Re [\langle \Lambda(t) | A | CC(t)\rangle ]\\
-& = \frac{1}{2} (\langle \Lambda(t) | A | CC(t)\rangle  + {\langle \Lambda(t) | A | CC(t)\rangle}^{*})
-\end{split}
-\end{equation}
-\\
-where $\langle \Lambda(t)|$ and $|CC(t)\rangle$ are the left and right time dependent 
-phase-isolated CC wavefunction, parametrized as,
-\\
-\begin{equation}
-\begin{split}
-&  \langle \Lambda(t) |  = \langle 0 | + \sum_{\mu}\lambda_{\mu}(t)\langle \mu|e^{-T(t)} \\
-& |CC(t)\rangle = e^{T(t)}|0\rangle.
-\end{split}
-\end{equation}
-\\
+%For a CC wavefunction, time-dependent 
+%expectation value of $A$ is defined as\cite{revisited},
+%\\
+%\begin{equation}
+%\begin{split}
+%{\langle A \rangle}_{CC} (t) = & Re [\langle \Lambda(t) | A | CC(t)\rangle ]\\
+%& = \frac{1}{2} (\langle \Lambda(t) | A | CC(t)\rangle  + {\langle \Lambda(t) | A | CC(t)\rangle}^{*})
+%\end{split}
+%\end{equation}
+%\\
+%where $\langle \Lambda(t)|$ and $|CC(t)\rangle$ are the left and right time dependent 
+%phase-isolated CC wavefunction, parametrized as,
+%\\
+%\begin{equation}
+%\begin{split}
+%&  \langle \Lambda(t) |  = \langle 0 | + \sum_{\mu}\lambda_{\mu}(t)\langle \mu|e^{-T(t)} \\
+%& |CC(t)\rangle = e^{T(t)}|0\rangle.
+%\end{split}
+%\end{equation}
+
+
+
+%\\
 %parametrized by the operator $B$,
 %\begin{equation}
 %\int_{-\infty}^{\infty}d\omega_1{\langle\langle A;\
@@ -191,67 +197,71 @@ phase-isolated CC wavefunction, parametrized as,
 %= \langle \Psi^{(1)}(t) | \hat{A} | \Psi^{(0)} \rangle\
 %+ \langle \Psi^{(0)} | \hat{A} | \Psi^{(1)}(t) \rangle\
 %\end{equation}
-where $\mu$ refers to excited determinants i.e. singles, doubles etc.,
-and $|0\rangle$ is the reference wavefunction. To identify CC response 
-functions one needs to expand $\langle \Lambda(t) | A | CC(t)\rangle$ 
-in orders of perturbation\cite{Revisited},
-\\
-\begin{equation}
-\begin{split}
-\langle \Lambda(t) | A | CC(t) \rangle & = {\langle \Lambda(t) | A | CC(t) \rangle}^{(0)}\
- + {\langle \Lambda(t) | A | CC(t) \rangle}^{(1)} \
-+ {\langle \Lambda(t) | A | CC(t) \rangle}^{(2)} + ... \\
-& = \langle \Lambda | A | CC \rangle + \int_{-\infty}^{\infty}d\omega_1 \
-F^{A;V^{\omega_1}}_{\omega_1 + i\alpha}e^{-i(\omega_1 + i\alpha)t} \\
-& + \frac{1}{2} \int_{-\infty}^{\infty}d\omega_1\int_{-\infty}^{\infty}d\omega_2\
-F^{A;V^{\omega_1};V^{\omega_2}}_{\omega_1 + i\alpha,\omega_2 \
-+ i\alpha}e^{-i(\omega_1 + \omega_2 + 2i\alpha)t} + .....
-\end{split}
-\end{equation}
-\\
-From eqns 4.1-4.4 and using the relation $F^{B;A}_{-\omega_1}=F^{A;B}_{\omega_1}$,
-the CC-LRF can be identified as
-\\
-\begin{equation}
-{\langle\langle A;V^{\omega_1} \rangle\rangle}_{\omega_1 + i\alpha} \
-= \frac{1}{2}( F^{A;V^{\omega_1}}_{\omega_1 + i\alpha} + \
-(F^{V^{\omega_1};A}_{\omega_1 + i\alpha})^{*})
-\end{equation}
-\\
-Alternatively, LRFs can also be defined as second-order derivatives 
-of a time-averaged quasi-energy with respect to external perturbations $\hat{A}$ and
-$\hat{B}$. This formalism is specially useful for deriving LRFs for approximate
-coupled cluster theories like CC2, CC3 etc. 
-%Moreover, it also lets one see the connection   
-%between response theory and the regular gradient theory for calculating molecular
-%gradients. 
-The electric-electric ($\alpha$) and electric-magnetic ($\beta$)
-dipole polarizability tensor elements can be obtained from the LRF with appropriate
-operators,
-\\
-\begin{equation}
-\alpha_{xy}(\omega) = {\langle\langle \mu_x;\mu_y\rangle\rangle}_{\omega_1}
-\end{equation}
-\begin{equation}
-\beta_{xy}(\omega) = {-\text{Im} \langle\langle \mu_x;m_y\rangle\rangle}_{\omega_1}
-\end{equation}
-\\
-where $\bm{\mu} = \sum_i q_i \bm{r_i} $ and $\bm{m} = \sum_i \frac{q_i}{2m_i} \bm{r_i} \times \bm{p_i}$. 
-Isotropic electric dipole polarizability is one-third of the trace of the $\alpha$ tensor 
-while specific rotation is related to the one-third of the trace 
-of the $\beta$ tensor (au) also known as the Rosenfeld tensor normalized
-by the path-length and concentration\cite{},
-\\
-\begin{equation}
-{\lbrack\alpha\rbrack}_{\omega} = \frac{(72.0 \times 10^6){\hbar}^2 N_A\omega}{c^2{m_e}^2 M}
-\ \times \left[ \frac{1}{3}Tr(\beta)\right]
-\end{equation}
-\\
-where M is the mass of the molecule (amu), $m_e$ is the rest mass of an electron
-(kg), c is the speed if light in vacuum (m/s), $N_A$ is Avogadro's number and $\omega$
-is the frequency of the electromagnetic field (au). \\
-Following is the final simplified expression of CC-LRF\cite{}: 
-\\
+
+
+%where $\mu$ refers to excited determinants i.e. singles, doubles etc.,
+%and $|0\rangle$ is the reference wavefunction. To identify CC response 
+%functions one needs to expand $\langle \Lambda(t) | A | CC(t)\rangle$ 
+%in orders of perturbation\cite{Revisited},
+%\\
+%\begin{equation}
+%\begin{split}
+%\langle \Lambda(t) | A | CC(t) \rangle & = {\langle \Lambda(t) | A | CC(t) \rangle}^{(0)}\
+% + {\langle \Lambda(t) | A | CC(t) \rangle}^{(1)} \
+%+ {\langle \Lambda(t) | A | CC(t) \rangle}^{(2)} + ... \\
+%& = \langle \Lambda | A | CC \rangle + \int_{-\infty}^{\infty}d\omega_1 \
+%F^{A;V^{\omega_1}}_{\omega_1 + i\alpha}e^{-i(\omega_1 + i\alpha)t} \\
+%& + \frac{1}{2} \int_{-\infty}^{\infty}d\omega_1\int_{-\infty}^{\infty}d\omega_2\
+%F^{A;V^{\omega_1};V^{\omega_2}}_{\omega_1 + i\alpha,\omega_2 \
+%+ i\alpha}e^{-i(\omega_1 + \omega_2 + 2i\alpha)t} + .....
+%\end{split}
+%\end{equation}
+%\\
+%From eqns 4.1-4.4 and using the relation $F^{B;A}_{-\omega_1}=F^{A;B}_{\omega_1}$,
+%the CC-LRF can be identified as
+%%\\
+%%\begin{equation}
+%%{\langle\langle A;V^{\omega_1} \rangle\rangle}_{\omega_1 + i\alpha} \
+%%= \frac{1}{2}( F^{A;V^{\omega_1}}_{\omega_1 + i\alpha} + \
+%%(F^{V^{\omega_1};A}_{\omega_1 + i\alpha})^{*})
+%%\end{equation}
+%%\\
+%
+%%Alternatively, LRFs can also be defined as second-order derivatives 
+%%of a time-averaged quasi-energy with respect to external perturbations $\hat{A}$ and
+%%$\hat{B}$. This formalism is specially useful for deriving LRFs for approximate
+%%coupled cluster theories like CC2, CC3 etc. 
+%
+%%Moreover, it also lets one see the connection   
+%%between response theory and the regular gradient theory for calculating molecular
+%%gradients. 
+%
+%%The electric-electric ($\alpha$) and electric-magnetic ($\beta$)
+%%dipole polarizability tensor elements can be obtained from the LRF with appropriate
+%%operators,
+%%\\
+%%\begin{equation}
+%%\alpha_{xy}(\omega) = {\langle\langle \mu_x;\mu_y\rangle\rangle}_{\omega_1}
+%%\end{equation}
+%%\begin{equation}
+%%\beta_{xy}(\omega) = {-\text{Im} \langle\langle \mu_x;m_y\rangle\rangle}_{\omega_1}
+%%\end{equation}
+%%\\
+%%where $\bm{\mu} = \sum_i q_i \bm{r_i} $ and $\bm{m} = \sum_i \frac{q_i}{2m_i} \bm{r_i} \times \bm{p_i}$. 
+%%Isotropic electric dipole polarizability is one-third of the trace of the $\alpha$ tensor 
+%%while specific rotation is related to the one-third of the trace 
+%%of the $\beta$ tensor (au) also known as the Rosenfeld tensor normalized
+%%by the path-length and concentration\cite{},
+%%\\
+%%\begin{equation}
+%%{\lbrack\alpha\rbrack}_{\omega} = \frac{(72.0 \times 10^6){\hbar}^2 N_A\omega}{c^2{m_e}^2 M}
+%%\ \times \left[ \frac{1}{3}Tr(\beta)\right]
+%%\end{equation}
+%%\\
+%%where M is the mass of the molecule (amu), $m_e$ is the rest mass of an electron
+%%(kg), c is the speed if light in vacuum (m/s), $N_A$ is Avogadro's number and $\omega$
+%%is the frequency of the electromagnetic field (au). \\
+%
 \begin{equation}
 {\langle\langle A;B\rangle\rangle}_{\omega_1} =  \frac{1}{2}\hat{P}(A,B)[\langle 0 | \
 [\hat{Y}^{B}_{\omega_1}, \bar{A}]|0\rangle + \langle 0 | \
@@ -273,7 +283,7 @@ the first-order right and left hand perturbed amplitudes corresponding to operat
 $B$ respectively. These amplitudes can be obtained by solving a linear system
 of equations,
 %involving the CC Jacobian ($\bar{H}_{\mu\nu} = \langle \mu | \big[\bar{H},\tau_\nu\big] |0\rangle$),
-\\
+%\\
 \begin{equation}
 \begin{split}
 &\sum_\nu\langle \mu | \big[(\bar{H} - \omega I),\tau_\nu\big] |0 \

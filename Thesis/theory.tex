@@ -56,7 +56,7 @@ also have the desired properties of antisymmetry and orthogonality. Indeed the F
 CI wavefunction is a linear combination of all possible Slater determinants for a given basis set,
 \\
 \begin{equation}
-\ket{\Psi} = c_o\ket{\Phi_o} + \sum_{ia}{c}_{i}^{a}\ket{{\Phi}^a_i} + \sum_{i>j,a>b}c_{ij}^{ab}\ket{\Psi^{ab}_{ij}} + \sum_{i>j>k,a>b>c}c_{ijk}^{abc}\ket{\Psi^{abc}_{ijk}} + ...
+\ket{\Psi} = c_o\ket{0} + \sum_{ia}{c}_{i}^{a}\ket{{\Psi}^a_i} + \sum_{i>j,a>b}c_{ij}^{ab}\ket{\Psi^{ab}_{ij}} + \sum_{i>j>k,a>b>c}c_{ijk}^{abc}\ket{\Psi^{abc}_{ijk}} + ...
 \end{equation}
 \\
 where $\ket{\Phi_o}$ is the reference wavefunction (usuallly HF), $\ket{{\Phi}^a_i}$ refers to a singly excited determinant where an occupied orbital $i$ of the reference wavefunction is replaced by a virtual orbital $a$
@@ -89,14 +89,14 @@ operators $\hat{T}$ acting on the reference Slater determinant.
 %$\hat{T}$.  
 \\
 \begin{equation}
-\ket{\Psi_{CC}} = e^{\hat{T}}\ket{\Psi_{o}} , 
+\ket{\Psi_{CC}} = e^{\hat{T}}\ket{0} , 
 \end{equation}
 where,
 \begin{equation}
  \hat{T} = \hat{T_1} + \hat{T_2} + \hat{T_3} + ... \;\hat {T_n}.
 \end{equation}
 \\
-Here $\ket{\Psi_{o}}$ is the reference wavefunction, usually taken as the HF
+Here $\ket{0}$ is the reference wavefunction, usually taken as the HF
 wavefunction. One of the most popular tools used for the derivation of the 
 complicated CC equations is second-quantization\cite{JorgensenSimons81}.
 The $\hat{T_2}$ operator in SQ form can be written as
@@ -153,14 +153,14 @@ In general, the structure of these cluster operators can be shown as,
 Expanding the ``exponential ansatz" of the CC wavefunction,
 \\
 \begin{equation}
-\ket{\Psi_{CC}} = (1+(\hat{T_1} + \hat{T_2} + \hat{T_3} + ... ) + \frac{1}{2!}{(\hat{T_1} + \hat{T_2} + \hat{T_3} + ...)}^2 + ... )\ket{\Psi_o}
+\ket{\Psi_{CC}} = (1+(\hat{T_1} + \hat{T_2} + \hat{T_3} + ... ) + \frac{1}{2!}{(\hat{T_1} + \hat{T_2} + \hat{T_3} + ...)}^2 + ... )\ket{0}
 \end{equation}
 \\
 a linear combination of all possible Slater determinants is obtained, which in the basis set limit,  
 should be an exact solution of the TISE just like the Full CI wavefunction. 
 \\
 \begin{equation}
-\hat{H}e^{\hat{T}}\ket{\Psi_o} = E_{cc}\;e^{\hat{T}}\ket{\Psi_o}
+\hat{H}e^{\hat{T}}\ket{0} = E_{cc}\;e^{\hat{T}}\ket{0}
 \end{equation}
 \\
 The Hamiltonian is also expressed in second-quantized form \cite{Crawford00}:
@@ -169,21 +169,21 @@ The Hamiltonian is also expressed in second-quantized form \cite{Crawford00}:
 \hat{H} = \sum_{pq}h_{pq}\{a^\dagger_pa_q\} + \frac{1}{4}\sum_{pqrs}\bra{pq}\ket{rs}\{a^\dagger_pa^\dagger_qa_sa_r\}
 \end{equation}
 \\
-where, $h_{pq} = \langle h_{pq} \rangle$ and $\langle pq||rs \rangle = \langle pq|rs \rangle - \langle pq|sr \rangle$ are the one and two electron components of the Hamiltonian repectively.
+where, $h_{pq} = \langle p|h|q \rangle$ and $\langle pq||rs \rangle = \langle pq|rs \rangle - \langle pq|sr \rangle$ are the one and two electron components of the Hamiltonian repectively.
 The CC equations for calculating the amplitudes and the energy can be  
 obtained by multiplying the above equation by the inverse of the exponential operator i.e
 $e^{-\hat{T}}$ and projecting it against the reference and excited
 determinants.
 \\
 \begin {equation}
-\bra{\Psi_o}e^{-\hat{T}}\hat{H}e^{\hat{T}}\ket{\Psi_o} = E_{cc}
+\bra{0}e^{-\hat{T}}\hat{H}e^{\hat{T}}\ket{0} = E_{cc}
 \end{equation}
 \begin{equation}
 %\bra{\Psi^{ab..}_{ij..}}e^{-\hat{T}}\hat{H}e^{\hat{T}}\ket{\Psi_o} = E\cancelto{0}{\bra{\Psi^{ab..}_{ij..}}\Psi_o\rangle} = 0 .
-\bra{\Psi^{a.}_{i.}}e^{-\hat{T}}\hat{H}e^{\hat{T}}\ket{\Psi_o} = 0 .
+\bra{\mu}e^{-\hat{T}}\hat{H}e^{\hat{T}}\ket{0} = 0 .
 \end{equation} 
 \\
-Here $\Psi^{a.}_{i.}$ can refer to any excited Slater determinant: singles, doubles etc. 
+Here $\mu$ can refer to any excited Slater determinant: singles, doubles etc. 
 The similarity transformed Hamiltonian $e^{-\hat{T}}\hat{H}e^{\hat{T}}$, also written as 
 written as $\bar{H}$ can be expressed in terms of commutators of the Hamiltonian with the 
 cluster operators $\hat{T}$ by using the Campbell-Baker-Hausdorff formula\cite{Merzbacher70}.
@@ -253,7 +253,7 @@ The gradient of the CC energy (equation 2.14) with respect to any external pertu
 can be written as:
 \\
 \begin{equation}
-\frac{\partial{E_{cc}}}{\partial X} = \bra{\Psi_o}\frac{\partial{\bar H}}{\partial X}\ket{\Psi_o} = \bra{\Psi_o}{\bar{H}}^X + \lbrack\bar H , \frac{\partial{\hat T}}{\partial X}\rbrack\ket{\Psi_o} 
+\frac{\partial{E_{cc}}}{\partial X} = \bra{0}\frac{\partial{\bar H}}{\partial X}\ket{\Psi_o} = \bra{\Psi_o}{\bar{H}}^X + \lbrack\bar H , \frac{\partial{\hat T}}{\partial X}\rbrack\ket{\Psi_o} 
 \end{equation}
 where, 
 \begin{equation}
@@ -263,13 +263,13 @@ where,
 Invoking the resolution of identity (RI),
 \\
 \begin{equation}
- 1 = \ket{\Psi_o}\bra{\Psi_o} + \sum_{ia}\ket{{\Psi}^a_i}\bra{{\Psi}^a_i} + \frac{1}{4}\sum_{ijab}\ket{{\Psi}^{ab}_{ij}}\bra{{\Psi}^{ab}_{ij}} + ...
+ 1 = \ket{0}\bra{0} + \sum_{ia}\ket{{\Psi}^a_i}\bra{{\Psi}^a_i} + \frac{1}{4}\sum_{ijab}\ket{{\Psi}^{ab}_{ij}}\bra{{\Psi}^{ab}_{ij}} + ...
 \end{equation}
 \\
-equation (2.18) can be seen to involve the derivatives of the amplitudes i.e $\frac{\partial{t^{a.}_{i.}}}{\partial X}$
+equation (2.18) can be seen to involve the derivatives of the amplitudes i.e $\frac{\partial{t_\mu}}{\partial X}$
 \\
 \begin{equation}
-\frac{\partial{E_{cc}}}{\partial X} = \bra{\Psi_o}{\bar{H}}^X\ket{\Psi_o} + \sum_{i.a.}\bra{\Psi_o}\bar{H}\ket{{\Psi}^{a.}_{i.}} \frac{\partial{t^{a.}_{i.}}}{\partial X}
+\frac{\partial{E_{cc}}}{\partial X} = \bra{0}{\bar{H}}^X\ket{0} + \sum_{\mu}\bra{0}\bar{H}\ket{\mu} \frac{\partial{t_{\mu}}}{\partial X}
 %\bra{{\Psi}^{a.}_{i.}}\frac{\partial{\hat T}}{\partial X}\ket{\Psi_o}.
 \end{equation}
 \\
@@ -279,23 +279,22 @@ calculations of the amplitudes can be avoided altogether through an alternative 
 Taking the derivative of the CC amplitude equations with respect to X, 
 \\
 \begin{equation} 
-0 = \bra{{\Psi}^{a.}_{i.}}{\bar{H}}^X + \lbrack\bar H , \frac{\partial{\hat T}}{\partial
-X}\rbrack\ket{\Psi_o}.
+0 = \bra{\mu}{\bar{H}}^X + \lbrack\bar H , \frac{\partial{\hat T}}{\partial
+X}\rbrack\ket{0}.
 \end{equation} 
 \\
 Using the RI method again, the above equation can be simplified.
 \\
 \begin{equation}
-\sum_{j.b.}\bra{{\Psi}^{a.}_{i.}}\bar{H}-E_{cc}\ket{{\Psi}^{b.}_{j.}} \frac{\partial{t^{b.}_{j.}}}{\partial X}
-= - \bra{{\Psi}^{a.}_{i.}}{\bar{H}}^X\ket{\Psi_o}
+\sum_{\nu}\bra{\mu}\bar{H}-E_{cc}\ket{\nu} \frac{\partial{t_\nu}}{\partial X}
+= - \bra{\mu}{\bar{H}}^X\ket{0}
 %\bra{{\Psi}^{b.}_{j.}}\frac{\partial{\hat T}}{\partial X}\ket{\Psi_o} = - \bra{{\Psi}^a_i}{\bar{H}}^X\ket{\Psi_o} 
 \end{equation}
 or,
-\\
 \begin{equation} 
 %\bra{{\Psi}^{b.}_{j.}}\frac{\partial{\hat T}}{\partial X}\ket{\Psi_o} 
-\frac{\partial{t^{b.}_{j.}}}{\partial X} = -\sum_{i.a.}
-\bra{{\Psi}^{b.}_{j.}}{(\bar{H}-E_{cc})}^{-1}\ket{{\Psi}^{a.}_{i.}}\bra{{\Psi}^{a.}_{i.}}{\bar{H}}^X\ket{\Psi_o}
+\frac{\partial{t_\mu}}{\partial X} = -\sum_{\nu}
+\bra{\mu}{(\bar{H}-E_{cc})}^{-1}\ket{\nu}\bra{\nu}{\bar{H}}^X\ket{0}
 \end{equation}
 \\
 %The above equation was derived by considering the gradient of just the singles equation.
@@ -303,10 +302,10 @@ or,
 Plugging this gradient expression back into equation (2.21), we obtain the following equation,
 \\
 \begin{equation}
-\frac{\partial{E_{cc}}}{\partial X} = \bra{\Psi_o}{\bar{H}}^X\ket{\Psi_o} -
-\sum_{i.a.}\bra{\Psi_o}\bar{H}\ket{{\Psi}^{a.}_{i.}}\sum_{j.b.}
-\bra{{\Psi}^{a.}_{i.}}{(\bar{H}-E_{cc})}^{-1}\ket{{\Psi}^{b.}_{j.}}
-\bra{{\Psi}^{b.}_{j.}}{\bar{H}}^X\ket{\Psi_o}.
+\frac{\partial{E_{cc}}}{\partial X} = \bra{0}{\bar{H}}^X\ket{0} -
+\sum_{\mu}\bra{0}\bar{H}\ket{\mu}\sum_{\nu}
+\bra{\mu}{(\bar{H}-E_{cc})}^{-1}\ket{\nu}
+\bra{\nu}{\bar{H}}^X\ket{0}.
 \end{equation}
 \\
 The second term of the RHS of the above equation involves an inverted 
@@ -315,14 +314,13 @@ of this matrix can be very large. As such, a linear operator $\hat{\Lambda}$
 is defined in the following manner.
 \\
 \begin{equation}
-\bra{\Psi_o}\hat{\Lambda}\ket{\Psi^{b.}_{j.}} = -\sum_{i.a.}\bra{\Psi_o}\bar{H}\ket{{\Psi}^{a.}_{i.}}
-\bra{{\Psi}^{a.}_{i.}}{(\bar{H}-E_{cc})}^{-1}\ket{{\Psi}^{b.}_{j.}}.
+\bra{0}\hat{\Lambda}\ket{\mu} = -\sum_{\nu}\bra{0}\bar{H}\ket{\nu}
+\bra{\nu}{(\bar{H}-E_{cc})}^{-1}\ket{\mu}.
 \end{equation}
-\\
 or, 
 \begin{equation}
-\sum_{i.a.}\bra{\Psi_o}\hat{\Lambda}\ket{\Psi^{a.}_{i.}}\bra{{\Psi}^{a.}_{i.}}{(\bar{H}-E_{cc})}\ket{{\Psi}^{b.}_{j.}}
- = - \bra{\Psi_o}\bar{H}\ket{{\Psi}^{b.}_{j.}}
+\sum_{\mu}\bra{0}\hat{\Lambda}\ket{\mu}\bra{\mu}{(\bar{H}-E_{cc})}\ket{\nu}
+ = - \bra{0}\bar{H}\ket{\nu}
 %\bra{{\Psi}^{a.}_{i.}}{(\bar{H}-E_{cc})}^{-1}\ket{{\Psi}^{b.}_{j.}}.
 \end{equation}
 \\
@@ -337,20 +335,20 @@ are the singles and doubles de-excitation operators respectively. The CC gradien
 in terms of the lambda operator,
 \\
 \begin{equation}
-\frac{\partial{E_{cc}}}{\partial X} = \bra{\Psi_o}(1 + \hat{\Lambda}){\bar{H}}^X\ket{\Psi_o} = \bra{\Psi_o}(1 + \hat{\Lambda})e^{-\hat{T}}\frac{\partial{\hat H}}{\partial X}\ket{\Psi_{cc}}
+\frac{\partial{E_{cc}}}{\partial X} = \bra{0}(1 + \hat{\Lambda}){\bar{H}}^X\ket{0} = \bra{0}(1 + \hat{\Lambda})e^{-\hat{T}}\frac{\partial{\hat H}}{\partial X}\ket{\Psi_{cc}}
 \end{equation}
 \\
 and the governing equation for sloving the lambda amplitudes eq. (2.27) can be written in a more compact form as,
 \\
 \begin{equation}
-\bra{\Psi_o}(1 + \hat{\Lambda})(\bar{H} - E_{cc})\ket{{\Psi}^{a.}_{i.}} = 0.
+\bra{0}(1 + \hat{\Lambda})(\bar{H} - E_{cc})\ket{\mu} = 0.
 \end{equation}
 \\
 Thus instead of taking the gradients of the non-linear $T$ amplitude
 equations with respect to perturbations, we solve linear perturbation-independent 
 $\hat{\Lambda}$ equations for calculating the CC energy gradient.
 Furthermore, CC gradients satisfy the generalized Hellman-Feynman equation\cite{Feynman39}
-if $\bra{\Psi_o}(1 + \hat{\Lambda})e^{-\hat{T}}$ is defined as the CC left hand wavefunction
+if $\bra{0}(1 + \hat{\Lambda})e^{-\hat{T}}$ is defined to be the left hand wavefunction
 as due to the non-hermiticity of the $\bar{H}$ operator or the non-variational nature of the 
 CC method, the left and right hand wavefunctions are not simple hermitian conjugates of each other.
 %However, for second order derivatives, we do need to calculate the first derivatives of 
@@ -396,156 +394,319 @@ CC method, the left and right hand wavefunctions are not simple hermitian conjug
 %\subsubsection{Coupled Cluster Linear Response (CCLR)}
 %\paragraph{Exact states}~\\
 %\paragraph{Coupled cluster linear response (CCLR)}~\\\\
-\subsection{Coupled Cluster Linear Response (CCLR) Theory}
-CCLR method proposed by Koch and J{\o}rgensen in 1990\cite{Koch90} is a recipe for accurate
-calculations of response properties like dynamic polarizabilities, optical
-rotations, etc. In this section, we will outline important steps for the
-derivations of both general and CCLR response functions and also talk about
-different gauge representations used for calculating the response functions.\\
-The operator $V(t)$ which describes the interaction between the molecule and 
-an external time-dependent field can be expressed in the frequency domain as: 
+\subsection{General Response Theory}
+Response theory as the name suggests, attempts to calculate molecular properties related 
+the response of the ground state wavefunction to an external perturbation. Within this 
+formalism, the effect of an external electromagnetic field is incoroporated into the 
+Hamiltonian using the standard time-dependent perturbation theory:
+\\
 \begin{equation}
-V(t) = \int_{-\infty}^{\infty}d\omega\;\;V(\omega) e^{(-i\omega + \Gamma)t} ,
+\begin{split}
+& H = H_o + V(t)\\
+&V(t) = \int_{-\infty}^{\infty}d\omega\;\;V(\omega) e^{(-i\omega + \alpha)t},
+\end{split}
 \end{equation}
-The full Hamiltonian can then be written as: $H = H_o + V(t)$, where $H_o$ is the
-time independent unperturbed Hamiltonian. Assuming that $\Psi_o$ is an eigenstate of $H_o$
+\\
+where $H_o$ is the time independent or unperturbed Hamiltonian, $V(t)$ is the interaction 
+operator with $V(\omega)$ as its fourier transform and $\alpha$ is a real postive infinitesimal.
+The representation used for the $V(t)$ operator is an example of the adiabatically 
+switched on perturbation\cite{} where the perturbation is assumed to be zero at 
+$t = -\infty$. Thus, the molecule can be assumed to be in state $\Psi_o$, an 
+eigenstate of $H_o$ at $t = -\infty$.
+%In the presence of an external time dependent field,
+%outline important steps for the
+%derivations of both general and CCLR response functions and also talk about
+%different gauge representations used for calculating the response functions.\\
+%The operator $V(t)$ which describes the interaction between the molecule and 
+%an external time-dependent field can be expressed in the frequency domain as: 
+%\begin{equation}
+%V(t) = \int_{-\infty}^{\infty}d\omega\;\;V(\omega) e^{(-i\omega + \Gamma)t} ,
+%\end{equation}
+%The full Hamiltonian can then be written as: $H = H_o + V(t)$, where $H_o$ is the
+%time independent unperturbed Hamiltonian. Assuming that $\Psi_o$ is an eigenstate of $H_o$
 %An exact wavefunction satisfies the Schr\"odinger equation: $H_o\ket{O} =
 %E_o\ket{O}$ where $H_o$ is the time independent Hamiltonian and $\ket{O}$ is an
 %eigenstate of the system. 
-and that the molecule is in state $\Psi_o$ when the perturbation starts at $t = -\infty$, 
-the $\ket{\Psi_o}$ state evolves in time as $\ket{\Psi_o(t)}$ according to the time-dependent 
-Schr\"odinger equation.
+%Assuming that $\Psi_o$ is an eigenstate of $H_o$
+%and that the molecule is in state $\Psi_o$ when the perturbation starts at $t = -\infty$, 
+After the perturbation is switched on, the wavefunction become time dependent 
+($\ket{\Psi_o(t)}$) and evolves in time according to the time-dependent
+Schr\"odinger equation (TDSE).
+\\
 \begin{equation}
 i\frac{d}{dt}\ket{\Psi_o(t)} = (H_o + V^t)\ket{\Psi_o(t)}
 \end{equation}
+\\
 %It can be shown that the time dependent state $\ket{\Psi_o(t)}$ is related to 
-Following the work of Olsen\cite{Olsen85}, the time dependent state $\ket{\Psi_o(t)}$
-can be written as:
+Following the works of Olsen\cite{Olsen85}, the time dependent state $\ket{\Psi_o(t)}$
+can be parametrized in terms of a phase factor ($\epsilon(t)$),
+\\
 \begin{equation}
-\ket{\Psi_o(t)} = \ket{\bar{\Psi_o}}e^{i\epsilon(t)}
+\ket{\Psi_o(t)} = \ket{{\overbar{\Psi}_o}}e^{i\epsilon(t)}
 \end{equation}
-where $\epsilon$ is a phase factor and the state $\ket{\bar{\Psi_o}}$ can be expressed as\cite{Koch90}:
-%using perturbation theory. Specifically,
+\\
+where $\ket{{\overbar{\Psi}_o}}$ is the phase isolated wavefunction which can be expanded 
+in orders of perturbation (time dependence is assumed).\\
 \begin{equation}
 \ket{\bar{\Psi_o}} = \ket{\Psi_o} + {\ket{\Psi_o}}^{(1)}+ {\ket{\Psi_o}}^{(2)} + ...
 \end{equation}
-where first order correction ${\ket{\Psi_o}}^{(1)}$ and others can be determined 
-from the time dependent perturbation theory. For calculating any response property, the
-expectation value of the respective time independent  operator is calculated in
-the presence of an external field. The response functions can be seen as the
-coefficients of terms which appear in different orders of perturbation in $V(t)$
-in the expansion of the expectation value.\cite{Koch90} 
-%Furthermore, the expectation value of any time dependent operator $A$ can
-%expanded as\cite{Koch90} : 
+\\
+It should be noted that the phase factor cancels out when one takes an expectation
+value of an operator with the wavefunction of equation 2.33 and hence can be 
+ignored in the following derivations.
+%where order correction ${\ket{\Psi_o}}^{(1)}$ and others can be determined 
+%from the . 
+%For calculating any response property, the
+%expectation value of the respective time independent  operator is calculated in
+%the presence of an external field. 
+From the above equation, it can be seen that an expectation value of a time independent
+operator $A$ can also be expanded in a similar fashion. The response functions are the 
+fourier transforms of these time dependent terms appearing in the expansion up to a given order.
+\\
+%\begin{equation}
+%\bra{\Psi_o(t)}A\ket{\Psi_o(t)} = \bra{\Psi_o}A\ket{\Psi_o} + \int_{-\infty}^{\infty}d\omega_1{\langle\langle A;V({\omega_1})\rangle\rangle}_{\omega_1 + i\Gamma}e^{(-i\omega_1 + \Gamma)t} + .....
+%\end{equation}
 \begin{equation}
-\bra{\Psi_o(t)}A\ket{\Psi_o(t)} = \bra{\Psi_o}A\ket{\Psi_o} + \int_{-\infty}^{\infty}d\omega_1{\langle\langle A;V({\omega_1})\rangle\rangle}_{\omega_1 + i\Gamma}e^{(-i\omega_1 + \Gamma)t} + .....
+\begin{split}
+\langle A \rangle (t) = \langle A \rangle + & \int_{-\infty}^{\infty}\
+d\omega_1{\langle\langle A;V^{\omega_1}\rangle\rangle}_{\omega_1  \
++ i\alpha}e^{-i(\omega_1 + i\alpha)t} \\
+& + \frac{1}{2} \int_{-\infty}^{\infty}d\omega_1\int_{-\infty}^{\infty}d\omega_2\
+{\langle\langle A;V^{\omega_1};V^{\omega_2}\rangle\rangle}_{\omega_1 \
++ i\alpha,\omega_2 + i\alpha}e^{-i(\omega_1 + \omega_2 + 2i\alpha)t} + ..... \\
+\end{split}
 \end{equation}
-where we only considered the linear response function $\langle\langle A;V({\omega_1})\rangle\rangle$ 
-and neglected the higher order terms. If the perturbation field is composed of a 
-single frequency ($\omega_1$) , the linear response function can be written as:
+\\
+where the linear response function (LRF), $\langle\langle A;V^{\omega_1}\rangle\rangle$ can be
+seen as the first order change in the expectation value of the time independent operator $A$ 
+with respect to perturbation. The first order perturbed wavefunction $\ket{\Psi_o}^{(1)}$
+can be obtained using Ehrenfest's theorem and combined with the above equation to construct 
+the LRF, which for exact states look like,
+\\
 \begin{equation}
-\langle\langle A;V({\omega_1})\rangle\rangle = \sum_k\{
-\frac{\bra{\Psi_o}A\ket{\Psi_k}\bra{\Psi_k}V({\omega_1})\ket{\Psi_o}}{\omega_1
-- \omega_k + i\Gamma}  -
-\frac{\bra{\Psi_o}V({\omega_1})\ket{\Psi_k}\bra{\Psi_k}A\ket{\Psi_o}}{\omega_1 + \omega_k +
-i\Gamma}\} \end{equation}
+\langle\langle A;V^{\omega_1}\rangle\rangle = \sum_k\bigg[
+\frac{\bra{\Psi_o}A\ket{\Psi_k}\bra{\Psi_k}V^{\omega_1}\ket{\Psi_o}}{\omega_1
+- \omega_k}  -
+\frac{\bra{\Psi_o}V^{\omega_1}\ket{\Psi_k}\bra{\Psi_k}A\ket{\Psi_o}}{\omega_1 + \omega_k}\bigg]
+\end{equation}
+\\
 %The above equation is called the sum of states (SOS) equation , 
 where $\omega_k$ is the excitation energy between the states $\Psi_o$ and $\Psi_k$ 
-and the summation runs over all the solutions of the time independent Schr\"odinger equation $\Psi_k$.
-It can be seen from eq.(2) that $\textbf{G}^{\prime}(\omega)$ is nothing but the imaginary part of this 
-response function if we take $A$ as the dipole moment operator with $V$ as a magnetic field.
-However, this approach is very computationally expensive for CC methods and we approximate the above 
-linear response function using CCLR theory.
+and the summation runs over all the solutions of the time independent Schr\"odinger equation, $\Psi_k$.
+%It can be seen from eq.(2) that $\textbf{G}^{\prime}(\omega)$ is nothing but the imaginary part of this 
+%response function if we take $A$ as the dipole moment operator with $V$ as a magnetic field.
+However, calculating response functions using the above equation (also known as the sum of states equation)
+is very computationally expensive as it involves explicit calculations of all the excited states.
 %\paragraph{CC linear response function}~\\\\
-Using the same approach as above, the right and left hand CC wavefunction evolve in time as\cite{Koch90}:
+\subsection{Coupled Cluster Response Theory}
+Coupled cluster response theory was proposed by Koch and J{\o}rgensen in 1990\cite{Koch90} as a recipe
+for accurate calculations of response properties like dynamic (hyper)polarizabilities, optical
+rotations, etc. It avoids the sum of states approach through a suitable parametrization of the CC wavefunction.
+In this formalism, the right and left hand CC wavefunction evolve in time through time dependent $\hat{T}$
+and $\hat{\Lambda}$ amplitudes,\cite{Koch90}
+\\
 \begin{equation}
-\ket{\Psi_{cc}(t)} = e^{\hat{T}(t)}\ket{\Psi_o}e^{i\epsilon(t)}
+\ket{\Psi_{cc}(t)} = e^{\hat{T}(t)}\ket{0}e^{i\epsilon(t)}
 \end{equation}
-\begin{equation} \bra{\Lambda(t)} = \{\bra{\Psi_o} +
-\sum_{i.a.}\lambda^{a.}_{i.}(t)\bra{\Psi^{a.}_{i.}}e^{-\hat{T}(t)}\}e^{-i\epsilon(t)}
+\begin{equation} \bra{\Lambda(t)} = \{\bra{0} +
+\sum_{\mu}\lambda_\mu(t)\bra{\mu}e^{-\hat{T}(t)}\}e^{-i\epsilon(t)}
 \end{equation}
-where $e^{\pm i\epsilon(t)}$ is a time dependent phase factor
-and we have time dependent $T$ and $\lambda^{a.}_{i.}$ amplitudes. The governing equation for 
-the time dependence of these amplitudes is the time-dependent Schr\"odinger equation.
+\\
+where $e^{\pm i\epsilon(t)}$ is a time dependent phase factor. The governing equation for the time evolution of 
+these amplitudes is the time-dependent Schr\"odinger equation.
+\\
 \begin{equation}
 i\frac{d}{dt}\ket{\Psi_{cc}(t)} = (H_o + V(t))\ket{\Psi_{cc}(t)} 
 \end{equation}
 \begin{equation}
 \frac{d}{dt}\bra{\Lambda(t)} = i\bra{\Lambda(t)}(H_o + V(t))
 \end{equation}
-On multiplying eq. (38) by $e^{-\hat{T}(t)}$ on both sides and projecting 
-it against $\bra{\Psi^{a.}_{i.}}$, we obtain the expression for the time evolution 
-of $t^{a.}_{i.}$ amplitudes.
+\\
+On multiplying eq. (2.39) by $e^{-\hat{T}(t)}$ on both sides and projecting 
+it against the excited determinants $\bra{\mu}$, the time derivative expression
+of the $t_{\mu}$ amplitudes can be obtained.
+\\
 \begin{equation}
-\frac{dt^{a.}_{i.}}{dt} = -i\bra{\Psi^{a.}_{i.}}e^{-\hat{T}(t)}(H_o + V(t))e^{\hat{T}(t)}\ket{\Psi_o}
+\frac{dt_{\mu}}{dt} = -i\bra{\mu}e^{-\hat{T}(t)}(H_o + V(t))e^{\hat{T}(t)}\ket{0}
 \end{equation}
-On multiplying eq.(38) by $e^{i\epsilon(t)}$ and invoking the RI, the expression for 
-time evolution of $\lambda^{b.}_{j.}$ amplitudes can be obtained:
+\\
+Similarly, multiplying eq.(2.40) by $e^{i\epsilon(t)}$ and invoking the RI, the time derivative 
+equation of the $\lambda_{\mu}$ amplitudes can be derived.
+\\
 \begin{equation}
-\frac{d\lambda^{b.}_{j.}}{dt} =
-i\bra{{\tilde{\Lambda}}(t)}\lbrack H_o + V(t),\{{a}^\dagger_b.
-a_j.\}\rbrack\ket{{\widetilde{\Psi}_{cc}}(t)}
+\frac{d\lambda_{\mu}}{dt} = i\bra{{\tilde{\Lambda}}(t)}\lbrack H_o + V(t),\tau_\mu
+\rbrack\ket{{\widetilde{\Psi}_{cc}}(t)}
 \end{equation} 
+\\
 where $\sim$ denotes the usual expressions without the phase factor $e^{\pm i\epsilon(t)}$. 
-Expanding the $t^{a.}_{i.}$ amplitudes in orders of perturbation of V(t), the 
-expressions for the different orders can be obtained using eq. (38). The first order
-derivative can be written as:
+The amplitudes are then expanded in orders of the perturbation which is followed by a fourier transformation.
+\\
+\begin{equation}
+\begin{split}
+t_\mu(t) &= t^{(0)}_\mu +  t^{(1)}_\mu +  t^{(2)}_\mu + ... \\
+&= t^{(0)}_\mu +  \int_{-\infty}^{\infty} d\omega_1 X^{(1)}_\mu(\omega_1 + i\alpha)e^{(-i\omega_1 + \alpha) t}  + ... \\
+\end{split}
+\end{equation}
+\\
+\begin{equation}
+\begin{split}
+\lambda_\mu(t) &= \lambda^{(0)}_\mu +  \lambda^{(1)}_\mu +  \lambda^{(2)}_\mu + ... \\
+&= \lambda^{(0)}_\mu +  \int_{-\infty}^{\infty} d\omega_1 Y^{(1)}_\mu(\omega_1 + i\alpha)e^{(-i\omega_1 + \alpha) t}  + ... \\
+\end{split}
+\end{equation}
+\\
+Using 2.41-2.44, the equations for solving the fourier transforms 
+$X^{(1)}_\mu$ and $Y^{(1)}_\mu$ can be derived, 
+\\
+\begin{equation}
+\begin{split}
+&\sum_\nu {((\omega_1 + i\alpha)\bm{I} - \bm{A})}_{\mu\nu} X^{(1)}_{\nu}
+= -\langle \mu|\overbar{V}^{\omega_1}|0 \rangle \\
+&\sum_\nu Y_{\nu}^{(1)}{((\omega_1 + i\alpha)\bm{I} + \bm{A})}_{\nu\mu} = -\eta^{(1)}_{\mu} -
+\sum_{\gamma} F_{\mu\gamma} X^{(1)}_{\gamma}.
+\end{split}
+\end{equation}
+\\
+Here $\bm{I}$ is the identity matrix and $\bm{A}$ is the (unsymmetric) CC Jacobian,
+\begin{equation}
+A_{\mu\nu} = \bra{\mu}[\bar{H_o}, \tau_\nu]\ket{0}
+\end{equation}
+where overbar on an operator denotes similarity transformation with the ground state
+$T$ operator, ex. $\bar{H_o} = e^{-\hat{T(0)}}\hat{A}e^{\hat{T(0)}}$.
+The $\bm{\eta}^{(1)}$ vector and the symmetric $\bm{F}$ matrix are defined as,
+\\
+\begin{equation}
+\begin{split}
+& F_{\mu\nu} = \bra{(1+ \hat{\Lambda)}}[[\bar{H_o}, \tau_\mu],\tau_\nu]\ket{0}\\
+& \eta^{(1)}_{\mu} = \bra{(1+ \hat{\Lambda})}[\overbar{V}^{\omega_1}, \tau_\mu]\ket{0}.\\
+\end{split}
+\end{equation}
+\\
+For a CC wavefunction, time-dependent expectation value of a time-independent operator 
+$A$ is defined as\cite{revisited},
+\\
+\begin{equation}
+\begin{split}
+{\langle A \rangle}_{CC} (t) = & Re [\langle \Lambda(t) | A | CC(t)\rangle ]\\
+& = \frac{1}{2} (\langle \Lambda(t) | A | CC(t)\rangle  + {\langle \Lambda(t) | A | CC(t)\rangle}^{*})
+\end{split}
+\end{equation}
+\\
+since both $\hat{T}$ and $\hat{\Lambda}$ amplitudes can be complex quantities but 
+the expectation values should always be real. To identify CC response functions,  
+the quantity $\langle \Lambda(t) | A | CC(t)\rangle$ is expanded in orders of 
+perturbation\cite{Revisited}.
+\\
+\begin{equation}
+\begin{split}
+\langle \Lambda(t) | A | CC(t) \rangle & = {\langle \Lambda(t) | A | CC(t) \rangle}^{(0)}\
+ + {\langle \Lambda(t) | A | CC(t) \rangle}^{(1)} \
++ {\langle \Lambda(t) | A | CC(t) \rangle}^{(2)} + ... \\
+& = \langle \Lambda | A | CC \rangle + \int_{-\infty}^{\infty}d\omega_1 \
+F^{A;V^{\omega_1}}_{\omega_1 + i\alpha}e^{-i(\omega_1 + i\alpha)t} \\
+& + \frac{1}{2} \int_{-\infty}^{\infty}d\omega_1\int_{-\infty}^{\infty}d\omega_2\
+F^{A;V^{\omega_1};V^{\omega_2}}_{\omega_1 + i\alpha,\omega_2 \
++ i\alpha}e^{-i(\omega_1 + \omega_2 + 2i\alpha)t} + .....
+\end{split}
+\end{equation}
+\\
+From eqns 4.1-4.4 and using the relation $F^{V^{\omega_1};A}_{-\omega_1}=F^{A;V^{\omega_1}}_{\omega_1},$the CC-LRF can be identified as,
+\\
+\begin{equation}
+{\langle\langle A;V^{\omega_1} \rangle\rangle}_{\omega_1 + i\alpha} \
+= \frac{1}{2}( F^{A;V^{\omega_1}}_{\omega_1 + i\alpha} + \
+(F^{V^{\omega_1};A}_{\omega_1 + i\alpha})^{*}).
+\end{equation}
+or,
+\begin{equation}
+{\langle\langle A;B\rangle\rangle}_{\omega_1} =  \frac{1}{2}\hat{P}(A,B)[\langle 0 | \
+[\hat{Y}^{B}_{\omega_1}, \bar{A}]|0\rangle + \langle 0 | \
+(1 + \hat{\Lambda})|[\bar{A},\hat{X}^{B}_{\omega_1}]|0\rangle]
+\end{equation}
+\\
+where $V^{\omega_1} = B$, $\hat{P}(A,B)$ simultaneously interchanges operators $A$ and $B$
+and takes the complex conjugate of the expression,
+and $\hat{X}^{B}_{\omega_1}$ and $\hat{Y}^{B}_{\omega_1}$ are the first-order right 
+and left hand perturbed amplitudes corresponding to operator
+$B$ respectively. An alternative formulation of the CC-LRF avoids calculating $\hat{Y}_{\omega_1}$
+amplitudes by solving an extra set of $\hat{X}_{-\omega_1}$ amplitudes,
+\\
+\begin{equation}
+{\langle\langle\bm{A};\bm{B}\rangle\rangle}_{\omega_1}=
+\frac{1}{2}\hat{C}^{\pm\omega_1}\hat{P'}[A(-\omega_1),B(+\omega_1)] \left[
+\langle0|(1+\hat{\Lambda})\left( [\bar{A},\hat{X}^B_{\omega_1}] +
+\frac{1}{2}[[\bar{H_o},\hat{X}^{A}_{-\omega_1}], \hat{X}^{B}_{\omega_1}]
+\right) |0\rangle \right]
+\label{Eq:linresp}
+\end{equation}
+\\
+where $\hat{C}$ is a symmetrizer that simultaneously interchanges the sign of the field 
+frequency and takes the complex conjugate of the expression, and $\hat{P'}$ symmetrizes 
+the expression with respect to the operators $\bm{A}$ and $\bm{B}$.\\
+The LRFs can also be defined as second-order derivatives
+of a time-averaged quasi-energy with respect to external perturbations $\hat{A}$ and
+$\hat{B}$. This formalism is specially useful for deriving LRFs for approximate
+coupled cluster theories like CC2, CC3 etc.
+%Expanding the $t^{a.}_{i.}$ amplitudes in orders of perturbation of V(t), the 
+%expressions for the different orders can be obtained using eq. (38). The first order
+%derivative can be written as:
+%%\begin{equation}
+%%t_\mu(t) = {t}^{(0)}_\mu(t) +  {t}^{(1)}_\mu(t) +  {t}^{(2)}_\mu(t) + ...
+%%\end{equation}
+%%\begin{equation}
+%%i\frac{d\;{t^{a.}_{i.}}^{(0)}}{dt} = \bra{\Psi^{a.}_{i.}}e^{-\hat{T}(0)}H_o\ket{\Psi_{cc}} = 0 ,
+%%\end{equation}
 %\begin{equation}
-%t_\mu(t) = {t}^{(0)}_\mu(t) +  {t}^{(1)}_\mu(t) +  {t}^{(2)}_\mu(t) + ...
+%i\frac{d\;{t^{a.}_{i.}}^{(1)}}{dt} = \bra{\Psi^{a.}_{i.}}e^{-\hat{T}(0)}V(t)\ket{\Psi_{cc}} + \bra{\Psi^{a.}_{i.}}e^{-\hat{T}(0)}\lbrack H_o,T^{(1)}\rbrack\ket{\Psi_{cc}}
 %\end{equation}
+%The amplitude $t^{a.}_{i.}$ can be expressed in terms of its Fourier transform as: 
 %\begin{equation}
-%i\frac{d\;{t^{a.}_{i.}}^{(0)}}{dt} = \bra{\Psi^{a.}_{i.}}e^{-\hat{T}(0)}H_o\ket{\Psi_{cc}} = 0 ,
+%{t^{a.}_{i.}}^{(1)}(t) = \int_{-\infty}^{\infty} d\omega_1{X^{a.}_{i.}}^{(1)}(\omega_1 + i\Gamma)e^{(-i\omega_1 + \Gamma) t}
 %\end{equation}
-\begin{equation}
-i\frac{d\;{t^{a.}_{i.}}^{(1)}}{dt} = \bra{\Psi^{a.}_{i.}}e^{-\hat{T}(0)}V(t)\ket{\Psi_{cc}} + \bra{\Psi^{a.}_{i.}}e^{-\hat{T}(0)}\lbrack H_o,T^{(1)}\rbrack\ket{\Psi_{cc}}
-\end{equation}
-The amplitude $t^{a.}_{i.}$ can be expressed in terms of its Fourier transform as: 
-\begin{equation}
-{t^{a.}_{i.}}^{(1)}(t) = \int_{-\infty}^{\infty} d\omega_1{X^{a.}_{i.}}^{(1)}(\omega_1 + i\Gamma)e^{(-i\omega_1 + \Gamma) t}
-\end{equation}
-where
-\begin{equation}
-{X^{a.}_{i.}}^{(1)}(\omega_1 + i\Gamma)  = \sum_{j.b.}{\left\{{(-A + (\omega_1 + i \Gamma) I )}^{-1}\right\}}^{j.b.}_{i.a.}{\lambda^{b.}_{j.}}^{(1)}(\omega_1),
-\end{equation}
-and  
-\begin{equation}
-{\lambda^{b.}_{j.}}^{(1)}(\omega_1) = \bra{\Psi^{b.}_{j.}}e^{-\hat{T}(0)}V(\omega_1)\ket{\Psi_{cc}}.
-\end{equation}
-$A$ is the coupled cluster Jacobian matrix defined as:
-\begin{equation}
-A^{j.b.}_{i.a.} = \bra{\Psi^{a.}_{i.}}e^{-\hat{T}}\lbrack H_o,\{{a}^\dagger_b.a_j.\}\rbrack\ket{\Psi_{cc}}
-\end{equation}
-The above process is repeated with $\lambda^{j.}_{b.}$ amplitudes to obtain the derivative expressions and the Fourier transform $Y$.
-\begin{equation}
-\frac{d\;{\lambda^{b.}_{j.}}^{(1)}}{dt} = i\bra{\Lambda}(\lbrack\lbrack H_o,\{{a}^\dagger_b.a_j.\}\rbrack,T^{(1)}\rbrack + \lbrack V(t),\{{a}^\dagger_b.a_j.\}\rbrack)\ket{\Psi_{cc}} + i\sum_{i.a.} {\lambda^{a.}_{i.}}^{(1)}A^{j.b.}_{i.a.} 
-\end{equation}
-\begin{equation} 
-{Y^{a.}_{i.}}^{(1)}(\omega_1 + i\Gamma) = - \sum_{j.b.}{\eta^{b.}_{j.}}^{(1)}(\omega_1) + \sum_{k.c.}F^{k.c.}_{j.b.} {X^{c.}_{k.}}^{(1)}(\omega_1 + i\Gamma)) \times\{{(A + (\omega_1 + i\Gamma)I)}^{-1}\}^{i.a.}_{j.b.}
-\end{equation}
-where
-\begin{equation}
-{\eta^{b.}_{j.}}^{(1)}(\omega_1) = \bra{\Lambda}\lbrack V(\omega_1),\{{a}^\dagger_b.a_j.\}\rbrack\ket{\Psi_{cc}} ,
-\end{equation}
-and 
-\begin{equation}
-F^{k.c.}_{j.b.} = \bra{\Lambda}\lbrack\lbrack H_o,\{{a}^\dagger_b.a_j.\}\rbrack,\{{a}^\dagger_c.a_k.\}\rbrack\ket{\Psi_{cc}}  
-\end{equation}
-The expectation value of any time dependent operator $A$ in CC can be expanded in orders of perturbation.
-\begin{equation}
-\langle A \rangle = \bra{\Lambda}A\ket{\Psi_{cc}} + \sum_{i.a.}{\lambda^{a.}_{i.}}^{(1)}\bra{\Psi^{a.}_{i.}}e^{-\hat{T}(0)}A\ket{\Psi_{cc}} + \bra{\Lambda}\lbrack A,T^{(1)}\rbrack\ket{\Psi_{cc}} + .....
-\end{equation}
-Comparing this with equation (34), the CC linear response function can be determined.
-\begin{equation}
-\int_{-\infty}^{\infty}d\omega_1{\langle\langle A;V(\omega_1)\rangle\rangle}_{\omega_1 + i \Gamma}e^{(-i\omega_1 + \Gamma)t} \equiv \sum_{i.a.}{\lambda^{a.}_{i.}}^{(1)}\bra{\Psi^{a.}_{i.}}e^{-\hat{T}(0)}A\ket{\Psi_{cc}} + \bra{\Lambda}\lbrack A,T^{(1)}\rbrack\ket{\Psi_{cc}}
-\end{equation}
-In more general terms, the response function can be written as:
-\begin{equation}
-{\langle\langle A;B\rangle\rangle}_{\omega_1} = \sum_{i.a.} \bra{\Lambda}\lbrack A,\{{a}^\dagger_a.a_i.\}\rbrack\ket{ \Psi_{cc}}{X^{a.}_{i.}}(B,\omega_1) + \sum_{i.a.}\left\{\bra{\Lambda}\lbrack B,\{{a}^\dagger_a.a_i.\}\rbrack\ket{\Psi_{cc}} + \sum_{k.c.}F^{k.c.}_{i.a.}{X^{c.}_{k.}}(B,\omega_1)\right\}{X^{a.}_{i.}}(A,-\omega_1).
-\end{equation}
-where \centerline{${X^{a.}_{i.}}(B,\omega_1) = \sum_{j.b.}\left\{ {( -A + \omega_1I)}^{-1}\right\}^{j.b.}_{i.a.}\;B^{b.}_{j.},$}\\and \centerline{ $B^{b.}_{j.} = \bra{\Psi^{a.}_{i.}}e^{-\hat{T}(0)}B\ket{\Psi_{cc}}$ .}\\\\
-Thus for calculating the response functions, we need to solve two sets of
-linear equations for obtaining ${X^{a.}_{i.}}(B,\omega_1)$ and
-${X^{a.}_{i.}}(A,-\omega_1)$.
+%where
+%\begin{equation}
+%{X^{a.}_{i.}}^{(1)}(\omega_1 + i\Gamma)  = \sum_{j.b.}{\left\{{(-A + (\omega_1 + i \Gamma) I )}^{-1}\right\}}^{j.b.}_{i.a.}{\lambda^{b.}_{j.}}^{(1)}(\omega_1),
+%\end{equation}
+%and  
+%\begin{equation}
+%{\lambda^{b.}_{j.}}^{(1)}(\omega_1) = \bra{\Psi^{b.}_{j.}}e^{-\hat{T}(0)}V(\omega_1)\ket{\Psi_{cc}}.
+%\end{equation}
+%$A$ is the coupled cluster Jacobian matrix defined as:
+%\begin{equation}
+%A^{j.b.}_{i.a.} = \bra{\Psi^{a.}_{i.}}e^{-\hat{T}}\lbrack H_o,\{{a}^\dagger_b.a_j.\}\rbrack\ket{\Psi_{cc}}
+%\end{equation}
+%The above process is repeated with $\lambda^{j.}_{b.}$ amplitudes to obtain the derivative expressions and the Fourier transform $Y$.
+%\begin{equation}
+%\frac{d\;{\lambda^{b.}_{j.}}^{(1)}}{dt} = i\bra{\Lambda}(\lbrack\lbrack H_o,\{{a}^\dagger_b.a_j.\}\rbrack,T^{(1)}\rbrack + \lbrack V(t),\{{a}^\dagger_b.a_j.\}\rbrack)\ket{\Psi_{cc}} + i\sum_{i.a.} {\lambda^{a.}_{i.}}^{(1)}A^{j.b.}_{i.a.} 
+%\end{equation}
+%\begin{equation} 
+%{Y^{a.}_{i.}}^{(1)}(\omega_1 + i\Gamma) = - \sum_{j.b.}{\eta^{b.}_{j.}}^{(1)}(\omega_1) + \sum_{k.c.}F^{k.c.}_{j.b.} {X^{c.}_{k.}}^{(1)}(\omega_1 + i\Gamma)) \times\{{(A + (\omega_1 + i\Gamma)I)}^{-1}\}^{i.a.}_{j.b.}
+%\end{equation}
+%where
+%\begin{equation}
+%{\eta^{b.}_{j.}}^{(1)}(\omega_1) = \bra{\Lambda}\lbrack V(\omega_1),\{{a}^\dagger_b.a_j.\}\rbrack\ket{\Psi_{cc}} ,
+%\end{equation}
+%and 
+%\begin{equation}
+%F^{k.c.}_{j.b.} = \bra{\Lambda}\lbrack\lbrack H_o,\{{a}^\dagger_b.a_j.\}\rbrack,\{{a}^\dagger_c.a_k.\}\rbrack\ket{\Psi_{cc}}  
+%\end{equation}
+%The expectation value of any time dependent operator $A$ in CC can be expanded in orders of perturbation.
+%\begin{equation}
+%\langle A \rangle = \bra{\Lambda}A\ket{\Psi_{cc}} + \sum_{i.a.}{\lambda^{a.}_{i.}}^{(1)}\bra{\Psi^{a.}_{i.}}e^{-\hat{T}(0)}A\ket{\Psi_{cc}} + \bra{\Lambda}\lbrack A,T^{(1)}\rbrack\ket{\Psi_{cc}} + .....
+%\end{equation}
+%Comparing this with equation (34), the CC linear response function can be determined.
+%\begin{equation}
+%\int_{-\infty}^{\infty}d\omega_1{\langle\langle A;V(\omega_1)\rangle\rangle}_{\omega_1 + i \Gamma}e^{(-i\omega_1 + \Gamma)t} \equiv \sum_{i.a.}{\lambda^{a.}_{i.}}^{(1)}\bra{\Psi^{a.}_{i.}}e^{-\hat{T}(0)}A\ket{\Psi_{cc}} + \bra{\Lambda}\lbrack A,T^{(1)}\rbrack\ket{\Psi_{cc}}
+%\end{equation}
+%In more general terms, the response function can be written as:
+%\begin{equation}
+%{\langle\langle A;B\rangle\rangle}_{\omega_1} = \sum_{i.a.} \bra{\Lambda}\lbrack A,\{{a}^\dagger_a.a_i.\}\rbrack\ket{ \Psi_{cc}}{X^{a.}_{i.}}(B,\omega_1) + \sum_{i.a.}\left\{\bra{\Lambda}\lbrack B,\{{a}^\dagger_a.a_i.\}\rbrack\ket{\Psi_{cc}} + \sum_{k.c.}F^{k.c.}_{i.a.}{X^{c.}_{k.}}(B,\omega_1)\right\}{X^{a.}_{i.}}(A,-\omega_1).
+%\end{equation}
+%where \centerline{${X^{a.}_{i.}}(B,\omega_1) = \sum_{j.b.}\left\{ {( -A + \omega_1I)}^{-1}\right\}^{j.b.}_{i.a.}\;B^{b.}_{j.},$}\\and \centerline{ $B^{b.}_{j.} = \bra{\Psi^{a.}_{i.}}e^{-\hat{T}(0)}B\ket{\Psi_{cc}}$ .}\\\\
+%Thus for calculating the response functions, we need to solve two sets of
+%linear equations for obtaining ${X^{a.}_{i.}}(B,\omega_1)$ and
+%${X^{a.}_{i.}}(A,-\omega_1)$.
+
 %\newpage
 %\paragraph{Optical rotation calculations}~\\
 %Rosenfeld,\cite{Rosenfeld29} using semi-classical electrodynamic theory, showed
@@ -569,16 +730,21 @@ ${X^{a.}_{i.}}(A,-\omega_1)$.
 %{\lbrack\alpha\rbrack}_{\omega} = \frac{(72.0 \times 10^6){\hbar}^2 N_A\;\omega}{c^2{m_e}^2 M} \times \left[ \frac{1}{3}Tr(\textbf{G}^\prime)\right]
 %\end{equation}
 %where $\textbf{G}^\prime$ and $\omega$ are in atomic units, $N_A$ is Avogadro's number, c is the speed of light in (m/s), m$_{\text{e}}$ is the mass of electron (kg) and M is the molecular mass (amu). The $\textbf{G}^\prime$ tensor can be obtained from using the CCLR method.
-Thus, we can use this linear response formalism and can calculate the $\textbf{G}^\prime$ tensor
-using eq.(4) in which A is the dipole moment operator and B is the magnetic field. However, there 
-can be different representations of an operator which are referred to as gauges. It is observed that 
-in the truncated CCLR method if the length gauge representation of the dipole operator is used, i.e. $\mu \equiv r$ (in atomic units), the optical rotation results are origin dependent. This problem is overcome in CCLR by using the velocity
-gauge representation where $\mu \equiv r\times p$. However, both these gauges are equivalent for 
-exact wavefunctions. However, the velcity gauge calculated optical rotation does not decay to zero 
-at the static limit, i.e. when the external field is zero, which is an unphysical result. 
-To correct this problem, another representation called the modified velocity gauge (MVG)
-proposed by Pedersen \cite{Pedersen04} is used which shifts the values obtained
-by velocity gauge by its static limit. 
+
+
+
+%Thus, we can use this linear response formalism and can calculate the $\textbf{G}^\prime$ tensor
+%using eq.(4) in which A is the dipole moment operator and B is the magnetic field. However, there 
+%can be different representations of an operator which are referred to as gauges. It is observed that 
+%in the truncated CCLR method if the length gauge representation of the dipole operator is used, i.e. $\mu \equiv r$ (in atomic units), the optical rotation results are origin dependent. This problem is overcome in CCLR by using the velocity
+%gauge representation where $\mu \equiv r\times p$. However, both these gauges are equivalent for 
+%exact wavefunctions. However, the velcity gauge calculated optical rotation does not decay to zero 
+%at the static limit, i.e. when the external field is zero, which is an unphysical result. 
+%To correct this problem, another representation called the modified velocity gauge (MVG)
+%proposed by Pedersen \cite{Pedersen04} is used which shifts the values obtained
+%by velocity gauge by its static limit. 
+
+
 
 %\begin{equation}
 %\textbf{G}^{\prime}(\omega) = \text{-Im}\langle\langle\mu;m\rangle\rangle \equiv \text{- Im}\langle\langle r;r\times p\rangle\rangle
