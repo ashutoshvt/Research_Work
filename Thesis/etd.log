@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  24 APR 2018 12:34
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  24 APR 2018 14:15
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -782,29 +782,29 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 [87 <./figures_pno++/h2_4_polar_DS.pdf>] [88 <./figures_pno++/h2_4_optrot_lg_D.
 pdf>]) [89 <./figures_pno++/h2_4_optrot_lg_DS.pdf>]
 Chapter 6.
-(./etd.bbl [90
+(./conclude.tex [90
 
-] [91
+]) [91] (./etd.bbl [92] [93
 
-] [92] [93] [94]
+] [94] [95] [96]
 Missing character: There is no ï in font cmr12!
 Missing character: There is no ¿ in font cmr12!
 Missing character: There is no ¼ in font cmr12!
 Missing character: There is no Ã in font cmr12!
 Missing character: There is no ¤ in font cmr12!
- [95] [96] [97] [98] [99] [100] [101]
-[102] [103]
+ [97] [98]
+[99] [100] [101] [102] [103] [104] [105]
 Missing character: There is no â in font cmr12!
 Missing character: There is no € in font cmr12!
 Missing character: There is no  in font cmr12!
- [104]) [105] (./etd.aux)
+ [106]) [107] (./etd.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 2591 strings out of 493014
- 36523 string characters out of 6133351
+ 2594 strings out of 493014
+ 36557 string characters out of 6133351
  109766 words of memory out of 5000000
  6049 multiletter control sequences out of 15000+600000
  15905 words of font info for 55 fonts, out of 8000000 for 9000
@@ -831,10 +831,10 @@ e/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl12.pfb></usr/local/texlive
 2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/20
 16/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2016
 /texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on etd.pdf (115 pages, 1110024 bytes).
+Output written on etd.pdf (117 pages, 1113570 bytes).
 PDF statistics:
- 934 PDF objects out of 1000 (max. 8388607)
- 658 compressed objects within 7 object streams
+ 940 PDF objects out of 1000 (max. 8388607)
+ 662 compressed objects within 7 object streams
  0 named destinations out of 1000 (max. 500000)
  126 words of extra memory for PDF output out of 10000 (max. 10000000)
 

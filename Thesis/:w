@@ -1,0 +1,54 @@
+Over the years, our research group has investigated the performances of different 
+reduced-scaling/prefactor methods in the context of coupled cluster 
+linear response theory for calculating optical rotations\cite{}.
+In this regard, a recent paper by McAlexander and Crawford concluded that the 
+pair natural orbital\cite{} method 
+
+
+On the basis of the findings of Chapter3, we concluded that,
+the virtual natural orbit
+
+orbital relaxation, virtual NOs are not
+suited for higher-order property calculations such as dynamic
+polarizabilities, and that the occupation number is not an acceptable
+criterion for estimating the importance of a virtual orbital for such
+calculations.  Although the use of external space corrections based on CC2
+polarizabilities reduces the observed truncation errors, they are too
+relatively costly to be practical for large molecular systems.  Furthermore,
+the use of perturbed virtual NOs offers only slight improvement as compared to
+unperturbed virtual NOs.  CMOs, on the other hand, provide a much more stable
+mechanism for reducing the size of the virtual space --- with truncation of up
+to 50\% of the orbitals yielding shifts of less than 2\% as compared to
+full-space calculation -- but the source of their success lies in a
+significant cancellation of errors.  Although further systematic studies are
+needed, the dipole amplitude appears to provide a useful threshold for an {\em
+a priori} truncation of the CMO virtual space.
+
+
+We have developed a new formalism FVNO++ which offers a very
+compact representation of the virtual space for response
+property calculations. Based on plot studies on H$_2$O$_2$ using second-order
+electric dipole based perturbed densities, we conclude that this
+approach has faster convergence towards the full canonical result for both
+polarizabilities and optical rotations than the original FVNO approach.
+However, calculations with other choices of perturbed densities also need to be
+done, especially for bigger molecules to make the FVNO++ truncation scheme truly robust.
+We are currently in the process of a RI-CC2 linear response code\cite{} which we intend
+to use in conjunction with the FVNO++ formalism to tackle larger molecular systems.
+Furthermore, we propose to extend this approach to the reduced-scaling techniques based
+on pair natural orbitals\cite{}.
+
+We have a developed an extension of the PNO method, the PNO++
+approach for calculating response properties. The pair
+specific densities constructed in this approach strongly
+resemble in structure with the underlying response equations
+and preliminary results on linear chain hydrogen helices
+seem to indicate that the ONs obtained by diagonalizing these densities
+are a good metric for estimating the importance of a
+VNO in the response of the wavefunction. we plan to use this
+method with RI-CC2/CCSD linear response theory to calculate
+CC level properties of large solvated clusters.
+Furthermore, calculations on two and three dimensional structures
+involving different forms of second-order perturbed density
+are still running and are expected to give more insight
+which can be used to make PNO++ a truly black-box method.
