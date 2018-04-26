@@ -469,17 +469,46 @@ number of virtual orbitals removed.}}
 compares the performance of this modified FVNO method (FVNO(M)) with the regular 
 FVNO approach for calculating CCSD dynamic polarizabilities and specific rotations 
 of the H$_2$O$_2$/aDZ system at 589 nm. Unsurprisingly, the errors in the FVNO(M) 
-scheme are minimal compared to the original scheme for both polarozabilities and 
+scheme are minimal compared to the original scheme for both polarizabilities and 
 specific rotations even after 18 (out of 29) ``non-diffuse" VNOs are removed.
 Specifically, the specific rotations curves are much well behaved in the 
-FVNO(M) approach. The same behaviour can be expected for a majority of chiral molecules who 
+FVNO(M) approach. Similar trends have been observed for other excited state
+properties like excitation energies, oscillator strengths and rotational 
+strengths as well. Figure ~\ref{fig:fvno(m)_ee} plots the EOM-CCSD 
+excitation energies for the lowest four excited states of the H$_2$O$_2$/aDZ system
+in both FVNO and FVNO(M) procedures as a function of the number of virtual orbitals removed.
+\begin{MyFigure}[h!]
+\centering
+\includegraphics[width=0.6\linewidth]{figures_fvno++/fvno(m)_h2o2_adz_ee.pdf}
+\caption{{\footnotesize EOM-CCSD/aDZ excitation energies of the lowest four excited states of H$_2$O$_2$ in both FVNO and FVNO(M) schemes as a function of the number of virtual orbitals removed.}}
+\label{fig:fvno(m)_ee}
+\end{MyFigure}
+It can be easily observed that the FVNO(M) curve is very well-behaved for 
+all the four states and errors in excitation energies are less than 0.1 eV
+even after removing as much as 18 virtual orbitals i.e. 33 \% of the virtual
+space. One can see the exact same trend in figures ~\ref{fig:fvno(m)_os} and 
+~\ref{fig:fvno(m)_rs} which plot oscillator and rotational strengths respectively.
+\begin{MyFigure}[h!]
+\centering
+\includegraphics[width=0.6\linewidth]{figures_fvno++/fvno(m)_h2o2_adz_os.pdf}
+\caption{{\footnotesize EOM-CCSD/aDZ oscillator strengths of the lowest four excited states of H$_2$O$_2$ in both FVNO and FVNO(M) schemes as a function of the number of virtual orbitals removed.}}
+\label{fig:fvno(m)_os}
+\end{MyFigure}
+\begin{MyFigure}[h!]
+\centering
+\includegraphics[width=0.6\linewidth]{figures_fvno++/fvno(m)_h2o2_adz_rs.pdf}
+\caption{{\footnotesize EOM-CCSD/aDZ rotational strengths of the lowest four excited states of H$_2$O$_2$ in both FVNO and FVNO(M) schemes as a function of the number of virtual orbitals removed.}}
+\label{fig:fvno(m)_rs}
+\end{MyFigure}
+The same behaviour can be expected for a majority of chiral molecules who 
 like hydrogen peroxide require diffuse orbitals for a better description of the low lying 
-Rydberg states. However, extension of this method to larger systems is not straightforward as OSEs are not a very robust 
-crietria for selction of diffuse orbitals. Furthermore, not all diffuse orbitals 
-are equally important for response properties. The FVNO++ scheme on the other
-hand has a well-defined truncation criteria as the structure of the perturbed density
-used in this approach closely resembles the response functions used to 
-calculate these properties. Fig.~\ref{fig:fvno++_polar} 
+Rydberg states.  However, extension of this method to larger systems is not 
+straightforward as OSEs are not a very robust crietria for selction of diffuse 
+orbitals. Furthermore, not all diffuse orbitals are equally important for 
+response properties. The FVNO++ scheme on the other hand has a well-defined 
+truncation criteria as the structure of the perturbed density used in this 
+approach closely resembles the response functions used to calculate these 
+properties. Fig.~\ref{fig:fvno++_polar} 
 \begin{MyFigure}[h!]
 \centering
 \includegraphics[width=0.6\linewidth]{figures_fvno++/fvno++_h2o2_adz_polar.pdf}

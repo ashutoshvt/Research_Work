@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  24 APR 2018 14:15
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  26 APR 2018 18:41
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -236,11 +236,11 @@ inear-Response The-
 
  [6] (./etd.lof [7
 
-] [8])
+] [8] [9])
 \tf@lof=\write4
 \openout4 = `etd.lof'.
 
- [9] [10]
+ [10]
 Chapter 1.
 (./intro.tex
 Underfull \hbox (badness 10000) in paragraph at lines 13--77
@@ -671,20 +671,44 @@ Package pdftex.def Info: figures_fvno++/fvno(m)_h2o2_adz_optrot.pdf used on inp
 ut line 463.
 (pdftex.def)             Requested size: 281.85585pt x 176.1588pt.
 
-<figures_fvno++/fvno++_h2o2_adz_polar.pdf, id=548, 578.16pt x 361.35pt>
+<figures_fvno++/fvno(m)_h2o2_adz_ee.pdf, id=548, 578.16pt x 361.35pt>
+File: figures_fvno++/fvno(m)_h2o2_adz_ee.pdf Graphic file (type pdf)
+
+<use figures_fvno++/fvno(m)_h2o2_adz_ee.pdf>
+Package pdftex.def Info: figures_fvno++/fvno(m)_h2o2_adz_ee.pdf used on input l
+ine 482.
+(pdftex.def)             Requested size: 281.85585pt x 176.1588pt.
+
+<figures_fvno++/fvno(m)_h2o2_adz_os.pdf, id=549, 578.16pt x 361.35pt>
+File: figures_fvno++/fvno(m)_h2o2_adz_os.pdf Graphic file (type pdf)
+
+<use figures_fvno++/fvno(m)_h2o2_adz_os.pdf>
+Package pdftex.def Info: figures_fvno++/fvno(m)_h2o2_adz_os.pdf used on input l
+ine 493.
+(pdftex.def)             Requested size: 281.85585pt x 176.1588pt.
+
+<figures_fvno++/fvno(m)_h2o2_adz_rs.pdf, id=550, 578.16pt x 361.35pt>
+File: figures_fvno++/fvno(m)_h2o2_adz_rs.pdf Graphic file (type pdf)
+
+<use figures_fvno++/fvno(m)_h2o2_adz_rs.pdf>
+Package pdftex.def Info: figures_fvno++/fvno(m)_h2o2_adz_rs.pdf used on input l
+ine 499.
+(pdftex.def)             Requested size: 281.85585pt x 176.1588pt.
+
+<figures_fvno++/fvno++_h2o2_adz_polar.pdf, id=551, 578.16pt x 361.35pt>
 File: figures_fvno++/fvno++_h2o2_adz_polar.pdf Graphic file (type pdf)
 
 <use figures_fvno++/fvno++_h2o2_adz_polar.pdf>
 Package pdftex.def Info: figures_fvno++/fvno++_h2o2_adz_polar.pdf used on input
- line 485.
+ line 514.
 (pdftex.def)             Requested size: 281.85585pt x 176.1588pt.
 
-<figures_fvno++/fvno++_h2o2_adz_optrot.pdf, id=549, 578.16pt x 361.35pt>
+<figures_fvno++/fvno++_h2o2_adz_optrot.pdf, id=552, 578.16pt x 361.35pt>
 File: figures_fvno++/fvno++_h2o2_adz_optrot.pdf Graphic file (type pdf)
 
 <use figures_fvno++/fvno++_h2o2_adz_optrot.pdf>
 Package pdftex.def Info: figures_fvno++/fvno++_h2o2_adz_optrot.pdf used on inpu
-t line 498.
+t line 527.
 (pdftex.def)             Requested size: 281.85585pt x 176.1588pt.
  [64]
 
@@ -694,26 +718,37 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
 [66 <./figures_fvno++/fvno(m)_h2o2_adz_optrot.pdf>]
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[67 <./figures_fvno++/fvno++_h2o2_adz_polar.pdf>]) [68 <./figures_fvno++/fvno++
-_h2o2_adz_optrot.pdf>] [69]
-Chapter 5.
-(./PNO++.tex [70
 
-] [71] [72] [73]
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[67 <./figures_fvno++/fvno(m)_h2o2_adz_ee.pdf>] [68 <./figures_fvno++/fvno(m)_h
+2o2_adz_os.pdf>]) [69 <./figures_fvno++/fvno(m)_h2o2_adz_rs.pdf>] [70 <./figure
+s_fvno++/fvno++_h2o2_adz_polar.pdf> <./figures_fvno++/fvno++_h2o2_adz_optrot.pd
+f>]
+Chapter 5.
+(./PNO++.tex [71
+
+] [72] [73] [74]
 Underfull \hbox (badness 10000) in paragraph at lines 140--148
 
  []
 
-[74]
+[75]
 Underfull \hbox (badness 10000) in paragraph at lines 152--165
 
  []
 
-[75]
+[76]
 Underfull \hbox (badness 10000) in paragraph at lines 172--177
 
  []
@@ -723,8 +758,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 181--187
 
  []
 
-[76] [77] [78] [79] [80] [81] [82]
-<figures_pno++/pno_m_h2_7_adz_polar.pdf, id=681, 578.16pt x 361.35pt>
+[77] [78] [79] [80] [81] [82] [83]
+<figures_pno++/pno_m_h2_7_adz_polar.pdf, id=738, 578.16pt x 361.35pt>
 File: figures_pno++/pno_m_h2_7_adz_polar.pdf Graphic file (type pdf)
 
 <use figures_pno++/pno_m_h2_7_adz_polar.pdf>
@@ -732,7 +767,7 @@ Package pdftex.def Info: figures_pno++/pno_m_h2_7_adz_polar.pdf used on input l
 ine 394.
 (pdftex.def)             Requested size: 281.85585pt x 176.1588pt.
 
-<figures_pno++/pno_m_h2_7_adz_optrot.pdf, id=682, 578.16pt x 361.35pt>
+<figures_pno++/pno_m_h2_7_adz_optrot.pdf, id=739, 578.16pt x 361.35pt>
 File: figures_pno++/pno_m_h2_7_adz_optrot.pdf Graphic file (type pdf)
 
 <use figures_pno++/pno_m_h2_7_adz_optrot.pdf>
@@ -740,7 +775,7 @@ Package pdftex.def Info: figures_pno++/pno_m_h2_7_adz_optrot.pdf used on input
 line 406.
 (pdftex.def)             Requested size: 281.85585pt x 176.1588pt.
 
-<figures_pno++/h2_4_polar_D.pdf, id=683, 578.16pt x 361.35pt>
+<figures_pno++/h2_4_polar_D.pdf, id=740, 578.16pt x 361.35pt>
 File: figures_pno++/h2_4_polar_D.pdf Graphic file (type pdf)
 
 <use figures_pno++/h2_4_polar_D.pdf>
@@ -748,7 +783,7 @@ Package pdftex.def Info: figures_pno++/h2_4_polar_D.pdf used on input line 423.
 
 (pdftex.def)             Requested size: 281.85585pt x 176.1588pt.
 
-<figures_pno++/h2_4_polar_DS.pdf, id=684, 578.16pt x 361.35pt>
+<figures_pno++/h2_4_polar_DS.pdf, id=741, 578.16pt x 361.35pt>
 File: figures_pno++/h2_4_polar_DS.pdf Graphic file (type pdf)
 
 <use figures_pno++/h2_4_polar_DS.pdf>
@@ -756,7 +791,7 @@ Package pdftex.def Info: figures_pno++/h2_4_polar_DS.pdf used on input line 440
 .
 (pdftex.def)             Requested size: 281.85585pt x 176.1588pt.
 
-<figures_pno++/h2_4_optrot_lg_D.pdf, id=685, 578.16pt x 361.35pt>
+<figures_pno++/h2_4_optrot_lg_D.pdf, id=742, 578.16pt x 361.35pt>
 File: figures_pno++/h2_4_optrot_lg_D.pdf Graphic file (type pdf)
 
 <use figures_pno++/h2_4_optrot_lg_D.pdf>
@@ -764,49 +799,49 @@ Package pdftex.def Info: figures_pno++/h2_4_optrot_lg_D.pdf used on input line
 448.
 (pdftex.def)             Requested size: 281.85585pt x 176.1588pt.
 
-<figures_pno++/h2_4_optrot_lg_DS.pdf, id=686, 578.16pt x 361.35pt>
+<figures_pno++/h2_4_optrot_lg_DS.pdf, id=743, 578.16pt x 361.35pt>
 File: figures_pno++/h2_4_optrot_lg_DS.pdf Graphic file (type pdf)
 
 <use figures_pno++/h2_4_optrot_lg_DS.pdf>
 Package pdftex.def Info: figures_pno++/h2_4_optrot_lg_DS.pdf used on input line
  462.
 (pdftex.def)             Requested size: 281.85585pt x 176.1588pt.
- [83] [84 <./figures_pno++/pno_m_h2_7_adz_polar.pdf>] [85 <./figures_pno++/pno_
-m_h2_7_adz_optrot.pdf>] [86 <./figures_pno++/h2_4_polar_D.pdf>]
+ [84] [85 <./figures_pno++/pno_m_h2_7_adz_polar.pdf>] [86 <./figures_pno++/pno_
+m_h2_7_adz_optrot.pdf>] [87 <./figures_pno++/h2_4_polar_D.pdf>]
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[87 <./figures_pno++/h2_4_polar_DS.pdf>] [88 <./figures_pno++/h2_4_optrot_lg_D.
-pdf>]) [89 <./figures_pno++/h2_4_optrot_lg_DS.pdf>]
+[88 <./figures_pno++/h2_4_polar_DS.pdf>] [89 <./figures_pno++/h2_4_optrot_lg_D.
+pdf>]) [90 <./figures_pno++/h2_4_optrot_lg_DS.pdf>]
 Chapter 6.
-(./conclude.tex [90
+(./conclude.tex [91
 
-]) [91] (./etd.bbl [92] [93
+] [92] [93]) (./etd.bbl [94] [95
 
-] [94] [95] [96]
+] [96] [97] [98]
 Missing character: There is no ï in font cmr12!
 Missing character: There is no ¿ in font cmr12!
 Missing character: There is no ¼ in font cmr12!
 Missing character: There is no Ã in font cmr12!
 Missing character: There is no ¤ in font cmr12!
- [97] [98]
-[99] [100] [101] [102] [103] [104] [105]
+ [99]
+[100] [101] [102] [103] [104] [105] [106] [107]
 Missing character: There is no â in font cmr12!
 Missing character: There is no € in font cmr12!
 Missing character: There is no  in font cmr12!
- [106]) [107] (./etd.aux)
+ [108]) [109] (./etd.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 2594 strings out of 493014
- 36557 string characters out of 6133351
- 109766 words of memory out of 5000000
- 6049 multiletter control sequences out of 15000+600000
+ 2612 strings out of 493014
+ 37187 string characters out of 6133351
+ 109799 words of memory out of 5000000
+ 6064 multiletter control sequences out of 15000+600000
  15905 words of font info for 55 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  37i,19n,23p,776b,237s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -831,10 +866,10 @@ e/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl12.pfb></usr/local/texlive
 2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/20
 16/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2016
 /texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on etd.pdf (117 pages, 1113570 bytes).
+Output written on etd.pdf (119 pages, 1201979 bytes).
 PDF statistics:
- 940 PDF objects out of 1000 (max. 8388607)
- 662 compressed objects within 7 object streams
+ 1001 PDF objects out of 1200 (max. 8388607)
+ 705 compressed objects within 8 object streams
  0 named destinations out of 1000 (max. 500000)
- 126 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 141 words of extra memory for PDF output out of 10000 (max. 10000000)
 
