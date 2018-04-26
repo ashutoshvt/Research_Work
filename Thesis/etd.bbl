@@ -1,4 +1,4 @@
-\begin{thebibliography}{10}
+\begin{thebibliography}{100}
 
 \bibitem{Abrams04}
 M.~L. Abrams and C.~D. Sherrill.
@@ -106,6 +106,13 @@ T.~Daniel Crawford and Henry~F. Schaefer.
 \bibitem{silva04}
 C.~O. da~Silva, Benedetta Mennucci, and T.~Vreven.
 \newblock {\em J. Org. Chem}, 69:8161, 2004.
+
+\bibitem{JensenGordon96}
+Paul~N Day, Jan~H. Jensen, Mark~S. Gordon, Simon~P. Webb, Walter~J. Stevens,
+  Morris Krauss, David Garmer, Harold Basch, and Drora Cohen.
+\newblock An effective fragment method for modeling solvent effects in quantum
+  mechanical calculations.
+\newblock {\em J. Chem. Phys.}, 105(5):1968--1986, 1996.
 
 \bibitem{DePrince13}
 A.~E. DePrince and C.~D. Sherrill.
@@ -355,6 +362,19 @@ Frank Neese, Frank Wennmohs, and Andreas Hansen.
   approaches: An attempt to revive the pair natural orbital method.
 \newblock {\em J. Chem. Phys.}, 130(114108):114108--1 -- 114108--18, 2009.
 
+\bibitem{Neugebauer09}
+Johannes Neugebauer.
+\newblock On the calculation of general response properties in subsystem
+  density functional theory.
+\newblock {\em J. Chem. Phys.}, page 084104, 2009.
+
+\bibitem{Neugebauer05}
+Johannes Neugebauer, M.~J. Louwerse, E.~J. Baerends, and Tomasz~Adam
+  Wesolowski.
+\newblock The merits of the frozen-density embedding scheme to model
+  solvatochromatic shifts.
+\newblock {\em J. Chem. Phys.}, 122:094115, 2005.
+
 \bibitem{Olsen85}
 Jeppe Olsen and Poul Jorgensen.
 \newblock {\em J. Chem. Phys.}, 82:3235, 1985.
@@ -566,6 +586,11 @@ Andrew~G. Taube and Rodney~J. Bartlett.
   to decomposition of nitroethane.
 \newblock {\em J. Chem. Phys.}, 128(164101):164101--1 -- 161101--17, April
   2008.
+
+\bibitem{Tomasi05}
+Jacopo Tomasi, Benedetta Mennucci, and Roberto Cammi.
+\newblock Quantum mechanical continuum solvation models.
+\newblock {\em Chem. Rev.}, 105(8):2999--3093, July 2005.
 
 \bibitem{psi4}
 Justin~M. Turney, Andrew~C. Simmonett, Robert~M. Parrish, Edward~G. Hohenstein,
