@@ -160,6 +160,14 @@ J.~Friedrich, H.~R. McAlexander, A.~Kumar, and T.~D. Crawford.
 \newblock Incremental evaluation of coupled cluster dipole polarizabilities.
 \newblock {\em Phys. Chem. Chem. Phys.}, 17:14284--14296, 2015.
 
+\bibitem{Friese12}
+Daniel~H. Friese, Nina O.~C. Winter, Patrick Balzerowski, Raffael Schwan, and
+  Christof H{\"a}ttig.
+\newblock Large scale polarizability calculations using the approximate coupled
+  cluster model cc2 and mp2 combined with the resolution-of-the-identity
+  approximation.
+\newblock {\em The Journal of Chemical Physics}, 136(17):174106, 2012.
+
 \bibitem{Gauss98}
 J.~Gauss.
 \newblock The coupled-cluster method.
@@ -268,10 +276,6 @@ Tatiana Korona, Klaus Pfl\"{u}ger, and Hans-Joachim Werner.
 \newblock {\em Phys. Chem. Chem. Phys.}, 6:2059--2065, March 2004.
 
 \bibitem{Kumar18:1}
-A.~Kumar and T.~D. Crawford.
-\newblock {\em manuscript in preparation}.
-
-\bibitem{Kumar18:2}
 A.~Kumar and T.~D. Crawford.
 \newblock {\em manuscript in preparation}.
 
@@ -403,13 +407,6 @@ Thomas~Bondo Pedersen and Berta Fernandez.
 Thomas~Bondo Pedersen and Henrik Koch.
 \newblock Coupled cluster response functions revisited.
 \newblock {\em J. Chem. Phys.}, 106(19):8059--8072, May 1997.
-
-\bibitem{Pedersen04}
-Thomas~Bondo Pedersen, Henrik Koch, Linus Boman, and Alfredo~M.J. Sanchez~de
-  Meras.
-\newblock Origin invariant calculation of optical rotation without recourse to
-  london orbitals.
-\newblock {\em Chem. Phys. Lett.}, 393:319--326, June 2004.
 
 \bibitem{Chong18}
 C.~{Peng}, M.~C. {Clement}, and E.~F. {Valeev}.

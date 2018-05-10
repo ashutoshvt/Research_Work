@@ -123,7 +123,8 @@ H{\"a}ttig and co-workers were the first to extend this scheme to excited states
 PNOs generated from CIS(D) densities at CC2 level of theory\cite{Hattig13} and recently with CCSD.\cite{Hattig18}. Valeev and 
 co-workers\cite{Chong18} recently implemented a state-averaged L-PNO-CCSD simulation program by taking an average of the 
 CIS(D) densities over a desired set of excited states. Similar works employing state-specific natural 
-transition orbitals and natural orbitals for calculating excitation energies have also been reported\cite{Mester17,Mester18,Baudin17,HofenerKlopper17}. Our group implemented the LPNO scheme in conjunction with CC2 and CCSD linear response (LR) theory  
+transition orbitals and natural orbitals for calculating excitation energies have also been reported\cite{Mester17,Mester18,Baudin17,HofenerKlopper17}. 
+Our group implemented the LPNO scheme in conjunction with CC2 and CCSD linear response (LR) theory  
 to calculate dynamic polarizabilities and specific rotations of different chiral molecules ranging from linear
 (H2)n helices to cagelike 1r-4r-norbornenone, where consistent with earlier studies, PNOs were found
 to be much more compact than the PAOs and OSVs for representing the wavefunction. However, the truncation errors 
@@ -134,7 +135,8 @@ capture the response of the wavefunction, as shown in our earlier work with natu
 we have recently demonstrated that the NOs obtained from ``perturbation aware" densities are better suited
 for calculating these response properties.\cite{Kumar18:1} In this paper, we extend this approach which we have named 
 PNO++ by constructing second-order pair specific perturbed densities, and compare its performance with 
-the regular method for the same test systems as our earlier PNO paper.
+the regular method.
+% for the same test systems as our earlier PNO paper.
 \section{Theory}
 \subsection{Coupled Cluster Response Theory}
 Coupled cluster (CC) response theory has been proven to be quite a reliable and accurate theoretical
@@ -200,18 +202,21 @@ where,
 & \bar{B}^{'}_{\mu} = \langle 0|(1 + \hat{\Lambda})|\big[\bar{B},\tau_\mu\big] |0 \rangle.
 \end{split}
 \end{equation}
+\\
 Here $\tau_\mu$, $\tau_\nu$ are operators which generate excited determinats $|\mu\rangle$
 and $|\nu\rangle$ by acting on the reference wavefunction $|0\rangle$. Once, we solve for 
 $X_{\nu}^{B}$ and $Y_{\nu}^{B}$ amplitudes, the first-order perturbed density can be built 
 from eq.(5.3) to construct the CC-LRF. Elements of the dynamic polarizability ($\bm{\alpha}$) 
 and optical rotation ($\bm{\beta}$) tensors can be obtained from the LRF with appropriate 
 perturbation operators. For example,
+\\
 \begin{equation}
 \begin{split}
 & \alpha_{xy}(\omega) = {\langle\langle \mu_x;\mu_y\rangle\rangle}_{\omega_1}\\
 &\beta_{xy}(\omega) = {-\text{Im} \langle\langle \mu_x;m_y\rangle\rangle}_{\omega_1} \\
 \end{split}
 \end{equation}
+\\
 where $\bm{\mu} = \sum_i q_i \bm{r_i} $, $\bm{m} = \sum_i \frac{q_i}{2m_i} \bm{r_i} \times \bm{p_i}$
 and ``Im" signifies that $\beta_{xy}(\omega)$ equals the imaginary part of the corresponding LRF.
 \subsection{Ground State PNOs}
@@ -219,20 +224,24 @@ The first step in any local correlation approach is the induction of sparsity in
 occupied space. Standard techniques like Boys-Foster, Pipek-Mezey\cite{BoughtonPulay93} accomplish this by 
 producing localized MOs or LMOs. The PNOs for a given pair of LMOs $ij$ can then be 
 defined by a unitary rotation of the virtual orbitals,
+\\
 \begin{equation}
 |\bm{\bar{a}}^{ij}\rangle = \sum_a |a\rangle \bm{Q}^{ij}_{a\bar{a}}
 \end{equation}
 where the transformation matrix $\bm{Q}^{ij}_{a\bar{a}}$ is the eigenvector
 of the pair $ij$'s contribution to the virtual-virtual block of the one
 electron density matrix (1-RDM) i.e $\bm{D} = \sum\limits_{ij}[\bm{D}^{ij}]$.
+\\
 \begin{equation}
 \bm{D}^{ij} \bm{Q}^{ij} = \bm{Q}^{ij} \bm{n}^{ij}
 \end{equation} 
+\\
 The eigenvalues $\bm{n}^{ij}$ are referred to as ``occupation numbers" (ONs) and 
 can be seen as a metric for estimating the importance of the corresponding PNO
-for describing electron correlation effects for the pair $ij$. For CCSD/CC2 
+for describing electron correlation effects for the pair $ij$. For CCSD 
 ground state calculations, approximate pair densities are usually formed from 
 the MP2 amplitudes,
+\\
 \begin{equation}
 \bm{D}^{ij} = \frac{2}{1+\delta_{ij}} (\bm{T}^{ij}\tilde{\bm{T}}^{ij\dagger} + \bm{T}^{ij\dagger}\tilde{\bm{T}}^{ij})
 \end{equation}
@@ -250,18 +259,19 @@ $i^{th}$ and $j^{th}$ diagonal elements of the Fock matrix in the LMO basis and
 $\epsilon_a$, $\epsilon_b$ are the orbital energies of the canonical virtual orbitals
 $a$ and $b$ respectively. The PNOs with ONs smaller than a given threshold (usually
 in $10^{-6} - 10^{-8}$ range) are then neglected as they have minimal contributions
-to the total correlation energy. Finally, the canonical CC2/CCSD equations are reformulated
+to the total correlation energy. Finally, the canonical CCSD equations are reformulated
 or refactored in terms of these truncated PNO transformations. It should be noted that the virtual
 spaces of different pairs of LMOs are non-orthogonal to each other due to which the transformation
 of amplitudes from one pair to another requires a overlap metric given by, 
+\\
 \begin{equation}
 %\bm{S}^{ij,kl}_{\bar{a}_{ij},\bar{a}_{kl}} = {\bm{Q}^{ij}_{a,\bar{a}_{ij}}}^{\dagger} {\bm{Q}^{kl}_{a,\bar{a}_{kl}}}
 \bm{S}^{ij,kl} = {\bm{Q}^{ij}}^{\dagger} \bm{Q}^{kl}
 \end{equation}
 \subsection{Perturbed PNOs}
-It was shown from our earlier work that the regular LPNO-[CCSD/CC2]-LR approach has
+It was shown from our earlier work that the regular LPNO-CCSD-LR approach has
 very slow convergence towards the full canonical result both for dynamic polarizabilities
-and specific rotations. This is unsurprising since the sparsity of perturbed 
+and specific rotations. This is unsurprising since the sparsity pattern in the perturbed 
 and unperturbed amplitudes are usually very different from each other. Thus, the 
 pair densities should be able to capture the response of the ground state amplitudes. 
 Recent reduced scaling works on EOM-CC2/CCSD excitation energies employ 
@@ -272,77 +282,102 @@ obtained from finite field procedures. Due to this constraint, two different
 schemes could be explored where a) PNOs are defined from perturbed densities b) effective PNOs 
 are obtained by a union of truncated PNOs defined from MP2 and perturbed densities. It should
 be noted that one can't just add ground state and perturbed densities together to define an effective
-density as they are not in the same units. We have implemented scheme a) in this work and call it LPNO++.
+density as they are not in the same units. We have implemented scheme a) in this work and call it PNO++.
 This approach can be justified due to the fact that our target is not total energies but the 
 derivative of the total energies in the presence of external fields. Furthermore, it can
 be shown that on replacing the CC ground state amplitudes with that of MP2 in CC-LR theory
-one introduces minimal errors for both polarizabilities and specific rotations.\cite{Kumar18:2} 
-Hence, even though LPNO++ can't be expected to work as well as LPNO for ground state 
+one introduces minimal errors for both polarizabilities and specific rotations.\cite{Kumar18:1} 
+Hence, even though PNO++ can't be expected to work as well as the LPNO approach for ground state 
 calculations, it can capture the response of the wavefunction very efficiently and 
-hence should perform a lot better for these kinds of properties. The LPNO++ approach
+hence should perform a lot better for these kinds of properties. The PNO++ approach
 involves creation of a perturbation specific density for each $ij$ pair. 
 This is an extension of our work on natural orbitals where we showed that second-order
 perturbed densities can be used quite efficiently for calculating response properties\cite{Kumar18:1}.
-For a given perturbation A, the LPNO++ density is constructed by replacing the MP2 
+For a given perturbation A, the PNO++ density is constructed by replacing the MP2 
 $T^{ij}_{ab}$ amplitudes by the corresponding perturbed amplitudes $X^{ij}_{ab}$.
+\\
 \begin{equation}
 \bm{D}^{A;ij} = \frac{2}{1+\delta_{ij}} (\bm{X}^{ij}\bm{\tilde{X}}^{ij\dagger} + \bm{X}^{ij\dagger}\bm{\tilde{X}}^{ij})
 \end{equation}
 Rewriting the first part of eq.(5.4),
+\\
 \begin{equation}
 X_{\mu}^{A} = -\sum_{\nu}{{(\bar{H} - \omega I)}^{-1}}_{\mu\nu}\bar{A}_{\nu}
 \end{equation}
 one can see that an obvious guess for $X^{ij}_{ab}$ amplitudes could be constructed as
+\\
 \begin{equation}
-X^{ij}_{ab} =  \frac{\bar{A}^{ij}_{ab}}{f_{ii} + f_{jj} - \epsilon_a - \epsilon_b} 
+%X^{ij}_{ab} =  \frac{\bar{A}^{ij}_{ab}}{f_{ii} + f_{jj} - \epsilon_a - \epsilon_b} 
+X^{ij}_{ab} =  \frac{\bar{A}^{ij}_{ab}}{\bar{H}_{ii} + \bar{H}_{jj} - \bar{H}_{aa} - \bar{H}_{bb}} 
 \end{equation} 
+\\
 since the leading contribution to the inverse of the diagonally dominant $(\bar{H} - \omega I)$ matrix 
-would come from the inverse of its diagonal elements, i.e. $f_{ii} + f_{jj} - \epsilon_a - \epsilon_b$. 
+would come from the inverse of its diagonal elements, i.e. $\bar{H}_{ii} + \bar{H}_{jj} - \bar{H}_{aa} - \bar{H}_{bb}$. 
 Also, $\bar{A}$ has been approximated by using MP2 amplitudes for the similarity transformation,
+\\
 \begin{equation}
 \begin{split}
 \bar{A}^{ij}_{ab} = P_{ij}^{ab}\bigg[\sum_e t^{ij}_{eb}[A^a_e - & t^m_a A^m_e] -\sum_m t^{mj}_{ab}[A^m_i - t^i_e A^m_e]\bigg] \\
 & P_{ij}^{ab} f_{ij}^{ab}  = f_{ij}^{ab} + f_{ji}^{ba}
 \end{split}
 \end{equation}
-Furthermore, we have taken $omega_1$ as zero so that we can use the same density for response calculations at
-multiple frequencies. This can be justified as the sparsity of the perturbed amplitudes should more or less
+\\
+Furthermore, we have taken $\omega_1$ as zero so that we can use the same density for response calculations at
+multiple frequencies. This can be justified as the sparsity pattern of the perturbed amplitudes should more or less
 stay the same at the frequencies we are interested in. In this approach, the weak pair approximation can also 
 be employed by using a pair-pseudoresponse metric,
+\\
 \begin{equation}
 e^{A}_{ab} =  \sum_{ij} \bar{A}^{ij}_{ab}\bm{\tilde{X}}^{ij}_{ab}.
 \end{equation}
+\\
 All the pairs whose pseudoresponses are below a given threshold can be considered as weak pairs and neglected. 
 \section{Computational Details}
-The ultimate goal of this work is to be able to carry out response calculations of large solvated molecular clusters.
-for which one would need a production level CC2/CCSD-LPNO++-LR code. As can be seen from eq (5.4), such a code would
-involve reconstruction of $\bar{H}$ elements in every iteration of response equations from the density-fitted 
-3-centered integrals. However, before investing a lot of time and effort in this regard, we use a simulation code in 
-this work to test if the LPNO++ approach can offer a more compact virtual space for calculating these properties. 
-As a result, we mostly focus on small chiral systems of varying topologies: (linear) (P)-$(H_2)_n$ helices and (M)-1-Fluoralkanes, 
-(two-dimensional) (S)-1-Phenylethanol, (three-dimensional cagelike) (1R,4R)-Norbornenone and (1R,5R)-$\beta$-Pinene. 
-Dynamic polarizabilities and specific rotations calculations are carried out for all of these systems within the CC2,CCSD-LR
-formalism with aug-cc-pVDZ\cite{Dunning89,Kendall92,Woon94} basis set at 589 nm using Psi4 and Psi4Numpy software packages\cite{Parrish17,Smith18}.
-Furthermore, the electric dipole operator $\mu$ is represented in length gauge (LG) for polarizabilities
-while for specific rotations both LG and modified velocity gauge (MVG)\cite{Pedersen04} representations are used.
-The choice of perturbed pair density for polarizabilities are pretty straightforward as its LRF only involves 
-the electric dipole operator. Thus, one takes an average of the density corresponding to this operator over all cartesian 
-compoments to define our virtual space. i,e. $ {\bm{D}^{\mu;ij}} = \sum\limits_q \frac{1}{3}[{\bm{D}^{\mu_q;ij}}]$,
-where $q \equiv [x,y,z]$. Since, specific rotation's LRF has both electric and magnetic dipole operators, we use 
-the associated densities individually and compare their performances in this work. As the MVG representation expresses
-electric dipole in terms of the momentum operator $\hat{p}$, we use ${\bm{D}^{p;ij}}$ instead of ${\bm{D}^{\mu;ij}}$.\\
+The ultimate goal of this work is to be able to carry out CCSD response calculations of large solvated molecular clusters
+for which one would need a production level CCSD-PNO++-LR code. As can be seen from eq (5.4), such a code would
+involve reconstruction of $\bar{H}$ elements in every iteration of the response equations. 
+%from the density-fitted 
+%3-centered integrals. 
+However, before investing a lot of time and effort in this regard, we use a simulation code in 
+this work to test if the PNO++ approach can offer a more compact virtual space for calculating these properties. 
+we use linear (P)-$(H_2)_n$ helices as test cases as these are ideal systems for demonstrating 
+the efficiency of the local correlation approaches.
+%mostly focus on small chiral systems of varying topologies: (linear) (P)-$(H_2)_n$ helices and (M)-1-Fluoralkanes, 
+%(two-dimensional) (S)-1-Phenylethanol, (three-dimensional cagelike) (1R,4R)-Norbornenone and (1R,5R)-$\beta$-Pinene. 
+Dynamic polarizabilities and specific rotations calculations are carried out within the CCSD-LR
+formalism with the aug-cc-pVDZ\cite{Dunning89,Kendall92,Woon94} basis set at 589 nm using Psi4 and Psi4Numpy software packages\cite{Parrish17,Smith18}. Furthermore, the electric dipole operator $\mu$ is represented in length gauge (LG) for both polarizabilities
+and specific rotation calculations. Also, we have chosen electric dipole based perturbed pair density for defining
+our PNO space:  %In this approach, an average of the density corresponding to this operator over all cartesian
+%compoments to define our virtual space. i,e. 
+$ {\bm{D}^{\mu;ij}} = \sum\limits_q \frac{1}{3}[{\bm{D}^{\mu_q;ij}}]$, where $q \equiv [x,y,z]$.
+%polarizabilities are pretty straightforward as its LRF only involves
+%the electric dipole operator. Thus, one takes an average of the density corresponding to this operator over all cartesian
+%compoments to define our virtual space. i,e. $ {\bm{D}^{\mu;ij}} = \sum\limits_q \frac{1}{3}[{\bm{D}^{\mu_q;ij}}]$,
+%where $q \equiv [x,y,z]$
+%Furthermore, the electric dipole operator $\mu$ is represented in length gauge (LG) for polarizabilities
+%while for specific rotations both LG and modified velocity gauge (MVG)\cite{Pedersen04} representations are used.
+%The choice of perturbed pair density for polarizabilities are pretty straightforward as its LRF only involves 
+%the electric dipole operator. Thus, one takes an average of the density corresponding to this operator over all cartesian 
+%compoments to define our virtual space. i,e. $ {\bm{D}^{\mu;ij}} = \sum\limits_q \frac{1}{3}[{\bm{D}^{\mu_q;ij}}]$,
+%where $q \equiv [x,y,z]$. Since, specific rotation's LRF has both electric and magnetic dipole operators, we use 
+%the associated densities individually and compare their performances in this work. As the MVG representation expresses
+%electric dipole in terms of the momentum operator $\hat{p}$, we use ${\bm{D}^{p;ij}}$ instead of ${\bm{D}^{\mu;ij}}$.\\
+\\\\
 One of the advantages of the simulation code is that it requires minimal changes in the canonical CCLR code. In this
 procedure, the residual of the CC amplitude equations, ($R^{ij}, R^{i}$) is transformed from the canonical MO basis to 
-the PNO basis in every iteration.
+the PNO basis in every iteration,
+\\
 \begin{equation}
 \begin{split}
 &\bm{R}^{ij} = {\bm{Q}^{ij}}^{\dagger} R^{ij} \bm{Q}^{ij}\\
-&\bm{R}^{ii} = {\bm{Q}^{ii}}^{\dagger} R^{i} \bm{Q}^{ii}\\
+&\bm{R}^{ii} = {\bm{Q}^{ii}}^{\dagger} R^{i} \bm{Q}^{ii}.\\
 \end{split}
 \end{equation}
+\\
 One can can continue to work in the PNO basis but since the virtual-virtual block of the Fock matrix is 
 not diagonal in this basis, the convergence of the amplitude equations is expected to be slower. Thus, its common to 
 use a semicanonical PNO basis which diagonalizes $\bm{F}^{ij}_{vir}$,
+\\
 \begin{equation}
 \begin{split}
 &{\bm{U}^{ij}}^{\dagger} \bm{F}^{ij}_{vir} \bm{U}^{ij} = \bm{\Lambda}^{ij} \\
@@ -350,28 +385,35 @@ use a semicanonical PNO basis which diagonalizes $\bm{F}^{ij}_{vir}$,
 &\bm{\bar{R}}^{ii} = {\bm{U}^{ii}}^{\dagger} \bm{R}^{ii} \bm{U}^{ii}\\
 \end{split}
 \end{equation}
+\\
 where $\bm{\Lambda}^{ij}$ is the diagonal matrix containing orbital energies ($\bm{\epsilon}^{ij}_{a}$, $\bm{\epsilon}^{ij}_{b}, ..$).
 Subsequently, the preconditioner is applied to the residual to calculate the increment,
+\\
 \begin{equation}
 \begin{split}
 &{\bm{\bar{\Delta}}}^{ij} = \frac{\bm{\bar{R}}^{ij}}{F_{ii} + F_{jj} - \bm{\epsilon}^{ij}_{a} - \bm{\epsilon}^{ij}_{b}} \\
 &{\bm{\bar{\Delta}}}^{i} = \frac{\bm{\bar{R}}^{ii}}{F_{ii} - \bm{\epsilon}^{ii}_{a}}.\\
 \end{split}
 \end{equation}
+\\
 The increment is transformed back to the canonical basis,
+\\
 \begin{equation}
 \begin{split}
 {\Delta}^{ij} = \bm{Q}^{ij}\bm{U}^{ij} {\bm{\bar{\Delta}}}^{ij} {\bm{U}^{ij}}^{\dagger} {\bm{Q}^{ij}}^{\dagger}\\
 {\Delta}^{ii} = \bm{Q}^{ii}\bm{U}^{ii} {\bm{\bar{\Delta}}}^{ii} {\bm{U}^{ii}}^{\dagger} {\bm{Q}^{ii}}^{\dagger}\\
 \end{split}
 \end{equation}
+\\
 and added to the amplitudes of the previous iteration $(n-1)$,
+\\
 \begin{equation}
 \begin{split}
 &t^{ij}(n) = t^{ij}(n-1) + \Delta^{ij}\\
 &t^{i}(n) = t^{i}(n-1) + \Delta^{i}.\\
 \end{split}
 \end{equation}
+\\
 It should be noted that this procedure is applied for filtering the non-local parts of $\hat{T}$, $\hat{\Lambda}$, $X^{A}_{\omega}$ 
 and $Y^{A}_{\omega}$ amplitudes. 
 \section{Results and Discussions}
@@ -387,7 +429,8 @@ where we use a hybrid virtual space consisting of virtual MOs (VMOs) and ground 
 Specifically, we identify the most diffuse VMOs on the basis of their spatial extents\cite{Kumar18:1} 
 by choosing an (empirical) cutoff and construct the MP2 pair specific density in the remaining  
 virtual space. Thus, in this modified PNO approach (PNO(M)) every pair of LMOs, in addition to 
-their PNOs, posess the same set of VMOs. 
+their PNOs, possess the same set of VMOs. From now on, we call the LPNO approach as the PNO 
+approach for the sake of convenience.
 Fig.~\ref{fig:pno_m_h2_7_polar}
 \begin{MyFigure}[h!]
 \centering
@@ -411,62 +454,142 @@ as a function of -log(occupation threshold)}}
 where even at a very high cutoff of 10$^{-4}$, the PNO(M) approach has almost converged to the full 
 canonical result. On the other hand, the PNO approach even at a tight cutoff of 10$^{-9}$ doesn't
 reproduce the canonical value. Furthermore, on account of fortuitous cancellation of errors in the
-PNO approach, a cutoff of 10$^{-7}$ gives much more accurate results than 10$^{-9}$.
-However, in the PNO(M) approach, evey pair of LMOs becomes ``important" as it always posesses 
-a certain number of VMOs. Thus, the computational expenses are significantly higher in such an
+PNO approach, a cutoff of 10$^{-7}$ gives much more accurate results than a tighter cutoff of 10$^{-9}$.
+However, in the PNO(M) approach, evey pair of LMOs now becomes ``important" as it always possesses 
+a fixed number of VMOs. Thus, the computational expenses are significantly higher in such an
 approach. Also, the selection of the diffuse space is not straightforward as the criteria of 
-spatial extents is not robust enough. We look at the PNO++($\mu$) approach to see if it can naturally
+spatial extents is not robust. Hence, we look at the PNO++ approach to see if it can naturally
 identify and retain the PNOs which are important for response properties.
-Fig.~\ref{fig:pno_m_h2_4_polar_D}
-\begin{MyFigure}[h!]
-\centering
-\includegraphics[width=0.6\linewidth,natwidth=610,natheight=642]{figures_pno++/h2_4_polar_D.pdf}
-\caption{{\footnotesize CCSD/aDZ dynamic polarizabilities of (H$_2$)$_4$ at 589 nm in both PNO and PNO++($\mu$) approaches
-with only doubles amplitudes truncated, as a function of T$_2$ ratios.}}
-\label{fig:pno_m_h2_4_polar_D}
-\end{MyFigure}
-compares the performances of both PNO and PNO++($\mu$) approaches when the singles
-amplitudes are kept untruncated in calculating CCSD dynamic polarizabilities 
-of (H$_2$)$_4$. It can be easily seen that the PNO++ scheme significanty outperforms 
-the PNO scheme and converges to the full result at a T2 ratio slightly greater 
-than 0.2, while the PNO approach converges to the canonical result only after the retention
-of more than 70\% of the doubles amplitudes. When both singles and doubles amplitudes
-are truncated (see Fig.~\ref{fig:pno_m_h2_4_polar_SD}), the truncation errors increase
-as expected, but the difference between the two approaches become more pronounced.
-For example, the error in the PNO approach at a T2 ratio of 0.2 is an order of
-magnitude greater than that of PNO++. 
-\begin{MyFigure}[h!]
-\centering
-\includegraphics[width=0.6\linewidth,natwidth=610,natheight=642]{figures_pno++/h2_4_polar_DS.pdf}
-\caption{{\footnotesize CCSD/aDZ polarizabilities of (H$_2$)$_4$ in both PNO and PNO++ approaches
-with both singles and doubles amplitudes truncated, as a function of T$_2$ ratios.}}
-\label{fig:pno_m_h2_4_polar_SD}
-\end{MyFigure}
-In a similar analysis for specific rotations, (see Fig.~\ref{fig:pno_m_h2_4_optrot_D})
-\begin{MyFigure}[h!]
-\centering
-\includegraphics[width=0.6\linewidth,natwidth=610,natheight=642]{figures_pno++/h2_4_optrot_lg_D.pdf}
-\caption{{\footnotesize CCSD/aDZ/LG specific rotations of (H$_2$)$_4$ in both PNO and PNO++ approaches
-with only doubles amplitudes truncated, as a function of T$_2$ ratios.}}
-\label{fig:pno_m_h2_4_optrot_D}
-\end{MyFigure}
-it can be seen that the truncation errors are higher compared to polarizabilities, which is not 
-unexpected since specific rotations are found to be more sensitive to the wavefunction truncation.
-When only doubles amplitudes are truncated, the specific rotations in the case of PNOs, continue 
-to move farther away from the full result up to T2 ratios close to 0.6. Thereafter, it slowly 
-converges towards the canonical result. On the other hand, the PNO++ curve has the right
-convergence behavior: as the values of T2 ratios increase, it converges faster to the full result.
-On truncating both singles and doubles amplitudes, (see Fig.~\ref{fig:pno_m_h2_4_optrot_SD})
-\begin{MyFigure}[h!]
-\centering
-\includegraphics[width=0.6\linewidth,natwidth=610,natheight=642]{figures_pno++/h2_4_optrot_lg_DS.pdf}
-\caption{{\footnotesize CCSD/aDZ/LG specific rotations of (H$_2$)$_4$ in both PNO and PNO++ approaches
-with both singles and doubles amplitudes truncated, as a function of T$_2$ ratios.}}
-\label{fig:pno_m_h2_4_optrot_SD}
-\end{MyFigure}
-the errors are much higher. The PNO curve starts moving towards the canonical result only 
-after T2 ratios higher than 0.8 is achieved whereas the PNO++ graph starts converging
-in the right direction after just 20\% of the wavefunction is retained.
+%Fig.~\ref{fig:pno_m_h2_4_polar_D}
+%\begin{MyFigure}[h!]
+%\centering
+%\includegraphics[width=0.6\linewidth,natwidth=610,natheight=642]{figures_pno++/h2_4_polar_D.pdf}
+%\caption{{\footnotesize CCSD/aDZ dynamic polarizabilities of (H$_2$)$_4$ at 589 nm in both PNO and PNO++($\mu$) approaches
+%with only doubles amplitudes truncated, as a function of T$_2$ ratios.}}
+%\label{fig:pno_m_h2_4_polar_D}
+%\end{MyFigure}
+Fig.~\ref{fig:pno++_polar_h2_n} compares the performances of the PNO and PNO++
+approaches for calculating dynamic polarizabilities of the (H$_2$)$_n$ helices.
+The T$_2$ ratio as shown in the figure can be seen as a measure of the \% of 
+the wavefunction retained in these calculations. Thus, a T$_2$ ratio of 1
+would give the full canonical result.
+\begin{figure}
+\begin{subfigure}{.5\textwidth}
+  \centering
+  \includegraphics[width=.9\linewidth]{figures_pno++/pno++_h2_4_adz_polar.pdf}
+  \caption{(H$_2$)$_4$}
+  \label{fig:sfig1}
+\end{subfigure}%
+\begin{subfigure}{.5\textwidth}
+  \centering
+  \includegraphics[width=.9\linewidth]{figures_pno++/pno++_h2_5_adz_polar.pdf}
+  \caption{(H$_2$)$_5$}
+  \label{fig:sfig2}
+\end{subfigure}
+\begin{subfigure}{.5\textwidth}
+  \centering
+  \includegraphics[width=.9\linewidth]{figures_pno++/pno++_h2_6_adz_polar.pdf}
+  \caption{(H$_2$)$_6$}
+  \label{fig:sfig2}
+\end{subfigure}
+\begin{subfigure}{.5\textwidth}
+  \centering
+  \includegraphics[width=.9\linewidth]{figures_pno++/pno++_h2_7_adz_polar.pdf}
+  \caption{(H$_2$)$_7$}
+  \label{fig:sfig2}
+\end{subfigure}
+\caption{{\footnotesize CCSD/aDZ polarizabilities of
+(H$_2$)$_n$ helices, $ n = 4-7$ in both PNO and PNO++ schemes as a function of
+T$_2$ ratio.}}
+\label{fig:pno++_polar_h2_n}
+\end{figure}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+The PNO++ approach can be seen to significantly outperform the regular PNO 
+approach for all the test cases. A T$_2$ ratio as small as $0.2$ in the PNO++
+approach is able to reproduce polarizabilities very close to the full canonical
+values. The PNO approach on the other hand requires T$_2$ ratios in the range of 
+$0.9$ ((H$_2$)$_4$) to $0.7$ ((H$_2$)$_7$) for results of similar accuracy.
+It can be seen that the truncation errors in specific rotations (fig.~\ref{fig:pno++_optrot_h2_n})
+for both PNO and PNO++ approaches are higher compared to polarizabilities, which is not 
+unexpected since specific rotations are much more sensitive to the wavefunction truncation.
+An aggressive truncation of the virtual space in the PNO approach could even lead
+to opposite sign specific rotations. Indeed,
+just like polarizabilities, the convergence of the specific rotation values 
+computed using the PNO++ approach, is much faster towards the canonical result 
+and a T$_2$ ratio close to $0.2$ yields an error of less than 10\% ((H$_2$)$_4$) 
+for all the test cases.
+\begin{figure}
+\begin{subfigure}{.5\textwidth}
+  \centering
+  \includegraphics[width=.9\linewidth]{figures_pno++/pno++_h2_4_adz_optrot_lg.pdf}
+  \caption{(H$_2$)$_4$}
+  \label{fig:sfig1}
+\end{subfigure}%
+\begin{subfigure}{.5\textwidth}
+  \centering
+  \includegraphics[width=.9\linewidth]{figures_pno++/pno++_h2_5_adz_optrot_lg.pdf}
+  \caption{(H$_2$)$_5$}
+  \label{fig:sfig2}
+\end{subfigure}
+\begin{subfigure}{.5\textwidth}
+  \centering
+  \includegraphics[width=.9\linewidth]{figures_pno++/pno++_h2_6_adz_optrot_lg.pdf}
+  \caption{(H$_2$)$_6$}
+  \label{fig:sfig2}
+\end{subfigure}
+\begin{subfigure}{.5\textwidth}
+  \centering
+  \includegraphics[width=.9\linewidth]{figures_pno++/pno++_h2_7_adz_optrot_lg.pdf}
+  \caption{(H$_2$)$_7$}
+  \label{fig:sfig2}
+\end{subfigure}
+\caption{{\footnotesize CCSD/aDZ  specific rotations of
+(H$_2$)$_n$ helices, $ n = 4-7$ in both PNO and PNO++ schemes as a function of
+T$_2$ ratio.}}
+\label{fig:pno++_optrot_h2_n}
+\end{figure}
+%compares the performances of both PNO and PNO++($\mu$) approaches when the singles
+%amplitudes are kept untruncated in calculating CCSD dynamic polarizabilities 
+%of (H$_2$)$_4$. It can be easily seen that the PNO++ scheme significanty outperforms 
+%the PNO scheme and converges to the full result at a T$_22$ ratio slightly greater 
+%than 0.2, while the PNO approach converges to the canonical result only after the retention
+%of more than 70\% of the doubles amplitudes. When both singles and doubles amplitudes
+%are truncated (see Fig.~\ref{fig:pno_m_h2_4_polar_SD}), the truncation errors increase
+%as expected, but the difference between the two approaches become more pronounced.
+%For example, the error in the PNO approach at a T$_2$ ratio of 0.2 is an order of
+%magnitude greater than that of PNO++. 
+%\begin{MyFigure}[h!]
+%\centering
+%\includegraphics[width=0.6\linewidth,natwidth=610,natheight=642]{figures_pno++/h2_4_polar_DS.pdf}
+%\caption{{\footnotesize CCSD/aDZ polarizabilities of (H$_2$)$_4$ in both PNO and PNO++ approaches
+%with both singles and doubles amplitudes truncated, as a function of T$_2$ ratios.}}
+%\label{fig:pno_m_h2_4_polar_SD}
+%\end{MyFigure}
+%In a similar analysis for specific rotations, (see Fig.~\ref{fig:pno_m_h2_4_optrot_D})
+%\begin{MyFigure}[h!]
+%\centering
+%\includegraphics[width=0.6\linewidth,natwidth=610,natheight=642]{figures_pno++/h2_4_optrot_lg_D.pdf}
+%\caption{{\footnotesize CCSD/aDZ/LG specific rotations of (H$_2$)$_4$ in both PNO and PNO++ approaches
+%with only doubles amplitudes truncated, as a function of T$_2$ ratios.}}
+%\label{fig:pno_m_h2_4_optrot_D}
+%\end{MyFigure}
+%it can be seen that the truncation errors are higher compared to polarizabilities, which is not 
+%unexpected since specific rotations are found to be more sensitive to the wavefunction truncation.
+%When only doubles amplitudes are truncated, the specific rotations in the case of PNOs, continue 
+%to move farther away from the full result up to T$_2$ ratios close to 0.6. Thereafter, it slowly 
+%converges towards the canonical result. On the other hand, the PNO++ curve has the right
+%convergence behavior: as the values of T$_2$ ratios increase, it converges faster to the full result.
+%On truncating both singles and doubles amplitudes, (see Fig.~\ref{fig:pno_m_h2_4_optrot_SD})
+%%\begin{MyFigure}[h!]
+%%\centering
+%%\includegraphics[width=0.6\linewidth,natwidth=610,natheight=642]{figures_pno++/h2_4_optrot_lg_DS.pdf}
+%%\caption{{\footnotesize CCSD/aDZ/LG specific rotations of (H$_2$)$_4$ in both PNO and PNO++ approaches
+%%with both singles and doubles amplitudes truncated, as a function of T$_2$ ratios.}}
+%%\label{fig:pno_m_h2_4_optrot_SD}
+%%\end{MyFigure}
+%the errors are much higher. The PNO curve starts moving towards the canonical result only 
+%after T$_2$ ratios higher than 0.8 is achieved whereas the PNO++ graph starts converging
+%in the right direction after just 20\% of the wavefunction is retained.
 %\subsection{$(H_2)_n$ Helices}
 %First thing would be showing the retention of diffuse space. show the two graphs
 %showing for (h2)7 systems. name it PNO(M) for modified PNO, mention that
@@ -488,20 +611,31 @@ in the right direction after just 20\% of the wavefunction is retained.
 %\subsection{norbornenone}
 %\pagebreak
 \section{Conclusions}
-We have a developed an extension of the PNO method, the PNO++ 
-approach for calculating response properties. The pair 
+We propose a new scheme by the name of PNO++ which can be seen as
+an extension of the PNO approach for calculating CC
+linear response properties. The pair
 specific densities constructed in this approach strongly
-resemble in structure with the underlying response equations
+resemble in structure with the CC linear response functions
 and preliminary results on linear chain hydrogen helices
-seem to indicate that the ONs obtained by diagonalizing these densities
-are a good metric for estimating the importance of a
-VNO in the response of the wavefunction. we plan to use this
-method with RI-CC2/CCSD linear response theory to calculate  
-CC level properties of large solvated clusters.
-Furthermore, calculations on two and three dimensional structures 
-involving different forms of second-order perturbed density 
-are still running and are expected to give more insight
-which can be used to make PNO++ a truly black-box method.
+seem to indicate that both dynamic polarizabilities and 
+specific rotation values converge to the canonical result 
+much faster in the PNO++ approach. Thus, this approach provides 
+a very compact virtual space for simulating these response 
+properties.
+%We have a developed an extension of the PNO method, the PNO++ 
+%approach for calculating response properties. The pair 
+%specific densities constructed in this approach strongly
+%resemble in structure with the underlying response equations
+%and preliminary results on linear chain hydrogen helices
+%seem to indicate that the ONs obtained by diagonalizing these densities
+%are a good metric for estimating the importance of a
+%VNO in the response of the wavefunction. we plan to use this
+%method with RI-CC2/CCSD linear response theory to calculate  
+%CC level properties of large solvated clusters.
+However, calculations on two and three dimensional structures involving different forms of second-order 
+perturbed densities need to be carried out in order to make PNO++ a truly black-box method.
+Furthermore, the validity of the weak pair approximations, needs to be investigated within the PNO++ formalism
+to ensure that this scheme retains the reduced-scaling behaviour of the original PNO method.
 
 
 

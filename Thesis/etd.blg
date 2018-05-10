@@ -80,7 +80,7 @@ You're missing a field part---line 3834 of file papes.bib
  :           ,
 I'm skipping whatever remains of this entry
 You're missing a field part---line 3843 of file papes.bib
- :  number = 
+ :  Number = 
  :           ,
 I'm skipping whatever remains of this entry
 You're missing a field part---line 3853 of file papes.bib
@@ -97,50 +97,48 @@ Warning--empty publisher in Kelvin
 Warning--empty year in Kelvin
 Warning--empty title in Kumar18:1
 Warning--empty year in Kumar18:1
-Warning--empty title in Kumar18:2
-Warning--empty year in Kumar18:2
 Warning--empty title in Olsen85
 Warning--empty journal in Smith18
 Warning--empty title in Stephens001
-You've used 102 entries,
+You've used 101 entries,
             2118 wiz_defined-function locations,
-            1168 strings with 23209 characters,
-and the built_in function-call counts, 37574 in all, are:
-= -- 3562
-> -- 1986
+            1165 strings with 23267 characters,
+and the built_in function-call counts, 37360 in all, are:
+= -- 3542
+> -- 1978
 < -- 9
-+ -- 793
-- -- 674
-* -- 3079
-:= -- 6360
-add.period$ -- 305
-call.type$ -- 102
-change.case$ -- 627
++ -- 790
+- -- 672
+* -- 3066
+:= -- 6323
+add.period$ -- 303
+call.type$ -- 101
+change.case$ -- 624
 chr.to.int$ -- 0
-cite$ -- 113
-duplicate$ -- 1188
-empty$ -- 2787
-format.name$ -- 674
-if$ -- 7707
+cite$ -- 110
+duplicate$ -- 1178
+empty$ -- 2770
+format.name$ -- 672
+if$ -- 7664
 int.to.chr$ -- 0
-int.to.str$ -- 102
-missing$ -- 106
-newline$ -- 509
-num.names$ -- 210
-pop$ -- 503
+int.to.str$ -- 101
+missing$ -- 105
+newline$ -- 505
+num.names$ -- 208
+pop$ -- 495
 preamble$ -- 1
-purify$ -- 535
+purify$ -- 532
 quote$ -- 0
-skip$ -- 802
+skip$ -- 796
 stack$ -- 0
-substring$ -- 2744
-swap$ -- 153
+substring$ -- 2736
+swap$ -- 152
 text.length$ -- 9
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 400
-warning$ -- 11
-while$ -- 305
-width$ -- 105
-write$ -- 1113
+type$ -- 396
+warning$ -- 9
+while$ -- 303
+width$ -- 104
+write$ -- 1106
 (There were 22 error messages)

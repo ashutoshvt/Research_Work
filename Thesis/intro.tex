@@ -22,27 +22,27 @@ possessed by molecules with cumulated double bonds like allenes and chirality pl
 found in compounds like paracyclophanes are other popular examples of chiral elements 
 found in nature. \\
 A chiral molecule and its mirror image are known as enantiomers. Although the
-enantiomers have idential phyical properties like boiling and melting points, their
-interactions in a chiral environment can be quite different. For example,
-while the (R) enantiomer of the compound limonene smells like lemons and oranges,
-as the name sugggests, the (S) enantiomer on the other hand smells like turpentine. 
-Thus, the interaction of the (S) enantiomer with the chiral molecules constituting the olfactory receptors 
-responsible for the sensation of smell is totally different from its fellow enantiomer.
-The enantiomers also interact differently with the left- and right-hand circularly polarized (LCP and
-RCP) light in processes of absorption, refraction, etc. A chiral molecule posesses the 
-properties of circular dichroism (CD) and circular birefringence, i.e. it has different absorption 
-coefficents and refractive indices for the LCP and RCP light, respectively. As a result of circular 
-birefringence, the plane of polarization of a plane-polarized light in a chiral medium gets rotated/shifted
-by an amount known as the optical rotation of the medium. It should be noted that an enantiomeric pair of chiral
-molecules has equal magnitudes of optical rotation but in opposite directions.\\
+enantiomers have idential physical properties like boiling and melting points, their
+interactions with a chiral environment can be quite different. For example,
+while the (R) enantiomer of the compound limonene smells like lemons and oranges, the (S) 
+enantiomer on the other hand smells like turpentine. Thus, the interaction of the (S) enantiomer 
+with the chiral molecules constituting the olfactory receptors responsible for the sensation of smell 
+is totally different from its fellow enantiomer. The enantiomers also interact differently with 
+the left- and right-hand circularly polarized (LCP and RCP) light in processes of absorption, 
+refraction, etc. A chiral molecule posesses the properties of circular dichroism (CD) and 
+circular birefringence, i.e. it has different absorption coefficents and refractive indices 
+for the LCP and RCP light respectively. As a result of circular birefringence, the plane of 
+polarization of a plane-polarized light in a chiral medium gets rotated/shifted by an amount known as 
+the optical rotation of the medium. An enantiomeric pair of chiral molecules has equal magnitudes of 
+optical rotation but in opposite directions.\\
 Since almost every part of the human body is composed of chiral molecules, its unsurprising that
-more than 60\% of the pharmaceutical drugs are chiral as well. Hence, one of the most 
+more than 60\% of the pharmaceutical drugs are chiral as well. One of the most 
 important aspect of the drug-design research is to be able to define the absolute configuration 
-(AC) of the chiral molecules in order to study their behaviour in  biological systems as 
+(AC) of these drug molecules in order to study their behaviour in biological systems as 
 many biological activities are only associated with one specific AC. A very tragic example
 in this regard is that of the drug thalidomide, which was originally prescribed to pregnant women in 
 Europe in 1950s to cure morning sickness but resulted in birth-defects in thousands of 
-infants. It was found through a study done on rodents that the (R) enantiomer is indeed 
+infants. It was found through a study done on rodents that the (R) enantiomer of thalidomide is indeed 
 a sedative but the (S) enantiomer is a teratogen\cite{Crawford06}. Furthemore, these enantiomers were 
 found to rapidly interconvert in vivo in humans because of which separating 
 these two forms before use doesn't help at all.
@@ -51,19 +51,21 @@ The first step in experimental determination of AC either involves the separatio
 a racemic mixture (equal concentrations of both the enantiomers) into individual enantiomers
 using chiral resolution methods like chiral column chromatography or a selective synthesis
 of a given enantiomer using the process of asymmetric synthesis. X-ray crystallography would then be the 
-most popular procedure to determine AC directly, provided one can crystallize the molecule first which usually 
-requires the presence of heavy atom(s). Alternatively, one can measure the responses of 
-the enantiomers like CD and optical rotation using corresponding chiroptical spectroscopy
-techniques like electronic and vibrational CD i.e. ECD (UV-VIS) and VCD (IR) and polarimetry,
-followed by a comparison against some suitable reference chiral substrate. However, in cases of 
-ambiguities regarding appropriate references, accurate {\em ab initio} methods can come to the rescue and 
-help validate these experimental measurements. Furthermore, designing an asymmteric synthesis might not
-be straightforward for many chiral systems, especially for the ones with large number of stereocenters. 
-In such cases, theory can even take the lead and predict the corresponding AC. In other words, theoretical
-calculations of these chiroptical properties could serve as a very useful computational tool for 
-modern organic chemists. In particular, accurate optical rotation calculations are highly desired 
-as the experimental techniques for measuring this property are fairly stable and robust in 
-both gas and solution phases.
+most popular procedure to determine AC directly, provided one can crystallize the molecule first, which usually 
+requires the presence of heavy atom(s). Alternatively, one can measure the distinct responses of 
+the enantiomers in absorption using chiroptical spectroscopic techniques like electronic and vibrational 
+CD (ECD and VCD). One can also measure the optical rotation of the chiral compounds in both solution
+and gas phase using polarimetry and cavity ring down spectrometry techniques respectively.
+These measurement are usually followed by a comparison against some suitable reference chiral
+substrate. In this regard, accurate {\em ab initio} methods can help validate these experimental measurements.
+%However, in cases of ambiguities regarding appropriate references, accurate {\em ab initio} methods can come to the rescue and 
+%help validate these experimental measurements. 
+Furthermore, designing an asymmteric synthesis might not be straightforward for many chiral systems, 
+especially for the ones with large number of stereocenters. In such cases, theory can even take the 
+lead and predict the corresponding AC. In other words, theoretical calculations of these chiroptical 
+properties could serve as a very useful computational tool for modern organic chemists. In particular, 
+accurate optical rotation calculations are highly desired as the experimental techniques for measuring 
+this property are fairly stable and robust in both gas and solution phases.
 \\
 %Theoretical and computational chemistry has grown by leaps and bounds over the
 %past several decades. {\em ab initio} quantum chemical methods can now accurately
@@ -80,10 +82,10 @@ Rosenfeld developed a quantum mechanical recipe for calculating optical rotation
 the induced dipole moment in a molecule can be written as:
 \begin{equation}\langle\vec{\mu}\rangle = \bm{\alpha}\vec{E} + \frac{1}{\omega}\textbf{G}^\prime\frac{\partial\vec{B}}{\partial t}
 \end{equation} where $\vec{E} $ and $\vec{B}$ are the time dependent electric and
-magnetic field vectors respectively, $\omega$ is the frequency of the filed, $\alpha$ is the electric dipole
+magnetic field vectors respectively, $\omega$ is the frequency of the field, $\alpha$ is the electric dipole
 polarizability tensor and the $\textbf{G}^\prime$ tensor, also known as the Rosenfeld tensor is associated 
-with the property of optical rotation. Invoking time-dependent Schr\"odinger's equation in conjunction 
-with perturbation theory, expanding the expectation value of dipole operator in orders of perturbation 
+with the property of optical rotation. Invoking the time-dependent Schr\"odinger's equation in conjunction 
+with perturbation theory, expanding the expectation value of the electric dipole operator in orders of perturbation 
 and identifying the term linear in $\vec{E}$ and $\frac{\partial\vec{B}}{\partial t}$, 
 for exact states, the $\bm{\alpha}$ and $\textbf{G}^\prime$ tensor look like,
 \\
@@ -110,7 +112,7 @@ normalized by pathlength and concentration and is usually reported in the units 
 Here, $\textbf{G}^\prime$ and $\omega$ are in atomic units, c is the speed of light (m/s), m$_{\text{e}}$ is the 
 mass of electron (kg), M is the molecular mass (amu) and $N_A$ is Avogadro's number. Calculating the 
 $\textbf{G}^\prime$ tensor using equation (1.2) requires explicit calculations of a large number of 
-excited states which is computationally prohibitive. A more practical approach is to invoke the response formalism
+excited states which is of course computationally prohibitive. A more practical approach is to invoke the response formalism
 \cite{Koch90,Kobayashi94}, which casts these tensors as response functions,
 \begin{equation}
 \begin{split}
@@ -120,122 +122,116 @@ excited states which is computationally prohibitive. A more practical approach i
 \end{equation} 
 The response theory focuses on the perturbation of the ground state wavefunction in the presence of an external 
 field, avoiding explicit calculations of excited states. Polavarapu was the first to use this theory to calculate 
-{\em ab initio} specific rotations of molecules using time dependent Hartree Fock (TDHF) method \cite{Polavarapu96}. 
+{\em ab initio} specific rotations using time dependent Hartree Fock (TDHF) method \cite{Polavarapu96}. 
 The signs of the calculated values matched with that of the experiment for most of his structures, while their magnitudes 
-differed generally by a factor of two. Inspired by Polavarapu's success, Cheeseman et al. \cite{Cheeseman00,Stephens01} 
+differed generally by a factor of two. Inspired by Polavarapu's work, Cheeseman et al. \cite{Cheeseman00,Stephens01} 
 included correlation effects in these calculations by using TD-DFT theory. Using large basis sets with diffuse functions like 
 aug-cc-pVDZ and aug-cc-pVTZ,\cite{Dunning89,Kendall92,Woon94} they were able to match the experimental values very closely, with a 
-deviation of 20-25 degrees for a set of 28 chiral molecules. Ruud et al. extended the calculations to the coupled cluster 
+deviation of 20-25 degrees for a set of 28 chiral molecules. Ruud et al. extended the calculations to the coupled cluster (CC)
 level using coupled cluster response theory developed by Koch and J{\o}rgensen\cite{Koch90}, and obtained very 
 promising results\cite{Ruud03}. Unsurprisingly, these response based simulations have been used as an accurate and 
-reliable tool in the process of determining the AC of a large number of chiral molecules\cite{Kondru99}. 
-%However, all these calculations were done on single isolated molecules and thus, ideally, they should only be 
-%expected to match vapor phase optical rotation (OR) values. 
-\subsection{Challenges}
-Careful consideration of numerous factors, including electron correlation, basis-set completeness, gauge representation, zero-point vibrational motion, temper- ature, conformational flexibility, and so forth, have aided the development of advanced quantum chemical calculations.
-we talk about some of the challenges here
-%which can be measured by using cavity ring down spectrometry, thanks to the pioneering 
-%works of Vacaaro and co-workers.\cite{} 
-Thus, in order to match the solution phase OR measurements, the response theory needs to be combined with accurate solvation models. \\ 
-\subsubsection{Modeling Solvation}
-However, all these calculations were done on single isolated molecules and thus, ideally, they should only be
-expected to match vapor phase optical rotation (OR) values.
-For the purpose of computational practicality, the QM solvation models aim to reduce the degrees of freedom of
-the solvent molecules without compromising the quality of description of the solvent-solute and the solvent-solvent
-interactions. \\
-In this regard, the molecular mechanics (MM) based models, broadly known as QM/MM methods, usually represent the
-solvent molecules in the form of a classical potential by replacing them with point charges, polarizabilities etc.\cite{}
-This potential polarizes the charge distribution of the solute which in turn creates a new potential or field because of
-which induced dipole moments appear in solvents (depending on the point polarizabilities), resulting in a new
-potential which again polarizes the solute and so on. Thus, the final one-electron solvent potential is attained in a
-self-consistent procedure and gets added to the solute's Hamiltonian for further response calculations. Fluctuating
-charge model(FQ)\cite{}, the drude oscillator model\cite{} and effective fragmentation potential (EFP)\cite{} are some
-other popular examples of QM/MM methods.
-
-Quantum continuum models like the polarizable continuum model (PCM)\cite{}
-on the other hand place the solute in a cavity and replace the solvent molecules by a dielectric medium. The
-solute-solvent interactions are then captured by adding charges on the surface on the cavity (apparent surface charges)
-which are solved in a self-consistent manner as described above.\\
-
-
-Mennucci et al. extended PCM to work with the linear response formalism of TD-DFT\cite{Mennucci02}
-and calculated optical rotations for chiral molecules in different solvents. They were able to obtain promising results
-
-More recently, Cappelli implemented the
-QM/FQ/PCM approach for calculating optical rotations of methyloxirane
-
-
-with molecular dynamics (MD) simulations
-
-
-
- a series of snapshots from the MD is extracted, which constitute the actual model system on which the QM/FQ/PCM calculations of the desired properties are performed and then averaged out to obtain the final results. Actually, the computational cost of the procedure is mainly determined by the cost of the single QM/FQ/PCM calculation, which basically depends on the QM level and the kind of property (first, second, third derivative, etc.) to be calculated, together with the number of representative snapshots necessary to allow the final results to converge to a sensible value.
-
-
-
-FQ/PCM/MM has been combined by
-
-In recent years, the ab inito methods
-mentioned above have been combined with various solvation based
+reliable tool in the process of determining the AC of a large number of chiral molecules over the years.\cite{Kondru99}. 
+However, all these calculations were done on single isolated molecules and thus, ideally, they should only be 
+expected to match vapor phase optical rotation (OR) values. 
+%\subsection{Challenges}
+%Careful consideration of numerous factors, including electron correlation, basis-set completeness, gauge representation, zero-point vibrational motion, temper- ature, conformational flexibility, and so forth, have aided the development of advanced quantum chemical calculations.
+%we talk about some of the challenges here
+%%which can be measured by using cavity ring down spectrometry, thanks to the pioneering 
+%%works of Vacaaro and co-workers.\cite{} 
+%Thus, in order to match the solution phase OR measurements, the response theory needs to be combined with accurate solvation models. \\ 
+%\subsubsection{Modeling Solvation}
+%However, all these calculations were done on single isolated molecules and thus, ideally, they should only be
+%expected to match vapor phase optical rotation (OR) values.
+%For the purpose of computational practicality, the QM solvation models aim to reduce the degrees of freedom of
+%the solvent molecules without compromising the quality of description of the solvent-solute and the solvent-solvent
+%interactions. \\
+%In this regard, the molecular mechanics (MM) based models, broadly known as QM/MM methods, usually represent the
+%solvent molecules in the form of a classical potential by replacing them with point charges, polarizabilities etc.\cite{}
+%This potential polarizes the charge distribution of the solute which in turn creates a new potential or field because of
+%which induced dipole moments appear in solvents (depending on the point polarizabilities), resulting in a new
+%potential which again polarizes the solute and so on. Thus, the final one-electron solvent potential is attained in a
+%self-consistent procedure and gets added to the solute's Hamiltonian for further response calculations. Fluctuating
+%charge model(FQ)\cite{}, the drude oscillator model\cite{} and effective fragmentation potential (EFP)\cite{} are some
+%other popular examples of QM/MM methods.
+%
+%Quantum continuum models like the polarizable continuum model (PCM)\cite{}
+%on the other hand place the solute in a cavity and replace the solvent molecules by a dielectric medium. The
+%solute-solvent interactions are then captured by adding charges on the surface on the cavity (apparent surface charges)
+%which are solved in a self-consistent manner as described above.\\
+%
+%
+%Mennucci et al. extended PCM to work with the linear response formalism of TD-DFT\cite{Mennucci02}
+%and calculated optical rotations for chiral molecules in different solvents. They were able to obtain promising results
+%
+%More recently, Cappelli implemented the
+%QM/FQ/PCM approach for calculating optical rotations of methyloxirane
+%
+%
+%with molecular dynamics (MD) simulations
+%
+%
+%
+% a series of snapshots from the MD is extracted, which constitute the actual model system on which the QM/FQ/PCM calculations of the desired properties are performed and then averaged out to obtain the final results. Actually, the computational cost of the procedure is mainly determined by the cost of the single QM/FQ/PCM calculation, which basically depends on the QM level and the kind of property (first, second, third derivative, etc.) to be calculated, together with the number of representative snapshots necessary to allow the final results to converge to a sensible value.
+%
+%
+%
+%FQ/PCM/MM has been combined by
+%
+In recent years, the response formalism has been combined with various solvation based
 approaches\cite{Neugebauer05,Neugebauer09,Mennucci02,Tomasi05,JensenGordon96}
-to calculate the optical rotation in solution. This review considers some of
-the popular approaches that are being used and describes their working
-mechanisms and performances in detail. In the current/future work section of
-this review, some reduced scaling techniques are proposed with the aim of
-making these methods more efficient and computationally practical. Also, some
-of the essential, underlying coupled cluster and response theory used for
-optical rotation calculations are presented and discussed.
-
-1. couple solvent response to the electromangnetoic field
-2. include vibrational contributions in solvents
-3. explicit + implicit models
+to calculate specific rotations in solutions. 
+%This review considers some of
+%the popular approaches that are being used and describes their working
+%mechanisms and performances in detail. In the current/future work section of
+%this review, some reduced scaling techniques are proposed with the aim of
+%making these methods more efficient and computationally practical. Also, some
+%of the essential, underlying coupled cluster and response theory used for
+%optical rotation calculations are presented and discussed.
+%
+%1. couple solvent response to the electromangnetoic field
+%2. include vibrational contributions in solvents
+%3. explicit + implicit models
+%
 However, works in this regard have not been very encouraging\cite{silva04,Stephens001,Kongsted05,Mennucci02} 
 and the only robust way of accounting for solvent effects seem to be including the solvent molecules explicitly 
 in the QM calculations. Since rotation is a dynamic property, one needs to average OR values over several 
 configurations or snapshots (obtained by molecular dynamics (MD) simulations) to be able to match experimental 
 values. This restricts the application of CCLR to very small systems as each CC calculation exhibits
 a higher-order polynomial scaling.
-
-\subsubsection{Gauge Invariance}
-Besides solvation, another challenging problem faced by the CCLR theory is that of 
-gauge and origin invariance.
-The origin dependence while using length-gauge representation is a consequence of the non-variational nature of the 
-coupled cluster wavefunction. Unlike HF and DFT methods, properties such as optical rotation computed via CCLR 
-are not origin independent even at the complete basis set limit, and the dependence cannot be resolved using GIAOs.6 
-The modified velocity gauge formalism for the electric dipole operator has been developed to help address this 
-issue. The velocity-gauge formalism, ⟨⟨⃗p, L⃗ ⟩⟩ω , allows for the trace of the property tensor to be origin 
-invariant. Here ⃗p and L⃗ are the electronic momentum and angular momentum operators, respectively, and 
-⟨⟨, ⟩⟩ω represents the response function evaluated at frequency ω. However, without a complete basis
-set, using the velocity gauge formalism results in unphysical behavior at zero frequency. To achieve the 
-appropriate behavior, the value for the velocity gauge representation at the static limit (at zero frequency) 
-is subtracted from the original expression, as shown in Equation 1.1. 13
-⟨⟨⃗p, L⃗ ⟩⟩ω → ⟨⟨⃗p, L⃗ ⟩⟩ω − ⟨⟨⃗p, L⃗ ⟩⟩0 (1.1) Alternatively, the underlying response theory can be reformulated to incorporate 
-orbital rotation parameters explicitly to achieve origin invariance.14,15
-
-\subsubsection{Basis Set Completeness}
-Mention coleman's and taylor's basis set work 
-
-\subsubsection{Electron Correlation}
-
-\subsubsection{Scaling problem}
+%\subsubsection{Gauge Invariance}
+%Besides solvation, another challenging problem faced by the CCLR theory is that of 
+%gauge and origin invariance.
+%The origin dependence while using length-gauge representation is a consequence of the non-variational nature of the 
+%coupled cluster wavefunction. Unlike HF and DFT methods, properties such as optical rotation computed via CCLR 
+%are not origin independent even at the complete basis set limit, and the dependence cannot be resolved using GIAOs.6 
+%The modified velocity gauge formalism for the electric dipole operator has been developed to help address this 
+%issue. The velocity-gauge formalism, ⟨⟨⃗p, L⃗ ⟩⟩ω , allows for the trace of the property tensor to be origin 
+%invariant. Here ⃗p and L⃗ are the electronic momentum and angular momentum operators, respectively, and 
+%⟨⟨, ⟩⟩ω represents the response function evaluated at frequency ω. However, without a complete basis
+%set, using the velocity gauge formalism results in unphysical behavior at zero frequency. To achieve the 
+%appropriate behavior, the value for the velocity gauge representation at the static limit (at zero frequency) 
+%is subtracted from the original expression, as shown in Equation 1.1. 13
+%⟨⟨⃗p, L⃗ ⟩⟩ω → ⟨⟨⃗p, L⃗ ⟩⟩ω − ⟨⟨⃗p, L⃗ ⟩⟩0 (1.1) Alternatively, the underlying response theory can be reformulated to incorporate 
+%orbital rotation parameters explicitly to achieve origin invariance.14,15
+%
+%\subsubsection{Basis Set Completeness}
+%Mention coleman's and taylor's basis set work 
+%
+%\subsubsection{Electron Correlation}
+%
+%\subsubsection{Scaling problem}
 An obvious way to make these compuations practical is to seek the help of CC reduced-scaling 
 techniques like pair natural orbitals (PNO) approach\cite{Neese09,NeeseCCSD09} which has been really successful in describing energetics of 
 large molecular systems. However, works towards the extension of these methods to calculate chiroptical properties has been 
 fairly limited\cite{Gauss00,Korona04,Russ04,McAlexander12,Friedrich15,Russ08}. McAlexander and Crawford in their recent 
 work\cite{McAlexander15:LRCC} demonstrated that the regular PNO approach while calculating CC response properties 
-suffers from slow convergence towards the full canonical result. \\\\
-
+suffers from slow convergence towards the full canonical result. \\
 The main focus of this work is identifying the 
 reasons behind the sub-optimal peformance of such approaches for optical rotations. Subsequently, we propose novel modifications
 which can improve the performance of these schemes significantly\.\
-The necessary equations to calculate chiroptical properties within CC linear response theory are derived in 
-Chapter 2. %Also, a brief description of solvation models that have been used for modeling chiroptical properties 
+The necessary equations required to calculate dynamic polarizabilities and specific rotations within the CC linear response formalism are derived in Chapter 2. %Also, a brief description of solvation models that have been used for modeling chiroptical properties 
 %is provided. 
-Chapter 3 investigates the performance of natural orbitals (FVNO scheme) for CC dynamaic polarizabilites.
+Chapter 3 investigates the performance of the natural orbitals (FVNO scheme) for CC dynamaic polarizabilites.
 A new scheme called FVNO++ is developed in chapter 4 which reduces the errors associated with the regular FVNO scheme
 significantly for both polarizabilities and rotations. Chapter 5 extends the FVNO++ (a reduced-prefactor) approach to the reduced-scaling 
-domain by implementing what we call as PNO++ method. Finally, concluding remarks are given in Chapter 6.
-
-
-
-
+domain by implementing what we call as the PNO++ method. Finally, concluding remarks are given in Chapter 6.

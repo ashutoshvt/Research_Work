@@ -1,26 +1,30 @@
 Reduced-scaling techniques have extended the application of accurate coupled cluster (CC)
-methods to molecules with hundreds of heavy atoms\cite{}. However, efforts towards extension 
-of these schemes to simulate chiroptical properties like optical rotations have been fairly 
-limited\cite{}. McAlexander and Crawford recently compared the performances of
-reduced-scaling methods based on projected atomic orbitals (PAOs)\cite{}, orbital specific virtuals (OSVs)\cite{} and pair natural orbitals (PNOs)\cite{} for calculating optical rotations\cite{} using the
-coupled cluster linear response theory, where they found the PNOs to be the most compact 
-representation of the virtual space. However, very tight cutoffs needed to be employed to 
+methods to molecules with hundreds of heavy atoms\cite{Neese09,NeeseCCSD09}. However, efforts towards extension 
+of these schemes to simulate linear response properties have been fairly 
+limited\cite{Gauss00,Korona04,Russ04,McAlexander12,Friedrich15,Russ08}. McAlexander and Crawford\cite{McAlexander15:LRCC} recently compared the performances of
+reduced-scaling methods based on projected atomic orbitals (PAOs)\cite{Saebo86,Pulay83,PulaySaebo93}, orbital specific virtuals (OSVs)\cite{Yang12} and pair natural orbitals (PNOs)\cite{Edmiston66,Meyer73,Ahlrichs75,Neese09} for calculating optical rotations using the
+coupled cluster linear response theory\cite{Koch90}, where they found the PNOs to be the most compact 
+representation of the virtual space. However, very tight cutoffs needed to be employed in order to 
 match the canonical results. \\
 In our search for an optimal virtual space for response calculations,
 we investigated the performance of the frozen virtual natural orbital (FVNO) scheme,
 (chapter 3) which had been applied quite successfully to bring down the 
 computational costs of CC calculations involving energies, geometry optimizations, 
-ionization enthalpies, etc.\cite{}, for calculating dynamic polarizabilities of 
-small chiral compounds. It was found that the virtual natural orbitals (VNOs)
+ionization enthalpies, etc.\cite{Sosa89,Taube05,Taube08,Landau10,DePrince13:FNOs,DePrince13}, 
+for calculating dynamic polarizabilities of 
+small chiral compounds\cite{Kumar17}. It was found that the virtual natural orbitals (VNOs)
 obtained from the ground state MP2 density (GSMP2D) are not suitable for calculating 
-polarizabilities (and hence optical rotations) as the shift in their values 
-with respect to the full canonical result grew almost linearly with the number of 
-truncated VNOs. On a closer inspection, we found that all the diffuse 
-VNOs had very low occupation numbers (ONs) and thus are removed first
+polarizabilities (and hence optical rotations) in the absence of orbital relaxation 
+effects as the shift in their values with respect to the full canonical result grew 
+almost linearly with the number of truncated VNOs. However, introduction of orbital
+relaxation can introduce spurious or unphysical poles in the linear response function
+because of which they are not included in the CC linear response calculations.
+On a closer inspection, we found that all the diffuse 
+VNOs had very low occupation numbers (ONs) and thus were removed first
 in this scheme resulting in large errors. It should be noted that these 
 diffuse orbitals are absolutely essential for calculating chiroptical properties 
 as many chiral molecules posess low lying Rydeberg type excited states.
-We also employed a CC2\cite{} based correction for the external truncated 
+We also employed a CC2\cite{Christiansen95:CC2} based correction for the external truncated 
 space which was able to reduce the errors drastically, but such an approach 
 could not lead to any computational savings. Finally, we constructed a first 
 order perturbed density by taking the derivative of the GSMP2D with 
@@ -32,7 +36,7 @@ in the errors. On the other hand, truncating canonical molecular orbitals (CMOs)
 with high orbital energies resulted in very small errors (less than 2\% after 
 removing 50\% of the virtual space) due to intrinsic cancellation of errors.\\
 On the basis of the above findings, we tried out a modified FVNO scheme, FVNO(M)
-in chapter 4, where the virtual CMOs (VCMOs) were sorted according to their diffusivity which 
+in Chapter 4, where the virtual CMOs (VCMOs) were sorted according to their diffusivity which 
 wa measured by the values of their orbital spatial extents (OSEs) and GSMP2D was 
 built only in the space of non-diffuse (under a given OSE cutoff) orbitals. 
 In other words, the diffuse part of the virtual space remains unaffected 
@@ -43,43 +47,41 @@ excitation energies, etc. However, more systematic studies are needed to
 make it a truly black-box method. We also looked at the perturbed density 
 model in more details by first constructing the (full) CCSD first order 
 perturbed density. It was found that the diagonal elements of this density 
-matrix are always zeros irrespective of the perturbation. Ideally, the structure
-of the perturbed density should be able to mimic these (linear response) properties 
+matrix are always zeros irrespective of the perturbation. Clearly, the VNOs
+obtained by the diagonalization of such densities don't carry any useful information.
+Ideally, the structure of the perturbed density should be able to mimic these (linear response) properties 
 which are second order in the perturbation. Hence, we proposed a new approach called
 FVNO++, where a second-order perturbed density is constructed and then diagonalized
-to define the virtual space. Pilot studies on H$_2$O$_2$ molecule using the FVNO++
-approach have shown quite promising results for both polarizabilities and optical
-rotations. The major advantage of this approach over FVNO(M) is that ONs are 
-a much robust truncation truncation criterion compared to OSEs.\\
+to define the virtual space. Pilot studies on H$_2$O$_2$ molecule and chiral linear chain
+hydrogen helices ((P)-$(H_2)_n$) using the FVNO++ approach have shown quite promising results 
+for both polarizabilities and optical rotations. The major advantage of this approach 
+over FVNO(M) is that ONs are a much more robust truncation criterion compared to the OSEs.\\
 %However, calculations with other choices of perturbed densities also need to be
 %done, especially for bigger molecules to make the FVNO++ truncation scheme truly robust.
 %We are currently in the process of a RI-CC2 linear response code\cite{} which we intend
 %to use in conjunction with the FVNO++ formalism to tackle larger molecular systems.
 %Furthermore, we propose to extend this approach to the reduced-scaling techniques based
 %on pair natural orbitals\cite{}.
-We extended the above analyses to the PNO domain in chapter 5 as the  
+We extended the above analyses to the PNO domain in Chapter 5 as the  
 the PNOs can be seen as an extension of the concept of 
 natural orbitals. Consequently, the PNO(M) method was designed where
 all the diffuse VCMOs were retained and every pair of occupied orbitals
-inherit this global virtual space. Just as before, PNO(M) significantly
-accelerates the convergence of the response properties towards the full
+inherited this global virtual space. Just as before, PNO(M) significantly
+accelerates the convergence of these properties towards the full
 canonical result. However, this means that every occupied pair becomes a 
 strong pair and hence can't be neglected, which has an adverse affect
-on the reduced scaling capabilities of the PNOs. Along the 
+on the reduced scaling capabilities of the PNO scheme. Along the 
 lines of FVNO++, PNO++ approach was formulated where the structure of 
 the pair specific densities resemble with the contributions of a given
 pair to the response functions. Preliminary results on chiral linear chain 
 hydrogen helices indicate a performance similar to the PNO(M) approach
-for both polarizabilities and optical rotations. Furthermore, calculations on 
+for both polarizabilities and optical rotations. However, calculations on 
 two and three dimensional structures involving different forms of second-order 
-perturbed density are still running and are expected to give more insight
-which can be used to make PNO++ a truly robust method. \\
+perturbed densities need to be carried out in order to make PNO++ a truly robust method. \\
 Encouraged by the performances of these methods, we plan to use them in 
-conjunction with density-fitted linear CC response codes to target larger
+conjunction with density-fitted CC linear response codes\cite{Friese12} to target larger
 systems like solvated molecular clusters. We assume that a larger solvent shell 
 around the solute molecule would require comparitively smaller number of 
-snapshots for the optical rotation values to converge. Thus, we can significantly
-lower down the computational costs involved in the calculations of optical rotations
+snapshots for the optical rotations to converge to the experimental value. Thus, we can significantly
+lower down the computational costs involved in CC calculations of optical rotations
 of solvated molecules.
-
-

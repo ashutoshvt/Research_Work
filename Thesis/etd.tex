@@ -17,7 +17,7 @@
 \usepackage{amsmath}
 \newenvironment{MyFigure}[1][]{\begin{figure}[#1]\vspace{1.0cm}}{\vspace{1.0cm}\end{figure}}
 %\usepackage[dvips]{graphicx}
-\usepackage{graphicx}
+%\usepackage{graphicx}
 \newcommand{\overbar}[1]{\mkern 2.2mu\overline{\mkern-2.2mu#1\mkern-2.2mu}\mkern 2.2mu}
 
 \setlength{\textwidth}{6.5in}
@@ -36,6 +36,9 @@
 \renewcommand{\baselinestretch}{2}
 
 \usepackage{epsf}
+
+\usepackage[final]{graphicx}
+\usepackage{subcaption}
 
 \begin{document}
 
@@ -141,8 +144,8 @@ support for all the calculations reported here.
 \listoffigures
 \pagebreak
 
-%\listoftables
-%\pagebreak
+\listoftables
+\pagebreak
 
 \pagenumbering{arabic}
 \pagestyle{myheadings}
@@ -179,6 +182,7 @@ support for all the calculations reported here.
 \chapter{Conclusions}
 \markright{Ashutosh Kumar \hfill Chapter 6. Conclusions\hfill}
 \input{conclude.tex}
+\markright{Ashutosh Kumar \hfill Chapter 6. Conclusions\hfill}
 %%%%%%%%%%%%%%%%%
 %
 % Include an EPS figure with this command:
