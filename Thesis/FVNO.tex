@@ -143,12 +143,15 @@ polarizabilities.
 
 The MP2 unrelaxed one-electron density matrix can be written in terms of
 spin orbitals as: 
+\\
 \begin{equation}
 \gamma_{pq} = \langle \Psi^{(1)}|\{ a^{\dagger}_{p}a_q\}|\Psi^{(1)}\rangle,
 \label{Eq:density}
 \end{equation}
+\\
 where $|\Psi^{(1)}\rangle$ is the first order correction to the Hartree-Fock
 wave function,
+\\
 \begin{equation}
 |\Psi^{(1)}\rangle = \frac{1}{4}\sum_{ijab} t^{ab}_{ij}|\Phi^{ab}_{ij}\rangle
 \end{equation}
@@ -157,8 +160,9 @@ and
 t^{ab}_{ij} = \frac{\langle ij||ab\rangle}{\epsilon_i + \epsilon_j -
 \epsilon_a - \epsilon_b}.
 \end{equation}
+\\
 Here, $\langle ij||ab\rangle$ is an antisymmetrized two-electron integral in
-Dirac's notation and $.pdfilon_i,\epsilon_a...$ refer to the Hartree-Fock
+Dirac's notation and $\epsilon_i,\epsilon_a...$ refer to the Hartree-Fock
 molecular orbital energies. We use the indices $i,j,k,...$ to indicate occupied
 orbitals while $a,b,c,...$ denote virtual orbitals. $|\Phi^{ab}_{ij}\rangle$
 refers to a doubly-excited determinant where occupied orbitals $i$ and $j$ are
@@ -168,6 +172,7 @@ with respect to the reference wave function.
 
 In the MP2 based NO method, the virtual-virtual block of $\gamma_{pq}$
 is constructed,
+\\
 \begin{equation}
 \gamma_{ab} = \frac{1}{2}\sum_{ijc} t^{ac}_{ij}t^{bc}_{ij},
 \label{Eq:dens}
@@ -176,6 +181,7 @@ and then diagonalized,
 \begin{equation}
 \bm{\gamma} \bm{V} = \bm{n} \bm{V}.
 \end{equation}
+\\
 The eigenvectors, $\bm{V}$, are the virtual natural orbitals (NOs), and the
 eigenvalues, $\bm{n}$, are the associated occupation numbers.  As noted
 earlier, the wave function amplitudes contain significantly greater sparsity
@@ -203,6 +209,7 @@ theory has been routinely used for many years for accurate calculations of
 such properties.\cite{Helgaker12} The CC linear response function for
 property operators $\bm{A}$ and $\bm{B}$, for example, can be written
 as
+\\
 \begin{equation}
 {\langle\langle\bm{A};\bm{B}\rangle\rangle}_\omega=
 \frac{1}{2}\hat{C}^{\pm\omega}\hat{P}[A(-\omega),B(+\omega)] \left[
@@ -211,6 +218,7 @@ as
 \right) |\Psi_0\rangle \right]
 \label{Eq:linresp}
 \end{equation}
+\\
 where $\Psi_0$ is the reference wavefunction, $\hat{\Lambda}$ is a
 de-excitation operator used to parametrize the CC left hand wavefunction,
 $\omega$ is the frequency of the external field, $\hat{C}$ is a symmetrizer
@@ -222,18 +230,20 @@ operators, $\hat{T}$, e.g. $\bar{H} = e^{-\hat{T}}\hat{H}e^{\hat{T}}$. The
 first-order (right-hand) perturbed wave function is represented by
 ${\hat{X}^{B}_{\omega}}$, whose amplitudes can be obtained by solving a set
 of appropriate linear equations, e.g.,
+\\
 \begin{equation}
 \langle\Phi_{ij\ldots}^{ab\ldots}|(\bar{H}-\omega)|\hat{X}^{B}_{\omega}|\Psi_0\rangle
 = -\langle\Phi_{ij\ldots}^{ab\ldots}|\bar{B}|\Psi_0\rangle.
 \label{Eq:perturbed_wfn}
 \end{equation} 
-
+\\
 In the case of dynamic polarizabilities, for example, both $\bm{A}$ and
 $\bm{B}$ are cartesian components of the electric dipole operator, $\bm{\mu}
 = -\bm{r}$, and the isotropic polarizability $\alpha_{\omega}$ is
 related to the trace of the polarizability tensor such that Eq.\
 (\ref{Eq:linresp}) reduces to the following form (for real
 wavefunctions),
+\\
 \begin{equation}
 \alpha_{\omega} = \frac{1}{3} \mathrm{Tr}\left[
 \langle\Psi_0|(1+\hat{\Lambda})\left(
@@ -243,6 +253,7 @@ wavefunctions),
 \hat{X}^{{\mu}}_{\omega}\right]\right) | \Psi_0\rangle\right]
 \label{Eq:alpha}
 \end{equation}
+\\
 For dynamic polarizabilities computed using the coupled cluster singles and
 doubles (CCSD) method, for example, six sets of perturbed amplitudes,
 $\hat{X}_1 (X^{a}_{i})$ and $\hat{X}_2 (X^{ab}_{ij})$, must be computed, one for each cartesian
@@ -301,11 +312,13 @@ virtual orbital.  On the other hand, removal of low occupation-number NOs
 introduces errors of only ca.\ 2.5 kcal/mol even when up to 33\% of the
 virtual space (18 of 55 orbitals) is truncated.  The errors in
 the NO basis can be further minimized by employing an MP2 energy correction,
+\\
 \begin{equation}
 E^{\rm MP2}_{\rm corr} = \frac{1}{4} \sum_{ij} \sum_{ab \in {\rm ext}} \frac{|\langle
-ij||ab\rangle|^2}{.pdfilon_i + \epsilon_j - \epsilon_a - \epsilon_b}.
+ij||ab\rangle|^2}{\epsilon_i + \epsilon_j - \epsilon_a - \epsilon_b}.
 \label{Eq:MP2}
 \end{equation}
+\\
 where the summation over virtual orbitals is limited to NOs in the external,
 truncated space.  Fig.~\ref{fig:MP2_corr} 
 \begin{MyFigure}[h!]
@@ -539,16 +552,19 @@ total polarizability errors arises from the perturbed singles amplitudes.
 The significance of the $\hat{X}_1$ amplitudes is evident upon analysis of
 their leading-order contribution to the polarizability [cf.\
 Eq.~(\ref{Eq:alpha})],
+\\
 \begin{equation}
 \alpha_\omega \leftarrow \frac{1}{3} \sum\limits_{ia}\sum\limits_x \mu^{x}_{ia}(X^x_{ia}(\omega) +
 X^x_{ia}(-\omega)),
 \label{Eq:leading_X1}
 \end{equation} 
+\\
 where $\mu^x_{ia}$ is an element of the occupied-virtual block of the
 Cartesian component, $x$, of the electric-dipole moment integral matrix, and the inner
 sum runs over all such components. The singles
 themselves are obtained from the corresponding form of
 Eq.~(\ref{Eq:perturbed_wfn}),
+\\
 \begin{equation} 
 \langle\Psi^a_i|X^{\mu}_{\omega}|\Psi_0\rangle =
 -\sum_{\nu}\langle\Psi^a_i|(\bar{H} -
@@ -557,18 +573,23 @@ Eq.~(\ref{Eq:perturbed_wfn}),
 \in \{\Psi^b_j,\Psi^{cd}_{jk}\},
 \label{Eq:singles}
 \end{equation} 
+\\
 where $\bar{\mu}$ is the similarity transformed electric-dipole operator,
+\\
 \begin{equation}
 \bar{\mu} = \hat{\mu} + \bigg[\hat{\mu},\hat{T}\bigg] +
 \frac{1}{2}\bigg[\bigg[\hat{\mu},\hat{T}\bigg],\hat{T}\bigg].
 \label{Eq:mubar}
 \end{equation}
+\\
 The corresponding leading-order contribution to the $\hat{X}_1$ amplitudes themselves is
+\\
 \begin{equation}
 X^{\mu}_{ia}(\omega) \leftarrow \frac{\mu_{ia}}{\overbar{H}_{ii} -
 \overbar{H}_{aa} + \omega},
 \label{Eq:X1}
 \end{equation}
+\\
 where the largest contribution to the diagonal elements of the similarity
 transformed Hamiltonian, $\bar{H}$, arises from the orbital energies (more
 precisely, the diagonal Fock matrix elements expressed in the CMO or NO
@@ -674,11 +695,13 @@ the external perturbations.  The resulting ``occupation numbers'' obtained
 thus carry information about orbital occupancies in the perturbed states.  The
 $x^{th}$ Cartesian component of the perturbed density matrix can be written in
 terms of spin orbitals as
+\\
 \begin{equation}
 \gamma^x_{ab} = \frac{1}{2}\sum_{ijc}P_{+}(a,b)\left[\frac{t^{bc}_{ij}}{D^{ac}_{ij}} \
 \left(P_{-}(a,c)\sum_dt^{ad}_{ij}\mu^x_{cd} - P_{-}(i,j)\sum_m t^{ac}_{im}\mu^x_{mj}\right)\right]
 \label{Eq:perturb_d}
 \end{equation}
+\\
 where $P_{+}$ and $P_{-}$ are symmetric and anti-symmetric permutation
 operators, respectively, and the orbital-energy denominator $D^{ac}_{ij} =
 \epsilon_i + \epsilon_j  -\epsilon_a -\epsilon_c $.  (For computational
@@ -719,10 +742,12 @@ that provides optimal balance between computational cost (most compact virtual
 space) and accuracy?  The CMO orbital energies are one possibility, but they
 have no direct connection to the properties in question.  Another alternative
 is the ``dipole amplitude'', $d_a$, which is defined for each virtual CMO as
+\\
 \begin{equation}
 d_a \equiv \sum\limits_x\sum\limits_i\frac{({\mu^x_{ia}})^2}{\epsilon_i - \epsilon_a}.
 \label{Eq:dipole}
 \end{equation}
+\\
 This expression, which is trivially computed post-Hartree-Fock, is based on
 Eqs.~(\ref{Eq:leading_X1}) and (\ref{Eq:X1}), using the fact that the leading
 contributions to the diagonal elements of the similarty-transformed
