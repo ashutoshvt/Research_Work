@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  14 MAY 2018 21:07
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  14 MAY 2018 22:09
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1515,11 +1515,13 @@ Cheese-man,
 Missing character: There is no ‚ in font cmr12!
 Missing character: There is no Ä in font cmr12!
 Missing character: There is no ê in font cmr12!
- [122]) [123] (./SI/SI.tex
-(./SI/polar_adz.tex <SI/polar_adz.pdf, id=1350, 1027.84pt x 770.88pt>
-File: SI/polar_adz.pdf Graphic file (type pdf)
+ [122]) [123] (./publication.tex)
+[124
 
-<use SI/polar_adz.pdf>
+] (./SI/SI.tex (./SI/polar_adz.tex
+<SI/polar_adz.pdf, id=1353, 1027.84pt x 770.88pt>
+File: SI/polar_adz.pdf Graphic file (type pdf)
+ <use SI/polar_adz.pdf>
 Package pdftex.def Info: SI/polar_adz.pdf used on input line 3.
 (pdftex.def)             Requested size: 516.73335pt x 387.55634pt.
 
@@ -1528,14 +1530,14 @@ Overfull \hbox (46.97836pt too wide) in paragraph at lines 3--9
  []
 
 ) (./SI/h2o2_polar_aTZ_aQZ.tex
-<SI/h2o2_aTZ_polar.pdf, id=1351, 578.16pt x 361.35pt>
+<SI/h2o2_aTZ_polar.pdf, id=1354, 578.16pt x 361.35pt>
 File: SI/h2o2_aTZ_polar.pdf Graphic file (type pdf)
 
 <use SI/h2o2_aTZ_polar.pdf>
 Package pdftex.def Info: SI/h2o2_aTZ_polar.pdf used on input line 3.
 (pdftex.def)             Requested size: 281.85585pt x 176.1588pt.
 
-<SI/h2o2_aQZ_polar.pdf, id=1352, 578.16pt x 361.35pt>
+<SI/h2o2_aQZ_polar.pdf, id=1355, 578.16pt x 361.35pt>
 File: SI/h2o2_aQZ_polar.pdf Graphic file (type pdf)
 
 <use SI/h2o2_aQZ_polar.pdf>
@@ -1546,17 +1548,17 @@ Package pdftex.def Info: SI/h2o2_aQZ_polar.pdf used on input line 10.
 
 LaTeX Warning: Float too large for page by 6.90498pt on input line 35.
 
-)) [124
+)) [125
 
-] [125 <./SI/polar_adz.pdf>] [126 <./SI/h2o2_aTZ_polar.pdf> <./SI/h2o2_aQZ_pola
-r.pdf>] [127] [128] [129] [130] [131] (./etd.aux)
+] [126 <./SI/polar_adz.pdf>] [127 <./SI/h2o2_aTZ_polar.pdf> <./SI/h2o2_aQZ_pola
+r.pdf>] [128] [129] [130] [131] [132] (./etd.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 3893 strings out of 493014
- 63054 string characters out of 6133351
+ 3896 strings out of 493014
+ 63097 string characters out of 6133351
  140840 words of memory out of 5000000
  7285 multiletter control sequences out of 15000+600000
  17966 words of font info for 62 fonts, out of 8000000 for 9000
@@ -1583,10 +1585,10 @@ e/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl12.pfb></usr/local/texlive
 2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/20
 16/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2016
 /texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on etd.pdf (143 pages, 1881840 bytes).
+Output written on etd.pdf (144 pages, 1882615 bytes).
 PDF statistics:
- 1535 PDF objects out of 1728 (max. 8388607)
- 1086 compressed objects within 11 object streams
+ 1538 PDF objects out of 1728 (max. 8388607)
+ 1088 compressed objects within 11 object streams
  0 named destinations out of 1000 (max. 500000)
  256 words of extra memory for PDF output out of 10000 (max. 10000000)
 
