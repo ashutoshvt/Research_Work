@@ -8,6 +8,7 @@
 \contentsline {subsubsection}{\numberline {1.2.1.4}Electron Correlation}{10}
 \contentsline {subsubsection}{\numberline {1.2.1.5}Scaling}{10}
 \contentsline {subsection}{\numberline {1.2.2}Current Work}{10}
+\newpage 
 \contentsline {chapter}{\numberline {2}Theoretical Background}{12}
 \contentsline {section}{\numberline {2.1}Hartree-Fock Theory}{12}
 \contentsline {section}{\numberline {2.2}Configuration Interaction Method}{14}
