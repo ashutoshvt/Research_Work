@@ -67,7 +67,7 @@
 
 One of the central problems limiting the application of accurate {\em ab
 initio} methods like coupled-cluster (CC) theory to large molecular systems is their high 
-computational costs, i.e., their computing and storage requirements 
+computational cost, i.e., their computing and storage requirements 
 exhibit polynomial scaling with the size of the system or equivalently
 with the number of one electron basis functions used in these calculations.
 Specifically, the size of the virtual space is of greater concern since  
@@ -83,14 +83,14 @@ The corresponding eigenvalues are commonly referred to
 as ``occupation numbers''(ONs). Since L{\"o}wdin's pioneering 
 work, NOs have found a lot of applications especially in techniques 
 aimed at obtaining a compact representation of the virtual space for 
-correlated calculations.\cite{Sosa89,Taube05,Taube08,Landau10,DePrince13:FNOs,DePrince13} 
+correlated calculations\cite{DePrince13,DePrince13:FNOs,Landau10,Sosa89,Taube05,Taube08}.
 Please refer to ref.\cite{Landau10} for an excellent overview on this subject. 
 Within the context of the CC theory, the frozen virtual NO (FVNO) scheme, where 
 the NOs are usually obtained from the 1-RDM of a less expensive correlated method 
 such as the second-order M{\"o}ller-Plesset (MP2) theory and the virtual space for subsequent 
 CC calculations is truncated based on the values of the ONs has been used quite 
 successfully to calculate correlation energies, 
-ionization enthalpies etc. For example, Landau et al.\cite{Landau10} demonstrated 
+ionization energies, etc. For example, Landau et al.\cite{Landau10} demonstrated 
 that even after the removal of 70\% of the virtual space, the errors in
 the ionization energies of the organic compounds under study were less than 1 kcal/mol.
 However, it has been well established from previous studies that response 
@@ -102,7 +102,7 @@ approaches for properties like dynamic polarizabilities using CC linear reponse 
 which increased almost linearly with the number of truncated virtual orbitals. 
 It was found that the ground-state MP2 density used to generate the NOs was 
 unable to capture the response of the wavefunction to the external field. 
-For example, the FVNO procedure threw out first, the diffuse virtual 
+For example, the FVNO procedure threw out first the diffuse virtual 
 orbitals, which are known to be very important to describe the low lying Rydberg type 
 excited states (a common feature in majority of chiral compounds), 
 resulting in large errors. This was not unsurprising since these diffuse 
@@ -128,7 +128,7 @@ calculating CC2 excitation energies of large solvated formamide
 clusters\cite{Baudin17}. In similar works, H{\"o}fener and Klopper 
 obtained effective virtual spaces by combining MP2 
 ground state density with excited state densities constructed from CIS 
-excitation vectors\cite{HofenerKlopper17} while Mester et al. used MP2 and CIS(D) amplitudes 
+excitation vectors\cite{HofenerKlopper17} while Mester {\em et al}. used MP2 and CIS(D) amplitudes 
 to define their optimal virtual and occupied spaces\cite{Mester17,Mester18}.
 These successful works prompted us to take back a closer look at the 
 reasons behind the failure of our perturbed density approach. 
@@ -203,7 +203,7 @@ of equations,
 \end{split}
 \end{equation}
 \\
-Here $\tau_\mu$, $\tau_\nu$ are the excitation operators which when act on the
+Here $\tau_\mu$, $\tau_\nu$ are the excitation operators which when acting on the
 reference wavefunction $|0\rangle$ create excited determinats $|\mu\rangle$ 
 and $|\nu\rangle$ respectively. Also, the dependence of perturbed amplitudes
  on $\omega_1$ is assumed. The right hand amplitudes are solved first after 
@@ -222,7 +222,7 @@ The CC-LRF (eq. 4.9) can also be formulated in terms of perturbed densities,
 \\
 where $[{D^{B^{\omega_1}}}]^{(1)}$ is the frequency dependent first-order
 perturbed one-electron density related to operator B. The structures  
-of the virtual-virtual block of perturbed densities of different orders
+of the virtual-virtual blocks of perturbed densities of different orders
 (for a given perturbation operator) can be easily identified in spin orbitals,
 \\
 \begin{equation}
@@ -244,7 +244,7 @@ and $(t^{bc}_{ij})^{(1)}$ are nothing but the $\hat{X}^{B}_{\omega_1}$ and $\hat
 amplitudes that we saw earlier.\\ Just as the ground state MP2 density can transfer its knowledge of 
 the electron correlation effects to the one electron basis (virtual NOs) through diagonalization, 
 the perturbed densities can be used in a similar way to construct a compact ``perturbation aware''
-basis. In our earlier work, we constructed a guess first-order pertubed density associated  
+basis. In our earlier work, we constructed a guess first-order perturbed density associated  
 with each cartesian component (x,y,z) of the perturbation operator (dipole in the case of polarizabilities)
 from MP2 amplitudes, took an average of the three densities and then diagonalized it to obtain our 
 virtual space, but this approach offered only a minor improvement\cite{Kumar17}.
@@ -252,7 +252,7 @@ To investigate the reason behind the failure of this model, we constructed the v
 block of the full CCSD first-order perturbed density. All the diagonal elements of this density 
 matrix were found to be zeros irrespective of the perturbation operator. The exact reason for this
 is not yet understood but clearly, the virtual NOs (VNOs) obtained from this (or guess) density 
-doesn't carry any useful information. However, since the polarizabilities and specific rotations are 
+do not carry any useful information. However, since the polarizabilities and specific rotations are 
 of second-order in perturbation, we realized that second-order perturbed densities should in principle be a better 
 metric for estimating the importance of a VNO for these properties.
 In this paper, we use an average of second-order guess densities corresponding to each cartesian
@@ -318,25 +318,25 @@ rotations of solvated molecular clusters. However, first, we need to ensure
 that the FVNO++ approach has the right convergence behavior towards the full
 canonical result. In this regard, we carry out dynamic polarizabilities 
 and specific rotation calculations on linear chiral systems like 
-hydrogen peroxide, hydrogen dimer (P)-($H_2)_n$ helices as they provide a 
-``best-case" scenario for estimating the efficiency of these truncation schemes. 
+hydrogen peroxide and hydrogen dimer (P)-($H_2)_n$ helices as they provide a 
+convenient model for estimating the efficiency of these truncation schemes. 
 %chiral molecules ranging from linear hydrogen peroxide, hydrogen dimer (P)-($H_2)_n$ 
 %helices and (M)-1-Fluoralkanes to (S)-1-Phenylethanol, a molecule having two-dimensional 
 %structure and ultimately molecules with cagelike structutes: (1R,4R)-Norbornenone
 %and (1R,5R)-$\beta$-Pinene. 
 \subsection{Polarizabilities}
 Polarizability calculations on these chiral molecules can mostly be as seen as a diagnostic 
-tool for gaining insight into the nature of specific rotation calculations as one 
-truncates the virtual space as even though the response functions of 
-both the properties are quite similar, polarizabilities are much less sensitive to the 
+tool for gaining an insight into the nature of specific rotation calculations as one 
+truncates the virtual space. Even though the response functions of both the properties 
+are quite similar, polarizabilities are much less sensitive to the 
 wavefunction truncation. However, the results on polarizabilities obtained in this work
-can be extended to non-chiral systems as well. In all the polarizability calculations, the length-gauge 
+can be extended to non-chiral systems as well. In all these calculations, the length-gauge 
 (LG) representation of the electric dipole operator was used. The natural choice of 
 the perturbed densities for such calculations would be $\sum\limits_q \frac{1}{3}[{D^{\mu_q}_{ab}}]^{(2)}$,
 where $q \equiv [x,y,z]$ . 
 \subsection{Specific Rotations}
-All the specific rotation calculations in this work also employ the LG representation.
-, the LG representation is again employed
+All the specific rotation calculations in this work employ the LG representation.
+%, the LG representation is again employed
 %For the specific rotation calculations, we again employ the LG 
 %and modified velocity gauge (MVG)\cite{Pedersen04} 
 %representation 
@@ -346,11 +346,11 @@ they are a good starting point for our analysis as they show a faster convergenc
 involve both electric and magnetic dipole operators, we use, in addition to the electric dipole 
 based densities, i.e. FVNO++ ($\mu$), two other approaches of defining our virtual space.
 The first approach, FVNO++ ($\mu*L$) builds the density as a product of the first order amplitudes corresponding
-to the electric and magnetic perturbations ($L$). However, this makes the density matrix non positive 
-definite and thus both positive and negative eigenvalues appear as a result. Nevertheless, we truncate 
+to the electric and magnetic perturbations ($L$). However, this makes the density matrix non-positive 
+definite and both positive and negative eigenvalues appear as a result. Nevertheless, we truncate 
 these ``VNOs" based on the absolute values of their ``ONs". The second approach, FVNO++ ($\mu,L$) builds two truncated VNO 
-spaces (50\% in this work) based on the densities of the electric and magnetic dipole operators individually and does a SVD on 
-the union of the two spaces. Finally, just like before, the VNOs are truncated based on their singular values.
+spaces (50\% in this work) based on the densities of the electric and magnetic dipole operators individually and does a singular 
+value decomposition on the union of the two spaces. Finally, just like before, the VNOs are truncated based on their singular values.
 We report the performance of all three approaches in this work.
 %
 %choice of how to construct these perturbed densities. Both $[{D^{\mu_q}_{ab}}]^{(2)}$ 
@@ -385,8 +385,7 @@ obtained using the CCSD-LR(1) scheme which involves only one iteration of the CC
 approximating the $\lambda_\mu$ amplitudes with the corresponding $t_\mu$ amplitudes, are very close to 
 the full canonical result (CCSD-LR).
  \begin{table}[h]
- \caption{{\footnotesize Comparison of the canonical CCSD-LR polarizabilities ($\alpha$) and specific rotations ($[\alpha]$) of different test cases 
-calculated at 589 nm with that of the approximated CCSD-LR(1) scheme.}}
+ \caption{{\footnotesize Comparison of the canonical CCSD-LR polarizabilities in atomic units ($\alpha$) and specific rotations ($[\alpha]$) in deg $\text{dm}^{−1}$(g/mL)$^{−1}$ of different test cases calculated at 589 nm with that of the approximated CCSD-LR(1) scheme.}}
 %\begin{table}[h]
 \centering
 \begin{tabular}{lllll}

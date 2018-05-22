@@ -1,4 +1,4 @@
-\begin{thebibliography}{100}
+\begin{thebibliography}{10}
 
 \bibitem{Abrams04}
 M.~L. Abrams and C.~D. Sherrill.
@@ -102,10 +102,6 @@ T.~Daniel Crawford and Rollin~A. King.
 T.~Daniel Crawford and Henry~F. Schaefer.
 \newblock An introduction to coupled cluster theory for computational chemists.
 \newblock {\em Reviews in Computational Chemistry}, 14:33--136, 2000.
-
-\bibitem{silva04}
-C.~O. da~Silva, Benedetta Mennucci, and T.~Vreven.
-\newblock {\em J. Org. Chem}, 69:8161, 2004.
 
 \bibitem{JensenGordon96}
 Paul~N Day, Jan~H. Jensen, Mark~S. Gordon, Simon~P. Webb, Walter~J. Stevens,
@@ -260,14 +256,6 @@ Henrik Koch and Poul J{\o}rgensen.
 Rama~K. Kondru, Peter Wibf, and David~N. Beratan.
 \newblock Structural and conformational dependence of optical rotation angles.
 \newblock {\em J. Phys. Chem. A}, 103(33):6603--6611, 1999.
-
-\bibitem{Kongsted05}
-Jacob Kongsted, Thomas~Bondo Pedersen, Mikkel Strange, Anders Osted, Aage~E.
-  Hansen, Kurt~V. Mikkelsen, Filip Pawlowski, Poul J{\o}rgensen, and Christof
-  H\"{a}ttig.
-\newblock Coupled cluster calculations of the optical rotation of s-propylene
-  oxide in gas phase and solution.
-\newblock {\em Chem. Phys. Lett.}, 401:385--392, December 2005.
 
 \bibitem{Korona04}
 Tatiana Korona, Klaus Pfl\"{u}ger, and Hans-Joachim Werner.
@@ -548,11 +536,6 @@ C.~Sosa, J.~Geertsen, G.~W. Trucks, R.~J. Bartlett, and J.~A. Franz.
 \newblock Selection of the reduced virtual space for correlated calculations.
   an application to the energy and dipole moment of h$_2$o.
 \newblock {\em Chem. Phys. Lett.}, 159(2,3):148--154, 1989.
-
-\bibitem{Stephens001}
-P.~J. Stepehens, James~R. Cheeseman, Michael~J. Frisch, Benedetta Mennucci, and
-  Jacopo Tomasi.
-\newblock {\em J. Tetrahedron-Asymmetry}, 11:2443, 2000.
 
 \bibitem{Stephens94:B3LYP}
 P.~J. Stephens, F.~J. Devlin, C.~F. Chabalowski, and M.~J. Frisch.

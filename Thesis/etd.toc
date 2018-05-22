@@ -2,10 +2,10 @@
 \contentsline {section}{\numberline {1.1}Chirality}{1}
 \contentsline {section}{\numberline {1.2}{\em Ab Initio} Optical Rotation Calculations}{4}
 \contentsline {subsection}{\numberline {1.2.1}Challenges}{6}
-\contentsline {subsubsection}{\numberline {1.2.1.1}Modeling Solvation}{6}
-\contentsline {subsubsection}{\numberline {1.2.1.2}Gauge Invariance}{9}
-\contentsline {subsubsection}{\numberline {1.2.1.3}Basis Set}{9}
-\contentsline {subsubsection}{\numberline {1.2.1.4}Electron Correlation}{10}
+\contentsline {subsubsection}{\numberline {1.2.1.1}Electron Correlation}{6}
+\contentsline {subsubsection}{\numberline {1.2.1.2}Modeling Solvation}{6}
+\contentsline {subsubsection}{\numberline {1.2.1.3}Gauge and Origin Invariance}{9}
+\contentsline {subsubsection}{\numberline {1.2.1.4}Basis Set}{10}
 \contentsline {subsubsection}{\numberline {1.2.1.5}Scaling}{10}
 \contentsline {subsection}{\numberline {1.2.2}Current Work}{10}
 \newpage 
@@ -37,15 +37,15 @@
 \contentsline {section}{\numberline {4.3}Computational Details}{69}
 \contentsline {subsection}{\numberline {4.3.1}Polarizabilities}{70}
 \contentsline {subsection}{\numberline {4.3.2}Specific Rotations}{70}
-\contentsline {section}{\numberline {4.4}Results and Discussion}{72}
-\contentsline {section}{\numberline {4.5}Conclusions}{81}
-\contentsline {chapter}{\numberline {5}Perturbed Pair Natural Orbitals for Coupled-Cluster Linear-Response\\Theory}{83}
-\contentsline {section}{\numberline {5.1}Introduction}{83}
-\contentsline {section}{\numberline {5.2}Theory}{88}
-\contentsline {subsection}{\numberline {5.2.1}Coupled Cluster Response Theory}{88}
-\contentsline {subsection}{\numberline {5.2.2}Ground State PNOs}{90}
-\contentsline {subsection}{\numberline {5.2.3}Perturbed PNOs}{92}
-\contentsline {section}{\numberline {5.3}Computational Details}{95}
-\contentsline {section}{\numberline {5.4}Results and Discussions}{97}
-\contentsline {section}{\numberline {5.5}Conclusions}{101}
-\contentsline {chapter}{\numberline {6}Conclusions}{104}
+\contentsline {section}{\numberline {4.4}Results and Discussion}{71}
+\contentsline {section}{\numberline {4.5}Conclusions}{80}
+\contentsline {chapter}{\numberline {5}Perturbed Pair Natural Orbitals for Coupled-Cluster Linear-Response\\Theory}{82}
+\contentsline {section}{\numberline {5.1}Introduction}{82}
+\contentsline {section}{\numberline {5.2}Theory}{87}
+\contentsline {subsection}{\numberline {5.2.1}Coupled Cluster Response Theory}{87}
+\contentsline {subsection}{\numberline {5.2.2}Ground State PNOs}{89}
+\contentsline {subsection}{\numberline {5.2.3}Perturbed PNOs}{91}
+\contentsline {section}{\numberline {5.3}Computational Details}{94}
+\contentsline {section}{\numberline {5.4}Results and Discussions}{96}
+\contentsline {section}{\numberline {5.5}Conclusions}{100}
+\contentsline {chapter}{\numberline {6}Conclusions}{103}

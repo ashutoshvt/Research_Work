@@ -65,8 +65,8 @@
 In the construction of many-body electronic wave functions, the scaling of a
 given method with the number of molecular orbitals (MOs) plays a pivotal role
 in the ultimate cost of the calculation.  For many-body methods such as
-coupled cluster (CC),\cite{Shavitt09,Gauss98,Crawford00:review} which, in its
-canonical formulation, displays a higher-order polynomial dependence on the
+coupled cluster (CC),\cite{Crawford00:review, Gauss98, Shavitt09} which, in its
+canonical formulation, displays a high-order polynomial dependence on the
 number of MOs, numerous mechanisms have been explored over the last half
 century for reducing the size of the virtual-MO space.  Among the earliest of
 these was L{\"o}wdin's\cite{Lowdin55} introduction in 1955 of the concept of
@@ -83,20 +83,21 @@ the one-electron density matrix, for NO-CI calculations on the Ne atom.
 
 The concept of pair natural orbitals (PNOs -- originally called
 ``pseudonatural orbitals'') was developed by Edmiston and
-Krauss,\cite{Edmiston66} by Meyer\cite{Meyer73}, and by Ahlrichs and
-co-workers.\cite{Ahlrichs75} In the PNO approach, the virtual-virtual MO block
+Krauss\cite{Edmiston66}, by Meyer\cite{Meyer73}, and by Ahlrichs and
+co-workers\cite{Ahlrichs75}. In the PNO approach, the virtual-virtual MO block
 of the one-electron density is constructed and diagonalized independently for
 each occupied MO pair, leading to separate non-orthogonal virtual spaces.
 Although this approach leads to rapid convergence of the correlation energy
 with respect to the size of the virtual space, it was little used following
 initial investigations until it was resurrected in recent years by Neese and
 co-workers with great success in the context of reduced-scaling electron
-correlation methods.\cite{Neese09,Riplinger16}
+correlation methods\cite{Neese09,Riplinger16}.
 
 Following these pioneering efforts, NOs have been exploited in numerous
-applications to construct compact CI,\cite{Fermann94,Sherrill98:CI,Abrams04}
-multiconfigurational self-consistent-field (MCSCF),\cite{Jensen88} and CC wave
-functions.\cite{Sosa89,Taube05,Taube08,Landau10,DePrince13:FNOs,DePrince13} In
+applications to construct compact CI\cite{Abrams04,Fermann94,Sherrill98:CI},
+multiconfigurational self-consistent-field (MCSCF)\cite{Jensen88}, and CC wave
+functions\cite{DePrince13,DePrince13:FNOs,Landau10,Sosa89,Taube05,Taube08}. In
+%functions\cite{Sosa89,Taube05,Taube08,Landau10,DePrince13:FNOs,DePrince13}. In
 many of these studies, the virtual-MO block of the one-electron density is
 first obtained from a simpler model, such as second-order many-body
 perturbation theory (MBPT) calculation, and then diagonalized to yield the
@@ -118,13 +119,13 @@ non-parallelity errors in potential surfaces of weakly bound complexes.
 While the above studies have demonstrated clearly the usefulness of NOs for
 aggressively truncating the virtual space when computing correlation energies,
 more complex properties have yet to be considered.  As shown in a number of
-recent
-reports,\cite{Korona04,Russ04,Russ08,McAlexander12,Friedrich15,McAlexander15:LRCC}
+recent reports\cite{Friedrich15,Korona04,McAlexander15:LRCC,McAlexander12,Russ04,Russ08},
+%\cite{Korona04,Russ04,Russ08,McAlexander12,Friedrich15,McAlexander15:LRCC}
 properties that are related to the linear- or higher-order response of the
 wave function to external electric and magnetic fields, for example, exhibit
 much greater sensitivity to the quality of the wave function than simple
 energetics.  In particular, local correlation methods have been
-shown\cite{Korona04,Russ04,Russ08,McAlexander12,McAlexander15:LRCC} to
+shown\cite{Korona04,McAlexander15:LRCC,McAlexander12,Russ04,Russ08} to
 require significantly larger domains for properties such as polarizabilities
 than for ground-state energies.  Furthermore, the many-body expansion ---
 which has yielded impressive convergence for energetics and dipole moments for
@@ -266,20 +267,20 @@ H$_2$O$_2$, though additional tests are reported for related species such as
 (\textit{P})-dimethylallene and (\textit{S})-methyloxirane, as well as those
 same molecules interacting with one or more water molecules.  All molecular
 structures were optimized using the B3LYP
-functional\cite{Becke93,Stephens94:B3LYP,Lee88:LYP} in the aug-cc-pVDZ (aDZ)
-basis.\cite{Dunning89,Kendall92,Woon94} (Coordinates of all structures are
-provided in Tables S1-S5 of the Supporting Information.) Frequency-dependent
+functional\cite{Becke93,Lee88:LYP,Stephens94:B3LYP} in the aug-cc-pVDZ (aDZ)
+basis\cite{Dunning89,Kendall92,Woon94}. (Coordinates of all structures are
+provided in Tables 6.1-6.5 of the Supporting Information.) Frequency-dependent
 polarizabilities were computed at the coupled cluster singles and doubles
 (CCSD) level of theory\cite{Purvis82} using a linear-response
-formulation.\cite{Christiansen98} While the aDZ basis set was used for most
+formulation\cite{Christiansen98}. While the aDZ basis set was used for most
 test calculations, the larger aug-cc-pVTZ (aTZ) and aug-cc-pVQZ (aQZ) basis
-sets were also employed for selected analyses.\cite{Kendall92} All orbitals
+sets were also employed for selected analyses\cite{Kendall92}. All orbitals
 were active in the correlated models utilized here, and all coupled-cluster
 calculations were carried out using the PSI4 open-source quantum chemistry
-package.\cite{psi4}  In all calculations in which virtual orbitals are
+package\cite{psi4}.  In all calculations in which virtual orbitals are
 truncated, the same orbital space is used in the solution of the unperturbed
 and perturbed amplitudes equations, just as is required for locally correlated
-property calculations.\cite{Crawford10}  We note that the size-extensivity of
+property calculations\cite{Crawford10}.  We note that the size-extensivity of
 the polarizability is unaffected by the truncation of
 the virtual space.
 
@@ -362,9 +363,9 @@ On the other hand, for the CMO basis, the error increases slowly to a maximum
 of 1.9\% when 13 virtual orbitals are removed and then decreases to only
 -0.3\% when as many as 27 orbitals (ca.\ 50\% of the virtual space) are
 frozen.  This trend is not unique to H$_2$O$_2$ or the aDZ basis set. As shown
-in Fig.~S1 of the Supporting Information, the same behavior is observed for
+in Fig. 6.1 of the Supporting Information, the same behavior is observed for
 other molecules such as dimethylallene, methyloxirane, and such compounds
-interacting with explicit solvent molecules.  In addition, Figs.~S2 and S3
+interacting with explicit solvent molecules.  In addition, Figs. 6.2 and 6.3
 report the same trends for H$_2$O$_2$ with the larger aTZ and aQZ basis sets.
 
 
@@ -485,7 +486,7 @@ virtual CMOs. (Not surprisingly, freezing both $\hat{T}_1$ and $\hat{T}_2$
 amplitudes together have essentially the same effect as freezing $\hat{T}_2$
 amplitudes alone.) Alternatively, for the left-hand wave function, removing
 $\hat{\Lambda}_1$ and $\hat{\Lambda}_2$ amplitudes either separately or
-pairwise seem to have negligible impact.  In the case of the perturbed
+pairwise seems to have negligible impact.  In the case of the perturbed
 amplitudes, only small (negative) errors are introduced even after freezing
 all $\hat{X}_1$ amplitudes involving almost 23 virtual CMOs, but the error
 then rises sharply with further truncation.  On the other hand, the negative
@@ -497,7 +498,7 @@ total error corresponds to the sum of errors from $\hat{X}_1$ and $\hat{X}_2$
 truncation.
 
 A key observation is that, within the domain of the first 23 virtual CMOs, the
-positive errors introduced by truncation of $\hat{T}_2$ is cancelled almost
+positive errors introduced by truncation of $\hat{T}_2$ are cancelled almost
 exactly by the negative errors arising from the truncation of $\hat{X}_2$.
 This is further illustrated in Fig.~\ref{fig:error_compare}, 
 \begin{MyFigure}[h!]
@@ -602,7 +603,7 @@ the CMO and NO bases.}}
 \label{fig:Faa}
 \end{MyFigure}
 While the values for the virtual CMOs decrease steadily, their NO counterparts actually {\em increase}
-and display greater oscillation.  Clearly, the diagonal elements of the fock
+and display greater oscillation.  Clearly, the diagonal elements of the Fock
 matrix for virtual NOs are significantly smaller in magnitude than the
 corresponding CMOs, which concomitantly increases the values of the
 $\hat{X}_1$ amplitudes associated with such NOs.  This effect can be seen in
@@ -635,7 +636,7 @@ $\hat{T}_2$ and perturbed $\hat{X}_2$ amplitudes. }}
 \label{fig:norm}
 \end{MyFigure}
 which plots the 2-norm of the $\hat{X}_1$ vector as
-$\hat{T}_2$ or $\hat{X}_2$ amplitudes associated with a given virtual CMO is
+$\hat{T}_2$ or $\hat{X}_2$ amplitudes associated with a given virtual CMO are
 neglected (in the same manner as used in Figs.~\ref{fig:amp_trunc_cmo} and
 \ref{fig:error_compare}). As the $\hat{T}_2$ amplitudes associated with a given
 virtual orbital are removed, the norm of the $\hat{X}_1$ vector
@@ -670,7 +671,7 @@ static correction actually yielding slightly smaller errors than its dynamic
 counterpart.  The less expensive TDHF corrections offer significant
 improvement over the original virtual NO results, and recover most (ca.\ 85\%)
 of the error until about 40\% (21 orbitals) of the virtual space has been
-deleted, but it clearly produces overall larger errors than the correlated
+deleted, but they clearly produce overall larger errors than the correlated
 methods.  In addition, the TDHF corrections are potentially problematic
 because the pole structure of the polarizability naturally follows that of the
 underlying Hartree-Fock perturbed orbitals rather than that of the correlated
@@ -728,7 +729,7 @@ associated with conventional NOs, they still introduce significantly higher
 errors than the corresponding CMOs.  The reason for this underperformance is
 related to the definition of the perturbed density, which naturally bears
 strong similarity to its unperturbed counterpart [cf. Eqs.~(\ref{Eq:dens}) and
-(\ref{Eq:perturb_d}).]  As a result, similar sparsity and orbital energy issues
+(\ref{Eq:perturb_d})]. As a result, similar sparsity and orbital energy issues
 illustrated in Figs.~\ref{fig:Faa} and \ref{fig:X1} arise for the perturbed
 density just as for the original NOs, indicating that such an approach does not
 resolve the problem.
@@ -737,7 +738,7 @@ resolve the problem.
 
 The above results demonstrate that the CMO basis provides the best performance
 among the various virtual spaces considered here, albeit based on cancellation
-of errors, but what criterion should be used to determine the truncation level
+of errors. But what criterion should be used to determine the truncation level
 that provides optimal balance between computational cost (most compact virtual
 space) and accuracy?  The CMO orbital energies are one possibility, but they
 have no direct connection to the properties in question.  Another alternative
@@ -750,7 +751,7 @@ d_a \equiv \sum\limits_x\sum\limits_i\frac{({\mu^x_{ia}})^2}{\epsilon_i - \epsil
 \\
 This expression, which is trivially computed post-Hartree-Fock, is based on
 Eqs.~(\ref{Eq:leading_X1}) and (\ref{Eq:X1}), using the fact that the leading
-contributions to the diagonal elements of the similarty-transformed
+contributions to the diagonal elements of the similarity-transformed
 Hamiltonian are the orbital energies.    As we are constructing a
 phenomenological truncation criterion, we have chosen to neglect the
 dependence on the field frequency.
@@ -774,8 +775,8 @@ Accordingly, one should stop the truncation of the virtual CMO space once the
 dipole length values start rising sharply.  While the optimal choice of
 such a threshold will be addressed systematically in subsequent work, our
 preliminary analyses using H$_2$O$_2$, methyloxirane, dimethylallene, and
-related compounds suggest a cutoff of ca.\ 3-3.5\% yields minimal errors
-in the polarizability.
+related compounds suggest a cutoff of ca.\ 3-3.5\% (of the total dipole amplitude) 
+yields minimal errors in the polarizability.
 
 \section{Conclusions}
 

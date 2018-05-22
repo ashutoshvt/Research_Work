@@ -91,7 +91,6 @@ Repeated entry---line 4000 of file papes.bib
  : @article{Pedersen01
  :                    ,
 I'm skipping whatever remains of this entry
-Warning--empty title in silva04
 Warning--empty title in Kelvin
 Warning--empty publisher in Kelvin
 Warning--empty year in Kelvin
@@ -99,46 +98,45 @@ Warning--empty title in Kumar18:1
 Warning--empty year in Kumar18:1
 Warning--empty title in Olsen85
 Warning--empty journal in Smith18
-Warning--empty title in Stephens001
-You've used 101 entries,
+You've used 98 entries,
             2118 wiz_defined-function locations,
-            1165 strings with 23267 characters,
-and the built_in function-call counts, 37360 in all, are:
-= -- 3542
-> -- 1978
+            1149 strings with 22711 characters,
+and the built_in function-call counts, 36131 in all, are:
+= -- 3436
+> -- 1884
 < -- 9
-+ -- 790
-- -- 672
-* -- 3066
-:= -- 6323
-add.period$ -- 303
-call.type$ -- 101
-change.case$ -- 624
++ -- 753
+- -- 638
+* -- 2951
+:= -- 6103
+add.period$ -- 296
+call.type$ -- 98
+change.case$ -- 600
 chr.to.int$ -- 0
-cite$ -- 110
-duplicate$ -- 1178
-empty$ -- 2770
-format.name$ -- 672
-if$ -- 7664
+cite$ -- 105
+duplicate$ -- 1145
+empty$ -- 2698
+format.name$ -- 638
+if$ -- 7428
 int.to.chr$ -- 0
-int.to.str$ -- 101
-missing$ -- 105
-newline$ -- 505
-num.names$ -- 208
-pop$ -- 495
+int.to.str$ -- 98
+missing$ -- 102
+newline$ -- 492
+num.names$ -- 202
+pop$ -- 471
 preamble$ -- 1
-purify$ -- 532
+purify$ -- 509
 quote$ -- 0
-skip$ -- 796
+skip$ -- 778
 stack$ -- 0
-substring$ -- 2736
-swap$ -- 152
+substring$ -- 2676
+swap$ -- 149
 text.length$ -- 9
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 396
-warning$ -- 9
-while$ -- 303
-width$ -- 104
-write$ -- 1106
+type$ -- 384
+warning$ -- 7
+while$ -- 294
+width$ -- 100
+write$ -- 1077
 (There were 22 error messages)

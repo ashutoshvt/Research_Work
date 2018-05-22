@@ -12,7 +12,7 @@ in 1926 or the Schr\"odinger's equation \cite{Schrodinger26}. One of the biggest
 contributing to the rich diversity of quantum chemical theories is the fact that Schr\"odinger's equation (SE)
 is exactly solvable for only one electron systems like hydrogen atom. As such, numerous approximations
 have been proposed over the years to solve this equation for many electron systems.
-The Hartree-Fock (HF) theory\cite{SzaboOstlund} is one of the simplest approximation in this regard
+The Hartree-Fock (HF) theory\cite{SzaboOstlund} is one of the simplest approaches in this regard
 under the Born-Oppenheimer approximation\cite{Born27}. %in non-relativistic regimes. 
 This model attempts to transform the many body problem of SE into a one body problem where each electron
 only interacts with a mean field created by the other electrons. For an N-electron system, the HF 
@@ -51,9 +51,9 @@ containing the eigenvalues or electronic energies (The lowest energy corresponds
 the ground state wavefunction). If the vector space used to represent the Hamiltonian 
 is complete, the CI approach, then popularly known as the Full CI method gives exact 
 wavefunctions and electronic energies. Specifically, this model uses a vector space 
-composed of substituted or excited Slater determiants which can form a complete
+composed of substituted or excited Slater determinants which can form a complete
 space in the limit of an infinite one electron basis. Furthermore, this vector space 
-also have the desired properties of antisymmetry and orthogonality. Indeed the Full 
+also has the desired properties of antisymmetry and orthogonality. Indeed the Full 
 CI wavefunction is a linear combination of all possible Slater determinants for a given basis set,
 \\
 \begin{equation}
@@ -74,7 +74,7 @@ linearly with the number of electrons in the asymptotic limit. Another notable d
 is the lack of size-consistency which means that within these approaches, the sum of the 
 energies of non-interacting fragments (each calculated separately) is not equal to the energy 
 of the supermolecule when all the fragments are included in the calculations.
-As a result, the accuracy of these methods decrease progressively as the size of the system increases.
+As a result, the accuracy of these methods decreases progressively as the size of the system increases.
 %.These methods can extract up to 95\% of correlation energy\cite{HarrisonHandy83} and
 %can be applied to solve for excited states, open-shell systems and systems that
 %are far from their equilibrium geometry, which makes them very useful.
@@ -123,7 +123,7 @@ acts on a Slater determinant.
 a_i\ket{\phi_i\phi_j...\phi_l} = \ket{\phi_j...\phi_l}.
 \end{equation}
 Thus, the action of the $\hat{T_2} $ operator on a Slater determinant creates a 
-linear combination of all doublly excited determinants with corresponding coefficients
+linear combination of all doubly excited determinants with corresponding coefficients
 $t^{ab}_{ij}$ which can be seen as the contribution of virtual orbitals $a$ and $b$
 to the pair correlation function $f_{ij}$, which correlates the motions of any two 
 electrons associated with occupied orbitals $i$ and $j$. 
@@ -136,9 +136,8 @@ electrons associated with occupied orbitals $i$ and $j$.
 \end{equation}
 \\
 Similarly, the ${\hat{T_3}}$ operator correlates the motion of all triplets of electrons. 
-The $\hat{T_1}$ operator on the other hand are one electron operators that capture the 
-``adjustment of the one-electron basis"\cite{Crawford00} as the effect of other correlation operators 
-are added to the wavefunction.
+The $\hat{T_1}$ operator on the other hand captures the ``adjustment of the one-electron basis"\cite{Crawford00} 
+as the effect of other correlation operators is added to the wavefunction.
 \\
 \begin{equation}
 \hat{T_1} = \sum_{ia}t^a_i\{{a}^\dagger_a a_i\}
@@ -173,7 +172,7 @@ The Hamiltonian is also expressed in second-quantized form \cite{Crawford00}:
 \\
 where, $h_{pq} = \langle p|h|q \rangle$ and $\langle pq||rs \rangle = \langle pq|rs \rangle - \langle pq|sr \rangle$ are the one and two electron components of the Hamiltonian respectively.
 The CC equations for calculating the amplitudes and the energy can be  
-obtained by multiplying equation (2.12) by the inverse of the exponential operator i.e
+obtained by multiplying equation (2.12) by the inverse of the exponential operator i.e.
 $e^{-\hat{T}}$ and projecting it against the reference and excited
 determinants.
 \\
@@ -187,7 +186,7 @@ determinants.
 \\
 Here $\mu$ can refer to any excited Slater determinant: singles, doubles etc. 
 The similarity transformed Hamiltonian $e^{-\hat{T}}\hat{H}e^{\hat{T}}$, also written as 
-written as $\bar{H}$ can be expressed in terms of commutators of the Hamiltonian with the 
+$\bar{H}$ can be expressed in terms of commutators of the Hamiltonian with the 
 cluster operators $\hat{T}$ by using the Campbell-Baker-Hausdorff formula\cite{Merzbacher70}.
 \\
 \begin{equation}
@@ -207,7 +206,7 @@ E_{cc} = E_o + \sum_{ia}f_{ia}t^a_i + \frac{1}{4}\sum_{aibj}\bra{ij}\ket{ab}t^{a
 \end{equation} 
 \\
 The non-linear amplitude equations are solved iteratively until the change in energies
-fall below a convergence threshold. However, just like its CI counterpart, Full CC is 
+falls below a convergence threshold. However, just like its CI counterpart, Full CC is 
 computationally impractical and hence, truncated CC methods like CCSD:\;$\hat{T} =
 \hat{T_1} + \hat{T_2}$, CCSDT:\;$\hat{T} = \hat{T_1} + \hat{T_2} + \hat{T_3}$, 
 are used. The exponential structure of the CC wavefunction makes the truncated CC methods 
@@ -410,7 +409,7 @@ Hamiltonian using the standard time-dependent perturbation theory:
 \end{equation}
 \\
 where $H_o$ is the time independent or unperturbed Hamiltonian, $V(t)$ is the interaction 
-operator with $V(\omega)$ as its fourier transform and $\alpha$ is a real postive infinitesimal.
+operator with $V(\omega)$ as its Fourier transform and $\alpha$ is a real postive infinitesimal.
 The representation used for the $V(t)$ operator is an example of the adiabatically 
 switched on perturbation\cite{Koch90} where the perturbation is assumed to be zero at 
 $t = -\infty$. Thus, the molecule can be assumed to be in state $\Psi_o$, an 
@@ -431,7 +430,7 @@ eigenstate of $H_o$ at $t = -\infty$.
 %eigenstate of the system. 
 %Assuming that $\Psi_o$ is an eigenstate of $H_o$
 %and that the molecule is in state $\Psi_o$ when the perturbation starts at $t = -\infty$, 
-After the perturbation is switched on, the wavefunction become time dependent 
+After the perturbation is switched on, the wavefunction becomes time dependent 
 ($\ket{\Psi_o(t)}$) and evolves in time according to the time-dependent
 Schr\"odinger equation (TDSE).
 \\
@@ -463,7 +462,7 @@ ignored in the following derivations.
 %the presence of an external field. 
 From the above equation, it can be seen that an expectation value of a time independent
 operator $A$ can also be expanded in a similar fashion. The response functions are the 
-fourier transforms of these time dependent terms appearing in the expansion up to a given order.
+Fourier transforms of these time dependent terms appearing in the expansion up to a given order.
 \\
 %\begin{equation}
 %\bra{\Psi_o(t)}A\ket{\Psi_o(t)} = \bra{\Psi_o}A\ket{\Psi_o} + \int_{-\infty}^{\infty}d\omega_1{\langle\langle A;V({\omega_1})\rangle\rangle}_{\omega_1 + i\Gamma}e^{(-i\omega_1 + \Gamma)t} + .....
@@ -483,7 +482,7 @@ where the linear response function (LRF), $\langle\langle A;V^{\omega_1}\rangle\
 seen as the first order change in the expectation value of the time independent operator $A$ 
 with respect to perturbation. The first order perturbed wavefunction $\ket{\Psi_o}^{(1)}$
 can be obtained using Ehrenfest's theorem and combined with the above equation to construct 
-the LRF, which for exact states look like,
+the LRF, which for exact states looks like,
 \\
 \begin{equation}
 \langle\langle A;V^{\omega_1}\rangle\rangle = \sum_k\bigg[
@@ -541,7 +540,7 @@ equation of the $\lambda_{\mu}$ amplitudes can be derived.
 \end{equation} 
 \\
 where $\sim$ denotes the usual expressions without the phase factor $e^{\pm i\epsilon(t)}$. 
-The amplitudes are then expanded in orders of the perturbation which is followed by a fourier transformation.
+The amplitudes are then expanded in orders of the perturbation which is followed by a Fourier transformation.
 \\
 \begin{equation}
 \begin{split}
@@ -557,7 +556,7 @@ t_\mu(t) &= t^{(0)}_\mu +  t^{(1)}_\mu +  t^{(2)}_\mu + ... \\
 \end{split}
 \end{equation}
 \\
-Using 2.41-2.44, the equations for solving the fourier transforms 
+Using 2.41-2.44, the equations for solving the Fourier transforms 
 $X^{(1)}_\mu$ and $Y^{(1)}_\mu$ can be derived, 
 \\
 \begin{equation}
@@ -612,7 +611,7 @@ F^{A;V^{\omega_1};V^{\omega_2}}_{\omega_1 + i\alpha,\omega_2 \
 \end{split}
 \end{equation}
 \\
-From eqns 4.1-4.4 and using the relation $F^{V^{\omega_1};A}_{-\omega_1}=F^{A;V^{\omega_1}}_{\omega_1},$the CC-LRF can be identified as,
+From eqns 2.48 and 2.49 and using the relation $F^{V^{\omega_1};A}_{-\omega_1}=F^{A;V^{\omega_1}}_{\omega_1}$, the CC-LRF can be identified as,
 \\
 \begin{equation}
 {\langle\langle A;V^{\omega_1} \rangle\rangle}_{\omega_1 + i\alpha} \
@@ -634,7 +633,7 @@ $B$ respectively. An alternative formulation of the CC-LRF avoids calculating $\
 amplitudes by solving an extra set of $\hat{X}_{-\omega_1}$ amplitudes,
 \\
 \begin{equation}
-{\langle\langle\bm{A};\bm{B}\rangle\rangle}_{\omega_1}=
+{\langle\langle A;B \rangle\rangle}_{\omega_1}=
 \frac{1}{2}\hat{C}^{\pm\omega_1}\hat{P'}[A(-\omega_1),B(+\omega_1)] \left[
 \langle0|(1+\hat{\Lambda})\left( [\bar{A},\hat{X}^B_{\omega_1}] +
 \frac{1}{2}[[\bar{H_o},\hat{X}^{A}_{-\omega_1}], \hat{X}^{B}_{\omega_1}]
@@ -644,11 +643,18 @@ amplitudes by solving an extra set of $\hat{X}_{-\omega_1}$ amplitudes,
 \\
 where $\hat{C}$ is a symmetrizer that simultaneously interchanges the sign of the field 
 frequency and takes the complex conjugate of the expression, and $\hat{P'}$ symmetrizes 
-the expression with respect to the operators $\bm{A}$ and $\bm{B}$.\\
+the expression with respect to the operators $A$ and $B$.\\
 The LRFs can also be defined as second-order derivatives
-of a time-averaged quasi-energy with respect to external perturbations $\hat{A}$ and
-$\hat{B}$. This formalism is specially useful for deriving LRFs for approximate
+of a time-averaged quasi-energy with respect to external perturbations $A$ and
+$B$. This formalism is specially useful for deriving LRFs for approximate
 coupled cluster theories like CC2, CC3 etc.
+
+% need a concluding pargraph as to how these equations would be used 
+% for this work.
+
+
+
+
 %Expanding the $t^{a.}_{i.}$ amplitudes in orders of perturbation of V(t), the 
 %expressions for the different orders can be obtained using eq. (38). The first order
 %derivative can be written as:
