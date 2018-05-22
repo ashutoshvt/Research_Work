@@ -109,13 +109,6 @@ T.~D. Crawford and H.~F. Schaefer.
   Computational Chemistry}, volume~14, chapter~2, pages 33--136. VCH
   Publishers, New York, 2000.
 
-\bibitem{JensenGordon96}
-P.~N. Day, J.~H. Jensen, M.~S. Gordon, S.~P. Webb, W.~J. Stevens, M.~Krauss,
-  D.~Garmer, H.~Basch, and D.~Cohen.
-\newblock {An effective fragment method for modeling solvent effects in quantum
-  mechanical calculations}.
-\newblock {\em J. Chem. Phys.}, 105(5):1968--1986, 1996.
-
 \bibitem{DePrince13}
 A.~E. DePrince and C.~D. Sherrill.
 \newblock {Accuracy and Efficiency of Coupled-Cluster Theory Using Density
@@ -361,18 +354,6 @@ F.~Neese, F.~Wennmohs, and A.~Hansen.
   Approaches: An Attempt to Revive the Pair Natural Orbital Method}.
 \newblock {\em J. Chem. Phys.}, 130(114108):114108--1 -- 114108--18, 2009.
 
-\bibitem{Neugebauer09}
-J.~Neugebauer.
-\newblock {On the calculation of general response properties in subsystem
-  density functional theory}.
-\newblock {\em J. Chem. Phys.}, page 084104, 2009.
-
-\bibitem{Neugebauer05}
-J.~Neugebauer, M.~J. Louwerse, E.~J. Baerends, and T.~A. Wesolowski.
-\newblock {The merits of the frozen-density embedding scheme to model
-  solvatochromatic shifts}.
-\newblock {\em J. Chem. Phys.}, 122:094115, 2005.
-
 \bibitem{Olsen85}
 J.~Olsen and P.~J{\o}rgensen.
 \newblock {Linear and nonlinear response functions for an exact state and for
@@ -565,11 +546,6 @@ A.~G. Taube and R.~J. Bartlett.
 \newblock {Frozen Natural Orbital Coupled-Cluster Theory: Forces and
   Application to Decomposition of Nitroethane}.
 \newblock {\em J. Chem. Phys.}, 128:164101, 2008.
-
-\bibitem{Tomasi05}
-J.~Tomasi, B.~Mennucci, and R.~Cammi.
-\newblock {Quantum mechanical continuum solvation models}.
-\newblock {\em Chem. Rev.}, 105(8):2999--3093, July 2005.
 
 \bibitem{psi4}
 J.~M. Turney, A.~C. Simmonett, R.~M. Parrish, E.~G. Hohenstein, F.~A.

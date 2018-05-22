@@ -88,45 +88,45 @@ Name 25 in "R. M. Parrish and L. A. Burns and D. G. A. Smith and A. C. Simmonett
 while executing---line 1090 of file plain.bst
 Name 1 in "Sch\"{u}tz, M," has a comma at the end for entry Schutz00b
 while executing---line 1090 of file plain.bst
-You've used 97 entries,
+You've used 93 entries,
             2118 wiz_defined-function locations,
-            1143 strings with 22075 characters,
-and the built_in function-call counts, 35862 in all, are:
-= -- 3403
-> -- 1896
-< -- 9
-+ -- 741
-- -- 644
-* -- 2943
-:= -- 6073
-add.period$ -- 294
-call.type$ -- 97
-change.case$ -- 601
+            1122 strings with 21365 characters,
+and the built_in function-call counts, 34213 in all, are:
+= -- 3246
+> -- 1800
+< -- 8
++ -- 703
+- -- 610
+* -- 2812
+:= -- 5800
+add.period$ -- 282
+call.type$ -- 93
+change.case$ -- 572
 chr.to.int$ -- 0
-cite$ -- 105
-duplicate$ -- 1130
-empty$ -- 2668
-format.name$ -- 644
-if$ -- 7366
+cite$ -- 101
+duplicate$ -- 1073
+empty$ -- 2559
+format.name$ -- 610
+if$ -- 7024
 int.to.chr$ -- 0
-int.to.str$ -- 97
-missing$ -- 101
-newline$ -- 488
-num.names$ -- 200
-pop$ -- 475
+int.to.str$ -- 93
+missing$ -- 97
+newline$ -- 468
+num.names$ -- 192
+pop$ -- 451
 preamble$ -- 1
-purify$ -- 510
+purify$ -- 485
 quote$ -- 0
-skip$ -- 761
+skip$ -- 716
 stack$ -- 0
-substring$ -- 2617
-swap$ -- 145
-text.length$ -- 9
+substring$ -- 2513
+swap$ -- 128
+text.length$ -- 8
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 380
+type$ -- 364
 warning$ -- 8
-while$ -- 291
-width$ -- 99
-write$ -- 1066
+while$ -- 279
+width$ -- 95
+write$ -- 1022
 (There were 20 error messages)

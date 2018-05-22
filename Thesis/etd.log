@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  22 MAY 2018 15:25
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  22 MAY 2018 16:17
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -482,7 +482,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 98--107
 
  []
 
-[4] [5] [6] [7] [8]
+[4] [5]
 Missing character: There is no â in font cmr12!
 Missing character: There is no Ÿ in font cmr12!
 Missing character: There is no ¨ in font cmr12!
@@ -589,12 +589,7 @@ Missing character: There is no © in font cmr12!
 Missing character: There is no â in font cmr12!
 Missing character: There is no Ÿ in font cmr12!
 Missing character: There is no © in font cmr12!
- [9]
-Underfull \hbox (badness 10000) in paragraph at lines 237--245
-
- []
-
-) [10] [11]
+ [6] [7] [8] [9]) [10] [11]
 Chapter 2.
 (./theory.tex
 Underfull \hbox (badness 10000) in paragraph at lines 10--42
@@ -1544,16 +1539,16 @@ Package pdftex.def Info: SI/h2o2_aQZ_polar.pdf used on input line 10.
 [115] [116] [117
 
 ] [118] [119] [120] [121] [122] [123] [124] [125] [126]
-[127] [128] [129] [130]) [131] (./etd.aux)
+[127] [128] [129]) [130] (./etd.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 3892 strings out of 493014
- 63054 string characters out of 6133351
- 140821 words of memory out of 5000000
- 7280 multiletter control sequences out of 15000+600000
+ 3888 strings out of 493014
+ 63000 string characters out of 6133351
+ 140805 words of memory out of 5000000
+ 7276 multiletter control sequences out of 15000+600000
  18312 words of font info for 63 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  42i,19n,40p,988b,483s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1580,10 +1575,10 @@ e/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl12.pfb></usr/local/texlive
 /texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2016/t
 exmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2016/te
 xmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on etd.pdf (144 pages, 1902509 bytes).
+Output written on etd.pdf (143 pages, 1901557 bytes).
 PDF statistics:
- 1546 PDF objects out of 1728 (max. 8388607)
- 1094 compressed objects within 11 object streams
+ 1543 PDF objects out of 1728 (max. 8388607)
+ 1092 compressed objects within 11 object streams
  0 named destinations out of 1000 (max. 500000)
  256 words of extra memory for PDF output out of 10000 (max. 10000000)
 
