@@ -3,140 +3,130 @@ Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: etd.aux
 The style file: plain.bst
 Database file #1: papes.bib
-"{" immediately follows a field name---line 1644 of file papes.bib
+I was expecting a `,' or a `}'---line 81 of file papes.bib
+ : 
+ : @article{Sasagane93,
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 619 of file papes.bib
+ :  
+ :  Year = {1970}}
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+"{" immediately follows a field name---line 1544 of file papes.bib
  : @article
  :         {Kitaura01,
 I'm skipping whatever remains of this entry
-"," immediately follows an entry type---line 1928 of file papes.bib
+"," immediately follows an entry type---line 1828 of file papes.bib
  : @article7Christiansen95
  :                        ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 3412 of file papes.bib
+I was expecting a `,' or a `}'---line 2528 of file papes.bib
+ : 
+ : @article{Cheeseman00,
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 3251 of file papes.bib
+ : 
+ : @article{Becke93,
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+Repeated entry---line 3251 of file papes.bib
  : @article{Becke93
  :                 ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 3446 of file papes.bib
- : @article{psi4
- :              ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 3477 of file papes.bib
+Repeated entry---line 3316 of file papes.bib
  : @article{Dunning89
  :                   ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 3505 of file papes.bib
+Repeated entry---line 3344 of file papes.bib
  : @article{Lowdin55
  :                  ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 3541 of file papes.bib
+Repeated entry---line 3380 of file papes.bib
  : @article{Meyer73
  :                 ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 3549 of file papes.bib
- : @article{Ahlrichs75
- :                    ,
+I was expecting a `,' or a `}'---line 3517 of file papes.bib
+ : 
+ : @book{Shavitt09,
+(Error may have been on previous line)
 I'm skipping whatever remains of this entry
-Repeated entry---line 3558 of file papes.bib
- : @article{Jensen88
- :                  ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 3600 of file papes.bib
- : @article{Taube08
- :                 ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 3617 of file papes.bib
- : @article{Neese09
- :                 ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 3679 of file papes.bib
- : @article{McAlexander12
- :                       ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 3705 of file papes.bib
+Repeated entry---line 3550 of file papes.bib
  : @article{Russ04
  :                ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 3713 of file papes.bib
+Repeated entry---line 3558 of file papes.bib
  : @article{Russ08
  :                ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 3721 of file papes.bib
- : @article{Korona04
- :                  ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 3747 of file papes.bib
- : @article{Rice91
- :                ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 3758 of file papes.bib
- : @article{Hattig95
- :                  ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 3769 of file papes.bib
- : @article{Aiga96
- :                ,
-I'm skipping whatever remains of this entry
-You're missing a field part---line 3834 of file papes.bib
+You're missing a field part---line 3679 of file papes.bib
  :  number = 
  :           ,
 I'm skipping whatever remains of this entry
-You're missing a field part---line 3843 of file papes.bib
+You're missing a field part---line 3688 of file papes.bib
  :  Number = 
  :           ,
 I'm skipping whatever remains of this entry
-You're missing a field part---line 3853 of file papes.bib
+You're missing a field part---line 3698 of file papes.bib
  :  chapter = 
  :            ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 4000 of file papes.bib
- : @article{Pedersen01
- :                    ,
-I'm skipping whatever remains of this entry
+Name 25 in "R. M. Parrish and L. A. Burns and D. G. A. Smith and A. C. Simmonett and A. E. DePrince and E. G. Hohenstein and U. Bozkaya and A. Y. Sokolov and R. D. Remigio and R. M. Richard and J. F. Gonthier and A. M. James and H. R. McAlexander and A. Kumar and M. Saitow and X. Wang and B. P. Pritchard and P. Verma and H. F. Schaefer and K. Patkowski and R. A. King and E. F. Valeev and F. A. Evangelista and J. M. Turney and T. D. Crawford, and C. D. Sherrill" has a comma at the end for entry Parrish17
+while executing---line 1049 of file plain.bst
+Name 1 in "Sch\"{u}tz, M," has a comma at the end for entry Schutz00b
+while executing---line 1049 of file plain.bst
+Warning--empty year in Crawford00
+Warning--empty year in Gauss98
 Warning--empty title in Kelvin
 Warning--empty publisher in Kelvin
 Warning--empty year in Kelvin
 Warning--empty title in Kumar18:1
 Warning--empty year in Kumar18:1
-Warning--empty title in Olsen85
-Warning--empty journal in Smith18
-You've used 98 entries,
+Warning--empty year in Merzbacher70
+Name 25 in "R. M. Parrish and L. A. Burns and D. G. A. Smith and A. C. Simmonett and A. E. DePrince and E. G. Hohenstein and U. Bozkaya and A. Y. Sokolov and R. D. Remigio and R. M. Richard and J. F. Gonthier and A. M. James and H. R. McAlexander and A. Kumar and M. Saitow and X. Wang and B. P. Pritchard and P. Verma and H. F. Schaefer and K. Patkowski and R. A. King and E. F. Valeev and F. A. Evangelista and J. M. Turney and T. D. Crawford, and C. D. Sherrill" has a comma at the end for entry Parrish17
+while executing---line 1090 of file plain.bst
+Name 1 in "Sch\"{u}tz, M," has a comma at the end for entry Schutz00b
+while executing---line 1090 of file plain.bst
+You've used 97 entries,
             2118 wiz_defined-function locations,
-            1149 strings with 22711 characters,
-and the built_in function-call counts, 36131 in all, are:
-= -- 3436
-> -- 1884
+            1143 strings with 22075 characters,
+and the built_in function-call counts, 35862 in all, are:
+= -- 3403
+> -- 1896
 < -- 9
-+ -- 753
-- -- 638
-* -- 2951
-:= -- 6103
-add.period$ -- 296
-call.type$ -- 98
-change.case$ -- 600
++ -- 741
+- -- 644
+* -- 2943
+:= -- 6073
+add.period$ -- 294
+call.type$ -- 97
+change.case$ -- 601
 chr.to.int$ -- 0
 cite$ -- 105
-duplicate$ -- 1145
-empty$ -- 2698
-format.name$ -- 638
-if$ -- 7428
+duplicate$ -- 1130
+empty$ -- 2668
+format.name$ -- 644
+if$ -- 7366
 int.to.chr$ -- 0
-int.to.str$ -- 98
-missing$ -- 102
-newline$ -- 492
-num.names$ -- 202
-pop$ -- 471
+int.to.str$ -- 97
+missing$ -- 101
+newline$ -- 488
+num.names$ -- 200
+pop$ -- 475
 preamble$ -- 1
-purify$ -- 509
+purify$ -- 510
 quote$ -- 0
-skip$ -- 778
+skip$ -- 761
 stack$ -- 0
-substring$ -- 2676
-swap$ -- 149
+substring$ -- 2617
+swap$ -- 145
 text.length$ -- 9
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 384
-warning$ -- 7
-while$ -- 294
-width$ -- 100
-write$ -- 1077
-(There were 22 error messages)
+type$ -- 380
+warning$ -- 8
+while$ -- 291
+width$ -- 99
+write$ -- 1066
+(There were 20 error messages)

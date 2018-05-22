@@ -435,7 +435,7 @@ correspond solely to the response for the correlated wave function, and
 additional, spurious poles arising due to the Hartree-Fock reference
 determinant will not appear.  (This approximation is typically justified based
 on the fact that much of the orbital-response effects are accounted for by the
-singles amplitudes.\cite{Christiansen95:CC2})  In order to test whether the
+singles amplitudes\cite{Christiansen95:CC2}.  In order to test whether the
 orbital relaxation significantly impacts the behavior of the computed
 polarizability as the virtual space is reduced, we have computed {\em static}
 ($\omega = 0.0$) polarizabilities using finite-differences (with a a
@@ -482,9 +482,9 @@ function components.  From the Figure, it can be clearly seen that removing
 $\hat{T}_1$ alone does not introduce any significant error in the
 polarizability, whereas truncating $\hat{T}_2$ amplitudes results in
 substantial positive errors which increase almost linearly with the number of
-virtual CMOs. (Not surprisingly, freezing both $\hat{T}_1$ and $\hat{T}_2$
+virtual CMOs. Not surprisingly, freezing both $\hat{T}_1$ and $\hat{T}_2$
 amplitudes together have essentially the same effect as freezing $\hat{T}_2$
-amplitudes alone.) Alternatively, for the left-hand wave function, removing
+amplitudes alone. Alternatively, for the left-hand wave function, removing
 $\hat{\Lambda}_1$ and $\hat{\Lambda}_2$ amplitudes either separately or
 pairwise seems to have negligible impact.  In the case of the perturbed
 amplitudes, only small (negative) errors are introduced even after freezing
@@ -598,7 +598,7 @@ basis), which are plotted in Fig.~\ref{fig:Faa}.
 \begin{MyFigure}[h!]
 \centering
 \includegraphics[width=0.6\linewidth,natwidth=610,natheight=642]{figures_fvno/Faa.pdf}
-\caption{{\footnotesize Virtual diagonal elements (a.u.) of the Fock matrix in
+\caption{{\footnotesize Virtual diagonal elements (a.u.) of the Fock matrix (F) in
 the CMO and NO bases.}}
 \label{fig:Faa}
 \end{MyFigure}
@@ -675,7 +675,7 @@ deleted, but they clearly produce overall larger errors than the correlated
 methods.  In addition, the TDHF corrections are potentially problematic
 because the pole structure of the polarizability naturally follows that of the
 underlying Hartree-Fock perturbed orbitals rather than that of the correlated
-wave functions,\cite{Rice91,Hattig95,Aiga96} a criticism that would also hold
+wave functions,\cite{Aiga96,Hattig95,Rice91} a criticism that would also hold
 for purely MP2-based corrections.  On the other hand, the CC2-based
 corrections are significantly more expensive than TDHF, in part because of
 their iterative nature and the
@@ -769,10 +769,10 @@ each CMO, as well as the corresponding error in the CCSD/aDZ
 dipole-polarizability of H$_2$O$_2$ introduced by deleting the $\hat{X}_1$
 amplitude associated with a given virtual CMO. There is a clear correlation
 between the two functions, and one can see that as both the error due to
-truncation of $\hat{X}_1$ and the value of the dipole length increase sharply
+truncation of $\hat{X}_1$ and the value of the dipole amplitude increase sharply
 once we reach CMOs 27-28 --- ca. 50\% of the virtual space for this test case.
 Accordingly, one should stop the truncation of the virtual CMO space once the
-dipole length values start rising sharply.  While the optimal choice of
+dipole amplitude values start rising sharply.  While the optimal choice of
 such a threshold will be addressed systematically in subsequent work, our
 preliminary analyses using H$_2$O$_2$, methyloxirane, dimethylallene, and
 related compounds suggest a cutoff of ca.\ 3-3.5\% (of the total dipole amplitude) 

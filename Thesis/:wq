@@ -15,7 +15,7 @@
 	Date-Modified = {2014-11-07 22:31:41 +0000},
 	Journal = {Rev. Mod. Phys.},
 	Pages = {291},
-	Title = {{Coupled-cluster theory in quantum chemistry}},
+	Title = {Coupled-cluster theory in quantum chemistry},
 	Volume = {79},
 	Year = {2007}}
 
@@ -25,7 +25,7 @@
 	Date-Modified = {2014-11-07 21:14:43 +0000},
 	Journal = {J. Chem. Phys.},
 	Pages = {7677},
-	Title = {{Electronic-structure calculations by first-principles density-based embedding of explicitly correlated systems}},
+	Title = {Electronic-structure calculations by first-principles density-based embedding of explicitly correlated systems},
 	Volume = {110},
 	Year = {1999}}
 
@@ -34,7 +34,7 @@
 	Date-Added = {2014-11-07 21:07:56 +0000},
 	Date-Modified = {2014-11-07 21:10:40 +0000},
 	Publisher = {Wiley, New York},
-	Title = {{Introduction to Computational Chemistry}},
+	Title = {Introduction to Computational Chemistry},
 	Year = {2007}}
 
 @article{Jensen96,
@@ -56,13 +56,12 @@
 	Year = {1996}}
 
 @article{Olsen85,
-	Author = {Olsen, J. and J{\o}rgensen, P.},
+	Author = {Olsen, Jeppe and Jorgensen, Poul},
 	Date-Added = {2014-11-04 02:07:46 +0000},
 	Date-Modified = {2014-11-07 21:31:20 +0000},
 	Journal = {J. Chem. Phys.},
 	Keywords = {response, response functions},
 	Pages = {3235},
-    Title = {{Linear and nonlinear response functions for an exact state and for an MCSCF state}},
 	Volume = {82},
 	Year = {1985}}
 
@@ -74,7 +73,7 @@
 	Keywords = {frequency-dependent polarizabilities, MP2,mp2,Mp2},
 	Number = {24},
 	Pages = {11720},
-	Title = {{Calculation of frequency-dependent first hyperpolarizabilities using the second-order M{\o}ller--Plesset perturbation theory},
+	Title = {Calculation of frequency-dependent first hyperpolarizabilities using the second-order M{\o}ller--Plesset perturbation theory},
 	Volume = {110},
 	Year = {1999}}
 
@@ -85,9 +84,20 @@
 	Journal = {J. Chem. Phys.},
 	Keywords = {frequency-dependent polarizabilities, mp2, Mp2,MP2},
 	Pages = {3738},
-	Title = {{Higher-order response theory based on the quasienergy derivatives: The derivation of the frequencydependent polarizabilities and hyperpolarizabilities}},
+	Title = {Higherorder response theory based on the quasienergy derivatives: The derivation of the frequencydependent polarizabilities and hyperpolarizabilities},
 	Volume = {99},
 	Year = {1993}}
+
+@article{Hattig95,
+	Author = {Hattig, Christof and Hebeta, Bernd Artur},
+	Date-Added = {2014-10-22 16:31:52 +0000},
+	Date-Modified = {2014-10-22 16:57:00 +0000},
+	Journal = {Chem. Phys. Lett.},
+	Keywords = {frequency-dependent polarizabilities, mp2, Mp2, gradients},
+	Pages = {359-370},
+	Title = {￼Correlated frequency-dependent polarizabilities and dispersion coefficients in the time-dependent second-order Moller-Plesset approximation},
+	Volume = {233},
+	Year = {1995}}
 
 @article{Aiga93,
 	Author = {Aiga, Fumihiko and Sasagane, kotoku and Itoh, Reikichi},
@@ -96,9 +106,20 @@
 	Journal = {J. Chem. Phys.},
 	Keywords = {frequency-dependent polarizabilities,MP2,mp2, mp2 gradients},
 	Pages = {3779},
-	Title = {{Frequency dependent hyperpolarizabilities in the M\oller-Plesset perturbation theory}},
+	Title = {Frequency dependent hyperpolarizabilities in the Moller-Plesset perturbation theory},
 	Volume = {99},
 	Year = {1993}}
+
+@article{Rice91,
+	Author = {Rice, Julia E. and Handy, Nicholas C.},
+	Date-Added = {2014-10-22 16:26:44 +0000},
+	Date-Modified = {2014-10-22 16:28:27 +0000},
+	Journal = {J. Chem. Phys.},
+	Keywords = {Mp2, mp2 , mp2 gradients, gradients,frequency-dependent polarizabilities},
+	Pages = {4959},
+	Title = {The calculation of frequencydependent polarizabilities as pseudoenergy derivatives},
+	Volume = {94},
+	Year = {1991}}
 
 @article{FrischGordon90,
 	Author = {Frisch, Michael J. and Head-Gordon, Martin and Pople, John A.},
@@ -108,7 +129,7 @@
 	Keywords = {Mp2,mp2,gradients},
 	Number = {3},
 	Pages = {281},
-	Title = {{Semi-direct algorithms for the mp2 energy and gradients.}},
+	Title = {￼￼Semi-direct algorithms for the mp2 energy and gradients.},
 	Volume = {166},
 	Year = {1990}}
 
@@ -119,7 +140,7 @@
 	Journal = {Chem. Phys. Lett.},
 	Keywords = {gradients, mp2 , MP2, frequencies},
 	Pages = {122-128},
-	Title = {{Analytic MP2 frequencies without fifth-order storage. Theory and application to bifurcated hydrogen bonds in the water hexamer}},
+	Title = {Analytic MP2 frequencies without fifth-order storage. Theory and application to bifurcated hydrogen bonds in the water hexamer},
 	Volume = {220},
 	Year = {1994}}
 
@@ -130,7 +151,7 @@
 	Journal = {J. Phys. Chem. A},
 	Keywords = {dynamic polarizability, mp2,MP2},
 	Pages = {11063-11072},
-	Title = {{Static and Dynamic Polarizabilities of Conjugated Molecules and Their Cations}},
+	Title = {Static and Dynamic Polarizabilities of Conjugated Molecules and Their Cations},
 	Volume = {108},
 	Year = {2004}}
 
@@ -141,7 +162,7 @@
 	Journal = {Chem. Phys. Lett.},
 	Keywords = {MP2},
 	Pages = {275},
-	Title = {{A direct Mp2 gradient method}},
+	Title = {A direct Mp2 gradient method},
 	Volume = {166},
 	Year = {1990}}
 
@@ -157,7 +178,7 @@
 	Date-Added = {2014-10-09 16:15:21 +0000},
 	Date-Modified = {2014-10-09 16:16:35 +0000},
 	Publisher = {Cambridge University press},
-	Title = {{Mathematical Proceedings of the Cambridge Philosophical Society}},
+	Title = {Mathematical Proceedings of the Cambridge Philosophical Society},
 	Year = {1926}}
 
 @article{Crawford14.1,
@@ -183,18 +204,18 @@
 	Journal = {J. Phys. Chem.},
 	Keywords = {FDE},
 	Pages = {15444-15449},
-	Title = {{Ab initio Frozen Density Calculations of proton Transfer Reactions in Solution}},
+	Title = {Ab initio Frozen Density Calculations of proton Transfer Reactions in Solution},
 	Volume = {100},
 	Year = {1996}}
 
 @article{Neugebauer05,
-	Author = {Neugebauer, J. and Louwerse, M. J. and Baerends, E. J. and Wesolowski, T. A.},
+	Author = {Neugebauer, Johannes and Louwerse, M. J. and Baerends, E. J. and Wesolowski, Tomasz Adam},
 	Date-Added = {2014-10-08 19:08:43 +0000},
 	Date-Modified = {2014-10-08 19:11:10 +0000},
 	Journal = {J. Chem. Phys.},
 	Keywords = {FDE},
 	Pages = {094115},
-	Title = {{The merits of the frozen-density embedding scheme to model solvatochromatic shifts}},
+	Title = {The merits of the frozen-density embedding scheme to model solvatochromatic shifts},
 	Volume = {122},
 	Year = {2005}}
 
@@ -206,7 +227,7 @@
 	Keywords = {DFT},
 	Number = {4A},
 	Pages = {1133},
-	Title = {{Self-Consistent Equations Including Exchange and Correlation Effects}},
+	Title = {Self-Consistent Equations Including Exchange and Correlation Effects},
 	Volume = {140},
 	Year = {1965}}
 
@@ -215,7 +236,7 @@
 	Date-Added = {2014-10-08 18:46:50 +0000},
 	Date-Modified = {2014-10-08 18:49:18 +0000},
 	Publisher = {Oxford University Press: New York},
-	Title = {{Density Functional theory of Atoms and Molecules}},
+	Title = {Density Functional theory of Atoms and Molecules},
 	Year = {1989}}
 
 @article{HohenbergKohn64,
@@ -226,11 +247,12 @@
 	Keywords = {DFT},
 	Number = {3},
 	Pages = {B864},
-	Title = {{Inhomogenous Electron Gas}},
+	Title = {Inhomogenous Electron Gas},
 	Volume = {136},
 	Year = {1964}}
 
 @article{silva04,
+	Author = {da Silva, C. O. and Mennucci, Benedetta and Vreven, T.},
 	Date-Added = {2014-10-08 14:57:51 +0000},
 	Date-Modified = {2014-10-08 14:59:21 +0000},
 	Journal = {J. Org. Chem},
@@ -256,7 +278,7 @@
 	Journal = {J. Chem. Phys.},
 	Keywords = {PCM},
 	Pages = {2798-2807},
-	Title = {{Excited states and solvatochromic shifts within a nonequillibrium solvation approach: a new formulation of the integral equation formalism method at the self-consistent field, configuration interaction, and multi-configuration self-consistent field}},
+	Title = {Excited states and solvatochromic shifts within a nonequillibrium solvation approach: a new formulation of the integral equation formalism method at the self-consistent field, configuration interaction, and multi-configuration self-consistent field},
 	Volume = {109},
 	Year = {1998}}
 
@@ -266,7 +288,7 @@
 	Date-Modified = {2014-10-08 13:41:02 +0000},
 	Journal = {Amsterdam: Elsevier},
 	Keywords = {PCM},
-	Title = {{Theory of electric polarization}},
+	Title = {Theory of electric polarization},
 	Year = {1978}}
 
 @article{Onsager36,
@@ -276,7 +298,7 @@
 	Journal = {J. Am. Chem. Soc.},
 	Keywords = {PCM},
 	Pages = {1486-1493},
-	Title = {{Electric moments of molecules in liquids}},
+	Title = {Electric moments of molecules in liquids},
 	Volume = {58},
 	Year = {1936}}
 
@@ -287,7 +309,7 @@
 	Journal = {J. Chem. Phys.},
 	Keywords = {MBE,CP,N-body},
 	Pages = {224102},
-	Title = {{Approaching the complete-basis limit with a truncated many-body expansion}},
+	Title = {Approaching the complete-basis limit with a truncated many-body expansion},
 	Volume = {139},
 	Year = {2013}}
 
@@ -308,7 +330,7 @@
 	Journal = {Chem. Phys. Lett.},
 	Keywords = {CP},
 	Pages = {46-55},
-	Title = {{Hierarchy of counterpoise corrections for N-body clusters: generalization of the Boys-Bernardi scheme}},
+	Title = {Hierarchy of counterpoise corrections for N-body clusters: generalization of the7Boys-Bernardi scheme.},
 	Volume = {275},
 	Year = {1997}}
 
@@ -330,7 +352,7 @@
 	Keywords = {N-body,MBE},
 	Number = {1449},
 	Pages = {1-9},
-	Title = {{Computing optical rotation via an N-body approach}},
+	Title = {Computing optical rotation via an N-body approach},
 	Volume = {133},
 	Year = {2014}}
 
@@ -341,7 +363,7 @@
 	Journal = {Phys. Chem. Chem. Phys.},
 	Keywords = {MBE,N-body},
 	Pages = {7669-7678},
-	Title = {{Electrostatically embedded many-body method for dipole moments, partial atomic charges, and charge transfer}},
+	Title = {Electrostatically embedded many-body method for dipole moments, partial atomic charges, and charge transfer.},
 	Volume = {14},
 	Year = {2012}}
 
@@ -360,7 +382,7 @@
 	Date-Added = {2014-10-08 03:19:07 +0000},
 	Date-Modified = {2014-10-08 03:22:04 +0000},
 	Journal = {J. Chem. Phys.},
-	Keywords = {MBE,N-body}},
+	Keywords = {MBE,N-body},
 	Pages = {4544-4554},
 	Volume = {53},
 	Year = {1970}}
@@ -373,9 +395,34 @@
 	Keywords = {Mp2 density, Density matrix},
 	Month = {April},
 	Pages = {233-253},
-	Title = {{A derivation of the frozen-orbital unrestricted open-shell and restricted closed-shell second-order perturbation theory analytic gradient expressions}},
+	Title = {A derivation of the frozen-orbital unrestricted open-shell and restricted closed-shell second-order perturbation theory analytic gradient expressions},
 	Volume = {110},
 	Year = {2003}}
+
+@article{Jensen88,
+	Author = {Jensen, H. J. Aa. and Jorgensen, Poul. and Agren, H. and Olsen, Jeppe},
+	Date-Added = {2014-10-08 03:06:56 +0000},
+	Date-Modified = {2014-10-08 03:10:14 +0000},
+	Journal = {J. Chem. Phys.},
+	Keywords = {FNO},
+	Month = {November},
+	Pages = {3834},
+	Title = {Secondorder Moller--Plesset perturbation theory as a configuration and orbital generator in multiconfiguration selfconsistent field calculations},
+	Volume = {88},
+	Year = {1988}}
+
+@article{BarrDavidson70,
+	Author = {Barr, Terry L. and Davidson, Ernest R.},
+	Date-Added = {2014-10-08 02:53:03 +0000},
+	Date-Modified = {2014-10-08 02:55:45 +0000},
+	Journal = {Phys. Rev. A},
+	Keywords = {FNO},
+	Month = {March},
+	Number = {3},
+	Pages = {644-658},
+	Title = {Nature of the Configuration-Interaction Method in Ab Initio Calculations. I. Ne Ground State},
+	Volume = {1},
+	Year = {1970}}
 
 @article{Shavitt76,
 	Author = {Shavitt, I. and Rosenberg, B . J. and Palakit, S.},
@@ -393,7 +440,7 @@
 	Journal = {J. Chem. Phys.},
 	Keywords = {FNO,EOM-CC},
 	Pages = {014109},
-	Title = {{Frozen natural orbitals for ionized states within equation-of-motion coupled-cluster formalism}},
+	Title = {Frozen natural orbitals for ionized states within equation-of-motion coupled-cluster formalism},
 	Volume = {132},
 	Year = {2010}}
 
@@ -406,18 +453,18 @@
 	Month = {March},
 	Number = {6},
 	Pages = {1474},
-	Title = {{Quantum Theory of Many-Particle Systems. I. Physical Interpretations by Means of Density Matrices, Natural Spin-Orbitals, and Convergence Problems in the Method of Configurational Interaction}},
+	Title = {Quantum Theory of Many-Particle Systems. I. Physical Interpretations by Means of Density Matrices, Natural Spin-Orbitals, and Convergence Problems in the Method of Configurational Interaction},
 	Volume = {97},
 	Year = {1955}}
 
 @article{Neugebauer09,
-	Author = {Neugebauer, J.},
+	Author = {Neugebauer, Johannes},
 	Date-Added = {2014-10-08 02:28:21 +0000},
 	Date-Modified = {2014-10-08 02:35:19 +0000},
 	Journal = {J. Chem. Phys.},
 	Keywords = {FDE},
 	Pages = {084104},
-	Title = {{On the calculation of general response properties in subsystem density functional theory}},
+	Title = {On the calculation of general response properties in subsystem density functional theory},
 	Year = {2009}}
 
 @article{PerdewWang96,
@@ -429,7 +476,7 @@
 	Month = {July},
 	Number = {23},
 	Pages = {16533-16539},
-	Title = {{Generalized gradient approximation for the exchange-correlation hole of a many-electron system}},
+	Title = {Generalized gradient approximation for the exchange-correlation hole of a many-electron system},
 	Volume = {54},
 	Year = {1996}}
 
@@ -438,7 +485,7 @@
 	Date-Added = {2014-10-08 01:45:52 +0000},
 	Date-Modified = {2014-10-08 02:01:01 +0000},
 	Journal = {Gaussian, Inc., Wallingford CT.},
-	Title = {{Gaussian 09, Revision D.01}},
+	Title = {Gaussian 09, Revision D.01},
 	Year = {2009}}
 
 @article{Stephens94,
@@ -450,7 +497,7 @@
 	Month = {September},
 	Number = {45},
 	Pages = {11623-11627},
-	Title = {{ \em {Ab Initio} Calculation of Vibrational Absorption and Circular Dichroism Spectra Using Density Functional Force Fields}},
+	Title = {Ab Initio Calculation of Vibrational Absorption and Circular Dichroism Spectra Using Density Functional Force Fields},
 	Volume = {98},
 	Year = {1994}}
 
@@ -462,7 +509,7 @@
 	Keywords = {B3LYP},
 	Month = {May},
 	Pages = {10089-10094},
-	Title = {{Comparison of Density Functional and MP2 Calculations on the Water Monomer and Comparison of Density Functional and MP2 Calculations on the Water Monomer and Dimer}},
+	Title = {Comparison of Density Functional and MP2 Calculations on the Water Monomer and Comparison of Density Functional and MP2 Calculations on the Water Monomer and Dimer},
 	Volume = {98},
 	Year = {1994}}
 
@@ -474,7 +521,7 @@
 	Keywords = {ORD,hexadiene,pentadiene,Large changes},
 	Month = {November},
 	Pages = {2415-2422},
-	Title = {{Optical Rotatory Dispersion of 2,3-Hexadiene and 2,3-Pentadiene}},
+	Title = {Optical Rotatory Dispersion of 2,3-Hexadiene and 2,3-Pentadiene},
 	Volume = {112},
 	Year = {2008}}
 
@@ -486,7 +533,7 @@
 	Keywords = {Norbornenone , solvation,Large changes},
 	Month = {December},
 	Pages = {1410-1413},
-	Title = {{Large Solvation Effect in the Optical Rotatory Dispersion of Norbornenone}},
+	Title = {Large Solvation Effect in the Optical Rotatory Dispersion of Norbornenone},
 	Volume = {126},
 	Year = {2014}}
 
@@ -508,7 +555,7 @@
 	Keywords = {FDE,DFT},
 	Month = {May},
 	Pages = {8050-8053},
-	Title = {{Frozen Density Functional Approach for ab Initio Calculations of Solvated Molecules}},
+	Title = {Frozen Density Functional Approach for ab Initio Calculations of Solvated Molecules},
 	Volume = {97},
 	Year = {1993}}
 
@@ -520,7 +567,7 @@
 	Keywords = {TDDFT,optical activity,EFP},
 	Month = {October},
 	Pages = {144112},
-	Title = {{Solvent effects on optical properties of molecules: A combined time-dependent density functional theory/effective fragment potential approach}},
+	Title = {Solvent effects on optical properties of molecules: A combined time-dependent density functional theory/effective fragment potential approach},
 	Volume = {129},
 	Year = {2008}}
 
@@ -533,7 +580,7 @@
 	Month = {January},
 	Number = {2},
 	Pages = {293-307},
-	Title = {{The Effective Fragment Potential Method: A QM-Based MM Approach to Modeling Environmental Effects in Chemistry}},
+	Title = {The Effective Fragment Potential Method: A QM-Based MM Approach to Modeling Environmental Effects in Chemistry},
 	Volume = {105},
 	Year = {2000}}
 
@@ -546,7 +593,7 @@
 	Month = {July},
 	Number = {5},
 	Pages = {1065-1082},
-	Title = {{Distributed polarizabilities}},
+	Title = {Distributed polarizabilities},
 	Volume = {56},
 	Year = {1985}}
 
@@ -558,7 +605,7 @@
 	Month = {December},
 	Number = {8},
 	Pages = {4934-4948},
-	Title = {{The exact multicenter multipolar part of a molecular charge distribution and its simplified representations}},
+	Title = {The exact multicenter multipolar part of a molecular charge distribution and its simplified representations},
 	Volume = {88},
 	Year = {1988}}
 
@@ -571,18 +618,18 @@
 	Month = {October},
 	Number = {2},
 	Pages = {233-239},
-	Title = {{DISTRIBUTED MULTIPOLE ANALYSIS OR HOWTO DESCRIBE A MOLECULAR CHARGE DISTRIBUTION}},
+	Title = {DISTRIBUTED MULTIPOLE ANALYSIS OR HOWTO DESCRIBE A MOLECULAR CHARGE DISTRIBUTION},
 	Volume = {83},
 	Year = {1981}}
 
 @article{JensenGordon96,
-	Author = {Day, P. N. and Jensen, J. H. and Gordon, M. S. and Webb, S. P. and Stevens, W. J. and Krauss, M. and Garmer, D. and Basch, H. and Cohen, D.},
+	Author = {Day, Paul N and Jensen, Jan H. and Gordon, Mark S. and Webb,Simon P. and Stevens, Walter J. and Krauss,Morris and Garmer,David and Basch,Harold and Cohen,Drora},
 	Date-Added = {2014-10-02 17:50:03 +0000},
 	Date-Modified = {2014-10-03 04:58:55 +0000},
 	Journal = {J. Chem. Phys.},
 	Number = {5},
 	Pages = {1968-1986},
-	Title = {{An effective fragment method for modeling solvent effects in quantum mechanical calculations}},
+	Title = {An effective fragment method for modeling solvent effects in quantum mechanical calculations},
 	Volume = {105},
 	Year = {1996}}
 
@@ -593,7 +640,7 @@
 	Journal = {Physical review},
 	Keywords = {Hellman feynman theorem},
 	Pages = {340-343},
-	Title = {{Forces in Molecules}},
+	Title = {Forces in Molecules},
 	Volume = {56},
 	Year = {1939}}
 
@@ -606,7 +653,7 @@
 	Month = {October},
 	Number = {2},
 	Pages = {268-272},
-	Title = {{The Evaluation of the Collision Matrix.}},
+	Title = {The Evaluation of the Collision Matrix.},
 	Volume = {80},
 	Year = {1950}}
 
@@ -615,15 +662,15 @@
 	Date-Added = {2014-10-01 21:58:02 +0000},
 	Date-Modified = {2014-10-01 21:59:28 +0000},
 	Publisher = {Wiley, New York},
-	Title = {{Quantum Mechanics,2nd ed.},}
+	Title = {Quantum Mechanics,2nd ed.},
 	Year = {1970}}
 
 @book{JorgensenSimons81,
-	Author = {P. J{\o}rgensen and J. Simons},
+	Author = {P. Jorgensen and J. Simons},
 	Date-Added = {2014-10-01 21:50:04 +0000},
 	Date-Modified = {2014-10-01 21:52:26 +0000},
 	Publisher = {Academic Press, New York},
-	Title = {{Second Quantization-Based Methods in Quantum Chemistry}},
+	Title = {Second Quantization-Based Methods in Quantum Chemistry},
 	Year = {1981}}
 
 @article{HarrisonHandy83,
@@ -634,7 +681,7 @@
 	Keywords = {Full CI},
 	Month = {March},
 	Pages = {386-391},
-	Title = {{Full CI calculations on BH, H2O, NH3, and HF}},
+	Title = {Full CI calculations on BH, H2O, NH3, and HF},
 	Volume = {95},
 	Year = {1983}}
 
@@ -646,7 +693,7 @@
 	Keywords = {MP2},
 	Month = {October},
 	Pages = {618-622},
-	Title = {{Note on an Approximation Treatment for Many-Electron Systems}},
+	Title = {Note on an Approximation Treatment for Many-Electron Systems},
 	Volume = {46},
 	Year = {1934}}
 
@@ -657,7 +704,7 @@
 	Journal = {Proc. R. Soc. Lond. A},
 	Keywords = {Roothan hartree fock},
 	Pages = {541-552},
-	Title = {{The Molecular Orbital Theory of Chemical Valency. VIII. A Method of Calculating Ionization Potentials}},
+	Title = {The Molecular Orbital Theory of Chemical Valency. VIII. A Method of Calculating Ionization Potentials},
 	Volume = {205},
 	Year = {1951}}
 
@@ -669,24 +716,24 @@
 	Keywords = {Roothan hartree fock},
 	Number = {2},
 	Pages = {69-89},
-	Title = {{New Developments in Molecular Orbital Theory}},
+	Title = {New Developments in Molecular Orbital Theory},
 	Volume = {23},
 	Year = {1951}}
 
 @article{Born27,
-	Author = {Born, M. and Oppenheimer, J. R.},
+	Author = {Max Born and J. Robert Oppenheimer},
 	Date-Added = {2014-10-01 20:47:11 +0000},
 	Date-Modified = {2014-10-01 21:28:51 +0000},
 	Journal = {Annalen der Physik (in German)},
 	Keywords = {BO Approximation},
 	Number = {20},
 	Pages = {457-484},
-	Title = {{Zur Quantentheorie der Molekeln [On the Quantum Theory of Molecules]}},
+	Title = {Zur Quantentheorie der Molekeln [On the Quantum Theory of Molecules]},
 	Volume = {389},
 	Year = {1927}}
 
 @article{Schrodinger26,
-	Author = {E. Schr{\o}dinger},
+	Author = {Ervin Schrodinger},
 	Date-Added = {2014-10-01 20:32:36 +0000},
 	Date-Modified = {2014-10-01 20:36:59 +0000},
 	Journal = {Physical review},
@@ -694,7 +741,7 @@
 	Month = {December},
 	Number = {6},
 	Pages = {1049-1070},
-	Title = {{AN UNDULATORY THEORY OF THE MECHANICS OF ATOMS AND MOLECULES}},
+	Title = {AN UNDULATORY THEORY OF THE MECHANICS OF ATOMS AND MOLECULES},
 	Volume = {28},
 	Year = {1926}}
 
@@ -707,7 +754,7 @@
 	Month = {April},
 	Number = {7},
 	Pages = {2006-2009},
-	Title = {{Circularly polarized luminescence spectrum of camphorquinone}},
+	Title = {Circularly polarized luminescence spectrum of camphorquinone},
 	Volume = {96},
 	Year = {1974}}
 
@@ -719,7 +766,7 @@
 	Keywords = {circular dichroism, CD, circularly polarized luminescence, CPL, ground state, excited state, DFT, CAMB3LYP, B3LYP},
 	Pages = {643-650},
 	Read = {1},
-	Title = {{The optical activity of $\beta$,$\gamma$-enones in ground and excited states using circular dichroism and circularly polarized luminescence}},
+	Title = {The optical activity of $\beta$,$\gamma$-enones in ground and excited states using circular dichroism and circularly polarized luminescence},
 	Volume = {13},
 	Year = {2011}}
 
@@ -732,7 +779,7 @@
 	Number = {12},
 	Pages = {1416-1419},
 	Read = {1},
-	Title = {{Revisiting with updated hardware an old spectroscopic technique: Circularly polarized luminescence}},
+	Title = {Revisiting with updated hardware an old spectroscopic technique: Circularly polarized luminescence},
 	Volume = {64},
 	Year = {2010}}
 
@@ -745,7 +792,7 @@
 	Number = {25},
 	Pages = {5621-5627},
 	Read = {1},
-	Title = {{Solvation fo propylene oxide in water: Vibrational circular dichroism, optical rotation, and computer simulation studies}},
+	Title = {Solvation fo propylene oxide in water: Vibrational circular dichroism, optical rotation, and computer simulation studies},
 	Volume = {112},
 	Year = {2008}}
 
@@ -757,7 +804,7 @@
 	Keywords = {circularly polarized luminescence, CPL, vibrationally resolved, TDDFT},
 	Pages = {2409-2415},
 	Read = {1},
-	Title = {{Calculation of the vibrationally resolved, circularly polarized luminescence of d-camphorquinone and (\textit{S},\textit{S})-\textit{trans}-$\beta$-hydrindanone}},
+	Title = {Calculation of the vibrationally resolved, circularly polarized luminescence of d-camphorquinone and (\textit{S},\textit{S})-\textit{trans}-$\beta$-hydrindanone},
 	Volume = {11},
 	Year = {2010}}
 
@@ -770,7 +817,7 @@
 	Month = {February},
 	Number = {1},
 	Pages = {1-16},
-	Title = {{Circularly polarized luminescence spectroscopy}},
+	Title = {Circularly polarized luminescence spectroscopy},
 	Volume = {86},
 	Year = {1986}}
 
@@ -781,7 +828,7 @@
 	Journal = {Chem. Phys. Chem.},
 	Keywords = {vibrational Raman optical activity, VROA, coupled cluster},
 	Pages = {3442-3448},
-	Title = {{Coupled-cluster calculations of vibrational Raman optical activity spectra}},
+	Title = {Coupled-cluster calculations of vibrational Raman optical activity spectra},
 	Volume = {12},
 	Year = {2011}}
 
@@ -792,7 +839,7 @@
 	Journal = {Chirality},
 	Keywords = {Raman optical activity, ROA, review article, theory},
 	Pages = {E54-E67},
-	Title = {{Theoretical approaches to the calculation of Raman optical activity spectra}},
+	Title = {Theoretical approaches to the calculation of Raman optical activity spectra},
 	Volume = {21},
 	Year = {2009}}
 
@@ -804,7 +851,7 @@
 	Keywords = {vibrational circular dichroism, VCD, explicit solvation, implicit solvation},
 	Pages = {1655-1665},
 	Read = {1},
-	Title = {{A comparative VCD study of methyl mandelate in methano, dimethyl sulfoxide, and chloroform: explicit and implicit solvation models}},
+	Title = {A comparative VCD study of methyl mandelate in methano, dimethyl sulfoxide, and chloroform: explicit and implicit solvation models},
 	Volume = {15},
 	Year = {2013}}
 
@@ -816,7 +863,7 @@
 	Keywords = {electonic cicrular dichroism, ECD, CAMB3LYP, CCSD},
 	Month = {August},
 	Pages = {085102-10-085102-8},
-	Title = {{Electronic circular dichroism of disulphide bridge: Ab initio quantum-chemical calculations}},
+	Title = {Electronic circular dichroism of disulphide bridge: Ab initio quantum-chemical calculations},
 	Volume = {127},
 	Year = {2007}}
 
@@ -828,7 +875,7 @@
 	Keywords = {coupled cluster, iterative methods, stability conditions},
 	Number = {12},
 	Pages = {2043-2052},
-	Title = {{Stability conditions for the coupled cluster equations}},
+	Title = {Stability conditions for the coupled cluster equations},
 	Volume = {108},
 	Year = {2008}}
 
@@ -841,7 +888,7 @@
 	Month = {June},
 	Pages = {170-173},
 	Read = {1},
-	Title = {{Basis set convergence on optical rotation DFT calculations}},
+	Title = {Basis set convergence on optical rotation DFT calculations},
 	Volume = {494},
 	Year = {2010}}
 
@@ -854,11 +901,11 @@
 	Month = {October},
 	Pages = {144116-1 - 144116-15},
 	Read = {1},
-	Title = {{An efficient local coupled cluster method for accurate thermochemistry of large systems}},
+	Title = {An efficient local coupled cluster method for accurate thermochemistry of large systems},
 	Volume = {135}}
 
 @article{Hattig12,
-	Author = {Hättig, C. and Tew, D. P. and Helmich, B.},
+	Author = {Hattig, Christof and Tew, David P. and Helmich, Benjamin},
 	Date-Added = {2012-06-15 11:09:51 -0400},
 	Date-Modified = {2012-06-15 11:12:33 -0400},
 	Journal = {J. Chem. Phys.},
@@ -866,7 +913,7 @@
 	Month = {May},
 	Pages = {204105-1 - 204105-14},
 	Read = {1},
-	Title = {{Local explicitly correlated second- and third-order M\{o}ller-Plesset perturbation theory with pair natual orbitals}},
+	Title = {Local explicitly correlated second- and third-order M\{o}ller-Plesset perturbation theory with pair natual orbitals},
 	Volume = {136},
 	Year = {2012}}
 
@@ -879,7 +926,7 @@
 	Month = {May},
 	Pages = {194109-1-194109-15},
 	Read = {1},
-	Title = {{ {\em Ab initio} quantum dynamics using coupled-cluster}},
+	Title = {Ab initio quantum dynamics using coupled-cluster},
 	Volume = {136},
 	Year = {2012}}
 
@@ -891,7 +938,7 @@
 	Keywords = {PNO},
 	Month = {August},
 	Pages = {275-287},
-	Title = {{Direct determination of pair natural orbitals}},
+	Title = {Direct determination of pair natural orbitals},
 	Volume = {36},
 	Year = {1975}}
 
@@ -903,7 +950,7 @@
 	Keywords = {PNO, local correlation, energy extrapolation},
 	Month = {April},
 	Pages = {4801-4816},
-	Title = {{Improved correlation energy extrapolation schemes based on local pair natural orbital methods}},
+	Title = {Improved correlation energy extrapolation schemes based on local pair natural orbital methods},
 	Volume = {116},
 	Year = {2012}}
 
@@ -916,7 +963,7 @@
 	Month = {August},
 	Number = {4},
 	Pages = {1901-1905},
-	Title = {{An efficient reformulation of the closed-shell self-consistent electron pair theory}},
+	Title = {An efficient reformulation of the closed-shell self-consistent electron pair theory},
 	Volume = {81},
 	Year = {1984}}
 
@@ -929,12 +976,12 @@
 	Month = {December},
 	Number = {12},
 	Pages = {7382-7387},
-	Title = {{An efficient reformulation of the closed-shell coupled cluster single and double excitation (CCSD) equations}},
+	Title = {An efficient reformulation of the closed-shell coupled cluster single and double excitation (CCSD) equations},
 	Volume = {89},
 	Year = {1988}}
 
 @article{Meyer73,
-	Author = {Meyer, W.},
+	Author = {Meyer, Wilfried},
 	Date-Added = {2012-06-15 10:54:55 -0400},
 	Date-Modified = {2012-06-15 10:57:54 -0400},
 	Journal = {J. Chem. Phys.},
@@ -942,7 +989,7 @@
 	Month = {February},
 	Number = {3},
 	Pages = {1017-1035},
-	Title = {{PNOCI studies of electron correlation ffects. I. Configuration expansion by means of nonorthogonal orbitals, and application to the ground state and ionized states of methane}},
+	Title = {PNOCI studies of electron correlatione ffects. I. Configuration expansion by means of nonorthogonal orbitals, and application to the ground state and ionized states of methane},
 	Volume = {58},
 	Year = {1973}}
 
@@ -955,12 +1002,12 @@
 	Month = {August},
 	Pages = {717-729},
 	Read = {1},
-	Title = {{Modeling solvent effects on chiroptical properties}},
+	Title = {Modeling solvent effects on chiroptical properties},
 	Volume = {23},
 	Year = {2011}}
 
 @article{Mennucci02,
-	Author = {Mennucci, B. and Tomasi, J. and Cammi, R. and Cheeseman, J. R. and Frisch, M. J. and Devlin, F. J. and Gabriel, S. and Stephens, P. J.},
+	Author = {Mennucci, Benedetta and Tomasi, Jacopo and Cammi, Roberto and Cheeseman, James R. and Frisch, Michael J. and Devlin, Frank J. and Gabriel, S. and Stephens, Philip J.},
 	Date-Added = {2012-06-15 10:40:44 -0400},
 	Date-Modified = {2012-06-18 12:35:44 -0400},
 	Journal = {J. Phys. Chem. A},
@@ -969,7 +1016,7 @@
 	Number = {25},
 	Pages = {6102-6113},
 	Read = {1},
-	Title = {{Polarizable continuum model (PCM) calculations of solvent effects on optical rotations of chiral molecules}},
+	Title = {Polarizable continuum model (PCM) calculations of solvent effects on optical rotations of chiral molecules},
 	Volume = {106},
 	Year = {2002}}
 
@@ -981,12 +1028,12 @@
 	Keywords = {solvent effects, conformational effects, optical rotation, solvation, CRDP, PCM},
 	Pages = {357-369},
 	Read = {1},
-	Title = {{The effects of conformation and solvation on optical rotation: Substituted expoxides}},
+	Title = {The effects of conformation and solvation on optical rotation: Substituted expoxides},
 	Volume = {20},
 	Year = {2008}}
 
 @article{Tomasi05,
-	Author = {Tomasi, J. and Mennucci, B. and Cammi, R.},
+	Author = {Tomasi, Jacopo and Mennucci, Benedetta and Cammi, Roberto},
 	Date-Added = {2012-06-13 21:53:53 -0400},
 	Date-Modified = {2012-06-13 21:56:39 -0400},
 	Journal = {Chem. Rev.},
@@ -994,7 +1041,7 @@
 	Month = {July},
 	Number = {8},
 	Pages = {2999-3093},
-	Title = {{Quantum mechanical continuum solvation models}},
+	Title = {Quantum mechanical continuum solvation models},
 	Volume = {105},
 	Year = {2005}}
 
@@ -1007,7 +1054,7 @@
 	Month = {October},
 	Pages = {5697-5712},
 	Read = {1},
-	Title = {{Molecular properties in solution described with a continuum solvation model}},
+	Title = {Molecular properties in solution described with a continuum solvation model},
 	Volume = {4},
 	Year = {2002}}
 
@@ -1020,7 +1067,7 @@
 	Month = {August},
 	Number = {7},
 	Pages = {2027-2094},
-	Title = {{Molecular interactions in solution: An overview of methods based on continuous distributions of the solvent}},
+	Title = {Molecular interactions in solution: An overview of methods based on continuous distributions of the solvent},
 	Volume = {94},
 	Year = {1994}}
 
@@ -1033,7 +1080,7 @@
 	Month = {May},
 	Pages = {2187-2193},
 	Read = {1},
-	Title = {{COSMO Implementation in TURBOMOLE: Extension of an efficient quantum chemical code towards liquid systems}},
+	Title = {COSMO Implementation in TURBOMOLE: Extension of an efficient quantum chemical code towards liquid systems},
 	Volume = {2},
 	Year = {2000}}
 
@@ -1047,7 +1094,7 @@
 	Number = {4},
 	Pages = {1051-1060},
 	Read = {1},
-	Title = {{Modeling of the chiroptical response of chiral amino acids in solution using explicit solvation and molecular dynamics}},
+	Title = {Modeling of the chiroptical response of chiral amino acids in solution using explicit solvation and molecular dynamics},
 	Volume = {5},
 	Year = {2009}}
 
@@ -1060,7 +1107,7 @@
 	Month = {March},
 	Number = {13},
 	Pages = {4404-4414},
-	Title = {{Computational modeling of the optical rotation of amino acids: A new look at the old rule for pH dependence of optical rotation}},
+	Title = {Computational modeling of the optical rotation of amino acids: A new look at the old rule for pH dependence of optical rotation},
 	Volume = {130},
 	Year = {2008}}
 
@@ -1073,7 +1120,7 @@
 	Month = {October},
 	Number = {11},
 	Pages = {1902-1914},
-	Title = {{ {\em Ab initio} and density functional theory modeling of the chiroptical response of glycine and alanine in solution using explicit solvation and molecular dynamics}},
+	Title = {Ab initio and density functional theory modeling of the chiroptical response of glycine and alanine in solution using explicit solvation and molecular dynamics},
 	Volume = {4},
 	Year = {2008}}
 
@@ -1087,7 +1134,7 @@
 	Number = {8},
 	Pages = {585-597},
 	Read = {1},
-	Title = {{Towards an accurate modeling of optical rotation for solvated systems: Anharmonic vibrational contributions coupled to the polarizable continuum model}},
+	Title = {Towards an accuarate modeling of optical rotation for solvated systems: Anharmonic vibrational contributions coupled to the polarizable continuum model},
 	Year = {2012}}
 
 @article{PedersenCD09.pdf,
@@ -1098,7 +1145,7 @@
 	Keywords = {approximate integrals, density fitting, cholesky decomposition},
 	Month = {July},
 	Pages = {1-10},
-	Title = {{Density fitting with auxiliary basis sets from Cholesky decomposition}},
+	Title = {Density fitting with auxiliary basis sets from Cholesky decomposition},
 	Volume = {124},
 	Year = {2009}}
 
@@ -1111,12 +1158,12 @@
 	Month = {May},
 	Number = {194104},
 	Pages = {194104-1 - 194104-9},
-	Title = {{Local orbitals by minimizing powers of the orbital variance}},
+	Title = {Local orbitals by minimizing powers of the orbital variance},
 	Volume = {134},
 	Year = {2011}}
 
 @article{Yang12,
-	Author = {Yang, J. and Chan, G. K.-L. and Manby, F. R. and Sch\"{u}tz, M. and Werner, H.-J.},
+	Author = {Yang, Jun and Chan, Garnet Kin-Lic and Manby, Frederick R. and Sch\"{u}tz, Martin and Werner, Hans-Joachim},
 	Date-Added = {2012-05-04 15:10:40 -0400},
 	Date-Modified = {2012-05-04 15:12:37 -0400},
 	Journal = {J. Chem. Phys.},
@@ -1125,9 +1172,24 @@
 	Number = {144105},
 	Pages = {144105-1 - 144105-16},
 	Read = {1},
-	Title = {{The orbital-specific-virtual local coupled cluster singles and doubles method}},
+	Title = {The orbital-specific-virtual local coupled cluster singles and doubles method},
 	Volume = {136},
 	Year = {2012}}
+
+@article{McAlexander12,
+	Abstract = {The impact of orbital localization on the efficiency and accuracy of the optimized-orbital coupled cluster model is examined for the prediction of chiroptical properties{,} in particular optical rotation. The specific rotations of several test cases-(P)-[4]triangulane{,} (S)-1-phenylethanol{,} and chiral conformers of 1-fluoropentane{,} heptane{,} and nonane-were computed using an approach in which localization is enforced throughout the orbital optimization and subsequent linear response computation. This method provides a robust local-correlation scheme for future production-level implementation. Although the cross-over point between the canonical and localized coupled cluster approach lies at larger molecules than for ground-state energies{,} the scheme presented should still provide reduced scaling sufficient to investigate much larger molecules than are presently accessible.},
+	Author = {McAlexander, Harley R. and Mach, Taylor J. and Crawford, T. Daniel},
+	Date-Added = {2012-05-04 15:09:56 -0400},
+	Date-Modified = {2014-10-01 16:43:21 +0000},
+	Doi = {10.1039/C2CP23797K},
+	Journal = {Phys. Chem. Chem. Phys.},
+	Pages = {7830-7836},
+	Publisher = {The Royal Society of Chemistry},
+	Read = {1},
+	Title = {Localized optimized orbitals{,} coupled cluster theory{,} and chiroptical response properties},
+	Url = {http://dx.doi.org/10.1039/C2CP23797K},
+	Year = {2012}}
+	Bdsk-Url-1 = {http://dx.doi.org/10.1039/C2CP23797K}}
 
 @article{Autschbach12,
 	Author = {Autschbach, Jochen},
@@ -1138,7 +1200,7 @@
 	Month = {April},
 	Number = {150902},
 	Pages = {150902-1 - 150902-15},
-	Title = {{Perspective: Relativistic effects}},
+	Title = {Perspective: Relativistic effects},
 	Volume = {136},
 	Year = {2012}}
 
@@ -1151,7 +1213,7 @@
 	Month = {June},
 	Number = {21},
 	Pages = {9481-9484},
-	Title = {{Reduced scaling in electronic structure calculations using Cholesky decompositions}},
+	Title = {Reduced scaling in electronic structure calculations using Cholesky decompositions},
 	Volume = {118},
 	Year = {2003}}
 
@@ -1165,7 +1227,7 @@
 	Number = {5,6},
 	Pages = {514-518},
 	Read = {1},
-	Title = {{Integral approximations for LCAO-SCF calculations}},
+	Title = {Integral approximations for LCAO-SCF calculations},
 	Volume = {213},
 	Year = {1993}}
 
@@ -1179,7 +1241,7 @@
 	Number = {5,6},
 	Pages = {359-363},
 	Read = {1},
-	Title = {{Use of approximate integrals in ab initio theory. An application to MP2 energy calculations}},
+	Title = {Use of approximate integrals in ab initio theory. An application to MP2 energy calculations},
 	Volume = {208},
 	Year = {1993}}
 
@@ -1192,7 +1254,7 @@
 	Month = {May},
 	Number = {18},
 	Pages = {8149-8160},
-	Title = {{Fast linear scaling second-order M\oller-Plesset perturbation theory (MP2) using local and density fitting approximations}},
+	Title = {Fast linear scaling second-order M\oller-Plesset perturbation theory (MP2) using local and density fitting approximations},
 	Volume = {118},
 	Year = {2003}}
 
@@ -1205,7 +1267,7 @@
 	Month = {March},
 	Pages = {124106-1 - 124106-7},
 	Read = {1},
-	Title = {{Optimization of orbital-specific virtuals in local M\oller-Plessett perturbation theory}},
+	Title = {Optimization of orbital-specific virtuals in local M\oller-Plessett perturbation theory},
 	Volume = {136},
 	Year = {2012}}
 
@@ -1218,7 +1280,7 @@
 	Month = {June},
 	Pages = {241101-1 - 241101-5},
 	Read = {1},
-	Title = {{Local explicitly correlated coupled-cluster methods: Efficient removal of the basis set incompleteness and domain errors}},
+	Title = {Local explicitly correlated coupled-cluster methods: Efficient removal of the basis set incompleteness and domain errors},
 	Volume = {130},
 	Year = {2009}}
 
@@ -1230,7 +1292,7 @@
 	Keywords = {coupled cluster, projected AOs, PAO basis},
 	Month = {February},
 	Pages = {084103-1 -084103-9},
-	Title = {{Coupled-cluster theory in a projected atomic orbital basis}},
+	Title = {Coupled-cluster theory in a projected atomic orbital basis},
 	Volume = {124},
 	Year = {2006}}
 
@@ -1242,7 +1304,7 @@
 	Keywords = {analytic energry gradients, coupled cluster, local correlation},
 	Month = {September},
 	Pages = {4853-4862},
-	Title = {{Analytical energy gradients for local coupled-cluster methods}},
+	Title = {Analytical energy gradients for local coupled-cluster methods},
 	Volume = {3},
 	Year = {2001}}
 
@@ -1255,7 +1317,7 @@
 	Month = {February},
 	Number = {3-4},
 	Pages = {243-248},
-	Title = {{Can incremental expansions cope with high-order coupled-cluster contributions?}},
+	Title = {Can incremental expansions cope with high-order coupled-cluster contributions?},
 	Volume = {108},
 	Year = {2009}}
 
@@ -1268,7 +1330,7 @@
 	Month = {August},
 	Pages = {074107-1 - 074107-11},
 	Read = {1},
-	Title = {{Local explicitly correlated second-order M\{o}ller-Plesset perturbation theory with pair natural orbtials}},
+	Title = {Local explicitly correlated second-order M\{o}ller-Plesset perturbation theory with pair natural orbtials},
 	Volume = {135},
 	Year = {2011}}
 
@@ -1281,12 +1343,12 @@
 	Month = {December},
 	Number = {214102},
 	Pages = {214102-1 - 214102-20},
-	Title = {{Efficient and accurate local single reference correlation methods for high-spin open-shell molecules using pair natural orbitals}},
+	Title = {Efficient and accurate local single reference correlation methods for high-spin open-shell molecules using pair natural orbitals},
 	Volume = {135},
 	Year = {2011}}
 
 @article{NeeseCCSD09,
-	Author = {Neese, F. and Hansen, A. and Liakos, D. G.},
+	Author = {Neese, Frank and Hanse, Andreas and Liakos, Dimitrios G.},
 	Date-Added = {2012-03-01 10:15:38 -0500},
 	Date-Modified = {2012-03-01 10:18:02 -0500},
 	Journal = {J. Chem. Phys.},
@@ -1295,12 +1357,25 @@
 	Number = {064103},
 	Pages = {064103-1 - 064103-15},
 	Read = {1},
-	Title = {{Efficient and accurate approximations to the local coupled cluster singles and doubles method using a truncated pair natural orbtial basis}},
+	Title = {Efficient and accurate approximations to the local coupled cluster singles and doubles method using a truncated pair natural orbtial basis},
 	Volume = {131},
 	Year = {2009}}
 
+@article{Ahlrichs75,
+	Author = {Ahlrichs, R. and Lischka, H. and Staemmler, V. and Kutzelnigg, W.},
+	Date-Added = {2012-03-01 10:10:57 -0500},
+	Date-Modified = {2012-03-01 10:15:08 -0500},
+	Journal = {J. Phys. Chem.},
+	Keywords = {PNO, PNO-CI, PNO-CEPA},
+	Month = {February},
+	Number = {4},
+	Pages = {1225-1234},
+	Title = {PNO-CI (pair natural orbital configuration interaction) and CEPA-PNO (coupled electron pair approximation with pair natural orbitals) calculations of molecular systems. I. Outline of the method for closed shell states},
+	Volume = {62},
+	Year = {1975}}
+
 @article{Gauss00,
-	Author = {Gauss, J. and Werner, H.-J. },
+	Author = {Gauss, J\"{u}rgen and Werner, Hans-Joachim},
 	Date-Added = {2012-03-01 10:07:19 -0500},
 	Date-Modified = {2012-03-01 10:09:56 -0500},
 	Journal = {Phys. Chem. Chem. Phys.},
@@ -1308,9 +1383,23 @@
 	Month = {March},
 	Pages = {2083-2090},
 	Read = {1},
-	Title = {{NMR chemical shift calculations within local correlation methods: the GIAO-LMP2 approach}},
+	Title = {NMR chemical shift calculations within local correlation methods: the GIAO-LMP2 approach},
 	Volume = {2},
 	Year = {2000}}
+
+@article{Taube08,
+	Author = {Taube, Andrew G. and Bartlett, Rodney J.},
+	Date-Added = {2012-03-01 10:04:12 -0500},
+	Date-Modified = {2012-03-01 11:19:26 -0500},
+	Journal = {J. Chem. Phys.},
+	Keywords = {natural orbitals, frozen natural orbitals, FNO, coupled-cluster},
+	Month = {April},
+	Number = {164101},
+	Pages = {164101-1 - 161101-17},
+	Read = {1},
+	Title = {Frozen natural orbital coupled-cluster theory: Forces and application to decomposition of nitroethane},
+	Volume = {128},
+	Year = {2008}}
 
 @article{LiPaldus05,
 	Author = {Li, Xiangzhu and Paldus, Josef},
@@ -1322,7 +1411,7 @@
 	Number = {6},
 	Pages = {672-678},
 	Read = {1},
-	Title = {{Recursive generation of natural orbitals in a truncated orbital space}},
+	Title = {Recursive generation of natural orbitals in a truncated orbital space},
 	Volume = {105},
 	Year = {2005}}
 
@@ -1335,7 +1424,7 @@
 	Month = {February},
 	Number = {8},
 	Pages = {3660-3671},
-	Title = {{Linear scaling second-order M{\o}ller-Plesset theory in the atomic orbital basis for large molecular systems}},
+	Title = {Linear scaling second-order Moller-Plesset theory in the atomic orbital basis for large molecular systems},
 	Volume = {110},
 	Year = {1999}}
 
@@ -1348,7 +1437,7 @@
 	Month = {June},
 	Number = {16},
 	Pages = {1524-1531},
-	Title = {{Electron correlation in large molecular systems using the atomic orbital formalism. The cas eof intermolecular interactions in crystalline urea as an example}},
+	Title = {Electron correlation in large molecular systems using the atomic orbital formalism. The cas eof intermolecular interactions in crystalline urea as an example},
 	Volume = {21},
 	Year = {2000}}
 
@@ -1360,7 +1449,7 @@
 	Keywords = {orbital invariant, CEPA, renormalized, triples},
 	Month = {May},
 	Pages = {25-43},
-	Title = {{Orbital invariant single-reference coupled electron pair approximation with extensive renormalized triples correction}},
+	Title = {Orbital invariant single-reference coupled electron pair approximation with extensive renormalized triples correction},
 	Volume = {768},
 	Year = {2006}}
 
@@ -1372,7 +1461,7 @@
 	Keywords = {low-order scaling, SCF, HF, local},
 	Month = {April},
 	Pages = {651-658},
-	Title = {{Elongation cutoff technique: Low-order scaling SCF method}},
+	Title = {Elongation cutoff technique: Low-order scaling SCF method},
 	Volume = {14},
 	Year = {2008}}
 
@@ -1385,7 +1474,7 @@
 	Month = {January},
 	Pages = {044123-1 - 044123-13},
 	Read = {1},
-	Title = {{Tensor factorizations of local second order M\{o}ller-Plesset theory}},
+	Title = {Tensor factorizations of local second order M\{o}ller-Plesset theory},
 	Volume = {134},
 	Year = {2011}}
 
@@ -1398,19 +1487,19 @@
 	Month = {July},
 	Number = {4},
 	Pages = {14-21},
-	Title = {{Linear scaling electronic structure methods in chemistry and physics}},
+	Title = {Linear scaling electronic structure methods in chemistry and physics},
 	Volume = {5},
 	Year = {2003}}
 
 @article{Shen11,
-	Author = {Shen, J. and Kou, Z. and Xu, E.and Li, S.},
+	Author = {Shen, Jun and Kou, Zhuangfei and Xu, Enhua and Li, Shuhua},
 	Date-Added = {2012-02-01 17:06:14 -0500},
 	Date-Modified = {2012-02-01 17:09:54 -0500},
 	Journal = {J. Chem. Phys.},
 	Keywords = {coupled cluster, RHF, CCSD(T)-h, hybrid CC, active orbitals, inactive orbitals},
 	Month = {January},
 	Pages = {044134-1 - 044134-7},
-	Title = {{The coupled cluster approach with a hybrid treatment of connected triple excitations based on the restricted Hartree-Fock reference}},
+	Title = {The coupled cluster approach with a hybrid treatment of connected triple excitations based on the restricted Hartree-Fock reference},
 	Volume = {134},
 	Year = {2011}}
 
@@ -1422,12 +1511,12 @@
 	Keywords = {coupled cluster, CCSD(T)-h, hybrid CC, active orbitals, inactive orbitals},
 	Month = {March},
 	Pages = {114115-1 - 114115-12},
-	Title = {{A coupled cluster approach with a hybrid treatment of connected excitations for bond-breaking potential energy surfaces}},
+	Title = {A coupled cluster approach with a hybrid treatment of connected excitations for bond-breaking potential energy surfaces},
 	Volume = {132},
 	Year = {2010}}
 
 @article{Shen12,
-	Author = {Shen, J. and Kou, Z. and Xu, E. and Li, S.},
+	Author = {Shen, Jun and Kou, Zhuangfei and Xu, Enhua and Li, Shuhua},
 	Date-Added = {2012-02-01 10:50:46 -0500},
 	Date-Modified = {2012-02-01 17:03:20 -0500},
 	Journal = {J. Chem. Phys.},
@@ -1435,7 +1524,7 @@
 	Month = {January},
 	Pages = {044101-1 - 044101-9},
 	Read = {1},
-	Title = {{The coupled cluster singles, doubles, and a hybrid treatment of connected triples based on the split virtual orbitals}},
+	Title = {The coupled cluster singles, doubles, and a hybrid treatment of connected triples based on the split virtual orbitals},
 	Volume = {136},
 	Year = {2012}}
 
@@ -1448,7 +1537,7 @@
 	Month = {April},
 	Number = {29},
 	Pages = {9646-9663},
-	Title = {{Accurate methods for large molecular systems}},
+	Title = {Accurate methods for large molecular systems},
 	Volume = {113},
 	Year = {2009}}
 
@@ -1461,7 +1550,7 @@
 	Month = {January},
 	Number = {2},
 	Pages = {287-294},
-	Title = {{Fully automated incremental evaluation of MP2 and CCSD(T) energies: application to water clusters}},
+	Title = {Fully automated incremental evaluation of MP2 and CCSD(T) energies: application to water clusters},
 	Volume = {5},
 	Year = {2009}}
 
@@ -1473,7 +1562,7 @@
 	Keywords = {incremental, local},
 	Number = {6},
 	Pages = {1026-1032},
-	Title = {{Wave-function-based ab initio correlation treatment for the Buckminsterfullerene C\textsubscript{60}}},
+	Title = {Wave-function-based ab initio correlation treatment for the Buckminsterfullerene C\textsubscript{60}},
 	Volume = {100},
 	Year = {2004}}
 
@@ -1486,7 +1575,7 @@
 	Month = {December},
 	Number = {11},
 	Pages = {8449-8454},
-	Title = {{On the correlation energy of graphite}},
+	Title = {On the correlation energy of graphite},
 	Volume = {97},
 	Year = {1992}}
 
@@ -1499,7 +1588,7 @@
 	Month = {October},
 	Number = {14},
 	Pages = {6649-6657},
-	Title = {{Divide-and-conquer local correlation approach to the correlation energy of large molecules}},
+	Title = {Divide-and-conquer local correlation approach to the correlation energy of large molecules},
 	Volume = {121},
 	Year = {2004}}
 
@@ -1511,7 +1600,7 @@
 	Keywords = {FMO, errata},
 	Month = {February},
 	Pages = {079904-1},
-	Title = {{Publisher's Note: "Coupled-cluster theory based upon the molecular-orbital method" [J. Chem. Phys. 123, 134103 (2005)]}},
+	Title = {Publisher's Note: "Coupled-cluster theory based upon the molecular-orbital method" [J. Chem. Phys. 123, 134103 (2005)]},
 	Volume = {124},
 	Year = {2006}}
 
@@ -1524,7 +1613,7 @@
 	Month = {October},
 	Pages = {134103-1 - 134103-11},
 	Read = {1},
-	Title = {{Coupled-cluster theory based upon the fragment molecular-orbital method}},
+	Title = {Coupled-cluster theory based upon the fragment molecular-orbital method},
 	Volume = {123},
 	Year = {2005}}
 
@@ -1537,7 +1626,7 @@
 	Month = {November},
 	Pages = {701-706},
 	Read = {1},
-	Title = {{Fragment molecular orbital method: an approximate computational method for large molecules}},
+	Title = {Fragment molecular orbital method: an approximate computational method for large molecules},
 	Volume = {313},
 	Year = {1999},
 
@@ -1550,7 +1639,7 @@
 	Month = {March},
 	Pages = {163-170},
 	Read = {1},
-	Title = {{Fragment molecular orbital method: analytic energy gradients}},
+	Title = {Fragment molecular orbital method: analytic energy gradients},
 	Volume = {336},
 	Year = {2001}}
 
@@ -1563,7 +1652,7 @@
 	Month = {August},
 	Pages = {074109-1 - 074109-10},
 	Read = {1},
-	Title = {{An efficient implementation of the "cluster-in-molecule" approach for local electron correlation calculations}},
+	Title = {An efficient implementation of the "cluster-in-molecule" approach for local electron correlation calculations},
 	Volume = {125},
 	Year = {2006}}
 
@@ -1575,7 +1664,7 @@
 	Keywords = {optical activity, vibrational effects, basis set dependence},
 	Number = {1},
 	Pages = {32-38},
-	Title = {{Optical activity of 1-butene, butane, and related hydrocarbons}},
+	Title = {Optical activity of 1-butene, butane, and related hydrocarbons},
 	Volume = {108},
 	Year = {2004}}
 
@@ -1589,7 +1678,7 @@
 	Number = {2},
 	Pages = {616-625},
 	Read = {1},
-	Title = {{A tensor formulation of many-electron theory in a nonorthogonal single-particle basis}},
+	Title = {A tensor formulation of many-electron theory in a nonorthogonal single-particle basis},
 	Volume = {108},
 	Year = {1998}}
 
@@ -1602,7 +1691,7 @@
 	Month = {April},
 	Number = {7},
 	Pages = {2901-2907},
-	Title = {{Theory of self-consistent electron pairs. An iterative method for correlated many-electron wavefunctions}},
+	Title = {Theory of self-consistent electron pairs. An iterative method for correlated many-electron wavefunctions},
 	Volume = {64},
 	Year = {1976}}
 
@@ -1614,7 +1703,7 @@
 	Keywords = {r12, local correlation, toc},
 	Pages = {3318-3319},
 	Read = {1},
-	Title = {{Explicit-r_{12} correlation methods and local correlation methods}},
+	Title = {Explicit-r_{12} correlation methods and local correlation methods},
 	Volume = {10},
 	Year = {2008}}
 
@@ -1627,7 +1716,7 @@
 	Number = {7},
 	Pages = {607-615},
 	Read = {1},
-	Title = {{Dynamic correlation}},
+	Title = {Dynamic correlation},
 	Volume = {99},
 	Year = {2001}}
 
@@ -1641,7 +1730,7 @@
 	Number = {3},
 	Pages = {563-569},
 	Read = {1},
-	Title = {{Exchange and correlation in density funtional theory and quantum chemistry}},
+	Title = {Exchange and correlation in density funtional theory and quantum chemistry},
 	Volume = {111},
 	Year = {2009}}
 
@@ -1654,7 +1743,7 @@
 	Month = {April},
 	Pages = {6721-6727},
 	Read = {1},
-	Title = {{Multilevel extension of the cluster-in-molecule local correlation methodology: Merging coupled-cluster and M\{o}ller-Plesset perturbation theories}},
+	Title = {Multilevel extension of the cluster-in-molecule local correlation methodology: Merging coupled-cluster and M\{o}ller-Plesset perturbation theories},
 	Volume = {114},
 	Year = {2010}}
 
@@ -1667,7 +1756,7 @@
 	Month = {April},
 	Number = {13},
 	Pages = {5194-5204},
-	Title = {{On the time-dependent Lagrangian approach in quantum chemistry}},
+	Title = {On the time-dependent Lagrangian approach in quantum chemistry},
 	Volume = {108},
 	Year = {1998}}
 
@@ -1680,7 +1769,7 @@
 	Month = {February},
 	Number = {5},
 	Pages = {1808-1818},
-	Title = {{The CC3 model: An iterative coupled cluster approach including connected triples}},
+	Title = {The CC3 model: An iterative coupled cluster approach including connected triples},
 	Volume = {106},
 	Year = {1997}}
 
@@ -1693,7 +1782,7 @@
 	Month = {December},
 	Number = {24},
 	Pages = {10823-10826},
-	Title = {{Frequency dependent equation-of-motion coupled cluster hyperpolarizabilities: Resolution of the discrepancy between theory and experiment for HF?}},
+	Title = {Frequency dependent equation-of-motion coupled cluster hyperpolarizabilities: Resolution of the discrepancy between theory and experiment for HF?},
 	Volume = {107},
 	Year = {1997}}
 
@@ -1706,7 +1795,7 @@
 	Month = {March},
 	Number = {11},
 	Pages = {4157-4165},
-	Title = {{The integral-direct coupled cluster singles and doubles model}},
+	Title = {The integral-direct coupled cluster singles and doubles model},
 	Volume = {104},
 	Year = {1996}}
 
@@ -1718,7 +1807,7 @@
 	Keywords = {EOM-CC, hyperpolarizabilities},
 	Month = {August},
 	Pages = {3292-3295},
-	Title = {{Comment on "Frequency-dependent equation-of-motion coupled cluster hyperpolarizabilities: Resolution of the discrepancy between theory and experiment for HF?" [J. Chem. Phys. 107, 10823 (1997)]}},
+	Title = {Comment on "Frequency-dependent equation-of-motion coupled cluster hyperpolarizabilities: Resolution of the discrepancy between theory and experiment for HF?" [J. Chem. Phys. 107, 10823 (1997)]},
 	Volume = {109},
 	Year = {1998}}
 
@@ -1732,7 +1821,7 @@
 	Keywords = {CD, theory, circular dichroism, protein conformation},
 	Pages = {253-267},
 	Publisher = {The Royal Society of Chemistry},
-	Title = {{Theoretical studies of time-resolved spectroscopy of protein folding}},
+	Title = {Theoretical studies of time-resolved spectroscopy of protein folding},
 	Url = {http://dx.doi.org/10.1039/B200714B},
 	Volume = {122},
 	Year = {2003},
@@ -1746,7 +1835,7 @@
 	Keywords = {circular dichroism, CD, protein conformation},
 	Month = {July},
 	Pages = {637-677},
-	Title = {{Circular dichroism and protein structure}},
+	Title = {Circular dichroism and protein structure},
 	Volume = {5},
 	Year = {1974}}
 
@@ -1758,7 +1847,7 @@
 	Keywords = {DFT, theory, CD, circular dichroism},
 	Month = {February},
 	Pages = {161-169},
-	Title = {{DFT study of vibrational circular dichroism spectra of (\textit{S})-glycido\{-}water complexes}},
+	Title = {DFT study of vibrational circular dichroism spectra of (\textit{S})-glycido\{-}water complexes},
 	Volume = {809},
 	Year = {2007}}
 
@@ -1771,7 +1860,7 @@
 	Month = {July},
 	Number = {15},
 	Pages = {8318-8323},
-	Title = {{Site-specific conformational determination in thermal unfolding studies of helical peptides using vibrational circular dichroism with isotopic substitution}},
+	Title = {Site-specific conformational determination in thermal unfolding studies of helical peptides using vibrational circular dichroism with isotopic substitution},
 	Volume = {97},
 	Year = {2000}}
 
@@ -1783,7 +1872,7 @@
 	Keywords = {circular dichroism, CD, protein conformation},
 	Month = {July},
 	Pages = {119-139},
-	Title = {{How to study proteins by circular dichroism}},
+	Title = {How to study proteins by circular dichroism},
 	Volume = {1751},
 	Year = {2005}}
 
@@ -1796,7 +1885,7 @@
 	Month = {October},
 	Number = {10},
 	Pages = {4108-4116},
-	Title = {{Computed circular dichroism spectra for the evaluation of protein conformation}},
+	Title = {Computed circular dichroism spectra for the evaluation of protein conformation},
 	Volume = {8},
 	Year = {1969}}
 
@@ -1809,7 +1898,7 @@
 	Month = {October},
 	Number = {41},
 	Pages = {9636-9644},
-	Title = {{Theoretical studies toward quantitative protein circular dichroism calculations}},
+	Title = {Theoretical studies toward quantitative protein circular dichroism calculations},
 	Volume = {121},
 	Year = {1999}}
 
@@ -1821,7 +1910,7 @@
 	Keywords = {circular dichroism, CD, VCD, DFT},
 	Month = {January},
 	Pages = {172-179},
-	Title = {{Determination of the Structure of Chiral Molecules Using Ab Initio Vibrational Circular Dichroism Spectroscopy}},
+	Title = {Determination of the Structure of Chiral Molecules Using Ab Initio Vibrational Circular Dichroism Spectroscopy},
 	Volume = {12},
 	Year = {2000}}
 
@@ -1840,11 +1929,23 @@
 	Pages = {409-418},
 	Publisher = {ELSEVIER SCIENCE BV},
 	Times-Cited = {405},
-	Title = {{The second-order approximate coupled cluster singles and doubles model CC2}},
+	Title = {The second-order approximate coupled cluster singles and doubles model CC2},
 	Volume = {243},
 	Year = {1995},
 	Bdsk-Url-1 = {http://gateway.isiknowledge.com/gateway/Gateway.cgi?GWVersion=2&SrcAuth=Alerting&SrcApp=Alerting&DestApp=WOS&DestLinkType=FullRecord;KeyUT=A1995RV43500008}}
 
+@article{Korona04,
+	Author = {Korona, Tatiana and Pfl\"{u}ger, Klaus and Werner, Hans-Joachim},
+	Date-Added = {2011-12-05 11:20:29 -0500},
+	Date-Modified = {2012-01-19 17:32:08 -0500},
+	Journal = {Phys. Chem. Chem. Phys.},
+	Keywords = {local approximation, couple cluster, dipole, polarizabilities},
+	Month = {March},
+	Pages = {2059-2065},
+	Read = {1},
+	Title = {The effect of local approximations in coupled-cluster wave functions on dipole moments and static dipole polarizabilities},
+	Volume = {6},
+	Year = {2004}}
 
 @article{LiPiecuch09,
 	Author = {Li, Wei and Piecuch, Piotr and Gour, Jeffrey R. and Li, Shuhua},
@@ -1855,7 +1956,7 @@
 	Month = {September},
 	Pages = {114109-1 114109-30},
 	Read = {1},
-	Title = {{Local correlation calculations using standard and renormalized coupled-cluster methods}},
+	Title = {Local correlation calculations using standard and renormalized coupled-cluster methods},
 	Volume = {131},
 	Year = {2009}}
 
@@ -1868,9 +1969,22 @@
 	Month = {January},
 	Pages = {1368-1369},
 	Read = {1},
-	Title = {{Ab Initio Calculation of Optical Rotation in (\textit{P})-(+)-[4]Triangulane}},
+	Title = {Ab Initio Calculation of Optical Rotation in (\textit{P})-(+)-[4]Triangulane},
 	Volume = {127},
 	Year = {2005}}
+
+@article{Neese09,
+	Author = {Neese, Frank and Wennmohs, Frank and Hansen, Andreas},
+	Date-Added = {2011-12-01 09:32:39 -0500},
+	Date-Modified = {2012-03-01 10:15:34 -0500},
+	Journal = {J. Chem. Phys.},
+	Keywords = {LPNO},
+	Number = {114108},
+	Pages = {114108-1 - 114108-18},
+	Read = {1},
+	Title = {Efficient and Accurate Local Approximations to Coupled-Electron Pair Approaches: An Attempt to Revive the Pair Natural Orbital Method},
+	Volume = {130},
+	Year = {2009}}
 
 @article{Liakos11,
 	Author = {Liakos, Dimitrios G. and Hansen, Andreas and Neese, Frank},
@@ -1880,7 +1994,7 @@
 	Keywords = {LPNO, local correlation, parallel},
 	Number = {1},
 	Pages = {76-87},
-	Title = {{Weak Molecular Interactions with Parellel Implementations of the Local Pair Natural Orbital Coupled Pair and Coupled Cluster Methods}},
+	Title = {Weak Molecular Interactions with Parellel Implementations of the Local Pair Natural Orbital Coupled Pair and Coupled Cluster Methods},
 	Volume = {7},
 	Year = {2011}}
 
@@ -1893,7 +2007,7 @@
 	Number = {33},
 	Pages = {8644-8657},
 	Read = {1},
-	Title = {{Improved Design of Orbital Domains within the Cluster-in-Molecule Local Correlation Framework: Single-Environment Cluster-in-Molecule Ansatz and Its Application to Local Coupled-Cluster Approach with Singles and Doubles}},
+	Title = {Improved Design of Orbital Domains within the Cluster-in-Molecule Local Correlation Framework: Single-Environment Cluster-in-Molecule Ansatz and Its Application to Local Coupled-Cluster Approach with Singles and Doubles},
 	Volume = {114},
 	Year = {2010}}
 
@@ -1903,7 +2017,7 @@
 	Date-Modified = {2011-11-23 14:58:53 -0500},
 	Journal = {Phys. Rev. B.},
 	Pages = {785-789},
-	Title = {{Development of the Colle-Salvetti correlation-energy formula into a functional of the electron density}},
+	Title = {Development of the Colle-Salvetti correlation-energy formula into a functional of the electron density},
 	Volume = 37,
 	Year = 1988}
 
@@ -1922,7 +2036,7 @@
 	Pages = {5648--5652},
 	Publisher = {AMER INST PHYSICS},
 	Times-Cited = {28985},
-	Title = {{Density-functional thermochemistry. III. The role of exact exchange}},
+	Title = {Density-functional thermochemistry. III. The role of exact exchange},
 	Volume = {98},
 	Year = {1993},
 	Bdsk-Url-1 = {http://gateway.isiknowledge.com/gateway/Gateway.cgi?GWVersion=2&SrcAuth=Alerting&SrcApp=Alerting&DestApp=WOS&DestLinkType=FullRecord;KeyUT=A1993KV99700048}}
@@ -1936,12 +2050,12 @@
 	Month = {August},
 	Pages = {3827-3836},
 	Read = {1},
-	Title = {{Continuum solvation models: Dissecting the free energy of solvation}},
+	Title = {Continuum solvation models: Dissecting the free energy of solvation},
 	Volume = {5},
 	Year = {2003}}
 
 @article{Kondru99,
-	Author = {Kondru, R. K. and Wibf, P. and Beratan, D. N.},
+	Author = {Kondru, Rama K. and Wibf, Peter and Beratan, David N.},
 	Date-Added = {2011-11-09 16:08:23 -0500},
 	Date-Modified = {2011-11-28 15:55:09 -0500},
 	Journal = {J. Phys. Chem. A},
@@ -1949,7 +2063,7 @@
 	Number = {33},
 	Pages = {6603-6611},
 	Read = {1},
-	Title = {{Structural and conformational dependence of optical rotation angles}},
+	Title = {Structural and conformational dependence of optical rotation angles},
 	Volume = {103},
 	Year = {1999}}
 
@@ -1961,7 +2075,7 @@
 	Keywords = {conformers, UV, CD, OR},
 	Number = {44},
 	Pages = {11232-11241},
-	Title = {{Chiroptical properties of (\textit{R})-3-chloro-1-butene and (\textit{R})-2-chlorobutane}},
+	Title = {Chiroptical properties of (\textit{R})-3-chloro-1-butene and (\textit{R})-2-chlorobutane},
 	Volume = {111},
 	Year = {2007}}
 
@@ -1973,7 +2087,7 @@
 	Keywords = {conformers, ORD},
 	Number = {6},
 	Pages = {2290-2298},
-	Title = {{Ab initio determination of optical rotatory dispersion in the conformationally flexible molecule (\textit{R})-epichlorohydrin}},
+	Title = {Ab initio determination of optical rotatory dispersion in the conformationally flexible molecule (\textit{R})-epichlorohydrin},
 	Volume = {110},
 	Year = {2006}}
 
@@ -1984,7 +2098,7 @@
 	Journal = {Chirality},
 	Pages = {357-369},
 	Read = {1},
-	Title = {{Solvent Effects on the conformationl distribution and optical rotation of \gamma-methyl paraconic acids and esters}},
+	Title = {Solvent Effects on the conformationl distribution and optical rotation of \gamma-methyl paraconic acids and esters},
 	Volume = {18},
 	Year = {2006}}
 
@@ -1995,7 +2109,7 @@
 	Journal = {Chem. Phys. Lett.},
 	Month = {November},
 	Pages = {1-10},
-	Title = {{Conformational Structures and Optical Rotation of Serine and Cysteine}},
+	Title = {Conformational Structures and Optical Rotation of Serine and Cysteine},
 	Volume = {418},
 	Year = {2005}}
 
@@ -2005,7 +2119,7 @@
 	Date-Modified = {2011-11-08 15:41:11 -0500},
 	Journal = {J. Am. Chem. Soc.},
 	Pages = {1888-1896},
-	Title = {{Conformational effects on optical rotation. 3-Substituted 1-butenes}},
+	Title = {Conformational effects on optical rotation. 3-Substituted 1-butenes},
 	Url = {http://dx.doi.org/10.1021/ja0211914},
 	Volume = 125,
 	Year = 2003}
@@ -2018,7 +2132,7 @@
 	Number = 15,
 	Pages = {3405-3410},
 	Read = {1},
-	Title = {{Conformation Effects on Optical Rotation. 2-Substituted Butanes}},
+	Title = {Conformation Effects on Optical Rotation. 2-Substituted Butanes},
 	Url = {http://dx.doi.org/10.1021/jp040724n},
 	Volume = 109,
 	Year = 2005,
@@ -2041,7 +2155,7 @@
 	Pages = {1009-1015},
 	Publisher = {WILEY-LISS},
 	Times-Cited = {8},
-	Title = {{Calculation of Conformational Energies and Optical Rotation of the Most Simple Chiral Alkane}},
+	Title = {Calculation of Conformational Energies and Optical Rotation of the Most Simple Chiral Alkane},
 	Type = {Proceedings Paper},
 	Volume = {20},
 	Year = {2008},
@@ -2055,7 +2169,7 @@
 	Keywords = {conformers, OR, DFT, HF},
 	Pages = {4269-4276},
 	Read = {1},
-	Title = {{Conformational Effects on Optical Rotation of Alanine and Proline}},
+	Title = {Conformational Effects on Optical Rotation of Alanine and Proline},
 	Volume = 108,
 	Year = 2004}
 
@@ -2068,12 +2182,12 @@
 	Month = {January},
 	Number = {2},
 	Pages = {1358-1371},
-	Title = {{Gaussian basis sets for use in correlated molecular calculations. III. The atoms aluminum through argon}},
+	Title = {Gaussian basis sets for use in correlated molecular calculations. III. The atoms aluminum through argon},
 	Volume = {98},
 	Year = {1993}}
 
 @article{Russ04,
-	Author = {Russ, N. J. and Crawford, T. D.},
+	Author = {Russ, Nicholas J. and Crawford, T. Daniel},
 	Date-Added = {2011-10-31 11:37:58 -0400},
 	Date-Modified = {2011-11-28 16:02:09 -0500},
 	Journal = {Chem. Phys. Lett.},
@@ -2081,7 +2195,7 @@
 	Month = {November},
 	Pages = {104-111},
 	Read = {1},
-	Title = {{Local correlation in coupled cluster calculations of molecular response properties}},
+	Title = {Local correlation in coupled cluster calculations of molecular response properties},
 	Volume = {400},
 	Year = {2004}}
 
@@ -2094,7 +2208,7 @@
 	Month = {December},
 	Number = {24},
 	Pages = {10815-10825},
-	Title = {{Combining coupled cluster and perturbation theory}},
+	Title = {Combining coupled cluster and perturbation theory},
 	Volume = {111},
 	Year = {1999}}
 
@@ -2106,7 +2220,7 @@
 	Keywords = {local correlation, LMP2, LCCSD(T), correlation regions},
 	Month = {April},
 	Pages = {144106-1 - 144106-8},
-	Title = {{Correlation regions within a localized molecular orbital approach}},
+	Title = {Correlation regions within a localized molecular orbital approach},
 	Volume = {128},
 	Year = {2008}}
 
@@ -2119,9 +2233,19 @@
 	Month = {April},
 	Number = {7},
 	Pages = {4070-4077},
-	Title = {{General contraction of Gaussian basis sets. I. Atomic natural orbitals and first- and second-row atoms}},
+	Title = {General contraction of Gaussian basis sets. I. Atomic natural orbitals and first- and second-row atoms},
 	Volume = {86},
 	Year = {1987}}
+
+@article{SherrillCI98,
+	Author = {C. D. Sherrill and H. F. Schaefer},
+	Date-Added = {2011-10-31 02:27:55 -0400},
+	Date-Modified = {2011-10-31 02:29:17 -0400},
+	Journal = {Adv. Quantum Chem.},
+	Pages = {143-269},
+	Title = {The configuration interaction method: Advances in highly correlated approaches},
+	Volume = 34,
+	Year = 1999}
 
 @book{SzaboOstlund,
 	Address = {Mineola, New York},
@@ -2130,7 +2254,7 @@
 	Date-Modified = {2011-10-30 22:04:48 -0400},
 	Keywords = {electronic structure theory},
 	Publisher = {Dover Publications, Inc.},
-	Title = {{Modern Quantum Chemistry: Introduction to Advanced Electronic Structure Theory}},
+	Title = {Modern Quantum Chemistry: Introduction to Advanced Electronic Structure Theory},
 	Year = {1996}}
 
 @article{Cizek91,
@@ -2139,7 +2263,7 @@
 	Date-Modified = {2011-10-30 22:01:05 -0400},
 	Journal = {Theor. Chim. Acta},
 	Pages = {91-94},
-	Title = {{Origins of coupled cluster technique for atoms and molecules}},
+	Title = {Origins of coupled cluster technique for atoms and molecules},
 	Volume = {80},
 	Year = {1991}}
 
@@ -2149,7 +2273,7 @@
 	Date-Modified = {2011-10-30 22:01:03 -0400},
 	Journal = {Int. J. Quantum Chem. Symp.},
 	Pages = 359,
-	Title = {{Correlation problems in atomic and molecular systems. III. Rederivation of the coupled-pair many-electron theory using the traditional quantum chemical methods}},
+	Title = {Correlation problems in atomic and molecular systems. III. Rederivation of the coupled-pair many-electron theory using the traditional quantum chemical methods},
 	Volume = 5,
 	Year = 1971}
 
@@ -2159,7 +2283,7 @@
 	Date-Modified = {2011-10-30 22:00:58 -0400},
 	Journal = {Adv. Chem. Phys.},
 	Pages = 35,
-	Title = {{On the use of the cluster expansion and the technique of diagrams in calculations of correlation effects in atoms and molecules}},
+	Title = {On the use of the cluster expansion and the technique of diagrams in calculations of correlation effects in atoms and molecules},
 	Volume = 14,
 	Year = 1969}
 
@@ -2170,7 +2294,7 @@
 	Journal = {J. Chem. Phys.},
 	Number = 10,
 	Pages = 3976,
-	Title = {{Stability conditions for the solutions of the Hartree-Fock equations for atomic and molecular systems. Application to the pi-electron model of cyclic polyenes}},
+	Title = {Stability conditions for the solutions of the Hartree-Fock equations for atomic and molecular systems. Application to the pi-electron model of cyclic polyenes},
 	Volume = 47,
 	Year = 1967}
 
@@ -2180,7 +2304,7 @@
 	Date-Modified = {2011-10-30 22:00:37 -0400},
 	Journal = {J. Chem. Phys.},
 	Pages = {4256-4266},
-	Title = {{On the correlation problem in atomic and molecular systems. Calculation of wavefunction components in Ursell-type expansion using quantum-field theoretical methods}},
+	Title = {On the correlation problem in atomic and molecular systems. Calculation of wavefunction components in Ursell-type expansion using quantum-field theoretical methods},
 	Volume = 45,
 	Year = 1966}
 
@@ -2194,7 +2318,7 @@
 	Number = 2,
 	Pages = 1007,
 	Reviewed = {June 18, 1996},
-	Title = {{Gaussian basis sets for use in correlated molecular calculations. I. The atoms boron through neon}},
+	Title = {Gaussian basis sets for use in correlated molecular calculations. I. The atoms boron through neon},
 	Url = {http://dx.doi.org/10.1063/1.456153},
 	Volume = 90,
 	Year = 1989,
@@ -2211,7 +2335,7 @@
 	Date-Modified = {2011-11-28 15:53:49 -0500},
 	Journal = {Theor. Chem. Acc.},
 	Pages = {213-222},
-	Title = {{The Influence of Polarization Functions on Molecular Orbital Hydrogenation Energies}},
+	Title = {The Influence of Polarization Functions on Molecular Orbital Hydrogenation Energies},
 	Volume = {28},
 	Year = {1973}}
 
@@ -2221,7 +2345,7 @@
 	Date-Modified = {2011-10-30 20:33:26 -0400},
 	Journal = {Coll. Czech. Chem. Commun.},
 	Pages = 1995,
-	Title = {{??}},
+	Title = {??},
 	Volume = 53,
 	Year = 1988}
 
@@ -2231,7 +2355,7 @@
 	Date-Modified = {2011-10-30 20:33:16 -0400},
 	Journal = {Theor. Chem. Acc.},
 	Pages = {123-140},
-	Title = {{Medium-Size Polarized Basis-Sets for High-Level-Correlated Calculations of Molecular Electric Properties .2. 2nd-Row Atoms - Si through Cl}},
+	Title = {Medium-Size Polarized Basis-Sets for High-Level-Correlated Calculations of Molecular Electric Properties .2. 2nd-Row Atoms - Si through Cl},
 	Volume = 79,
 	Year = 1991}
 
@@ -2244,7 +2368,7 @@
 	Month = {August},
 	Number = {8},
 	Pages = {3550-3557},
-	Title = {{Coupled cluster calculations of optical rotatory dispersion of (\textit{S})-methyloxirane}},
+	Title = {Coupled cluster calculations of optical rotatory dispersion of (\textit{S})-methyloxirane},
 	Volume = {121},
 	Year = {2004}}
 
@@ -2256,12 +2380,12 @@
 	Keywords = {TDDFT, coupled cluster, optical rotation},
 	Month = {January},
 	Pages = {1339-1345},
-	Title = {{Comparison of time-dependent density-functional theory and coupled cluster theory for the calculation of the optical rotation of chiral molecules}},
+	Title = {Comparison of time-dependent density-functional theory and coupled cluster theory for the calculation of the optical rotation of chiral molecules},
 	Volume = {112},
 	Year = {2008}}
 
 @article{Stephens01,
-	Author = {Stephens, P. J. and Devlin, F. J. and Cheeseman, J. R. and Frisch, M. J.},
+	Author = {Stephens, Philip J. and Devlin, Frank J. and Cheeseman, James R. and Frisch, Michael J.},
 	Date-Added = {2011-10-24 16:13:14 -0400},
 	Date-Modified = {2014-10-28 19:06:10 +0000},
 	Journal = {J. Phys. Chem. A},
@@ -2269,7 +2393,7 @@
 	Month = {May},
 	Pages = {5356-5371},
 	Read = {1},
-	Title = {{Calculation of optical rotation using density functional theory}},
+	Title = {Calculation of optical rotation using density functional theory},
 	Volume = {105},
 	Year = {2001}}
 
@@ -2282,7 +2406,7 @@
 	Month = {January},
 	Number = {1},
 	Pages = {125-141},
-	Title = {{Cavity ring-down polarimetry (CRDP): Theoretical and experimental characterization}},
+	Title = {Cavity ring-down polarimetry (CRDP): Theoretical and experimental characterization},
 	Volume = {19},
 	Year = {2002}}
 
@@ -2295,7 +2419,7 @@
 	Month = {June},
 	Number = {3},
 	Pages = {552-560},
-	Title = {{Polarized basis sets for accurate calculations of static and dynamic electric properties of molecules}},
+	Title = {Polarized basis sets for accurate calculations of static and dynamic electric properties of molecules},
 	Volume = {31},
 	Year = {2009}}
 
@@ -2308,7 +2432,7 @@
 	Month = {May},
 	Number = {9},
 	Pages = {7029-7039},
-	Title = {{The equation of motion coupled-cluster method. A systematic biorthognal approach to molecular excitation energies, transition probabilities, and excited state properties}},
+	Title = {The equation of motion coupled-cluster method. A systematic biorthognal approach to molecular excitation energies, transition probabilities, and excited state properties},
 	Volume = {98},
 	Year = {1993}}
 
@@ -2318,7 +2442,7 @@
 	Date-Modified = {2011-10-11 10:12:05 -0400},
 	Journal = {Z Physik},
 	Pages = {161-174},
-	Title = {{Quantenmechanische Theorie der naturlichen optischen Aktivitat von Flussigkeiten und Gasen}},
+	Title = {Quantenmechanische Theorie der naturlichen optischen Aktivitat von Flussigkeiten und Gasen.},
 	Volume = {52},
 	Year = {1929}}
 
@@ -2329,11 +2453,11 @@
 	Edition = {2nd},
 	Keywords = {optical activity, Rosenfeld tenser, g-tensor, optical rotation, book},
 	Publisher = {Cambridge University press},
-	Title = {{Molecular Light Scattering and Optical Activity}},
+	Title = {Molecular Light Scattering and Optical Activity},
 	Year = {2004}}
 
 @article{Pedersen97,
-	Author = {Pedersen, T. B. and Koch, H.},
+	Author = {Pedersen, Thomas Bondo and Koch, Henrik},
 	Date-Added = {2011-10-09 18:04:20 -0400},
 	Date-Modified = {2011-11-28 15:58:59 -0500},
 	Journal = {J. Chem. Phys.},
@@ -2342,7 +2466,7 @@
 	Number = {19},
 	Pages = {8059-8072},
 	Read = {1},
-	Title = {{Coupled cluster response functions revisited}},
+	Title = {Coupled cluster response functions revisited},
 	Volume = {106},
 	Year = {1997}}
 
@@ -2353,7 +2477,7 @@
 	Journal = {J. Phys. Chem. A},
 	Keywords = {basis set dependence, coupled cluster, optical rotation},
 	Pages = {10045-10051},
-	Title = {{Basis set dependence of coupled cluster optical rotation computations}},
+	Title = {Basis set dependence of coupled cluster optical rotation computations},
 	Volume = {115},
 	Year = {2011}}
 
@@ -2366,7 +2490,7 @@
 	Month = {February},
 	Number = {6},
 	Pages = {2581-2592},
-	Title = {{Coupled-cluster singles and doubles for extended systems}},
+	Title = {Coupled-cluster singles and doubles for extended systems},
 	Volume = {120},
 	Year = {2004}}
 
@@ -2380,7 +2504,7 @@
 	Number = {8-12},
 	Pages = {1041-1057},
 	Read = {1},
-	Title = {{Optical activity in conformationally flexible molecules: A theoretical study of large-amplitude vibrational averaging in (R)-3-chloro-1-butene}},
+	Title = {Optical activity in conformationally flexible molecules: A theoretical study of large-amplitude vibrational averaging in (R)-3-chloro-1-butene},
 	Volume = {107},
 	Year = {2009}}
 
@@ -2394,7 +2518,7 @@
 	Number = {1E},
 	Pages = {E68-E75},
 	Read = {1},
-	Title = {{Gas phase optical rotation calculated from coupled cluster theory with zero-point vibrational corrections from density functional theory}},
+	Title = {Gas phase optical rotation calculated from coupled cluster theory with zero-point vibrational corrections from density functional theory},
 	Volume = {21},
 	Year = {2009}}
 
@@ -2407,19 +2531,19 @@
 	Month = {December},
 	Pages = {13995-14002},
 	Read = {1},
-	Title = {{Sum-over-states calculation of the specific rotations of some substituted oxiranes, chloropropionitrile, ethane, and norbornenone}},
+	Title = {Sum-over-states calculation of the specific rotations of some substituted oxiranes, chloropropionitrile, ethane, and norbornenone},
 	Volume = {110},
 	Year = {2006}}
 
 @article{Polavarapu06,
-	Author = {Polavarapu, P. L.},
+	Author = {Plavarapu, Prasad L.},
 	Date-Added = {2011-10-07 13:48:45 -0400},
 	Date-Modified = {2011-11-28 16:07:30 -0500},
 	Journal = {Int. J. Quantum Chem.},
 	Keywords = {chiroptical vibration properties, VCD, VROA},
 	Month = {January},
 	Pages = {1809-1814},
-	Title = {{Quantum mechanical predictions of chiroptical vibrational properties}},
+	Title = {Quantum mechanical predictions of chiroptical vibrational properties},
 	Volume = {106},
 	Year = {2006}}
 
@@ -2432,7 +2556,7 @@
 	Month = {October},
 	Pages = {721-728},
 	Read = {1},
-	Title = {{Correlated ab initio calculation of electronic g-tensors using a sum over states formulation}},
+	Title = {Correlated ab initio calculation of electronic g-tensors using a sum over states formulation},
 	Volume = {380},
 	Year = {2003}}
 
@@ -2445,7 +2569,7 @@
 	Month = {March},
 	Pages = {363-370},
 	Read = {1},
-	Title = {{Calculation of the Raman optical activity via the sum-over-states expansion}},
+	Title = {Calculation of the Raman optical activity via the sum-over-states expansion},
 	Volume = {288},
 	Year = {1998}}
 
@@ -2457,7 +2581,7 @@
 	Keywords = {Jacobi rotations, orbital optimization, localization},
 	Month = {July},
 	Pages = {149-165},
-	Title = {{Efficient use of Jacobi rotations for orbtial optimization and localization}},
+	Title = {Efficient use of Jacobi rotations for orbtial optimization and localization},
 	Volume = {86},
 	Year = {1992}}
 
@@ -2470,7 +2594,7 @@
 	Month = {September},
 	Number = {5},
 	Pages = {3847-3859},
-	Title = {{Hartree-Fock limit magnetizabilities from London orbitals}},
+	Title = {Hartree-Fock limit magnetizabilities from London orbitals},
 	Volume = {99},
 	Year = {1993}}
 
@@ -2483,7 +2607,7 @@
 	Month = {December},
 	Pages = {385-392},
 	Read = {1},
-	Title = {{Coupled cluster calculations of the optical rotation of S-propylene oxide in gas phase and solution}},
+	Title = {Coupled cluster calculations of the optical rotation of S-propylene oxide in gas phase and solution},
 	Volume = {401},
 	Year = {2005}}
 
@@ -2495,7 +2619,7 @@
 	Keywords = {molecular properties, BCCD, Brueckner orbitals, coupled cluster},
 	Month = {December},
 	Pages = {248-256},
-	Title = {{Molecular properties from coupled-cluster Brueckner orbitals}},
+	Title = {Molecular properties from coupled-cluster Brueckner orbitals},
 	Volume = {315},
 	Year = {1999}}
 
@@ -2509,24 +2633,24 @@
 	Number = {1},
 	Pages = {489-494},
 	Read = {1},
-	Title = {{Laplace transform techniques in M\oller-Plesset perturbation theory}},
+	Title = {Laplace transform techniques in M\oller-Plesset perturbation theory},
 	Volume = {96},
 	Year = {1991}}
 
 @article{Crawford00,
-	Author = {Crawford, T. D. and Schaefer, H. F.},
+	Author = {Crawford, T. Daniel and Schaefer, Henry F.},
 	Date-Added = {2011-10-07 13:06:56 -0400},
 	Date-Modified = {2011-10-30 22:38:24 -0400},
 	Journal = {Reviews in Computational Chemistry},
 	Keywords = {coupled cluster, CC review article},
 	Pages = {33-136},
 	Read = {1},
-	Title = {{An Introduction to Coupled Cluster Theory for Computational Chemists},
+	Title = {An introduction to coupled cluster theory for computational chemists},
 	Volume = {14},
 	Year = {2000}}
 
 @article{Cheeseman00,
-	Author = {Cheeseman, J. R. and Frisch, M. J. and Devlin, F. J. and Stephens, P. J.},
+	Author = {Cheeseman, James R. and Frisch, Michael J. and Devlin, Frank J. and Stephens, Philip J.},
 	Date-Added = {2011-10-07 13:03:21 -0400},
 	Date-Modified = {2014-10-28 19:03:55 +0000},
 	Journal = {J. Phys. Chem. A},
@@ -2534,7 +2658,7 @@
 	Month = {November},
 	Pages = {1039-1046},
 	Read = {0},
-	Title = {{Hartree-Fock and density functional theory {\em ab initio} calculation of optical rotation using GIAOS: Basis set dependence}},
+	Title = {Hartree-Fock and density functional theory ab initio calculation of optical rotation using GIAOS: Basis set dependence},
 	Volume = {104},
 	Year = {1999}}
 
@@ -2546,19 +2670,19 @@
 	Keywords = {orbital optimization, OO-CCD, OO MP2, MP2},
 	Month = {September},
 	Pages = {104103-1 - 104103-17},
-	Title = {{Quadratically convergent algorithm for orbital optimization in the orbital-optimized coupled cluster doubles method and in orbital-optimized second-order Moller-Pesset perturbation theory}},
+	Title = {Quadratically convergent algorithm for orbital optimization in the orbital-optimized coupled cluster doubles method and in orbital-optimized second-order Moller-Pesset perturbation theory},
 	Volume = {135},
 	Year = {2011}}
 
 @article{Schutz03,
-	Author = {Sch\"{u}tz, M. and Manby, F.},
+	Author = {Sch\"{u}tz, Martin and Manby, Fred},
 	Date-Added = {2011-10-05 17:54:24 -0400},
 	Date-Modified = {2011-11-28 16:04:50 -0500},
 	Journal = {Phys. Chem. Chem. Phys.},
 	Keywords = {local coupled cluster, linear scaling, density fitting, external integrals},
 	Month = {July},
 	Pages = {3349-3358},
-	Title = {{Linear scaling local coupled cluster theory with density fitting. Part I: 4-external integrals}},
+	Title = {Linear scaling local coupled cluster theory with density fitting. Part I: 4-external integrals},
 	Volume = {5},
 	Year = {2003}}
 
@@ -2571,7 +2695,7 @@
 	Month = {January},
 	Pages = {102-108},
 	Read = {1},
-	Title = {{Non-iterative local second order Moller-Plesset theory}},
+	Title = {Non-iterative local second order Moller-Plesset theory},
 	Volume = {283},
 	Year = {1998}}
 
@@ -2585,7 +2709,7 @@
 	Number = {18},
 	Pages = {8330-8343},
 	Read = {1},
-	Title = {{Linear scaling coupled cluster and perturbation theories in the atomic orbital basis}},
+	Title = {Linear scaling coupled cluster and perturbation theories in the atomic orbital basis},
 	Volume = {111},
 	Year = {1999}}
 
@@ -2597,12 +2721,12 @@
 	Keywords = {MRCI, configuration interaction, multireference, localized orbitals},
 	Month = {July},
 	Pages = {014101-1 - 014101-14},
-	Title = {{Direct selected multireference configuration interation calculations for large systems using localized orbitals}},
+	Title = {Direct selected multireference configuration interation calculations for large systems using localized orbitals},
 	Volume = {135},
 	Year = {2011}}
 
 @article{Saebo86,
-	Author = {Saeb{\o}, S. and Pulay, P.},
+	Author = {Saeb{\o}, Svein and Pulay, Peter},
 	Date-Added = {2011-10-05 17:11:03 -0400},
 	Date-Modified = {2011-11-28 16:04:07 -0500},
 	Journal = {J. Chem. Phys.},
@@ -2611,12 +2735,12 @@
 	Number = {2},
 	Pages = {914-922},
 	Read = {1},
-	Title = {{Fourth-order M{\o}ller-Plesset perturbation theory in the local correlation treatment. I. Method}},
+	Title = {Fourth-order Moller-Plessett perturbation theory in the local correlation treatment. I. Method},
 	Volume = {86},
 	Year = {1986}}
 
 @article{Pulay83,
-	Author = {Pulay, P.},
+	Author = {Pulay, Peter},
 	Date-Added = {2011-10-05 17:09:13 -0400},
 	Date-Modified = {2011-11-28 16:00:06 -0500},
 	Journal = {Chem. Phys. Lett.},
@@ -2625,7 +2749,7 @@
 	Number = {2},
 	Pages = {151-154},
 	Read = {1},
-	Title = {{Localizability of dynamic electron correlation}},
+	Title = {Localizability of dynamic electron correlation},
 	Volume = {100},
 	Year = {1983}}
 
@@ -2637,7 +2761,7 @@
 	Keywords = {localization, local approximation, properties, expectation value, coupled cluster},
 	Month = {December},
 	Pages = {15-30},
-	Title = {{The effect of local approximations of first-order properties from expectation-value coupled cluster theory}},
+	Title = {The effect of local approximations of first-order properties from expectation-value coupled cluster theory},
 	Volume = {129},
 	Year = {2010}}
 
@@ -2650,7 +2774,7 @@
 	Month = {September},
 	Pages = {10411-1 - 10411-18},
 	Read = {1},
-	Title = {{A general-order local coupled-cluster method based on the cluster-in-molecule approach}},
+	Title = {A general-order local coupled-cluster method based on the cluster-in-molecule approach},
 	Volume = {135},
 	Year = {2011}}
 
@@ -2663,12 +2787,24 @@
 	Month = {October},
 	Pages = {134107-1 - 134107-7},
 	Read = {1},
-	Title = {{An efficient linear scaling procedure for constructing localized orbitals of large molecules based on the one-particle denisty matrix}},
+	Title = {An efficient linear scaling procedure for constructing localized orbitals of large molecules based on the one-particle denisty matrix},
 	Volume = {135},
 	Year = {2011}}
 
+@article{PSI4,
+	Author = {Turney, Justin M. and Simmonett, Andrew C. and Parrish, Robert M. and Hohenstein, Edward G. and Evangelista, Francesco A. and Fermann, J. T. and Mintz, Benjamin J. and Burns, Lori A. and Wilke, Jeremiah J. and Abrams, Micah L. and Russ, Nicholas J. and Leininger, Matthew L. and Janssen, Curtis L. and Seidl, Edward T. and Allen, Wesley D. and Schaefer, Henry F. and King, Rollin A. and Valeev, Edward. F. and Sherrill, C. David and Crawford, T. Daniel},
+	Date-Added = {2011-09-26 16:52:40 -0400},
+	Date-Modified = {2014-10-08 01:41:44 +0000},
+	Journal = {WIREs. Comput. Mol. Sci.},
+	Keywords = {PSI4},
+	Pages = {556-565},
+	Read = {1},
+	Title = {Psi4: an open‐source ab initio electronic structure program},
+	Volume = {2},
+	Year = {2012}}
+
 @article{Kobayashi94,
-	Author = {Kobayashi, R. and Koch, H. and J{\o}rgensen, P.},
+	Author = {Kobayashi, Rika and Koch, Henrik and J{\o}rgensen, Poul},
 	Date-Added = {2011-09-25 16:53:28 -0400},
 	Date-Modified = {2011-11-28 15:54:26 -0500},
 	Journal = {Chem. Phys. Lett.},
@@ -2676,25 +2812,25 @@
 	Month = {March},
 	Pages = {30-35},
 	Read = {1},
-	Title = {{Calculation of frequency-dependent polarizabilities using coupled-cluster response theory}},
+	Title = {Calculation of frequency-dependent polarizabilities using coupled-cluster response theory},
 	Volume = {219},
 	Year = {1994}}
 
 @article{PulaySaebo93,
-	Author = {Saeb{\o}, S. and Pulay, P.},
+	Author = {Saeb{\o}, Svein and Pulay, Peter},
 	Date-Added = {2011-09-25 16:48:52 -0400},
 	Date-Modified = {2012-01-27 10:25:09 -0500},
 	Journal = {Annual Reviews in Physical Chemistry},
 	Keywords = {localized orbitals, local correlation, pair correlation, perturbation theory},
 	Pages = {213-236},
 	Read = {1},
-	Title = {{Local treatment of electron correlation}},
+	Title = {Local treatment of electron correlation},
 	Volume = {44},
 	Year = {1993}}
 
 @article{BoughtonPulay93,
 	Annote = {Need to get physical copy from library.},
-	Author = {Boughton, J. W. and Pulay, P.},
+	Author = {Boughton, J. W. and Pulay, Peter},
 	Date-Added = {2011-09-25 16:44:23 -0400},
 	Date-Modified = {2011-11-28 15:48:32 -0500},
 	Journal = {J. Comput. Chem.},
@@ -2702,7 +2838,7 @@
 	Month = {June},
 	Number = {6},
 	Pages = {736-740},
-	Title = {{Comparison of the Boys and Pipek-Mezey localizations in the local correlation approach and automatic virtual basis selection}},
+	Title = {Comparison of the Boys and Pipek-Mezey localizations in the local correlation approach and automatic virtual basis selection},
 	Volume = {14},
 	Year = {1993}}
 
@@ -2716,12 +2852,12 @@
 	Number = {2},
 	Pages = {735-746},
 	Read = {1},
-	Title = {{Natural population analysis}},
+	Title = {Natural population analysis},
 	Volume = {83},
 	Year = {1985}}
 
 @article{Russ08,
-	Author = {Russ, N. J. and Crawford, T. D.},
+	Author = {Russ, Nicholas J. and Crawford, T. Daniel},
 	Date-Added = {2011-09-25 16:28:40 -0400},
 	Date-Modified = {2011-11-28 16:02:19 -0500},
 	Journal = {Phys. Chem. Chem. Phys.},
@@ -2729,7 +2865,7 @@
 	Month = {May},
 	Pages = {3345-3352},
 	Read = {1},
-	Title = {{Local correlation domains for coupled cluster theory: Optical rotations and magnetic-field perturbations}},
+	Title = {Local correlation domains for coupled cluster theory: Optical rotations and magnetic-field perturbations},
 	Volume = {10},
 	Year = {2008}}
 
@@ -2742,7 +2878,7 @@
 	Month = {June},
 	Number = {11},
 	Pages = {1497-1504},
-	Title = {{Non-convalent interactions using local correlation methods: Energy partitioning, geometry optimisation and harmoinc frequency calculations}},
+	Title = {Non-convalent interactions using local correlation methods: Energy partitioning, geometry optimisation and harmoinc frequency calculations},
 	Volume = {108},
 	Year = {2010}}
 
@@ -2753,7 +2889,7 @@
 	Journal = {Theory and Applications of Computational Chemistry},
 	Keywords = {local correlation, coupled-cluster, renormalized},
 	Pages = {68-113},
-	Title = {{Local correlation calculations using standard and renormalized coupled-cluster methods}},
+	Title = {Local correlation calculations using standard and renormalized coupled-cluster methods},
 	Year = {2009}}
 
 @article{Mata07,
@@ -2766,7 +2902,7 @@
 	Number = {19-22},
 	Pages = {2753-2761},
 	Read = {1},
-	Title = {{Local correlation methods with a natural localized molecular orbital basis}},
+	Title = {Local correlation methods with a natural localized molecular orbital basis},
 	Volume = {105},
 	Year = {2007}}
 
@@ -2780,7 +2916,7 @@
 	Number = {2},
 	Pages = {024104-1 - 024104-14},
 	Read = {1},
-	Title = {{Dynamically screened local corelation method using enveloping localized orbitals}},
+	Title = {Dynamically screened local corelation method using enveloping localized orbitals},
 	Volume = {125},
 	Year = {2006}}
 
@@ -2793,12 +2929,12 @@
 	Month = {July},
 	Number = {2},
 	Pages = {691-696},
-	Title = {{Potential energy surface discontinuities in local correlation methods}},
+	Title = {Potential energy surface discontinuities in local correlation methods},
 	Volume = {121},
 	Year = {2004}}
 
 @article{Schutz02,
-	Author = {Sch\"{u}tz, M.},
+	Author = {Sch\"{u}tz, Martin},
 	Date-Added = {2011-09-12 10:45:10 -0400},
 	Date-Modified = {2011-11-28 16:04:40 -0500},
 	Journal = {J. Chem. Phys.},
@@ -2806,12 +2942,12 @@
 	Month = {May},
 	Number = {20},
 	Pages = {8772-8785},
-	Title = {{Low-order scaling local correlation methods. V. Connected triples beyond (T): Linear scaling local CCSDT-1b}},
+	Title = {Low-order scaling local correlation methods. V. Connected triples beyond (T): Linear scaling local CCSDT-1b},
 	Volume = {116},
 	Year = {2002}}
 
 @article{Schutz01,
-	Author = {Sch\"{u}tz, M. and Werner, H.-J.},
+	Author = {Sch\"{u}tz, Martin and Werner, Hans-Joachim},
 	Date-Added = {2011-09-12 10:42:20 -0400},
 	Date-Modified = {2012-01-11 13:41:45 -0500},
 	Journal = {J. Chem. Phys.},
@@ -2820,12 +2956,12 @@
 	Number = {2},
 	Pages = {661-681},
 	Read = {1},
-	Title = {{Low-order scaling local correlation methods. IV. Linear scaling local coupled-cluster (LCCSD)}},
+	Title = {Low-order scaling local correlation methods. IV. Linear scaling local coupled-cluster (LCCSD)},
 	Volume = {114},
 	Year = {2001}}
 
 @article{Schutz00b,
-	Author = {Sch\"{u}tz, M,},
+	Author = {Sch\"{u}tz, Martin},
 	Date-Added = {2011-09-12 10:38:46 -0400},
 	Date-Modified = {2011-11-28 16:04:22 -0500},
 	Journal = {J. Chem. Phys.},
@@ -2833,12 +2969,12 @@
 	Month = {December},
 	Number = {22},
 	Pages = {9986-10001},
-	Title = {{Low-order scaling local correlation methods. {III}. {Linear} scaling local perturbative triples correction {(T)}}},
+	Title = {Low-order scaling local correlation methods. III. Linear scaling local perturbative triples correction (T)},
 	Volume = {113},
 	Year = {2000}}
 
 @article{Schutz00a,
-	Author = {Hetzer, G. and Sch\"{u}tz, M. and Stoll, H. and Werner, H.-J.},
+	Author = {Hetzer, Georg and Sch\"{u}tz, Martin and Stoll, Hermann and Werner, Hans-Joachim},
 	Date-Added = {2011-09-12 10:29:50 -0400},
 	Date-Modified = {2011-11-28 16:04:15 -0500},
 	Journal = {J. Chem. Phys.},
@@ -2846,7 +2982,7 @@
 	Month = {December},
 	Number = {21},
 	Pages = {9443-9455},
-	Title = {{Low-order scaling local correlation methods. {II}: {Splitting} the {Coulomb} operator in linear scaling local second-order {M{\o}ller-Plesset} perturbation theory}},
+	Title = {Low-order scaling local correlation methods. II: Splitting the Coulomb operator in linear scaling local second-order Moller-Plesset perturbation theory},
 	Volume = {113},
 	Year = {2000}}
 
@@ -2858,7 +2994,7 @@
 	Keywords = {orbital optimization, coupled-cluster},
 	Month = {February},
 	Pages = {084116-1 - 084116-5},
-	Title = {{Orbital-optimized coupled-cluster theory does no reproduce the full configuration-interaction limit}},
+	Title = {Orbital-optimized coupled-cluster theory does no reproduce the full configuration-interaction limit},
 	Volume = {122},
 	Year = {2005}}
 
@@ -2871,9 +3007,23 @@
 	Month = {June},
 	Pages = {319-326},
 	Read = {1},
-	Title = {{Origin invariant calculation of optical rotation without recourse to London orbitals}},
+	Title = {Origin invariant calculation of optical rotation without recourse to London orbitals},
 	Volume = {393},
 	Year = {2004}}
+
+@article{Pedersen01,
+	Author = {Pedersen, Thomas Bondo and Fernandez, Berta},
+	Date-Added = {2011-08-24 11:30:33 -0400},
+	Date-Modified = {2011-11-28 15:58:37 -0500},
+	Journal = {J. Chem. Phys.},
+	Keywords = {gauge invariance, coupled cluster, response, optimized orbitals, nonorthogonal orbitals},
+	Month = {February},
+	Number = {16},
+	Pages = {6983-6993},
+	Read = {1},
+	Title = {Gauge invariant coupled cluster response theory using optimized nonorthogonal orbitals},
+	Volume = {114},
+	Year = {2001}}
 
 @article{Pedersen99,
 	Annote = {Spend some time on this one, it's jam-packed with info.},
@@ -2887,12 +3037,12 @@
 	Pages = {8318-8327},
 	Rating = {0},
 	Read = {1},
-	Title = {{Gauge invariant coupled cluster response theory}},
+	Title = {Gauge invariant coupled cluster response theory},
 	Volume = {110},
 	Year = {1999}}
 
 @article{Koch90,
-	Author = {Koch, H. and J{\o}rgensen, P.},
+	Author = {Koch, Henrik and J{\o}rgensen, Poul},
 	Date-Added = {2011-08-16 15:32:52 -0400},
 	Date-Modified = {2011-11-28 15:54:34 -0500},
 	Journal = {J. Chem. Phys.},
@@ -2901,12 +3051,12 @@
 	Number = {5},
 	Pages = {3333-3344},
 	Read = {1},
-	Title = {{Coupled cluster response functions}},
+	Title = {Coupled cluster response functions},
 	Volume = {93},
 	Year = {1990}}
 
 @article{Ruud03,
-	Author = {Ruud, K. and Stephens, P. J. and Devlin, F. J. and Taylor, P. R. and Cheeseman, J. R. and Frisch, M. J.},
+	Author = {Ruud, Kenneth and Stephens, Philip J. and Devlin, Frank J. and Taylor, Peter R. and Cheeseman, James R. and Frisch, Michael J.},
 	Date-Added = {2011-08-16 14:22:46 -0400},
 	Date-Modified = {2011-11-28 16:02:28 -0500},
 	Journal = {Chem. Phys. Lett.},
@@ -2914,7 +3064,7 @@
 	Month = {March},
 	Pages = {606-614},
 	Read = {1},
-	Title = {{Coupled-cluster calculations of optical rotation}},
+	Title = {Coupled-cluster calculations of optical rotation},
 	Volume = {373},
 	Year = {2003}}
 
@@ -2928,7 +3078,7 @@
 	Number = {19-22},
 	Pages = {2607-2617},
 	Read = {1},
-	Title = {{The problematic case of (S)-methylthiirane: Electronic circular dichroism spectra and optical rotatory dispersion}},
+	Title = {The problematic case of (S)-methylthiirane: Electronic circular dichroism spectra and optical rotatory dispersion},
 	Volume = {105},
 	Year = {2007}}
 
@@ -2942,7 +3092,7 @@
 	Number = {48},
 	Pages = {12057-12068},
 	Read = {1},
-	Title = {{The current state of ab initio calculations of optical rotation and electronic circular dichroism spectra}},
+	Title = {The current state of ab initio calculations of optical rotation and electronic circular dichroism spectra},
 	Volume = {111},
 	Year = {2007}}
 
@@ -2955,7 +3105,7 @@
 	Month = {April},
 	Pages = {3660-3662},
 	Read = {1},
-	Title = {{The importance of molecular vibrations: The sign change of the optical rotation of methyloxirane}},
+	Title = {The importance of molecular vibrations: The sign change of the optical rotation of methyloxirane},
 	Volume = {117},
 	Year = {2005}}
 
@@ -2968,7 +3118,7 @@
 	Month = {May},
 	Pages = {3430-3439},
 	Read = {1},
-	Title = {{On the use of the Laplace transform in local correlation methods}},
+	Title = {On the use of the Laplace transform in local correlation methods},
 	Volume = {10},
 	Year = {2008}}
 
@@ -2980,7 +3130,7 @@
 	Keywords = {local correlation, coupled cluster, equation-of-motion},
 	Pages = {611-622},
 	Read = {1},
-	Title = {{Locally correlated equation-of-motion coupled cluster theory for the excited states of large molecules}},
+	Title = {Locally correlated equation-of-motion coupled cluster theory for the excited states of large molecules},
 	Volume = {366},
 	Year = {2002}}
 
@@ -2994,7 +3144,7 @@
 	Number = {22},
 	Pages = {10935-10944},
 	Read = {1},
-	Title = {{A natural linear scaling coupled-cluster method}},
+	Title = {A natural linear scaling coupled-cluster method},
 	Volume = {121},
 	Year = {2004}}
 
@@ -3008,7 +3158,7 @@
 	Number = {6},
 	Pages = {4334-4345},
 	Read = {1},
-	Title = {{Direct product decomposition approach for symmetry exploitation in many body methods. I. Energy calculations}},
+	Title = {Direct product decomposition approach for symmetry exploitation in many body methods. I. Energy calculations},
 	Volume = {94},
 	Year = {1991}}
 
@@ -3022,7 +3172,7 @@
 	Number = {11},
 	Pages = {4171-4182},
 	Read = {1},
-	Title = {{Energies and analytic gradients for a coupled-cluster doubles model using variational Brueckner orbitals: Application to symmetry breaking in O4+}},
+	Title = {Energies and analytic gradients for a coupled-cluster doubles model using variational Brueckner orbitals: Application to symmetry breaking in O4+},
 	Volume = {109},
 	Year = {1998}}
 
@@ -3036,12 +3186,12 @@
 	Number = {5},
 	Pages = {354-358},
 	Read = {1},
-	Title = {{The optimization of molecular orbitals for coupled cluster wavefunctions}},
+	Title = {The optimization of molecular orbitals for coupled cluster wavefunctions},
 	Volume = {142},
 	Year = {1987}}
 
 @article{Schutz99,
-	Author = {Sch\"{u}tz, M. and Hetzer, G. and Werner, H.-J.},
+	Author = {Sch\"{u}tz, Martin and Hetzer, Georg and Werner, Hans-Joachim},
 	Date-Added = {2011-07-06 12:55:52 -0400},
 	Date-Modified = {2011-11-28 16:04:56 -0500},
 	Journal = {J. Chem. Phys.},
@@ -3050,7 +3200,7 @@
 	Number = {13},
 	Pages = {5691-5705},
 	Read = {1},
-	Title = {{Linear scaling local electron correlation methods. I. Linear scaling local MP2}},
+	Title = {Linear scaling local electron correlation methods. I. Linear scaling local MP2},
 	Volume = {111},
 	Year = {1999}}
 
@@ -3063,7 +3213,7 @@
 	Month = {December 2001},
 	Pages = {533-539},
 	Read = {1},
-	Title = {{Optical rotation studied by density-functional and coupled-cluster methods}},
+	Title = {Optical rotation studied by density-functional and coupled-cluster methods},
 	Volume = {352},
 	Year = {2002}}
 
@@ -3076,7 +3226,7 @@
 	Month = {May},
 	Number = {4},
 	Pages = {556-560},
-	Title = {{Improved SCF convergence acceleration}},
+	Title = {Improved SCF convergence acceleration},
 	Volume = {3},
 	Year = {1982}}
 
@@ -3090,12 +3240,12 @@
 	Number = {2},
 	Pages = {393-398},
 	Read = {1},
-	Title = {{Convergence acceleration of iterative sequences: the case of SCF iteration}},
+	Title = {Convergence acceleration of iterative sequences: the case of SCF iteration},
 	Volume = {73},
 	Year = {1980}}
 
 @article{Polavarapu96,
-	Author = {Polavarapu, P. L.},
+	Author = {Polavarapu, Prasad L.},
 	Date-Added = {2011-07-06 12:47:51 -0400},
 	Date-Modified = {2011-11-28 15:59:37 -0500},
 	Journal = {Mol. Phys.},
@@ -3104,7 +3254,7 @@
 	Number = {3},
 	Pages = {551-554},
 	Read = {1},
-	Title = {{{\em Ab initio} molecular optical rotations and absolute configurations}},
+	Title = {Ab initio molecular optical rotations and absolute configurations},
 	Volume = {91},
 	Year = {1997}}
 
@@ -3118,7 +3268,7 @@
 	Number = {9},
 	Pages = {4916-4926},
 	Read = {1},
-	Title = {{Intrinsic localization procedure applicable for ab initio and semiempirical linear combination of atomic orbital wave functions}},
+	Title = {Intrinsic localization procedure applicable for ab initio and semiempirical linear combination of atomic orbital wave functions},
 	Volume = {90},
 	Year = {1989}}
 
@@ -3131,7 +3281,7 @@
 	Month = {August},
 	Pages = {342-346},
 	Read = {1},
-	Title = {{Orbital functional theory of linear response}},
+	Title = {Orbital functional theory of linear response},
 	Volume = {86},
 	Year = {2001}}
 
@@ -3144,7 +3294,7 @@
 	Month = {March},
 	Pages = {12974-12980},
 	Read = {1},
-	Title = {{Density functional theory of electronic structure}},
+	Title = {Density functional theory of electronic structure},
 	Volume = {100},
 	Year = {1996}}
 
@@ -3157,12 +3307,12 @@
 	Month = {December},
 	Pages = {E116-E152},
 	Read = {1},
-	Title = {{Computing chiroptical properties with first-principles theoretical methods: Background and illustrative examples}},
+	Title = {Computing chiroptical properties with first-principles theoretical methods: Background and illustrative examples},
 	Volume = {21},
 	Year = {2009}}
 
 @article{Hampel96,
-	Author = {H., Claudia and Werner, H.-J.},
+	Author = {Hampel, Claudia and Werner, Hans-Joachim},
 	Date-Added = {2011-07-06 12:32:54 -0400},
 	Date-Modified = {2011-11-28 15:53:38 -0500},
 	Journal = {J. Chem. Phys.},
@@ -3171,7 +3321,7 @@
 	Number = {16},
 	Pages = {6286-6297},
 	Read = {1},
-	Title = {{Local treatment of electron correlation in coupled cluster theory}},
+	Title = {Local treatment of electron correlation in coupled cluster theory},
 	Volume = {104},
 	Year = {1996}}
 
@@ -3185,7 +3335,7 @@
 	Number = {1,2},
 	Pages = {1-12},
 	Read = {1},
-	Title = {{A comparison of the efficiency and accuracy of the quadratic configuration interaction (QCISD), coupled cluster (CCSD), and Brueckner coupled cluster (BCCD) methods}},
+	Title = {A comparison of the efficiency and accuracy of the quadratic configuration interaction (QCISD), coupled cluster (CCSD), and Brueckner coupled cluster (BCCD) methods},
 	Volume = {190},
 	Year = {1992}}
 
@@ -3198,7 +3348,7 @@
 	Month = {August},
 	Pages = {87-94},
 	Read = {1},
-	Title = {{The iterative calculation of a few of the lowest eigenvalues and corresponding eigenvectors of large real-symmetric matrices}},
+	Title = {The iterative calculation of a few of the lowest eigenvalues and corresponding eigenvectors of large real-symmetric matrices},
 	Volume = {17},
 	Year = {1975}}
 
@@ -3211,7 +3361,7 @@
 	Month = {April},
 	Pages = {4481-4489},
 	Read = {1},
-	Title = {{Towards a gauge invariant method for molecular chiroptical properties in TDDFT}},
+	Title = {Towards a gauge invariant method for molecular chiroptical properties in TDDFT},
 	Volume = {11},
 	Year = {2009}}
 
@@ -3224,20 +3374,20 @@
 	Month = {December},
 	Pages = {227-245},
 	Read = {1},
-	Title = {{{\em Ab initio} calculation of molecular chiroptical properties}},
+	Title = {Ab initio calculation of molecular chiroptical properties},
 	Volume = {115},
 	Year = {2006}}
 
 
 @article{Christiansen95:CC2,
-	Author = {Christiansen, O. and Koch, H. and J{\o}rgensen, P.},
+	Author = {Christiansen, O. and Koch, H. and J{\o}rgensen, Poul},
 	Date-Added = {2016-07-19 17:28:56 +0000},
 	Date-Modified = {2016-07-19 17:34:16 +0000},
 	Journal = {Chem. Phys. Lett.},
 	Month = {September},
 	Number = {5-6},
 	Pages = {409-418},
-	Title = {{The Second-Order Approximate Coupled Cluster Singles and Doubles Model CC2}},
+	Title = {The Second-Order Approximate Coupled Cluster Singles and Doubles Model CC2},
 	Volume = {243},
 	Year = {1995}}
 
@@ -3246,7 +3396,7 @@
 	Date-Added = {2016-07-07 22:23:36 +0000},
 	Date-Modified = {2016-07-07 22:25:07 +0000},
 	Journal = {in preparation},
-	Title = {{Computing Optical Rotation via an $N$-Body Approach II}}
+	Title = {Computing Optical Rotation via an $N$-Body Approach II}}
 
 @article{Becke93,
 	Author = {A. D. Becke},
@@ -3255,7 +3405,7 @@
 	Journal = {J. Chem. Phys.},
 	Number = {7},
 	Pages = {5648--5652},
-	Title = {{Density-functional Thermochemistry. III. The Role of Exact Exchange}},
+	Title = {Density-functional Thermochemistry. III. The Role of Exact Exchange},
 	Volume = {98},
 	Year = {1993}}
 
@@ -3266,8 +3416,8 @@ M. J. Frisch},
 	Journal = {J. Phys. Chem.},
 	Number = {45},
 	Pages = {11623-11627},
-	Title = {{{\em Ab initio} Calculation of Vibrational Absorption and
-Circular Dichroism Spectra Using Density Functional Theory}},
+	Title = {{\em Ab initio} Calculation of Vibrational Absorption and
+Circular Dichroism Spectra Using Density Functional Theory},
 	Volume = {98},
 	Year = {1994}}
 
@@ -3276,19 +3426,19 @@ Circular Dichroism Spectra Using Density Functional Theory}},
 	Author = {C. Lee and W. Yang and R. G. Parr},
 	Journal = {Phys. Rev. B.},
 	Pages = {785-789},
-	Title = {{Development of the Colle-Salvetti Correlation-Energy
-Formula Into a Functional of the Electron Density}},
+	Title = {Development of the Colle-Salvetti Correlation-Energy
+Formula Into a Functional of the Electron Density},
 	Volume = 37,
 	Year = 1988}
 
 
-@article{PSI4,
-	Author = {Turney, J. M. and Simmonett, A. C. and Parrish, R. M. and Hohenstein, E. G. and Evangelista, F. A. and Fermann, J. T. and Mintz, B. J. and Burns, L. A. and Wilke, J. J. and Abrams, M. L. and Russ, N. J. and Leininger, M. L. and Janssen, C. L. and Seidl, E. T. and Allen, W. D. and Schaefer, H. F. and King, R. A. and Valeev, E. F. and Sherrill, C. D. and Crawford, T. D.},
+@article{psi4,
+	Author = {Turney, Justin M. and Simmonett, Andrew C. and Parrish, Robert M. and Hohenstein, Edward G. and Evangelista, Francesco A. and Fermann, J. T. and Mintz, Benjamin J. and Burns, Lori A. and Wilke, Jeremiah J. and Abrams, Micah L. and Russ, Nicholas J. and Leininger, Matthew L. and Janssen, Curtis L. and Seidl, Edward T. and Allen, Wesley D. and Schaefer, Henry F. and King, Rollin A. and Valeev, Edward. F. and Sherrill, C. David and Crawford, T. Daniel},
 	Date-Added = {2016-07-07 22:12:29 +0000},
 	Date-Modified = {2016-07-07 22:13:09 +0000},
 	Journal = {WIREs. Comput. Mol. Sci.},
 	Pages = {556-565},
-	Title = {{Psi4: An Open-Source Ab Initio Electronic Structure Program}},
+	Title = {Psi4: An Open-Source Ab Initio Electronic Structure Program},
 	Volume = {2},
 	Year = {2012}}
 
@@ -3298,7 +3448,7 @@ Formula Into a Functional of the Electron Density}},
 	Date-Modified = {2016-07-07 22:07:22 +0000},
 	Journal = {J. Chem. Phys.},
 	Pages = {9244-9253},
-	Title = {{Gaussian Basis Sets for Use in Correlated Molecular Calculations. X. The Atoms Aluminum Through Argon Revisited}},
+	Title = {Gaussian Basis Sets for Use in Correlated Molecular Calculations. X. The Atoms Aluminum Through Argon Revisited},
 	Volume = {114},
 	Year = {2001}}
 
@@ -3308,8 +3458,8 @@ Formula Into a Functional of the Electron Density}},
 	Journal = {J. Chem. Phys.},
 	Number = 9,
 	Pages = {6796-6806},
-	Title = {{Electron Affinities of the First-Row Atoms Revisited.
-Systematic Basis Sets and Wave Functions}},
+	Title = {Electron Affinities of the First-Row Atoms Revisited.
+Systematic Basis Sets and Wave Functions},
 	Volume = 96,
 	Year = 1992}
 
@@ -3319,7 +3469,7 @@ Systematic Basis Sets and Wave Functions}},
 	Date-Modified = {2016-07-07 22:04:32 +0000},
 	Journal = {J. Chem. Phys.},
 	Pages = {1007},
-	Title = {{Gaussian Basis Sets for Use in Correlated Molecular Calculations. I. The Atoms Boron Through Neon}},
+	Title = {Gaussian Basis Sets for Use in Correlated Molecular Calculations. I. The Atoms Boron Through Neon},
 	Volume = {90},
 	Year = {1989}}
 
@@ -3328,8 +3478,8 @@ Systematic Basis Sets and Wave Functions}},
 	Author = {G. D. Purvis and R. J. Bartlett},
 	Journal = {J. Chem. Phys.},
 	Pages = {1910-1918},
-	Title = {{A Full Coupled-Cluster Singles and Doubles Model: The
-Inclusion of Disconnected Triples}},
+	Title = {A Full Coupled-Cluster Singles and Doubles Model: The
+Inclusion of Disconnected Triples},
 	Volume = 76,
 	Year = 1982}
 
@@ -3337,7 +3487,7 @@ Inclusion of Disconnected Triples}},
 	Author = {A. Landau and K. Khistyaev and S. Dolgikh and A. I. Krylov},
 	Journal = {J. Chem. Phys.},
 	Pages = {014109},
-	Title = {{Frozen Natural Orbitals for Ionized States Within Equation-of-Motion Coupled-Cluster Formalism}},
+	Title = {Frozen Natural Orbitals for Ionized States Within Equation-of-Motion Coupled-Cluster Formalism},
 	Volume = {132},
 	Year = {2010}}
 
@@ -3346,7 +3496,7 @@ Inclusion of Disconnected Triples}},
 	Journal = {Phys. Rev.},
 	Number = {6},
 	Pages = {1474-1489},
-	Title = {{Quantum Theory of Many-Particle Systems. I. Physical Interpretations by Means of Density Matrices, Natural Spin-Orbitals, and Convergence Problems in the Method of Configurational Interaction}},
+	Title = {Quantum Theory of Many-Particle Systems. I. Physical Interpretations by Means of Density Matrices, Natural Spin-Orbitals, and Convergence Problems in the Method of Configurational Interaction},
 	Volume = {97},
 	Year = {1955}}
 
@@ -3355,7 +3505,7 @@ Inclusion of Disconnected Triples}},
 	Journal = {J. Chem. Phys.},
 	Number = {5},
 	Pages = {1833-1839},
-	Title = {{Pseudonatural Orbitals as a Basis for the Superposition of Configurations. I. He$_2^+$}},
+	Title = {Pseudonatural Orbitals as a Basis for the Superposition of Configurations. I. He$_2^+$},
 	Volume = {45},
 	Year = {1966}}
 
@@ -3364,7 +3514,7 @@ Inclusion of Disconnected Triples}},
 	Journal = {Phys. Rev.},
 	Number = {1},
 	Pages = {23-30},
-	Title = {{Studies in Configuration Interaction: The First-Row Diatomic Hydrides}},
+	Title = {Studies in Configuration Interaction: The First-Row Diatomic Hydrides},
 	Volume = {183},
 	Year = {1969}}
 
@@ -3373,7 +3523,7 @@ Inclusion of Disconnected Triples}},
 	Journal = {Phys. Rev. A},
 	Number = {3},
 	Pages = {644-658},
-	Title = {{{Nature of the Configuration-Interaction Method in {\em Ab Initio} Calculations. I. Ne Ground State}}},
+	Title = {Nature of the Configuration-Interaction Method in {\em Ab Initio} Calculations. I. Ne Ground State},
 	Volume = {1},
 	Year = {1970}}
 
@@ -3381,7 +3531,7 @@ Inclusion of Disconnected Triples}},
 	Author = {W. Meyer},
 	Journal = {J. Chem. Phys.},
 	Pages = 1017,
-	Title = {{{PNO-CI} Studies of Electron Correlation Effects. {I.} {Configuration} Expansion by Means of Nonorthogonal Orbitals, and Application of the Ground State and Ionized States of Methane}},
+	Title = {{PNO-CI} Studies of Electron Correlation Effects. {I.} {Configuration} Expansion by Means of Nonorthogonal Orbitals, and Application of the Ground State and Ionized States of Methane},
 	Volume = 58,
 	Year = 1973}
 
@@ -3390,16 +3540,16 @@ Inclusion of Disconnected Triples}},
 	Journal = {J. Chem. Phys.},
 	Number = {4},
 	Pages = {1225-1234},
-	Title = {{{PNO-CI} (Pair Natural Orbital Configuration Interaction) and {CEPA-PNO} (Coupled Cluster Pair Approxiomation with Pair Natural Orbitals) Calculations of Molecular Systems. {I}. {Outline} of the Method for Closed-Shell States}},
+	Title = {PNO-CI (Pair Natural Orbital Configuration Interaction) and CEPA-PNO (Coupled Cluster Pair Approxiomation with Pair Natural Orbitals) Calculations of Molecular Systems. I. Outline of the Method for Closed-Shell States},
 	Volume = {62},
 	Year = {1975}}
 
 @article{Jensen88,
-	Author = {H. J. A. Jensen and P. J{\o}rgensen and H. {\AA}gren and J. Olsen},
+	Author = {H. J{\o}rgen {Aa.} Jensen and P. J{\o}rgensen and H. {\AA}gren and J. Olsen},
 	Journal = {J. Chem. Phys.},
 	Number = {6},
 	Pages = {3834-3839},
-	Title = {{Second-Order M{\o}ller--Plesset Perturbation Theory as a Configuration and Orbital Generator in Multiconfiguration Self-Consistent Field Calculations}},
+	Title = {Second-Order M{\o}ller--Plesset Perturbation Theory as a Configuration and Orbital Generator in Multiconfiguration Self-Consistent Field Calculations},
 	Volume = {88},
 	Year = {1988}}
 
@@ -3408,15 +3558,15 @@ Inclusion of Disconnected Triples}},
 	Journal = {Chem. Phys. Lett.},
 	Number = {2,3},
 	Pages = {148-154},
-	Title = {{Selection of the Reduced Virtual Space for Correlated Calculations. An Application to the Energy and Dipole Moment of H$_2$O}},
+	Title = {Selection of the Reduced Virtual Space for Correlated Calculations. An Application to the Energy and Dipole Moment of H$_2$O},
 	Volume = {159},
 	Year = {1989}}
 
 @article{Fermann94,
-	Author = {J. T. Fermann and C. D. Sherrill and T. D. Crawford and H. F. Schaefer},
+	Author = {J. T. Fermann and C. D> Sherrill and T. D. Crawford and H. F. Schaefer},
 	Journal = {J. Chem. Phys.},
 	Pages = {8132-8139},
-	Title = {{Benchmark Studies of Electron Correlation in Six-Electron Systems}},
+	Title = {Benchmark Studies of Electron Correlation in Six-Electron Systems},
 	Volume = 100,
 	Year = 1994}
 
@@ -3424,7 +3574,7 @@ Inclusion of Disconnected Triples}},
 	Author = {C. D. Sherrill and H. F. Schaefer},
 	Journal = {Adv. Quantum Chem.},
 	Pages = {143-269},
-	Title = {{The Configuration Interaction Method: Advances in Highly Correlated Approaches}},
+	Title = {The Configuration Interaction Method: Advances in Highly Correlated Approaches},
 	Volume = 34,
 	Year = 1999}
 
@@ -3432,7 +3582,7 @@ Inclusion of Disconnected Triples}},
 	Author = {M. L. Abrams and C. D. Sherrill},
 	Journal = {Chem. Phys. Lett.},
 	Pages = {227-232},
-	Title = {{Natural Orbitals as Substitutes for Optimized Orbitals in Complete Active Space Wavefunctions}},
+	Title = {Natural Orbitals as Substitutes for Optimized Orbitals in Complete Active Space Wavefunctions},
 	Volume = {395},
 	Year = {2004}}
 
@@ -3440,7 +3590,7 @@ Inclusion of Disconnected Triples}},
 	Author = {A. G. Taube and R. J. Bartlett},
 	Journal = {J. Chem. Phys.},
 	Pages = {164101},
-	Title = {{Frozen Natural Orbital Coupled-Cluster Theory: Forces and Application to Decomposition of Nitroethane}},
+	Title = {Frozen Natural Orbital Coupled-Cluster Theory: Forces and Application to Decomposition of Nitroethane},
 	Volume = {128},
 	Year = {2008}}
 
@@ -3449,29 +3599,23 @@ Inclusion of Disconnected Triples}},
 	Journal = {Coll. Czech. Chem. Commun.},
 	Number = {6},
 	Pages = {837-850},
-	Title = {{Frozen Natural Orbitals: Systematic Basis Set Truncation for Coupled-Cluster Theory}},
+	Title = {Frozen Natural Orbitals: Systematic Basis Set Truncation for Coupled-Cluster Theory},
 	Volume = {70},
 	Year = {2005}}
 
-
 @article{Neese09,
-    Author = {Neese, F. and Wennmohs, F. and Hansen, A.},
-    Date-Added = {2011-12-01 09:32:39 -0500},
-    Date-Modified = {2012-03-01 10:15:34 -0500},
-    Journal = {J. Chem. Phys.},
-    Keywords = {LPNO},
-    Number = {114108},
-    Pages = {114108-1 - 114108-18},
-    Read = {1},
-    Title = {{Efficient and Accurate Local Approximations to Coupled-Electron Pair Approaches: An Attempt to Revive the Pair Natural Orbital Method}},
-    Volume = {130},
-    Year = {2009}}
+	Author = {F. Neese and A. Hansen and D. G. Liakos},
+	Journal = {J. Chem. Phys.},
+	Pages = {064103},
+	Title = {Efficient and Accurate Approximations to the Local Coupled Cluster Singles Doubles Method Using a Truncated Pair Natural Orbital Basis},
+	Volume = {131},
+	Year = {2009}}
 
 @article{DePrince13,
 	Author = {A. E. DePrince and C. D. Sherrill},
 	Journal = {J. Chem. Theory. Comp.},
 	Pages = {2687-2696},
-	Title = {{Accuracy and Efficiency of Coupled-Cluster Theory Using Density Fitting/Cholesky Decomposition, Frozen Natural Orbitals, and a $t_1$-Transformed Hamiltonian}},
+	Title = {Accuracy and Efficiency of Coupled-Cluster Theory Using Density Fitting/Cholesky Decomposition, Frozen Natural Orbitals, and a $t_1$-Transformed Hamiltonian},
 	Volume = {9},
 	Year = {2013}}
 
@@ -3479,7 +3623,7 @@ Inclusion of Disconnected Triples}},
 	Author = {A. E. DePrince and C. D. Sherrill},
 	Journal = {J. Chem. Theory Comput.},
 	Pages = {293-299},
-	Title = {{Accurate Noncovalent Interaction Energies Using Truncated Basis Sets Based on Frozen Natural Orbitals}},
+	Title = {Accurate Noncovalent Interaction Energies Using Truncated Basis Sets Based on Frozen Natural Orbitals},
 	Volume = {9},
 	Year = {2013}}
 
@@ -3487,8 +3631,8 @@ Inclusion of Disconnected Triples}},
 	Author = {C. Riplinger and P. Pinski and U. Becker and E. F. Valeev and F. Neese},
 	Journal = {J. Chem. Phys.},
 	Pages = {024109},
-	Title = {{Sparse Maps --- A Systematic Infrastructure for
-Reduced-Scaling Electronic Structure Methods. II. Linear Scaling Domain Based Pair Natural Orbital Coupled Cluster Theory}},
+	Title = {Sparse Maps --- A Systematic Infrastructure for
+Reduced-Scaling Electronic Structure Methods. II. Linear Scaling Domain Based Pair Natural Orbital Coupled Cluster Theory},
 	Volume = {144},
 	Year = {2016}}
 
@@ -3500,25 +3644,25 @@ Reduced-Scaling Electronic Structure Methods. II. Linear Scaling Domain Based Pa
 	Editor = {K. B. Lipkowitz and D. B. Boyd},
 	Pages = {33-136},
 	Publisher = {VCH Publishers},
-	Title = {{An Introduction to Coupled Cluster Theory for Computational Chemists}},
+	Title = {An Introduction to Coupled Cluster Theory for Computational Chemists},
 	Volume = 14,
 	Year = 2000}
 
 @incollection{Gauss98,
 	Address = {Chichester},
 	Author = {J. Gauss},
-	Booktitle = {{Encyclopedia of Computational Chemistry}},
+	Booktitle = {Encyclopedia of Computational Chemistry},
 	Editor = {P.v.R. Schleyer and N. L. Allinger and T. Clark and J. Gasteiger and P. A. Kollman and H. F. {Schaefer III} and P. R. Schreiner},
 	Pages = {615-636},
 	Publisher = {John Wiley and Sons},
-	Title = {{The Coupled-Cluster Method},
+	Title = {The Coupled-Cluster Method},
 	Year = 1998}
 
 @book{Shavitt09,
 	Address = {Cambridge},
 	Author = {I. Shavitt and R. J. Bartlett},
 	Publisher = {Cambridge University Press},
-	Title = {{Many-Body Methods in Chemistry and Physics: MBPT and Coupled-Cluster Theory}},
+	Title = {Many-Body Methods in Chemistry and Physics: MBPT and Coupled-Cluster Theory},
 	Year = {2009}}
 
 @article{McAlexander12,
@@ -3526,7 +3670,7 @@ Reduced-Scaling Electronic Structure Methods. II. Linear Scaling Domain Based Pa
 	Journal = {Phys. Chem. Chem. Phys.},
 	Number = {21},
 	Pages = {7830-7836},
-	Title = {{Localized Optimized Orbitals, Coupled Cluster Theory, and Chiroptical Response Properties}},
+	Title = {Localized Optimized Orbitals, Coupled Cluster Theory, and Chiroptical Response Properties},
 	Volume = {14},
 	Year = {2012}}
 
@@ -3534,7 +3678,7 @@ Reduced-Scaling Electronic Structure Methods. II. Linear Scaling Domain Based Pa
 	Author = {J. Friedrich and H. R. McAlexander and A. Kumar and T. D. Crawford},
 	Journal = {Phys. Chem. Chem. Phys.},
 	Pages = {14284-14296},
-	Title = {{Incremental Evaluation of Coupled Cluster Dipole Polarizabilities}},
+	Title = {Incremental Evaluation of Coupled Cluster Dipole Polarizabilities},
 	Volume = {17},
 	Year = {2015}}
 
@@ -3543,7 +3687,7 @@ Reduced-Scaling Electronic Structure Methods. II. Linear Scaling Domain Based Pa
 	Journal = {J. Chem. Theory Comp.},
 	Number = {1},
 	Pages = {209-222},
-	Title = {{A Comparison of Three Approaches to the Reduced-Scaling Coupled Cluster Treatment of Non-Resonant Molecular Response Properties}},
+	Title = {A Comparison of Three Approaches to the Reduced-Scaling Coupled Cluster Treatment of Non-Resonant Molecular Response Properties},
 	Volume = {12},
 	Year = {2016}}
 
@@ -3551,7 +3695,7 @@ Reduced-Scaling Electronic Structure Methods. II. Linear Scaling Domain Based Pa
 	Author = {N. J. Russ and T. D. Crawford},
 	Journal = {Chem. Phys. Lett.},
 	Pages = {104-111},
-	Title = {{Local Correlation in Coupled Cluster Calculations of Molecular Response Properties}},
+	Title = {Local Correlation in Coupled Cluster Calculations of Molecular Response Properties},
 	Volume = 400,
 	Year = 2004}
 
@@ -3559,7 +3703,7 @@ Reduced-Scaling Electronic Structure Methods. II. Linear Scaling Domain Based Pa
 	Author = {N. J. Russ and T. D. Crawford},
 	Journal = {Phys. Chem. Chem. Phys.},
 	Pages = {3345-3352},
-	Title = {{Local Correlation Domains for Coupled Cluster Theory: Optical Rotation and Magnetic Field Perturbations}},
+	Title = {Local Correlation Domains for Coupled Cluster Theory: Optical Rotation and Magnetic Field Perturbations},
 	Volume = {10},
 	Year = {2008}}
 
@@ -3567,7 +3711,7 @@ Reduced-Scaling Electronic Structure Methods. II. Linear Scaling Domain Based Pa
 	Author = {T. Korona and K. Pfl{\"u}ger and H.-J. Werner},
 	Journal = {Phys. Chem. Chem. Phys},
 	Pages = {2059-2065},
-	Title = {{The Effect of Local Approximations in Coupled-Cluster Wave Functions on Dipole Moments and Static Dipole Polarizabilities}},
+	Title = {The Effect of Local Approximations in Coupled-Cluster Wave Functions on Dipole Moments and Static Dipole Polarizabilities},
 	Volume = 6,
 	Year = 2004}
 
@@ -3575,7 +3719,7 @@ Reduced-Scaling Electronic Structure Methods. II. Linear Scaling Domain Based Pa
 	Author = {T. J. Mach and T. D. Crawford},
 	Journal = {Theor. Chem. Acc.},
 	Pages = {1449},
-	Title = {{Computing Optical Rotation via an $N$-Body Approach}},
+	Title = {Computing Optical Rotation via an $N$-Body Approach},
 	Volume = {133},
 	Year = {2014}}
 
@@ -3584,8 +3728,8 @@ Reduced-Scaling Electronic Structure Methods. II. Linear Scaling Domain Based Pa
 	Author = {O. Christiansen and P. J{\o}rgensen and C. H{\"a}ttig},
 	Journal = {Int. J. Quantum Chem.},
 	Pages = {1-52},
-	Title = {{Response Functions from Fourier Component Variational
-Perturbation Theory Applied to a Time-Averaged Quasienergy}},
+	Title = {Response Functions from Fourier Component Variational
+Perturbation Theory Applied to a Time-Averaged Quasienergy},
 	Volume = 68,
 	Year = 1998}
 
@@ -3594,19 +3738,19 @@ Perturbation Theory Applied to a Time-Averaged Quasienergy}},
 	Journal = {J. Chem. Phys.},
 	Number = {7},
 	Pages = {4959-4971},
-	Title = {{The Calculation of Frequency-Dependent Polarizabilities
-and Pseudo-Energy Derivatives}},
+	Title = {The Calculation of Frequency-Dependent Polarizabilities
+and Pseudo-Energy Derivatives},
 	Volume = {94},
 	Year = {1991}}
 
 
 @article{Hattig95,
-	Author = {C. H{\"a}ttig and B. A. Hess},
+	Author = {C. Hattig and B. A. Hess},
 	Journal = {Chem. Phys. Lett.},
 	Pages = {359-370},
-	Title = {{Correlated Frequency-Dependent Polarizabilities and
+	Title = {Correlated Frequency-Dependent Polarizabilities and
 Dispersion Coefficients in the Time-Dependent Second-Order
-M{\o}ller-Plesset Approximation}},
+M{\o}ller-Plesset Approximation},
 	Volume = {233},
 	Year = {1995}}
 
@@ -3615,9 +3759,9 @@ M{\o}ller-Plesset Approximation}},
 	Author = {F. Aiga and R. Itoh},
 	Journal = {Chem. Phys. Lett.},
 	Pages = {372-380},
-	Title = {{Calculation of Frequency-Dependent Polarizability and
-Hyperpolarizabilities by the Second-Order {M{\o}ller-Plesset} Perturbation
-Theory}},
+	Title = {Calculation of Frequency-Dependent Polarizability and
+Hyperpolarizabilities by the Second-Order M{\o}ller-Plesset Perturbation
+Theory},
 	Volume = {251},
 	Year = {1996}}
 
@@ -3627,8 +3771,8 @@ Theory}},
 Kristensen and J. Olsen and K. Ruud},
 	Journal = {Chem. Rev.},
 	Pages = {543-631},
-	Title = {{Recent Advances in Wave Function-Based Methods of
-Molecular -Property Calculations}},
+	Title = {Recent Advances in Wave Function-Based Methods of
+Molecular -Property Calculations},
 	Volume = {112},
 	Year = {2012}}
 
@@ -3637,8 +3781,8 @@ Molecular -Property Calculations}},
 	Journal = {J. Chem. Phys.},
 	Number = 4,
 	Pages = {2975-2988},
-	Title = {{Gaussian Basis Sets for Use in Correlated Molecular
-Calculations. IV. Calculation of Static Electrical Response Properties}},
+	Title = {Gaussian Basis Sets for Use in Correlated Molecular
+Calculations. IV. Calculation of Static Electrical Response Properties},
 	Volume = 100,
 	Year = 1994}
 
@@ -3658,8 +3802,8 @@ Applications},
 	Pubnum = {69},
 	Series = {Challenges and Advances in Computational Chemistry and
 Physics},
-	Title = {{Reduced-Scaling Coupled-Cluster Theory for Response
-Properties of Large Molecules}},
+	Title = {Reduced-Scaling Coupled-Cluster Theory for Response
+Properties of Large Molecules},
 	Volume = {11},
 	Year = {2010}}
 
@@ -3668,7 +3812,7 @@ Properties of Large Molecules}},
 	Author = {H. Koch and R. Kobayashi and P. J{\o}rgensen},
 	Journal = {Int. J. Quantum Chem.},
 	Pages = 835,
-	Title = {{Brueckner Coupled Cluster Response Functions}},
+	Title = {Brueckner Coupled Cluster Response Functions},
 	Volume = 49,
 	Year = 1994
 }
@@ -3678,7 +3822,7 @@ Properties of Large Molecules}},
 	Journal = {manuscript in preparation},
 	Number = ,
 	Pages = {},
-	Title = {{}
+	Title = {}
 	Volume = ,
 	Year = 2018}
 
@@ -3687,41 +3831,41 @@ Properties of Large Molecules}},
 	Journal = {manuscript in preparation},
 	Number = ,
 	Pages = {},
-	Title = {{}
+	Title = {}
 	Volume = ,
 	Year = 2018}
 
 @incollection{Kelvin,
 	Address = {},
 	Author = {Sir William Thomson Lord Kelvin},
-	Booktitle = {{The Molecular Tactics of a Crystal}},
+	Booktitle = {The Molecular Tactics of a Crystal},
 	Chapter = ,
 	Editor = {},
 	Pages = {},
 	Publisher = {},
-	Title = {{The Molecular Tactics of a Crystal},
+	Title = {The Molecular Tactics of a Crystal},
 	Volume = ,
 	Year = }
 
 @article{Hattig13,
-	Author = {B. Helmich and C. H{\"a}ttig},
+	Author = {B. Helmich and C. Hättig},
 	Journal = {J. Chem. Phys.},
 	Number = 8,
 	Pages = {084114},
-	Title = {{A pair natural orbital implementation of the coupled cluster model CC2 for excitation energies.}
+	Title = {A pair natural orbital implementation of the coupled cluster model CC2 for excitation energies.
 },
 	Volume = 139,
 	Year = 2013}
 
 
 @article{Hattig18,
-    Author = {M. S. Frank and C. H{\"a}ttig},
+    Author = {Marius S. Frank and Christof H{\"a}ttig},
     Doi = {10.1063/1.5018514},
     Eprint = {https://doi.org/10.1063/1.5018514},
-    Journal = {J. Chem. Phys.},
+    Journal = {The Journal of Chemical Physics},
     Number = {13},
     Pages = {134102},
-    Title = {{A pair natural orbital based implementation of CCSD excitation energies within the framework of linear response theory}},
+    Title = {A pair natural orbital based implementation of CCSD excitation energies within the framework of linear response theory},
     Url = {https://doi.org/10.1063/1.5018514},
     Volume = {148},
     Year = {2018},
@@ -3729,14 +3873,14 @@ Properties of Large Molecules}},
     Bdsk-Url-2 = {http://dx.doi.org/10.1063/1.5018514}}
 
 @article{Kumar17,
-    Author = {Kumar, A. and Crawford, T. D.},
+    Author = {Kumar, Ashutosh and Crawford, T. Daniel},
     Doi = {10.1021/acs.jpca.6b11410},
     Eprint = {https://doi.org/10.1021/acs.jpca.6b11410},
-    Journal = {J. Phys. Chem. A},
+    Journal = {The Journal of Physical Chemistry A},
     Note = {PMID: 28045265},
     Number = {3},
     Pages = {708-716},
-    Title = {{Frozen Virtual Natural Orbitals for Coupled-Cluster Linear-Response Theory}},
+    Title = {Frozen Virtual Natural Orbitals for Coupled-Cluster Linear-Response Theory},
     Url = {https://doi.org/10.1021/acs.jpca.6b11410},
     Volume = {121},
     Year = {2017},
@@ -3745,13 +3889,13 @@ Properties of Large Molecules}},
 
 
 @article{Sundholm11,
-    Author = {R. Send and V. R. I. Kaila and D. Sundholm},
+    Author = {Robert Send and Ville R. I. Kaila and Dage Sundholm},
     Doi = {10.1063/1.3596729},
     Eprint = {https://doi.org/10.1063/1.3596729},
-    Journal = {J. Chem. Phys.},
+    Journal = {The Journal of Chemical Physics},
     Number = {21},
     Pages = {214114},
-    Title = {{Reduction of the virtual space for coupled-cluster excitation energies of large molecules and embedded systems}},
+    Title = {Reduction of the virtual space for coupled-cluster excitation energies of large molecules and embedded systems},
     Url = {https://doi.org/10.1063/1.3596729},
     Volume = {134},
     Year = {2011},
@@ -3760,13 +3904,13 @@ Properties of Large Molecules}},
 
 
 @article{Mester18,
-    Author = {D. Mester and P. R. Nagy and M. K{\'a}llay},
+    Author = {D{\'a}vid Mester and P{\'e}ter R. Nagy and Mih{\'a}ly K{\'a}llay},
     Doi = {10.1063/1.5021832},
     Eprint = {https://doi.org/10.1063/1.5021832},
-    Journal = {J. Chem. Phys.},
+    Journal = {The Journal of Chemical Physics},
     Number = {9},
     Pages = {094111},
-    Title = {{Reduced-cost second-order algebraic-diagrammatic construction method for excitation energies and transition moments}},
+    Title = {Reduced-cost second-order algebraic-diagrammatic construction method for excitation energies and transition moments},
     Url = {https://doi.org/10.1063/1.5021832},
     Volume = {148},
     Year = {2018},
@@ -3775,12 +3919,12 @@ Properties of Large Molecules}},
 
 
 @article{HofenerKlopper17,
-    Author = {S. H{\"o}fener and W. Klopper},
+    Author = {Sebastian H{\"o}fener and Wim Klopper},
     Doi = {https://doi.org/10.1016/j.cplett.2017.04.083},
     Issn = {0009-2614},
     Journal = {Chemical Physics Letters},
     Pages = {52 - 59},
-    Title = {{Natural transition orbitals for the calculation of correlation and excitation energies}},
+    Title = {Natural transition orbitals for the calculation of correlation and excitation energies},
     Url = {http://www.sciencedirect.com/science/article/pii/S0009261417304141},
     Volume = {679},
     Year = {2017},
@@ -3788,13 +3932,13 @@ Properties of Large Molecules}},
     Bdsk-Url-2 = {https://doi.org/10.1016/j.cplett.2017.04.083}}
 
 @article{Mester17,
-    Author = {D. Mester and P. R. Nagy and M. K{\'a}llay},
+    Author = {D{\'a}vid Mester and P{\'e}ter R. Nagy and Mih{\'a}ly K{\'a}llay},
     Doi = {10.1063/1.4983277},
     Eprint = {https://doi.org/10.1063/1.4983277},
-    Journal = {J. Chem. Phys.},
+    Journal = {The Journal of Chemical Physics},
     Number = {19},
     Pages = {194102},
-    Title = {{Reduced-cost linear-response CC2 method based on natural orbitals and natural auxiliary functions}},
+    Title = {Reduced-cost linear-response CC2 method based on natural orbitals and natural auxiliary functions},
     Url = {https://doi.org/10.1063/1.4983277},
     Volume = {146},
     Year = {2017},
@@ -3805,10 +3949,10 @@ Properties of Large Molecules}},
     Author = {P. Baudin and K. Kristensen},
     Doi = {10.1063/1.4984820},
     Eprint = {https://doi.org/10.1063/1.4984820},
-    Journal = {J. Chem. Phys.},
+    Journal = {The Journal of Chemical Physics},
     Number = {21},
     Pages = {214114},
-    Title = {{Correlated natural transition orbital framework for low-scaling excitation energy calculations (CorNFLEx)}},
+    Title = {Correlated natural transition orbital framework for low-scaling excitation energy calculations (CorNFLEx)},
     Url = {https://doi.org/10.1063/1.4984820},
     Volume = {146},
     Year = {2017},
@@ -3817,14 +3961,14 @@ Properties of Large Molecules}},
 
 
 @article{Parrish17,
-    Author = {R. M. Parrish and L. A. Burns and  D. G. A. Smith and  A. C. Simmonett and A. E. DePrince and E. G. Hohenstein and U. Bozkaya and  A. Y. Sokolov and R. D. Remigio and R. M. Richard and J. F. Gonthier and A. M. James and H. R. McAlexander and A. Kumar and M. Saitow and X. Wang and B. P. Pritchard and P. Verma and H. F. Schaefer and K. Patkowski and R. A. King and E. F. Valeev and F. A. Evangelista and J. M. Turney and T. D. Crawford, and C. D. Sherrill},
+    Author = {Parrish, Robert M. and Burns, Lori A. and Smith, Daniel G. A. and Simmonett, Andrew C. and DePrince, A. Eugene and Hohenstein, Edward G. and Bozkaya, U{\u g}ur and Sokolov, Alexander Yu. and Di Remigio, Roberto and Richard, Ryan M. and Gonthier, J{\'e}r{\^o}me F. and James, Andrew M. and McAlexander, Harley R. and Kumar, Ashutosh and Saitow, Masaaki and Wang, Xiao and Pritchard, Benjamin P. and Verma, Prakash and Schaefer, Henry F. and Patkowski, Konrad and King, Rollin A. and Valeev, Edward F. and Evangelista, Francesco A. and Turney, Justin M. and Crawford, T. Daniel and Sherrill, C. David},
     Doi = {10.1021/acs.jctc.7b00174},
     Eprint = {https://doi.org/10.1021/acs.jctc.7b00174},
-    Journal = {J. Chem. Theory Comput.},
+    Journal = {Journal of Chemical Theory and Computation},
     Note = {PMID: 28489372},
     Number = {7},
     Pages = {3185-3197},
-    Title = {{Psi4 1.1: An Open-Source Electronic Structure Program Emphasizing Automation, Advanced Libraries, and Interoperability}},
+    Title = {Psi4 1.1: An Open-Source Electronic Structure Program Emphasizing Automation, Advanced Libraries, and Interoperability},
     Url = {https://doi.org/10.1021/acs.jctc.7b00174},
     Volume = {13},
     Year = {2017},
@@ -3833,29 +3977,28 @@ Properties of Large Molecules}},
 
 
 @article{Smith18,
-    Author = {D. G. A. Smith and L. A. Burns and D. A. Sirianni and D. R. Nascimento and A. Kumar and A. M. James and J. B. Schriber and T. Zhang and B. Zhang and A. S. Abbott and E. J. Berquist and M. H. Lechner and L. A. Cunha and A. G. Heide and J. M. Waldrop and T. Y. Takeshita and A. Alenaizan and D. Neuhauser and R. A. King and A. C. Simmonett and J. M. Turney and H. F. Schaefer and F. A. Evangelista and A. E. DePrince and T. D. Crawford and K. Patkowski and C. D. Sherrill.},
-    Journal = {J. Chem. Theory Comput.},
-    Doi = {doi: 10.1021/acs.jctc.8b00286},
-    Month = {},
+    Author = {Daniel Smith and Lori A Burns and Dominic A. Sirianni and Daniel R. Nascimento and Ashutosh Kumar and Andrew M. James and Jeffrey B. Schriber and Tianyuan Zhang and Boyi Zhang and Adam S. Abbott and Eric Berquist and Marvin H. Lechner and Leonardo dos Anjos Cunha and Alexander G. Heide and Rollin A. King and Andrew C. Simmonett and Justin M. Turney and Henry F. Schaefer and Francesco A. Evangelista and A. Eugene DePrince III and T. Daniel Crawford and Konrad Patkowski and C. David Sherrill},
+    Doi = {10.26434/chemrxiv.5746059.v1},
+    Month = {1},
     Title = {{Psi4NumPy: An Interactive Quantum Chemistry Programming Environment for Reference Implementations and Rapid Development}},
-    Url = {},
-    Year = {2018, doi: 10.1021/acs.jctc.8b00286},
-    Bdsk-Url-1 = {},
-    Bdsk-Url-2 = {}}
+    Url = {https://chemrxiv.org/articles/Psi4NumPy_An_Interactive_Quantum_Chemistry_Programming_Environment_for_Reference_Implementations_and_Rapid_Development/5746059},
+    Year = {2018},
+    Bdsk-Url-1 = {https://chemrxiv.org/articles/Psi4NumPy_An_Interactive_Quantum_Chemistry_Programming_Environment_for_Reference_Implementations_and_Rapid_Development/5746059},
+    Bdsk-Url-2 = {http://dx.doi.org/10.26434/chemrxiv.5746059.v1}}
 
 @article{Pedersen01,
     Author = {T. B. Pedersen and B. Fern{\'a}ndez and H. Koch},
     Journal = {J. Chem. Phys.},
     Number = 16,
     Pages = {6983-6993},
-    Title = {{Gauge Invariant Coupled Cluster Response Theory Using
-Optimized Nonorthogonal Orbitals}},
+    Title = {Gauge Invariant Coupled Cluster Response Theory Using
+Optimized Nonorthogonal Orbitals},
     Volume = 114,
     Year = 2001}
 
 @ARTICLE{Chong18,
    author = {{Peng}, C. and {Clement}, M.~C. and {Valeev}, E.~F.},
-    title = {{Exploration of Reduced Scaling Formulation of Equation of Motion Coupled-Cluster Singles and Doubles Based on State-Averaged Pair Natural Orbitals}},
+    title = "{Exploration of Reduced Scaling Formulation of Equation of Motion Coupled-Cluster Singles and Doubles Based on State-Averaged Pair Natural Orbitals}",
   journal = {ArXiv e-prints},
 archivePrefix = "arXiv",
    eprint = {1802.06738},
@@ -3868,13 +4011,13 @@ archivePrefix = "arXiv",
 }
 
 @article{Friese12,
-    Author = {D. H. Friese and N. O. C. Winter and P. Balzerowski and R. Schwan and C. H{\"a}ttig},
+    Author = {Daniel H. Friese and Nina O. C. Winter and Patrick Balzerowski and Raffael Schwan and Christof H{\"a}ttig},
     Doi = {10.1063/1.4704788},
     Eprint = {https://doi.org/10.1063/1.4704788},
-    Journal = {J. Chem. Phys.},
+    Journal = {The Journal of Chemical Physics},
     Number = {17},
     Pages = {174106},
-    Title = {{Large scale polarizability calculations using the approximate coupled cluster model CC2 and MP2 combined with the resolution-of-the-identity approximation}},
+    Title = {Large scale polarizability calculations using the approximate coupled cluster model CC2 and MP2 combined with the resolution-of-the-identity approximation},
     Url = {https://doi.org/10.1063/1.4704788},
     Volume = {136},
     Year = {2012},

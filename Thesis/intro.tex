@@ -115,8 +115,8 @@ excited states which is of course computationally prohibitive. A more practical 
 \cite{Kobayashi94,Koch90}, which casts these tensors as response functions,
 \begin{equation}
 \begin{split}
-&\bm{\alpha}(\omega) = \langle\langle\vec{\mu};\vec{\mu}\rangle\rangle\\
-&\textbf{G}^{\prime}(\omega) = -\text{Im}\langle\langle\vec{\mu};\vec{m}\rangle\rangle.\\
+&\bm{\alpha}(\omega) = -\langle\langle\vec{\mu};\vec{\mu}\rangle\rangle\\
+&\textbf{G}^{\prime}(\omega) = \text{Im}\langle\langle\vec{\mu};\vec{m}\rangle\rangle.\\
 \end{split}
 \end{equation} 
 The response theory focuses on the perturbation of the ground state wavefunction in the presence of an external 
@@ -165,10 +165,11 @@ specific rotations of a set of seven chiral compounds in the presence of seven d
 solvents. While they obtained promising results for cyclohexane, acetone, methanol and 
 acetonitrile, the model performed rather poorly for carbon tetrachloride, benzene, and chloroform
 due to the failure of the PCM in capturing the dominant nonelectrostatic solute-solvent interactions 
-in the latter. A few years later, Pecul et al.\cite{} used the same model (DFT-PCM) for studying the effect
-of solvents to the electronic circular dichroism and obtained useful results for valence-only transitions. 
+in the latter. A few years later, Pecul {\em et al.} \cite{} used the same model (DFT-PCM) to study the effect
+of solvent on the electronic circular dichroism spectra and obtained useful results for valence-only transitions. 
 However, this approach failed to describe the Rydberg transitions and specific solute-solvent 
 interactions like hydrogen bonding accurately.\\
+
 Beratan and 
 In order to account for the specific solute-solvent interactions, 
 
@@ -218,9 +219,9 @@ Mention coleman's and taylor's basis set work
 \subsubsection{Scaling}
 In this work, this problem is tackled.
 An obvious way to make these compuations practical is to seek the help of CC reduced-scaling 
-techniques like the pair natural orbitals (PNO) approach\cite{Neese09,NeeseCCSD09} which has been really successful in describing energetics of 
+techniques like the pair natural orbitals (PNO) approach\cite{NeeseCCSD09,Neese09} which has been really successful in describing energetics of 
 large molecular systems. However, work towards the extension of these methods to calculate chiroptical properties has been 
-fairly limited\cite{Gauss00,Korona04,Russ04,McAlexander12,Friedrich15,Russ08}. McAlexander and Crawford in their recent 
+fairly limited\cite{Friedrich15,Gauss00,Korona04,McAlexander12,Russ04,Russ08}. McAlexander and Crawford in their recent 
 work\cite{McAlexander15:LRCC} demonstrated that the regular PNO approach while calculating CC response properties 
 suffers from slow convergence towards the full canonical result. \\
 Other challenges are vibrational corrections, conformation averaging, etc...\\

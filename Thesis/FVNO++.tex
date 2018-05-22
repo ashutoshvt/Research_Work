@@ -238,7 +238,7 @@ of the virtual-virtual blocks of perturbed densities of different orders
 \end{split}
 \end{equation}
 \\
-In the above equation, the indices $i,j$ and $a,b,c$ refer to occupied and virtual orbitals respectively
+In the above equations, the indices $i,j$ and $a,b,c$ refer to occupied and virtual orbitals respectively
 and Einstein summation notation is used. The first order perturbed amplitudes $(\lambda^{ij}_{ac})^{(1)}$ 
 and $(t^{bc}_{ij})^{(1)}$ are nothing but the $\hat{X}^{B}_{\omega_1}$ and $\hat{Y}^{B}_{\omega_1}$ 
 amplitudes that we saw earlier.\\ Just as the ground state MP2 density can transfer its knowledge of 
@@ -346,8 +346,8 @@ they are a good starting point for our analysis as they show a faster convergenc
 involve both electric and magnetic dipole operators, we use, in addition to the electric dipole 
 based densities, i.e. FVNO++ ($\mu$), two other approaches of defining our virtual space.
 The first approach, FVNO++ ($\mu*L$) builds the density as a product of the first order amplitudes corresponding
-to the electric and magnetic perturbations ($L$). However, this makes the density matrix non-positive 
-definite and both positive and negative eigenvalues appear as a result. Nevertheless, we truncate 
+to the electric and magnetic perturbations ($L$). However, this makes the density matrix non positive 
+-definite and both positive and negative eigenvalues appear as a result. Nevertheless, we truncate 
 these ``VNOs" based on the absolute values of their ``ONs". The second approach, FVNO++ ($\mu,L$) builds two truncated VNO 
 spaces (50\% in this work) based on the densities of the electric and magnetic dipole operators individually and does a singular 
 value decomposition on the union of the two spaces. Finally, just like before, the VNOs are truncated based on their singular values.
@@ -385,7 +385,7 @@ obtained using the CCSD-LR(1) scheme which involves only one iteration of the CC
 approximating the $\lambda_\mu$ amplitudes with the corresponding $t_\mu$ amplitudes, are very close to 
 the full canonical result (CCSD-LR).
  \begin{table}[h]
- \caption{{\footnotesize Comparison of the canonical CCSD-LR polarizabilities in atomic units ($\alpha$) and specific rotations ($[\alpha]$) in deg $\text{dm}^{−1}$(g/mL)$^{−1}$ of different test cases calculated at 589 nm with that of the approximated CCSD-LR(1) scheme.}}
+ \caption{{\footnotesize Comparison of the canonical CCSD-LR polarizabilities in atomic units ($\alpha$) and specific rotations ($[\alpha]$) in deg $\text{dm}^{-1}$(g/mL)$^{-1}$ of different test cases calculated at 589 nm with that of the approximated CCSD-LR(1) scheme.}}
 %\begin{table}[h]
 \centering
 \begin{tabular}{lllll}
@@ -471,7 +471,7 @@ compares the performances of both the approaches for calculating CCSD dynamic po
 %using the modified velocity gauge (MVG) representation\cite{Pedersen04} 
 of the H$_2$O$_2$/aDZ system at 589 nm. Unsurprisingly, the errors in the FVNO(M) scheme are minimal compared to the original scheme for 
 both polarizabilities and specific rotations even after 18 (out of 29) ``non-diffuse" VNOs are removed.
-Specifically, the specific rotations curves are much well behaved in the 
+Specifically, the specific rotations curves are much better behaved in the 
 FVNO(M) approach. Similar trends can be observed for other excited state
 properties like excitation energies, oscillator strengths and rotational 
 strengths as well. Figure ~\ref{fig:fvno(m)_h2o2_adz_ee_rs} plots the EOM-CCSD 
@@ -501,7 +501,7 @@ in both FVNO and FVNO(M) procedures as a function of the number of virtual orbit
 %\end{MyFigure}
 It can be easily observed that the FVNO(M) curve is very well-behaved for 
 both the properties for all the four states and the errors in excitation energies 
-are less than 0.1 eV even after removing as much as 18 virtual orbitals i.e. 33 \% of the virtual
+are less than 0.1 eV even after removing as many as 18 virtual orbitals i.e. 33 \% of the virtual
 space. The rotational strengths also see a drastic improvement in the FVNO(M) scheme,
 (especially the second lowest excited state).
 %One can see the exact same trend in the case of rotational strengths
@@ -523,10 +523,10 @@ space. The rotational strengths also see a drastic improvement in the FVNO(M) sc
 It should be noted that similar results can be expected for a majority of chiral molecules who 
 like hydrogen peroxide require diffuse orbitals for a better description of the
 Rydberg states. However, extension of this method to larger systems is not 
-straightforward as OSEs are not a very robust crietria for the selction of diffuse 
+straightforward as OSEs are not a very robust crietrion for the selction of diffuse 
 orbitals. Furthermore, not all diffuse orbitals are equally important for 
 calculating these response properties. The FVNO++ scheme on the other hand has a very well-defined 
-truncation criteria based on ONs and the structure of the perturbed density used in this 
+truncation criterion based on ONs and the structure of the perturbed density used in this 
 approach closely resembles the response functions used to calculate these 
 properties. Thus, the FVNO++ approach, by construction, should mimic the performance of the FVNO(M)
 scheme as seen above. Fig.~\ref{fig:fvno++_h2o2_adz_polar_optrot_lg} 
@@ -576,7 +576,7 @@ compares the performances of both FVNO and FVNO++($\mu$) approaches
 for calculating CCSD dynamic polarizabilities and specific rotations for the same system 
 as above. The FVNO++ scheme indeed captures the contribution of VNOs to
 the response of the wavefunction in the right manner. As a result, the removal of VNOs with low ONs
-seem to have negligible effect on both polarizabilities and specific rotations.
+seems to have negligible effect on both polarizabilities and specific rotations.
 %Fig.~\ref{fig:fvno++_optrot},
 %\begin{MyFigure}[h!]
 %\centering
@@ -589,9 +589,9 @@ seem to have negligible effect on both polarizabilities and specific rotations.
 %which plots the errors in the LG specific rotations in both FVNO and FVNO++ schemes 
 %also shows similar trends. 
 Specific rotations can be seen to be more sensitive than polarizabilities with respect to 
-truncation of orbitals in both the methods. However, the FVNO++ curve shows a systematic 
-increase in error as more and more VNOs are removed while the errors in the FVNO procedure 
-are at best erratic. 
+truncation of orbitals in both the methods. However, the deviations with respect to 
+the full canonical result in the FVNO++ approach are minimal compared to the 
+FVNO scheme.
 %\begin{figure}[ht] \label{ fig7} 
 %  \begin{minipage}[b]{0.5\linewidth}
 %    \includegraphics[width=.7\linewidth]{figures_fvno++/fvno++_h2o2_adz_optrot.pdf}
@@ -685,7 +685,7 @@ one iteration of the CC2 response equations with MP2 amplitudes to obtain the pe
 to build the guess density. Fig.~\ref{fig:fvno++_polar_opt_h2_n} plots the polarizabilities 
 obtained using this optimized density (FVNO++(1)) and compares them with the earlier approach (FVNO++(0)).
 It can be easily seen that the VNOs obtained from FVNO++(1) method are significantly more 
-compact in the truncation range of up to 20\%. However, the errors start increasing steeply thereafter
+compact in the truncation range of up to 20\%. However, the errors start increasing steeply there after
 and become comparable with that of the FVNO++(0) approach indicating that the aDZ basis set for these small 
 systems is fairly compact. 
 \begin{figure}
@@ -794,19 +794,19 @@ calculations are needed in order to confirm this behavior.
 %\subsection{Sparsity in solvated cluster}
 \section{Conclusions}
 We propose a novel modification of the FVNO scheme for calculating linear
-response properties at CC level of theory. The new scheme, which we have named
+response properties at the CC level of theory. The new scheme, which we have named
 as FVNO++ constructs second-order perturbed densities to obtain ``perturbation
 aware" VNOs whose ONs can be seen as a metric for estimating 
 their importance in capturing the response of the wavefunction to the external 
-perturbation. Based on plot studies on linear chiral molecules like H$_2$O$_2$ 
-and (H$_2$)$_n$ helices, we conclude that this approach offers a very compact 
+perturbation. Based on pilot studies on small chiral molecules: hydrogen peroxide 
+and linear (H$_2$)$_n$ helices, we conclude that this approach offers a very compact 
 virtual space for calculating both dynamic polarizabilities and specific rotations
 while maintaining very low truncation errors. However, more calculations are 
 needed on two and three dimensional molecular systems to make the FVNO++ truncation 
 scheme truly robust. We are currently in the process of implementing a RI-CC2 linear 
 response code\cite{Friese12} which we intend to use in conjunction with the FVNO++ formalism 
 to tackle large solvated clusters. Furthermore, we propose to extend this approach 
-to the reduced-scaling domain based on pair natural orbitals\cite{Neese09,NeeseCCSD09}.
+to the reduced-scaling domain based on pair natural orbitals\cite{NeeseCCSD09,Neese09}.
 %- Within the FVNO++ formalism, explored structures of second-order perturbed densities:
 %Dab(2)(MU), Dab(2)(P), Dab(2)(MU,L), Dab2(P,L), Dab(2)(L) 
 %employing different guesses of first-order perturbed amplitudes.  
