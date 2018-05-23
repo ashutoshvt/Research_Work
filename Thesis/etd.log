@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  22 MAY 2018 22:27
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  22 MAY 2018 22:33
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1401,21 +1401,21 @@ pno++_h2_6_adz_optrot_lg.pdf> <./figures_pno++/pno++_h2_7_adz_optrot_lg.pdf>])
 Chapter 6.
 (./conclude.tex) [102
 
-] [103] [104] (./etd.bbl [105] [106
+] [103] [104] [105] (./publication.tex [106
 
-] [107] [108] [109]
-[110] [111] [112] [113] [114]
+]) (./etd.bbl
+[107] [108
+
+] [109] [110] [111] [112] [113] [114] [115] [116]
 Missing character: There is no ‚ in font cmr12!
 Missing character: There is no Ä in font cmr12!
 Missing character: There is no ê in font cmr12!
- [115]
+ [117]
 Missing character: There is no ‚ in font cmr12!
 Missing character: There is no Ä in font cmr12!
 Missing character: There is no â in font cmr12!
- [116] [117] [118] [119] [120] [121]
-[122]) [123] (./publication.tex [124
-
-]) [125] (./SI/SI.tex (./SI/polar_adz.tex
+ [118]
+[119] [120] [121] [122] [123] [124]) [125] (./SI/SI.tex (./SI/polar_adz.tex
 <SI/polar_adz.pdf, id=1368, 1027.84pt x 770.88pt>
 File: SI/polar_adz.pdf Graphic file (type pdf)
  <use SI/polar_adz.pdf>
@@ -1481,7 +1481,7 @@ e/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl12.pfb></usr/local/texlive
 /texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2016/t
 exmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2016/te
 xmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on etd.pdf (148 pages, 1910626 bytes).
+Output written on etd.pdf (148 pages, 1910599 bytes).
 PDF statistics:
  1561 PDF objects out of 1728 (max. 8388607)
  1104 compressed objects within 12 object streams
