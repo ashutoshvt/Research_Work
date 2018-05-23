@@ -47,11 +47,6 @@ Repeated entry---line 3380 of file papes.bib
  : @article{Meyer73
  :                 ,
 I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 3517 of file papes.bib
- : 
- : @book{Shavitt09,
-(Error may have been on previous line)
-I'm skipping whatever remains of this entry
 Repeated entry---line 3550 of file papes.bib
  : @article{Russ04
  :                ,
@@ -77,7 +72,6 @@ while executing---line 1049 of file plain.bst
 Name 1 in "Sch\"{u}tz, M," has a comma at the end for entry Schutz00b
 while executing---line 1049 of file plain.bst
 Warning--empty year in Crawford00
-Warning--empty year in Gauss98
 Warning--empty title in Kelvin
 Warning--empty publisher in Kelvin
 Warning--empty year in Kelvin
@@ -88,45 +82,46 @@ Name 25 in "R. M. Parrish and L. A. Burns and D. G. A. Smith and A. C. Simmonett
 while executing---line 1090 of file plain.bst
 Name 1 in "Sch\"{u}tz, M," has a comma at the end for entry Schutz00b
 while executing---line 1090 of file plain.bst
-You've used 93 entries,
+Warning--can't use both author and editor fields in Shavitt77
+You've used 117 entries,
             2118 wiz_defined-function locations,
-            1122 strings with 21365 characters,
-and the built_in function-call counts, 34213 in all, are:
-= -- 3246
-> -- 1800
+            1270 strings with 26165 characters,
+and the built_in function-call counts, 43028 in all, are:
+= -- 4099
+> -- 2244
 < -- 8
-+ -- 703
-- -- 610
-* -- 2812
-:= -- 5800
-add.period$ -- 282
-call.type$ -- 93
-change.case$ -- 572
++ -- 879
+- -- 762
+* -- 3517
+:= -- 7283
+add.period$ -- 355
+call.type$ -- 117
+change.case$ -- 720
 chr.to.int$ -- 0
-cite$ -- 101
-duplicate$ -- 1073
-empty$ -- 2559
-format.name$ -- 610
-if$ -- 7024
+cite$ -- 125
+duplicate$ -- 1358
+empty$ -- 3213
+format.name$ -- 762
+if$ -- 8843
 int.to.chr$ -- 0
-int.to.str$ -- 93
-missing$ -- 97
-newline$ -- 468
-num.names$ -- 192
-pop$ -- 451
+int.to.str$ -- 117
+missing$ -- 122
+newline$ -- 590
+num.names$ -- 238
+pop$ -- 555
 preamble$ -- 1
-purify$ -- 485
+purify$ -- 610
 quote$ -- 0
-skip$ -- 716
+skip$ -- 920
 stack$ -- 0
-substring$ -- 2513
-swap$ -- 128
+substring$ -- 3180
+swap$ -- 175
 text.length$ -- 8
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 364
+type$ -- 458
 warning$ -- 8
-while$ -- 279
-width$ -- 95
-write$ -- 1022
-(There were 20 error messages)
+while$ -- 352
+width$ -- 120
+write$ -- 1289
+(There were 19 error messages)

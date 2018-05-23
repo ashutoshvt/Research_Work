@@ -40,7 +40,7 @@ however, is very essential if one wants to attain ``chemical accuracy", ex.
 structure of the HF procedure makes it one of the most popular reference 
 wavefunctions for more complicated and accurate theoretical models.
 \section{Configuration Interaction Method}
-Configuration interaction (CI) method\cite{Sherrill98:CI} attempts to solve the time independent 
+Configuration interaction (CI) method\cite{Shavitt77,Sherrill98:CI} attempts to solve the time independent 
 Schr\"odinger's (TISE) by recasting it into a matrix eigenvalue problem, 
 \begin{equation}
 HC = EC
@@ -80,7 +80,7 @@ As a result, the accuracy of these methods decreases progressively as the size o
 %are far from their equilibrium geometry, which makes them very useful.
 \section{Coupled Cluster Theory} 
 %\paragraph{Coupled cluster theory} ~ \\\\
-Coupled cluster (CC) theory\cite{Crawford00} is an alternative formulation of the TDSE which attempts to 
+Coupled cluster (CC) theory\cite{Cizek66,Cizek69,Cizek71} is an alternative formulation of the TDSE which attempts to 
 reproduce the Full CI wavefunction through an exponential parametrization
 of the wavefunction. The CC wavefunction can be obtained by the operation of cluster
 operators $\hat{T}$ acting on the reference Slater determinant. 
@@ -643,18 +643,16 @@ amplitudes by solving an extra set of $\hat{X}_{-\omega_1}$ amplitudes,
 \\
 where $\hat{C}$ is a symmetrizer that simultaneously interchanges the sign of the field 
 frequency and takes the complex conjugate of the expression, and $\hat{P'}$ symmetrizes 
-the expression with respect to the operators $A$ and $B$.\\
-The LRFs can also be defined as second-order derivatives
+the expression with respect to the operators $A$ and $B$. Both the approaches are computationally
+equivalent but using the former approach, one can express the LRF in terms of perturbed 
+one electron densities. It should be noted that the LRFs can also be defined as second-order derivatives
 of a time-averaged quasi-energy with respect to external perturbations $A$ and
-$B$. This formalism is specially useful for deriving LRFs for approximate
-coupled cluster theories like CC2, CC3 etc.
-
+$B$. This formalism is specially useful for deriving LRFs for approximate coupled cluster theories 
+like CC2\cite{Christiansen95:CC2}.\\
+The equations derived in this section have been used in the following chapters to calculate CCSD and 
+CC2 dynamic polarizabilities and specific rotations.
 % need a concluding pargraph as to how these equations would be used 
 % for this work.
-
-
-
-
 %Expanding the $t^{a.}_{i.}$ amplitudes in orders of perturbation of V(t), the 
 %expressions for the different orders can be obtained using eq. (38). The first order
 %derivative can be written as:

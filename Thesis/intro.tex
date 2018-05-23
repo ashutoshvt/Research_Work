@@ -54,7 +54,7 @@ most popular procedure to determine AC directly, provided one can crystallize th
 requires the presence of heavy atom(s). Alternatively, one can measure the distinct responses of 
 the enantiomers in absorption using chiroptical spectroscopic techniques like electronic and vibrational 
 CD (ECD and VCD) or can measure the optical rotation of the chiral compounds in both liquid 
-and gas phase using polarimetry and cavity ring down spectrometry techniques\cite{} respectively.
+and gas phase using regular and cavity ring-down polarimetry techniques\cite{Muller00} respectively.
 These measurement are usually followed by a comparison against some suitable reference chiral
 substrate. In this regard, accurate {\em ab initio} methods can help validate these experimental measurements.
 %However, in cases of ambiguities regarding appropriate references, accurate {\em ab initio} methods can come to the rescue and 
@@ -126,27 +126,31 @@ The signs of the calculated values matched with that of the experiment for most 
 differed generally by a factor of two. Inspired by Polavarapu's work, Cheeseman et al. \cite{Cheeseman00,Stephens01} 
 included correlation effects in these calculations by using TD-DFT theory. Using large basis sets with diffuse functions like 
 aug-cc-pVDZ and aug-cc-pVTZ,\cite{Dunning89,Kendall92,Woon94} they were able to match the experimental values very closely, with a 
-deviation of 20-25 degrees for a set of 28 chiral molecules. Ruud {\em et al.} extended the calculations to the coupled cluster (CC)
-level using coupled cluster response theory developed by Koch and J{\o}rgensen\cite{Koch90}, and obtained very 
+deviation of 20-25 degrees for a set of 28 chiral molecules. Ruud {\em et al.} extended the calculations to the coupled cluster (CC) level 
+using CC response theory developed by Koch and J{\o}rgensen\cite{Koch90}, and obtained very 
 promising results\cite{Ruud03}. Unsurprisingly, these simulations have been used to determine the AC of a large number of 
-chiral molecules over the years\cite{Kondru99}. However, for a truly robust and reliable description of these response 
+chiral molecules over the years\cite{Kondru99}. Specifically, the CC response theory has gained a reputation as  
+a reliable theoretical recipe for accurate calculations of these properties. However, for a truly robust and reliable description of these response 
 properties, one needs to take into account, a number of challenges associated with such simulations.
 %However, all these calculations were done on single isolated molecules and thus, ideally, they should only be 
 %expected to match vapor phase optical rotation (OR) values. 
 \subsection{Challenges}
-One of the major challenges faced by the coupled cluster respone theory is that of gauge and origin invariance.
-The origin dependence while using length-gauge representation is a consequence of the non-variational nature of the 
-coupled cluster wavefunction. Unlike HF and DFT methods, properties such as optical rotation computed via CCLR 
-are not origin independent even at the complete basis set limit, and the dependence cannot be resolved using GIAOs.6 
-The modified velocity gauge formalism for the electric dipole operator has been developed to help address this 
-issue. The velocity-gauge formalism, ⟨⟨⃗p, L⃗ ⟩⟩ω , allows for the trace of the property tensor to be origin 
-invariant. Here ⃗p and L⃗ are the electronic momentum and angular momentum operators, respectively, and 
-⟨⟨, ⟩⟩ω represents the response function evaluated at frequency ω. However, without a complete basis
-set, using the velocity gauge formalism results in unphysical behavior at zero frequency. To achieve the 
-appropriate behavior, the value for the velocity gauge representation at the static limit (at zero frequency) 
-is subtracted from the original expression, as shown in Equation 1.1. 13
-⟨⟨⃗p, L⃗ ⟩⟩ω → ⟨⟨⃗p, L⃗ ⟩⟩ω − ⟨⟨⃗p, L⃗ ⟩⟩0 (1.1) Alternatively, the underlying response theory can be reformulated to incorporate 
-orbital rotation parameters explicitly to achieve origin invariance.14,15\\
+%Due to the non-variational nature of the coupled cluster theory, the specific rotation values calculated
+%using the coupled cluster response theory suffer from problems of origin and gauge invariance. For example,
+%using the length gauge representation of the electric dipole operator, 
+%One of the major challenges faced by the coupled cluster respone theory is that of gauge and origin invariance.
+%The origin dependence while using length-gauge representation is a consequence of the non-variational nature of the 
+%coupled cluster wavefunction. Unlike HF and DFT methods, properties such as optical rotation computed via CCLR 
+%are not origin independent even at the complete basis set limit, and the dependence cannot be resolved using GIAOs.6 
+%The modified velocity gauge formalism for the electric dipole operator has been developed to help address this 
+%issue. The velocity-gauge formalism, ⟨⟨⃗p, L⃗ ⟩⟩ω , allows for the trace of the property tensor to be origin 
+%invariant. Here ⃗p and L⃗ are the electronic momentum and angular momentum operators, respectively, and 
+%⟨⟨, ⟩⟩ω represents the response function evaluated at frequency ω. However, without a complete basis
+%set, using the velocity gauge formalism results in unphysical behavior at zero frequency. To achieve the 
+%appropriate behavior, the value for the velocity gauge representation at the static limit (at zero frequency) 
+%is subtracted from the original expression, as shown in Equation 1.1. 13
+%⟨⟨⃗p, L⃗ ⟩⟩ω → ⟨⟨⃗p, L⃗ ⟩⟩ω − ⟨⟨⃗p, L⃗ ⟩⟩0 (1.1) Alternatively, the underlying response theory can be reformulated to incorporate 
+%orbital rotation parameters explicitly to achieve origin invariance.14,15\\
 %Careful consideration of numerous factors, including electron correlation, basis-set completeness, gauge representation, 
 %zero-point vibrational motion, temper- ature, conformational flexibility, and so forth, have aided the development of advanced quantum chemical calculations.
 %which can be measured by using cavity ring down spectrometry, thanks to the pioneering 
@@ -157,55 +161,54 @@ orbital rotation parameters explicitly to achieve origin invariance.14,15\\
 Since, most of the optical rotation measurements are carried out in liquid phase or solutions,
 response theory needs to be combined with accurate solvation models in order to match these
 experimental measurements. While a quantum mechanical description of both the solute and solvent molecules would be ideal, 
-however, for the sake of computational practicality, most solvation models try to reduce the degrees of freedom of
+however for the sake of computational practicality, most solvation models try to reduce the degrees of freedom of
 the solvent molecules without compromising the quality of description of the solvent-solute and the solvent-solvent
 interactions.\\
 In this regard, molecular mechanics (MM) based models, broadly known as QM/MM methods, usually represent the
-solvent in the form of a classical potential by replacing them with point charges, polarizabilities, etc.,\cite{}
-which polarizes the charge distribution of the solute resuting in a modification of the solute's potential which
+solvent in the form of a classical potential by replacing them with point charges, polarizabilities, etc.,\cite{Warshel72,Warshel76,Lin06}
+which polarizes the charge distribution of the solute resuting in a modification of its potential which
 again back-polarizes the charge distribution of the solvent and so on. Thus, the final one-electron solvent potential is obtained in a
-self-consistent procedure and is added to the solute's Hamiltonian which is then followed by response calculations. The fluctuating
-charge model (FQ)\cite{}, the drude oscillator model\cite{} and effective fragmentation potential (EFP)\cite{} are a few 
-examples.\\
+self-consistent procedure and is added to the solute's Hamiltonian followed by the response calculations. The fluctuating
+charge model (FQ)\cite{Rick94}, the drude oscillator model\cite{Lamoureux03} and effective fragmentation potential (EFP)\cite{JensenGordon96} are a few examples.\\
 Quantum continuum solvation models on the other hand place the solute in a cavity surrounded by a continuous
 dielectric medium representing the solvent. A majority of these continuum models use the
-concept of apparent surface charges\cite{}, where polarization charges are introduced on the surface of the 
+concept of apparent surface charges\cite{Miertus81}, where polarization charges are introduced on the surface of the 
 cavity, to capture the response of the medium to the charge distribution of the solute which is again, 
-solved in a self-consistent manner as described above. The polarizable continuum model (PCM) \cite{} and conductor-like 
-screening model (COSMO) \cite{} are some popular examples.\\
+solved in a self-consistent manner as described above. The polarizable continuum model (PCM) \cite{Mennucci98} and conductor-like 
+screening model (COSMO) \cite{Klamt93} are some popular examples.\\
 One of the earliest works employing a solvation model for studying specific rotations is that of 
 Mennucci and co-workers in 2002\cite{Mennucci02}, where they used DFT and PCM for calculating 
 specific rotations of a set of seven chiral compounds in the presence of seven different 
 solvents. While they obtained promising results for cyclohexane, acetone, methanol and 
 acetonitrile, the model performed rather poorly for carbon tetrachloride, benzene, and chloroform
 due to the failure of the PCM in capturing the dominant nonelectrostatic solute-solvent interactions 
-in the latter. A few years later, Pecul {\em et al.} \cite{} used the same model (DFT-PCM) to study the effect
+in the latter. A few years later, Pecul {\em et al.} \cite{Pecul05a} used the same model (DFT-PCM) to study the effect
 of solvent on the electronic circular dichroism spectra and obtained promising results for valence-only transitions. 
 However, this approach failed to describe the Rydberg transitions and specific solute-solvent interactions like hydrogen bonding accurately.\\
 A direct way of accounting for the dynamic solvent effects is to use an explicit {\em ab initio} solvation model where
 both solute and solvent are treated quantum mechanically and final specific rotations are obtained by averaging their
 values over a series of configurations usually generated through molecular dynamics (MD) simulations. Beratan and co-workers 
-used this model with DFT to calculate specific rotations of methyloxirane in water\cite{} and benzene\cite{} and were 
-able to match the experimental values qualitatively. Barone {\em et al.}\cite{} were also able to reproduce the experimental optical
+used this model with DFT to calculate specific rotations of methyloxirane in water\cite{Mukhopadhyay06} and benzene\cite{Mukhopadhyay07} and were 
+able to match the experimental values qualitatively. Barone {\em et al.}\cite{Lipparini13} were also able to reproduce the experimental optical
 rotatory curve of methyloxirane (qualitatively) in water by using a DFT/FQ/PCM approach. However, it remains to be seen if these 
-models perform equally well in other solvents and with more accurate theories like coupled cluster as DFT has been shown to agree 
-with gas-phase experimental data of methyloxirane only fortuitously\cite{}.\\
-Kongsted and co-workers were the first to use a solvation model within the context of coupled cluster response theory,
+models perform equally well in other solvents and with more accurate theories like CC as DFT has been shown to agree 
+with gas-phase experimental data of methyloxirane only fortuitously.\\
+Kongsted and co-workers were the first to use a solvation model within the context of CC response theory,
 where they placed the solute in a sperical cavity surrounded by a dielectric medium. However, this approach 
 could not match experimental measurements even qualitatively and gave a wrong sign of the specific rotation for ({\em S})-methyloxirane 
-in cyclohexane at 355 nm, even after incorporating accurate electron correlation theories\cite{}. Similar behavior was observed 
-with PCM as well, as demonstrated by Caricato\cite{}.\\
+in cyclohexane at 355 nm, even after incorporating accurate electron correlation theories\cite{Kongsted05,Koch97}. Similar behavior was observed 
+with PCM-CC response theory, as demonstrated by Caricato\cite{Caricato13}.\\
 Another solvation model that deserves a mention here is the frozen density embedding scheme, introduced by Wesolowski and 
-Warshel\cite{}. In this model, {\em ab initio} electronic densities (or potentials) describing the environment (or solvent) 
+Warshel\cite{Wesolowski93}. In this model, {\em ab initio} electronic densities (or potentials) describing the environment (or solvent) 
 can be obtained (or decoupled) from a DFT calculation on the full system. The potential can then be added to the Hamiltonian
-of the solute, followed by either a DFT (DFT-in-DFT) or a wavefunction (WFT-in-DFT) calculation\cite{}. Neugebauer
-was the first to use the DFT-in-DFT FDE model to study the response properties of solvated molecular clusters\cite{}. 
-Crawford and co-workers\cite{} applied the more accurate (but more expensive) WFT-in-DFT FDE model with coupled cluster theory 
+of the solute, followed by either a DFT (DFT-in-DFT) or a wavefunction (WFT-in-DFT) calculation\cite{Govind99}. Neugebauer
+was the first to use the DFT-in-DFT model to study the response properties of solvated molecular clusters\cite{Neugebauer09}. 
+Crawford and co-workers\cite{Crawford15} applied the more accurate (but more expensive) WFT-in-DFT model with CC theory 
 to study chiroptical properties of several ``micro-solvated" structures of ({\em P})-dimethylallene in water. However, the
-FDE potentials resulted in very small perturbations in the solute's electronic distribution compared to an explicit 
+FDE potentials resulted in very small perturbations in the solute's electronic charge distribution, compared to an explicit 
 calculation. Furthermore, it failed to reproduce the correct sign of the specific rotations of some of 
 the structures. The reason behind the errors was attributed to the failure of the FDE model in capturing
-the response of the solvent to external field, which can have significant contributions for these properties.\\
+the response of the solvent to the external field, which can have significant contributions for these properties.\\
 %Since rotation is a dynamic property, one needs to average OR values over several 
 %configurations or snapshots (obtained by molecular dynamics (MD) simulations) to be able to match experimental 
 %values. 
@@ -214,12 +217,13 @@ the response of the solvent to external field, which can have significant contri
 %\subsubsection{Gauge and Origin Invariance}
 %Mention coleman's and taylor's basis set work 
 %\subsubsection{Scaling}
-Other challenges: Basis set, scaling of CC linear response calculations, Conformational averaging, Vibrational corrections,
-temperature effects, etc.
-\subsubsection{Current Work}
-The only robust way of accounting for solvent effects seems to be including the solvent molecules explicitly 
-in the QM calculations. Furthermore, CC theory because it is more reliable, accurate and systematicaly 
-improvable compared to DFT.
+Other challenges associated with CC response theory include the problem of gauge and origin invariance, 
+the sensitivity of these calculations to the size of the basis-set, the unfavorable scaling of the CC response algorithm, 
+applying conformationl averaging to conformationally flexible molecules, zero-point vibrational corrections, accounting for temperature effects, etc.\cite{Crawford06}
+\subsection{Current Work}
+Based on the above analysis, the only robust way of accounting for solvent effects seems to be including the solvent molecules explicitly 
+in the QM calculations. Furthermore, CC theory is highly desirable as it is more reliable, accurate and systematicaly improvable compared to DFT.
+However, the steep scaling associated with CC response theory makes it computationally prohibitive for more than 
 An obvious way to make these compuations practical is to seek the help of CC reduced-scaling 
 techniques like the pair natural orbitals (PNO) approach\cite{NeeseCCSD09,Neese09} which has been really successful in describing energetics of 
 large molecular systems. However, work towards the extension of these methods to calculate chiroptical properties has been 

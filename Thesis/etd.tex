@@ -87,7 +87,7 @@ Alan Esker
 
 \vfill
 
-May 9, 2018 \\
+May 22, 2018 \\
 Blacksburg, Virginia
 
 \vfill
@@ -124,20 +124,20 @@ initio} methods to large molecular systems is their high computational costs,
 i.e., their computing and storage requirements exhibit polynomial scaling with
 the size of the system. For example, the coupled cluster singles and doubles 
 method with the perturbative inclusion of triples: the CCSD(T) model, 
-which is considered as the ``gold standard'' of quantum chemistry scales as 
+which is considered to be the ``gold standard'' of quantum chemistry scales as 
 ${\cal O}(N^7)$ in its canonical formulation, where $N$ is a measure of the 
 system size. However, the steep scaling associated with these methods is 
 unphysical since the property of dynamic electron correlation or dispersion 
-(for insulators) is local in nature and decay as $R^{-6}$ power of distance. 
+(for insulators) is local in nature and decays as $R^{-6}$ power of distance. 
 Different reduced-scaling techniques which attempt to exploit this inherent 
 sparsity in the wavefunction have been used in conjunction with the coupled cluster 
 theory to calculate ground-state properties of molecular systems with
 hundreds of heavy atoms in reasonable computational time. However, efforts towards
-extension of these methods for describing response properties which are related to the 
-derivative of the wavefunction with respect to external electric or/and magnetic fields, 
-like polarizabilities, optical rotations, etc., have been fairly limited and conventional 
+extension of these methods for describing response properties like polarizabilities, optical rotations, 
+etc., which are related to the derivative of the wavefunction with respect to external electric or/and magnetic fields,
+have been fairly limited and conventional 
 reduced-scaling algorithms have been shown to yield large and often erratic deviations from 
-the full canonical results for these properties. In this work, we identify the reasons behind 
+the full canonical results. In this work, we identify the reasons behind 
 the unsatisfactory performance of the pair natural orbital (PNO) based reduced-scaling 
 approach for calculating linear response properties at the coupled cluster level of theory 
 and propose novel modifications, which we refer to as PNO++, (A. Kumar and T. D. Crawford, 
@@ -147,7 +147,7 @@ on the (frozen) virtual natural orbitals (FVNO), which can be seen as a precurso
 of PNOs (A. Kumar and T. D. Crawford, {\em J. Phys. Chem. A}, 2017, {\bf 121(3)}, pp 708-716) and 
 the improved FVNO++ method (A. Kumar and T. D. Crawford, 2018, {\em manuscript in 
 preparation}). The essence of these modified schemes (FVNO++ and PNO++) lie in finding suitable 
-field perturbed one electron densities to construct ``perturbation aware" virtual spaces which,
+field perturbed one-electron densities to construct ``perturbation aware" virtual spaces which,
 by construction, are much more compact for calculating response properties, making them ideal
 for applications to large molecular systems. \\\\
 %The virtual natural orbitals

@@ -1,4 +1,4 @@
-\begin{thebibliography}{10}
+\begin{thebibliography}{100}
 
 \bibitem{Abrams04}
 M.~L. Abrams and C.~D. Sherrill.
@@ -57,6 +57,13 @@ J.~W. Boughton and P.~Pulay.
   correlation approach and automatic virtual basis selection}.
 \newblock {\em J. Comput. Chem.}, 14(6):736--740, June 1993.
 
+\bibitem{Caricato13}
+M.~Caricato.
+\newblock {Implementation of the CCSD-PCM linear response function for
+  frequency dependent properties in solution: Application to polarizability and
+  specific rotation}.
+\newblock {\em J. Chem. Phys.}, 139(11):114103, 2013.
+
 \bibitem{Cheeseman00}
 J.~R. Cheeseman, M.~J. Frisch, F.~J. Devlin, and P.~J. Stephens.
 \newblock {Hartree-Fock and density functional theory {\em ab initio}
@@ -95,26 +102,31 @@ T.~D. Crawford and R.~A. King.
   excited states of large molecules}.
 \newblock {\em Chem. Phys. Lett.}, 366:611--622, 2002.
 
+\bibitem{Crawford15}
+T.~D. Crawford, A.~Kumar, K.~P. Hannon, S.~H{\"o}fener, and L.~Visscher.
+\newblock Frozen-density embedding potentials and chiroptical properties.
+\newblock {\em J. Chem. Theory Comput.}, 11(11):5305--5315, 2015.
+\newblock PMID: 26574324.
+
 \bibitem{Crawford00}
 T.~D. Crawford and H.~F. Schaefer.
 \newblock {An Introduction to Coupled Cluster Theory for Computational
   Chemists}, volume = {14}, year = {2000}.
 \newblock {\em Reviews in Computational Chemistry}, pages 33--136.
 
-\bibitem{Crawford00:review}
-T.~D. Crawford and H.~F. Schaefer.
-\newblock {An Introduction to Coupled Cluster Theory for Computational
-  Chemists}.
-\newblock In K.~B. Lipkowitz and D.~B. Boyd, editors, {\em Reviews in
-  Computational Chemistry}, volume~14, chapter~2, pages 33--136. VCH
-  Publishers, New York, 2000.
+\bibitem{JensenGordon96}
+P.~N. Day, J.~H. Jensen, M.~S. Gordon, S.~P. Webb, W.~J. Stevens, M.~Krauss,
+  D.~Garmer, H.~Basch, and D.~Cohen.
+\newblock {An effective fragment method for modeling solvent effects in quantum
+  mechanical calculations}.
+\newblock {\em J. Chem. Phys.}, 105(5):1968--1986, 1996.
 
 \bibitem{DePrince13}
 A.~E. DePrince and C.~D. Sherrill.
 \newblock {Accuracy and Efficiency of Coupled-Cluster Theory Using Density
   Fitting/Cholesky Decomposition, Frozen Natural Orbitals, and a
   $t_1$-Transformed Hamiltonian}.
-\newblock {\em J. Chem. Theory. Comp.}, 9:2687--2696, 2013.
+\newblock {\em J. Chem. Theory Comp.}, 9:2687--2696, 2013.
 
 \bibitem{DePrince13:FNOs}
 A.~E. DePrince and C.~D. Sherrill.
@@ -164,17 +176,23 @@ D.~H. Friese, N.~O.~C. Winter, P.~Balzerowski, R.~Schwan, and C.~H{\"a}ttig.
 
 \bibitem{Gauss98}
 J.~Gauss.
-\newblock {The Coupled-Cluster Method}, year = 1998.
+\newblock {The Coupled-Cluster Method}.
 \newblock In P.v.R. Schleyer, N.~L. Allinger, T.~Clark, J.~Gasteiger, P.~A.
   Kollman, H.~F. {Schaefer III}, and P.~R. Schreiner, editors, {\em
   {Encyclopedia of Computational Chemistry}}, pages 615--636. John Wiley and
-  Sons, Chichester.
+  Sons, Chichester, 1998.
 
 \bibitem{Gauss00}
 J.~Gauss and H.-J. Werner.
 \newblock {NMR chemical shift calculations within local correlation methods:
   the GIAO-LMP2 approach}.
 \newblock {\em Phys. Chem. Chem. Phys.}, 2:2083--2090, March 2000.
+
+\bibitem{Govind99}
+N.~Govind, A.~Y. Wang, and E.~A. Carter.
+\newblock {Electronic-structure calculations by first-principles density-based
+  embedding of explicitly correlated systems}.
+\newblock {\em J. Chem. Phys.}, 110:7677, 1999.
 
 \bibitem{Hampel96}
 Claudia H. and H.-J. Werner.
@@ -235,11 +253,24 @@ R.~A. Kendall, T.~H. Dunning, and R.~J. Harrison.
   Basis Sets and Wave Functions}.
 \newblock {\em J. Chem. Phys.}, 96(9):6796--6806, 1992.
 
+\bibitem{Klamt93}
+A.~Klamt and G.~Schuurmann.
+\newblock {COSMO: a new approach to dielectric screening in solvents with
+  explicit expressions for the screening energy and its gradient}.
+\newblock {\em J. Chem. Soc.{,} Perkin Trans. 2}, pages 799--805, 1993.
+
 \bibitem{Kobayashi94}
 R.~Kobayashi, H.~Koch, and P.~J{\o}rgensen.
 \newblock {Calculation of frequency-dependent polarizabilities using
   coupled-cluster response theory}.
 \newblock {\em Chem. Phys. Lett.}, 219:30--35, March 1994.
+
+\bibitem{Koch97}
+H.~Koch, O.~Christiansen, P.~J{\o}rgensen, A.~M.~S. de~Mer{\'a}s, and
+  T.~Helgaker.
+\newblock {The CC3 model: An iterative coupled cluster approach including
+  connected triples}.
+\newblock {\em J. Chem. Phys.}, 106(5):1808--1818, February 1997.
 
 \bibitem{Koch90}
 H.~Koch and P.~J{\o}rgensen.
@@ -256,6 +287,13 @@ R.~K. Kondru, P.~Wibf, and D.~N. Beratan.
 \newblock {Structural and conformational dependence of optical rotation
   angles}.
 \newblock {\em J. Phys. Chem. A}, 103(33):6603--6611, 1999.
+
+\bibitem{Kongsted05}
+J.~Kongsted, T.~B. Pedersen, M.~Strange, A.~Osted, A.~E. Hansen, K.~V.
+  Mikkelsen, F.~Pawlowski, P.~J{\o}rgensen, and C.~H\"{a}ttig.
+\newblock {Coupled cluster calculations of the optical rotation of S-propylene
+  oxide in gas phase and solution}.
+\newblock {\em Chem. Phys. Lett.}, 401:385--392, December 2005.
 
 \bibitem{Korona04}
 T.~Korona, K.~Pfl{\"u}ger, and H.-J. Werner.
@@ -274,6 +312,12 @@ A.~Kumar and T.~D. Crawford.
 \newblock {\em J. Phys. Chem. A}, 121(3):708--716, 2017.
 \newblock PMID: 28045265.
 
+\bibitem{Lamoureux03}
+G.~Lamoureux and B.~Roux.
+\newblock {Modeling induced polarization with classical Drude oscillators:
+  Theory and molecular dynamics simulation algorithm}.
+\newblock {\em J. Chem. Phys.}, 119(6):3025--3039, 2003.
+
 \bibitem{Landau10}
 A.~Landau, K.~Khistyaev, S.~Dolgikh, and A.~I. Krylov.
 \newblock {Frozen Natural Orbitals for Ionized States Within Equation-of-Motion
@@ -285,6 +329,19 @@ C.~Lee, W.~Yang, and R.~G. Parr.
 \newblock {Development of the Colle-Salvetti Correlation-Energy Formula Into a
   Functional of the Electron Density}.
 \newblock {\em Phys. Rev. B.}, 37:785--789, 1988.
+
+\bibitem{Lin06}
+Hai Lin and Donald~G. Truhlar.
+\newblock {QM/MM: what have we learned, where are we, and where do we go from
+  here?}
+\newblock {\em Theor. Chem. Acc.}, 117(2):185, Jul 2006.
+
+\bibitem{Lipparini13}
+F.~Lipparini, F.~Egidi, C.~Cappelli, and V.~Barone.
+\newblock {The Optical Rotation of Methyloxirane in Aqueous Solution: A Never
+  Ending Story?}
+\newblock {\em J. Chem. Theory Comput.}, 9(4):1880--1884, 2013.
+\newblock PMID: 26583540.
 
 \bibitem{Lowdin55}
 P.~O. Lowdin.
@@ -309,6 +366,14 @@ H.~R. McAlexander, T.~J. Mach, and T.~D. Crawford.
 \newblock {Localized Optimized Orbitals, Coupled Cluster Theory, and
   Chiroptical Response Properties}.
 \newblock {\em Phys. Chem. Chem. Phys.}, 14(21):7830--7836, 2012.
+
+\bibitem{Mennucci98}
+B.~Mennucci, R.~Cammi, and J.~Tomasi.
+\newblock {Excited states and solvatochromic shifts within a nonequillibrium
+  solvation approach: a new formulation of the integral equation formalism
+  method at the self-consistent field, configuration interaction, and
+  multi-configuration self-consistent field}.
+\newblock {\em J. Chem. Phys.}, 109:2798--2807, 1998.
 
 \bibitem{Mennucci02}
 B.~Mennucci, J.~Tomasi, R.~Cammi, J.~R. Cheeseman, M.~J. Frisch, F.~J. Devlin,
@@ -341,6 +406,31 @@ W.~Meyer.
   state and ionized states of methane}.
 \newblock {\em J. Chem. Phys.}, 58(3):1017--1035, February 1973.
 
+\bibitem{Miertus81}
+S.~Miertu{\v s}, E.~Scrocco, and J.~Tomasi.
+\newblock {Electrostatic interaction of a solute with a continuum. A direct
+  utilizaion of AB initio molecular potentials for the prevision of solvent
+  effects}.
+\newblock {\em Chemical Physics}, 55(1):117 -- 129, 1981.
+
+\bibitem{Mukhopadhyay06}
+P.~Mukhopadhyay, G.~Zuber, M.‐R. Goldsmith, P.~Wipf, and D.~N. Beratan.
+\newblock {Solvent Effect on Optical Rotation: A Case Study of Methyloxirane in
+  Water}.
+\newblock {\em ChemPhysChem}, 7(12):2483--2486, 2006.
+
+\bibitem{Mukhopadhyay07}
+P.~Mukhopadhyay, G.~Zuber, P.~Wipf, and D.~N. Beratan.
+\newblock {Contribution of a Solute's Chiral Solvent Imprint to Optical
+  Rotation}.
+\newblock {\em Angew. Chem., Int. Ed}, 46(34):6450--6452, 2007.
+
+\bibitem{Muller00}
+T.~M{\"u}ller, K.~B. Wiberg, and P.~H. Vaccaro.
+\newblock {Cavity Ring-Down Polarimetry (CRDP):  A New Scheme for Probing
+  Circular Birefringence and Circular Dichroism in the Gas Phase}.
+\newblock {\em J. Phys. Chem. A}, 104(25):5959--5968, 2000.
+
 \bibitem{NeeseCCSD09}
 F.~Neese, A.~Hansen, and D.~G. Liakos.
 \newblock {Efficient and accurate approximations to the local coupled cluster
@@ -353,6 +443,12 @@ F.~Neese, F.~Wennmohs, and A.~Hansen.
 \newblock {Efficient and Accurate Local Approximations to Coupled-Electron Pair
   Approaches: An Attempt to Revive the Pair Natural Orbital Method}.
 \newblock {\em J. Chem. Phys.}, 130(114108):114108--1 -- 114108--18, 2009.
+
+\bibitem{Neugebauer09}
+J.~Neugebauer.
+\newblock {On the calculation of general response properties in subsystem
+  density functional theory}.
+\newblock {\em J. Chem. Phys.}, page 084104, 2009.
 
 \bibitem{Olsen85}
 J.~Olsen and P.~J{\o}rgensen.
@@ -370,6 +466,12 @@ R.~M. Parrish, L.~A. Burns, D.~G.~A. Smith, A.~C. Simmonett, A.~E. DePrince,
   Automation, Advanced Libraries, and Interoperability}.
 \newblock {\em J. Chem. Theory Comput.}, 13(7):3185--3197, 2017.
 \newblock PMID: 28489372.
+
+\bibitem{Pecul05a}
+M.~Pecul, D.~Marchesan, K.~Ruud, and S.~Coriani.
+\newblock {Polarizable continuum model study of solvent effects on electronic
+  circular dichroism parameters}.
+\newblock {\em The Journal of Chemical Physics}, 122(2):024106, 2005.
 
 \bibitem{Pedersen01}
 T.~B. Pedersen, B.~Fern{\'a}ndez, and H.~Koch.
@@ -411,6 +513,12 @@ J.~E. Rice and N.~C. Handy.
 \newblock {The Calculation of Frequency-Dependent Polarizabilities and
   Pseudo-Energy Derivatives}.
 \newblock {\em J. Chem. Phys.}, 94(7):4959--4971, 1991.
+
+\bibitem{Rick94}
+S.~W. Rick, S.~J. Stuart, and B.~J. Berne.
+\newblock {Dynamical fluctuating charge force fields: Application to liquid
+  water}.
+\newblock {\em J. Chem. Phys.}, 101(7):6141--6156, 1994.
 
 \bibitem{Riplinger16}
 C.~Riplinger, P.~Pinski, U.~Becker, E.~F. Valeev, and F.~Neese.
@@ -483,6 +591,11 @@ R.~Send, V.~R.~I. Kaila, and D.~Sundholm.
   energies of large molecules and embedded systems}.
 \newblock {\em J. Chem. Phys.}, 134(21):214114, 2011.
 
+\bibitem{Shavitt77}
+I.~Shavitt.
+\newblock {\em {The Method of Configuration Interaction}}, pages 189--275.
+\newblock Springer US, Boston, MA, 1977.
+
 \bibitem{Shavitt09}
 I.~Shavitt and R.~J. Bartlett.
 \newblock {\em {Many-Body Methods in Chemistry and Physics: MBPT and
@@ -554,6 +667,44 @@ J.~M. Turney, A.~C. Simmonett, R.~M. Parrish, E.~G. Hohenstein, F.~A.
   H.~F. Schaefer, R.~A. King, E.~F. Valeev, C.~D. Sherrill, and T.~D. Crawford.
 \newblock {Psi4: An Open-Source Ab Initio Electronic Structure Program}.
 \newblock {\em WIREs. Comput. Mol. Sci.}, 2:556--565, 2012.
+
+\bibitem{Cizek66}
+J.~\v{C}\'{\i}\v{z}ek.
+\newblock {On the correlation problem in atomic and molecular systems.
+  Calculation of wavefunction components in Ursell-type expansion using
+  quantum-field theoretical methods}.
+\newblock {\em J. Chem. Phys.}, 45:4256--4266, 1966.
+
+\bibitem{Cizek69}
+J.~\v{C}\'{\i}\v{z}ek.
+\newblock {On the use of the cluster expansion and the technique of diagrams in
+  calculations of correlation effects in atoms and molecules}.
+\newblock {\em Adv. Chem. Phys.}, 14:35, 1969.
+
+\bibitem{Cizek71}
+J.~\v{C}\'{\i}\v{z}ek and J.~Paldus.
+\newblock {Correlation problems in atomic and molecular systems. III.
+  Rederivation of the coupled-pair many-electron theory using the traditional
+  quantum chemical methods}.
+\newblock {\em Int. J. Quantum Chem. Symp.}, 5:359, 1971.
+
+\bibitem{Warshel72}
+A.~Warshel and M.~Karplus.
+\newblock {Calculation of ground and excited state potential surfaces of
+  conjugated molecules. I. Formulation and parametrization}.
+\newblock {\em J. Am. Chem. Soc.}, 94(16):5612--5625, 1972.
+
+\bibitem{Warshel76}
+A.~Warshel and M.~Levitt.
+\newblock {Theoretical studies of enzymic reactions: Dielectric, electrostatic
+  and steric stabilization of the carbonium ion in the reaction of lysozyme}.
+\newblock {\em J. Mol. Biol.}, 103(2):227 -- 249, 1976.
+
+\bibitem{Wesolowski93}
+T.~A. Wesolowski and A.~Warshel.
+\newblock {Frozen density functional approach for ab initio calculations of
+  solvated molecules}.
+\newblock {\em J. Phys. Chem.}, 97(30):8050--8053, 1993.
 
 \bibitem{Wick50}
 G.C. Wick.
