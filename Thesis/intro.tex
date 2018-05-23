@@ -124,7 +124,7 @@ field, avoiding explicit calculations of excited states. Polavarapu was the firs
 {\em ab initio} specific rotations using the time dependent Hartree Fock (TDHF) method \cite{Polavarapu96}. 
 The signs of the calculated values matched with that of the experiment for most of his structures, while their magnitudes 
 differed generally by a factor of two. Inspired by Polavarapu's work, Cheeseman et al. \cite{Cheeseman00,Stephens01} 
-included correlation effects in these calculations by using TD-DFT theory. Using large basis sets with diffuse functions like 
+included correlation effects in these calculations by using TD-DFT theory\cite{Runge84}. Using large basis sets with diffuse functions like 
 aug-cc-pVDZ and aug-cc-pVTZ,\cite{Dunning89,Kendall92,Woon94} they were able to match the experimental values very closely, with a 
 deviation of 20-25 degrees for a set of 28 chiral molecules. Ruud {\em et al.} extended the calculations to the coupled cluster (CC) level 
 using CC response theory developed by Koch and J{\o}rgensen\cite{Koch90}, and obtained very 
@@ -223,7 +223,7 @@ applying conformationl averaging to conformationally flexible molecules, zero-po
 \subsection{Current Work}
 Based on the above analysis, the only robust way of accounting for solvent effects seems to be including the solvent molecules explicitly 
 in the QM calculations. Furthermore, CC theory is highly desirable as it is more reliable, accurate and systematicaly improvable compared to DFT.
-However, the steep scaling associated with CC response theory makes it computationally prohibitive for more than 
+However, the steep scaling associated with CC response theory makes it computationally prohibitive for systems of chemical interest. 
 An obvious way to make these compuations practical is to seek the help of CC reduced-scaling 
 techniques like the pair natural orbitals (PNO) approach\cite{NeeseCCSD09,Neese09} which has been really successful in describing energetics of 
 large molecular systems. However, work towards the extension of these methods to calculate chiroptical properties has been 

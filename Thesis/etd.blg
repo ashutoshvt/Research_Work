@@ -83,45 +83,45 @@ while executing---line 1090 of file plain.bst
 Name 1 in "Sch\"{u}tz, M," has a comma at the end for entry Schutz00b
 while executing---line 1090 of file plain.bst
 Warning--can't use both author and editor fields in Shavitt77
-You've used 117 entries,
+You've used 118 entries,
             2118 wiz_defined-function locations,
-            1270 strings with 26165 characters,
-and the built_in function-call counts, 43028 in all, are:
-= -- 4099
-> -- 2244
+            1279 strings with 26319 characters,
+and the built_in function-call counts, 43367 in all, are:
+= -- 4135
+> -- 2257
 < -- 8
-+ -- 879
-- -- 762
-* -- 3517
-:= -- 7283
-add.period$ -- 355
-call.type$ -- 117
-change.case$ -- 720
++ -- 884
+- -- 766
+* -- 3543
+:= -- 7339
+add.period$ -- 358
+call.type$ -- 118
+change.case$ -- 725
 chr.to.int$ -- 0
-cite$ -- 125
-duplicate$ -- 1358
-empty$ -- 3213
-format.name$ -- 762
-if$ -- 8843
+cite$ -- 126
+duplicate$ -- 1369
+empty$ -- 3240
+format.name$ -- 766
+if$ -- 8912
 int.to.chr$ -- 0
-int.to.str$ -- 117
-missing$ -- 122
-newline$ -- 590
-num.names$ -- 238
-pop$ -- 555
+int.to.str$ -- 118
+missing$ -- 123
+newline$ -- 595
+num.names$ -- 240
+pop$ -- 558
 preamble$ -- 1
-purify$ -- 610
+purify$ -- 614
 quote$ -- 0
-skip$ -- 920
+skip$ -- 928
 stack$ -- 0
-substring$ -- 3180
-swap$ -- 175
+substring$ -- 3213
+swap$ -- 176
 text.length$ -- 8
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 458
+type$ -- 462
 warning$ -- 8
-while$ -- 352
-width$ -- 120
-write$ -- 1289
+while$ -- 356
+width$ -- 121
+write$ -- 1300
 (There were 19 error messages)

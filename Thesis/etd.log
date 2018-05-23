@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  22 MAY 2018 20:40
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  22 MAY 2018 21:38
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -566,12 +566,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 262--266
 
  []
 
-
+[19]
 Underfull \hbox (badness 10000) in paragraph at lines 268--272
 
  []
 
-[19]
+
 Underfull \hbox (badness 10000) in paragraph at lines 275--282
 
  []
@@ -596,22 +596,22 @@ Underfull \hbox (badness 10000) in paragraph at lines 331--338
 
  []
 
-
+[21]
 Underfull \hbox (badness 10000) in paragraph at lines 340--344
 
  []
 
-[21]
+
 Underfull \hbox (badness 10000) in paragraph at lines 399--404
 
  []
 
-
+[22]
 Underfull \hbox (badness 10000) in paragraph at lines 409--437
 
  []
 
-[22]
+
 Underfull \hbox (badness 10000) in paragraph at lines 439--445
 
  []
@@ -621,22 +621,22 @@ Underfull \hbox (badness 10000) in paragraph at lines 447--451
 
  []
 
-
+[23]
 Underfull \hbox (badness 10000) in paragraph at lines 453--470
 
  []
 
-[23]
+
 Underfull \hbox (badness 10000) in paragraph at lines 479--487
 
  []
 
-
+[24]
 Underfull \hbox (badness 10000) in paragraph at lines 503--509
 
  []
 
-[24]
+
 Underfull \hbox (badness 10000) in paragraph at lines 514--519
 
  []
@@ -646,12 +646,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 524--530
 
  []
 
-
+[25]
 Underfull \hbox (badness 10000) in paragraph at lines 532--537
 
  []
 
-[25]
+
 Underfull \hbox (badness 10000) in paragraph at lines 540--545
 
  []
@@ -1390,11 +1390,22 @@ pno++_h2_6_adz_optrot_lg.pdf> <./figures_pno++/pno++_h2_7_adz_optrot_lg.pdf>])
 Chapter 6.
 (./conclude.tex) [102
 
-] [103] [104] [105] (./publication.tex [106
+] [103] [104] (./etd.bbl [105] [106
 
-]) [107]
-(./SI/SI.tex (./SI/polar_adz.tex
-<SI/polar_adz.pdf, id=1303, 1027.84pt x 770.88pt>
+] [107] [108] [109]
+[110] [111] [112] [113] [114]
+Missing character: There is no ‚ in font cmr12!
+Missing character: There is no Ä in font cmr12!
+Missing character: There is no ê in font cmr12!
+ [115]
+Missing character: There is no ‚ in font cmr12!
+Missing character: There is no Ä in font cmr12!
+Missing character: There is no â in font cmr12!
+ [116] [117] [118] [119] [120] [121]
+[122]) [123] (./publication.tex [124
+
+]) [125] (./SI/SI.tex (./SI/polar_adz.tex
+<SI/polar_adz.pdf, id=1361, 1027.84pt x 770.88pt>
 File: SI/polar_adz.pdf Graphic file (type pdf)
  <use SI/polar_adz.pdf>
 Package pdftex.def Info: SI/polar_adz.pdf used on input line 3.
@@ -1405,45 +1416,34 @@ Overfull \hbox (46.97836pt too wide) in paragraph at lines 3--9
  []
 
 ) (./SI/h2o2_polar_aTZ_aQZ.tex
-<SI/h2o2_aTZ_polar.pdf, id=1304, 578.16pt x 361.35pt>
+<SI/h2o2_aTZ_polar.pdf, id=1362, 578.16pt x 361.35pt>
 File: SI/h2o2_aTZ_polar.pdf Graphic file (type pdf)
 
 <use SI/h2o2_aTZ_polar.pdf>
 Package pdftex.def Info: SI/h2o2_aTZ_polar.pdf used on input line 3.
 (pdftex.def)             Requested size: 281.85585pt x 176.1588pt.
 
-<SI/h2o2_aQZ_polar.pdf, id=1305, 578.16pt x 361.35pt>
+<SI/h2o2_aQZ_polar.pdf, id=1363, 578.16pt x 361.35pt>
 File: SI/h2o2_aQZ_polar.pdf Graphic file (type pdf)
 
 <use SI/h2o2_aQZ_polar.pdf>
 Package pdftex.def Info: SI/h2o2_aQZ_polar.pdf used on input line 10.
 (pdftex.def)             Requested size: 281.85585pt x 176.1588pt.
 ) (./SI/h2o2.tex) (./SI/dma.tex) (./SI/dmaw.tex)
-(./SI/mox.tex) (./SI/mox2w1g.tex)) (./etd.bbl [108
+(./SI/mox.tex) (./SI/mox2w1g.tex)) [126
 
-] [109 <./SI/polar_adz.pdf>]
-[110 <./SI/h2o2_aTZ_polar.pdf> <./SI/h2o2_aQZ_polar.pdf>] [111] [112] [113]
-[114] [115] [116
-
-] [117] [118] [119] [120] [121] [122] [123] [124]
-Missing character: There is no ‚ in font cmr12!
-Missing character: There is no Ä in font cmr12!
-Missing character: There is no ê in font cmr12!
- [125]
-Missing character: There is no ‚ in font cmr12!
-Missing character: There is no Ä in font cmr12!
-Missing character: There is no â in font cmr12!
-
-[126] [127] [128] [129] [130] [131] [132]) [133] (./etd.aux)
+] [127 <./SI/polar_adz.pdf>] [128 <./SI/h2o2_aTZ_polar.pdf> <./SI/h2o2_aQZ_pola
+r.pdf>] [129] [130] [131] [132] [133]
+(./etd.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 3913 strings out of 493014
- 63273 string characters out of 6133351
- 140919 words of memory out of 5000000
- 7301 multiletter control sequences out of 15000+600000
+ 3914 strings out of 493014
+ 63282 string characters out of 6133351
+ 140924 words of memory out of 5000000
+ 7302 multiletter control sequences out of 15000+600000
  18312 words of font info for 63 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  42i,19n,40p,988b,483s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1470,7 +1470,7 @@ e/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl12.pfb></usr/local/texlive
 /texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2016/t
 exmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2016/te
 xmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on etd.pdf (146 pages, 1907271 bytes).
+Output written on etd.pdf (146 pages, 1908264 bytes).
 PDF statistics:
  1554 PDF objects out of 1728 (max. 8388607)
  1100 compressed objects within 11 object streams
