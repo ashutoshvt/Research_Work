@@ -85,7 +85,7 @@ while executing---line 1090 of file plain.bst
 Warning--can't use both author and editor fields in Shavitt77
 You've used 118 entries,
             2118 wiz_defined-function locations,
-            1279 strings with 26319 characters,
+            1279 strings with 26320 characters,
 and the built_in function-call counts, 43367 in all, are:
 = -- 4135
 > -- 2257
