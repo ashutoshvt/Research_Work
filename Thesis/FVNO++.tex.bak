@@ -186,7 +186,7 @@ $|0\rangle$ is the reference wavefunction, $\hat{\Lambda}$ is
 a linear de-excitation operator that parametrizes the CC left hand 
 wavefunction to make sure that the CC gradients satisfy the 
 generalized Hellman-Feynman theorem\cite{Koch90},
-overbar on operator $A$ denotes similarity transformation with the ground state
+overbar on operataor $A$ denotes similarity transformation with the ground state
 $T$ operator, $\bar{A} = e^{-\hat{T}}\hat{A}e^{\hat{T}}$
 and $\hat{X}^{B}_{\omega_1}$ and $\hat{Y}^{B}_{\omega_1}$ are the excitation operators involving 
 the first-order right and left hand perturbed amplitudes corresponding to operator 
@@ -204,10 +204,10 @@ of equations,
 \end{equation}
 \\
 Here $\tau_\mu$, $\tau_\nu$ are the excitation operators which when acting on the
-reference wavefunction $|0\rangle$ create excited determinants $|\mu\rangle$ 
+reference wavefunction $|0\rangle$ create excited determinats $|\mu\rangle$ 
 and $|\nu\rangle$ respectively. Also, the dependence of perturbed amplitudes
  on $\omega_1$ is assumed. The right hand amplitudes are solved first after 
-which they enter into the left hand amplitude equations as inhomogeneous terms. 
+which they enter into the left hand amplitude equations as inhomogenous terms. 
 It should be noted that these equations need to be solved for every cartesian 
 component of the given perturbation operators. For example, calculation of 
 optical rotation tensor using the length-gauge representation of the dipole 
@@ -379,7 +379,7 @@ It should be noted that we have used the same virtual space for calculating both
 and perturbed amplitudes as this ensures a match with results obtained from
 the finite-field procedures. The use of only perturbed densities for solving 
 both unperturbed and perturbed amplitudes can be justified due to an inherent
-insensitivity of these response properties to the values of the ground state amplitudes.
+insensitiviy of these response properties to the values of the ground state amplitudes.
 For example, Table ~\ref{cclr_justify} shows that the values of specific rotations and polarizabilities 
 obtained using the CCSD-LR(1) scheme which involves only one iteration of the CCSD $\hat{T}$ equation while 
 approximating the $\lambda_\mu$ amplitudes with the corresponding $t_\mu$ amplitudes, are very close to 
@@ -523,7 +523,7 @@ space. The rotational strengths also see a drastic improvement in the FVNO(M) sc
 It should be noted that similar results can be expected for a majority of chiral molecules who 
 like hydrogen peroxide require diffuse orbitals for a better description of the
 Rydberg states. However, extension of this method to larger systems is not 
-straightforward as OSEs are not a very robust criterion for the selection of diffuse 
+straightforward as OSEs are not a very robust crietrion for the selction of diffuse 
 orbitals. Furthermore, not all diffuse orbitals are equally important for 
 calculating these response properties. The FVNO++ scheme on the other hand has a very well-defined 
 truncation criterion based on ONs and the structure of the perturbed density used in this 
@@ -766,7 +766,7 @@ percentage of virtual space removed.}}
 \end{MyFigure}
 It can be seen that both the approaches start performing better than the FVNO++ ($\mu$) approach 
 after a truncation of 10\% and yield similar results till about 20\% of the virtual space is removed.
-However, the errors in the FVNO++ ($\mu * L$) method increase steeply thereafter. Even though 
+However, the errors in the FVNO++ ($\mu * L$) method increase steeply threafter. Even though 
 the FVNO++ ($\mu,L$) method yields the lowest errors out of all the three approaches, more
 calculations are needed in order to confirm this behavior.
 %for large-scale calculations. Moreover, the metric of retention might

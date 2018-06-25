@@ -21,15 +21,15 @@ like a carbon or nitrogen atom with four different substituents. Axial chirality
 possessed by molecules with cumulated double bonds like allenes and chirality planes 
 found in compounds like paracyclophanes are some other popular examples. \\
 A chiral molecule and its mirror image are known as enantiomers. Although the
-enantiomers have identical physical properties like boiling and melting points, their
+enantiomers have idential physical properties like boiling and melting points, their
 interactions with a chiral environment can be quite different. For example,
 while the (R) enantiomer of the compound limonene smells like lemons and oranges, the (S) 
 enantiomer on the other hand smells like turpentine. Thus, the interaction of the (S) enantiomer 
 with the chiral molecules constituting the olfactory receptors responsible for the sensation of smell 
 is totally different from its fellow enantiomer. The enantiomers also interact differently with 
 the left- and right-hand circularly polarized (LCP and RCP) light in processes of absorption, 
-refraction, etc. A chiral molecule possesses the properties of circular dichroism (CD) and 
-circular birefringence, i.e. it has different absorption coefficients and refractive indices 
+refraction, etc. A chiral molecule posesses the properties of circular dichroism (CD) and 
+circular birefringence, i.e. it has different absorption coefficents and refractive indices 
 for the LCP and RCP light respectively. As a result of circular birefringence, the plane of 
 polarization of a plane-polarized light in a chiral medium gets rotated/shifted by an amount known as 
 the optical rotation of the medium. An enantiomeric pair of chiral molecules has equal magnitudes of 
@@ -37,12 +37,12 @@ optical rotation but in opposite directions.\\
 Since almost every part of the human body is composed of chiral molecules, its unsurprising that
 more than 60\% of the pharmaceutical drugs are chiral as well. One of the most 
 important aspect of the drug-design research is to be able to define the absolute configuration 
-(AC) of these drug molecules in order to study their behavior in biological systems as 
+(AC) of these drug molecules in order to study their behaviour in biological systems as 
 many biological activities are only associated with one specific AC. A very tragic example
 in this regard is that of the drug thalidomide, which was originally prescribed to pregnant women in 
 Europe in 1950s to cure morning sickness but resulted in birth-defects in thousands of 
 infants. It was found through a study done on rodents that the (R) enantiomer of thalidomide is indeed 
-a sedative but the (S) enantiomer is a teratogen\cite{Crawford06}. Furthermore, these enantiomers were 
+a sedative but the (S) enantiomer is a teratogen\cite{Crawford06}. Furthemore, these enantiomers were 
 found to rapidly interconvert in vivo in humans because of which separating 
 these two forms before use doesn't help at all.
 \\
@@ -59,7 +59,7 @@ These measurement are usually followed by a comparison against some suitable ref
 substrate. In this regard, accurate {\em ab initio} methods can help validate these experimental measurements.
 %However, in cases of ambiguities regarding appropriate references, accurate {\em ab initio} methods can come to the rescue and 
 %help validate these experimental measurements. 
-Furthermore, designing an asymmetric synthesis might not be straightforward for many chiral systems, 
+Furthermore, designing an asymmteric synthesis might not be straightforward for many chiral systems, 
 especially for the ones with large number of stereocenters. In such cases, theory can even take the 
 lead and predict the corresponding AC. In other words, theoretical calculations of these chiroptical 
 properties could serve as a very useful computational tool for modern organic chemists. In particular, 
@@ -102,7 +102,7 @@ $\vec{\mu} = \sum\limits_i q_i \vec{{r}_i}$ and $\vec{m} = \sum\limits_i \frac{q
 %\cite{CrawfordTamJPA07}. 
 Im means the imaginary part of the equation and the summation runs over all the excited
 states $\psi_n$. Specific rotation, ${\lbrack\alpha\rbrack}_\omega$ is related to the trace of the Rosenfeld tensor 
-normalized by path length and concentration and is usually reported in the units of deg dm$^{\text{-1}}$(g/mL)$^{\text{-1}}$,\cite{Crawford06}
+normalized by pathlength and concentration and is usually reported in the units of deg dm$^{\text{-1}}$(g/mL)$^{\text{-1}}$,\cite{Crawford06}
 \\
 \begin{equation}
 {\lbrack\alpha\rbrack}_{\omega} = \frac{(72.0 \times 10^6){\hbar}^2 N_A\;\omega}{c^2{m_e}^2 M} \times \left[ \frac{1}{3}Tr(\textbf{G}^\prime)\right]
@@ -166,7 +166,7 @@ the solvent molecules without compromising the quality of description of the sol
 interactions.\\
 In this regard, molecular mechanics (MM) based models, broadly known as QM/MM methods, usually represent the
 solvent in the form of a classical potential by replacing them with point charges, polarizabilities, etc.,\cite{Lin06,Warshel72,Warshel76}
-which polarizes the charge distribution of the solute resulting in a modification of its potential which
+which polarizes the charge distribution of the solute resuting in a modification of its potential which
 again back-polarizes the charge distribution of the solvent and so on. Thus, the final one-electron solvent potential is obtained in a
 self-consistent procedure and is added to the solute's Hamiltonian followed by the response calculations. The fluctuating
 charge model (FQ)\cite{Rick94}, the drude oscillator model\cite{Lamoureux03} and the effective fragmentation potential (EFP)\cite{JensenGordon96} are few examples in this context.\\
@@ -194,7 +194,7 @@ rotatory curve of methyloxirane (qualitatively) in water by using a DFT/FQ/PCM a
 models perform equally well in other solvents and with more accurate theories like CC as DFT has been shown to agree 
 with gas-phase experimental data of methyloxirane only fortuitously.\\
 Kongsted and co-workers were the first to use a solvation model within the context of CC response theory,
-where they placed the solute in a spherical cavity surrounded by a dielectric medium. However, this approach 
+where they placed the solute in a sperical cavity surrounded by a dielectric medium. However, this approach 
 could not match experimental measurements even qualitatively and gave a wrong sign of the specific rotation for ({\em S})-methyloxirane 
 in cyclohexane at 355 nm, even after incorporating accurate electron correlation theories\cite{Koch97,Kongsted05}. Similar trends were observed 
 when Caricato combined PCM with CC response theory to calculate specific rotations of solvated molecules\cite{Caricato13}.\\
@@ -219,12 +219,12 @@ the response of the solvent to the external field, which can have significant co
 %\subsubsection{Scaling}
 Other challenges associated with CC response theory include the problem of gauge and origin invariance, 
 the sensitivity of these calculations to the size of the basis-set, the unfavorable scaling of the CC response algorithm, 
-applying conformational averaging to ``flexible" molecules, zero-point vibrational corrections, accounting for temperature effects, etc.\cite{Crawford06}
+applying conformationl averaging to ``flexible" molecules, zero-point vibrational corrections, accounting for temperature effects, etc.\cite{Crawford06}
 \subsection{Current Work}
 Based on the above analysis, the only robust way of accounting for solvent effects seems to be including the solvent molecules explicitly 
-in the QM calculations. Furthermore, CC theory is highly desirable as it is more reliable, accurate and systematically improvable compared to DFT.
+in the QM calculations. Furthermore, CC theory is highly desirable as it is more reliable, accurate and systematicaly improvable compared to DFT.
 However, the steep scaling associated with CC response theory makes it computationally prohibitive for systems of chemical interest. 
-An obvious way to make these computations practical is to seek the help of CC reduced-scaling 
+An obvious way to make these compuations practical is to seek the help of CC reduced-scaling 
 techniques like the pair natural orbitals (PNO) approach\cite{NeeseCCSD09,Neese09} which has been really successful in describing the energetics of 
 large molecular systems. However, work towards the extension of these methods to calculate chiroptical properties has been 
 fairly limited\cite{Friedrich15,Gauss00,Korona04,McAlexander12,Russ04,Russ08}. McAlexander and Crawford in their recent 

@@ -75,7 +75,7 @@ electron basis for representing the wavefunction. Local correlation techniques t
 sparsity in correlated wavefunctions by unitarily localizing the occupied orbitals (LMOs) using methods 
 like Boys-Foster, Pipek-Mezey\cite{BoughtonPulay93} etc. and constructing excitation domains corresponding to each LMO. 
 The sizes of these domains are usually very small compared to the full virtual space and become constant 
-in the asymptotic limit, making these approaches reduced-scaling. Saeb\o and Pulay's introduction of projected 
+in the asymptotic limit, making these approaches reduced-scaling. Saebo and Pulay's introduction of projected 
 atomic orbitals (PAO) as a representation of the virtual space stands as one of the earliest works in this 
 regard\cite{Pulay83,Saebo86,PulaySaebo93}. As the name suggests, PAOs are formed by projecting out the occupied MO components from the 
 AO basis. Since the PAOs are centered on atoms (just like AOs), an excitation domain for a given LMO can 
@@ -89,7 +89,7 @@ were the first to use PAOs with the equation of motion CCSD method to calculate 
 In a similar work, Korona and Werner\cite{Korona04} constructed state specific PAO domains to minimize the average 
 localization errors for their test set to only 0.06 eV. Sch{\"u}tz and co-workers extended this approach with 
 density-fitted second order coupled cluster (CC2) \cite{Christiansen95:CC2} method to calculate excited state properties of 
-large systems.\cite{Schutz03} However, these approaches could require very large domain sizes depending on the 
+large systems.\cite{Schutz03} However, these approaches could require very large domian sizes depending on the 
 character of the excited state, for example, excitations in a charge-transfer excited state could be 
 fairly non-local. PAOs have also been used within the context of CC linear response theory to calculate 
 higher-order response properties like (hyper)polarizabilities, chiroptical response etc. albeit on a 
@@ -105,7 +105,7 @@ compounds required very large domains, especially for optical rotations. A simil
 when Friedrich and co-workers applied the incremental scheme, a fragmentation based local correlation technique 
 to calculate CC dynamic polarizabilities.\cite{Friedrich15} For a more detailed overview of the applications of PAO based 
 methods in this field, please refer to ref\cite{McAlexander15:LRCC}. Within the framework of local correlation, 
-the pair natural orbitals (PNOs) introduced in 1970s by Edmiston and Krauss\cite{Edmiston66}, Meyer\cite{Meyer73}, Ahlrichs, 
+the pair natural orbitals (PNOs) introduced in 1970s by Edimnston and Krauss\cite{Edmiston66}, Meyer\cite{Meyer73}, Ahlrichs, 
 Kutzelnigg, Staemmler and co-workers\cite{Ahlrichs75} and orbital specific virtuals (OSVs) developed by Chan and 
 co-workers in 2011 \cite{Yang12}, are other popular alternatives to PAOs for a compact representation of the virtual 
 space. In the local PNO (LPNO) approach, each pair of LMOs have their own virtual space which can be obtained 
@@ -113,10 +113,10 @@ by the diagonalization of the virtual-virtual block of an approximate 1-electron
 The OSV approach on the other hand involves diagonalization of a separate density for each LMO. Even though 
 the PNOs were shown be to be quite useful as a wavefunction compression technique, they were initially 
 abandoned due to the computational costs involved in the transformation of the two electron 
-integrals, only to be revived later by Neese and co-workers in 2008 by making use of the density-fitting procedure
+integrals, onlyto be revived later by Neese and co-workers in 2008 by making use of the density-fitting procedure
 \cite{NeeseCCSD09,Neese09}. They also proposed a variant of the LPNO approach, a scheme which they call domain based LPNO (DLPNO), 
 where the PNOs are expressed in terms of PAOs, to achieve near-linear scaling behavior in MP2 and CC calculations
-\cite{Riplinger16}. Following their pioneering works, the LPNO and the DLPNO methods have been used quite successfully to study 
+\cite{Riplinger16}. Following their pioneering works, the LPNO and the DLPNO methods have been used quite sucessfully to study 
 ground state properties of molecular systems previously unreachable by canonical correlated methods. 
 H{\"a}ttig and co-workers were the first to extend this scheme to excited states by using state-specific 
 PNOs generated from CIS(D) densities at CC2 level of theory\cite{Hattig13} and recently with CCSD\cite{Hattig18}. Valeev and 
@@ -125,7 +125,7 @@ CIS(D) densities over a desired set of excited states. Similar works employing s
 transition orbitals and natural orbitals for calculating excitation energies have also been reported\cite{Baudin17,HofenerKlopper17,Mester17,Mester18}. 
 Our group implemented the LPNO scheme in conjunction with CC2 and CCSD linear response (LR) theory  
 to calculate dynamic polarizabilities and specific rotations of different chiral molecules ranging from linear
-(H2)n helices to cagelike (1\textit{R},4\textit{R})-Norbornenone, where consistent with earlier studies, PNOs were found
+(H2)n helices to cagelike 1r-4r-norbornenone, where consistent with earlier studies, PNOs were found
 to be much more compact than the PAOs and OSVs for representing the wavefunction. However, the truncation errors 
 in specific rotations for 3-dimensional structures were quite large and the convergence of both the properties 
 towards the canonical result turned out to be very slow\cite{McAlexander15:LRCC}. The failure of the regular LPNO-CC2/CCSD-LR approach
@@ -202,7 +202,7 @@ where,
 \end{split}
 \end{equation}
 \\
-Here $\tau_\mu$, $\tau_\nu$ are operators which generate excited determinants $|\mu\rangle$
+Here $\tau_\mu$, $\tau_\nu$ are operators which generate excited determinats $|\mu\rangle$
 and $|\nu\rangle$ by acting on the reference wavefunction $|0\rangle$. Once we solve for 
 $X_{\nu}^{B}$ and $Y_{\nu}^{B}$ amplitudes, the first-order perturbed density can be built 
 from eq.(5.3) to construct the CC-LRF. Elements of the dynamic polarizability ($\bm{\alpha}$) 
@@ -275,7 +275,7 @@ and unperturbed amplitudes are usually very different from each other. Thus, the
 pair densities should be able to capture the response of the ground state amplitudes. 
 Recent reduced scaling works on EOM-CC2/CCSD excitation energies employ 
 PNO-MP2 and PNO-CIS(D) densities for ground and excited state calculations respectively\cite{Hattig18,Hattig13}.
-However, for calculating response properties using CC-LR theory, one needs to express both 
+However, for caluclating response properties using CC-LR theory, one needs to express both 
 unperturbed and perturbed amplitudes in the same PNO basis in order to match the results
 obtained from finite field procedures. Due to this constraint, two different 
 schemes could be explored where a) PNOs are defined from perturbed densities, and  b) effective PNOs 
@@ -419,7 +419,7 @@ and $Y^{A}_{\omega}$ amplitudes.
 \section{Results and Discussions}
 Through our earlier works\cite{Kumar18:1,Kumar17}, we have demonstrated the poor performances of 
 the NOs based on the ground state MP2 density in describing the response 
-of the CC wavefunction. This behavior is not unexpected since the diffuse orbitals
+of the CC wavefunction. This behaviour is not unexpected since the diffuse orbitals
 which are crucial to the description of the low lying Rydberg states and hence to
 the response properties, have very low contributions to the ground state correlation energy
 and will always be removed first when ground state densities are used
@@ -439,7 +439,7 @@ Fig.~\ref{fig:pno_m_h2_7_polar}
 as a function of -log(occupation threshold).}}
 \label{fig:pno_m_h2_7_polar}
 \end{MyFigure}
-compares the performance of both PNO(M) and PNO approaches for calculating CCSD dynamic polarizabilities of
+compares the performance of both PNO(M) amd PNO approaches for calculating CCSD dynamic polarizabilities of
 (H$_2$)$_7$ molecule at 589 nm. It can be seen that the PNO(M) scheme converges to the full result much 
 faster than the PNO method. A cutoff of 10$^{-6}$ in the PNO(M) approach gives almost the same accuracy as 
 a cutoff of 10$^{-9}$ for the PNO approach. Similar trends can be seen for specific rotation as well
@@ -455,7 +455,7 @@ where even at a very high cutoff of 10$^{-4}$, the PNO(M) approach has almost co
 canonical result. On the other hand, the PNO approach even at a tight cutoff of 10$^{-9}$ doesn't
 reproduce the canonical value. Furthermore, on account of fortuitous cancellation of errors in the
 PNO approach, a cutoff of 10$^{-7}$ gives much more accurate results than a tighter cutoff of 10$^{-9}$.
-However, in the PNO(M) approach, every pair of LMOs now becomes ``important" as it always possesses 
+However, in the PNO(M) approach, evey pair of LMOs now becomes ``important" as it always possesses 
 a fixed number of VMOs. Thus, the computational expenses are significantly higher in such an
 approach. Also, the selection of the diffuse space is not straightforward as the criterion of 
 spatial extents is not robust. Hence, we look at the PNO++ approach to see if it can naturally
@@ -635,7 +635,7 @@ properties.
 However, calculations on two and three dimensional structures involving different forms of second-order 
 perturbed densities need to be carried out in order to make PNO++ a truly black-box method.
 Furthermore, the validity of the weak pair approximations, needs to be investigated within the PNO++ formalism
-to ensure that this scheme retains the reduced-scaling behavior of the original PNO method.
+to ensure that this scheme retains the reduced-scaling behaviour of the original PNO method.
 
 
 

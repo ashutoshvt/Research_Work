@@ -60,16 +60,16 @@ CI wavefunction is a linear combination of all possible Slater determinants for 
 \ket{\Psi} = c_o\ket{0} + \sum_{ia}{c}_{i}^{a}\ket{{\Psi}^a_i} + \sum_{i>j,a>b}c_{ij}^{ab}\ket{\Psi^{ab}_{ij}} + \sum_{i>j>k,a>b>c}c_{ijk}^{abc}\ket{\Psi^{abc}_{ijk}} + ...
 \end{equation}
 \\
-where $\ket{0}$ is the reference wavefunction (usually HF), $\ket{{\Phi}^a_i}$ refers to a singly excited determinant where an occupied orbital $i$ of the reference wavefunction is replaced by a virtual orbital $a$
+where $\ket{0}$ is the reference wavefunction (usuallly HF), $\ket{{\Phi}^a_i}$ refers to a singly excited determinant where an occupied orbital $i$ of the reference wavefunction is replaced by a virtual orbital $a$
 and so on.\\
 However, the Full CI method is computationally very expensive and scales factorially with 
-system size. Unsurprisingly, it is mostly used in benchmark calculations of small molecules.
+system size. Unsurprsingly, it is mostly used in benchmark calculations of small molecules.
 % and the largest Full CI calculation to date has been on nitrogen molecule\cite{} involving 
 %billions of determinants. 
 In practice, truncated CI methods like CISD, CISDT where the vector 
 space is restricted to include up to doubly and triply excited determinants 
 is used. Unlike the exact wavefunction, truncated CI wavefunctions, however, 
-do not possess the property of size-extensivity i.e. the CIS[D/T] energy doesn't scale 
+do not posess the property of size-extensivity i.e. the CIS[D/T] energy doesn't scale 
 linearly with the number of electrons in the asymptotic limit. Another notable deficiency 
 is the lack of size-consistency which means that within these approaches, the sum of the 
 energies of non-interacting fragments (each calculated separately) is not equal to the energy 
@@ -339,7 +339,7 @@ in terms of the lambda operator,
 \frac{\partial{E_{cc}}}{\partial X} = \bra{0}(1 + \hat{\Lambda}){\bar{H}}^X\ket{0} = \bra{0}(1 + \hat{\Lambda})e^{-\hat{T}}\frac{\partial{\hat H}}{\partial X}\ket{\Psi_{cc}}
 \end{equation}
 \\
-and the governing equation for solving the lambda amplitudes eq. (2.27) can be written in a more compact form as,
+and the governing equation for sloving the lambda amplitudes eq. (2.27) can be written in a more compact form as,
 \\
 \begin{equation}
 \bra{0}(1 + \hat{\Lambda})(\bar{H} - E_{cc})\ket{\mu} = 0.
@@ -409,7 +409,7 @@ Hamiltonian using the standard time-dependent perturbation theory:
 \end{equation}
 \\
 where $H_o$ is the time independent or unperturbed Hamiltonian, $V(t)$ is the interaction 
-operator with $V(\omega)$ as its Fourier transform and $\alpha$ is a real positive infinitesimal.
+operator with $V(\omega)$ as its Fourier transform and $\alpha$ is a real postive infinitesimal.
 The representation used for the $V(t)$ operator is an example of the adiabatically 
 switched on perturbation\cite{Koch90} where the perturbation is assumed to be zero at 
 $t = -\infty$. Thus, the molecule can be assumed to be in state $\Psi_o$, an 
@@ -481,7 +481,7 @@ d\omega_1{\langle\langle A;V^{\omega_1}\rangle\rangle}_{\omega_1  \
 where the linear response function (LRF), $\langle\langle A;V^{\omega_1}\rangle\rangle$ can be
 seen as the first order change in the expectation value of the time independent operator $A$ 
 with respect to perturbation. The first order perturbed wavefunction $\ket{\Psi_o}^{(1)}$
-can be obtained using Ehrenfest theorem and combined with the above equation to construct 
+can be obtained using Ehrenfest's theorem and combined with the above equation to construct 
 the LRF, which for exact states looks like,
 \\
 \begin{equation}

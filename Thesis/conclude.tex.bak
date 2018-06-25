@@ -24,7 +24,7 @@ On a closer inspection, we found that all the diffuse
 VNOs had very low occupation numbers (ONs) and thus were removed first
 in this scheme resulting in large errors. It should be noted that these 
 diffuse orbitals are absolutely essential for calculating chiroptical properties 
-as many chiral molecules possess low lying Rydberg type excited states.
+as many chiral molecules possess low lying Rydeberg type excited states.
 We also employed a CC2\cite{Christiansen95:CC2} based correction for the external truncated 
 space which was able to reduce the errors drastically, but such an approach 
 could not lead to any computational savings. Finally, we constructed a first 
@@ -82,7 +82,7 @@ perturbed densities need to be carried out in order to make PNO++ a truly robust
 Encouraged by the performances of these methods, we plan to use them in 
 conjunction with density-fitted CC linear response codes\cite{Friese12} to target larger
 systems like solvated molecular clusters. We assume that a larger solvent shell 
-around the solute molecule would require comparatively smaller number of 
+around the solute molecule would require comparitively smaller number of 
 snapshots for the optical rotations to converge to the experimental value. Thus, we can significantly
 lower down the computational costs involved in CC calculations of optical rotations
 of solvated molecules.
