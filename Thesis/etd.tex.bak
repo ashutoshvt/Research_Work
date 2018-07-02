@@ -137,9 +137,7 @@ theory to calculate ground-state properties of molecular systems with hundreds o
 However, efforts towards extension of these methods for describing response properties like polarizabilities, optical rotations, 
 etc., which are related to the derivative of the wavefunction with respect to external electric or/and magnetic fields,
 have been fairly limited and conventional reduced-scaling algorithms have been shown to yield large and often erratic deviations from 
-the full canonical results. Accurate simulation of response properties like optical rotation is highly desirable 
-as it can help the experimental chemists in understanding the structure-activity relationship
-of different chiral drug candidates. \\In this work, we identify the reasons behind 
+the full canonical results. In this work, we identify the reasons behind 
 the unsatisfactory performance of the pair natural orbital (PNO) based reduced-scaling 
 approach for calculating linear response properties at the coupled cluster level of theory 
 and propose novel modifications, which we refer to as PNO++, (A. Kumar and T. D. Crawford. Perturbed Pair 
@@ -152,7 +150,7 @@ FVNO++ method (A. Kumar and T. D. Crawford. Perturbed Natural Orbitals for Coupl
 Theory. 2018, {\em manuscript in preparation}). The essence of these modified schemes (FVNO++ and PNO++) lie in finding suitable 
 field perturbed one-electron densities to construct ``perturbation aware" virtual spaces which,
 by construction, are much more compact for describing response properties, making them ideal
-for applications to larger and chemically interesting systems like solvated molecules, biomolecules, etc.\\\\
+for applications on large molecular systems.\\\\
 \thispagestyle{empty}
 %The virtual natural orbitals
 %In this work, we identify some of the reasons behind  the failure of popular local correlation models like Frozen Virtual Natural Orbitals (FVNO) 
@@ -187,51 +185,85 @@ Ashutosh Kumar
 \end{center}
 
 %\vfill
+
+%Lets start in points:
+%Theoretical chemsitry 
+%
+%
+%The field of theoretical chemistry - aims to assist 
+%accurate calculation of properties of molecules 
+%
+%The field of theoretical quantum chemistry employs approximate
+%
+%
+% attempts to predict molecular properties
+%
+%how about quantum mechanics/chemistry -> schrodinger's equatuion -> approximate models
+%
+%
+%Nearly every chemical phenomenon
+%
+%
+%atomic and molecuar properties or reactions , which chemsits 
+%
+%study, model, predict
+%
+%
+%One of the major applications of quantum mechanics 
+%Chemistry has
+%
 Since its inception, quantum mechanics has been widely used by theoretical chemists 
 to study, model and predict a variety of molecular properties and reactions accurately
-and reliably. Central to the field of quantum mechanics is the Schr\"odinger equation,
+and reliably. Central to the field of quantum mechanics is the Schrodinger’s equation, %proposed by Erwin 
+%Schrodinger in 1926 or the Schrodinger’s equation, 
 whose exact solution is only known for one electron systems.
-As such, numerous quantum mechanical models have been proposed over the years
-which attempt to solve the many body Schr\"odinger equation approximately. A very good
+%which can be only solved exactly for only one electron systems.
+As such, numerous quantum mechanical models have been proposed over the years in an
+attempt to solve the many body Schrodinger equation approximately. A very good
 example in this regard is the coupled cluster (CC) family of methods wherein the CCSD(T) model is 
 considered as the ``gold standard" of quantum chemistry due to its high accuracy. However, one major 
 bottleneck which prevents the use of accurate CC models to study biological systems which routinely involve 
 hundreds of atoms, is the issue of high computational expenses. For example, doubling the system size in a 
-CCSD(T) calculation can lead to more than a hundred-fold increase in the computational costs, which limits the application of this model
+CCSD(T) calculation can lead to a 64 times increase in the computational costs, which limits the application of this model
 to systems with 10 to 20 atoms. However, this unfavorable scaling with respect to system size is unphysical for 
-large molecules as inter-electron interactions decay rapidly with distance, or are in other words, 
+large molecular systems as inter-electron interactions decay rapidly with distance, or are in other words, 
 a local phenomenon. Reduced-scaling methods attempt to exploit this property of locality by finding a compact
 representation of the wavefunction. Various reduced-scaling approaches
-like pair natural orbitals (PNOs), projected atomic orbitals (PAOs) 
+%To take advantage of this property of locality, various reduced-scaling approaches 
+like projected natural orbitals (PNOs), projected atomic orbitals (PAOs) 
+%which aim to exploit this property of locality by finding a compact representation 
+%of the wavefunction, 
 have been proposed and developed over the years which have extended the applicability 
-of the CC methods to systems as large as proteins and DNA fragments. While these methods have been 
-shown to be quite reliable for calculating properties like molecular energies, much more work needs 
-to be done to guarantee similar levels of accuracy and computational cost for describing molecular response 
+of the CC methods to systems as large as proteins and dna fragments. While these methods have been 
+shown to be quite reliable for calculating properties like molecular energies, much mork work needs 
+to be done to gurrantee similar levels of accuracy and computational cost for describing molecular response 
 properties like polarizabilities and optical rotations. As the name suggests, response properties are related to 
-the response or the change induced in the wavefunction in the presence of external electromagnetic fields like visible light.
-Accurate simulation of response properties like optical rotation is highly desirable
-as it can help the experimental chemists in understanding the structure-activity relationship
-of different drug candidates, an important part of the drug discovery process.
+the response or the change induced in the wavefunction in the presence of external electomagnetic fields like visible light.
+Simulating response properties like optical rotation is highly desirable as it can help elucidate the structure 
+of different chemical species.
+%Simulating response properties like optical rotations can be of significant assistance to modern synthetic
+%chemists  
+% maybe write a line or two about optical rotation as a property, how it can help drug-design research -- just hand-wavy
 However, limited applications of the reduced-scaling algorithms to these properties have been shown to yield large and often erratic 
-errors. \\In this work, we identify the reasons behind the unsatisfactory performance of the PNO based reduced-scaling 
+errors. In this work, we identify the reasons behind the unsatisfactory performance of the PNO based reduced-scaling 
 approach for calculating response properties at the coupled cluster level of theory 
 and propose novel modifications, which we refer to as PNO++, (A. Kumar and T. D. Crawford. Perturbed Pair 
 Natural Orbitals for Coupled-Cluster Linear-Response Theory. 2018, {\em manuscript in preparation}) 
-which can provide the desired accuracy reliably at significantly lower computational costs than the regular
+which can provide the desired accuracies reliably at significantly lower computational costs than the regular
 PNO method. The motivation behind the PNO++ approach came from our works on the (frozen) virtual natural orbitals (FVNO), which can 
 be seen as a precursor to the concept of PNOs (A. Kumar and T. D. Crawford. Frozen Virtual Natural Orbitals for 
 Coupled-Cluster Linear-Response Theory. {\em J. Phys. Chem. A}, 2017, 121(3), pp 708-716) and the improved 
 FVNO++ method (A. Kumar and T. D. Crawford. Perturbed Natural Orbitals for Coupled-Cluster Linear-Response 
 Theory. 2018, {\em manuscript in preparation}). The essence of these modified schemes (FVNO++ and PNO++) lie in 
 choosing a ``field aware" representation of the wavefunction, which by construction, is much more compact than
-their conventional counterparts for calculating response properties. Thus, these schemes are ideal 
-for applications to larger and chemically interesting systems like molecules in solutions, biomolecules, etc.
+their conventional counterparts for calculating response properties. Thus, these schemes are ideal for 
+understanding structure-activity relationships of larger and chemically interesting systems like solvated molecules, 
+biomolecules, etc., which can eventually assist the the experimental chemists in the process of drug discovery.
 
 
 
-%understanding the structure-activity relationship of larger and chemically interesting systems like solvated molecules, 
-%biomolecules, etc., which can eventually assist the experimental chemists in the process of drug discovery.
 % maybe we can talk about significance here as well - derug design, optical rotation in solutions etc ... help experimental chemsits etc.
+
 %suitable field perturbed one-electron densities to construct ``perturbation aware" virtual spaces which,
 %by construction, are much more compact for describing response properties, making them ideal
 %for applications on large molecular systems.

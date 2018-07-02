@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  25 JUN 2018 18:39
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  2 JUL 2018 09:00
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -416,16 +416,16 @@ Package caption Info: End \AtBeginDocument code.
 [1
 
 {/usr/local/texlive/2016/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-Underfull \hbox (badness 10000) in paragraph at lines 124--162
+Underfull \hbox (badness 10000) in paragraph at lines 124--164
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 124--162
+Underfull \hbox (badness 10000) in paragraph at lines 124--164
 
  []
 
-[2] [3] [4] [5] [6] (./acknowledge.tex
+[2] [3] [4] [5] [6] [7] (./acknowledge.tex
 LaTeX Font Info:    Try loading font information for OMS+cmr on input line 6.
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/base/omscmr.fd
@@ -743,7 +743,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 239--248
 
  []
 
-[36] <figures_fvno/energy.pdf, id=191, 578.16pt x 361.35pt>
+[36] <figures_fvno/energy.pdf, id=194, 578.16pt x 361.35pt>
 File: figures_fvno/energy.pdf Graphic file (type pdf)
 
 <use figures_fvno/energy.pdf>
@@ -755,21 +755,21 @@ Underfull \hbox (badness 10000) in paragraph at lines 289--317
  []
 
 [37] [38 <./figures_fvno/energy.pdf>]
-<figures_fvno/Mp2c.pdf, id=216, 673.51625pt x 392.46625pt>
+<figures_fvno/Mp2c.pdf, id=219, 673.51625pt x 392.46625pt>
 File: figures_fvno/Mp2c.pdf Graphic file (type pdf)
 
 <use figures_fvno/Mp2c.pdf>
 Package pdftex.def Info: figures_fvno/Mp2c.pdf used on input line 327.
 (pdftex.def)             Requested size: 281.85585pt x 164.24182pt.
  [39 <./figures_fvno/Mp2c.pdf>]
-<figures_fvno/h2o2_polar.pdf, id=237, 578.16pt x 361.35pt>
+<figures_fvno/h2o2_polar.pdf, id=240, 578.16pt x 361.35pt>
 File: figures_fvno/h2o2_polar.pdf Graphic file (type pdf)
 
 <use figures_fvno/h2o2_polar.pdf>
 Package pdftex.def Info: figures_fvno/h2o2_polar.pdf used on input line 350.
 (pdftex.def)             Requested size: 281.85585pt x 176.1588pt.
  [40 <./figures_fvno/h2o2_polar.pdf>]
-<figures_fvno/spatial.pdf, id=258, 556.0775pt x 360.34625pt>
+<figures_fvno/spatial.pdf, id=261, 556.0775pt x 360.34625pt>
 File: figures_fvno/spatial.pdf Graphic file (type pdf)
 
 <use figures_fvno/spatial.pdf>
@@ -779,7 +779,7 @@ Package pdftex.def Info: figures_fvno/spatial.pdf used on input line 377.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[41] <figures_fvno/sort_spatial.pdf, id=262, 574.145pt x 360.34625pt>
+[41] <figures_fvno/sort_spatial.pdf, id=265, 574.145pt x 360.34625pt>
 File: figures_fvno/sort_spatial.pdf Graphic file (type pdf)
 
 <use figures_fvno/sort_spatial.pdf>
@@ -790,7 +790,7 @@ Package pdftex.def Info: figures_fvno/sort_spatial.pdf used on input line 409.
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [42 <./figures_fvno/spatial.pdf>]
-<figures_fvno/polar_static.pdf, id=283, 578.16pt x 361.35pt>
+<figures_fvno/polar_static.pdf, id=286, 578.16pt x 361.35pt>
 File: figures_fvno/polar_static.pdf Graphic file (type pdf)
 
 <use figures_fvno/polar_static.pdf>
@@ -800,7 +800,7 @@ Package pdftex.def Info: figures_fvno/polar_static.pdf used on input line 447.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<figures_fvno/amp_trunc_cmo.pdf, id=304, 689.57625pt x 515.9275pt>
+<figures_fvno/amp_trunc_cmo.pdf, id=308, 689.57625pt x 515.9275pt>
 File: figures_fvno/amp_trunc_cmo.pdf Graphic file (type pdf)
 
 <use figures_fvno/amp_trunc_cmo.pdf>
@@ -812,14 +812,14 @@ Package pdftex.def Info: figures_fvno/amp_trunc_cmo.pdf used on input line 470.
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [45 <./figures_fvno/polar_static.pdf>]
-<figures_fvno/error_cmpare.pdf, id=330, 649.42625pt x 506.89375pt>
+<figures_fvno/error_cmpare.pdf, id=333, 649.42625pt x 506.89375pt>
 File: figures_fvno/error_cmpare.pdf Graphic file (type pdf)
 
 <use figures_fvno/error_cmpare.pdf>
 Package pdftex.def Info: figures_fvno/error_cmpare.pdf used on input line 506.
 (pdftex.def)             Requested size: 281.85585pt x 219.99425pt.
  [46 <./figures_fvno/amp_trunc_cmo.pdf>]
-<figures_fvno/amp_trunc_no.pdf, id=361, 627.34375pt x 485.815pt>
+<figures_fvno/amp_trunc_no.pdf, id=364, 627.34375pt x 485.815pt>
 File: figures_fvno/amp_trunc_no.pdf Graphic file (type pdf)
 
 <use figures_fvno/amp_trunc_no.pdf>
@@ -846,28 +846,28 @@ Underfull \hbox (badness 10000) in paragraph at lines 584--588
 
  []
 
-<figures_fvno/Faa.pdf, id=415, 524.96124pt x 384.43625pt>
+<figures_fvno/Faa.pdf, id=419, 524.96124pt x 384.43625pt>
 File: figures_fvno/Faa.pdf Graphic file (type pdf)
 
 <use figures_fvno/Faa.pdf>
 Package pdftex.def Info: figures_fvno/Faa.pdf used on input line 600.
 (pdftex.def)             Requested size: 281.85585pt x 206.4134pt.
 
-<figures_fvno/X1.pdf, id=416, 724.7075pt x 486.81876pt>
+<figures_fvno/X1.pdf, id=420, 724.7075pt x 486.81876pt>
 File: figures_fvno/X1.pdf Graphic file (type pdf)
 
 <use figures_fvno/X1.pdf>
 Package pdftex.def Info: figures_fvno/X1.pdf used on input line 613.
 (pdftex.def)             Requested size: 281.85585pt x 189.33856pt.
  [50 <./figures_fvno/Faa.pdf>]
-<figures_fvno/norm.pdf, id=438, 577.15625pt x 415.5525pt>
+<figures_fvno/norm.pdf, id=441, 577.15625pt x 415.5525pt>
 File: figures_fvno/norm.pdf Graphic file (type pdf)
 
 <use figures_fvno/norm.pdf>
 Package pdftex.def Info: figures_fvno/norm.pdf used on input line 632.
 (pdftex.def)             Requested size: 281.85585pt x 202.94403pt.
  [51 <./figures_fvno/X1.pdf>]
-<figures_fvno/correctn.pdf, id=459, 572.1375pt x 433.62pt>
+<figures_fvno/correctn.pdf, id=462, 572.1375pt x 433.62pt>
 File: figures_fvno/correctn.pdf Graphic file (type pdf)
 
 <use figures_fvno/correctn.pdf>
@@ -878,7 +878,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 687--700
 
  []
 
-[54] <figures_fvno/perturbed.pdf, id=504, 577.15625pt x 415.5525pt>
+[54] <figures_fvno/perturbed.pdf, id=507, 577.15625pt x 415.5525pt>
 File: figures_fvno/perturbed.pdf Graphic file (type pdf)
 
 <use figures_fvno/perturbed.pdf>
@@ -894,7 +894,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 739--747
  []
 
 [56 <./figures_fvno/perturbed.pdf>]
-<figures_fvno/diplength.pdf, id=529, 628.3475pt x 387.4475pt>
+<figures_fvno/diplength.pdf, id=532, 628.3475pt x 387.4475pt>
 File: figures_fvno/diplength.pdf Graphic file (type pdf)
 
 <use figures_fvno/diplength.pdf>
@@ -950,7 +950,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 281--291
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<figures_fvno++/fvno(m)_h2o2_adz_polar.pdf, id=588, 578.16pt x 361.35pt>
+<figures_fvno++/fvno(m)_h2o2_adz_polar.pdf, id=591, 578.16pt x 361.35pt>
 File: figures_fvno++/fvno(m)_h2o2_adz_polar.pdf Graphic file (type pdf)
 
 <use figures_fvno++/fvno(m)_h2o2_adz_polar.pdf>
@@ -958,7 +958,7 @@ Package pdftex.def Info: figures_fvno++/fvno(m)_h2o2_adz_polar.pdf used on inpu
 t line 440.
 (pdftex.def)             Requested size: 211.38829pt x 132.11496pt.
 
-<figures_fvno++/fvno(m)_h2o2_adz_optrot.pdf, id=589, 578.16pt x 361.35pt>
+<figures_fvno++/fvno(m)_h2o2_adz_optrot.pdf, id=592, 578.16pt x 361.35pt>
 File: figures_fvno++/fvno(m)_h2o2_adz_optrot.pdf Graphic file (type pdf)
 
 <use figures_fvno++/fvno(m)_h2o2_adz_optrot.pdf>
@@ -966,7 +966,7 @@ Package pdftex.def Info: figures_fvno++/fvno(m)_h2o2_adz_optrot.pdf used on inp
 ut line 446.
 (pdftex.def)             Requested size: 211.38829pt x 132.11496pt.
 
-<figures_fvno++/fvno(m)_h2o2_adz_ee.pdf, id=590, 578.16pt x 361.35pt>
+<figures_fvno++/fvno(m)_h2o2_adz_ee.pdf, id=593, 578.16pt x 361.35pt>
 File: figures_fvno++/fvno(m)_h2o2_adz_ee.pdf Graphic file (type pdf)
 
 <use figures_fvno++/fvno(m)_h2o2_adz_ee.pdf>
@@ -974,7 +974,7 @@ Package pdftex.def Info: figures_fvno++/fvno(m)_h2o2_adz_ee.pdf used on input l
 ine 483.
 (pdftex.def)             Requested size: 211.38829pt x 132.11496pt.
 
-<figures_fvno++/fvno(m)_h2o2_adz_rs.pdf, id=591, 578.16pt x 361.35pt>
+<figures_fvno++/fvno(m)_h2o2_adz_rs.pdf, id=594, 578.16pt x 361.35pt>
 File: figures_fvno++/fvno(m)_h2o2_adz_rs.pdf Graphic file (type pdf)
 
 <use figures_fvno++/fvno(m)_h2o2_adz_rs.pdf>
@@ -982,7 +982,7 @@ Package pdftex.def Info: figures_fvno++/fvno(m)_h2o2_adz_rs.pdf used on input l
 ine 489.
 (pdftex.def)             Requested size: 211.38829pt x 132.11496pt.
 
-<figures_fvno++/fvno++_h2o2_adz_polar.pdf, id=592, 578.16pt x 361.35pt>
+<figures_fvno++/fvno++_h2o2_adz_polar.pdf, id=595, 578.16pt x 361.35pt>
 File: figures_fvno++/fvno++_h2o2_adz_polar.pdf Graphic file (type pdf)
 
 <use figures_fvno++/fvno++_h2o2_adz_polar.pdf>
@@ -990,7 +990,7 @@ Package pdftex.def Info: figures_fvno++/fvno++_h2o2_adz_polar.pdf used on input
  line 553.
 (pdftex.def)             Requested size: 211.38829pt x 132.11496pt.
 
-<figures_fvno++/fvno++_h2o2_adz_optrot_lg.pdf, id=593, 578.16pt x 361.35pt>
+<figures_fvno++/fvno++_h2o2_adz_optrot_lg.pdf, id=596, 578.16pt x 361.35pt>
 File: figures_fvno++/fvno++_h2o2_adz_optrot_lg.pdf Graphic file (type pdf)
 
 <use figures_fvno++/fvno++_h2o2_adz_optrot_lg.pdf>
@@ -998,7 +998,7 @@ Package pdftex.def Info: figures_fvno++/fvno++_h2o2_adz_optrot_lg.pdf used on i
 nput line 559.
 (pdftex.def)             Requested size: 211.38829pt x 132.11496pt.
 
-<figures_fvno++/fvno++_h2_4_adz_polar.pdf, id=594, 578.16pt x 361.35pt>
+<figures_fvno++/fvno++_h2_4_adz_polar.pdf, id=597, 578.16pt x 361.35pt>
 File: figures_fvno++/fvno++_h2_4_adz_polar.pdf Graphic file (type pdf)
 
 <use figures_fvno++/fvno++_h2_4_adz_polar.pdf>
@@ -1006,7 +1006,7 @@ Package pdftex.def Info: figures_fvno++/fvno++_h2_4_adz_polar.pdf used on input
  line 619.
 (pdftex.def)             Requested size: 211.38829pt x 132.11496pt.
 
-<figures_fvno++/fvno++_h2_5_adz_polar.pdf, id=595, 578.16pt x 361.35pt>
+<figures_fvno++/fvno++_h2_5_adz_polar.pdf, id=598, 578.16pt x 361.35pt>
 File: figures_fvno++/fvno++_h2_5_adz_polar.pdf Graphic file (type pdf)
 
 <use figures_fvno++/fvno++_h2_5_adz_polar.pdf>
@@ -1014,7 +1014,7 @@ Package pdftex.def Info: figures_fvno++/fvno++_h2_5_adz_polar.pdf used on input
  line 625.
 (pdftex.def)             Requested size: 211.38829pt x 132.11496pt.
 
-<figures_fvno++/fvno++_h2_6_adz_polar.pdf, id=596, 578.16pt x 361.35pt>
+<figures_fvno++/fvno++_h2_6_adz_polar.pdf, id=599, 578.16pt x 361.35pt>
 File: figures_fvno++/fvno++_h2_6_adz_polar.pdf Graphic file (type pdf)
 
 <use figures_fvno++/fvno++_h2_6_adz_polar.pdf>
@@ -1022,7 +1022,7 @@ Package pdftex.def Info: figures_fvno++/fvno++_h2_6_adz_polar.pdf used on input
  line 631.
 (pdftex.def)             Requested size: 211.38829pt x 132.11496pt.
 
-<figures_fvno++/fvno++_h2_7_adz_polar.pdf, id=597, 578.16pt x 361.35pt>
+<figures_fvno++/fvno++_h2_7_adz_polar.pdf, id=600, 578.16pt x 361.35pt>
 File: figures_fvno++/fvno++_h2_7_adz_polar.pdf Graphic file (type pdf)
 
 <use figures_fvno++/fvno++_h2_7_adz_polar.pdf>
@@ -1039,7 +1039,7 @@ Overfull \hbox (2.61107pt too wide) in paragraph at lines 617--643
 []$ $[]$ 
  []
 
-<figures_fvno++/fvno++_h2_4_adz_optrot_lg.pdf, id=598, 578.16pt x 361.35pt>
+<figures_fvno++/fvno++_h2_4_adz_optrot_lg.pdf, id=601, 578.16pt x 361.35pt>
 File: figures_fvno++/fvno++_h2_4_adz_optrot_lg.pdf Graphic file (type pdf)
 
 <use figures_fvno++/fvno++_h2_4_adz_optrot_lg.pdf>
@@ -1047,7 +1047,7 @@ Package pdftex.def Info: figures_fvno++/fvno++_h2_4_adz_optrot_lg.pdf used on i
 nput line 650.
 (pdftex.def)             Requested size: 211.38829pt x 132.11496pt.
 
-<figures_fvno++/fvno++_h2_5_adz_optrot_lg.pdf, id=599, 578.16pt x 361.35pt>
+<figures_fvno++/fvno++_h2_5_adz_optrot_lg.pdf, id=602, 578.16pt x 361.35pt>
 File: figures_fvno++/fvno++_h2_5_adz_optrot_lg.pdf Graphic file (type pdf)
 
 <use figures_fvno++/fvno++_h2_5_adz_optrot_lg.pdf>
@@ -1055,7 +1055,7 @@ Package pdftex.def Info: figures_fvno++/fvno++_h2_5_adz_optrot_lg.pdf used on i
 nput line 656.
 (pdftex.def)             Requested size: 211.38829pt x 132.11496pt.
 
-<figures_fvno++/fvno++_h2_6_adz_optrot_lg.pdf, id=600, 578.16pt x 361.35pt>
+<figures_fvno++/fvno++_h2_6_adz_optrot_lg.pdf, id=603, 578.16pt x 361.35pt>
 File: figures_fvno++/fvno++_h2_6_adz_optrot_lg.pdf Graphic file (type pdf)
 
 <use figures_fvno++/fvno++_h2_6_adz_optrot_lg.pdf>
@@ -1063,7 +1063,7 @@ Package pdftex.def Info: figures_fvno++/fvno++_h2_6_adz_optrot_lg.pdf used on i
 nput line 662.
 (pdftex.def)             Requested size: 211.38829pt x 132.11496pt.
 
-<figures_fvno++/fvno++_h2_7_adz_optrot_lg.pdf, id=601, 578.16pt x 361.35pt>
+<figures_fvno++/fvno++_h2_7_adz_optrot_lg.pdf, id=604, 578.16pt x 361.35pt>
 File: figures_fvno++/fvno++_h2_7_adz_optrot_lg.pdf Graphic file (type pdf)
 
 <use figures_fvno++/fvno++_h2_7_adz_optrot_lg.pdf>
@@ -1080,7 +1080,7 @@ Overfull \hbox (2.61107pt too wide) in paragraph at lines 648--674
 []$ $[]$ 
  []
 
-<figures_fvno++/fvno++_cc2_1_h2_4_adz_polar.pdf, id=602, 578.16pt x 361.35pt>
+<figures_fvno++/fvno++_cc2_1_h2_4_adz_polar.pdf, id=605, 578.16pt x 361.35pt>
 File: figures_fvno++/fvno++_cc2_1_h2_4_adz_polar.pdf Graphic file (type pdf)
 
 <use figures_fvno++/fvno++_cc2_1_h2_4_adz_polar.pdf>
@@ -1088,7 +1088,7 @@ Package pdftex.def Info: figures_fvno++/fvno++_cc2_1_h2_4_adz_polar.pdf used on
  input line 694.
 (pdftex.def)             Requested size: 211.38829pt x 132.11496pt.
 
-<figures_fvno++/fvno++_cc2_1_h2_5_adz_polar.pdf, id=603, 578.16pt x 361.35pt>
+<figures_fvno++/fvno++_cc2_1_h2_5_adz_polar.pdf, id=606, 578.16pt x 361.35pt>
 File: figures_fvno++/fvno++_cc2_1_h2_5_adz_polar.pdf Graphic file (type pdf)
 
 <use figures_fvno++/fvno++_cc2_1_h2_5_adz_polar.pdf>
@@ -1096,7 +1096,7 @@ Package pdftex.def Info: figures_fvno++/fvno++_cc2_1_h2_5_adz_polar.pdf used on
  input line 700.
 (pdftex.def)             Requested size: 211.38829pt x 132.11496pt.
 
-<figures_fvno++/fvno++_cc2_1_h2_6_adz_polar.pdf, id=604, 578.16pt x 361.35pt>
+<figures_fvno++/fvno++_cc2_1_h2_6_adz_polar.pdf, id=607, 578.16pt x 361.35pt>
 File: figures_fvno++/fvno++_cc2_1_h2_6_adz_polar.pdf Graphic file (type pdf)
 
 <use figures_fvno++/fvno++_cc2_1_h2_6_adz_polar.pdf>
@@ -1104,7 +1104,7 @@ Package pdftex.def Info: figures_fvno++/fvno++_cc2_1_h2_6_adz_polar.pdf used on
  input line 706.
 (pdftex.def)             Requested size: 211.38829pt x 132.11496pt.
 
-<figures_fvno++/fvno++_cc2_1_h2_7_adz_polar.pdf, id=605, 578.16pt x 361.35pt>
+<figures_fvno++/fvno++_cc2_1_h2_7_adz_polar.pdf, id=608, 578.16pt x 361.35pt>
 File: figures_fvno++/fvno++_cc2_1_h2_7_adz_polar.pdf Graphic file (type pdf)
 
 <use figures_fvno++/fvno++_cc2_1_h2_7_adz_polar.pdf>
@@ -1122,7 +1122,7 @@ Overfull \hbox (2.61107pt too wide) in paragraph at lines 692--718
  []
 
 
-<figures_fvno++/fvno++_cc2_1_h2_4_adz_optrot_lg.pdf, id=606, 578.16pt x 361.35p
+<figures_fvno++/fvno++_cc2_1_h2_4_adz_optrot_lg.pdf, id=609, 578.16pt x 361.35p
 t>
 File: figures_fvno++/fvno++_cc2_1_h2_4_adz_optrot_lg.pdf Graphic file (type pdf
 )
@@ -1131,7 +1131,7 @@ Package pdftex.def Info: figures_fvno++/fvno++_cc2_1_h2_4_adz_optrot_lg.pdf use
 d on input line 729.
 (pdftex.def)             Requested size: 211.38829pt x 132.11496pt.
 
-<figures_fvno++/fvno++_cc2_1_h2_5_adz_optrot_lg.pdf, id=607, 578.16pt x 361.35p
+<figures_fvno++/fvno++_cc2_1_h2_5_adz_optrot_lg.pdf, id=610, 578.16pt x 361.35p
 t>
 File: figures_fvno++/fvno++_cc2_1_h2_5_adz_optrot_lg.pdf Graphic file (type pdf
 )
@@ -1140,7 +1140,7 @@ Package pdftex.def Info: figures_fvno++/fvno++_cc2_1_h2_5_adz_optrot_lg.pdf use
 d on input line 735.
 (pdftex.def)             Requested size: 211.38829pt x 132.11496pt.
 
-<figures_fvno++/fvno++_cc2_1_h2_6_adz_optrot_lg.pdf, id=608, 578.16pt x 361.35p
+<figures_fvno++/fvno++_cc2_1_h2_6_adz_optrot_lg.pdf, id=611, 578.16pt x 361.35p
 t>
 File: figures_fvno++/fvno++_cc2_1_h2_6_adz_optrot_lg.pdf Graphic file (type pdf
 )
@@ -1149,7 +1149,7 @@ Package pdftex.def Info: figures_fvno++/fvno++_cc2_1_h2_6_adz_optrot_lg.pdf use
 d on input line 741.
 (pdftex.def)             Requested size: 211.38829pt x 132.11496pt.
 
-<figures_fvno++/fvno++_cc2_1_h2_7_adz_optrot_lg.pdf, id=609, 578.16pt x 361.35p
+<figures_fvno++/fvno++_cc2_1_h2_7_adz_optrot_lg.pdf, id=612, 578.16pt x 361.35p
 t>
 File: figures_fvno++/fvno++_cc2_1_h2_7_adz_optrot_lg.pdf Graphic file (type pdf
 )
@@ -1167,7 +1167,7 @@ Overfull \hbox (2.61107pt too wide) in paragraph at lines 727--753
 []$ $[]$ 
  []
 
-<figures_fvno++/fvno++_optrot_2_approaches.pdf, id=610, 578.16pt x 361.35pt>
+<figures_fvno++/fvno++_optrot_2_approaches.pdf, id=613, 578.16pt x 361.35pt>
 File: figures_fvno++/fvno++_optrot_2_approaches.pdf Graphic file (type pdf)
 
 <use figures_fvno++/fvno++_optrot_2_approaches.pdf>
@@ -1296,7 +1296,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 406--410
 
  []
 
-[94] <figures_pno++/pno_m_h2_7_adz_polar.pdf, id=1093, 578.16pt x 361.35pt>
+[94] <figures_pno++/pno_m_h2_7_adz_polar.pdf, id=1096, 578.16pt x 361.35pt>
 File: figures_pno++/pno_m_h2_7_adz_polar.pdf Graphic file (type pdf)
 
 <use figures_pno++/pno_m_h2_7_adz_polar.pdf>
@@ -1304,7 +1304,7 @@ Package pdftex.def Info: figures_pno++/pno_m_h2_7_adz_polar.pdf used on input l
 ine 437.
 (pdftex.def)             Requested size: 281.85585pt x 176.1588pt.
 
-<figures_pno++/pno_m_h2_7_adz_optrot.pdf, id=1094, 578.16pt x 361.35pt>
+<figures_pno++/pno_m_h2_7_adz_optrot.pdf, id=1097, 578.16pt x 361.35pt>
 File: figures_pno++/pno_m_h2_7_adz_optrot.pdf Graphic file (type pdf)
 
 <use figures_pno++/pno_m_h2_7_adz_optrot.pdf>
@@ -1312,7 +1312,7 @@ Package pdftex.def Info: figures_pno++/pno_m_h2_7_adz_optrot.pdf used on input
 line 449.
 (pdftex.def)             Requested size: 281.85585pt x 176.1588pt.
 
-<figures_pno++/pno++_h2_4_adz_polar.pdf, id=1095, 578.16pt x 361.35pt>
+<figures_pno++/pno++_h2_4_adz_polar.pdf, id=1098, 578.16pt x 361.35pt>
 File: figures_pno++/pno++_h2_4_adz_polar.pdf Graphic file (type pdf)
 
 <use figures_pno++/pno++_h2_4_adz_polar.pdf>
@@ -1320,7 +1320,7 @@ Package pdftex.def Info: figures_pno++/pno++_h2_4_adz_polar.pdf used on input l
 ine 479.
 (pdftex.def)             Requested size: 211.38829pt x 132.11496pt.
 
-<figures_pno++/pno++_h2_5_adz_polar.pdf, id=1096, 578.16pt x 361.35pt>
+<figures_pno++/pno++_h2_5_adz_polar.pdf, id=1099, 578.16pt x 361.35pt>
 File: figures_pno++/pno++_h2_5_adz_polar.pdf Graphic file (type pdf)
 
 <use figures_pno++/pno++_h2_5_adz_polar.pdf>
@@ -1328,7 +1328,7 @@ Package pdftex.def Info: figures_pno++/pno++_h2_5_adz_polar.pdf used on input l
 ine 485.
 (pdftex.def)             Requested size: 211.38829pt x 132.11496pt.
 
-<figures_pno++/pno++_h2_6_adz_polar.pdf, id=1097, 578.16pt x 361.35pt>
+<figures_pno++/pno++_h2_6_adz_polar.pdf, id=1100, 578.16pt x 361.35pt>
 File: figures_pno++/pno++_h2_6_adz_polar.pdf Graphic file (type pdf)
 
 <use figures_pno++/pno++_h2_6_adz_polar.pdf>
@@ -1336,7 +1336,7 @@ Package pdftex.def Info: figures_pno++/pno++_h2_6_adz_polar.pdf used on input l
 ine 491.
 (pdftex.def)             Requested size: 211.38829pt x 132.11496pt.
 
-<figures_pno++/pno++_h2_7_adz_polar.pdf, id=1098, 578.16pt x 361.35pt>
+<figures_pno++/pno++_h2_7_adz_polar.pdf, id=1101, 578.16pt x 361.35pt>
 File: figures_pno++/pno++_h2_7_adz_polar.pdf Graphic file (type pdf)
 
 <use figures_pno++/pno++_h2_7_adz_polar.pdf>
@@ -1353,7 +1353,7 @@ Overfull \hbox (2.61107pt too wide) in paragraph at lines 477--503
 []$ $[]$ 
  []
 
-<figures_pno++/pno++_h2_4_adz_optrot_lg.pdf, id=1099, 578.16pt x 361.35pt>
+<figures_pno++/pno++_h2_4_adz_optrot_lg.pdf, id=1102, 578.16pt x 361.35pt>
 File: figures_pno++/pno++_h2_4_adz_optrot_lg.pdf Graphic file (type pdf)
 
 <use figures_pno++/pno++_h2_4_adz_optrot_lg.pdf>
@@ -1361,7 +1361,7 @@ Package pdftex.def Info: figures_pno++/pno++_h2_4_adz_optrot_lg.pdf used on inp
 ut line 524.
 (pdftex.def)             Requested size: 211.38829pt x 132.11496pt.
 
-<figures_pno++/pno++_h2_5_adz_optrot_lg.pdf, id=1100, 578.16pt x 361.35pt>
+<figures_pno++/pno++_h2_5_adz_optrot_lg.pdf, id=1103, 578.16pt x 361.35pt>
 File: figures_pno++/pno++_h2_5_adz_optrot_lg.pdf Graphic file (type pdf)
 
 <use figures_pno++/pno++_h2_5_adz_optrot_lg.pdf>
@@ -1369,7 +1369,7 @@ Package pdftex.def Info: figures_pno++/pno++_h2_5_adz_optrot_lg.pdf used on inp
 ut line 530.
 (pdftex.def)             Requested size: 211.38829pt x 132.11496pt.
 
-<figures_pno++/pno++_h2_6_adz_optrot_lg.pdf, id=1101, 578.16pt x 361.35pt>
+<figures_pno++/pno++_h2_6_adz_optrot_lg.pdf, id=1104, 578.16pt x 361.35pt>
 File: figures_pno++/pno++_h2_6_adz_optrot_lg.pdf Graphic file (type pdf)
 
 <use figures_pno++/pno++_h2_6_adz_optrot_lg.pdf>
@@ -1377,7 +1377,7 @@ Package pdftex.def Info: figures_pno++/pno++_h2_6_adz_optrot_lg.pdf used on inp
 ut line 536.
 (pdftex.def)             Requested size: 211.38829pt x 132.11496pt.
 
-<figures_pno++/pno++_h2_7_adz_optrot_lg.pdf, id=1102, 578.16pt x 361.35pt>
+<figures_pno++/pno++_h2_7_adz_optrot_lg.pdf, id=1105, 578.16pt x 361.35pt>
 File: figures_pno++/pno++_h2_7_adz_optrot_lg.pdf Graphic file (type pdf)
 
 <use figures_pno++/pno++_h2_7_adz_optrot_lg.pdf>
@@ -1406,9 +1406,9 @@ optrot_lg.pdf> <./figures_pno++/pno++_h2_5_adz_optrot_lg.pdf> <./figures_pno++/
 pno++_h2_6_adz_optrot_lg.pdf> <./figures_pno++/pno++_h2_7_adz_optrot_lg.pdf>])
 [101]
 Chapter 6.
-(./conclude.tex) [102
+(./conclude.tex [102
 
-] [103] [104] [105] (./publication.tex [106
+] [103] [104]) [105] (./publication.tex [106
 
 ]) (./etd.bbl
 [107] [108
@@ -1422,7 +1422,7 @@ Missing character: There is no € in font cmr12!
 Missing character: There is no ‰ in font cmr12!
  [118]
 [119] [120] [121] [122] [123] [124]) [125] (./SI/SI.tex (./SI/polar_adz.tex
-<SI/polar_adz.pdf, id=1373, 1027.84pt x 770.88pt>
+<SI/polar_adz.pdf, id=1376, 1027.84pt x 770.88pt>
 File: SI/polar_adz.pdf Graphic file (type pdf)
  <use SI/polar_adz.pdf>
 Package pdftex.def Info: SI/polar_adz.pdf used on input line 3.
@@ -1433,14 +1433,14 @@ Overfull \hbox (46.97836pt too wide) in paragraph at lines 3--9
  []
 
 ) (./SI/h2o2_polar_aTZ_aQZ.tex
-<SI/h2o2_aTZ_polar.pdf, id=1374, 578.16pt x 361.35pt>
+<SI/h2o2_aTZ_polar.pdf, id=1377, 578.16pt x 361.35pt>
 File: SI/h2o2_aTZ_polar.pdf Graphic file (type pdf)
 
 <use SI/h2o2_aTZ_polar.pdf>
 Package pdftex.def Info: SI/h2o2_aTZ_polar.pdf used on input line 3.
 (pdftex.def)             Requested size: 281.85585pt x 176.1588pt.
 
-<SI/h2o2_aQZ_polar.pdf, id=1375, 578.16pt x 361.35pt>
+<SI/h2o2_aQZ_polar.pdf, id=1378, 578.16pt x 361.35pt>
 File: SI/h2o2_aQZ_polar.pdf Graphic file (type pdf)
 
 <use SI/h2o2_aQZ_polar.pdf>
@@ -1486,10 +1486,10 @@ e/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive
 6/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2016/
 texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2016/t
 exmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on etd.pdf (150 pages, 1890341 bytes).
+Output written on etd.pdf (151 pages, 1892052 bytes).
 PDF statistics:
- 1563 PDF objects out of 1728 (max. 8388607)
- 1105 compressed objects within 12 object streams
+ 1567 PDF objects out of 1728 (max. 8388607)
+ 1108 compressed objects within 12 object streams
  0 named destinations out of 1000 (max. 500000)
  256 words of extra memory for PDF output out of 10000 (max. 10000000)
 
